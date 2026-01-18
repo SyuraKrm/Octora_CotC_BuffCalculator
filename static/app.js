@@ -49,7 +49,7 @@ async function calculate() {
 
   const checked = [...document.querySelectorAll("input[type=checkbox]:checked")]
     .map(c => ({
-      character: c.dataset.character,
+      character: character,
       ability_name: c.dataset.ability
     }));
 
