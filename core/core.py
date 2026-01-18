@@ -3,7 +3,7 @@ import re
 import time
 from bs4 import BeautifulSoup
 from collections import Counter
-from load_def import BASE_URL, EFFECT_PATTERNS, CONDITION_PATTERNS, TAG_MAP, UNKNOWN_PATTERNS
+from .load_def import BASE_URL, EFFECT_PATTERNS, CONDITION_PATTERNS, TAG_MAP, UNKNOWN_PATTERNS
 
 
 def match_patterns(line, patterns, target_list):

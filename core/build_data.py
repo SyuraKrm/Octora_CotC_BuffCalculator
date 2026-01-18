@@ -1,9 +1,9 @@
 import json
 from collections import Counter
-from core import fetch_pages, load_items_from_files, parse_item, classify_unknown
-from load_def import UNKNOWN_PATTERNS
+from .core import fetch_pages, load_items_from_files, parse_item, classify_unknown
+from .load_def import UNKNOWN_PATTERNS
 
-OUTPUT_PATH = "../data/abilities.json"
+OUTPUT_PATH = "data/abilities.json"
 
 def build_abilities():
 

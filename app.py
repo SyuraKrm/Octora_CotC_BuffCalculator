@@ -4,7 +4,7 @@ from ui_def import ROLE_JP, CATEGORY_JP, SUB_JP, TAG_JP, BASE_CAP, EVALUATION_PR
 
 # main.py で生成した items を import する想定
 # 例: items = fetch_pages()
-from build_data import load_abilities
+from core.build_data import load_abilities
 
 @st.cache_data
 def load():
