@@ -3,63 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <title>大陸の覇者　バフシミュレータ</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      margin: 24px;
-    }
-    textarea {
-      width: 100%;
-      height: 100px;
-      font-family: monospace;
-    }
-    button {
-      margin-top: 8px;
-      padding: 6px 12px;
-    }
-    pre {
-      background: #111;
-      color: #0f0;
-      padding: 12px;
-      margin-top: 16px;
-      white-space: pre-wrap;
-    }
-  </style>
+  <link rel="stylesheet" href="/static/style.css" type="text/css">
 </head>
 <body>
+  <div class="app">
 
-<h1>バフ計算（仮UI）</h1>
+    <!-- 上：操作エリア -->
+    <div class="control-panel">
+      <h2>編成・アビリティ選択</h2>
 
-<p>※ JSONを直接POSTする簡易UI</p>
+      <label>
+        キャラクター選択：
+        <select id="characterSelect"></select>
+      </label>
 
-<textarea id="input">
-{
-  "message": "hello"
-}
-</textarea>
+      <div id="abilities"></div>
+    </div>
 
-<br>
-<button onclick="calculate()">計算</button>
+    <!-- 下：結果表示エリア -->
+    <div class="result-panel">
+    <h2>効果サマリー</h2>
 
-<h2>結果</h2>
-<pre id="result">(未実行)</pre>
+    <div class="tabs">
+        <button class="tab active" data-tab="offense">🗡 攻撃</button>
+        <button class="tab" data-tab="defense">🛡 防御</button>
+    </div>
 
-<script>
-async function calculate() {
-  const input = document.getElementById("input").value;
-
-  const res = await fetch("/calculate", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: input
-  });
-
-  const text = await res.text();
-  document.getElementById("result").textContent = text;
-}
-</script>
-
+    <table id="resultTable">
+        <thead>
+        <tr>
+            <th>区分</th>
+            <th>種別</th>
+            <th>内容</th>
+            <th>対象</th>
+            <th>合計</th>
+            <th>上限</th>
+            <th>有効</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    </div>
+  </div>
+  <script src="/static/app.js"></script>
 </body>
+
 </html>
