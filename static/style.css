@@ -1,28 +1,56 @@
 @charset "utf-8";
 
+:root {
+  --bg-main: #0b1220;
+  --bg-panel: #111a2e;
+  --bg-panel-soft: #16233d;
+
+  --text-main: #e6e3dc;
+  --text-sub: #b9b4a8;
+  --text-muted: #8a8790;
+
+  --accent-gold: #c9a24d;
+  --accent-gold-dim: #9f8542;
+}
+
 body {
     font-family: sans-serif;
     margin: 16px;
+    background: linear-gradient(
+      180deg,
+      #0b1220 0%,
+      #070b14 100%
+    );
+    color: var(--text-main);
 }
 
 html, body {
   height: 100%;
   margin: 0;
+  background-color: #0b1220;
 }
 
 .control-panel {
   flex: 1;                /* 残り全部使う */
   overflow-y: auto;       /* ここだけスクロール */
   padding: 12px;
-  background: #1f2933;
-  color: #e5e7eb;
+  background: linear-gradient(
+    180deg,
+    #111a2e 0%,
+    #0d1628 100%
+  );
+  border-bottom: 1px solid rgba(201,162,77,0.15);
 }
 
 .result-panel {
   height: 240px;          /* ← 固定 */
   border-top: 2px solid #444;
   padding: 12px;
-  background: #0f172a;
+  background: linear-gradient(
+    180deg,
+    #0f172a 0%,
+    #0b1220 100%
+  );
   color: #e5e7eb;
 }
 
@@ -32,11 +60,29 @@ html, body {
   height: 100vh;
 }
 
-.character-block {
-    border: 1px solid #ccc;
-    padding: 8px;
-    margin-bottom: 12px;
-    border-radius: 6px;
+.slot-header {
+  background: #16233d;
+  border-left: 3px solid var(--accent-gold);
+  color: #f1ede3;
+}
+
+.party-slots {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 8px;
+  overflow-x: auto;
+  background: rgba(22, 35, 61, 0.85);
+  border: 1px solid rgba(201,162,77,0.15);
+  border-radius: 6px;
+  padding: 6px;
+}
+
+.party-slot.empty {
+  opacity: 0.6;
+}
+
+.party-slot.empty .abilities-box {
+  display: none;
 }
 
 .ability {
@@ -65,6 +111,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   font-size: 14px;
+  background: rgba(15,23,42,0.6);
 }
 
 th, td {
@@ -74,13 +121,27 @@ th, td {
 }
 
 th {
-  background: #1e293b;
+  background: #1a2236;
+  color: var(--accent-gold);
+  border-bottom: 1px solid rgba(201,162,77,0.3);
+}
+
+td {
+  color: var(--text-main);
 }
 
 /* 説明部分を小さく */
 .desc {
+  color: var(--text-sub);
   font-size: 12px;
-  color: #cbd5f5;
-  margin-left: 16px;
-  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+tr.group-start td {
+  border-top: 2px solid rgba(201,162,77,0.4);
+}
+
+tr.group-continued td {
+  border-top: 1px dashed rgba(201,162,77,0.15);
+  color: var(--text-muted);
 }

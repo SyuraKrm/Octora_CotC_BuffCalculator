@@ -12,12 +12,9 @@
     <div class="control-panel">
       <h2>編成・アビリティ選択</h2>
 
-      <label>
-        キャラクター選択：
-        <select id="characterSelect"></select>
-      </label>
-
-      <div id="abilities"></div>
+      <div class="party-slots">
+        <!-- JSで8枠生成 -->
+      </div>
     </div>
 
     <!-- 下：結果表示エリア -->
@@ -32,10 +29,9 @@
     <table id="resultTable">
         <thead>
         <tr>
-            <th>区分</th>
-            <th>種別</th>
-            <th>内容</th>
             <th>対象</th>
+            <th>効果内容</th>
+            <th>効果区分</th>
             <th>合計</th>
             <th>上限</th>
             <th>有効</th>
