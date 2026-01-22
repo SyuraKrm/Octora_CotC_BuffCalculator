@@ -1,0 +1,3348 @@
+[
+  {
+    "character_id": "756454",
+    "character_name": "スティア",
+    "job": "薬師",
+    "rarity": "5",
+    "elements": [
+      "風"
+    ],
+    "physicals": [
+      "斧",
+      "本",
+      "杖"
+    ]
+  },
+  {
+    "character_id": "753714",
+    "character_name": "レヴィーナEx",
+    "job": "盗賊",
+    "rarity": "5",
+    "elements": [
+      "雷",
+      "風"
+    ],
+    "physicals": [
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "753712",
+    "character_name": "ティツィアーノEx",
+    "job": "商人",
+    "rarity": "5",
+    "elements": [
+      "風"
+    ],
+    "physicals": [
+      "槍",
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "750518",
+    "character_name": "レイメ",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "闇"
+    ],
+    "physicals": [
+      "剣"
+    ]
+  },
+  {
+    "character_id": "747702",
+    "character_name": "ナーダ",
+    "job": "学者",
+    "rarity": "5",
+    "elements": [
+      "光"
+    ],
+    "physicals": [
+      "本"
+    ]
+  },
+  {
+    "character_id": "745083",
+    "character_name": "ヨミ",
+    "job": "踊子",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "氷"
+    ],
+    "physicals": [
+      "剣",
+      "扇"
+    ]
+  },
+  {
+    "character_id": "736819",
+    "character_name": "フェインツ",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "火"
+    ],
+    "physicals": [
+      "剣",
+      "槍"
+    ]
+  },
+  {
+    "character_id": "733055",
+    "character_name": "アラウネEx2",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "氷",
+      "火",
+      "闇",
+      "雷",
+      "風"
+    ],
+    "physicals": [
+      "剣"
+    ]
+  },
+  {
+    "character_id": "733054",
+    "character_name": "リシャールEx",
+    "job": "商人",
+    "rarity": "5",
+    "elements": [],
+    "physicals": [
+      "剣",
+      "弓",
+      "扇",
+      "斧",
+      "本",
+      "杖",
+      "槍",
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "727813",
+    "character_name": "パーディス三世Ex",
+    "job": "神官",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "氷",
+      "風"
+    ],
+    "physicals": []
+  },
+  {
+    "character_id": "727812",
+    "character_name": "エリカEx2",
+    "job": "踊子",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "雷"
+    ],
+    "physicals": [
+      "剣"
+    ]
+  },
+  {
+    "character_id": "722278",
+    "character_name": "セッツァー",
+    "job": "狩人",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "火",
+      "闇",
+      "風"
+    ],
+    "physicals": [
+      "弓"
+    ]
+  },
+  {
+    "character_id": "722277",
+    "character_name": "リルム",
+    "job": "踊子",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "氷",
+      "火",
+      "闇",
+      "雷",
+      "風"
+    ],
+    "physicals": []
+  },
+  {
+    "character_id": "722276",
+    "character_name": "セリス",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "氷"
+    ],
+    "physicals": [
+      "剣"
+    ]
+  },
+  {
+    "character_id": "713008",
+    "character_name": "エドガー",
+    "job": "商人",
+    "rarity": "5",
+    "elements": [
+      "光"
+    ],
+    "physicals": [
+      "弓",
+      "斧",
+      "槍"
+    ]
+  },
+  {
+    "character_id": "713007",
+    "character_name": "ロック",
+    "job": "盗賊",
+    "rarity": "5",
+    "elements": [
+      "氷",
+      "火",
+      "雷"
+    ],
+    "physicals": [
+      "弓",
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "713006",
+    "character_name": "ティナ",
+    "job": "学者",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "氷",
+      "火",
+      "闇",
+      "雷",
+      "風"
+    ],
+    "physicals": [
+      "本"
+    ]
+  },
+  {
+    "character_id": "708308",
+    "character_name": "エルトリクスEx",
+    "job": "狩人",
+    "rarity": "5",
+    "elements": [
+      "氷"
+    ],
+    "physicals": [
+      "剣",
+      "弓",
+      "斧"
+    ]
+  },
+  {
+    "character_id": "708306",
+    "character_name": "ロンドEx",
+    "job": "学者",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "氷",
+      "闇"
+    ],
+    "physicals": [
+      "剣",
+      "本",
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "706315",
+    "character_name": "アヴィーテ",
+    "job": "神官",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "氷",
+      "火",
+      "闇",
+      "雷",
+      "風"
+    ],
+    "physicals": [
+      "剣",
+      "扇",
+      "本",
+      "杖",
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "701680",
+    "character_name": "ケイシア",
+    "job": "狩人",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "闇",
+      "風"
+    ],
+    "physicals": [
+      "弓"
+    ]
+  },
+  {
+    "character_id": "698973",
+    "character_name": "アオイ",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "雷",
+      "風"
+    ],
+    "physicals": [
+      "剣"
+    ]
+  },
+  {
+    "character_id": "698971",
+    "character_name": "カザン",
+    "job": "学者",
+    "rarity": "5",
+    "elements": [
+      "火",
+      "風"
+    ],
+    "physicals": [
+      "本"
+    ]
+  },
+  {
+    "character_id": "694705",
+    "character_name": "エスメラルダ",
+    "job": "盗賊",
+    "rarity": "5",
+    "elements": [],
+    "physicals": [
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "690198",
+    "character_name": "マフレズ",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "雷"
+    ],
+    "physicals": [
+      "剣",
+      "弓",
+      "扇",
+      "斧",
+      "本",
+      "杖",
+      "槍",
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "686919",
+    "character_name": "キャスティEx",
+    "job": "踊子",
+    "rarity": "5",
+    "elements": [
+      "氷",
+      "風"
+    ],
+    "physicals": [
+      "扇"
+    ]
+  },
+  {
+    "character_id": "684832",
+    "character_name": "オズバルドEx",
+    "job": "神官",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "闇"
+    ],
+    "physicals": []
+  },
+  {
+    "character_id": "684831",
+    "character_name": "オーシュットEx",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "氷",
+      "火",
+      "雷"
+    ],
+    "physicals": [
+      "剣",
+      "弓",
+      "扇",
+      "斧",
+      "本",
+      "杖",
+      "槍",
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "681807",
+    "character_name": "アヴァル",
+    "job": "薬師",
+    "rarity": "5",
+    "elements": [
+      "火",
+      "闇"
+    ],
+    "physicals": [
+      "剣",
+      "斧"
+    ]
+  },
+  {
+    "character_id": "676280",
+    "character_name": "パルテティオEx",
+    "job": "盗賊",
+    "rarity": "5",
+    "elements": [],
+    "physicals": [
+      "杖",
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "676279",
+    "character_name": "テレーズEx",
+    "job": "神官",
+    "rarity": "5",
+    "elements": [
+      "雷",
+      "風"
+    ],
+    "physicals": [
+      "杖"
+    ]
+  },
+  {
+    "character_id": "676277",
+    "character_name": "シグナEx",
+    "job": "薬師",
+    "rarity": "5",
+    "elements": [],
+    "physicals": [
+      "剣",
+      "斧",
+      "杖",
+      "槍"
+    ]
+  },
+  {
+    "character_id": "668689",
+    "character_name": "モルルッソEx",
+    "job": "踊子",
+    "rarity": "5",
+    "elements": [
+      "火"
+    ],
+    "physicals": [
+      "剣",
+      "扇",
+      "斧",
+      "本",
+      "杖"
+    ]
+  },
+  {
+    "character_id": "668688",
+    "character_name": "ヴィオラEx",
+    "job": "学者",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "氷",
+      "火"
+    ],
+    "physicals": [
+      "本"
+    ]
+  },
+  {
+    "character_id": "668687",
+    "character_name": "サイラスEx",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "火",
+      "雷",
+      "風"
+    ],
+    "physicals": [
+      "剣"
+    ]
+  },
+  {
+    "character_id": "663846",
+    "character_name": "黒の巫女",
+    "job": "踊子",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "氷",
+      "火",
+      "闇",
+      "雷",
+      "風"
+    ],
+    "physicals": []
+  },
+  {
+    "character_id": "663844",
+    "character_name": "黒の騎士",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "闇"
+    ],
+    "physicals": [
+      "剣",
+      "弓",
+      "扇",
+      "斧",
+      "本",
+      "杖",
+      "槍",
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "662333",
+    "character_name": "ライ・メイ",
+    "job": "商人",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "火",
+      "闇",
+      "雷"
+    ],
+    "physicals": [
+      "剣",
+      "槍"
+    ]
+  },
+  {
+    "character_id": "662332",
+    "character_name": "ヒカリEx",
+    "job": "神官",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "氷",
+      "火",
+      "雷",
+      "風"
+    ],
+    "physicals": [
+      "杖"
+    ]
+  },
+  {
+    "character_id": "661441",
+    "character_name": "ジークリットEx",
+    "job": "商人",
+    "rarity": "5",
+    "elements": [
+      "火"
+    ],
+    "physicals": [
+      "剣",
+      "槍"
+    ]
+  },
+  {
+    "character_id": "659509",
+    "character_name": "カゲムネ",
+    "job": "盗賊",
+    "rarity": "5",
+    "elements": [
+      "氷",
+      "火",
+      "風"
+    ],
+    "physicals": [
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "444975",
+    "character_name": "モレーナ",
+    "job": "学者",
+    "rarity": "5",
+    "elements": [
+      "風"
+    ],
+    "physicals": [
+      "本",
+      "杖"
+    ]
+  },
+  {
+    "character_id": "362276",
+    "character_name": "クリック",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "光"
+    ],
+    "physicals": [
+      "剣",
+      "杖"
+    ]
+  },
+  {
+    "character_id": "641806",
+    "character_name": "ミディヤ",
+    "job": "神官",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "火"
+    ],
+    "physicals": [
+      "杖"
+    ]
+  },
+  {
+    "character_id": "641815",
+    "character_name": "ディトレイナEx",
+    "job": "狩人",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "氷",
+      "火",
+      "闇",
+      "雷",
+      "風"
+    ],
+    "physicals": [
+      "弓"
+    ]
+  },
+  {
+    "character_id": "641804",
+    "character_name": "エリカEx",
+    "job": "盗賊",
+    "rarity": "5",
+    "elements": [
+      "雷"
+    ],
+    "physicals": [
+      "剣",
+      "弓",
+      "扇",
+      "斧",
+      "本",
+      "杖",
+      "槍",
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "641820",
+    "character_name": "セラフィナ",
+    "job": "薬師",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "闇"
+    ],
+    "physicals": []
+  },
+  {
+    "character_id": "641811",
+    "character_name": "パーディス三世",
+    "job": "学者",
+    "rarity": "5",
+    "elements": [
+      "火",
+      "闇",
+      "雷"
+    ],
+    "physicals": [
+      "剣",
+      "弓",
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "640525",
+    "character_name": "オリ",
+    "job": "商人",
+    "rarity": "5",
+    "elements": [
+      "風"
+    ],
+    "physicals": [
+      "槍"
+    ]
+  },
+  {
+    "character_id": "639048",
+    "character_name": "アルロンド",
+    "job": "商人",
+    "rarity": "5",
+    "elements": [
+      "光"
+    ],
+    "physicals": [
+      "剣",
+      "弓",
+      "扇",
+      "斧",
+      "本",
+      "杖",
+      "槍",
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "635577",
+    "character_name": "リンユウEx",
+    "job": "薬師",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "氷",
+      "火"
+    ],
+    "physicals": [
+      "斧"
+    ]
+  },
+  {
+    "character_id": "632969",
+    "character_name": "レリーシャ",
+    "job": "神官",
+    "rarity": "5",
+    "elements": [
+      "雷"
+    ],
+    "physicals": [
+      "杖"
+    ]
+  },
+  {
+    "character_id": "630260",
+    "character_name": "ソワン",
+    "job": "薬師",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "闇"
+    ],
+    "physicals": [
+      "斧"
+    ]
+  },
+  {
+    "character_id": "625684",
+    "character_name": "タトゥロックEx",
+    "job": "盗賊",
+    "rarity": "5",
+    "elements": [
+      "闇"
+    ],
+    "physicals": [
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "625683",
+    "character_name": "バルジェロEx",
+    "job": "踊子",
+    "rarity": "5",
+    "elements": [],
+    "physicals": [
+      "扇"
+    ]
+  },
+  {
+    "character_id": "615708",
+    "character_name": "アグネアEx",
+    "job": "狩人",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "闇"
+    ],
+    "physicals": [
+      "弓"
+    ]
+  },
+  {
+    "character_id": "615707",
+    "character_name": "オフィーリアEx",
+    "job": "学者",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "氷",
+      "火",
+      "闇",
+      "雷",
+      "風"
+    ],
+    "physicals": [
+      "本"
+    ]
+  },
+  {
+    "character_id": "615706",
+    "character_name": "サザントスEx",
+    "job": "商人",
+    "rarity": "5",
+    "elements": [
+      "火",
+      "風"
+    ],
+    "physicals": [
+      "槍"
+    ]
+  },
+  {
+    "character_id": "615705",
+    "character_name": "セシル",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "闇"
+    ],
+    "physicals": [
+      "剣"
+    ]
+  },
+  {
+    "character_id": "610348",
+    "character_name": "オスカ",
+    "job": "商人",
+    "rarity": "5",
+    "elements": [
+      "火"
+    ],
+    "physicals": [
+      "槍"
+    ]
+  },
+  {
+    "character_id": "605919",
+    "character_name": "ドルシネア",
+    "job": "踊子",
+    "rarity": "5",
+    "elements": [
+      "火",
+      "風"
+    ],
+    "physicals": [
+      "扇"
+    ]
+  },
+  {
+    "character_id": "605918",
+    "character_name": "ティツィアーノ",
+    "job": "盗賊",
+    "rarity": "5",
+    "elements": [
+      "風"
+    ],
+    "physicals": [
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "603858",
+    "character_name": "シャナ",
+    "job": "薬師",
+    "rarity": "5",
+    "elements": [
+      "雷",
+      "風"
+    ],
+    "physicals": [
+      "斧"
+    ]
+  },
+  {
+    "character_id": "601883",
+    "character_name": "ジェイン",
+    "job": "薬師",
+    "rarity": "5",
+    "elements": [],
+    "physicals": [
+      "斧"
+    ]
+  },
+  {
+    "character_id": "595976",
+    "character_name": "エミール",
+    "job": "神官",
+    "rarity": "5",
+    "elements": [
+      "闇"
+    ],
+    "physicals": [
+      "本",
+      "杖"
+    ]
+  },
+  {
+    "character_id": "595975",
+    "character_name": "カイネ",
+    "job": "盗賊",
+    "rarity": "5",
+    "elements": [
+      "光"
+    ],
+    "physicals": [
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "595974",
+    "character_name": "ニーア",
+    "job": "商人",
+    "rarity": "5",
+    "elements": [
+      "闇"
+    ],
+    "physicals": [
+      "剣",
+      "槍"
+    ]
+  },
+  {
+    "character_id": "594474",
+    "character_name": "リーク",
+    "job": "商人",
+    "rarity": "5",
+    "elements": [
+      "風"
+    ],
+    "physicals": [
+      "槍"
+    ]
+  },
+  {
+    "character_id": "591084",
+    "character_name": "ヒュージブ",
+    "job": "狩人",
+    "rarity": "5",
+    "elements": [],
+    "physicals": [
+      "弓"
+    ]
+  },
+  {
+    "character_id": "587654",
+    "character_name": "オズバルド",
+    "job": "学者",
+    "rarity": "5",
+    "elements": [
+      "氷",
+      "火",
+      "雷"
+    ],
+    "physicals": [
+      "本"
+    ]
+  },
+  {
+    "character_id": "584895",
+    "character_name": "キャスティ",
+    "job": "薬師",
+    "rarity": "5",
+    "elements": [],
+    "physicals": [
+      "斧"
+    ]
+  },
+  {
+    "character_id": "583650",
+    "character_name": "ミルガルディ",
+    "job": "踊子",
+    "rarity": "5",
+    "elements": [
+      "火",
+      "風"
+    ],
+    "physicals": [
+      "扇",
+      "斧"
+    ]
+  },
+  {
+    "character_id": "581135",
+    "character_name": "マグノリア",
+    "job": "商人",
+    "rarity": "5",
+    "elements": [
+      "雷"
+    ],
+    "physicals": [
+      "槍"
+    ]
+  },
+  {
+    "character_id": "578179",
+    "character_name": "リングアベル",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "闇"
+    ],
+    "physicals": [
+      "剣"
+    ]
+  },
+  {
+    "character_id": "578178",
+    "character_name": "グローリア",
+    "job": "神官",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "氷"
+    ],
+    "physicals": [
+      "杖"
+    ]
+  },
+  {
+    "character_id": "574573",
+    "character_name": "キルン",
+    "job": "狩人",
+    "rarity": "5",
+    "elements": [
+      "雷"
+    ],
+    "physicals": [
+      "弓"
+    ]
+  },
+  {
+    "character_id": "565086",
+    "character_name": "アグネア",
+    "job": "踊子",
+    "rarity": "5",
+    "elements": [
+      "風"
+    ],
+    "physicals": [
+      "扇"
+    ]
+  },
+  {
+    "character_id": "565077",
+    "character_name": "テメノス",
+    "job": "神官",
+    "rarity": "5",
+    "elements": [
+      "光"
+    ],
+    "physicals": [
+      "杖"
+    ]
+  },
+  {
+    "character_id": "561108",
+    "character_name": "アイラ",
+    "job": "学者",
+    "rarity": "5",
+    "elements": [
+      "火",
+      "雷"
+    ],
+    "physicals": [
+      "本"
+    ]
+  },
+  {
+    "character_id": "561107",
+    "character_name": "パルテティオ",
+    "job": "商人",
+    "rarity": "5",
+    "elements": [],
+    "physicals": [
+      "弓",
+      "槍"
+    ]
+  },
+  {
+    "character_id": "550697",
+    "character_name": "ネーハ",
+    "job": "踊子",
+    "rarity": "5",
+    "elements": [
+      "氷",
+      "闇"
+    ],
+    "physicals": [
+      "扇"
+    ]
+  },
+  {
+    "character_id": "547932",
+    "character_name": "ニヴェル",
+    "job": "学者",
+    "rarity": "5",
+    "elements": [
+      "火",
+      "雷"
+    ],
+    "physicals": [
+      "本"
+    ]
+  },
+  {
+    "character_id": "545266",
+    "character_name": "モーフィンス",
+    "job": "薬師",
+    "rarity": "5",
+    "elements": [
+      "氷"
+    ],
+    "physicals": [
+      "斧"
+    ]
+  },
+  {
+    "character_id": "543816",
+    "character_name": "グリーグ",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "火"
+    ],
+    "physicals": [
+      "剣"
+    ]
+  },
+  {
+    "character_id": "541475",
+    "character_name": "オーシュット",
+    "job": "狩人",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "雷",
+      "風"
+    ],
+    "physicals": [
+      "剣",
+      "弓",
+      "斧",
+      "槍"
+    ]
+  },
+  {
+    "character_id": "539742",
+    "character_name": "ピルロ",
+    "job": "盗賊",
+    "rarity": "5",
+    "elements": [
+      "闇"
+    ],
+    "physicals": [
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "537390",
+    "character_name": "ソローネ",
+    "job": "盗賊",
+    "rarity": "5",
+    "elements": [
+      "闇"
+    ],
+    "physicals": [
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "537408",
+    "character_name": "セイル",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "氷",
+      "火",
+      "闇",
+      "雷",
+      "風"
+    ],
+    "physicals": [
+      "剣",
+      "本",
+      "杖"
+    ]
+  },
+  {
+    "character_id": "534154",
+    "character_name": "セルテト",
+    "job": "狩人",
+    "rarity": "5",
+    "elements": [
+      "風"
+    ],
+    "physicals": [
+      "弓"
+    ]
+  },
+  {
+    "character_id": "532358",
+    "character_name": "ディトレイナ",
+    "job": "学者",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "闇"
+    ],
+    "physicals": [
+      "本"
+    ]
+  },
+  {
+    "character_id": "526517",
+    "character_name": "オーゲン",
+    "job": "薬師",
+    "rarity": "5",
+    "elements": [
+      "氷"
+    ],
+    "physicals": [
+      "斧"
+    ]
+  },
+  {
+    "character_id": "524634",
+    "character_name": "シグナ",
+    "job": "踊子",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "火"
+    ],
+    "physicals": [
+      "扇"
+    ]
+  },
+  {
+    "character_id": "524633",
+    "character_name": "サザントス",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "火"
+    ],
+    "physicals": [
+      "剣"
+    ]
+  },
+  {
+    "character_id": "520843",
+    "character_name": "オディオ・S",
+    "job": "神官",
+    "rarity": "5",
+    "elements": [
+      "火",
+      "闇"
+    ],
+    "physicals": [
+      "杖"
+    ]
+  },
+  {
+    "character_id": "520842",
+    "character_name": "オディオ・O",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "闇"
+    ],
+    "physicals": [
+      "剣"
+    ]
+  },
+  {
+    "character_id": "518509",
+    "character_name": "ストレイボウ",
+    "job": "学者",
+    "rarity": "5",
+    "elements": [
+      "氷",
+      "火",
+      "闇",
+      "雷",
+      "風"
+    ],
+    "physicals": [
+      "本"
+    ]
+  },
+  {
+    "character_id": "518508",
+    "character_name": "オルステッド",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "火",
+      "闇",
+      "風"
+    ],
+    "physicals": [
+      "剣",
+      "杖",
+      "槍"
+    ]
+  },
+  {
+    "character_id": "515350",
+    "character_name": "カナリィ",
+    "job": "盗賊",
+    "rarity": "5",
+    "elements": [
+      "火"
+    ],
+    "physicals": [
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "512655",
+    "character_name": "ソロン",
+    "job": "学者",
+    "rarity": "5",
+    "elements": [
+      "火"
+    ],
+    "physicals": [
+      "本",
+      "槍"
+    ]
+  },
+  {
+    "character_id": "510916",
+    "character_name": "ハンイットEx",
+    "job": "踊子",
+    "rarity": "5",
+    "elements": [
+      "火"
+    ],
+    "physicals": [
+      "剣",
+      "扇",
+      "槍"
+    ]
+  },
+  {
+    "character_id": "508525",
+    "character_name": "ネフティ",
+    "job": "薬師",
+    "rarity": "5",
+    "elements": [],
+    "physicals": [
+      "斧",
+      "本",
+      "杖"
+    ]
+  },
+  {
+    "character_id": "506045",
+    "character_name": "アラウネEx",
+    "job": "踊子",
+    "rarity": "5",
+    "elements": [
+      "氷"
+    ],
+    "physicals": [
+      "扇"
+    ]
+  },
+  {
+    "character_id": "506044",
+    "character_name": "エリカ",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "火",
+      "闇",
+      "雷"
+    ],
+    "physicals": [
+      "剣"
+    ]
+  },
+  {
+    "character_id": "503561",
+    "character_name": "リュミスEx",
+    "job": "狩人",
+    "rarity": "5",
+    "elements": [
+      "雷"
+    ],
+    "physicals": [
+      "弓"
+    ]
+  },
+  {
+    "character_id": "501216",
+    "character_name": "ミロードEx",
+    "job": "商人",
+    "rarity": "5",
+    "elements": [
+      "氷"
+    ],
+    "physicals": [
+      "槍"
+    ]
+  },
+  {
+    "character_id": "499470",
+    "character_name": "ルメール",
+    "job": "踊子",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "氷",
+      "火",
+      "闇",
+      "雷",
+      "風"
+    ],
+    "physicals": [
+      "扇"
+    ]
+  },
+  {
+    "character_id": "492997",
+    "character_name": "ハミィ",
+    "job": "学者",
+    "rarity": "5",
+    "elements": [
+      "氷"
+    ],
+    "physicals": [
+      "本"
+    ]
+  },
+  {
+    "character_id": "490566",
+    "character_name": "ソニア",
+    "job": "盗賊",
+    "rarity": "5",
+    "elements": [
+      "風"
+    ],
+    "physicals": [
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "490565",
+    "character_name": "バルジェロ",
+    "job": "盗賊",
+    "rarity": "5",
+    "elements": [
+      "風"
+    ],
+    "physicals": [
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "487213",
+    "character_name": "タトゥロック",
+    "job": "踊子",
+    "rarity": "5",
+    "elements": [
+      "風"
+    ],
+    "physicals": [
+      "剣",
+      "扇",
+      "斧",
+      "杖",
+      "槍"
+    ]
+  },
+  {
+    "character_id": "483983",
+    "character_name": "レオン",
+    "job": "商人",
+    "rarity": "5",
+    "elements": [],
+    "physicals": [
+      "杖",
+      "槍"
+    ]
+  },
+  {
+    "character_id": "482282",
+    "character_name": "プリムロゼEx",
+    "job": "薬師",
+    "rarity": "5",
+    "elements": [
+      "雷"
+    ],
+    "physicals": [
+      "斧"
+    ]
+  },
+  {
+    "character_id": "479848",
+    "character_name": "トレサEx",
+    "job": "狩人",
+    "rarity": "5",
+    "elements": [
+      "火"
+    ],
+    "physicals": [
+      "弓"
+    ]
+  },
+  {
+    "character_id": "477928",
+    "character_name": "エルトリクス",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "闇"
+    ],
+    "physicals": [
+      "剣",
+      "斧"
+    ]
+  },
+  {
+    "character_id": "470063",
+    "character_name": "フィオルEx",
+    "job": "踊子",
+    "rarity": "5",
+    "elements": [],
+    "physicals": [
+      "扇"
+    ]
+  },
+  {
+    "character_id": "470062",
+    "character_name": "ソフィアEx",
+    "job": "薬師",
+    "rarity": "5",
+    "elements": [
+      "風"
+    ],
+    "physicals": [
+      "斧"
+    ]
+  },
+  {
+    "character_id": "468291",
+    "character_name": "ロラン",
+    "job": "商人",
+    "rarity": "5",
+    "elements": [
+      "雷"
+    ],
+    "physicals": [
+      "槍"
+    ]
+  },
+  {
+    "character_id": "468289",
+    "character_name": "フレデリカ",
+    "job": "学者",
+    "rarity": "5",
+    "elements": [
+      "火"
+    ],
+    "physicals": [
+      "本"
+    ]
+  },
+  {
+    "character_id": "468287",
+    "character_name": "セレノア",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "火"
+    ],
+    "physicals": [
+      "剣"
+    ]
+  },
+  {
+    "character_id": "467050",
+    "character_name": "エデルガルト",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "火"
+    ],
+    "physicals": [
+      "剣"
+    ]
+  },
+  {
+    "character_id": "463945",
+    "character_name": "リンユウ",
+    "job": "神官",
+    "rarity": "5",
+    "elements": [
+      "雷"
+    ],
+    "physicals": [
+      "弓",
+      "杖"
+    ]
+  },
+  {
+    "character_id": "462950",
+    "character_name": "サリサ",
+    "job": "盗賊",
+    "rarity": "5",
+    "elements": [
+      "火"
+    ],
+    "physicals": [
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "460193",
+    "character_name": "レヴィーナ",
+    "job": "学者",
+    "rarity": "5",
+    "elements": [
+      "雷",
+      "風"
+    ],
+    "physicals": [
+      "本",
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "458080",
+    "character_name": "ゼニア",
+    "job": "薬師",
+    "rarity": "5",
+    "elements": [
+      "闇"
+    ],
+    "physicals": [
+      "斧"
+    ]
+  },
+  {
+    "character_id": "456293",
+    "character_name": "ロンド",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "光"
+    ],
+    "physicals": [
+      "剣"
+    ]
+  },
+  {
+    "character_id": "454507",
+    "character_name": "ユークス",
+    "job": "神官",
+    "rarity": "5",
+    "elements": [
+      "火"
+    ],
+    "physicals": [
+      "杖"
+    ]
+  },
+  {
+    "character_id": "451737",
+    "character_name": "アーギュスト",
+    "job": "盗賊",
+    "rarity": "5",
+    "elements": [
+      "闇"
+    ],
+    "physicals": [
+      "本",
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "451738",
+    "character_name": "タイタス",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "雷"
+    ],
+    "physicals": [
+      "剣"
+    ]
+  },
+  {
+    "character_id": "451736",
+    "character_name": "ヘルミニア",
+    "job": "狩人",
+    "rarity": "5",
+    "elements": [
+      "光"
+    ],
+    "physicals": [
+      "弓",
+      "扇"
+    ]
+  },
+  {
+    "character_id": "448996",
+    "character_name": "クラウザー",
+    "job": "商人",
+    "rarity": "5",
+    "elements": [
+      "風"
+    ],
+    "physicals": [
+      "槍"
+    ]
+  },
+  {
+    "character_id": "446383",
+    "character_name": "アラウネ",
+    "job": "学者",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "火"
+    ],
+    "physicals": [
+      "本"
+    ]
+  },
+  {
+    "character_id": "444212",
+    "character_name": "アーフェン",
+    "job": "薬師",
+    "rarity": "5",
+    "elements": [
+      "氷"
+    ],
+    "physicals": [
+      "斧"
+    ]
+  },
+  {
+    "character_id": "441348",
+    "character_name": "A2",
+    "job": "盗賊",
+    "rarity": "5",
+    "elements": [],
+    "physicals": [
+      "剣",
+      "斧",
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "441347",
+    "character_name": "9S",
+    "job": "商人",
+    "rarity": "5",
+    "elements": [
+      "火",
+      "雷"
+    ],
+    "physicals": [
+      "槍"
+    ]
+  },
+  {
+    "character_id": "441346",
+    "character_name": "2B",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "火",
+      "闇"
+    ],
+    "physicals": [
+      "剣",
+      "斧"
+    ]
+  },
+  {
+    "character_id": "437864",
+    "character_name": "リシャール",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "雷"
+    ],
+    "physicals": [
+      "剣"
+    ]
+  },
+  {
+    "character_id": "425578",
+    "character_name": "エレオノーラ",
+    "job": "踊子",
+    "rarity": "5",
+    "elements": [
+      "氷"
+    ],
+    "physicals": [
+      "扇"
+    ]
+  },
+  {
+    "character_id": "422748",
+    "character_name": "ノーニャ",
+    "job": "商人",
+    "rarity": "5",
+    "elements": [
+      "火"
+    ],
+    "physicals": [
+      "槍"
+    ]
+  },
+  {
+    "character_id": "421210",
+    "character_name": "クロエ",
+    "job": "狩人",
+    "rarity": "5",
+    "elements": [
+      "風"
+    ],
+    "physicals": [
+      "弓"
+    ]
+  },
+  {
+    "character_id": "420866",
+    "character_name": "テリオン",
+    "job": "盗賊",
+    "rarity": "5",
+    "elements": [
+      "火"
+    ],
+    "physicals": [
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "419933",
+    "character_name": "ラルゴ",
+    "job": "商人",
+    "rarity": "5",
+    "elements": [
+      "火",
+      "雷"
+    ],
+    "physicals": [
+      "槍"
+    ]
+  },
+  {
+    "character_id": "419902",
+    "character_name": "ジョシュア",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "氷"
+    ],
+    "physicals": [
+      "剣"
+    ]
+  },
+  {
+    "character_id": "417526",
+    "character_name": "ニーナラーナ",
+    "job": "学者",
+    "rarity": "5",
+    "elements": [
+      "闇"
+    ],
+    "physicals": [
+      "本"
+    ]
+  },
+  {
+    "character_id": "416441",
+    "character_name": "ティティ",
+    "job": "踊子",
+    "rarity": "5",
+    "elements": [
+      "雷"
+    ],
+    "physicals": [
+      "扇"
+    ]
+  },
+  {
+    "character_id": "415651",
+    "character_name": "ヘイズ",
+    "job": "薬師",
+    "rarity": "5",
+    "elements": [
+      "火"
+    ],
+    "physicals": [
+      "斧"
+    ]
+  },
+  {
+    "character_id": "411359",
+    "character_name": "ウルダイ",
+    "job": "商人",
+    "rarity": "5",
+    "elements": [
+      "闇"
+    ],
+    "physicals": [
+      "槍"
+    ]
+  },
+  {
+    "character_id": "409218",
+    "character_name": "イェンロン",
+    "job": "神官",
+    "rarity": "5",
+    "elements": [
+      "氷"
+    ],
+    "physicals": [
+      "杖"
+    ]
+  },
+  {
+    "character_id": "406105",
+    "character_name": "オフィーリア",
+    "job": "神官",
+    "rarity": "5",
+    "elements": [
+      "光"
+    ],
+    "physicals": [
+      "杖"
+    ]
+  },
+  {
+    "character_id": "406104",
+    "character_name": "オルベリク",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "雷"
+    ],
+    "physicals": [
+      "剣",
+      "槍"
+    ]
+  },
+  {
+    "character_id": "406096",
+    "character_name": "セシリー",
+    "job": "商人",
+    "rarity": "5",
+    "elements": [
+      "光"
+    ],
+    "physicals": [
+      "斧",
+      "本",
+      "槍"
+    ]
+  },
+  {
+    "character_id": "406097",
+    "character_name": "ラース",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "風"
+    ],
+    "physicals": [
+      "剣"
+    ]
+  },
+  {
+    "character_id": "403932",
+    "character_name": "ハスミ",
+    "job": "踊子",
+    "rarity": "5",
+    "elements": [
+      "光"
+    ],
+    "physicals": [
+      "扇"
+    ]
+  },
+  {
+    "character_id": "401791",
+    "character_name": "ジルメイラ",
+    "job": "狩人",
+    "rarity": "5",
+    "elements": [
+      "闇"
+    ],
+    "physicals": [
+      "弓"
+    ]
+  },
+  {
+    "character_id": "400825",
+    "character_name": "リアナ",
+    "job": "神官",
+    "rarity": "5",
+    "elements": [
+      "氷"
+    ],
+    "physicals": [
+      "杖"
+    ]
+  },
+  {
+    "character_id": "400305",
+    "character_name": "ファルコ",
+    "job": "盗賊",
+    "rarity": "5",
+    "elements": [
+      "氷"
+    ],
+    "physicals": [
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "398163",
+    "character_name": "カルドナ",
+    "job": "商人",
+    "rarity": "5",
+    "elements": [
+      "氷"
+    ],
+    "physicals": [
+      "槍"
+    ]
+  },
+  {
+    "character_id": "396714",
+    "character_name": "コウレン",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "光"
+    ],
+    "physicals": [
+      "剣"
+    ]
+  },
+  {
+    "character_id": "396715",
+    "character_name": "ユーニィ",
+    "job": "狩人",
+    "rarity": "5",
+    "elements": [
+      "火"
+    ],
+    "physicals": [
+      "剣",
+      "弓",
+      "斧",
+      "槍"
+    ]
+  },
+  {
+    "character_id": "395616",
+    "character_name": "プリムロゼ",
+    "job": "踊子",
+    "rarity": "5",
+    "elements": [
+      "闇"
+    ],
+    "physicals": [
+      "扇"
+    ]
+  },
+  {
+    "character_id": "394470",
+    "character_name": "オデット",
+    "job": "学者",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "風"
+    ],
+    "physicals": [
+      "本"
+    ]
+  },
+  {
+    "character_id": "393385",
+    "character_name": "ソレイユ",
+    "job": "薬師",
+    "rarity": "5",
+    "elements": [
+      "光"
+    ],
+    "physicals": [
+      "斧"
+    ]
+  },
+  {
+    "character_id": "391189",
+    "character_name": "プロメ",
+    "job": "神官",
+    "rarity": "5",
+    "elements": [
+      "火"
+    ],
+    "physicals": [
+      "杖"
+    ]
+  },
+  {
+    "character_id": "391190",
+    "character_name": "ガートルード",
+    "job": "薬師",
+    "rarity": "5",
+    "elements": [
+      "闇"
+    ],
+    "physicals": [
+      "斧"
+    ]
+  },
+  {
+    "character_id": "388417",
+    "character_name": "ムールゥ",
+    "job": "学者",
+    "rarity": "5",
+    "elements": [
+      "火"
+    ],
+    "physicals": [
+      "本"
+    ]
+  },
+  {
+    "character_id": "386216",
+    "character_name": "リトゥ",
+    "job": "盗賊",
+    "rarity": "5",
+    "elements": [
+      "雷"
+    ],
+    "physicals": [
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "384095",
+    "character_name": "アニエス",
+    "job": "神官",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "風"
+    ],
+    "physicals": [
+      "杖"
+    ]
+  },
+  {
+    "character_id": "384094",
+    "character_name": "イデア",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "火"
+    ],
+    "physicals": [
+      "剣"
+    ]
+  },
+  {
+    "character_id": "383174",
+    "character_name": "アデル",
+    "job": "盗賊",
+    "rarity": "5",
+    "elements": [
+      "光"
+    ],
+    "physicals": [
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "383171",
+    "character_name": "エルヴィス",
+    "job": "学者",
+    "rarity": "5",
+    "elements": [
+      "雷"
+    ],
+    "physicals": [
+      "本"
+    ]
+  },
+  {
+    "character_id": "381645",
+    "character_name": "ブリジット",
+    "job": "神官",
+    "rarity": "4",
+    "elements": [],
+    "physicals": [
+      "杖"
+    ]
+  },
+  {
+    "character_id": "381644",
+    "character_name": "カージェス",
+    "job": "狩人",
+    "rarity": "5",
+    "elements": [
+      "氷"
+    ],
+    "physicals": [
+      "弓"
+    ]
+  },
+  {
+    "character_id": "381643",
+    "character_name": "ヴァルカン",
+    "job": "学者",
+    "rarity": "5",
+    "elements": [
+      "光"
+    ],
+    "physicals": [
+      "本"
+    ]
+  },
+  {
+    "character_id": "378300",
+    "character_name": "エリザ",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "光"
+    ],
+    "physicals": [
+      "剣"
+    ]
+  },
+  {
+    "character_id": "378301",
+    "character_name": "ロロ",
+    "job": "狩人",
+    "rarity": "4",
+    "elements": [
+      "光"
+    ],
+    "physicals": [
+      "弓",
+      "杖"
+    ]
+  },
+  {
+    "character_id": "377291",
+    "character_name": "サイラス",
+    "job": "学者",
+    "rarity": "5",
+    "elements": [
+      "氷",
+      "火",
+      "雷"
+    ],
+    "physicals": [
+      "本"
+    ]
+  },
+  {
+    "character_id": "375939",
+    "character_name": "ステッド",
+    "job": "神官",
+    "rarity": "5",
+    "elements": [
+      "闇"
+    ],
+    "physicals": [
+      "杖"
+    ]
+  },
+  {
+    "character_id": "375940",
+    "character_name": "チェルナ",
+    "job": "商人",
+    "rarity": "4",
+    "elements": [
+      "闇"
+    ],
+    "physicals": [
+      "槍"
+    ]
+  },
+  {
+    "character_id": "375556",
+    "character_name": "グロッサム",
+    "job": "踊子",
+    "rarity": "5",
+    "elements": [
+      "雷"
+    ],
+    "physicals": [
+      "扇"
+    ]
+  },
+  {
+    "character_id": "372246",
+    "character_name": "ヨルン",
+    "job": "剣士",
+    "rarity": "4",
+    "elements": [
+      "闇"
+    ],
+    "physicals": [
+      "剣"
+    ]
+  },
+  {
+    "character_id": "372245",
+    "character_name": "リュミス",
+    "job": "薬師",
+    "rarity": "5",
+    "elements": [
+      "風"
+    ],
+    "physicals": [
+      "剣",
+      "斧"
+    ]
+  },
+  {
+    "character_id": "370750",
+    "character_name": "ハーレー",
+    "job": "踊子",
+    "rarity": "5",
+    "elements": [
+      "風"
+    ],
+    "physicals": [
+      "扇"
+    ]
+  },
+  {
+    "character_id": "370748",
+    "character_name": "レヴァン",
+    "job": "学者",
+    "rarity": "4",
+    "elements": [
+      "光"
+    ],
+    "physicals": [
+      "本"
+    ]
+  },
+  {
+    "character_id": "370643",
+    "character_name": "ティキレン",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "風"
+    ],
+    "physicals": [
+      "剣"
+    ]
+  },
+  {
+    "character_id": "369300",
+    "character_name": "ザンター",
+    "job": "狩人",
+    "rarity": "5",
+    "elements": [
+      "光"
+    ],
+    "physicals": [
+      "弓",
+      "扇",
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "369301",
+    "character_name": "ポーラ",
+    "job": "踊子",
+    "rarity": "4",
+    "elements": [
+      "闇"
+    ],
+    "physicals": [
+      "扇"
+    ]
+  },
+  {
+    "character_id": "368617",
+    "character_name": "ドロテア",
+    "job": "商人",
+    "rarity": "5",
+    "elements": [
+      "火"
+    ],
+    "physicals": [
+      "槍"
+    ]
+  },
+  {
+    "character_id": "367586",
+    "character_name": "ライオネル",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "氷"
+    ],
+    "physicals": [
+      "剣"
+    ]
+  },
+  {
+    "character_id": "367587",
+    "character_name": "エフレン",
+    "job": "神官",
+    "rarity": "4",
+    "elements": [
+      "火"
+    ],
+    "physicals": [
+      "杖"
+    ]
+  },
+  {
+    "character_id": "366400",
+    "character_name": "トレサ",
+    "job": "商人",
+    "rarity": "5",
+    "elements": [
+      "風"
+    ],
+    "physicals": [
+      "槍"
+    ]
+  },
+  {
+    "character_id": "365292",
+    "character_name": "モルルッソ",
+    "job": "神官",
+    "rarity": "5",
+    "elements": [
+      "風"
+    ],
+    "physicals": [
+      "杖"
+    ]
+  },
+  {
+    "character_id": "365293",
+    "character_name": "ケネス",
+    "job": "学者",
+    "rarity": "4",
+    "elements": [
+      "氷"
+    ],
+    "physicals": [
+      "本"
+    ]
+  },
+  {
+    "character_id": "363745",
+    "character_name": "コルネリア",
+    "job": "薬師",
+    "rarity": "4",
+    "elements": [
+      "雷"
+    ],
+    "physicals": [
+      "斧"
+    ]
+  },
+  {
+    "character_id": "363738",
+    "character_name": "ニコラ",
+    "job": "盗賊",
+    "rarity": "5",
+    "elements": [
+      "光"
+    ],
+    "physicals": [
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "362045",
+    "character_name": "デュラン",
+    "job": "盗賊",
+    "rarity": "4",
+    "elements": [
+      "光"
+    ],
+    "physicals": [
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "362044",
+    "character_name": "テレーズ",
+    "job": "学者",
+    "rarity": "5",
+    "elements": [
+      "雷"
+    ],
+    "physicals": [
+      "本"
+    ]
+  },
+  {
+    "character_id": "359725",
+    "character_name": "ヒースコート",
+    "job": "盗賊",
+    "rarity": "5",
+    "elements": [
+      "風"
+    ],
+    "physicals": [
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "359726",
+    "character_name": "ナール",
+    "job": "狩人",
+    "rarity": "4",
+    "elements": [
+      "闇"
+    ],
+    "physicals": [
+      "弓"
+    ]
+  },
+  {
+    "character_id": "358828",
+    "character_name": "ハンイット",
+    "job": "狩人",
+    "rarity": "5",
+    "elements": [
+      "雷"
+    ],
+    "physicals": [
+      "剣",
+      "弓",
+      "槍"
+    ]
+  },
+  {
+    "character_id": "355664",
+    "character_name": "ソフィア",
+    "job": "学者",
+    "rarity": "5",
+    "elements": [
+      "氷"
+    ],
+    "physicals": [
+      "本"
+    ]
+  },
+  {
+    "character_id": "355676",
+    "character_name": "フィオル",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "闇"
+    ],
+    "physicals": [
+      "剣"
+    ]
+  },
+  {
+    "character_id": "355677",
+    "character_name": "スケアクロウ",
+    "job": "狩人",
+    "rarity": "5",
+    "elements": [
+      "風"
+    ],
+    "physicals": [
+      "弓"
+    ]
+  },
+  {
+    "character_id": "355672",
+    "character_name": "ギルデロイ",
+    "job": "商人",
+    "rarity": "5",
+    "elements": [
+      "雷"
+    ],
+    "physicals": [
+      "槍"
+    ]
+  },
+  {
+    "character_id": "355675",
+    "character_name": "ミロード",
+    "job": "神官",
+    "rarity": "5",
+    "elements": [
+      "光"
+    ],
+    "physicals": [
+      "杖"
+    ]
+  },
+  {
+    "character_id": "355674",
+    "character_name": "ヴィオラ",
+    "job": "盗賊",
+    "rarity": "5",
+    "elements": [
+      "火"
+    ],
+    "physicals": [
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "355671",
+    "character_name": "テオ",
+    "job": "薬師",
+    "rarity": "5",
+    "elements": [
+      "雷"
+    ],
+    "physicals": [
+      "斧"
+    ]
+  },
+  {
+    "character_id": "355673",
+    "character_name": "リネット",
+    "job": "踊子",
+    "rarity": "5",
+    "elements": [
+      "火"
+    ],
+    "physicals": [
+      "扇"
+    ]
+  },
+  {
+    "character_id": "355779",
+    "character_name": "ウィンゲート",
+    "job": "盗賊",
+    "rarity": "4",
+    "elements": [
+      "闇"
+    ],
+    "physicals": [
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "355781",
+    "character_name": "クレス",
+    "job": "盗賊",
+    "rarity": "4",
+    "elements": [
+      "雷"
+    ],
+    "physicals": [
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "355780",
+    "character_name": "カルツ",
+    "job": "盗賊",
+    "rarity": "4",
+    "elements": [
+      "風"
+    ],
+    "physicals": [
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "355783",
+    "character_name": "デヴィン",
+    "job": "商人",
+    "rarity": "4",
+    "elements": [
+      "風"
+    ],
+    "physicals": [
+      "槍"
+    ]
+  },
+  {
+    "character_id": "355784",
+    "character_name": "ハインツ",
+    "job": "学者",
+    "rarity": "4",
+    "elements": [
+      "闇"
+    ],
+    "physicals": [
+      "本"
+    ]
+  },
+  {
+    "character_id": "355843",
+    "character_name": "ペレディール",
+    "job": "学者",
+    "rarity": "4",
+    "elements": [
+      "火"
+    ],
+    "physicals": [
+      "本"
+    ]
+  },
+  {
+    "character_id": "355844",
+    "character_name": "ラウラ",
+    "job": "学者",
+    "rarity": "4",
+    "elements": [
+      "雷"
+    ],
+    "physicals": [
+      "本"
+    ]
+  },
+  {
+    "character_id": "355845",
+    "character_name": "アシラン",
+    "job": "狩人",
+    "rarity": "4",
+    "elements": [
+      "闇"
+    ],
+    "physicals": [
+      "弓"
+    ]
+  },
+  {
+    "character_id": "355846",
+    "character_name": "トリッシュ",
+    "job": "剣士",
+    "rarity": "4",
+    "elements": [
+      "風"
+    ],
+    "physicals": [
+      "剣"
+    ]
+  },
+  {
+    "character_id": "355847",
+    "character_name": "ターヒル",
+    "job": "剣士",
+    "rarity": "4",
+    "elements": [
+      "火"
+    ],
+    "physicals": [
+      "剣"
+    ]
+  },
+  {
+    "character_id": "355879",
+    "character_name": "ジークリット",
+    "job": "剣士",
+    "rarity": "4",
+    "elements": [
+      "雷"
+    ],
+    "physicals": [
+      "剣"
+    ]
+  },
+  {
+    "character_id": "355802",
+    "character_name": "ラモーナ",
+    "job": "神官",
+    "rarity": "4",
+    "elements": [
+      "氷"
+    ],
+    "physicals": [
+      "杖"
+    ]
+  },
+  {
+    "character_id": "355880",
+    "character_name": "ベルトラン",
+    "job": "狩人",
+    "rarity": "4",
+    "elements": [
+      "雷"
+    ],
+    "physicals": [
+      "弓"
+    ]
+  },
+  {
+    "character_id": "355881",
+    "character_name": "マイルズ",
+    "job": "剣士",
+    "rarity": "4",
+    "elements": [
+      "光"
+    ],
+    "physicals": [
+      "剣"
+    ]
+  },
+  {
+    "character_id": "355803",
+    "character_name": "ルーセッタ",
+    "job": "狩人",
+    "rarity": "4",
+    "elements": [
+      "氷"
+    ],
+    "physicals": [
+      "弓"
+    ]
+  },
+  {
+    "character_id": "355922",
+    "character_name": "カミラ",
+    "job": "狩人",
+    "rarity": "4",
+    "elements": [
+      "火"
+    ],
+    "physicals": [
+      "弓"
+    ]
+  },
+  {
+    "character_id": "355923",
+    "character_name": "アズライト",
+    "job": "盗賊",
+    "rarity": "4",
+    "elements": [
+      "氷"
+    ],
+    "physicals": [
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "355924",
+    "character_name": "ヘルガ",
+    "job": "商人",
+    "rarity": "4",
+    "elements": [
+      "氷"
+    ],
+    "physicals": [
+      "槍"
+    ]
+  },
+  {
+    "character_id": "355800",
+    "character_name": "ピア",
+    "job": "商人",
+    "rarity": "4",
+    "elements": [
+      "光"
+    ],
+    "physicals": [
+      "槍"
+    ]
+  },
+  {
+    "character_id": "355952",
+    "character_name": "バラッド",
+    "job": "商人",
+    "rarity": "4",
+    "elements": [
+      "火"
+    ],
+    "physicals": [
+      "槍"
+    ]
+  },
+  {
+    "character_id": "356020",
+    "character_name": "メノ",
+    "job": "神官",
+    "rarity": "4",
+    "elements": [
+      "風"
+    ],
+    "physicals": [
+      "杖"
+    ]
+  },
+  {
+    "character_id": "356022",
+    "character_name": "セドリック",
+    "job": "神官",
+    "rarity": "4",
+    "elements": [
+      "火"
+    ],
+    "physicals": [
+      "杖"
+    ]
+  },
+  {
+    "character_id": "356023",
+    "character_name": "ノエル",
+    "job": "学者",
+    "rarity": "4",
+    "elements": [
+      "風"
+    ],
+    "physicals": [
+      "本"
+    ]
+  },
+  {
+    "character_id": "356050",
+    "character_name": "マドレーヌ",
+    "job": "神官",
+    "rarity": "4",
+    "elements": [
+      "雷"
+    ],
+    "physicals": [
+      "杖"
+    ]
+  },
+  {
+    "character_id": "355801",
+    "character_name": "メレット",
+    "job": "薬師",
+    "rarity": "4",
+    "elements": [
+      "光"
+    ],
+    "physicals": [
+      "斧"
+    ]
+  },
+  {
+    "character_id": "356051",
+    "character_name": "ロディオン",
+    "job": "薬師",
+    "rarity": "4",
+    "elements": [
+      "闇"
+    ],
+    "physicals": [
+      "斧"
+    ]
+  },
+  {
+    "character_id": "356052",
+    "character_name": "シェルビー",
+    "job": "薬師",
+    "rarity": "4",
+    "elements": [
+      "氷"
+    ],
+    "physicals": [
+      "斧"
+    ]
+  },
+  {
+    "character_id": "356080",
+    "character_name": "リタ",
+    "job": "薬師",
+    "rarity": "4",
+    "elements": [
+      "風"
+    ],
+    "physicals": [
+      "斧"
+    ]
+  },
+  {
+    "character_id": "356081",
+    "character_name": "ファビオ",
+    "job": "踊子",
+    "rarity": "4",
+    "elements": [
+      "風"
+    ],
+    "physicals": [
+      "扇"
+    ]
+  },
+  {
+    "character_id": "356082",
+    "character_name": "イリス",
+    "job": "踊子",
+    "rarity": "4",
+    "elements": [
+      "氷"
+    ],
+    "physicals": [
+      "扇"
+    ]
+  },
+  {
+    "character_id": "356084",
+    "character_name": "メイベル",
+    "job": "踊子",
+    "rarity": "4",
+    "elements": [
+      "雷"
+    ],
+    "physicals": [
+      "扇"
+    ]
+  },
+  {
+    "character_id": "355804",
+    "character_name": "ミーナ",
+    "job": "踊子",
+    "rarity": "4",
+    "elements": [
+      "光"
+    ],
+    "physicals": [
+      "扇"
+    ]
+  },
+  {
+    "character_id": "356578",
+    "character_name": "ドリー",
+    "job": "学者",
+    "rarity": "3",
+    "elements": [
+      "闇"
+    ],
+    "physicals": [
+      "本"
+    ]
+  },
+  {
+    "character_id": "356580",
+    "character_name": "ユニス",
+    "job": "学者",
+    "rarity": "3",
+    "elements": [
+      "光"
+    ],
+    "physicals": [
+      "本"
+    ]
+  },
+  {
+    "character_id": "356581",
+    "character_name": "フリオ",
+    "job": "学者",
+    "rarity": "3",
+    "elements": [
+      "氷"
+    ],
+    "physicals": [
+      "本"
+    ]
+  },
+  {
+    "character_id": "356582",
+    "character_name": "メニー",
+    "job": "剣士",
+    "rarity": "3",
+    "elements": [
+      "光"
+    ],
+    "physicals": [
+      "剣"
+    ]
+  },
+  {
+    "character_id": "356583",
+    "character_name": "ナンナ",
+    "job": "剣士",
+    "rarity": "3",
+    "elements": [
+      "闇"
+    ],
+    "physicals": [
+      "剣"
+    ]
+  },
+  {
+    "character_id": "356584",
+    "character_name": "ウーゴ",
+    "job": "剣士",
+    "rarity": "3",
+    "elements": [
+      "氷"
+    ],
+    "physicals": [
+      "剣"
+    ]
+  },
+  {
+    "character_id": "356594",
+    "character_name": "サニー",
+    "job": "狩人",
+    "rarity": "3",
+    "elements": [
+      "闇"
+    ],
+    "physicals": [
+      "弓"
+    ]
+  },
+  {
+    "character_id": "356595",
+    "character_name": "ビビアン",
+    "job": "狩人",
+    "rarity": "3",
+    "elements": [
+      "光"
+    ],
+    "physicals": [
+      "弓"
+    ]
+  },
+  {
+    "character_id": "356596",
+    "character_name": "グティ",
+    "job": "狩人",
+    "rarity": "3",
+    "elements": [
+      "風"
+    ],
+    "physicals": [
+      "弓"
+    ]
+  },
+  {
+    "character_id": "356597",
+    "character_name": "コニー",
+    "job": "商人",
+    "rarity": "3",
+    "elements": [
+      "雷"
+    ],
+    "physicals": [
+      "槍"
+    ]
+  },
+  {
+    "character_id": "356598",
+    "character_name": "キャロル",
+    "job": "商人",
+    "rarity": "3",
+    "elements": [
+      "風"
+    ],
+    "physicals": [
+      "槍"
+    ]
+  },
+  {
+    "character_id": "356599",
+    "character_name": "フアン",
+    "job": "商人",
+    "rarity": "3",
+    "elements": [
+      "闇"
+    ],
+    "physicals": [
+      "槍"
+    ]
+  },
+  {
+    "character_id": "356820",
+    "character_name": "テリー",
+    "job": "神官",
+    "rarity": "3",
+    "elements": [
+      "氷"
+    ],
+    "physicals": [
+      "杖"
+    ]
+  },
+  {
+    "character_id": "356821",
+    "character_name": "パール",
+    "job": "神官",
+    "rarity": "3",
+    "elements": [
+      "火"
+    ],
+    "physicals": [
+      "杖"
+    ]
+  },
+  {
+    "character_id": "356822",
+    "character_name": "ホセ",
+    "job": "神官",
+    "rarity": "3",
+    "elements": [
+      "光"
+    ],
+    "physicals": [
+      "杖"
+    ]
+  },
+  {
+    "character_id": "356823",
+    "character_name": "ビリー",
+    "job": "盗賊",
+    "rarity": "3",
+    "elements": [
+      "光"
+    ],
+    "physicals": [
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "356824",
+    "character_name": "フェリーネ",
+    "job": "盗賊",
+    "rarity": "3",
+    "elements": [
+      "雷"
+    ],
+    "physicals": [
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "356825",
+    "character_name": "ディエゴ",
+    "job": "盗賊",
+    "rarity": "3",
+    "elements": [
+      "火"
+    ],
+    "physicals": [
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "356826",
+    "character_name": "ペニー",
+    "job": "薬師",
+    "rarity": "3",
+    "elements": [
+      "雷"
+    ],
+    "physicals": [
+      "斧"
+    ]
+  },
+  {
+    "character_id": "356827",
+    "character_name": "サーリア",
+    "job": "薬師",
+    "rarity": "3",
+    "elements": [
+      "氷"
+    ],
+    "physicals": [
+      "斧"
+    ]
+  },
+  {
+    "character_id": "356828",
+    "character_name": "ホルヘ",
+    "job": "薬師",
+    "rarity": "3",
+    "elements": [
+      "火"
+    ],
+    "physicals": [
+      "斧"
+    ]
+  },
+  {
+    "character_id": "356829",
+    "character_name": "ハリー",
+    "job": "踊子",
+    "rarity": "3",
+    "elements": [
+      "火"
+    ],
+    "physicals": [
+      "扇"
+    ]
+  },
+  {
+    "character_id": "356830",
+    "character_name": "イヴリン",
+    "job": "踊子",
+    "rarity": "3",
+    "elements": [
+      "闇"
+    ],
+    "physicals": [
+      "扇"
+    ]
+  },
+  {
+    "character_id": "356832",
+    "character_name": "マヌエル",
+    "job": "踊子",
+    "rarity": "3",
+    "elements": [
+      "風"
+    ],
+    "physicals": [
+      "扇"
+    ]
+  }
+]

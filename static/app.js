@@ -1,4 +1,5 @@
-let abilitiesData = null;
+let resData = null;
+let charactersData = null;
 let currentImpact = "offense";
 
 // 8スロット固定
@@ -9,8 +10,9 @@ const partySlots = Array.from({ length: 8 }, (_, i) => ({
 }));
 
 async function loadAbilities() {
-  const res = await fetch("/abilities");
-  abilitiesData = await res.json();
+  const res = await fetch("/characters");
+  resData = await res.json();
+  charactersData = resData.characters;
 
   initPartySlots();
 }
@@ -41,12 +43,34 @@ function initPartySlots() {
 
 function populateCharacterSelect(slotDiv, slotState) {
   const select = slotDiv.querySelector(".character-select");
+  select.innerHTML = `<option value="">（未選択）</option>`;
 
-  abilitiesData.characters.forEach(c => {
-    const opt = document.createElement("option");
-    opt.value = c.character;
-    opt.textContent = c.character;
-    select.appendChild(opt);
+  const byJob = {};
+
+  charactersData.forEach(c => {
+    if (!byJob[c.job]) {
+      byJob[c.job] = [];
+    }
+    byJob[c.job].push(c);
+  });
+
+  JOB_ORDER.forEach(job => {
+    const chars = byJob[job];
+    if (!chars) return;
+
+    chars.sort(characterCompare);
+
+    const optgroup = document.createElement("optgroup");
+    optgroup.label = job;
+
+    chars.forEach(c => {
+      const opt = document.createElement("option");
+      opt.value = c.character_id;
+      opt.textContent = `${c.character_name} ★${(c.rarity)}`;
+      optgroup.appendChild(opt);
+    });
+
+    select.appendChild(optgroup);
   });
 
   select.addEventListener("change", () => {
@@ -69,17 +93,48 @@ function renderAbilities(slotDiv, slotState) {
   const box = slotDiv.querySelector(".abilities-box");
   box.innerHTML = "";
 
-  const charData = abilitiesData.characters.find(
-    c => c.character === slotState.character
+  const charData = charactersData.find(
+    c => c.character_id === slotState.character
   );
   if (!charData) return;
 
-  charData.abilities
-    .filter(a => a.source_type === "battle")
-    .forEach(a => {
-      const div = document.createElement("div");
-      div.className = "ability";
+  const bySource = {};
+  charData.abilities.forEach(a => {
+    bySource[a.source_type] ||= [];
+    bySource[a.source_type].push(a);
+  });
 
+  Object.entries(bySource).forEach(([source, abilities]) => {
+    renderAbilitySection(box, slotState, source, abilities);
+  });
+}
+
+function renderAbilitySection(container, slotState, source, abilities) {
+  const section = document.createElement("div");
+  section.className = `ability-section ${source}`;
+
+  const title = {
+    battle: "バトルアビリティ",
+    ex: "EXアビリティ（常時）",
+    support: "サポートアビリティ（常時）",
+    ultimate: "必殺技（常時）",
+  }[source] ?? source;
+
+  section.innerHTML = `<h4>${title}</h4>`;
+
+  abilities.forEach(a => {
+    const div = document.createElement("div");
+    div.className = "ability";
+
+    const rule = SOURCE_RULES[source];
+
+    if (rule.always_on) {
+      div.innerHTML = `
+        <strong>${a.ability_name}</strong>
+        <span class="always-on">常時発動</span>
+        <div class="desc">${a.description.join("<br>")}</div>
+      `;
+    } else {
       div.innerHTML = `
         <label>
           <input type="checkbox" data-ability="${a.ability_name}">
@@ -98,9 +153,24 @@ function renderAbilities(slotDiv, slotState) {
         }
         calculate();
       });
+    }
 
-      box.appendChild(div);
-    });
+    section.appendChild(div);
+  });
+
+  container.appendChild(section);
+}
+
+function characterCompare(a, b) {
+  // 1. rarity 降順
+  const rDiff = Number(b.rarity) - Number(a.rarity);
+  if (rDiff !== 0) return rDiff;
+
+  // 2. 五十音順（実用）
+  return a.character_name.localeCompare(
+    b.character_name,
+    "ja"
+  );
 }
 
 async function calculate() {
@@ -109,11 +179,18 @@ async function calculate() {
   partySlots.forEach(slot => {
     if (!slot.character) return;
 
-    slot.selectedAbilities.forEach(name => {
-      selected.push({
-        character: slot.character,
-        ability_name: name
-      });
+    const charData = charactersData.find(
+      c => c.character_id === slot.character
+    );
+
+    charData.abilities.forEach(a => {
+      const rule = SOURCE_RULES[a.source_type];
+      if (rule.always_on || slot.selectedAbilities.includes(a.ability_name)) {
+        selected.push({
+          character: slot.character,
+          ability_name: a.ability_name
+        });
+      }
     });
   });
 
@@ -232,6 +309,36 @@ const TAG_JP = {
 function roleToJP(role) {
   return ROLE_JP[role] ?? role
 }
+
+const SOURCE_RULES = {
+  battle: {
+    always_on: false,
+    stack_group: "battle"
+  },
+  ultimate: {
+    always_on: true,
+    stack_group: "ultimate"
+  },
+  ex: {
+    always_on: true,
+    stack_group: "battle"
+  },
+  support: {
+    always_on: true,
+    stack_group: "support"
+  }
+};
+
+const JOB_ORDER = [
+  "剣士",
+  "商人",
+  "盗賊",
+  "薬師",
+  "狩人",
+  "神官",
+  "学者",
+  "踊子",
+];
 
 function effectContentToJP(effect) {
   const { role, category, sub_category } = effect

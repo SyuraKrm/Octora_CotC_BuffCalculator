@@ -1,13 +1,16 @@
 import json
 from collections import Counter
-from .core import fetch_pages, load_items_from_files, parse_item, classify_unknown
-from .load_def import UNKNOWN_PATTERNS
+from pprint import pprint
+from core.core import fetch_pages, load_items_from_files, parse_item, classify_unknown, scrape_character_list, fetch_page2
+from core.load_def import UNKNOWN_PATTERNS
 
-OUTPUT_PATH = "data/abilities.json"
+OUTPUT_PATH_ABILITIES = "data/abilities.json"
+OUTPUT_PATH_CHARACTERS = "data/characters.json"
 
+# アビリティ一覧のスクレイピング
 def build_abilities():
 
-    MODE = "web"  # or "web"
+    MODE = "web"  # or "file"
 
     if MODE == "web":
         items = fetch_pages()
@@ -24,7 +27,7 @@ def build_abilities():
 
         results.append(result)
 
-    with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
+    with open(OUTPUT_PATH_ABILITIES, "w", encoding="utf-8") as f:
         json.dump(
             results,
             f,
@@ -32,13 +35,58 @@ def build_abilities():
             indent=2
         )
 
-    print(f"saved: {OUTPUT_PATH} ({len(results)} abilities)")
+    print(f"saved: {OUTPUT_PATH_ABILITIES} ({len(results)} abilities)")
 
     return results
 
-def load_abilities():
-    with open(OUTPUT_PATH, encoding="utf-8") as f:
+# ファイルからのキャラクター一覧取得
+def load_characters():
+    with open(OUTPUT_PATH_CHARACTERS, encoding="utf-8") as f:
         return json.load(f)
+
+# ファイルからのアビリティ一覧取得
+def load_abilities():
+    with open(OUTPUT_PATH_ABILITIES, encoding="utf-8") as f:
+        return json.load(f)
+
+# キャラクター一覧のスクレイピング
+def build_characters():
+
+    MODE = "web"  # or "web"
+
+    if MODE == "web":
+        items = scrape_character_list()
+
+    with open(OUTPUT_PATH_CHARACTERS, "w", encoding="utf-8") as f:
+        json.dump(
+            items,
+            f,
+            ensure_ascii=False,
+            indent=2
+        )
+
+    print(f"saved: {OUTPUT_PATH_CHARACTERS} ({len(items)} characters)")
+
+    return items
+
+# アビリティ一覧のスクレイピング
+def build_abilities_fromwiki(characters):
+    results = []
+
+    for character in characters:
+        print(f"scraping character:{character["character_name"]} page_id:{character["character_id"]}")
+        items = fetch_page2(character["character_id"])
+        results.append(items)
+        
+    with open(OUTPUT_PATH_ABILITIES, "w", encoding="utf-8") as f:
+        json.dump(
+            results,
+            f,
+            ensure_ascii=False,
+            indent=2
+        )
+
+    print(f"saved: {OUTPUT_PATH_ABILITIES} ({len(results)} abilities)")
 
 #Unknown精査用関数
 def inspect_unknowns():
@@ -70,11 +118,32 @@ def inspect_unknowns():
 # -----------------------------
 if __name__ == "__main__":
 
-    abilities = build_abilities()
+    #abilities = build_abilities()
+    abilities = []
 
     for i, ability in enumerate(abilities):
 
         print(f"--- ability:{i+1}----------------------")
         print(ability)
+
+    #characters = build_characters()
+    characters = [
+        {
+            "character_id": "733055",
+            "character_name": "アラウネEX2",
+        },
+        {
+            "character_id": "377291",
+            "character_name": "サイラス",
+        }
+    ]
+
+    for i, chara in enumerate(characters):
+
+        print(f"--- character:{i+1}----------------------")
+        print(chara)
+
+    characters = load_characters()
+    build_abilities_fromwiki(characters)
 
     #inspect_unknowns()

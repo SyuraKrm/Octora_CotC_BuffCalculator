@@ -1,7 +1,11 @@
 import re
 
 
-BASE_URL = "https://octopath.mimoza.jp/battle_abilities.php"
+SHOKO_BASE_URL = "https://octopath.mimoza.jp/battle_abilities.php"
+
+GAME8_BASE_URL = "https://game8.jp/octopathtraveler-sp/"
+
+GAME8_LIST_URL_SUFFIX = "263473"
 
 ATTACK_RE = re.compile(
     r'(?P<target>ランダムな)?ターゲットに(?P<hits>\d+)回の(?P<attr>.+?)属性攻撃'
@@ -73,7 +77,7 @@ EFFECT_PATTERNS = [
         "sub_category": "physical",
         "unit": "%",
         "patterns": [
-            r"(?P<tags>槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?(?:・(?P<tags2>槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?)*ダメージアップ(?P<value>\d+)%"
+            r"(?P<tags>(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?(?:・(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?)*)ダメージアップ(?P<value>\d+)%"
         ],
         "cap_group_template": "buff_damage_phys_{tag}"
     },
@@ -83,7 +87,7 @@ EFFECT_PATTERNS = [
         "sub_category": "elemental",
         "unit": "%",
         "patterns": [
-            r"(?P<tags>火|氷|雷|風|光|闇)(?:・(?P<tags2>火|氷|雷|風|光|闇))*属性ダメージアップ(?P<value>\d+)%"
+            r"(?P<tags>(?:火|氷|雷|風|光|闇)(?:・(?:火|氷|雷|風|光|闇))*)(属性)?ダメージアップ(?P<value>\d+)%"
         ],
         "cap_group_template": "buff_damage_elem_{tag}"
     },
@@ -171,7 +175,7 @@ EFFECT_PATTERNS = [
         "value": 100,
         "cap_group": "critical_certain",
         "patterns": [
-            r"必ずクリティカルの効果を付与",
+            r"必ずクリティカルの効果(と.*効果)?を付与",
             r"必ずクリティカルダメージになる効果を付与"
         ],
     },
@@ -233,7 +237,7 @@ EFFECT_PATTERNS = [
         "sub_category": "physical",
         "unit": "%",
         "patterns": [
-            r"(?P<tag>槍|短剣|剣|弓|斧|杖|扇|本)(?:・(?P<tags2>槍|短剣|剣|弓|斧|杖|扇|本))*攻撃ダメージアップの上限が(?P<value>\d+)%"
+            r"(?P<tags>(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?(?:・(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?)*)攻撃ダメージアップの上限が(?P<value>\d+)%"
         ],
         "cap_group_template": "buff_damage_phys_{tag}"
     },
@@ -243,7 +247,7 @@ EFFECT_PATTERNS = [
         "sub_category": "elemental",
         "unit": "%",
         "patterns": [
-            r"(?P<tag>火|氷|雷|風|闇|光)(?:・(?P<tags2>火|氷|雷|風|闇|光))*属性ダメージアップの上限が(?P<value>\d+)%"
+            r"(?P<tags>(?:火|氷|雷|風|光|闇)(?:・(?:火|氷|雷|風|光|闇))*)属性ダメージアップの上限が(?P<value>\d+)%"
         ],
         "cap_group_template": "buff_damage_elem_{tag}"
     },
@@ -273,7 +277,7 @@ EFFECT_PATTERNS = [
         "sub_category": "physical",
         "unit": "%",
         "patterns": [
-            r"(?P<tag>槍|短剣|剣|弓|斧|杖|扇|本)(?:・(?P<tags2>槍|短剣|剣|弓|斧|杖|扇|本))*耐性ダウンを受けた際の上限が(?P<value>\d+)%"
+            r"(?P<tags>(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?(?:・(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?)*)耐性ダウンを受けた際の上限が(?P<value>\d+)%"
         ],
         "cap_group_template": "debuff_damage_phys_{tag}"
     },
@@ -283,7 +287,7 @@ EFFECT_PATTERNS = [
         "sub_category": "elemental",
         "unit": "%",
         "patterns": [
-            r"(?P<tag>火|氷|雷|風|闇|光)(?:・(?P<tags2>火|氷|雷|風|闇|光))*耐性ダウンを受けた際の上限が(?P<value>\d+)%"
+            r"(?P<tags>(?:火|氷|雷|風|光|闇)(?:・(?:火|氷|雷|風|光|闇))*)耐性ダウンを受けた際の上限が(?P<value>\d+)%"
         ],
         "cap_group_template": "debuff_damage_elem_{tag}"
     },
@@ -321,7 +325,7 @@ EFFECT_PATTERNS = [
         "sub_category": "physical",
         "unit": "%",
         "patterns": [
-            r"(?P<tags>槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?(?:・(?P<tags2>槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?)*耐性ダウン(?P<value>\d+)%"
+            r"(?P<tags>(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?(?:・(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?)*)耐性ダウン(?P<value>\d+)%"
         ],
         "cap_group_template": "debuff_damage_phys_{tag}"
     },
@@ -331,7 +335,7 @@ EFFECT_PATTERNS = [
         "sub_category": "elemental",
         "unit": "%",
         "patterns": [
-            r"(?P<tags>火|氷|雷|風|光|闇)(?:・(?P<tags2>火|氷|雷|風|光|闇))*耐性ダウン(?P<value>\d+)%"
+            r"(?P<tags>(?:火|氷|雷|風|光|闇)(?:・(?:火|氷|雷|風|光|闇))*)耐性ダウン(?P<value>\d+)%"
         ],
         "cap_group_template": "debuff_damage_elem_{tag}"
     },
@@ -500,6 +504,72 @@ UNKNOWN_PATTERNS = [
     {
         "type": "unclassified",
         "patterns": [
+        ],
+    },
+]
+
+SCOPE_PATTERN = re.compile(
+    r"(?P<scope>(自身を除く)?"
+    r"(自身|自身とバディ|自身と後衛|"
+    r"味方後衛全体|味方前衛全体|味方前後衛全体|味方単体|"
+    r"ランダムなターゲット|敵全体|敵単体)"
+    r"(と自身の後衛)?)"
+    r"(に|の|を)"
+)
+
+SCOPE_OPTIONAL_PREFIX = [
+    "自身を除く",
+]
+
+SCOPE_OPTIONAL_SUFFIX = [
+    "と自身の後衛",
+    "と後衛",
+    "とバディ",
+]
+
+SCOPE_NORMALIZE_MAP = {
+    "自身": "self",
+    "と自身の後衛": "buddy",
+    "と後衛": "buddy",
+    "とバディ": "buddy",
+    "自身を除く": "self_exclude",
+
+    "味方単体": "ally_single",
+
+    "味方前衛全体": "ally_front_all",
+    "味方後衛全体": "ally_back_all",
+    "味方前後衛全体": "ally_all",
+
+    "敵単体": "enemy_single",
+    "敵全体": "enemy_all",
+
+    "ランダムなターゲット": "random",
+}
+
+TAB_DEFS = [
+    {
+        "tab_index": 0,
+        "source_type": "battle",
+        "mode": "table",
+    },
+    {
+        "tab_index": 1,
+        "source_type": "support",
+        "mode": "table",
+    },
+    {
+        "tab_index": 3,
+        "source_type": "ultimate",
+        "mode": "split_table",  # ← 特殊
+        "sections": [
+            {
+                "name": "ultimate",
+                "th_index": 0,
+            },
+            {
+                "name": "ex",
+                "th_index": 1,
+            },
         ],
     },
 ]

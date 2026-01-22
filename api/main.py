@@ -4,7 +4,7 @@ from fastapi.templating import Jinja2Templates
 from fastapi.responses import HTMLResponse
 from pydantic import BaseModel
 
-from core.build_data import load_abilities
+from core.build_data import load_characters, load_abilities
 from core.ui_common import aggregate, get_base_cap, apply_cap, build_cap_table, apply_presets, filter_by_impact
 import collections
 
@@ -31,30 +31,30 @@ def index(request: Request):
         {"request": request}
     )
 
-@app.get("/abilities")
-def get_abilities():
-    abilities = load_abilities()
+@app.get("/characters")
+def get_characters():
+    characters = load_characters()
 
-    characters = {}
+    # character_name → abilities
+    abil_map = {}
 
-    for a in abilities:
+    for group in abilities_master:
+        for a in group:
+            cid = a.get("character_id")
+            if not cid:
+                continue
 
-        char = a["character"]
-        if char not in characters:
-            characters[char] = {
-                "character": char,
-                "abilities": []
-            }
+            abil_map.setdefault(cid, []).append({
+                "ability_name": a["ability_name"],
+                "source_type": a["source_type"],
+                "description": a.get("raw_text", [])[:2],
+            })
 
-        characters[char]["abilities"].append({
-            "ability_name": a["ability_name"],
-            "source_type": a["source_type"],
-            "description": a["description"][:2],
-        })
+    for c in characters:
+        c["abilities"] = abil_map.get(c["character_id"], [])
 
-    return {
-        "characters": list(characters.values())
-    }
+    return {"characters": characters}
+
 
 @app.post("/calculate")
 def calculate(req: CalculateRequest):
@@ -62,12 +62,13 @@ def calculate(req: CalculateRequest):
     all_effects = []
 
     for sel in req.selected_abilities:
-        for abil in abilities_master:
-            if (
-                abil["character"] == sel["character"]
-                and abil["ability_name"] == sel["ability_name"]
-            ):
-                all_effects.extend(abil["effects"])
+        for group in abilities_master:
+            for abil in group:
+                if (
+                    abil["character_id"] == sel["character"]
+                    and abil["ability_name"] == sel["ability_name"]
+                ):
+                    all_effects.extend(abil["effects"])
 
     #breakpoint()
 
