@@ -1,9 +1,21 @@
 // ui_handlers.js
 function bindHandlers() {
-  document.querySelectorAll(".btn-ability").forEach(btn => {
+  document.addEventListener("click", (e) => {
+    if (!state.ui.characterSelectorOpen) return;
+
+    const wrapper = state.ui.openSelectorWrapper;
+    if (!wrapper.contains(e.target)) {
+      closeCharacterSelector();
+    }
+  });
+
+  document.querySelectorAll(".modal-tab").forEach(btn => {
     btn.addEventListener("click", () => {
-      const slot = Number(btn.dataset.slot);
-      onOpenAbilityModal(slot);
+      document.querySelectorAll(".modal-tab")
+        .forEach(b => b.classList.remove("active"));
+
+      btn.classList.add("active");
+      handleAbilityModalTabClick(btn.dataset.tab);
     });
   });
 }
@@ -34,6 +46,14 @@ function bindModalHandlers() {
 //  document
 //    .getElementById("modalCloseBtn")
 //    .addEventListener("click", onCancelAbilityModal);
+}
+
+function onOpenCharacterSelector(wrapper) {
+  openCharacterSelector(wrapper)
+}
+
+function onCloseCharacterSelector() {
+  closeCharacterSelector()
 }
 
 function onOpenAbilityModal(slotIndex) {
@@ -67,6 +87,19 @@ function handleCharacterSelect(slotIndex, characterId) {
   };
 
   renderAll();
+}
+
+function openCharacterSelector(wrapper) {
+  state.ui.characterSelectorOpen = true;
+  state.ui.openSelectorWrapper = wrapper;
+}
+
+function closeCharacterSelector() {
+  const dropdown = document.querySelector(".character-dropdown:not(.hidden)");
+  if (dropdown) dropdown.classList.add("hidden");
+
+  state.ui.characterSelectorOpen = false;
+  state.ui.openSelectorWrapper = null;
 }
 
 function openAbilityModal(slotIndex, tab = "battle") {

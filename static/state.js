@@ -18,6 +18,8 @@ const state = {
       open: false,
       slotIndex: null,      // どのスロットのモーダルか
       tab: "battle"    // battle / ex / support
-    }
+    },
+    characterSelectorOpen: false,
+    openSelectorWrapper: null
   }
 };

@@ -59,48 +59,16 @@ function renderCharacterHeader(character, slotIndex) {
   const div = document.createElement("div");
   div.className = "card-left";
 
-  const select = document.createElement("select");
-  select.innerHTML = `<option value="">（未選択）</option>`;
+  const selector = renderCharacterSelectorAccordion(character, slotIndex);
 
-  const byJob = {};
-  state.characters.forEach(c => {
-    byJob[c.job] ??= [];
-    byJob[c.job].push(c);
-  });
-
-  JOB_ORDER.forEach(job => {
-    const chars = byJob[job];
-    if (!chars) return;
-
-    chars.sort(characterCompare);
-
-    const optgroup = document.createElement("optgroup");
-    optgroup.label = job;
-
-    chars.forEach(c => {
-      const opt = document.createElement("option");
-      opt.value = c.character_id;
-      opt.textContent = `${c.character_name} ★${c.rarity}`;
-      if (character && c.character_id === character.character_id) {
-        opt.selected = true;
-      }
-      optgroup.appendChild(opt);
-    });
-
-    select.appendChild(optgroup);
-  });
-
-  select.onchange = () => {
-    handleCharacterSelect(slotIndex, select.value || null);
-  };
+  div.appendChild(selector);
 
   const btn = document.createElement("button");
   btn.className = "ability-edit-btn"
-  btn.textContent = "アビリティ変更";
+  btn.textContent = "バトアビ選択";
   btn.disabled = !character;
   btn.onclick = () => openAbilityModal(slotIndex);
 
-  div.appendChild(select);
   div.appendChild(btn);
 
   return div;
@@ -175,6 +143,140 @@ function renderCharacterTabBody(container, slotIndex, tab) {
     container.appendChild(div);
   });
 }
+
+/* アコーディオン機能を搭載したカスタムSelector */
+function renderCharacterSelectorAccordion(character, slotIndex) {
+  const wrapper = document.createElement("div");
+  wrapper.className = "character-select";
+
+  // 表示部
+  const selected = document.createElement("div");
+  selected.className = "selected-character";
+  if (character && character.character_id) {
+    selected.textContent = getCharacterLabel(character);
+    selected.classList.add("has-value");
+  } else {
+    selected.textContent = "キャラクターを選択";
+    selected.classList.remove("has-value");
+  }
+
+  wrapper.appendChild(selected);
+
+  // ドロップダウン
+  const dropdown = document.createElement("div");
+  dropdown.className = "character-dropdown hidden";
+
+  // スクロールバー用に1クッションかませる
+  const dropdownScroll = document.createElement("div");
+  dropdownScroll.className = "dropdown-scroll";
+  dropdown.appendChild(dropdownScroll);
+
+  const reset = document.createElement("div");
+  reset.className = "reset-option";
+  reset.textContent = "（選択をリセット）";
+
+  reset.addEventListener("click", () => {
+    handleCharacterSelect(slotIndex, null);
+    dropdown.classList.add("hidden");
+  });
+
+  dropdownScroll.appendChild(reset);  
+
+  const byJob = {};
+  state.characters.forEach(c => {
+    if (!byJob[c.job]) byJob[c.job] = [];
+    byJob[c.job].push(c);
+  });
+
+  JOB_ORDER.forEach(job => {
+    const chars = byJob[job];
+    if (!chars) return;
+
+    chars.sort(characterCompare);
+
+    const group = document.createElement("div");
+    group.className = "job-group";
+
+    const header = document.createElement("div");
+    header.className = "job-header";
+    header.textContent = job;
+
+    const list = document.createElement("div");
+    list.className = "job-characters";
+
+    header.addEventListener("click", () => {
+      group.classList.toggle("open");
+    });
+
+    chars.forEach(c => {
+      const opt = document.createElement("div");
+      opt.className = "char-option";
+      opt.textContent = getCharacterLabel(c);
+
+      opt.addEventListener("click", () => {
+        handleCharacterSelect(slotIndex, c.character_id);
+        dropdown.classList.add("hidden");
+      });
+
+      list.appendChild(opt);
+    });
+
+    group.appendChild(header);
+    group.appendChild(list);
+    dropdownScroll.appendChild(group);
+  });
+
+  wrapper.appendChild(dropdown);
+
+  selected.addEventListener("click", (e) => {
+    e.stopPropagation();
+    dropdown.classList.toggle("hidden");
+    onOpenCharacterSelector(wrapper);
+  });
+
+  return wrapper;
+}
+
+/* 標準の Selct 要素を用いたキャラ選択の作成 */
+function renderCharacterSelectorLegacy(character, slotIndex) {
+  const select = document.createElement("select");
+  select.innerHTML = `<option value="">（未選択）</option>`;
+
+  const byJob = {};
+  state.characters.forEach(c => {
+    byJob[c.job] ??= [];
+    byJob[c.job].push(c);
+  });
+
+  JOB_ORDER.forEach(job => {
+    const chars = byJob[job];
+    if (!chars) return;
+
+    chars.sort(characterCompare);
+
+    const optgroup = document.createElement("optgroup");
+    optgroup.label = job;
+
+    chars.forEach(c => {
+      const opt = document.createElement("option");
+      opt.value = c.character_id;
+      opt.textContent = `${c.character_name} ★${c.rarity}`;
+      if (character && c.character_id === character.character_id) {
+        opt.selected = true;
+      }
+      optgroup.appendChild(opt);
+    });
+
+    select.appendChild(optgroup);
+  });
+
+  select.onchange = () => {
+    handleCharacterSelect(slotIndex, select.value || null);
+  };
+
+  return select;
+}
+
 
 /////////////////////////
 // アビリティ選択モーダル 
@@ -306,6 +408,9 @@ function characterCompare(a, b) {
   );
 }
 
+function getCharacterLabel(character) {
+  return `${character.character_name} ★${character.rarity}`
+}
 
 /////////////////////////
 // ここから先は v2 の実装 
