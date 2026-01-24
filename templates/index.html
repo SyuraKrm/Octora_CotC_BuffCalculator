@@ -10,9 +10,7 @@
 
     <!-- 上：操作エリア -->
     <div class="control-panel">
-      <h2>編成・アビリティ選択</h2>
-
-      <div class="party-slots">
+      <div class="character-ability-cards">
         <!-- JSで8枠生成 -->
       </div>
     </div>
@@ -41,6 +39,38 @@
     </table>
     </div>
   </div>
+
+  <!-- Ability Select Modal -->
+  <div id="abilityModal" class="modal hidden">
+    <div class="modal-backdrop"></div>
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modalCharacterName">キャラクター名</h3>
+        <!--<button id="modalCloseBtn">×</button>-->
+      </div>
+
+      <div class="modal-tabs">
+        <button class="modal-tab active" data-tab="battle">バトアビ</button>
+        <button class="modal-tab" data-tab="ex">必殺・EX</button>
+        <button class="modal-tab" data-tab="support">サポアビ</button>
+      </div>
+
+      <div class="modal-body">
+        <!-- 後で中身を描画 -->
+      </div>
+
+      <div class="modal-footer">
+        <button id="modalCancelBtn">キャンセル</button>
+        <button id="modalOkBtn">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/constants.js"></script>
+  <script src="/static/state.js"></script>
+  <script src="/static/ui_render.js"></script>
+  <script src="/static/ui_handlers.js"></script>
   <script src="/static/app.js"></script>
 </body>
 

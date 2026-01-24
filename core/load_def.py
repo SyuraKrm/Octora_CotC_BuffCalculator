@@ -311,9 +311,9 @@ EFFECT_PATTERNS = [
     {
         "role": "debuff",
         "category": "resistance",
-        "sub_category": "physical",
+        "sub_category": "elemental",
         "unit": "%",
-        "cap_group": "debuff_resist_phys_all",
+        "cap_group": "debuff_resist_elem_all",
         "tag" : "all",
         "patterns": [
             r"属性([^0-9]*)耐性ダウン(?P<value>\d+)[%％]"

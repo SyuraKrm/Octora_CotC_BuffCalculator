@@ -65,7 +65,7 @@ def calculate(req: CalculateRequest):
         for group in abilities_master:
             for abil in group:
                 if (
-                    abil["character_id"] == sel["character"]
+                    abil["character_id"] == sel["character_id"]
                     and abil["ability_name"] == sel["ability_name"]
                 ):
                     all_effects.extend(abil["effects"])

@@ -1,17 +1,17 @@
 @charset "utf-8";
 
 :root {
-  --bg-main: #0b1220;
-  --bg-panel: #111a2e;
-  --bg-panel-soft: #16233d;
+  --bg-main: #1a1714;        /* 全体背景 */
+  --bg-panel: #23201c;       /* カード背景 */
+  --bg-panel-light: #2c2823; /* hover / active */
 
-  --text-main: #e6e3dc;
-  --text-sub: #b9b4a8;
-  --text-muted: #8a8790;
+  --text-main: #e8e2d6;      /* 基本文字 */
+  --text-sub: #b9b2a6;       /* 説明文 */
 
-  --accent-gold: #c9a24d;
-  --accent-gold-dim: #9f8542;
+  --accent-gold: #c9a85c;
+  --accent-blue: #3a4f7a;
 }
+
 
 body {
     font-family: sans-serif;
@@ -64,25 +64,6 @@ html, body {
   background: #16233d;
   border-left: 3px solid var(--accent-gold);
   color: #f1ede3;
-}
-
-.party-slots {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  gap: 8px;
-  overflow-x: auto;
-  background: rgba(22, 35, 61, 0.85);
-  border: 1px solid rgba(201,162,77,0.15);
-  border-radius: 6px;
-  padding: 6px;
-}
-
-.party-slot.empty {
-  opacity: 0.6;
-}
-
-.party-slot.empty .abilities-box {
-  display: none;
 }
 
 .ability {
@@ -144,4 +125,173 @@ tr.group-start td {
 tr.group-continued td {
   border-top: 1px dashed rgba(201,162,77,0.15);
   color: var(--text-muted);
+}
+
+/* カード／モーダルのタブ共通 */
+.card-tabs,
+.modal-tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.card-tab,
+.modal-tab {
+  flex: 1;
+  padding: 6px 0;
+  background: transparent;
+  border: 1px solid rgba(201,162,77,0.3);
+  color: #cbd5e1;
+  cursor: pointer;
+  border-radius: 6px 6px 0 0;
+}
+
+.card-tab.active,
+.modal-tab.active {
+  background: linear-gradient(
+    180deg,
+    rgba(201,162,77,0.35),
+    rgba(201,162,77,0.15)
+  );
+  color: #f8fafc;
+  border-bottom: none;
+}
+
+/* 以降　キャラクターカード部分 */
+.character-ability-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.character-card {
+  display: flex;
+  background: var(--bg-panel);
+  border: 1px solid var(--accent-gold);
+  border-radius: 8px;
+  padding: 8px;
+  gap: 12px;
+}
+
+/* 左 4割 */
+.card-left {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+}
+
+.character-select {
+  background: var(--bg-panel-light);
+  color: var(--text-main);
+  border: 1px solid var(--accent-gold);
+}
+
+.character-icon {
+  height: 96px;
+  background: #000;
+  border: 1px solid var(--accent-gold);
+}
+
+/* 右 6割 */
+.card-right {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.card-tabs {
+  flex-shrink: 0;
+}
+
+.card-tab-body {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.ability-edit-btn {
+  margin-top: auto;
+  background: var(--accent-blue);
+  color: var(--text-main);
+  border: none;
+  padding: 6px;
+  cursor: pointer;
+}
+
+
+/* 以降　アビリティ選択モーダル */
+.modal.hidden {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+}
+
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  position: relative;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  max-height: 80vh;
+  width: 720px;
+  background: #111a2e;
+  border: 1px solid rgba(201,162,77,0.3);
+  border-radius: 6px;
+  padding: 12px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-top: 1px solid rgba(201,162,77,0.25);
+}
+
+.modal-footer button {
+  min-width: 120px;
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+#modalCancelBtn {
+  background: #334155;
+  color: #cbd5e1;
+}
+
+#modalOkBtn {
+  background: linear-gradient(180deg, #c9a24d, #9f8542);
+  color: #111;
+  font-weight: bold;
+}
+
+.modal-ability.readonly {
+  opacity: 0.85;
+}
+
+.modal-ability.readonly label {
+  cursor: default;
+}
+
+.modal-ability.readonly input {
+  display: none;
 }
