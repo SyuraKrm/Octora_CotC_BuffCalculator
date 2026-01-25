@@ -171,8 +171,8 @@ EFFECT_PATTERNS = [
         "role": "buff",
         "category": "critical",
         "sub_category": "certain",
-        "unit": "%",
-        "value": 100,
+        "unit": "",
+        "value": 1,
         "cap_group": "critical_certain",
         "patterns": [
             r"必ずクリティカルの効果(と.*効果)?を付与",

@@ -130,3 +130,52 @@ const CATEGORY_CAP_MAP = {
   power: 999999,
   critical: 1,
 }
+
+const ROLE_ORDER = {
+  buff: 10,
+  debuff: 20,
+}
+
+const CATEGORY_ORDER = {
+  stat: 10,
+  damage: 20,
+  resistance: 30,
+  critical: 50,
+  power: 60,
+  dmg_cap: 70,
+  cap_increase: 99,
+}
+
+const SUB_CATEGORY_ORDER = {
+  certain: 5,
+  physical: 10,
+  elemental: 20,
+  attack_physical: 11,
+  attack_elemental: 21,
+  defence_physical: 31,
+  defence_elemental: 41,
+  attack_critical_rate: 50,
+  critical: 80,
+  rate: 85,
+  speed: 90,
+  attack: 98,
+  defence: 99,
+}
+
+const TAG_ORDER = {
+  sword: 10,
+  spear: 11,
+  dagger: 12,
+  axe: 13,
+  bow: 14,
+  staff: 15,
+  tome: 16,
+  fan: 17,
+
+  fire: 40,
+  ice: 41,
+  lightning: 42,
+  wind: 43,
+  light: 44,
+  dark: 45,
+}

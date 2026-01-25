@@ -20,6 +20,36 @@ function bindHandlers() {
   });
 }
 
+function bindSummaryFilterHandlers() {
+  // 攻撃 / 防御
+  document.addEventListener("click", e => {
+    const btn = e.target.closest("[data-filter-tab]")
+    if (!btn) return
+
+    state.ui.filters.tab = btn.dataset.filterTab
+    renderSummaryFilters()
+    recalcSummary()
+  })
+
+  // 区分・範囲
+  document.addEventListener("change", e => {
+    if (e.target.name === "stack") {
+      state.ui.filters.stackGroup = e.target.value
+      recalcSummary()
+    }
+
+    if (e.target.name === "scope") {
+      state.ui.filters.scope = e.target.value
+      recalcSummary()
+    }
+
+    if (e.target.id === "summary-character-filter") {
+      state.ui.filters.selectedCharacter = e.target.value || null
+      recalcSummary()
+    }
+  })
+}
+
 function bindModalHandlers() {
   document.querySelectorAll(".modal-tab").forEach(btn => {
     btn.addEventListener("click", () => {
@@ -87,6 +117,7 @@ function handleCharacterSelect(slotIndex, characterId) {
   };
 
   renderAll();
+  calculate(); // 常時発動効果のみで一度再計算
 }
 
 function openCharacterSelector(wrapper) {
@@ -116,6 +147,11 @@ function openAbilityModal(slotIndex, tab = "battle") {
     }
   }
 
+  document.querySelectorAll(".modal-tab")
+    .forEach(b => b.classList.remove("active"));
+
+  document.querySelectorAll(".modal-tab")[0].classList.add("active")
+
   renderAbilityModal()
 }
 
@@ -126,9 +162,6 @@ function handleAbilityModalTabClick(tab) {
 
 function onAbilityToggle(sourceType, abilityName, target) {
   const temp = state.ui.abilityModal.tempSelected[sourceType]
-
-  const { slotIndex } = state.ui.abilityModal;
-  const slot = state.party[slotIndex];
 
   if (target.checked) {
     if (temp.size >= MAX_BATTLE_ABILITIES) {
@@ -172,7 +205,7 @@ function confirmAbilityModal() {
 
   state.ui.abilityModal.open = false
 
-  renderExcludeSummary()
+  renderAll()
   calculate() // 効果再計算
 }
 
@@ -238,6 +271,7 @@ function recalcSummary() {
     e, state.ui.filters.scope, state.ui.filters.selectedCharacter))
 
   rows = aggregateToSummaryRows(list)
+  rows.sort((a, b) => a.sortKey.localeCompare(b.sortKey))
 
   renderSummary(rows)
 }
@@ -315,6 +349,7 @@ function aggregateToSummaryRows(filteredEffects) {
   const rows = []
 
   for (const effects of groups.values()) {
+    if (!shouldCreateSummaryRow(effects)) continue
     rows.push(buildSummaryRow(effects))
   }
 
@@ -326,10 +361,7 @@ function groupByCapGroup(effects) {
 
   for (const e of effects) {
     const key = [
-      e.role,
-      e.category,
-      e.sub_category,
-      e.tag
+      e.cap_group
     ].join("|")
 
     if (!map.has(key)) {
@@ -341,8 +373,19 @@ function groupByCapGroup(effects) {
   return map
 }
 
+function shouldCreateSummaryRow(effectsInGroup) {
+  return effectsInGroup.some(e => e.category !== "cap_increase")
+}
+
 function buildSummaryRow(effectsInGroup) {
-  const base = effectsInGroup[0]
+
+  let base = null
+  for (const e of effectsInGroup) {
+    if (e.category !== "cap_increase") {
+      base = e;
+      break;
+    }
+  }
 
   const sum = effectsInGroup
     .filter(e => e.category !== "cap_increase")
@@ -373,17 +416,30 @@ function buildSummaryRow(effectsInGroup) {
     },
 
     value: {
+      unit: base.unit,
       sum,
       cap,
       applied,
-      capped: cap != null && sum > cap
+      capped: cap != null && applied == cap,
+      cap_increased: cap != null && cap > defaultCap
     },
 
     meta: {
       stack_group: base.stack_group,
       sources: effectsInGroup
-    }
+    },
+
+    sortKey: buildSortKey(base)
   }
+}
+
+function buildSortKey(baseEffect) {
+  return [
+    ROLE_ORDER[baseEffect.role] ?? 99,
+    CATEGORY_ORDER[baseEffect.category] ?? 99,
+    SUB_CATEGORY_ORDER[baseEffect.sub_category] ?? 99,
+    TAG_ORDER[baseEffect.tag] ?? 99
+  ].join("|")
 }
 
 function roleToJP(role) {

@@ -2,12 +2,8 @@
 function renderAll() {
   renderCharacterAbilityCards();
   renderAbilityModal();
-  //renderSummary();
-}
-
-function renderExcludeSummary() {
-  renderCharacterAbilityCards();
-  renderAbilityModal();
+  renderSummaryFilters();
+  recalcSummary();
 }
 
 /////////////////////////
@@ -417,6 +413,75 @@ function getCharacterLabel(character) {
 // 効果サマリーペイン 
 /////////////////////////
 
+function renderSummaryFilters() {
+  const root = document.getElementById("summary-filters")
+  if (!root) return
+
+  const { tab, stackGroup, scope, selectedCharacter } = state.ui.filters
+
+  root.innerHTML = `
+    <div class="filter-group">
+      <div class="filter-title">対象</div>
+      <div class="filter-options">
+        <button data-filter-tab="attack" class="${tab === "attack" ? "active" : ""}">攻撃</button>
+        <button data-filter-tab="defense" class="${tab === "defense" ? "active" : ""}">防御</button>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <div class="filter-title">区分</div>
+      <div class="filter-options">
+        ${renderRadio("stack", "battle", "バトアビ", stackGroup)}
+        ${renderRadio("stack", "support", "サポアビ", stackGroup)}
+        ${renderRadio("stack", "special", "必殺技", stackGroup)}
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <div class="filter-title">適用範囲</div>
+      <div class="filter-options">
+        ${renderRadio("scope", "both", "前後衛", scope)}
+        ${renderRadio("scope", "front", "前衛のみ", scope)}
+        ${renderRadio("scope", "back", "後衛のみ", scope)}
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <div class="filter-title">キャラ視点</div>
+      <div class="filter-options">
+        ${renderCharacterSelect(selectedCharacter)}
+      </div>
+    </div>
+  `
+}
+
+function renderRadio(name, value, label, current) {
+  return `
+    <label class="filter-radio">
+      <input type="radio" name="${name}" value="${value}" ${current === value ? "checked" : ""}>
+      ${label}
+    </label>
+  `
+}
+
+function renderCharacterSelect(selectedCharacterId) {
+  const options = state.party
+    .filter(p => p.character_id)
+    .map(p => {
+      const ch = state.characters.find(c => c.character_id === p.character_id)
+      return `<option value="${ch.character_id}" ${selectedCharacterId === ch.character_id ?
+         "selected" : ""}>${ch.character_name}</option>`
+    })
+    .join("")
+
+  return `
+    <select id="summary-character-filter">
+      <option value="">全体</option>
+      ${options}
+    </select>
+  `
+}
+
 function renderSummary(rows) {
   const tbody = document.querySelector("#effect-summary-body")
   if (!tbody) return
@@ -435,40 +500,55 @@ function renderSummaryRow(row) {
   tr.dataset.capGroup = row.key.cap_group ?? ""
   tr.dataset.stackGroup = row.meta.stack_group
 
-  tr.appendChild(td(row.label.target, "col-target"))
-  tr.appendChild(td(row.label.effect, "col-effect"))
-  tr.appendChild(td(row.label.type, "col-type"))
+  tr.appendChild(td(row, row.label.target, "col-target"))
+  tr.appendChild(td(row, row.label.effect, "col-effect"))
+  tr.appendChild(td(row, row.label.type, "col-type"))
 
-  tr.appendChild(td(formatValue(row.value.sum), "col-sum"))
-  tr.appendChild(td(formatCap(row.value.cap), "col-cap"))
-  tr.appendChild(td(formatApplied(row.value), "col-applied"))
-
-  if (row.value.capped) {
-    tr.classList.add("is-capped")
+  tr.appendChild(td(row, formatValue(row.value.sum, row.value.unit), "col-sum"))
+  const capTd = td(row, formatCap(row.value.cap, row.value.unit), "col-cap")
+  if (row.value.cap_increased) {
+    capTd.classList.add("cap-increased");
   }
+  tr.appendChild(capTd)
+  const appliedTd = td(row, formatApplied(row.value, row.value.unit), "col-applied")
+  if (row.value.capped) {
+    appliedTd.classList.add("capped");
+  }
+  tr.appendChild(appliedTd)
 
   return tr
 }
 
-function td(text, className) {
+function td(row, text, className) {
   const el = document.createElement("td")
   el.textContent = text
   if (className) el.className = className
+  if (row.meta.sources?.length) {
+    el.classList.add("has-tooltip");
+    const tooltipText = row.meta.sources
+      .map(s => s.ability_name)
+      .filter(Boolean)
+      .join("\n");
+
+    if (tooltipText) {
+      el.dataset.tooltip = tooltipText;
+    }
+  }
   return el
 }
 
-function formatValue(value) {
-  return `${value}%`
+function formatValue(value, unit) {
+  return `${value}${unit}`
 }
 
-function formatCap(cap) {
-  return cap == null ? "―" : `${cap}%`
+function formatCap(cap, unit) {
+  return cap == null ? "―" : `${cap}${unit}`
 }
 
-function formatApplied(value) {
+function formatApplied(value, unit) {
   return value.capped
-    ? `${value.applied}%`
-    : `${value.applied}%`
+    ? `${value.applied}${unit}`
+    : `${value.applied}${unit}`
 }
 
 

@@ -14,6 +14,8 @@ async function loadCharacters() {
 async function init() {
   await loadCharacters();
   bindHandlers();
+  bindSummaryFilterHandlers();
+
   renderAll();
 }
 

@@ -16,28 +16,27 @@
     </div>
 
     <!-- 下：結果表示エリア -->
-    <div class="result-panel">
-    <h2>効果サマリー</h2>
-
-    <div class="tabs">
-        <button class="tab active" data-tab="offense">🗡 攻撃</button>
-        <button class="tab" data-tab="defense">🛡 防御</button>
-    </div>
+    <div class="summary-pane">
+      <div class="summary-filters" id="summary-filters">
+        <!-- JSで描画 -->
+      </div>
 
     <!--<table id="resultTable">-->
-    <table class="effect-summary">
-        <thead>
-        <tr>
-            <th>対象</th>
-            <th>効果内容</th>
-            <th>区分</th>
-            <th>合算</th>
-            <th>上限</th>
-            <th>適用</th>
-        </tr>
-        </thead>
-        <tbody id="effect-summary-body"></tbody>
-    </table>
+      <div class="summary-table">
+        <table class="effect-summary">
+            <thead>
+            <tr>
+                <th>対象</th>
+                <th>効果内容</th>
+                <th>区分</th>
+                <th>合算</th>
+                <th>上限</th>
+                <th>適用</th>
+            </tr>
+            </thead>
+            <tbody id="effect-summary-body"></tbody>
+        </table>
+      </div>
     </div>
   </div>
 

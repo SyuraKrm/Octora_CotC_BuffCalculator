@@ -48,7 +48,7 @@ def get_characters():
             abil_map.setdefault(cid, []).append({
                 "ability_name": a["ability_name"],
                 "source_type": a["source_type"],
-                "description": a.get("raw_text", [])[:2],
+                "description": a.get("raw_text", [])[:20],
             })
 
     for c in characters:
