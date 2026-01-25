@@ -5,7 +5,8 @@ from fastapi.responses import HTMLResponse
 from pydantic import BaseModel
 
 from core.build_data import load_characters, load_abilities
-from core.ui_common import aggregate, get_base_cap, apply_cap, build_cap_table, apply_presets, filter_by_impact
+from api.constants import SOURCE_RULES
+
 import collections
 
 class CalcInput(BaseModel):
@@ -58,6 +59,57 @@ def get_characters():
 
 @app.post("/calculate")
 def calculate(req: CalculateRequest):
+    """
+    effect 正規化専用 API
+    - 合算しない
+    - 上限適用しない
+    - フィルタしない
+    """
+
+    normalized_effects = []
+
+    for sel in req.selected_abilities:
+        for group in abilities_master:
+            for abil in group:
+
+                stack_group = SOURCE_RULES.get(
+                    abil["source_type"], {}
+                ).get("stack_group")
+
+                if (
+                    abil.get("character_id") == sel["character_id"]
+                    and abil.get("ability_name") == sel["ability_name"]
+                ):
+                    for e in abil.get("effects", []):
+                        normalized_effects.append({
+                            # --- ability 粒度 ---
+                            "character_id": abil["character_id"],
+                            "ability_name": abil["ability_name"],
+                            "source_type": abil["source_type"],
+
+                            # --- effect 本体 ---
+                            "role": e.get("role"),
+                            "category": e.get("category"),
+                            "sub_category": e.get("sub_category"),
+
+                            "unit": e.get("unit"),
+                            "value": e.get("value"),
+                            "tag": e.get("tag"),
+
+                            "stack_group": stack_group,
+                            "cap_group": e.get("cap_group"),
+
+                            "scopes": e.get("scopes", []),
+                            "condition": e.get("condition"),
+                        })
+
+    #breakpoint()
+
+    return {
+        "effects": normalized_effects
+    }
+
+def calculate_old(req: CalculateRequest):
     # ① 選択アビリティ → effects 展開
     all_effects = []
 
@@ -70,7 +122,7 @@ def calculate(req: CalculateRequest):
                 ):
                     all_effects.extend(abil["effects"])
 
-    #breakpoint()
+    breakpoint()
 
     # ② 上限突破テーブル
     cap_table = build_cap_table(all_effects)

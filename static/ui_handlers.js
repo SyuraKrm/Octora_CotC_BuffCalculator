@@ -172,7 +172,7 @@ function confirmAbilityModal() {
 
   state.ui.abilityModal.open = false
 
-  renderAll()
+  renderExcludeSummary()
   calculate() // 効果再計算
 }
 
@@ -209,15 +209,12 @@ async function calculate() {
       selected.push({
         character_id: slot.character_id,
         ability_name: ability.ability_name,
-        source_type: ability.source_type
       });
     });
   });
 
   const payload = {
     selected_abilities: selected,
-    presets: [],
-    impact: state.currentImpact
   };
 
   const res = await fetch("/calculate", {
@@ -227,5 +224,194 @@ async function calculate() {
   });
 
   const data = await res.json();
-  renderTable(data.rows);
+  state.effects = data.effects;
+
+  recalcSummary();
+}
+
+function recalcSummary() {
+  let list = state.effects
+
+  list = list.filter(e => filterByRoleCategory(e, state.ui.filters.tab))
+  list = list.filter(e => filterByStackGroup(e, state.ui.filters.stackGroup))
+  list = list.filter(e => isEffectVisible(
+    e, state.ui.filters.scope, state.ui.filters.selectedCharacter))
+
+  rows = aggregateToSummaryRows(list)
+
+  renderSummary(rows)
+}
+
+function filterByRoleCategory(effect, activeTab) {
+  const rules = EFFECT_ROLE_MAP[activeTab]
+  if (!rules) return false
+
+  return rules.some(rule =>
+    effect.role === rule.role &&
+    effect.category === rule.category &&
+    (!rule.sub_category || effect.sub_category === rule.sub_category)
+  )
+}
+
+function filterByStackGroup(effect, activeStackGroup) {
+  return activeStackGroup === effect.stack_group
+}
+
+function isEffectVisible(effect, viewScope, selectedCharacterId) {
+  const scopes = effect.scopes
+
+  // 敵向けは無条件に含めておく
+  if (scopes.includes("enemy_single")) return true
+  if (scopes.includes("enemy_all")) return true
+  if (scopes.includes("random")) return true
+
+  // 「自信を除く」かつ「その人のアビ」である場合は除外
+  if (scopes.includes("self_exclude") && selectedCharacterId && effect.character_id === selectedCharacterId) {
+    return false
+  }
+
+  let visibleByScope = false;
+  let visibleByCharacter = false;
+
+  if (viewScope === "both") {
+    visibleByScope = scopes.some(s =>
+      s === "ally_front_all" ||
+      s === "ally_back_all" ||
+      s === "ally_all"
+    )
+  }
+
+  if (viewScope === "front") {
+    visibleByScope = scopes.some(s =>
+      s === "ally_front_all" ||
+      s === "ally_all"
+    )
+  }
+
+  if (viewScope === "back") {
+    visibleByScope = scopes.some(s =>
+      s === "ally_back_all" ||
+      s === "ally_all"
+    )
+  }
+
+  // 味方単体は一旦必ず含めておく？
+  if (scopes.includes("ally_single")) visibleByCharacter = true;
+
+  if (selectedCharacterId) {
+    if (scopes.includes("self")) {
+      visibleByCharacter = effect.character_id === selectedCharacterId
+    }
+  } else {
+    // キャラが選択されていない = 誰視点かわからないので自己以外バフは一旦必ず含めておく
+    if (scopes.includes("self_exclude")) visibleByCharacter = true;
+  }
+
+  return visibleByScope || visibleByCharacter
+}
+
+function aggregateToSummaryRows(filteredEffects) {
+  const groups = groupByCapGroup(filteredEffects)
+  const rows = []
+
+  for (const effects of groups.values()) {
+    rows.push(buildSummaryRow(effects))
+  }
+
+  return rows
+}
+
+function groupByCapGroup(effects) {
+  const map = new Map()
+
+  for (const e of effects) {
+    const key = [
+      e.role,
+      e.category,
+      e.sub_category,
+      e.tag
+    ].join("|")
+
+    if (!map.has(key)) {
+      map.set(key, [])
+    }
+    map.get(key).push(e)
+  }
+
+  return map
+}
+
+function buildSummaryRow(effectsInGroup) {
+  const base = effectsInGroup[0]
+
+  const sum = effectsInGroup
+    .filter(e => e.category !== "cap_increase")
+    .reduce((acc, e) => acc + e.value, 0)
+
+  let defaultCap = CATEGORY_CAP_MAP[base.category];
+
+  const cap = Math.max(defaultCap, 
+    effectsInGroup
+      .filter(e => e.category === "cap_increase" && e.cap_group)
+      .reduce((max, e) => Math.max(max, e.value), null))
+
+  const applied = cap != null ? Math.min(sum, cap) : sum
+
+  return {
+    key: {
+      role: base.role,
+      category: base.category,
+      sub_category: base.sub_category,
+      tag: base.tag,
+      cap_group: base.cap_group
+    },
+
+    label: {
+      target: roleToJP(base.role),
+      effect: effectContentToJP(base),
+      type: tagToJP(base.tag)
+    },
+
+    value: {
+      sum,
+      cap,
+      applied,
+      capped: cap != null && sum > cap
+    },
+
+    meta: {
+      stack_group: base.stack_group,
+      sources: effectsInGroup
+    }
+  }
+}
+
+function roleToJP(role) {
+  return ROLE_JP[role] ?? role
+}
+
+function tagToJP(tag) {
+  if (!tag) return "―"
+  return TAG_JP[tag] ?? tag
+}
+
+function effectContentToJP(effect) {
+  const { role, category, sub_category } = effect
+
+  const isBuff = role === "buff"
+  const isCritCertain = (category === "critical" && sub_category === "certain")
+  const suffix = isCritCertain ? "" : isBuff ? "アップ" : "ダウン"
+
+  // CATEGORY + SUB
+  if (sub_category && EFFECT_CORE_JP[category]?.[sub_category]) {
+    return EFFECT_CORE_JP[category][sub_category] + suffix
+  }
+
+  // CATEGORY fallback
+  if (CATEGORY_FALLBACK_JP[category]) {
+    return CATEGORY_FALLBACK_JP[category] + suffix
+  }
+
+  // unknown 可視化
+  return `${category}${sub_category ? ":" + sub_category : ""}`
 }

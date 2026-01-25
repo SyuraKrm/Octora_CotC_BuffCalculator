@@ -20,6 +20,14 @@ const state = {
       tab: "battle"    // battle / ex / support
     },
     characterSelectorOpen: false,
-    openSelectorWrapper: null
-  }
+    openSelectorWrapper: null,
+    filters: {
+      tab: "attack",
+      stackGroup: "battle",
+      scope: "both",
+      selectedCharacter: null
+    }
+  },
+
+  effects: []
 };

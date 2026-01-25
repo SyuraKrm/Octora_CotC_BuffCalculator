@@ -96,3 +96,37 @@ const CHARACTER_TABS = [
   { key: "ultimate", label: "必殺技" },
   { key: "support", label: "サポアビ" }
 ];
+
+const EFFECT_ROLE_MAP = {
+  attack: [
+    { role: "buff",   category: "cap_increase" },
+    { role: "debuff", category: "cap_increase" },
+    { role: "buff",   category: "damage" },
+    { role: "buff",   category: "dmg_cap" },
+    { role: "buff",   category: "power" },
+    { role: "debuff", category: "resistance" },
+    { role: "buff",   category: "stat",     sub_category: "attack_physical" },
+    { role: "buff",   category: "stat",     sub_category: "attack_elemental" },
+    { role: "debuff", category: "stat",     sub_category: "defence_physical" },
+    { role: "debuff", category: "stat",     sub_category: "defence_elemental" },
+    { role: "buff",   category: "critical", sub_category: "certain" },
+  ],
+
+  defense: [
+    { role: "buff",   category: "cap_increase" },
+    { role: "debuff", category: "cap_increase" },
+    { role: "buff",   category: "stat",     sub_category: "defence_physical" },
+    { role: "buff",   category: "stat",     sub_category: "defence_elemental" },
+    { role: "debuff", category: "stat",     sub_category: "attack_physical" },
+    { role: "debuff", category: "stat",     sub_category: "attack_elemental" },
+  ]
+}
+
+const CATEGORY_CAP_MAP = {
+  resistance: 30,
+  damage: 30,
+  stat: 30,
+  dmg_cap: 999999,
+  power: 999999,
+  critical: 1,
+}

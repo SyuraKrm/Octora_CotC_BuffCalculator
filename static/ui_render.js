@@ -2,7 +2,12 @@
 function renderAll() {
   renderCharacterAbilityCards();
   renderAbilityModal();
-  renderSummary(); // 今は空でもOK
+  //renderSummary();
+}
+
+function renderExcludeSummary() {
+  renderCharacterAbilityCards();
+  renderAbilityModal();
 }
 
 /////////////////////////
@@ -392,10 +397,6 @@ function renderReadonlyAbilities(container, abilities) {
   });
 }
 
-function renderSummary() {
-}
-
-
 function characterCompare(a, b) {
   // 1. rarity 降順
   const rDiff = Number(b.rarity) - Number(a.rarity);
@@ -411,6 +412,65 @@ function characterCompare(a, b) {
 function getCharacterLabel(character) {
   return `${character.character_name} ★${character.rarity}`
 }
+
+/////////////////////////
+// 効果サマリーペイン 
+/////////////////////////
+
+function renderSummary(rows) {
+  const tbody = document.querySelector("#effect-summary-body")
+  if (!tbody) return
+
+  tbody.innerHTML = ""
+
+  for (const row of rows) {
+    tbody.appendChild(renderSummaryRow(row))
+  }
+}
+
+function renderSummaryRow(row) {
+  const tr = document.createElement("tr")
+  tr.className = "summary-row"
+
+  tr.dataset.capGroup = row.key.cap_group ?? ""
+  tr.dataset.stackGroup = row.meta.stack_group
+
+  tr.appendChild(td(row.label.target, "col-target"))
+  tr.appendChild(td(row.label.effect, "col-effect"))
+  tr.appendChild(td(row.label.type, "col-type"))
+
+  tr.appendChild(td(formatValue(row.value.sum), "col-sum"))
+  tr.appendChild(td(formatCap(row.value.cap), "col-cap"))
+  tr.appendChild(td(formatApplied(row.value), "col-applied"))
+
+  if (row.value.capped) {
+    tr.classList.add("is-capped")
+  }
+
+  return tr
+}
+
+function td(text, className) {
+  const el = document.createElement("td")
+  el.textContent = text
+  if (className) el.className = className
+  return el
+}
+
+function formatValue(value) {
+  return `${value}%`
+}
+
+function formatCap(cap) {
+  return cap == null ? "―" : `${cap}%`
+}
+
+function formatApplied(value) {
+  return value.capped
+    ? `${value.applied}%`
+    : `${value.applied}%`
+}
+
 
 /////////////////////////
 // ここから先は v2 の実装 
@@ -523,33 +583,4 @@ function makeGroupKey(effect) {
   return effect.cap_group ?? "__no_group__"
 }
 
-function roleToJP(role) {
-  return ROLE_JP[role] ?? role
-}
-
-function tagToJP(tag) {
-  if (!tag) return "―"
-  return TAG_JP[tag] ?? tag
-}
-
-function effectContentToJP(effect) {
-  const { role, category, sub_category } = effect
-
-  const isBuff = role === "buff"
-  const isCritCertain = (category === "critical" && sub_category === "certain")
-  const suffix = isCritCertain ? "" : isBuff ? "アップ" : "ダウン"
-
-  // CATEGORY + SUB
-  if (sub_category && EFFECT_CORE_JP[category]?.[sub_category]) {
-    return EFFECT_CORE_JP[category][sub_category] + suffix
-  }
-
-  // CATEGORY fallback
-  if (CATEGORY_FALLBACK_JP[category]) {
-    return CATEGORY_FALLBACK_JP[category] + suffix
-  }
-
-  // unknown 可視化
-  return `${category}${sub_category ? ":" + sub_category : ""}`
-}
 
