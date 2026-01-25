@@ -220,6 +220,112 @@ tr.group-continued td {
   cursor: pointer;
 }
 
+/* キャラクターカードのキャラ選択部分 */
+.character-select {
+  position: relative;
+  font-size: 13px;
+}
+
+.selected-character {
+  background: #0f172a;
+  padding: 6px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #334155;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+}
+
+.selected-character.has-value {
+  justify-content: flex-start;
+  color: #e5e7eb;
+}
+
+.character-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  background: #1e293b;
+  border: 1px solid #334155;
+  width: 100%;
+  max-height: 40vh;
+  overflow-y: hidden;
+  overflow: hidden;
+  min-width: 300px;
+}
+
+.dropdown-scroll {
+  max-height: 40vh;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+  background: #1e293b;
+}
+
+.hidden {
+  display: none;
+}
+
+.job-header {
+  padding: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  background: #0f172a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-header::after {
+  content: "+";
+  opacity: 0.7;
+}
+
+.job-group {
+  border-bottom: 1px solid #334155;
+}
+
+.job-group.open .job-header::after {
+  content: "−";
+}
+
+.job-characters {
+  display: none;
+  padding-left: 8px;
+  overflow: hidden;
+  transition: max-height 0.25s ease, opacity 0.2s ease;
+  opacity: 0;
+}
+
+.job-group.open .job-characters {
+  display: block;
+  opacity: 1;
+}
+
+.char-option {
+  padding: 4px 6px;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.char-option:hover {
+  background: #334155;
+}
+
+.reset-option {
+  padding: 8px 10px;
+  cursor: pointer;
+  color: #cbd5f5;
+  font-style: italic;
+  border-bottom: 1px solid #334155;
+}
+
+.reset-option:hover {
+  background: rgba(255,255,255,0.08);
+}
 
 /* 以降　アビリティ選択モーダル */
 .modal.hidden {
