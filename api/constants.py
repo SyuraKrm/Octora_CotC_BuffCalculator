@@ -11,4 +11,7 @@ SOURCE_RULES = {
     "support": {
         "stack_group": "support"
     },
+    "override": {
+        "stack_group": "battle"
+    },
 }

@@ -74,7 +74,11 @@ const SOURCE_RULES = {
   support: {
     always_on: true,
     stack_group: "support"
-  }
+  },
+  override: {
+    always_on: true,
+    stack_group: "battle"
+  },
 };
 
 const JOB_ORDER = [
@@ -91,10 +95,10 @@ const JOB_ORDER = [
 const MAX_BATTLE_ABILITIES = 4;
 
 const CHARACTER_TABS = [
-  { key: "battle", label: "バトアビ" },
-  { key: "ex", label: "EX" },
-  { key: "ultimate", label: "必殺技" },
-  { key: "support", label: "サポアビ" }
+  { key: "battle", label: "バトアビ", targets:[{type:"battle", prefix:""}]},
+  { key: "ex", label: "EX・技変化", targets: [{type:"ex", prefix:"【EX】"}, {type:"override",prefix:"【技変化】"}] },
+  { key: "ultimate", label: "必殺技", targets: [{type:"ultimate", prefix:""}] },
+  { key: "support", label: "サポアビ", targets: [{type:"support", prefix:""}] }
 ];
 
 const EFFECT_ROLE_MAP = {

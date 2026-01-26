@@ -18,6 +18,15 @@ function bindHandlers() {
       handleAbilityModalTabClick(btn.dataset.tab);
     });
   });
+
+  document.getElementById("open-help")?.addEventListener("click", () => {
+    document.getElementById("help-modal")?.classList.remove("hidden");
+  });
+
+  document.getElementById("close-help")?.addEventListener("click", () => {
+    document.getElementById("help-modal")?.classList.add("hidden");
+  });
+
 }
 
 function bindSummaryFilterHandlers() {

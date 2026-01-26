@@ -987,6 +987,23 @@
     ]
   },
   {
+    "character_id": "584894",
+    "character_name": "ヒカリ",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [],
+    "physicals": [
+      "剣",
+      "弓",
+      "扇",
+      "斧",
+      "本",
+      "杖",
+      "槍",
+      "短剣"
+    ]
+  },
+  {
     "character_id": "583650",
     "character_name": "ミルガルディ",
     "job": "踊子",

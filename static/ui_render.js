@@ -92,7 +92,7 @@ function renderCharacterTabs(slotIndex) {
       btn.classList.add("active");
 
       const body = card.querySelector(".card-tab-body");
-      renderCharacterTabBody(body, slotIndex, t.key);
+      renderCharacterTabBody(body, slotIndex, t.key, t.targets);
     };
 
     div.appendChild(btn);
@@ -101,7 +101,7 @@ function renderCharacterTabs(slotIndex) {
   return div;
 }
 
-function renderCharacterTabBody(container, slotIndex, tab) {
+function renderCharacterTabBody(container, slotIndex, tab, targets) {
   container.innerHTML = "";
 
   const slot = state.party[slotIndex];
@@ -119,10 +119,16 @@ function renderCharacterTabBody(container, slotIndex, tab) {
       slot.selected_abilities.battle.includes(a.ability_name)
     );
   } else {
-    abilities = character.abilities.filter(a =>
-      a.source_type === tab &&
-      SOURCE_RULES[a.source_type]?.always_on
-    );
+    targets.forEach(t => {
+      let temp = character.abilities.filter(a =>
+        a.source_type === t.type &&
+        SOURCE_RULES[a.source_type]?.always_on
+      );
+      temp.forEach(a => {
+        a.ability_prefix = t.prefix
+      });
+      abilities = abilities.concat(temp);
+    });
   }
 
   if (abilities.length === 0) {
@@ -133,9 +139,10 @@ function renderCharacterTabBody(container, slotIndex, tab) {
   abilities.forEach(a => {
     const div = document.createElement("div");
     div.className = "card-ability";
+    const prefix = a.ability_prefix? a.ability_prefix: ""
 
     div.innerHTML = `
-      <strong>${a.ability_name}</strong>
+      <strong>${prefix}${a.ability_name}</strong>
       <div class="desc">
         ${a.description}
       </div>
@@ -332,7 +339,7 @@ function renderAbilityModalBody() {
   const abilities = character.abilities.filter(a => {
     if (tab === "battle") return a.source_type === "battle";
     if (tab === "support") return a.source_type === "support";
-    if (tab === "ex") return a.source_type === "ex" || a.source_type === "ultimate";
+    if (tab === "ex") return a.source_type === "ex" || a.source_type === "override" || a.source_type === "ultimate";
     return false;
   });
 
@@ -421,7 +428,11 @@ function renderSummaryFilters() {
 
   root.innerHTML = `
     <div class="filter-group">
-      <div class="filter-title">対象</div>
+      <div class="filter-title has-tooltip"
+          data-tooltip="味方の攻撃に関連するバフ・デバフか
+      味方の防御に関連するバフ・デバフかを切り替えられます。">
+        対象
+      </div>
       <div class="filter-options">
         <button data-filter-tab="attack" class="${tab === "attack" ? "active" : ""}">攻撃</button>
         <button data-filter-tab="defense" class="${tab === "defense" ? "active" : ""}">防御</button>
@@ -429,7 +440,10 @@ function renderSummaryFilters() {
     </div>
 
     <div class="filter-group">
-      <div class="filter-title">区分</div>
+      <div class="filter-title has-tooltip"
+          data-tooltip="バフ・デバフの枠種別で絞り込みます。">
+        区分
+      </div>
       <div class="filter-options">
         ${renderRadio("stack", "battle", "バトアビ", stackGroup)}
         ${renderRadio("stack", "support", "サポアビ", stackGroup)}
@@ -438,16 +452,24 @@ function renderSummaryFilters() {
     </div>
 
     <div class="filter-group">
-      <div class="filter-title">適用範囲</div>
+      <div class="filter-title has-tooltip"
+          data-tooltip="どの列を対象としたバフを合算するか指定します。
+      例えば「前衛のみ」だと「前衛全体」「前後衛全体」を合算します。">
+        合算対象
+      </div>
       <div class="filter-options">
-        ${renderRadio("scope", "both", "前後衛", scope)}
+        ${renderRadio("scope", "both", "すべて", scope)}
         ${renderRadio("scope", "front", "前衛のみ", scope)}
         ${renderRadio("scope", "back", "後衛のみ", scope)}
       </div>
     </div>
 
     <div class="filter-group">
-      <div class="filter-title">キャラ視点</div>
+      <div class="filter-title has-tooltip"
+          data-tooltip="効果を「誰視点」で見るかを指定します。
+      列対象効果に加えて、自身対象の効果なども合算されます。">
+        キャラ視点
+      </div>
       <div class="filter-options">
         ${renderCharacterSelect(selectedCharacter)}
       </div>
@@ -520,21 +542,32 @@ function renderSummaryRow(row) {
 }
 
 function td(row, text, className) {
-  const el = document.createElement("td")
-  el.textContent = text
-  if (className) el.className = className
-  if (row.meta.sources?.length) {
-    el.classList.add("has-tooltip");
-    const tooltipText = row.meta.sources
-      .map(s => s.ability_name)
-      .filter(Boolean)
-      .join("\n");
+  const el = document.createElement("td");
+  el.textContent = text;
+  if (className) el.className = className;
 
-    if (tooltipText) {
-      el.dataset.tooltip = tooltipText;
-    }
+  const sources = row.meta.sources;
+  if (!Array.isArray(sources) || sources.length === 0) return el;
+
+  const tooltipLines = sources
+    .map(s => {
+      if (!s?.ability_name) return null;
+
+      const char = s.character_name ?? "不明";
+      const suffix = s.category === "cap_increase"
+        ? "【上限】"
+        : ` ${s.value}${s.unit}`;
+
+      return `${char}：${s.ability_name}${suffix}`;
+    })
+    .filter(Boolean);
+
+  if (tooltipLines.length > 0) {
+    el.classList.add("has-tooltip");
+    el.dataset.tooltip = tooltipLines.join("\n");
   }
-  return el
+
+  return el;
 }
 
 function formatValue(value, unit) {

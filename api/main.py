@@ -19,6 +19,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
 
 abilities_master = load_abilities()
+characters_master = load_characters()
 
 class CalculateRequest(BaseModel):
     selected_abilities: list[dict]
@@ -34,7 +35,6 @@ def index(request: Request):
 
 @app.get("/characters")
 def get_characters():
-    characters = load_characters()
 
     # character_name → abilities
     abil_map = {}
@@ -51,10 +51,10 @@ def get_characters():
                 "description": a.get("raw_text", [])[:20],
             })
 
-    for c in characters:
+    for c in characters_master:
         c["abilities"] = abil_map.get(c["character_id"], [])
 
-    return {"characters": characters}
+    return {"characters": characters_master}
 
 
 @app.post("/calculate")
@@ -84,6 +84,7 @@ def calculate(req: CalculateRequest):
                         normalized_effects.append({
                             # --- ability 粒度 ---
                             "character_id": abil["character_id"],
+                            "character_name": abil["character_name"],
                             "ability_name": abil["ability_name"],
                             "source_type": abil["source_type"],
 

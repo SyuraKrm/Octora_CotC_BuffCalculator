@@ -318,6 +318,10 @@ def scrape_character_list():
             character_table = table
             break
 
+        if table.find("a", href=re.compile(r"/archives/\d+")):
+            character_table = table
+            break
+
     if character_table is None:
         raise RuntimeError("character table not found")
 
@@ -325,6 +329,10 @@ def scrape_character_list():
 
     for row in rows:
         link = row.find("a", href=re.compile(r"/octopathtraveler-sp/\d+"))
+
+        if not link:
+            link = row.find("a", href=re.compile(r"/archives/\d+"))
+
         if not link:
             continue
 
@@ -381,7 +389,7 @@ def scrape_character_list():
 
     return characters
 
-def fetch_page2(character_id):
+def fetch_page2(character_id, character_name):
     url = GAME8_BASE_URL + character_id
     html = requests.get(url).text
     soup = BeautifulSoup(html, "html.parser")
@@ -396,6 +404,7 @@ def fetch_page2(character_id):
         if tab_def["mode"] == "table":
             abilities = parse_ability_table(
                 character_id,
+                character_name,
                 tab,
                 source_type=tab_def["source_type"]
             )
@@ -404,6 +413,7 @@ def fetch_page2(character_id):
         elif tab_def["mode"] == "split_table":
             abilities = parse_split_table(
                 character_id,
+                character_name,
                 tab,
                 tab_def["sections"]
             )
@@ -411,7 +421,7 @@ def fetch_page2(character_id):
 
     return all_abilities
 
-def parse_ability_table(character_id, tab, source_type):
+def parse_ability_table(character_id, character_name, tab, source_type):
 
     rows = tab.find_all("tr")
 
@@ -419,11 +429,14 @@ def parse_ability_table(character_id, tab, source_type):
     current = None
     enhance_mode = "after"
     section = "normal"  # normal / boost / condition / pre_enhance
+    is_override = False
+    override_source = None
 
     for tr in rows:
 
         # --- ヘッダ行（アビリティ名 + SP） ---
         if tr.find("th"):
+            override_source = None
             ths = tr.find_all("th")
             header_text = ths[0].get_text(strip=True)
 
@@ -435,6 +448,12 @@ def parse_ability_table(character_id, tab, source_type):
             # アイコン判定（保険）
             if ths[0].find("img", alt=lambda x: x and "進化" in x):
                 isEvol = True
+
+            if  is_override:
+                if ths[0].find("img", alt=lambda x: x and "技変化" in x):
+                    override_source = "override"
+                else:
+                    is_override = False
 
             if isEvol:
                 # === 進化アビ ===
@@ -453,8 +472,9 @@ def parse_ability_table(character_id, tab, source_type):
             # 新アビリティ開始
             current = {
                 "character_id": character_id,
+                "character_name": character_name, 
                 "ability_name": header_text,
-                "source_type": source_type,
+                "source_type": override_source if override_source is not None else source_type,
                 "cost": None,
                 "raw_text": [],
                 "raw_text_pre_enhance": []
@@ -489,6 +509,12 @@ def parse_ability_table(character_id, tab, source_type):
                 enhance_mode = "before"
                 continue
 
+            # バトアビ変化を検出
+            if "アビリティ編成が以下の内容になる" in line:
+                is_override = True
+                section = "override"
+                continue
+
             if tr.find("hr", class_="a-table__line"):
                 # 次に来る見出しで section を切り替える
                 if "【ブースト時】" in line:
@@ -509,6 +535,8 @@ def parse_ability_table(character_id, tab, source_type):
                     current.setdefault("raw_text_condition", []).append(line)
                 elif section == "pre_enhance":
                     current["raw_text_pre_enhance"].append(line)
+                elif section == "override":
+                    current.setdefault("raw_text_override_battle", []).append(line)
             else:
                 current["raw_text_pre_enhance"].append(line)
 
@@ -532,7 +560,7 @@ def parse_ability_table(character_id, tab, source_type):
 
     return abilities
 
-def parse_split_table(character_id, tab, sections):
+def parse_split_table(character_id, character_name, tab, sections):
     rows = tab.find_all("tr")
 
     collected = []
@@ -557,6 +585,7 @@ def parse_split_table(character_id, tab, sections):
         abilities.extend(
             parse_rows_as_abilities(
                 character_id,
+                character_name, 
                 rows,
                 source_type=section_def["name"]
             )
@@ -564,7 +593,7 @@ def parse_split_table(character_id, tab, sections):
 
     return abilities
 
-def parse_rows_as_abilities(character_id, rows, source_type):
+def parse_rows_as_abilities(character_id, character_name, rows, source_type):
     tab_soup = BeautifulSoup("<table></table>", "html.parser")
     table = tab_soup.table
 
@@ -573,6 +602,7 @@ def parse_rows_as_abilities(character_id, rows, source_type):
 
     return parse_ability_table(
         character_id,
+        character_name,
         tab_soup,
         source_type=source_type
     )

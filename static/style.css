@@ -30,6 +30,117 @@ html, body {
   background-color: #0b1220;
 }
 
+/* 
+==================================================
+　　ヘッダー部分
+==================================================
+*/
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0px 16px;
+  border-bottom: 2px solid #444;
+
+  background: linear-gradient(
+    180deg,
+    #0f172a 0%,
+    #0b1220 100%
+  );
+}
+
+.header-actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.app-title {
+  line-height: 1.2;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--accent-gold);
+}
+
+.header-btn {
+  all: unset;              /* デフォルトスタイル完全除去 */
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 32px;
+  height: 32px;
+
+  color: #d8caa4;          /* 必要に応じて */
+}
+
+.header-btn:hover {
+  color: #ffffff;
+  background: rgba(201,162,77,0.15);
+}
+
+.header-btn:focus-visible {
+  outline: 2px solid #c9b37e;
+  outline-offset: 2px;
+}
+
+.icon-gear {
+  width: 20px;
+  height: 20px;
+  display: block; /* baseline 問題回避 */
+  fill: currentColor;
+}
+
+#open-help {
+  font-size: 20px;
+  line-height: 1;
+}
+
+/* 
+==================================================
+　　ヘッダーモーダル部分
+==================================================
+*/
+
+.help-modal {
+  max-width: 640px;
+}
+
+.help-modal h3 {
+  margin-top: 16px;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: var(--accent-gold);
+}
+
+.help-modal p,
+.help-modal li {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.help-modal ul {
+  padding-left: 18px;
+}
+
+.help-modal .note {
+  margin-top: 16px;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+
+/* 
+==================================================
+　　ボディ共通部分
+==================================================
+*/
+
 .control-panel {
   flex: 1;                /* 残り全部使う */
   overflow-y: auto;       /* ここだけスクロール */
@@ -114,6 +225,10 @@ th {
 td {
   color: var(--text-main);
   text-overflow: ellipsis;
+  /* 
+   * overflow: hidden は tooltip 表示を阻害するため使用しない
+   * はみ出しが問題になった場合は cell-text ラッパーを導入する
+   */
   white-space: nowrap;
 }
 

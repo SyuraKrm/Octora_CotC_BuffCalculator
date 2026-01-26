@@ -75,7 +75,7 @@ def build_abilities_fromwiki(characters):
 
     for character in characters:
         print(f"scraping character:{character["character_name"]} page_id:{character["character_id"]}")
-        items = fetch_page2(character["character_id"])
+        items = fetch_page2(character["character_id"], character["character_name"])
         results.append(items)
         
     with open(OUTPUT_PATH_ABILITIES, "w", encoding="utf-8") as f:
@@ -129,12 +129,12 @@ if __name__ == "__main__":
     #characters = build_characters()
     characters = [
         {
-            "character_id": "733055",
-            "character_name": "アラウネEX2",
+            "character_id": "584894",
+            "character_name": "ヒカリ",
         },
         {
-            "character_id": "377291",
-            "character_name": "サイラス",
+            "character_id": "684832",
+            "character_name": "オズバルドEX",
         }
     ]
 
