@@ -27,6 +27,31 @@ function bindHandlers() {
     document.getElementById("help-modal")?.classList.add("hidden");
   });
 
+  const tooltip = document.getElementById("global-tooltip");
+
+  document.addEventListener("mouseover", e => {
+    const target = e.target.closest(".has-tooltip");
+    if (!target) return;
+
+    const text = target.dataset.tooltip;
+    if (!text) return;
+
+    tooltip.textContent = text;
+    tooltip.style.opacity = "1";
+  });
+
+  document.addEventListener("mousemove", e => {
+    if (tooltip.style.opacity !== "1") return;
+
+    const offset = 12;
+    tooltip.style.left = `${e.clientX + offset}px`;
+    tooltip.style.top  = `${e.clientY + offset}px`;
+  });
+
+  document.addEventListener("mouseout", e => {
+    if (!e.target.closest(".has-tooltip")) return;
+    tooltip.style.opacity = "0";
+  });
 }
 
 function bindSummaryFilterHandlers() {

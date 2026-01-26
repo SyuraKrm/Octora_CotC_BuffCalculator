@@ -498,7 +498,7 @@ function renderCharacterSelect(selectedCharacterId) {
 
   return `
     <select id="summary-character-filter">
-      <option value="">全体</option>
+      <option value="">全員共通</option>
       ${options}
     </select>
   `
