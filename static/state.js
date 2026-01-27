@@ -1,6 +1,9 @@
 // state.js
 const state = {
   characters: null,
+  capGroupIndex: null,
+  
+  highlightIndex: null,
   currentImpact: "offense",
 
   party: Array.from({ length: 8 }, (_, i) => ({
@@ -25,8 +28,16 @@ const state = {
       tab: "attack",
       stackGroup: "battle",
       scope: "both",
-      selectedCharacter: null
-    }
+      selectedCharacter: null,
+      attackCategory: "ALL",
+    },
+    highlightSettings: {
+      cap_groups: [],
+      stack_groups: ["battle"],
+    },
+    settingsModal: {
+      open: false,
+    },
   },
 
   effects: []

@@ -2,10 +2,11 @@ import json
 from collections import Counter
 from pprint import pprint
 from core.core import fetch_pages, load_items_from_files, parse_item, classify_unknown, scrape_character_list, fetch_page2
-from core.load_def import UNKNOWN_PATTERNS
+from core.load_def import UNKNOWN_PATTERNS, SOURCE_RULES
 
 OUTPUT_PATH_ABILITIES = "data/abilities.json"
 OUTPUT_PATH_CHARACTERS = "data/characters.json"
+OUTPUT_PATH_GROUPED_DATA = "data/grouped_data.json"
 
 # アビリティ一覧のスクレイピング
 def build_abilities():
@@ -49,6 +50,11 @@ def load_abilities():
     with open(OUTPUT_PATH_ABILITIES, encoding="utf-8") as f:
         return json.load(f)
 
+# ファイルからのアビリティ一覧取得
+def load_grouped_data():
+    with open(OUTPUT_PATH_GROUPED_DATA, encoding="utf-8") as f:
+        return json.load(f)
+
 # キャラクター一覧のスクレイピング
 def build_characters():
 
@@ -87,6 +93,55 @@ def build_abilities_fromwiki(characters):
         )
 
     print(f"saved: {OUTPUT_PATH_ABILITIES} ({len(results)} abilities)")
+
+# アビリティ／キャラクターを cap_group 単位でまとめたデータの生成
+def build_datas_group_by_cap_group():
+    datas = {}
+
+    for type in SOURCE_RULES:
+        datas[SOURCE_RULES.get(type).get("stack_group")] = {}
+
+    abilities_master = load_abilities()
+
+    for group in abilities_master:
+        for a in group:
+            ability_name = a["ability_name"]
+            character_id = a["character_id"]
+            stack_group = SOURCE_RULES.get(
+                    a["source_type"], {}
+                ).get("stack_group")
+            for effect in a["effects"]:
+                cap = effect.get("cap_group")
+                if not cap:
+                    continue
+
+                if cap not in datas[stack_group]:
+                    datas[stack_group][cap] = {
+                        "characters": set(),
+                        "abilities": set(),
+                    }
+
+                datas[stack_group][cap]["characters"].add(character_id)
+                datas[stack_group][cap]["abilities"].add(ability_name)
+
+    for stackGroup in datas:
+        for cap, v in datas[stackGroup].items():
+            v["characters"] = sorted(v["characters"])
+            v["abilities"] = sorted(v["abilities"])
+
+    
+    with open(OUTPUT_PATH_GROUPED_DATA, "w", encoding="utf-8") as f:
+        json.dump(
+            datas,
+            f,
+            ensure_ascii=False,
+            indent=2
+        )
+
+    print(f"saved: {OUTPUT_PATH_CHARACTERS} ({len(datas)} cap groups)")
+
+    return datas
+
 
 #Unknown精査用関数
 def inspect_unknowns():
@@ -143,7 +198,9 @@ if __name__ == "__main__":
         print(f"--- character:{i+1}----------------------")
         print(chara)
 
-    characters = load_characters()
-    build_abilities_fromwiki(characters)
+    #characters = load_characters()
+    #build_abilities_fromwiki(characters)
+
+    build_datas_group_by_cap_group()
 
     #inspect_unknowns()

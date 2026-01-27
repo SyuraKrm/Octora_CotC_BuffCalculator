@@ -13,6 +13,7 @@ async function loadCharacters() {
 
 async function init() {
   await loadCharacters();
+  await loadGroupedData();
   bindHandlers();
   bindSummaryFilterHandlers();
 

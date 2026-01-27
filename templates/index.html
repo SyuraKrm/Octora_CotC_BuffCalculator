@@ -82,7 +82,7 @@
     </div>
   </div>
 
-  <!-- Setting Modal -->
+  <!-- Help Modal -->
   <div id="help-modal" class="modal hidden">
     <div class="modal-backdrop"></div>
 
@@ -99,7 +99,10 @@
             本ツールは「オクトパストラベラー 大陸の覇者」における<br>
             バフ・デバフ効果を整理・合算して確認するための補助ツールです。<br>
             <br>
-            
+            キャラクターとアビリティの一覧は game8 さんからWebスクレイピングで取得しています。<br>
+            <a class="a-link" href="https://game8.jp/octopathtraveler-sp" target="_blank">
+              https://game8.jp/octopathtraveler-sp
+            </a>
           </p>
         </section>
 
@@ -131,6 +134,35 @@
           </p>
         </section>
       </div>
+    </div>
+  </div>
+
+  <div id="settings-modal" class="modal hidden">
+    <div class="modal-backdrop"></div>
+
+    <div class="modal-content settings-modal">
+
+      <div class="settings-header">
+        <h2>設定画面</h2>
+      </div>
+
+      <div class="modal-body settings-body">
+        <!-- 後で中身を描画 -->
+      </div>
+
+      <div class="modal-footer settings-footer">
+        <div class="footer-left">
+          <button id="settingsModalResetBtn" class="btn-reset">
+            リセット
+          </button>
+        </div>
+
+        <div class="footer-right">
+          <button id="settingsModalCancelBtn">閉じる</button>
+          <button id="settingsModalOkBtn">適用</button>
+        </div>
+      </div>
+
     </div>
   </div>
 

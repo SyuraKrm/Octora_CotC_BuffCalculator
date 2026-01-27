@@ -4,8 +4,8 @@ from fastapi.templating import Jinja2Templates
 from fastapi.responses import HTMLResponse
 from pydantic import BaseModel
 
-from core.build_data import load_characters, load_abilities
-from api.constants import SOURCE_RULES
+from core.build_data import load_characters, load_abilities, load_grouped_data
+from core.load_def import SOURCE_RULES
 
 import collections
 
@@ -20,6 +20,7 @@ templates = Jinja2Templates(directory="templates")
 
 abilities_master = load_abilities()
 characters_master = load_characters()
+grouped_data_master = load_grouped_data()
 
 class CalculateRequest(BaseModel):
     selected_abilities: list[dict]
@@ -55,6 +56,11 @@ def get_characters():
         c["abilities"] = abil_map.get(c["character_id"], [])
 
     return {"characters": characters_master}
+
+
+@app.get("/highlight-index")
+def get_grouped_data():
+    return grouped_data_master
 
 
 @app.post("/calculate")

@@ -66,7 +66,7 @@ EFFECT_PATTERNS = [
         "category": "damage",
         "sub_category": "physical",
         "unit": "%",
-        "cap_group": "damage_buff_30",
+        "cap_group": "buff_damage_phys_all",
         "patterns": [
             r"物理ダメージアップ(?P<value>\d+)[%％]"
         ],
@@ -96,7 +96,7 @@ EFFECT_PATTERNS = [
         "category": "damage",
         "sub_category": "critical",
         "unit": "%",
-        "cap_group": "damage_buff_30",
+        "cap_group": "buff_damage_crit",
         "patterns": [
             r"クリティカル時の?ダメージアップ(?P<value>\d+)[%％]"
         ],
@@ -327,7 +327,7 @@ EFFECT_PATTERNS = [
         "patterns": [
             r"(?P<tags>(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?(?:・(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?)*)耐性ダウン(?P<value>\d+)%"
         ],
-        "cap_group_template": "debuff_damage_phys_{tag}"
+        "cap_group_template": "debuff_resist_phys_{tag}"
     },
     {
         "role": "debuff",
@@ -337,7 +337,7 @@ EFFECT_PATTERNS = [
         "patterns": [
             r"(?P<tags>(?:火|氷|雷|風|光|闇)(?:・(?:火|氷|雷|風|光|闇))*)耐性ダウン(?P<value>\d+)%"
         ],
-        "cap_group_template": "debuff_damage_elem_{tag}"
+        "cap_group_template": "debuff_resist_elem_{tag}"
     },
     ####################################
     # ステータス系デバフ
@@ -573,3 +573,21 @@ TAB_DEFS = [
         ],
     },
 ]
+
+SOURCE_RULES = {
+    "battle": {
+        "stack_group": "battle"
+    },
+    "ultimate": {
+        "stack_group": "ultimate"
+    },
+    "ex": {
+        "stack_group": "battle"
+    },
+    "support": {
+        "stack_group": "support"
+    },
+    "override": {
+        "stack_group": "battle"
+    },
+}

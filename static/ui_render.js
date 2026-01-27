@@ -2,6 +2,7 @@
 function renderAll() {
   renderCharacterAbilityCards();
   renderAbilityModal();
+  renderSettingsModal();
   renderSummaryFilters();
   recalcSummary();
 }
@@ -139,6 +140,9 @@ function renderCharacterTabBody(container, slotIndex, tab, targets) {
   abilities.forEach(a => {
     const div = document.createElement("div");
     div.className = "card-ability";
+    if (isHighlightedAbility(a.ability_name)) {
+      div.classList.add("highlight");
+    }
     const prefix = a.ability_prefix? a.ability_prefix: ""
 
     div.innerHTML = `
@@ -219,6 +223,9 @@ function renderCharacterSelectorAccordion(character, slotIndex) {
     chars.forEach(c => {
       const opt = document.createElement("div");
       opt.className = "char-option";
+      if (isHighlightedCharacter(c.character_id)) {
+        opt.classList.add("highlight");
+      }
       opt.textContent = getCharacterLabel(c);
 
       opt.addEventListener("click", () => {
@@ -369,11 +376,14 @@ function renderBattleAbilities(container, abilities) {
 
     const div = document.createElement("div");
     div.className = "modal-ability";
+    if (isHighlightedAbility(a.ability_name)) {
+      div.classList.add("highlight");
+    }
 
     div.innerHTML = `
       <label>
         <input type="checkbox"
-               class="ability-checkbox"
+               class="ability-checkbox"}
                data-ability="${a.ability_name}"
                data-source_type="${a.source_type}"
                ${checked ? "checked" : ""}>
@@ -390,6 +400,10 @@ function renderReadonlyAbilities(container, abilities) {
   abilities.forEach(a => {
     const div = document.createElement("div");
     div.className = "modal-ability readonly";
+
+    if (isHighlightedAbility(a.ability_name)) {
+      div.classList.add("highlight");
+    }
 
     div.innerHTML = `
       <strong>${a.ability_name}</strong>
@@ -424,7 +438,7 @@ function renderSummaryFilters() {
   const root = document.getElementById("summary-filters")
   if (!root) return
 
-  const { tab, stackGroup, scope, selectedCharacter } = state.ui.filters
+  const { tab, stackGroup, scope, selectedCharacter, attackCategory } = state.ui.filters
 
   root.innerHTML = `
     <div class="filter-group">
@@ -474,6 +488,16 @@ function renderSummaryFilters() {
         ${renderCharacterSelect(selectedCharacter)}
       </div>
     </div>
+
+    <div class="filter-group">
+      <div class="filter-title has-tooltip"
+          data-tooltip="表示する効果を、攻撃種に関連するものに絞り込みます。">
+        攻撃種
+      </div>
+      <div class="filter-options">
+        ${renderAttackCategorySelect(attackCategory)}
+      </div>
+    </div>
   `
 }
 
@@ -504,14 +528,48 @@ function renderCharacterSelect(selectedCharacterId) {
   `
 }
 
+function renderAttackCategorySelect(selectedKey) {
+  const options = Object.entries(ATTACK_CATEGORY_FILTERS)
+    .map(([key, def]) => {
+      return `<option value="${key}" ${key === selectedKey ? "selected" : ""}>
+        ${def.label}
+      </option>`
+    })
+    .join("")
+
+  return `
+    <select id="attack-category-filter">
+      ${options}
+    </select>
+  `
+}
+
 function renderSummary(rows) {
   const tbody = document.querySelector("#effect-summary-body")
   if (!tbody) return
 
   tbody.innerHTML = ""
 
+  let lastGroupKey = null
+  let isOddGroup = false
+
   for (const row of rows) {
-    tbody.appendChild(renderSummaryRow(row))
+    const groupKey = `${row.key.role}|${row.key.category}|${row.key.sub_category}`
+
+    if (groupKey !== lastGroupKey) {
+      isOddGroup = !isOddGroup
+      lastGroupKey = groupKey
+    }
+
+    const tr = renderSummaryRow(row)
+
+    if (isOddGroup) {
+      tr.classList.add("group-odd")
+    } else {
+      tr.classList.add("group-even")
+    }
+
+    tbody.appendChild(tr)
   }
 }
 
@@ -586,114 +644,179 @@ function formatApplied(value, unit) {
 
 
 /////////////////////////
-// ここから先は v2 の実装 
+// 設定モーダル 
 /////////////////////////
 
-function renderAbilities(slotDiv, slotState) {
-  const box = slotDiv.querySelector(".abilities-box");
-  box.innerHTML = "";
+function renderSettingsModal() {
+  const modal = document.getElementById("settings-modal");
 
-  const charData = state.characters.find(
-    c => c.character_id === slotState.character
+  if (!state.ui.settingsModal.open) {
+    modal.classList.add("hidden");
+    return;
+  }
+
+  modal.classList.remove("hidden");
+
+  const modalBody = modal.querySelector(".modal-body");
+  modalBody.innerHTML = "";
+
+  /* ===== 保存 / ロード セクション ===== */
+  const saveSection = document.createElement("section");
+  saveSection.className = "settings-section save-load-section";
+
+  const saveTitle = document.createElement("div");
+  saveTitle.className = "settings-section-title has-tooltip";
+  saveTitle.textContent = "キャラ・アビリティ選択状況の保存／ロード";
+  saveTitle.setAttribute(
+    "data-tooltip",
+    "キャラクターおよびアビリティの選択状況を保存・ロードします。"
   );
-  if (!charData) return;
 
-  const bySource = {};
-  charData.abilities.forEach(a => {
-    bySource[a.source_type] ||= [];
-    bySource[a.source_type].push(a);
-  });
+  const buttonRow = document.createElement("div");
+  buttonRow.className = "save-load-buttons";
 
-  Object.entries(bySource).forEach(([source, abilities]) => {
-    renderAbilitySection(box, slotState, source, abilities);
-  });
+  const saveBtn = document.createElement("button");
+  saveBtn.className = "btn btn-save";
+  saveBtn.textContent = "保存";
+  saveBtn.addEventListener("click", saveSelection);
+
+  const loadBtn = document.createElement("button");
+  loadBtn.className = "btn btn-load";
+  loadBtn.textContent = "ロード";
+  loadBtn.addEventListener("click", loadSelection);
+
+  const message = document.createElement("span");
+  message.id = "save-load-message";
+  message.className = "save-load-message";
+  
+  buttonRow.append(saveBtn, loadBtn);
+  buttonRow.appendChild(message);
+  saveSection.append(saveTitle, buttonRow);
+
+  modalBody.appendChild(saveSection);
+
+  /* ===== ハイライト設定 ===== */
+  const title = document.createElement("div");
+  title.className = "highlight-title has-tooltip";
+  title.textContent = "ハイライト設定";
+  title.setAttribute(
+    "data-tooltip",
+    "選択した効果を所持するキャラクターやアビリティを強調表示します。\n" +
+    "区分（バトアビ or サポアビ or 必殺技）とバフ・デバフ効果の両方を選択してください。"
+  );
+
+  modalBody.appendChild(title)
+
+  renderStackGroupOptions(modalBody);
+  renderCapGroupHighlightOptions(modalBody);
+
+  bindSettingsModalHandlers();
 }
 
-function renderAbilitySection(container, slotState, source, abilities) {
-  const section = document.createElement("div");
-  section.className = `ability-section ${source}`;
+function renderCapGroupHighlightOptions(container) {
+  const section = document.createElement("section");
+  section.className = "cap-group-options";
 
-  const title = {
-    battle: "バトルアビリティ",
-    ex: "EXアビリティ（常時）",
-    support: "サポートアビリティ（常時）",
-    ultimate: "必殺技（常時）",
-  }[source] ?? source;
+  section.innerHTML = CAP_GROUP_UI_DEFINITION.map(section => `
+    <div class="highlight-section">
+      <div class="highlight-section-title">${section.label}</div>
+      ${section.groups.map(group => `
+        <div class="highlight-group">
+          <div class="highlight-group-title">${group.label}</div>
+          <div class="highlight-options">
+            ${group.items.map(key => {
+              const checked = state.ui.highlightSettings?.cap_groups.includes(key);
+              return `
+                <label>
+                  <input type="checkbox"
+                         data-cap-key="${key}"
+                         ${checked ? "checked" : ""}>
+                  ${CAP_GROUP_DEFINITIONS[key].label}
+                </label>
+              `;
+            }).join("")}
+          </div>
+        </div>
+      `).join("")}
+    </div>
+  `).join("");
+  
+  container.appendChild(section)
+}
 
-  section.innerHTML = `<h4>${title}</h4>`;
+function renderCapGroupHighlightOptions(container) {
+  const section = document.createElement("section");
+  section.className = "cap-highlight-root";
 
-  abilities.forEach(a => {
-    const div = document.createElement("div");
-    div.className = "ability";
+  section.innerHTML = 
+    CAP_GROUP_UI_DEFINITION.map(section => `
+    <div class="highlight-section">
+      <div class="highlight-section-title">${section.label}</div>
+      ${section.groups.map(group => `
+        <div class="highlight-category">
+          <div class="highlight-category-title">${group.label}</div>
 
-    const rule = SOURCE_RULES[source];
+          ${group.rows.map(row => `
+            <div class="highlight-row">
+              ${row.map(key => {
+                const checked = state.ui.highlightSettings?.cap_groups.includes(key);
+                const def = CAP_GROUP_DEFINITIONS[key];
+                if (!def) return "";
 
-    if (rule.always_on) {
-      div.innerHTML = `
-        <strong>${a.ability_name}</strong>
-        <span class="always-on">常時発動</span>
-        <div class="desc">${a.description.join("<br>")}</div>
-      `;
-    } else {
-      div.innerHTML = `
-        <label>
-          <input type="checkbox" data-ability="${a.ability_name}">
-          <strong>${a.ability_name}</strong>
-        </label>
-        <div class="desc">${a.description.join("<br>")}</div>
-      `;
+                return `
+                  <label class="highlight-option">
+                    <input type="checkbox"
+                          data-cap-key="${key}"
+                          ${checked ? "checked" : ""}>
+                    <span>${def.label}</span>
+                  </label>
+                `;
+              }).join("")}
+            </div>
+          `).join("")}
+        </div>
+      `).join("")}
+      </div>
+    `).join("");
 
-      const checkbox = div.querySelector("input");
-      checkbox.addEventListener("change", () => {
-        if (checkbox.checked) {
-          slotState.selectedAbilities.push(a.ability_name);
-        } else {
-          slotState.selectedAbilities =
-            slotState.selectedAbilities.filter(x => x !== a.ability_name);
-        }
-        calculate();
-      });
-    }
+  container.appendChild(section);
+}
 
-    section.appendChild(div);
+
+function renderStackGroupOptions(container) {
+  const section = document.createElement("section");
+  section.className = "stack-group-options";
+
+  section.innerHTML = ``;
+
+  Object.entries(STACK_GROUP_DEFINITIONS).forEach(([key, def]) => {
+    const label = document.createElement("label");
+    const checked = state.ui.highlightSettings?.stack_groups.includes(key);
+
+    label.innerHTML = `
+      <input
+        type="checkbox"
+        data-stack-key="${key}"
+        ${checked ? "checked" : ""}
+      />
+      ${def.label}
+    `;
+
+    section.appendChild(label);
   });
 
   container.appendChild(section);
 }
 
-function renderTable(rows) {
-  const tbody = document.querySelector("#resultTable tbody");
-  tbody.innerHTML = "";
 
-  let prevGroupKey = null
+/////////////////////////
+// 共通系 
+/////////////////////////
 
-  rows.forEach(r => {
-    const groupKey = makeGroupKey(r)
-    const isSameGroup = groupKey === prevGroupKey
-
-    const tr = document.createElement("tr");
-
-    if (isSameGroup) {
-      tr.classList.add("group-continued")
-    } else {
-      tr.classList.add("group-start")
-    }
-
-    tr.innerHTML = `
-      <td>${roleToJP(r.role)}</td>
-      <td>${effectContentToJP(r)}</td>
-      <td>${tagToJP(r.tag)}</td>
-      <td>${r.total}%</td>
-      <td>${r.cap}%</td>
-      <td>${r.effective}%</td>
-    `;
-    tbody.appendChild(tr);
-    prevGroupKey = groupKey
-  });
+function isHighlightedCharacter(characterId) {
+  return state.highlightIndex?.characterIds.has(characterId);
 }
 
-function makeGroupKey(effect) {
-  return effect.cap_group ?? "__no_group__"
+function isHighlightedAbility(abilityName) {
+  return state.highlightIndex?.abilityNames.has(abilityName);
 }
-
-
