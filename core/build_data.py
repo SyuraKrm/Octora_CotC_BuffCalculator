@@ -184,19 +184,23 @@ if __name__ == "__main__":
     #characters = build_characters()
     characters = [
         {
-            "character_id": "605919",
-            "character_name": "ドルシネア",
+            "character_id": "384094",
+            "character_name": "イデア",
         },
         {
-            "character_id": "641820",
-            "character_name": "セラフィナ",
+            "character_id": "733055",
+            "character_name": "アラウネEx2",
+        },
+        {
+            "character_id": "713008",
+            "character_name": "エドガー",
         }
     ]
 
-    #for i, chara in enumerate(characters):
+    for i, chara in enumerate(characters):
 
-    #    print(f"--- character:{i+1}----------------------")
-    #    print(chara)
+        print(f"--- character:{i+1}----------------------")
+        print(chara)
 
     characters = load_characters()
     build_abilities_fromwiki(characters)

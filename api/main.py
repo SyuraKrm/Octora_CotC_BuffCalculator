@@ -93,6 +93,7 @@ def calculate(req: CalculateRequest):
                             "character_name": abil["character_name"],
                             "ability_name": abil["ability_name"],
                             "source_type": abil["source_type"],
+                            "target_source_type": e.get("target_source_type"),
 
                             # --- effect 本体 ---
                             "role": e.get("role"),
@@ -114,61 +115,5 @@ def calculate(req: CalculateRequest):
 
     return {
         "effects": normalized_effects
-    }
-
-def calculate_old(req: CalculateRequest):
-    # ① 選択アビリティ → effects 展開
-    all_effects = []
-
-    for sel in req.selected_abilities:
-        for group in abilities_master:
-            for abil in group:
-                if (
-                    abil["character_id"] == sel["character_id"]
-                    and abil["ability_name"] == sel["ability_name"]
-                ):
-                    all_effects.extend(abil["effects"])
-
-    breakpoint()
-
-    # ② 上限突破テーブル
-    cap_table = build_cap_table(all_effects)
-
-    # ③ 評価軸フィルタ
-    filtered = apply_presets(all_effects, req.presets)
-
-    # ④ offense / defense
-    filtered = filter_by_impact(filtered, req.impact)
-
-    # ⑤ 集計（render_table の中身）
-    summary = collections.defaultdict(int)
-
-    for e in filtered:
-        key = (
-            e["role"],
-            e["category"],
-            e.get("sub_category"),
-            e.get("tag"),
-            e.get("cap_group")
-        )
-        aggregate(summary, key, e)
-
-    rows = []
-    for (role, cat, sub, tag, cap_group), value in summary.items():
-        base_cap = get_base_cap(cat) or 999999
-        ex_cap = cap_table.get(cap_group, 0)
-
-        rows.append({
-            "role": role,
-            "category": cat,
-            "sub_category": sub,
-            "tag": tag,
-            "total": value,
-            "cap": max(base_cap, ex_cap),
-            "effective": apply_cap(value, base_cap, ex_cap)
-        })
-
-    return {
-        "rows": rows
     }
 

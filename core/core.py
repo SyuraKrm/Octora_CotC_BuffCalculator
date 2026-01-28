@@ -101,6 +101,9 @@ def match_effects(line, effects, scopes=None):
                 if scopes:
                     effect["scopes"] = scopes
 
+                if "scopes" in effect_def:
+                    effect["scopes"] = effect_def["scopes"]
+
                 effects.append(effect)
 
             matched = True

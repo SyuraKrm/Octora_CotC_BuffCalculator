@@ -87,7 +87,7 @@ EFFECT_PATTERNS = [
         "sub_category": "physical",
         "unit": "%",
         "patterns": [
-            r"(?P<tags>(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?(?:・(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?)*)ダメージアップ(?P<value>\d+)[%％]"
+            r"(?P<tags>(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?(?:・(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?)*)(?:・[火氷雷風光闇](?:属性)?)*ダメージアップ(?P<value>\d+)[%％]"
         ],
         "cap_group_template": "buff_damage_phys_{tag}"
     },
@@ -118,7 +118,18 @@ EFFECT_PATTERNS = [
         "unit": "%",
         "cap_group": "buff_damage_weak",
         "patterns": [
-            r"敵の弱点を突いた時の?ダメージアップ(?P<value>\d+)[%％]"
+            r"(?<!自身が)敵の弱点を突いた時の?ダメージアップ(?P<value>\d+)[%％]"
+        ],
+    },
+    {
+        "role": "buff",
+        "category": "damage",
+        "sub_category": "weak",
+        "unit": "%",
+        "cap_group": "buff_damage_weak",
+        "scopes": ["self"],
+        "patterns": [
+            r"自身が敵の弱点を突いた時の?ダメージアップ(?P<value>\d+)[%％]"
         ],
     },
     ####################################
@@ -209,7 +220,7 @@ EFFECT_PATTERNS = [
         "cap_group": "critical_elem",
         "target_source_type": "battle",
         "patterns": [
-            r"属性攻撃でクリティカルが発生する効果(?!\"が必要)"
+            r"属性攻撃でクリティカルが発生する効果(?!.?が必要)"
         ],
     },
     {
@@ -275,7 +286,7 @@ EFFECT_PATTERNS = [
         "unit": "%",
         "target_source_type": "battle",
         "patterns": [
-            r"(バトアビ|バトルアビリティ)による([^0-9槍短剣弓斧杖扇本]*)(?P<tags>(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?(?:・(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?)*)攻撃ダメージアップの上限[^0-9]*が(?P<value>\d+)[%％]"
+            r"(バトアビ|バトルアビリティ)による([^0-9槍短剣弓斧杖扇本]*)(?P<tags>(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?(?:・(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?)*)(?:・[火氷雷風光闇](?:属性)?)*ダメージアップの上限[^0-9]*が(?P<value>\d+)[%％]"
         ],
         "cap_group_template": "buff_damage_phys_{tag}"
     },
@@ -319,9 +330,9 @@ EFFECT_PATTERNS = [
         "unit": "%",
         "target_source_type": "battle",
         "patterns": [
-            r"(バトアビ|バトルアビリティ)による([^0-9槍短剣弓斧杖扇本]*)(?P<tags>(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?(?:・(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?)*)耐性ダウンを受けた際の上限[^0-9]*が(?P<value>\d+)[%％]"
+            r"(バトアビ|バトルアビリティ)による([^0-9槍短剣弓斧杖扇本]*)(?P<tags>(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?(?:・(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?)*)(?:・[火氷雷風光闇](?:属性)?)*耐性ダウンを受けた際の上限[^0-9]*が(?P<value>\d+)[%％]"
         ],
-        "cap_group_template": "debuff_damage_phys_{tag}"
+        "cap_group_template": "debuff_resist_phys_{tag}"
     },
     {
         "role": "debuff",
@@ -332,7 +343,7 @@ EFFECT_PATTERNS = [
         "patterns": [
             r"(バトアビ|バトルアビリティ)による([^0-9火氷雷風光闇]*)(?P<tags>(?:火|氷|雷|風|光|闇)(?:・(?:火|氷|雷|風|光|闇))*)耐性ダウンを受けた際の上限[^0-9]*が(?P<value>\d+)[%％]"
         ],
-        "cap_group_template": "debuff_damage_elem_{tag}"
+        "cap_group_template": "debuff_resist_elem_{tag}"
     },
     {
         "role": "buff",
@@ -363,7 +374,7 @@ EFFECT_PATTERNS = [
         "unit": "%",
         "target_source_type": "support",
         "patterns": [
-            r"サポアビと装備性能による([^0-9槍短剣弓斧杖扇本]*)(?P<tags>(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?(?:・(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?)*)攻撃ダメージアップの上限[^0-9]*が(?P<value>\d+)[%％]"
+            r"サポアビと装備性能による([^0-9槍短剣弓斧杖扇本]*)(?P<tags>(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?(?:・(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?)*)(?:・[火氷雷風光闇](?:属性)?)*ダメージアップの上限[^0-9]*が(?P<value>\d+)[%％]"
         ],
         "cap_group_template": "buff_damage_phys_{tag}"
     },
@@ -407,7 +418,7 @@ EFFECT_PATTERNS = [
         "unit": "%",
         "target_source_type": "support",
         "patterns": [
-            r"サポアビと装備性能による([^0-9槍短剣弓斧杖扇本]*)(?P<tags>(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?(?:・(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?)*)耐性ダウンを受けた際の上限[^0-9]*が(?P<value>\d+)[%％]"
+            r"サポアビと装備性能による([^0-9槍短剣弓斧杖扇本]*)(?P<tags>(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?(?:・(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?)*)(?:・[火氷雷風光闇](?:属性)?)*耐性ダウンを受けた際の上限[^0-9]*が(?P<value>\d+)[%％]"
         ],
         "cap_group_template": "debuff_resist_phys_{tag}"
     },
@@ -436,7 +447,7 @@ EFFECT_PATTERNS = [
         "cap_group": "debuff_resist_phys_all",
         "tag" : "all",
         "patterns": [
-            r"物理([^0-9]*)耐性ダウン(?P<value>\d+)[%％]"
+            r"物理(?:・属性)?耐性ダウン(?P<value>\d+)[%％]"
         ],
     },
     {
@@ -447,7 +458,7 @@ EFFECT_PATTERNS = [
         "cap_group": "debuff_resist_elem_all",
         "tag" : "all",
         "patterns": [
-            r"属性([^0-9]*)耐性ダウン(?P<value>\d+)[%％]"
+            r"属性耐性ダウン(?P<value>\d+)[%％]"
         ],
     },
     {
@@ -456,7 +467,7 @@ EFFECT_PATTERNS = [
         "sub_category": "physical",
         "unit": "%",
         "patterns": [
-            r"(?P<tags>(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?(?:・(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?)*)耐性ダウン(?P<value>\d+)[%％]"
+            r"(?P<tags>(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?(?:・(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?)*)(?:・[火氷雷風光闇](?:属性)?)*耐性ダウン(?P<value>\d+)[%％]"
         ],
         "cap_group_template": "debuff_resist_phys_{tag}"
     },
@@ -641,9 +652,9 @@ UNKNOWN_PATTERNS = [
 
 SCOPE_PATTERN = re.compile(
     r"(?P<scope>(自身を除く)?"
-    r"(自身|自身とバディ|自身と後衛|"
+    r"(自身|自身とバディ|自身と後衛|前衛と後衛|"
     r"味方後衛全体|味方前衛全体|味方前後衛全体|味方単体|"
-    r"ランダムなターゲット|敵全体|敵単体)"
+    r"ランダムなターゲット|敵全体|敵単体|ブレイクさせた敵|ブレイク中の敵|攻撃してきた敵|確率で敵)"
     r"(と自身の後衛)?)"
     r"(に|の|を)"
 )
@@ -660,6 +671,7 @@ SCOPE_OPTIONAL_SUFFIX = [
 
 SCOPE_NORMALIZE_MAP = {
     "自身": "self",
+    "前衛": "self",
     "と自身の後衛": "buddy",
     "と後衛": "buddy",
     "とバディ": "buddy",
@@ -671,6 +683,10 @@ SCOPE_NORMALIZE_MAP = {
     "味方後衛全体": "ally_back_all",
     "味方前後衛全体": "ally_all",
 
+    "ブレイクさせた敵": "enemy_single",
+    "ブレイク中の敵": "enemy_single",
+    "攻撃してきた敵": "enemy_single",
+    "確率で敵": "enemy_single",
     "敵単体": "enemy_single",
     "敵全体": "enemy_all",
 

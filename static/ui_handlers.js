@@ -357,7 +357,7 @@ function filterByRoleCategory(effect, activeTab) {
 }
 
 function filterByStackGroup(effect, activeStackGroup) {
-  return activeStackGroup === effect.stack_group
+  return activeStackGroup === getTargetStackGroup(effect)
 }
 
 function filterCapGroupsByAttackCategory(effect, selectedKey) {
@@ -406,8 +406,11 @@ function isEffectVisible(effect, viewScope, selectedCharacterId) {
     )
   }
 
-  // 味方単体は一旦必ず含めておく？
+  // 味方単体は一旦必ず含めておく
   if (scopes.includes("ally_single")) visibleByCharacter = true;
+
+  // バディは一旦必ず含めておく
+  if (scopes.includes("buddy")) visibleByCharacter = true;
 
   if (selectedCharacterId) {
     if (scopes.includes("self")) {
@@ -502,7 +505,7 @@ function buildSummaryRow(effectsInGroup) {
     },
 
     meta: {
-      stack_group: base.stack_group,
+      stack_group: getTargetStackGroup(base),
       sources: effectsInGroup
     },
 
@@ -517,6 +520,11 @@ function buildSortKey(baseEffect) {
     SUB_CATEGORY_ORDER[baseEffect.sub_category] ?? 99,
     TAG_ORDER[baseEffect.tag] ?? 99
   ].join("|")
+}
+
+function getTargetStackGroup(effect) {
+  if (!effect.target_source_type) return effect.stack_group
+  return SOURCE_RULES[effect.target_source_type].stack_group
 }
 
 function roleToJP(role) {
