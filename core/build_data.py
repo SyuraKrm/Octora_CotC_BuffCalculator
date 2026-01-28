@@ -138,7 +138,7 @@ def build_datas_group_by_cap_group():
             indent=2
         )
 
-    print(f"saved: {OUTPUT_PATH_CHARACTERS} ({len(datas)} cap groups)")
+    print(f"saved: {OUTPUT_PATH_CHARACTERS} ({len(datas)} stack groups)")
 
     return datas
 
