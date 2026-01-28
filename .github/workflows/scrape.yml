@@ -31,5 +31,6 @@ jobs:
           if [ -n "$(git status --porcelain)" ]; then
             git add data/*.json
             git commit -m "chore: update scraped data"
+            git pull --rebase origin master
             git push
           fi
