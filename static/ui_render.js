@@ -252,46 +252,6 @@ function renderCharacterSelectorAccordion(character, slotIndex) {
   return wrapper;
 }
 
-/* 標準の Selct 要素を用いたキャラ選択の作成 */
-function renderCharacterSelectorLegacy(character, slotIndex) {
-  const select = document.createElement("select");
-  select.innerHTML = `<option value="">（未選択）</option>`;
-
-  const byJob = {};
-  state.characters.forEach(c => {
-    byJob[c.job] ??= [];
-    byJob[c.job].push(c);
-  });
-
-  JOB_ORDER.forEach(job => {
-    const chars = byJob[job];
-    if (!chars) return;
-
-    chars.sort(characterCompare);
-
-    const optgroup = document.createElement("optgroup");
-    optgroup.label = job;
-
-    chars.forEach(c => {
-      const opt = document.createElement("option");
-      opt.value = c.character_id;
-      opt.textContent = `${c.character_name} ★${c.rarity}`;
-      if (character && c.character_id === character.character_id) {
-        opt.selected = true;
-      }
-      optgroup.appendChild(opt);
-    });
-
-    select.appendChild(optgroup);
-  });
-
-  select.onchange = () => {
-    handleCharacterSelect(slotIndex, select.value || null);
-  };
-
-  return select;
-}
-
 
 /////////////////////////
 // アビリティ選択モーダル 
@@ -450,6 +410,7 @@ function renderSummaryFilters() {
       <div class="filter-options">
         <button data-filter-tab="attack" class="${tab === "attack" ? "active" : ""}">攻撃</button>
         <button data-filter-tab="defense" class="${tab === "defense" ? "active" : ""}">防御</button>
+        <button data-filter-tab="both" class="${tab === "both" ? "active" : ""}">両方</button>
       </div>
     </div>
 
@@ -461,7 +422,7 @@ function renderSummaryFilters() {
       <div class="filter-options">
         ${renderRadio("stack", "battle", "バトアビ", stackGroup)}
         ${renderRadio("stack", "support", "サポアビ", stackGroup)}
-        ${renderRadio("stack", "special", "必殺技", stackGroup)}
+        ${renderRadio("stack", "ultimate", "必殺技", stackGroup)}
       </div>
     </div>
 

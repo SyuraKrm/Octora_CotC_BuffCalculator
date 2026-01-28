@@ -129,6 +129,24 @@ const EFFECT_ROLE_MAP = {
     { role: "buff",   category: "stat",     sub_category: "defence_elemental" },
     { role: "debuff", category: "stat",     sub_category: "attack_physical" },
     { role: "debuff", category: "stat",     sub_category: "attack_elemental" },
+  ],
+
+  both: [
+    { role: "buff",   category: "cap_increase" },
+    { role: "debuff", category: "cap_increase" },
+    { role: "buff",   category: "damage" },
+    { role: "debuff", category: "resistance" },
+    { role: "buff",   category: "dmg_cap" },
+    { role: "buff",   category: "power" },
+    { role: "buff",   category: "critical", sub_category: "certain" },
+    { role: "buff",   category: "stat",     sub_category: "attack_physical" },
+    { role: "buff",   category: "stat",     sub_category: "attack_elemental" },
+    { role: "buff",   category: "stat",     sub_category: "defence_physical" },
+    { role: "buff",   category: "stat",     sub_category: "defence_elemental" },
+    { role: "debuff", category: "stat",     sub_category: "attack_physical" },
+    { role: "debuff", category: "stat",     sub_category: "attack_elemental" },
+    { role: "debuff", category: "stat",     sub_category: "defence_physical" },
+    { role: "debuff", category: "stat",     sub_category: "defence_elemental" },
   ]
 }
 
