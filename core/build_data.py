@@ -80,8 +80,8 @@ def build_abilities_fromwiki(characters):
     results = []
 
     for character in characters:
-        print(f"scraping character:{character["character_name"]} page_id:{character["character_id"]}")
-        items = fetch_page2(character["character_id"], character["character_name"])
+        print(f"scraping character:{character['character_name']} page_id:{character['character_id']}")
+        items = fetch_page2(character["character_id"], character['character_name'])
         results.append(items)
         
     with open(OUTPUT_PATH_ABILITIES, "w", encoding="utf-8") as f:
