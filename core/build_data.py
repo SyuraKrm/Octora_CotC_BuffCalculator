@@ -162,7 +162,7 @@ def inspect_unknowns():
         print()
         print()
         print(f"------------------------------------------")
-        print(f"----type:{unknown_pat["type"]}------------")
+        print(f"----type:{unknown_pat['type']}------------")
         print(f"------------------------------------------")
         for k, v in unknown_counter.most_common():
             if classify_unknown(k) == unknown_pat["type"]:
