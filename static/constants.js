@@ -28,9 +28,11 @@ const EFFECT_CORE_JP = {
     physical: "物理ダメージ",
     elemental: "属性ダメージ",
     critical: "クリティカル時のダメージ",
+    weak: "弱点を突いた時のダメージ",
   },
   critical: {
     certain: "必ずクリティカル",
+    elemental: "属性でクリティカル発生",
     rate: "クリティカル発生率",
   },
 }
@@ -120,6 +122,7 @@ const EFFECT_ROLE_MAP = {
     { role: "debuff", category: "stat",     sub_category: "defence_physical" },
     { role: "debuff", category: "stat",     sub_category: "defence_elemental" },
     { role: "buff",   category: "critical", sub_category: "certain" },
+    { role: "buff",   category: "critical", sub_category: "elemental" },
   ],
 
   defense: [
@@ -139,6 +142,7 @@ const EFFECT_ROLE_MAP = {
     { role: "buff",   category: "dmg_cap" },
     { role: "buff",   category: "power" },
     { role: "buff",   category: "critical", sub_category: "certain" },
+    { role: "buff",   category: "critical", sub_category: "elemental" },
     { role: "buff",   category: "stat",     sub_category: "attack_physical" },
     { role: "buff",   category: "stat",     sub_category: "attack_elemental" },
     { role: "buff",   category: "stat",     sub_category: "defence_physical" },
@@ -184,6 +188,7 @@ const SUB_CATEGORY_ORDER = {
   defence_elemental: 41,
   attack_critical_rate: 50,
   critical: 80,
+  weak: 83,
   rate: 85,
   speed: 90,
   attack: 98,
@@ -191,6 +196,7 @@ const SUB_CATEGORY_ORDER = {
 }
 
 const TAG_ORDER = {
+  all: 1,
   sword: 10,
   spear: 11,
   dagger: 12,
@@ -210,6 +216,7 @@ const TAG_ORDER = {
 
 const COMMON_CAP_GROUPS = [
   "buff_damage_crit",
+  "buff_damage_weak",
   "critical_certain",
   "damage_cap",
   "power_up",
@@ -378,6 +385,7 @@ const ATTACK_CATEGORY_FILTERS = {
       "debuff_resist_elem_wind",
       "debuff_resist_elem_light",
       "debuff_resist_elem_dark",
+      "critical_elem",
       ...ELEM_STAT_GROUPS,
       ...COMMON_CAP_GROUPS,
     ],
@@ -390,6 +398,7 @@ const ATTACK_CATEGORY_FILTERS = {
       "buff_damage_elem_fire",
       "debuff_resist_elem_all",
       "debuff_resist_elem_fire",
+      "critical_elem",
       ...ELEM_STAT_GROUPS,
       ...COMMON_CAP_GROUPS,
     ],
@@ -402,6 +411,7 @@ const ATTACK_CATEGORY_FILTERS = {
       "buff_damage_elem_ice",
       "debuff_resist_elem_all",
       "debuff_resist_elem_ice",
+      "critical_elem",
       ...ELEM_STAT_GROUPS,
       ...COMMON_CAP_GROUPS,
     ],
@@ -414,6 +424,7 @@ const ATTACK_CATEGORY_FILTERS = {
       "buff_damage_elem_lightning",
       "debuff_resist_elem_all",
       "debuff_resist_elem_lightning",
+      "critical_elem",
       ...ELEM_STAT_GROUPS,
       ...COMMON_CAP_GROUPS,
     ],
@@ -426,6 +437,7 @@ const ATTACK_CATEGORY_FILTERS = {
       "buff_damage_elem_wind",
       "debuff_resist_elem_all",
       "debuff_resist_elem_wind",
+      "critical_elem",
       ...ELEM_STAT_GROUPS,
       ...COMMON_CAP_GROUPS,
     ],
@@ -438,6 +450,7 @@ const ATTACK_CATEGORY_FILTERS = {
       "buff_damage_elem_light",
       "debuff_resist_elem_all",
       "debuff_resist_elem_light",
+      "critical_elem",
       ...ELEM_STAT_GROUPS,
       ...COMMON_CAP_GROUPS,
     ],
@@ -450,6 +463,7 @@ const ATTACK_CATEGORY_FILTERS = {
       "buff_damage_elem_dark",
       "debuff_resist_elem_all",
       "debuff_resist_elem_dark",
+      "critical_elem",
       ...ELEM_STAT_GROUPS,
       ...COMMON_CAP_GROUPS,
     ],
@@ -475,13 +489,14 @@ const CAP_GROUP_UI_DEFINITION = [
           ["BUFF_DAMAGE_PHYS_BOW", "BUFF_DAMAGE_PHYS_STAFF", "BUFF_DAMAGE_PHYS_TOME", "BUFF_DAMAGE_PHYS_FAN"],
 
           ["BUFF_DAMAGE_ELEM_ALL"],
-          ["BUFF_DAMAGE_ELEM_FIRE", "BUFF_DAMAGE_ELEM_ICE", "BUFF_DAMAGE_ELEM_LIGHTNING" ,"BUFF_DAMAGE_ELEM_WIND", "BUFF_DAMAGE_ELEM_LIGHT", "BUFF_DAMAGE_ELEM_DARK"]
+          ["BUFF_DAMAGE_ELEM_FIRE", "BUFF_DAMAGE_ELEM_ICE", "BUFF_DAMAGE_ELEM_LIGHTNING" ,"BUFF_DAMAGE_ELEM_WIND", "BUFF_DAMAGE_ELEM_LIGHT", "BUFF_DAMAGE_ELEM_DARK"],
+          ["BUFF_DAMAGE_CRITICAL", "BUFF_DAMAGE_WEAK"]
         ],
       },
       {
         label: "その他",
         rows: [
-          ["POWER_UP", "DAMAGE_CAP", "CRITICAL_CERTAIN"]
+          ["POWER_UP", "DAMAGE_CAP", "CRITICAL_CERTAIN", "CRITICAL_ELEMENTAL"]
         ],
       },
     ],
@@ -599,6 +614,16 @@ const CAP_GROUP_DEFINITIONS = {
     capGroups: ["buff_damage_elem_dark"],
   },
 
+  // --- Buff: Damage (Element) ---
+  BUFF_DAMAGE_CRITICAL: {
+    label: "クリティカル時",
+    capGroups: ["buff_damage_crit"],
+  },
+  BUFF_DAMAGE_WEAK: {
+    label: "弱点を突いた時",
+    capGroups: ["buff_damage_weak"],
+  },
+
   // --- Buff: Other ---
   POWER_UP: {
     label: "威力アップ",
@@ -611,6 +636,10 @@ const CAP_GROUP_DEFINITIONS = {
   CRITICAL_CERTAIN: {
     label: "必ずクリティカル",
     capGroups: ["critical_certain"],
+  },
+  CRITICAL_ELEMENTAL: {
+    label: "属性でクリティカル",
+    capGroups: ["critical_elem"],
   },
 
   // --- Debuff: Stat ---
