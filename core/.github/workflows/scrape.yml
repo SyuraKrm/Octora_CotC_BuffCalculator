@@ -1,0 +1,35 @@
+name: Weekly Build Data
+
+on:
+  schedule:
+    - cron: "0 0 * * 0"
+  workflow_dispatch:
+
+jobs:
+  build-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements-scrape.txt
+
+      - name: Run build_data
+        run: |
+          python -m core.build_data
+
+      - name: Commit if changed
+        run: |
+          git config user.name "Syura_Krm"
+          git config user.email "nextstageof@gmail.com"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add data/*.json
+            git commit -m "chore: update scraped data"
+            git push
+          fi
