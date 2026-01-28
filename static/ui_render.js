@@ -429,7 +429,8 @@ function renderSummaryFilters() {
     <div class="filter-group">
       <div class="filter-title has-tooltip"
           data-tooltip="どの列を対象としたバフを合算するか指定します。
-      例えば「前衛のみ」だと「前衛全体」「前後衛全体」を合算します。">
+      例えば「前衛のみ」だと「前衛全体」「前後衛全体」を合算します。
+      「すべて」だと「前衛全体」「後衛全体」「前後衛全体」を合算します。">
         合算対象
       </div>
       <div class="filter-options">
