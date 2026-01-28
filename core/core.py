@@ -80,6 +80,12 @@ def match_effects(line, effects, scopes=None):
                 if "sub_category" in effect_def:
                     effect["sub_category"] = effect_def["sub_category"]
 
+                if "target_source_type" in effect_def:
+                    effect["target_source_type"] = effect_def["target_source_type"]
+
+                if "value" in effect_def:
+                    effect["value"] = effect_def["value"]
+
                 if value is not None:
                     effect["value"] = value
 

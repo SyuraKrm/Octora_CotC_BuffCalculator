@@ -68,7 +68,17 @@ EFFECT_PATTERNS = [
         "unit": "%",
         "cap_group": "buff_damage_phys_all",
         "patterns": [
-            r"物理ダメージアップ(?P<value>\d+)[%％]"
+            r"物理([^0-9]*)ダメージアップ(?P<value>\d+)[%％]"
+        ],
+    },
+    {
+        "role": "buff",
+        "category": "damage",
+        "sub_category": "elemental",
+        "unit": "%",
+        "cap_group": "buff_damage_elem_all",
+        "patterns": [
+            r"[^火氷雷風光闇]属性([^0-9]*)ダメージアップ(?P<value>\d+)[%％]"
         ],
     },
     {
@@ -77,7 +87,7 @@ EFFECT_PATTERNS = [
         "sub_category": "physical",
         "unit": "%",
         "patterns": [
-            r"(?P<tags>(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?(?:・(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?)*)ダメージアップ(?P<value>\d+)%"
+            r"(?P<tags>(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?(?:・(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?)*)ダメージアップ(?P<value>\d+)[%％]"
         ],
         "cap_group_template": "buff_damage_phys_{tag}"
     },
@@ -87,7 +97,7 @@ EFFECT_PATTERNS = [
         "sub_category": "elemental",
         "unit": "%",
         "patterns": [
-            r"(?P<tags>(?:火|氷|雷|風|光|闇)(?:・(?:火|氷|雷|風|光|闇))*)(属性)?ダメージアップ(?P<value>\d+)%"
+            r"(?P<tags>(?:火|氷|雷|風|光|闇)(?:・(?:火|氷|雷|風|光|闇))*)(属性)?ダメージアップ(?P<value>\d+)[%％]"
         ],
         "cap_group_template": "buff_damage_elem_{tag}"
     },
@@ -99,6 +109,16 @@ EFFECT_PATTERNS = [
         "cap_group": "buff_damage_crit",
         "patterns": [
             r"クリティカル時の?ダメージアップ(?P<value>\d+)[%％]"
+        ],
+    },
+    {
+        "role": "buff",
+        "category": "damage",
+        "sub_category": "weak",
+        "unit": "%",
+        "cap_group": "buff_damage_weak",
+        "patterns": [
+            r"敵の弱点を突いた時の?ダメージアップ(?P<value>\d+)[%％]"
         ],
     },
     ####################################
@@ -174,9 +194,22 @@ EFFECT_PATTERNS = [
         "unit": "",
         "value": 1,
         "cap_group": "critical_certain",
+        "target_source_type": "battle",
         "patterns": [
             r"必ずクリティカルの効果(と.*効果)?を付与",
             r"必ずクリティカルダメージになる効果を付与"
+        ],
+    },
+    {
+        "role": "buff",
+        "category": "critical",
+        "sub_category": "elemental",
+        "unit": "",
+        "value": 1,
+        "cap_group": "critical_elem",
+        "target_source_type": "battle",
+        "patterns": [
+            r"属性攻撃でクリティカルが発生する効果(?!\"が必要)"
         ],
     },
     {
@@ -197,6 +230,7 @@ EFFECT_PATTERNS = [
         "category": "power",
         "unit": "%",
         "cap_group": "power_up",
+        "target_source_type": "battle",
         "patterns": [
             r"威力アップ(?P<value>\d+)[%％]"
         ],
@@ -206,6 +240,7 @@ EFFECT_PATTERNS = [
         "category": "dmg_cap",
         "unit": "",
         "cap_group": "damage_cap",
+        "target_source_type": "battle",
         "patterns": [
             r"ダメージ上限アップ[\(（]効果量 ?(?P<value>\d+)",
             #r"ダメージ上限が(?P<value>\d+)アップ",
@@ -217,8 +252,9 @@ EFFECT_PATTERNS = [
         "sub_category": "attack",
         "unit": "%",
         "cap_group": "buff_stat_atk_phys",
+        "target_source_type": "battle",
         "patterns": [
-            r"物攻([^0-9]*)アップの上限.*が(?P<value>\d+)[%％]になる",
+            r"(バトアビ|バトルアビリティ)による([^0-9]*)物攻([^0-9]*)アップの上限[^0-9]*が(?P<value>\d+)[%％]",
         ],
     },
     {
@@ -227,8 +263,9 @@ EFFECT_PATTERNS = [
         "sub_category": "attack",
         "unit": "%",
         "cap_group": "buff_stat_atk_elem",
+        "target_source_type": "battle",
         "patterns": [
-            r"属攻([^0-9]*)アップの上限.*が(?P<value>\d+)[%％]になる",
+            r"(バトアビ|バトルアビリティ)による([^0-9]*)属攻([^0-9]*)アップの上限[^0-9]*が(?P<value>\d+)[%％]",
         ],
     },
     {
@@ -236,8 +273,9 @@ EFFECT_PATTERNS = [
         "category": "cap_increase",
         "sub_category": "physical",
         "unit": "%",
+        "target_source_type": "battle",
         "patterns": [
-            r"(?P<tags>(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?(?:・(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?)*)攻撃ダメージアップの上限が(?P<value>\d+)%"
+            r"(バトアビ|バトルアビリティ)による([^0-9槍短剣弓斧杖扇本]*)(?P<tags>(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?(?:・(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?)*)攻撃ダメージアップの上限[^0-9]*が(?P<value>\d+)[%％]"
         ],
         "cap_group_template": "buff_damage_phys_{tag}"
     },
@@ -246,8 +284,9 @@ EFFECT_PATTERNS = [
         "category": "cap_increase",
         "sub_category": "elemental",
         "unit": "%",
+        "target_source_type": "battle",
         "patterns": [
-            r"(?P<tags>(?:火|氷|雷|風|光|闇)(?:・(?:火|氷|雷|風|光|闇))*)属性ダメージアップの上限が(?P<value>\d+)%"
+            r"(バトアビ|バトルアビリティ)による([^0-9火氷雷風光闇]*)(?P<tags>(?:火|氷|雷|風|光|闇)(?:・(?:火|氷|雷|風|光|闇))*)属性ダメージアップの上限[^0-9]*が(?P<value>\d+)[%％]"
         ],
         "cap_group_template": "buff_damage_elem_{tag}"
     },
@@ -257,8 +296,9 @@ EFFECT_PATTERNS = [
         "sub_category": "defence",
         "unit": "%",
         "cap_group": "debuff_stat_def_phys",
+        "target_source_type": "battle",
         "patterns": [
-            r"物防([^0-9]*)ダウンを受けた際の上限.*が(?P<value>\d+)[%％]になる",
+            r"(バトアビ|バトルアビリティ)による([^0-9]*)物防([^0-9]*)ダウンを受けた際の上限[^0-9]*が(?P<value>\d+)[%％]",
         ],
     },
     {
@@ -267,8 +307,9 @@ EFFECT_PATTERNS = [
         "sub_category": "defence",
         "unit": "%",
         "cap_group": "debuff_stat_def_elem",
+        "target_source_type": "battle",
         "patterns": [
-            r"属防([^0-9]*)ダウンを受けた際の上限.*が(?P<value>\d+)[%％]になる",
+            r"(バトアビ|バトルアビリティ)による([^0-9]*)属防([^0-9]*)ダウンを受けた際の上限[^0-9]*が(?P<value>\d+)[%％]",
         ],
     },
     {
@@ -276,8 +317,9 @@ EFFECT_PATTERNS = [
         "category": "cap_increase",
         "sub_category": "physical",
         "unit": "%",
+        "target_source_type": "battle",
         "patterns": [
-            r"(?P<tags>(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?(?:・(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?)*)耐性ダウンを受けた際の上限が(?P<value>\d+)%"
+            r"(バトアビ|バトルアビリティ)による([^0-9槍短剣弓斧杖扇本]*)(?P<tags>(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?(?:・(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?)*)耐性ダウンを受けた際の上限[^0-9]*が(?P<value>\d+)[%％]"
         ],
         "cap_group_template": "debuff_damage_phys_{tag}"
     },
@@ -286,10 +328,99 @@ EFFECT_PATTERNS = [
         "category": "cap_increase",
         "sub_category": "elemental",
         "unit": "%",
+        "target_source_type": "battle",
         "patterns": [
-            r"(?P<tags>(?:火|氷|雷|風|光|闇)(?:・(?:火|氷|雷|風|光|闇))*)耐性ダウンを受けた際の上限が(?P<value>\d+)%"
+            r"(バトアビ|バトルアビリティ)による([^0-9火氷雷風光闇]*)(?P<tags>(?:火|氷|雷|風|光|闇)(?:・(?:火|氷|雷|風|光|闇))*)耐性ダウンを受けた際の上限[^0-9]*が(?P<value>\d+)[%％]"
         ],
         "cap_group_template": "debuff_damage_elem_{tag}"
+    },
+    {
+        "role": "buff",
+        "category": "cap_increase",
+        "sub_category": "attack",
+        "unit": "%",
+        "cap_group": "buff_stat_atk_phys",
+        "target_source_type": "support",
+        "patterns": [
+            r"サポアビと装備性能による([^0-9]*)物攻([^0-9]*)アップの上限[^0-9]*が(?P<value>\d+)[%％]",
+        ],
+    },
+    {
+        "role": "buff",
+        "category": "cap_increase",
+        "sub_category": "attack",
+        "unit": "%",
+        "cap_group": "buff_stat_atk_elem",
+        "target_source_type": "support",
+        "patterns": [
+            r"サポアビと装備性能による([^0-9]*)属攻([^0-9]*)アップの上限[^0-9]*が(?P<value>\d+)[%％]",
+        ],
+    },
+    {
+        "role": "buff",
+        "category": "cap_increase",
+        "sub_category": "physical",
+        "unit": "%",
+        "target_source_type": "support",
+        "patterns": [
+            r"サポアビと装備性能による([^0-9槍短剣弓斧杖扇本]*)(?P<tags>(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?(?:・(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?)*)攻撃ダメージアップの上限[^0-9]*が(?P<value>\d+)[%％]"
+        ],
+        "cap_group_template": "buff_damage_phys_{tag}"
+    },
+    {
+        "role": "buff",
+        "category": "cap_increase",
+        "sub_category": "elemental",
+        "unit": "%",
+        "target_source_type": "support",
+        "patterns": [
+            r"サポアビと装備性能による([^0-9火氷雷風光闇]*)(?P<tags>(?:火|氷|雷|風|光|闇)(?:・(?:火|氷|雷|風|光|闇))*)属性ダメージアップの上限[^0-9]*が(?P<value>\d+)[%％]"
+        ],
+        "cap_group_template": "buff_damage_elem_{tag}"
+    },
+    {
+        "role": "debuff",
+        "category": "cap_increase",
+        "sub_category": "defence",
+        "unit": "%",
+        "cap_group": "debuff_stat_def_phys",
+        "target_source_type": "support",
+        "patterns": [
+            r"サポアビと装備性能による([^0-9]*)物防([^0-9]*)ダウンを受けた際の上限[^0-9]*が(?P<value>\d+)[%％]",
+        ],
+    },
+    {
+        "role": "debuff",
+        "category": "cap_increase",
+        "sub_category": "defence",
+        "unit": "%",
+        "cap_group": "debuff_stat_def_elem",
+        "target_source_type": "support",
+        "patterns": [
+            r"サポアビと装備性能による([^0-9]*)属防([^0-9]*)ダウンを受けた際の上限[^0-9]*が(?P<value>\d+)[%％]",
+        ],
+    },
+    {
+        "role": "debuff",
+        "category": "cap_increase",
+        "sub_category": "physical",
+        "unit": "%",
+        "target_source_type": "support",
+        "patterns": [
+            r"サポアビと装備性能による([^0-9槍短剣弓斧杖扇本]*)(?P<tags>(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?(?:・(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?)*)耐性ダウンを受けた際の上限[^0-9]*が(?P<value>\d+)[%％]"
+        ],
+        "cap_group_template": "debuff_resist_phys_{tag}"
+    },
+    {
+        "role": "debuff",
+        "category": "cap_increase",
+        "sub_category": "elemental",
+        "unit": "%",
+        "target_source_type": "support",
+        "patterns": [
+            r"サポアビと装備性能による([^0-9火氷雷風光闇]*)(?P<tags>(?:火|氷|雷|風|光|闇)(?:・(?:火|氷|雷|風|光|闇))*)耐性ダウンを受けた際の上限[^0-9]*が(?P<value>\d+)[%％]"
+        ],
+        "cap_group_template": "debuff_resist_elem_{tag}"
     },
     # ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
     # ここからデバフ
@@ -325,7 +456,7 @@ EFFECT_PATTERNS = [
         "sub_category": "physical",
         "unit": "%",
         "patterns": [
-            r"(?P<tags>(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?(?:・(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?)*)耐性ダウン(?P<value>\d+)%"
+            r"(?P<tags>(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?(?:・(?:槍|短剣|剣|弓|斧|杖|扇|本)(攻撃)?)*)耐性ダウン(?P<value>\d+)[%％]"
         ],
         "cap_group_template": "debuff_resist_phys_{tag}"
     },
@@ -335,7 +466,7 @@ EFFECT_PATTERNS = [
         "sub_category": "elemental",
         "unit": "%",
         "patterns": [
-            r"(?P<tags>(?:火|氷|雷|風|光|闇)(?:・(?:火|氷|雷|風|光|闇))*)耐性ダウン(?P<value>\d+)%"
+            r"(?P<tags>(?:火|氷|雷|風|光|闇)(?:・(?:火|氷|雷|風|光|闇))*)耐性ダウン(?P<value>\d+)[%％]"
         ],
         "cap_group_template": "debuff_resist_elem_{tag}"
     },
