@@ -105,16 +105,6 @@ function bindSummaryFilterHandlers() {
 }
 
 function bindModalHandlers() {
-  document.querySelectorAll(".modal-tab").forEach(btn => {
-    btn.addEventListener("click", () => {
-      document.querySelectorAll(".modal-tab")
-        .forEach(b => b.classList.remove("active"));
-
-      btn.classList.add("active");
-      handleAbilityModalTabClick(btn.dataset.tab);
-    });
-  });
-
   document
     .querySelectorAll(".ability-checkbox")
     .forEach(cb => cb.addEventListener("change", onToggleAbility))
