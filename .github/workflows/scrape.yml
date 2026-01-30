@@ -2,7 +2,7 @@ name: Weekly Build Data
 
 on:
   schedule:
-    - cron: "15 15 * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 jobs:
@@ -22,7 +22,8 @@ jobs:
 
       - name: Run build_data
         run: |
-          python -m core.build_data
+          # python -m core.build_data
+          echo "Triggered at $(date -u) UTC"
 
       - name: Commit if changed
         id: commit
