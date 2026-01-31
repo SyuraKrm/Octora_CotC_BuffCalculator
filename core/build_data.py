@@ -112,20 +112,26 @@ def build_datas_group_by_cap_group():
                 ).get("stack_group")
             for effect in a["effects"]:
                 cap = effect.get("cap_group")
+                category = effect.get("category")
                 if not cap:
                     continue
 
-                if cap not in datas[stack_group]:
-                    datas[stack_group][cap] = {
+                if not category:
+                    continue
+
+                key = ','.join([category, cap])
+
+                if key not in datas[stack_group]:
+                    datas[stack_group][key] = {
                         "characters": set(),
                         "abilities": set(),
                     }
 
-                datas[stack_group][cap]["characters"].add(character_id)
-                datas[stack_group][cap]["abilities"].add(ability_name)
+                datas[stack_group][key]["characters"].add(character_id)
+                datas[stack_group][key]["abilities"].add(ability_name)
 
     for stackGroup in datas:
-        for cap, v in datas[stackGroup].items():
+        for key, v in datas[stackGroup].items():
             v["characters"] = sorted(v["characters"])
             v["abilities"] = sorted(v["abilities"])
 
@@ -168,43 +174,63 @@ def inspect_unknowns():
             if classify_unknown(k) == unknown_pat["type"]:
                 print(v, k)
     
+
+def build_data_main(mode="ALL"):
+    scrapeCharacters = False
+    scrapeAbilities = False
+    scrapeAbilitiesForPartialChara = False
+    buildDataGroups = False
+
+    if mode == "ALL":
+        scrapeCharacters = True
+        scrapeAbilities = True
+        buildDataGroups = True
+    elif mode == "CHARA":
+        scrapeCharacters = True
+    elif mode == "ABILITY":
+        scrapeAbilities = True
+        buildDataGroups = True
+    elif mode == "PARTIAL":
+        scrapeAbilitiesForPartialChara = True
+        scrapeAbilities = True
+    elif mode == "GROUP_DATA":
+        buildDataGroups = True
+
+    characters = []
+
+    if scrapeCharacters:
+        characters = build_characters()
+    elif scrapeAbilitiesForPartialChara:
+        characters = [
+            {
+                "character_id": "384094",
+                "character_name": "イデア",
+            },
+            {
+                "character_id": "733055",
+                "character_name": "アラウネEx2",
+            },
+            {
+                "character_id": "713008",
+                "character_name": "エドガー",
+            }
+        ]
+    else:
+        characters = load_characters()
+
+    if scrapeAbilities:
+        build_abilities_fromwiki(characters)
+    
+    if buildDataGroups:
+        build_datas_group_by_cap_group()    
+
+
 # -----------------------------
 # 直接実行された時だけ動く
 # -----------------------------
 if __name__ == "__main__":
 
-    #abilities = build_abilities()
-    abilities = []
-
-    for i, ability in enumerate(abilities):
-
-        print(f"--- ability:{i+1}----------------------")
-        print(ability)
-
-    #characters = build_characters()
-    characters = [
-        {
-            "character_id": "384094",
-            "character_name": "イデア",
-        },
-        {
-            "character_id": "733055",
-            "character_name": "アラウネEx2",
-        },
-        {
-            "character_id": "713008",
-            "character_name": "エドガー",
-        }
-    ]
-
-    for i, chara in enumerate(characters):
-
-        print(f"--- character:{i+1}----------------------")
-        print(chara)
-
-    characters = load_characters()
-    build_abilities_fromwiki(characters)
-
-    build_datas_group_by_cap_group()
+    #build_data_main("PARTIAL")
+    build_data_main("GROUP_DATA")
 
     #inspect_unknowns()

@@ -34,9 +34,14 @@ const state = {
     highlightSettings: {
       cap_groups: [],
       stack_groups: ["battle"],
+      view_only_highlights: false,
     },
     settingsModal: {
       open: false,
+    },
+    tooltip: {
+      tooltipRAF: false,
+      lastMouseEvent: null
     },
   },
 

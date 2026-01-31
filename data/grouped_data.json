@@ -1,6 +1,6 @@
 {
   "battle": {
-    "debuff_stat_def_phys": {
+    "stat,debuff_stat_def_phys": {
       "characters": [
         "355674",
         "355676",
@@ -222,7 +222,7 @@
         "黒鴉の舞"
       ]
     },
-    "debuff_stat_atk_phys": {
+    "stat,debuff_stat_atk_phys": {
       "characters": [
         "355674",
         "355675",
@@ -364,7 +364,7 @@
         "黒闇の残針"
       ]
     },
-    "debuff_resist_phys_all": {
+    "resistance,debuff_resist_phys_all": {
       "characters": [
         "356825",
         "362276",
@@ -396,7 +396,7 @@
         "黒脆のオラクルⅡ"
       ]
     },
-    "power_up": {
+    "power,power_up": {
       "characters": [
         "377291",
         "391190",
@@ -447,7 +447,7 @@
         "静心の練気"
       ]
     },
-    "debuff_stat_def_elem": {
+    "stat,debuff_stat_def_elem": {
       "characters": [
         "355664",
         "355673",
@@ -641,7 +641,7 @@
         "黒鴉の舞"
       ]
     },
-    "buff_damage_phys_dagger": {
+    "damage,buff_damage_phys_dagger": {
       "characters": [
         "383174",
         "386216",
@@ -668,7 +668,7 @@
         "龍騰虎闘"
       ]
     },
-    "buff_damage_crit": {
+    "damage,buff_damage_crit": {
       "characters": [
         "356829",
         "422748",
@@ -686,7 +686,7 @@
         "灰熊の鼓舞"
       ]
     },
-    "buff_stat_atk_phys": {
+    "stat,buff_stat_atk_phys": {
       "characters": [
         "355671",
         "355673",
@@ -818,7 +818,6 @@
         "エミールエール",
         "オフェンスアップ(前全)Ⅲ",
         "グラツィオーゾ",
-        "グレンツブルッフ",
         "スポットライト",
         "スラッシュアップ",
         "ソリッドレイン",
@@ -853,7 +852,6 @@
         "大海賊の号令",
         "大騎士の鼓舞Ⅱ",
         "天衣自在",
-        "太陽の歌",
         "富への厭悪",
         "川豆",
         "川豆の兵糧丸",
@@ -913,14 +911,12 @@
         "獅子の舞Ⅱ",
         "獅子の鼓舞",
         "獅子の鼓舞Ⅱ",
-        "獅子咆哮の号令",
         "獅子王連斬",
         "獣王無尽",
         "療気斧功",
         "百薬処方",
         "盛りあげる",
         "真・武神流麗の構え",
-        "真理のルーン",
         "祝宴",
         "神獣の賦活",
         "穢れを焼き祓う黒炎",
@@ -949,7 +945,6 @@
         "豪勢なおもてなし",
         "賦活の応急手当(前全)",
         "超力招来の薬膳粥",
-        "超戦闘薬",
         "軍神の覇気",
         "輝星の舞",
         "連続で行くぞッ…！",
@@ -969,7 +964,7 @@
         "黄昏の補助剤"
       ]
     },
-    "debuff_resist_phys_dagger": {
+    "resistance,debuff_resist_phys_dagger": {
       "characters": [
         "355781",
         "359725",
@@ -1003,7 +998,7 @@
         "連続砕刃"
       ]
     },
-    "debuff_resist_phys_spear": {
+    "resistance,debuff_resist_phys_spear": {
       "characters": [
         "355800",
         "406096",
@@ -1039,7 +1034,7 @@
         "雲散槍"
       ]
     },
-    "debuff_stat_atk_elem": {
+    "stat,debuff_stat_atk_elem": {
       "characters": [
         "355674",
         "355780",
@@ -1152,7 +1147,7 @@
         "黒闇の残針"
       ]
     },
-    "buff_damage_phys_spear": {
+    "damage,buff_damage_phys_spear": {
       "characters": [
         "406096",
         "422748",
@@ -1180,7 +1175,43 @@
         "闘技大会の心意気"
       ]
     },
-    "critical_certain": {
+    "cap_increase,buff_stat_atk_phys": {
+      "characters": [
+        "391190",
+        "467050",
+        "565086",
+        "663844",
+        "690198",
+        "733055",
+        "753712"
+      ],
+      "abilities": [
+        "エスニックジョーク",
+        "グレンツブルッフ",
+        "太陽の歌",
+        "獅子咆哮の号令",
+        "真理のルーン",
+        "終わりを告げる呪剣",
+        "超戦闘薬"
+      ]
+    },
+    "cap_increase,buff_damage_phys_spear": {
+      "characters": [
+        "753712"
+      ],
+      "abilities": [
+        "エスニックジョーク"
+      ]
+    },
+    "cap_increase,buff_damage_phys_dagger": {
+      "characters": [
+        "753712"
+      ],
+      "abilities": [
+        "エスニックジョーク"
+      ]
+    },
+    "critical,critical_certain": {
       "characters": [
         "355676",
         "356829",
@@ -1235,7 +1266,7 @@
         "黄昏の補助剤"
       ]
     },
-    "debuff_stat_atk_crit": {
+    "stat,debuff_stat_atk_crit": {
       "characters": [
         "444975",
         "510916",
@@ -1255,7 +1286,7 @@
         "鳳凰の舞"
       ]
     },
-    "debuff_stat_speed": {
+    "stat,debuff_stat_speed": {
       "characters": [
         "355779",
         "355780",
@@ -1329,7 +1360,7 @@
         "鳳凰の舞"
       ]
     },
-    "debuff_resist_elem_light": {
+    "resistance,debuff_resist_elem_light": {
       "characters": [
         "355804",
         "356580",
@@ -1382,12 +1413,11 @@
         "破護光の呪詛(全体)Ⅱ",
         "衰亡の光翼",
         "語り『極寒の地へ』",
-        "語り『酷寒を詠う』",
         "退火退光の聖炎",
         "高潔なる常勝の剣"
       ]
     },
-    "buff_stat_def_phys": {
+    "stat,buff_stat_def_phys": {
       "characters": [
         "355671",
         "355672",
@@ -1547,7 +1577,7 @@
         "顕臨：極蒼の鎧竜"
       ]
     },
-    "buff_stat_def_elem": {
+    "stat,buff_stat_def_elem": {
       "characters": [
         "355671",
         "355672",
@@ -1682,7 +1712,7 @@
         "黒呪葬生・跋"
       ]
     },
-    "debuff_resist_elem_ice": {
+    "resistance,debuff_resist_elem_ice": {
       "characters": [
         "355664",
         "355923",
@@ -1721,12 +1751,11 @@
         "波濤衝",
         "荒天のオラクルⅢ",
         "語り『極寒の地へ』",
-        "語り『酷寒を詠う』",
         "露氷の詩",
         "高潔なる常勝の剣"
       ]
     },
-    "buff_damage_elem_ice": {
+    "damage,buff_damage_elem_ice": {
       "characters": [
         "356581",
         "377291",
@@ -1761,7 +1790,7 @@
         "高潔なる常勝の剣"
       ]
     },
-    "buff_damage_elem_light": {
+    "damage,buff_damage_elem_light": {
       "characters": [
         "362276",
         "384095",
@@ -1787,7 +1816,7 @@
         "高潔なる常勝の剣"
       ]
     },
-    "critical_elem": {
+    "critical,critical_elem": {
       "characters": [
         "355673",
         "383171",
@@ -1808,7 +1837,23 @@
         "魔法クリティカル"
       ]
     },
-    "buff_damage_elem_all": {
+    "cap_increase,debuff_resist_elem_ice": {
+      "characters": [
+        "745083"
+      ],
+      "abilities": [
+        "語り『酷寒を詠う』"
+      ]
+    },
+    "cap_increase,debuff_resist_elem_light": {
+      "characters": [
+        "745083"
+      ],
+      "abilities": [
+        "語り『酷寒を詠う』"
+      ]
+    },
+    "damage,buff_damage_elem_all": {
       "characters": [
         "403932",
         "561108",
@@ -1832,7 +1877,7 @@
         "魔昇霊薬の舞"
       ]
     },
-    "buff_stat_atk_elem": {
+    "stat,buff_stat_atk_elem": {
       "characters": [
         "355671",
         "355673",
@@ -1942,7 +1987,6 @@
         "大凍風の演舞Ⅲ",
         "大叡智のオーラⅡ",
         "大司教の鼓舞Ⅱ",
-        "太陽の歌",
         "孔雀の舞Ⅱ",
         "孔雀の鼓舞",
         "孔雀の鼓舞Ⅱ",
@@ -1979,7 +2023,6 @@
         "百雷の陣",
         "盛りあげる",
         "真・武神流麗の構え",
-        "真理のルーン",
         "祝宴",
         "神獣の賦活",
         "穢れを焼き祓う黒炎",
@@ -2029,7 +2072,7 @@
         "黒呪葬生・跋"
       ]
     },
-    "damage_cap": {
+    "dmg_cap,damage_cap": {
       "characters": [
         "367586",
         "383171",
@@ -2109,7 +2152,7 @@
         "魔導レーザー"
       ]
     },
-    "debuff_resist_phys_sword": {
+    "resistance,debuff_resist_phys_sword": {
       "characters": [
         "356583",
         "437864",
@@ -2134,7 +2177,6 @@
         "流天怜剣",
         "火刃の密謀",
         "秘剣・猫じゃらし",
-        "紅の三連細剣クロワゼ",
         "紅の二連細剣ボンナバン",
         "赤の三連細剣ボンアリエル",
         "連鋭閃",
@@ -2142,7 +2184,15 @@
         "黒葬送刃"
       ]
     },
-    "buff_damage_phys_sword": {
+    "cap_increase,debuff_resist_phys_sword": {
+      "characters": [
+        "736819"
+      ],
+      "abilities": [
+        "紅の三連細剣クロワゼ"
+      ]
+    },
+    "damage,buff_damage_phys_sword": {
       "characters": [
         "355846",
         "362276",
@@ -2186,7 +2236,7 @@
         "黒守のクヤヴィアク"
       ]
     },
-    "debuff_resist_elem_all": {
+    "resistance,debuff_resist_elem_all": {
       "characters": [
         "362276",
         "524634",
@@ -2224,7 +2274,7 @@
         "黒脆のオラクルⅡ"
       ]
     },
-    "buff_stat_atk_crit": {
+    "stat,buff_stat_atk_crit": {
       "characters": [
         "355671",
         "355673",
@@ -2332,7 +2382,7 @@
         "龍騰虎闘"
       ]
     },
-    "buff_damage_weak": {
+    "damage,buff_damage_weak": {
       "characters": [
         "733055"
       ],
@@ -2340,7 +2390,19 @@
         "真理のルーン"
       ]
     },
-    "buff_damage_phys_all": {
+    "cap_increase,buff_stat_atk_elem": {
+      "characters": [
+        "565086",
+        "668688",
+        "733055"
+      ],
+      "abilities": [
+        "まりょくかくせい",
+        "太陽の歌",
+        "真理のルーン"
+      ]
+    },
+    "damage,buff_damage_phys_all": {
       "characters": [
         "565086",
         "639048",
@@ -2362,7 +2424,7 @@
         "顕臨：輝夜の月兎"
       ]
     },
-    "buff_damage_elem_fire": {
+    "damage,buff_damage_elem_fire": {
       "characters": [
         "377291",
         "391189",
@@ -2389,7 +2451,7 @@
         "魔攻強化のスパイス"
       ]
     },
-    "buff_damage_elem_lightning": {
+    "damage,buff_damage_elem_lightning": {
       "characters": [
         "377291",
         "482282",
@@ -2411,7 +2473,27 @@
         "雷鳴槍・ツチイカヅチ"
       ]
     },
-    "debuff_resist_elem_fire": {
+    "cap_increase,debuff_stat_def_phys": {
+      "characters": [
+        "663846",
+        "713008"
+      ],
+      "abilities": [
+        "ロイヤルプレッシャー",
+        "破防のマレディグ(全体)"
+      ]
+    },
+    "cap_increase,debuff_stat_def_elem": {
+      "characters": [
+        "663846",
+        "713008"
+      ],
+      "abilities": [
+        "ロイヤルプレッシャー",
+        "破防のマレディグ(全体)"
+      ]
+    },
+    "resistance,debuff_resist_elem_fire": {
       "characters": [
         "355673",
         "388417",
@@ -2454,7 +2536,25 @@
         "魔防弱化のデスパイス"
       ]
     },
-    "buff_damage_phys_bow": {
+    "cap_increase,debuff_resist_elem_fire": {
+      "characters": [
+        "713006"
+      ],
+      "abilities": [
+        "魔導レーザー"
+      ]
+    },
+    "cap_increase,buff_damage_elem_ice": {
+      "characters": [
+        "686919",
+        "708308"
+      ],
+      "abilities": [
+        "水戦の号令",
+        "氷点下の鼓舞"
+      ]
+    },
+    "damage,buff_damage_phys_bow": {
       "characters": [
         "421210",
         "451736",
@@ -2474,7 +2574,7 @@
         "狩王女の煌導"
       ]
     },
-    "debuff_resist_phys_bow": {
+    "resistance,debuff_resist_phys_bow": {
       "characters": [
         "355922",
         "356595",
@@ -2502,7 +2602,17 @@
         "風切り羽"
       ]
     },
-    "debuff_resist_phys_axe": {
+    "cap_increase,buff_damage_phys_sword": {
+      "characters": [
+        "663844",
+        "690198"
+      ],
+      "abilities": [
+        "獅子咆哮の号令",
+        "終わりを告げる呪剣"
+      ]
+    },
+    "resistance,debuff_resist_phys_axe": {
       "characters": [
         "391190",
         "406096",
@@ -2525,7 +2635,7 @@
         "黄昏の壊断"
       ]
     },
-    "debuff_resist_phys_staff": {
+    "resistance,debuff_resist_phys_staff": {
       "characters": [
         "356022",
         "409218",
@@ -2553,7 +2663,7 @@
         "蛇牙の槍術"
       ]
     },
-    "buff_stat_speed": {
+    "stat,buff_stat_speed": {
       "characters": [
         "355671",
         "355779",
@@ -2609,7 +2719,7 @@
         "龍騰虎闘"
       ]
     },
-    "debuff_resist_elem_wind": {
+    "resistance,debuff_resist_elem_wind": {
       "characters": [
         "355780",
         "356020",
@@ -2653,7 +2763,7 @@
         "風耐性破壊(全体)Ⅲ"
       ]
     },
-    "buff_damage_phys_axe": {
+    "damage,buff_damage_phys_axe": {
       "characters": [
         "406096",
         "444212",
@@ -2679,7 +2789,7 @@
         "黄昏の補助剤"
       ]
     },
-    "debuff_resist_elem_lightning": {
+    "resistance,debuff_resist_elem_lightning": {
       "characters": [
         "355880",
         "362044",
@@ -2717,7 +2827,7 @@
         "雷鳴槍・ナリイカヅチ"
       ]
     },
-    "debuff_resist_elem_dark": {
+    "resistance,debuff_resist_elem_dark": {
       "characters": [
         "355784",
         "356578",
@@ -2751,7 +2861,7 @@
         "黒呪滅抗炎"
       ]
     },
-    "buff_damage_elem_dark": {
+    "damage,buff_damage_elem_dark": {
       "characters": [
         "356578",
         "375939",
@@ -2778,7 +2888,15 @@
         "黒呪葬生・跋"
       ]
     },
-    "buff_damage_phys_staff": {
+    "cap_increase,buff_damage_elem_lightning": {
+      "characters": [
+        "662333"
+      ],
+      "abilities": [
+        "百雷の陣"
+      ]
+    },
+    "damage,buff_damage_phys_staff": {
       "characters": [
         "362276",
         "444975",
@@ -2792,7 +2910,7 @@
         "義を為す鎚の聖別"
       ]
     },
-    "buff_damage_phys_tome": {
+    "damage,buff_damage_phys_tome": {
       "characters": [
         "406096",
         "444975"
@@ -2802,7 +2920,7 @@
         "闘技大会の心意気"
       ]
     },
-    "buff_damage_elem_wind": {
+    "damage,buff_damage_elem_wind": {
       "characters": [
         "355780",
         "444975",
@@ -2823,7 +2941,7 @@
         "順風の手当(全体)"
       ]
     },
-    "debuff_resist_phys_tome": {
+    "resistance,debuff_resist_phys_tome": {
       "characters": [
         "406096",
         "444975",
@@ -2839,7 +2957,7 @@
         "褪紅の手記"
       ]
     },
-    "debuff_resist_phys_fan": {
+    "resistance,debuff_resist_phys_fan": {
       "characters": [
         "356082",
         "395616",
@@ -2866,7 +2984,7 @@
         "華乱吹"
       ]
     },
-    "buff_damage_phys_fan": {
+    "damage,buff_damage_phys_fan": {
       "characters": [
         "470063",
         "487213",
@@ -2880,21 +2998,19 @@
     }
   },
   "ultimate": {
-    "buff_damage_phys_axe": {
+    "damage,buff_damage_phys_axe": {
       "characters": [
         "584895",
         "630260",
-        "676277",
         "756454"
       ],
       "abilities": [
         "全霊応援",
-        "破邪の決意",
         "霊薬調合",
         "黄昏の秘薬"
       ]
     },
-    "buff_damage_phys_dagger": {
+    "damage,buff_damage_phys_dagger": {
       "characters": [
         "400305",
         "605918",
@@ -2910,7 +3026,7 @@
         "闘気爆発"
       ]
     },
-    "buff_stat_atk_phys": {
+    "stat,buff_stat_atk_phys": {
       "characters": [
         "355672",
         "355673",
@@ -2936,7 +3052,6 @@
         "632969",
         "641806",
         "668689",
-        "676277",
         "676280",
         "690198",
         "706315",
@@ -2971,7 +3086,6 @@
         "月踏みの舞",
         "極彩のメディウム",
         "狩人猫の突撃号令",
-        "破邪の決意",
         "秘剣・雷鳴天牙",
         "聖樹の恩寵",
         "聖火神の天恵",
@@ -2982,7 +3096,7 @@
         "高貴なる剣の祝祷"
       ]
     },
-    "buff_damage_phys_spear": {
+    "damage,buff_damage_phys_spear": {
       "characters": [
         "437864",
         "561107",
@@ -2994,7 +3108,7 @@
         "自軍先導・強撃"
       ]
     },
-    "buff_stat_atk_elem": {
+    "stat,buff_stat_atk_elem": {
       "characters": [
         "355673",
         "356081",
@@ -3050,7 +3164,7 @@
         "語り『欠月を詠う』"
       ]
     },
-    "buff_damage_phys_sword": {
+    "damage,buff_damage_phys_sword": {
       "characters": [
         "419902",
         "437864",
@@ -3064,7 +3178,7 @@
         "自軍先導・強撃"
       ]
     },
-    "power_up": {
+    "power,power_up": {
       "characters": [
         "362276",
         "512655",
@@ -3100,7 +3214,7 @@
         "聖王の指揮"
       ]
     },
-    "damage_cap": {
+    "dmg_cap,damage_cap": {
       "characters": [
         "512655",
         "565077",
@@ -3138,7 +3252,7 @@
         "魔力凝縮"
       ]
     },
-    "debuff_resist_elem_ice": {
+    "resistance,debuff_resist_elem_ice": {
       "characters": [
         "355923",
         "356581",
@@ -3152,7 +3266,7 @@
         "語り『欠月を詠う』"
       ]
     },
-    "debuff_resist_elem_light": {
+    "resistance,debuff_resist_elem_light": {
       "characters": [
         "356580",
         "641820",
@@ -3166,7 +3280,7 @@
         "霊薬公の裁罪"
       ]
     },
-    "buff_damage_elem_all": {
+    "damage,buff_damage_elem_all": {
       "characters": [
         "550697",
         "561108",
@@ -3180,7 +3294,7 @@
         "語り『欠月を詠う』"
       ]
     },
-    "buff_damage_elem_ice": {
+    "damage,buff_damage_elem_ice": {
       "characters": [
         "745083"
       ],
@@ -3188,7 +3302,7 @@
         "語り『欠月を詠う』"
       ]
     },
-    "buff_damage_elem_light": {
+    "damage,buff_damage_elem_light": {
       "characters": [
         "393385",
         "635577",
@@ -3200,7 +3314,7 @@
         "語り『欠月を詠う』"
       ]
     },
-    "buff_damage_phys_all": {
+    "damage,buff_damage_phys_all": {
       "characters": [
         "641806",
         "733054"
@@ -3210,7 +3324,7 @@
         "豪武匠の咆哮"
       ]
     },
-    "buff_stat_atk_crit": {
+    "stat,buff_stat_atk_crit": {
       "characters": [
         "356829",
         "454507",
@@ -3240,7 +3354,7 @@
         "高貴なる剣の祝祷"
       ]
     },
-    "debuff_resist_phys_spear": {
+    "resistance,debuff_resist_phys_spear": {
       "characters": [
         "468291",
         "713008"
@@ -3250,7 +3364,7 @@
         "運命のコイン"
       ]
     },
-    "debuff_stat_def_phys": {
+    "stat,debuff_stat_def_phys": {
       "characters": [
         "355803",
         "356583",
@@ -3282,7 +3396,7 @@
         "運命のコイン"
       ]
     },
-    "debuff_stat_def_elem": {
+    "stat,debuff_stat_def_elem": {
       "characters": [
         "356022",
         "356822",
@@ -3308,7 +3422,7 @@
         "黒死の蜜"
       ]
     },
-    "buff_stat_def_phys": {
+    "stat,buff_stat_def_phys": {
       "characters": [
         "355672",
         "355783",
@@ -3346,7 +3460,7 @@
         "聖樹の恩寵"
       ]
     },
-    "buff_stat_def_elem": {
+    "stat,buff_stat_def_elem": {
       "characters": [
         "355672",
         "355783",
@@ -3376,7 +3490,7 @@
         "聖樹の恩寵"
       ]
     },
-    "debuff_resist_phys_sword": {
+    "resistance,debuff_resist_phys_sword": {
       "characters": [
         "543816",
         "698973"
@@ -3386,7 +3500,7 @@
         "刹那月影"
       ]
     },
-    "debuff_resist_elem_dark": {
+    "resistance,debuff_resist_elem_dark": {
       "characters": [
         "356578",
         "369301",
@@ -3402,7 +3516,7 @@
         "魂沌魔術(全体)"
       ]
     },
-    "critical_certain": {
+    "critical,critical_certain": {
       "characters": [
         "409218",
         "454507",
@@ -3420,7 +3534,23 @@
         "高貴なる剣の祝祷"
       ]
     },
-    "critical_elem": {
+    "cap_increase,buff_stat_atk_phys": {
+      "characters": [
+        "676277"
+      ],
+      "abilities": [
+        "破邪の決意"
+      ]
+    },
+    "cap_increase,buff_damage_phys_axe": {
+      "characters": [
+        "676277"
+      ],
+      "abilities": [
+        "破邪の決意"
+      ]
+    },
+    "critical,critical_elem": {
       "characters": [
         "550697",
         "641804"
@@ -3430,7 +3560,7 @@
         "神秘の占舞い"
       ]
     },
-    "buff_damage_phys_staff": {
+    "damage,buff_damage_phys_staff": {
       "characters": [
         "632969"
       ],
@@ -3438,7 +3568,7 @@
         "聖火神の天恵"
       ]
     },
-    "debuff_stat_atk_phys": {
+    "stat,debuff_stat_atk_phys": {
       "characters": [
         "355674",
         "356584",
@@ -3464,7 +3594,7 @@
         "紳商伯の激憤"
       ]
     },
-    "debuff_stat_atk_elem": {
+    "stat,debuff_stat_atk_elem": {
       "characters": [
         "355674",
         "400825",
@@ -3482,7 +3612,7 @@
         "紳商伯の激憤"
       ]
     },
-    "buff_stat_speed": {
+    "stat,buff_stat_speed": {
       "characters": [
         "355673",
         "355800",
@@ -3502,7 +3632,7 @@
         "風の祈り"
       ]
     },
-    "debuff_resist_phys_dagger": {
+    "resistance,debuff_resist_phys_dagger": {
       "characters": [
         "490566",
         "605918"
@@ -3512,7 +3642,7 @@
         "鎖の征途"
       ]
     },
-    "buff_damage_phys_bow": {
+    "damage,buff_damage_phys_bow": {
       "characters": [
         "355922",
         "591084"
@@ -3522,7 +3652,7 @@
         "肝っ玉狙い撃ち"
       ]
     },
-    "debuff_resist_phys_all": {
+    "resistance,debuff_resist_phys_all": {
       "characters": [
         "532358",
         "534154"
@@ -3532,7 +3662,7 @@
         "風絶の矢"
       ]
     },
-    "debuff_resist_elem_all": {
+    "resistance,debuff_resist_elem_all": {
       "characters": [
         "532358"
       ],
@@ -3540,7 +3670,7 @@
         "深き夢より来たる災渦"
       ]
     },
-    "debuff_stat_atk_crit": {
+    "stat,debuff_stat_atk_crit": {
       "characters": [
         "520843"
       ],
@@ -3548,7 +3678,7 @@
         "セントアリシア"
       ]
     },
-    "debuff_stat_speed": {
+    "stat,debuff_stat_speed": {
       "characters": [
         "355780",
         "355924",
@@ -3568,7 +3698,7 @@
         "虎足殺し"
       ]
     },
-    "debuff_resist_phys_bow": {
+    "resistance,debuff_resist_phys_bow": {
       "characters": [
         "381644"
       ],
@@ -3576,7 +3706,7 @@
         "穿王鷹"
       ]
     },
-    "debuff_resist_elem_wind": {
+    "resistance,debuff_resist_elem_wind": {
       "characters": [
         "356020",
         "356023"
@@ -3588,7 +3718,7 @@
     }
   },
   "support": {
-    "damage_cap": {
+    "dmg_cap,damage_cap": {
       "characters": [
         "355664",
         "355676",
@@ -3731,7 +3861,7 @@
         "龍気昂揚"
       ]
     },
-    "buff_stat_atk_phys": {
+    "stat,buff_stat_atk_phys": {
       "characters": [
         "355673",
         "355676",
@@ -3858,7 +3988,6 @@
         "交代時物理強化(前全)",
         "仇討時物攻強化Ⅲ",
         "偽りの富",
-        "全てを極めし王",
         "全快時物攻強化(前全)",
         "全快時物攻強化Ⅴ",
         "剛剣の騎士",
@@ -3929,7 +4058,6 @@
         "豪腕の薬師",
         "軍神の戦略",
         "近接武器攻撃力UP",
-        "迸ル狂気(力)",
         "逆境",
         "遼遠の天号",
         "鎚矛の戮力",
@@ -3948,7 +4076,53 @@
         "龍気昂揚"
       ]
     },
-    "buff_damage_phys_sword": {
+    "cap_increase,buff_damage_phys_sword": {
+      "characters": [
+        "690198",
+        "698973",
+        "756454"
+      ],
+      "abilities": [
+        "パワフルサポート",
+        "揚棄の居合",
+        "誇り高き勇将"
+      ]
+    },
+    "cap_increase,buff_damage_phys_axe": {
+      "characters": [
+        "630260",
+        "676277",
+        "681807",
+        "756454"
+      ],
+      "abilities": [
+        "ごうけつ",
+        "パワフルサポート",
+        "斧断の怒力",
+        "暴虐の権化"
+      ]
+    },
+    "cap_increase,buff_damage_phys_bow": {
+      "characters": [
+        "641815",
+        "756454"
+      ],
+      "abilities": [
+        "パワフルサポート",
+        "叡智の共鳴（弓）"
+      ]
+    },
+    "cap_increase,buff_damage_phys_staff": {
+      "characters": [
+        "641806",
+        "756454"
+      ],
+      "abilities": [
+        "パワフルサポート",
+        "騎士たる者の義務"
+      ]
+    },
+    "damage,buff_damage_phys_sword": {
       "characters": [
         "355676",
         "355847",
@@ -3982,7 +4156,6 @@
         "てんさい発明家",
         "スタイルシフト：戦装",
         "スタイルシフト：王装",
-        "パワフルサポート",
         "不抜の太刀影",
         "不撓不屈",
         "世界を滅ぼした男",
@@ -4011,7 +4184,7 @@
         "騎士への憧憬"
       ]
     },
-    "buff_damage_phys_axe": {
+    "damage,buff_damage_phys_axe": {
       "characters": [
         "356051",
         "356052",
@@ -4029,7 +4202,6 @@
       "abilities": [
         "ごうけつ",
         "ひとりでも多くに救いの手を",
-        "パワフルサポート",
         "全快時斧攻撃強化(前全)Ⅱ",
         "全快時斧攻撃強化Ⅴ",
         "斧攻撃強化Ⅲ",
@@ -4042,7 +4214,7 @@
         "野戦医療の知識"
       ]
     },
-    "buff_damage_phys_bow": {
+    "damage,buff_damage_phys_bow": {
       "characters": [
         "355803",
         "355922",
@@ -4064,7 +4236,6 @@
       ],
       "abilities": [
         "デトフ族の狩猟術",
-        "パワフルサポート",
         "一意専心",
         "全快時弓攻撃強化(相互)Ⅲ",
         "叡智の共鳴（弓）",
@@ -4082,7 +4253,7 @@
         "着工"
       ]
     },
-    "buff_damage_phys_staff": {
+    "damage,buff_damage_phys_staff": {
       "characters": [
         "362276",
         "367587",
@@ -4092,7 +4263,6 @@
         "756454"
       ],
       "abilities": [
-        "パワフルサポート",
         "全快時杖攻撃強化Ⅲ",
         "杖攻撃強化Ⅴ",
         "正義を守る剣",
@@ -4102,7 +4272,7 @@
         "騎士たる者の義務"
       ]
     },
-    "critical_certain": {
+    "critical,critical_certain": {
       "characters": [
         "355677",
         "355780",
@@ -4142,7 +4312,7 @@
         "秘めた力は帳の奥に"
       ]
     },
-    "buff_damage_phys_spear": {
+    "damage,buff_damage_phys_spear": {
       "characters": [
         "355952",
         "368617",
@@ -4184,7 +4354,7 @@
         "蒼蛇の型"
       ]
     },
-    "buff_damage_phys_dagger": {
+    "damage,buff_damage_phys_dagger": {
       "characters": [
         "355781",
         "363738",
@@ -4220,7 +4390,51 @@
         "黒蛇の鎖"
       ]
     },
-    "buff_stat_atk_elem": {
+    "cap_increase,buff_stat_atk_phys": {
+      "characters": [
+        "391190",
+        "595975",
+        "641811",
+        "659509",
+        "676277",
+        "676280",
+        "681807",
+        "690198",
+        "701680",
+        "727813",
+        "753712"
+      ],
+      "abilities": [
+        "ごうけつ",
+        "ちからじまん",
+        "ハンターズムーン",
+        "全てを極めし王",
+        "商会の懐刀",
+        "戦闘薬学",
+        "暴虐の権化",
+        "誇り高き勇将",
+        "軍神の戦略",
+        "迸ル狂気(力)",
+        "闇に駆ける者"
+      ]
+    },
+    "cap_increase,buff_damage_phys_spear": {
+      "characters": [
+        "753712"
+      ],
+      "abilities": [
+        "商会の懐刀"
+      ]
+    },
+    "cap_increase,buff_damage_phys_dagger": {
+      "characters": [
+        "753712"
+      ],
+      "abilities": [
+        "商会の懐刀"
+      ]
+    },
+    "stat,buff_stat_atk_elem": {
       "characters": [
         "355664",
         "355673",
@@ -4361,7 +4575,6 @@
         "獅子将軍の采配",
         "碧海の叡智",
         "碧海の恩恵",
-        "碩学王の学殖",
         "神威の顕降",
         "神官猫の献身",
         "神獣の加護",
@@ -4377,7 +4590,6 @@
         "賢人の知識",
         "軍神の戦略",
         "辺獄の智見",
-        "迸ル狂気(魔)",
         "遺跡の浪漫",
         "開始時属攻強化(相互)",
         "開始時属攻強化(相互)Ⅱ",
@@ -4392,7 +4604,7 @@
         "黒呪葬生・序"
       ]
     },
-    "buff_stat_atk_crit": {
+    "stat,buff_stat_atk_crit": {
       "characters": [
         "356594",
         "356595",
@@ -4463,7 +4675,7 @@
         "龍気昂揚"
       ]
     },
-    "debuff_resist_phys_sword": {
+    "resistance,debuff_resist_phys_sword": {
       "characters": [
         "355846",
         "355879",
@@ -4479,7 +4691,7 @@
         "開始時剣耐性弱体(全体)Ⅱ"
       ]
     },
-    "power_up": {
+    "power,power_up": {
       "characters": [
         "358828",
         "369300",
@@ -4532,7 +4744,7 @@
         "龍尾扇"
       ]
     },
-    "buff_damage_elem_light": {
+    "damage,buff_damage_elem_light": {
       "characters": [
         "355804",
         "356580",
@@ -4567,7 +4779,7 @@
         "風・光属性強化Ⅴ＆属性会心"
       ]
     },
-    "critical_elem": {
+    "critical,critical_elem": {
       "characters": [
         "355664",
         "355780",
@@ -4646,7 +4858,7 @@
         "黒炎の巫女"
       ]
     },
-    "debuff_stat_def_elem": {
+    "stat,debuff_stat_def_elem": {
       "characters": [
         "355674",
         "355844",
@@ -4672,7 +4884,7 @@
         "鷹の眼"
       ]
     },
-    "debuff_stat_atk_elem": {
+    "stat,debuff_stat_atk_elem": {
       "characters": [
         "444975",
         "524634",
@@ -4690,7 +4902,7 @@
         "覆水は返らず"
       ]
     },
-    "buff_damage_elem_all": {
+    "damage,buff_damage_elem_all": {
       "characters": [
         "518509",
         "615707",
@@ -4709,7 +4921,7 @@
         "魔力の開眼"
       ]
     },
-    "debuff_stat_def_phys": {
+    "stat,debuff_stat_def_phys": {
       "characters": [
         "355674",
         "356823",
@@ -4731,7 +4943,7 @@
         "荊のステップ"
       ]
     },
-    "debuff_stat_atk_phys": {
+    "stat,debuff_stat_atk_phys": {
       "characters": [
         "355924",
         "356823",
@@ -4751,7 +4963,7 @@
         "開始時物攻弱体(全体)Ⅱ"
       ]
     },
-    "buff_damage_weak": {
+    "damage,buff_damage_weak": {
       "characters": [
         "355779",
         "359725",
@@ -4773,7 +4985,7 @@
         "真剣勝負"
       ]
     },
-    "buff_damage_phys_all": {
+    "damage,buff_damage_phys_all": {
       "characters": [
         "437864",
         "584894",
@@ -4787,7 +4999,44 @@
         "開始時物理威力強化(前全)"
       ]
     },
-    "debuff_resist_phys_all": {
+    "cap_increase,buff_stat_atk_elem": {
+      "characters": [
+        "561108",
+        "595976",
+        "605919",
+        "662332",
+        "686919",
+        "708308",
+        "713006",
+        "722277",
+        "727812",
+        "727813"
+      ],
+      "abilities": [
+        "スタイルシフト：トランス",
+        "ミエドの連係",
+        "世界一のスーパースター",
+        "正道を征く",
+        "氷天華の舞台",
+        "碩学王の学殖",
+        "神威の顕降",
+        "興国の王女",
+        "軍神の戦略",
+        "迸ル狂気(魔)",
+        "魔導士の子孫"
+      ]
+    },
+    "cap_increase,buff_damage_elem_light": {
+      "characters": [
+        "727812",
+        "727813"
+      ],
+      "abilities": [
+        "正道を征く",
+        "興国の王女"
+      ]
+    },
+    "resistance,debuff_resist_phys_all": {
       "characters": [
         "640525",
         "722278"
@@ -4797,7 +5046,7 @@
         "真剣勝負"
       ]
     },
-    "debuff_resist_elem_all": {
+    "resistance,debuff_resist_elem_all": {
       "characters": [
         "640525",
         "722278"
@@ -4807,7 +5056,7 @@
         "真剣勝負"
       ]
     },
-    "buff_damage_elem_ice": {
+    "damage,buff_damage_elem_ice": {
       "characters": [
         "355664",
         "355923",
@@ -4838,7 +5087,7 @@
         "魔法の数式化アプローチ"
       ]
     },
-    "debuff_resist_phys_spear": {
+    "resistance,debuff_resist_phys_spear": {
       "characters": [
         "375940",
         "512655",
@@ -4848,23 +5097,37 @@
       ],
       "abilities": [
         "デルスタタイムスの記者",
-        "マシーナリー",
         "攻撃時槍耐性弱体Ⅱ",
         "槍法家の威圧",
         "機械師団の元帥",
         "鷹の眼"
       ]
     },
-    "debuff_resist_elem_light": {
+    "resistance,debuff_resist_elem_light": {
       "characters": [
         "713008"
       ],
       "abilities": [
-        "マシーナリー",
         "機械師団の元帥"
       ]
     },
-    "buff_damage_elem_fire": {
+    "cap_increase,debuff_resist_phys_spear": {
+      "characters": [
+        "713008"
+      ],
+      "abilities": [
+        "マシーナリー"
+      ]
+    },
+    "cap_increase,debuff_resist_elem_light": {
+      "characters": [
+        "713008"
+      ],
+      "abilities": [
+        "マシーナリー"
+      ]
+    },
+    "damage,buff_damage_elem_fire": {
       "characters": [
         "355673",
         "355843",
@@ -4895,7 +5158,15 @@
         "魔法の数式化アプローチ"
       ]
     },
-    "buff_damage_elem_wind": {
+    "cap_increase,buff_damage_elem_fire": {
+      "characters": [
+        "713006"
+      ],
+      "abilities": [
+        "スタイルシフト：トランス"
+      ]
+    },
+    "damage,buff_damage_elem_wind": {
       "characters": [
         "355780",
         "356020",
@@ -4923,7 +5194,7 @@
         "風属性強化Ⅲ"
       ]
     },
-    "buff_stat_def_phys": {
+    "stat,buff_stat_def_phys": {
       "characters": [
         "355672",
         "355783",
@@ -4984,7 +5255,7 @@
         "黒呪の聖痕"
       ]
     },
-    "buff_stat_def_elem": {
+    "stat,buff_stat_def_elem": {
       "characters": [
         "355784",
         "355802",
@@ -5042,7 +5313,15 @@
         "黒呪葬生・序"
       ]
     },
-    "buff_damage_elem_dark": {
+    "cap_increase,buff_damage_elem_ice": {
+      "characters": [
+        "686919"
+      ],
+      "abilities": [
+        "氷天華の舞台"
+      ]
+    },
+    "damage,buff_damage_elem_dark": {
       "characters": [
         "355784",
         "356578",
@@ -5058,7 +5337,6 @@
         "根源の探求",
         "毒性学の知識(相互)",
         "深化する術法",
-        "西方の大行軍",
         "辺獄の智見",
         "闇属性強化(相互)Ⅱ",
         "闇属性強化Ⅲ",
@@ -5066,7 +5344,7 @@
         "黒呪葬生・序"
       ]
     },
-    "buff_damage_elem_lightning": {
+    "damage,buff_damage_elem_lightning": {
       "characters": [
         "355844",
         "362044",
@@ -5092,7 +5370,7 @@
         "魔法の数式化アプローチ"
       ]
     },
-    "buff_stat_speed": {
+    "stat,buff_stat_speed": {
       "characters": [
         "356596",
         "356825",
@@ -5122,7 +5400,15 @@
         "黒呪葬生・序"
       ]
     },
-    "debuff_resist_phys_staff": {
+    "cap_increase,buff_damage_elem_lightning": {
+      "characters": [
+        "662333"
+      ],
+      "abilities": [
+        "疾風迅雷の猛将"
+      ]
+    },
+    "resistance,debuff_resist_phys_staff": {
       "characters": [
         "444975"
       ],
@@ -5130,7 +5416,7 @@
         "合理的な推論"
       ]
     },
-    "debuff_resist_phys_tome": {
+    "resistance,debuff_resist_phys_tome": {
       "characters": [
         "444975"
       ],
@@ -5138,7 +5424,7 @@
         "合理的な推論"
       ]
     },
-    "debuff_resist_elem_wind": {
+    "resistance,debuff_resist_elem_wind": {
       "characters": [
         "356020",
         "444975",
@@ -5150,7 +5436,7 @@
         "開始時風耐性弱体(全体)Ⅱ"
       ]
     },
-    "debuff_resist_phys_bow": {
+    "resistance,debuff_resist_phys_bow": {
       "characters": [
         "541475",
         "641815"
@@ -5160,7 +5446,15 @@
         "悠久の直観"
       ]
     },
-    "buff_damage_phys_fan": {
+    "cap_increase,buff_damage_elem_dark": {
+      "characters": [
+        "625684"
+      ],
+      "abilities": [
+        "西方の大行軍"
+      ]
+    },
+    "damage,buff_damage_phys_fan": {
       "characters": [
         "356082",
         "375556",
@@ -5178,7 +5472,7 @@
         "麗しき舞闘家"
       ]
     },
-    "debuff_resist_phys_dagger": {
+    "resistance,debuff_resist_phys_dagger": {
       "characters": [
         "355779",
         "605918"
@@ -5188,7 +5482,7 @@
         "破耐の好機(短剣)Ⅱ"
       ]
     },
-    "debuff_resist_phys_axe": {
+    "resistance,debuff_resist_phys_axe": {
       "characters": [
         "601883"
       ],
@@ -5196,7 +5490,7 @@
         "会心の下拵え"
       ]
     },
-    "debuff_stat_speed": {
+    "stat,debuff_stat_speed": {
       "characters": [
         "384095",
         "524634",
@@ -5210,7 +5504,7 @@
         "黒蛇の鎖"
       ]
     },
-    "buff_damage_crit": {
+    "damage,buff_damage_crit": {
       "characters": [
         "355677",
         "355845",
@@ -5248,7 +5542,7 @@
         "致命の攻撃Ⅲ"
       ]
     },
-    "debuff_stat_atk_crit": {
+    "stat,debuff_stat_atk_crit": {
       "characters": [
         "524634"
       ],
@@ -5256,7 +5550,7 @@
         "約指の精念・減身"
       ]
     },
-    "debuff_resist_elem_fire": {
+    "resistance,debuff_resist_elem_fire": {
       "characters": [
         "468289",
         "512655",
@@ -5268,7 +5562,7 @@
         "鷹の眼"
       ]
     },
-    "debuff_resist_elem_dark": {
+    "resistance,debuff_resist_elem_dark": {
       "characters": [
         "520843"
       ],
@@ -5276,7 +5570,7 @@
         "オートフォビア"
       ]
     },
-    "buff_damage_phys_tome": {
+    "damage,buff_damage_phys_tome": {
       "characters": [
         "406096",
         "451737",
@@ -5288,7 +5582,7 @@
         "短剣・本攻撃強化Ⅲ"
       ]
     },
-    "debuff_resist_phys_fan": {
+    "resistance,debuff_resist_phys_fan": {
       "characters": [
         "395616",
         "487213"
@@ -5298,7 +5592,7 @@
         "荊のステップ"
       ]
     },
-    "debuff_resist_elem_lightning": {
+    "resistance,debuff_resist_elem_lightning": {
       "characters": [
         "355880"
       ],
@@ -5306,7 +5600,7 @@
         "開始時雷耐性弱体(全体)Ⅱ"
       ]
     },
-    "debuff_resist_elem_ice": {
+    "resistance,debuff_resist_elem_ice": {
       "characters": [
         "355923"
       ],

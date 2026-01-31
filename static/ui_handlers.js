@@ -48,25 +48,39 @@ function bindHandlers() {
   document.addEventListener("mousemove", e => {
     if (tooltip.style.opacity !== "1") return;
 
-    const offset = 12;
-    tooltip.style.left = `${e.clientX + offset}px`;
-    tooltip.style.top  = `${e.clientY + offset}px`;
+    state.ui.tooltip.lastMouseEvent = e;
+    if (state.ui.tooltip.tooltipRAF) return;
 
-    // ★ 表示後にサイズを取得
-    const rect = tooltip.getBoundingClientRect();
-    const viewportHeight = window.innerHeight;
-
-    // 下にはみ出る場合だけ上へずらす
-    if (rect.bottom > viewportHeight) {
-      const overflow = rect.bottom - viewportHeight;
-      tooltip.style.top = `${e.clientY - overflow - offset}px`;
-    }
-  });
+    state.ui.tooltip.tooltipRAF = true;
+    requestAnimationFrame(updateTooltipPosition(tooltip));
+  }, { passive: true });
 
   document.addEventListener("mouseout", e => {
     if (!e.target.closest(".has-tooltip")) return;
     tooltip.style.opacity = "0";
   });
+}
+
+function updateTooltipPosition(tooltip) {
+  state.ui.tooltip.tooltipRAF = false;
+
+  const e = state.ui.tooltip.lastMouseEvent;
+  if (!e) return;
+
+  const offset = 12;
+
+  tooltip.style.left = `${e.clientX + offset}px`;
+  tooltip.style.top  = `${e.clientY + offset}px`;
+
+  // ★ 表示後にサイズを取得（ここが重いが rAF 内なのでOK）
+  const rect = tooltip.getBoundingClientRect();
+  const viewportHeight = window.innerHeight;
+
+  // 下にはみ出る場合だけ上へずらす
+  if (rect.bottom > viewportHeight) {
+    const overflow = rect.bottom - viewportHeight;
+    tooltip.style.top = `${e.clientY - overflow - offset}px`;
+  }
 }
 
 function bindSummaryFilterHandlers() {
@@ -576,9 +590,14 @@ function applyHighlightSettings() {
     '#settings-modal input[data-stack-key]:checked'
   )].map(el => el.dataset.stackKey);
 
+  const onlyHighlights = document.querySelector(
+    '#settings-modal input[data-only-highlights]'
+  )?.checked ?? false;
+
   state.ui.highlightSettings = {
     cap_groups: capGroups,
     stack_groups: stackGroups,
+    view_only_highlights: onlyHighlights,
   };
 
   buildHighlightIndex();

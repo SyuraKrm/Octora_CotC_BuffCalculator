@@ -221,6 +221,9 @@ function renderCharacterSelectorAccordion(character, slotIndex) {
     });
 
     chars.forEach(c => {
+      if (state.ui.highlightSettings.view_only_highlights
+        && !isHighlightedCharacter(c.character_id)) return;
+
       const opt = document.createElement("div");
       opt.className = "char-option";
       if (isHighlightedCharacter(c.character_id)) {
@@ -669,6 +672,7 @@ function renderSettingsModal() {
 
   modalBody.appendChild(title)
 
+  renderFilterCharacterOptions(modalBody);
   renderStackGroupOptions(modalBody);
   renderCapGroupHighlightOptions(modalBody);
 
@@ -744,6 +748,29 @@ function renderCapGroupHighlightOptions(container) {
   container.appendChild(section);
 }
 
+
+function renderFilterCharacterOptions(container) {
+  const section = document.createElement("section");
+  section.className = "only-highlights-options";
+
+  section.innerHTML = ``;
+
+  const label = document.createElement("label");
+  const checked = state.ui.highlightSettings?.view_only_highlights;
+
+  label.innerHTML = `
+    <input
+      type="checkbox"
+      data-only-highlights
+      ${checked ? "checked" : ""}
+    />
+    キャラクター選択をハイライトキャラに絞る
+  `;
+
+  section.appendChild(label);
+
+  container.appendChild(section);
+}
 
 function renderStackGroupOptions(container) {
   const section = document.createElement("section");

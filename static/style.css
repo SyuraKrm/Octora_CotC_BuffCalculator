@@ -843,7 +843,7 @@ tr.group-continued td {
   border-bottom: 1px solid #444;
 }
 
-.stack-group-options, .cap-highlight-root {
+.stack-group-options, .cap-highlight-root, .only-highlights-options {
   margin: 8px;
 }
 
