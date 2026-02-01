@@ -3,7 +3,7 @@ import re
 import time
 from bs4 import BeautifulSoup
 from collections import Counter
-from core.load_def import SHOKO_BASE_URL, GAME8_BASE_URL, GAME8_LIST_URL_SUFFIX, EFFECT_PATTERNS, CONDITION_PATTERNS, TAG_MAP, UNKNOWN_PATTERNS, SCOPE_PATTERN, SCOPE_NORMALIZE_MAP, SCOPE_OPTIONAL_PREFIX, SCOPE_OPTIONAL_SUFFIX, TAB_DEFS
+from core.load_def import SHOKO_BASE_URL, GAME8_BASE_URL, GAME8_LIST_URL_SUFFIX, EFFECT_PATTERNS, CONDITION_PATTERNS, TAG_MAP, UNKNOWN_PATTERNS, SCOPE_PATTERN, SCOPE_NORMALIZE_MAP, SCOPE_OPTIONAL_PREFIX, SCOPE_OPTIONAL_SUFFIX, TAB_DEFS, CHANGE_SCOPE_PATTERNS
 
 
 def match_patterns(line, patterns, target_list):
@@ -48,12 +48,12 @@ def parse_ability(lines):
         "description": description,
     }
 
-def match_effects(line, effects, scopes=None):
+def match_effects(block, effects, scopes=None):
     matched = False
 
     for effect_def in EFFECT_PATTERNS:
         for pattern in effect_def["patterns"]:
-            m = re.search(pattern, line.replace(' ', ''))
+            m = re.search(pattern, block.replace(' ', ''))
             if not m:
                 continue
 
@@ -109,6 +109,29 @@ def match_effects(line, effects, scopes=None):
             matched = True
 
     return matched
+
+def change_scopes(blocks, effects):
+
+    for scope_def in CHANGE_SCOPE_PATTERNS:
+        for pattern in scope_def["patterns"]:
+            for block in blocks:
+                m = re.search(pattern, block["text"].replace(' ', ''))
+                if not m:
+                    continue
+
+                for before_scope in scope_def["before_scopes"]:
+                    for effect in effects:
+                        effect["scopes"] = [s.replace(before_scope, scope_def["after_scope"]) for s in effect["scopes"]]
+
+
+def change_scopes_specially(character_id, effects):
+    # アラウネEX2専用処理
+    if character_id != "733055": return
+
+    # 拡散のルーンがあるため、自身向けバフは前衛全体化に変更
+    for effect in effects:
+        effect["scopes"] = [s.replace('self', 'ally_front_all') for s in effect["scopes"]]
+
 
 def extract_enhanced_block(text: str) -> list[str]:
     lines = [l.strip() for l in text.splitlines() if l.strip()]
@@ -561,6 +584,9 @@ def parse_ability_table(character_id, character_name, tab, source_type):
             if match_conditions(block["text"], conditions):
                 continue
             unknown.append(block["text"])
+
+        change_scopes(blocks, effects)
+        change_scopes_specially(character_id, effects)
 
         current["effects"] = effects
         current["conditions"] = conditions

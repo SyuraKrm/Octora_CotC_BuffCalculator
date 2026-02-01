@@ -203,17 +203,17 @@ def build_data_main(mode="ALL"):
     elif scrapeAbilitiesForPartialChara:
         characters = [
             {
-                "character_id": "384094",
-                "character_name": "イデア",
+                "character_id": "662332",
+                "character_name": "ヒカリEx",
+            },
+            {
+                "character_id": "722276",
+                "character_name": "セリス",
             },
             {
                 "character_id": "733055",
                 "character_name": "アラウネEx2",
             },
-            {
-                "character_id": "713008",
-                "character_name": "エドガー",
-            }
         ]
     else:
         characters = load_characters()
@@ -230,7 +230,7 @@ def build_data_main(mode="ALL"):
 # -----------------------------
 if __name__ == "__main__":
 
-    #build_data_main("PARTIAL")
-    build_data_main("GROUP_DATA")
+    build_data_main("PARTIAL")
+    #build_data_main("GROUP_DATA")
 
     #inspect_unknowns()

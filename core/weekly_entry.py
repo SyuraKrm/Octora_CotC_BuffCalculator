@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 
 JST = timezone(timedelta(hours=9))
-WEEK_START_SHIFT = timedelta(hours=17)
+WEEK_START_SHIFT = timedelta(days=3, hours=17)
 STATE_FILE = Path("data/weekly_state.json")
 
 def get_week_key(dt_utc: datetime) -> tuple[int, int]:

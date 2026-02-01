@@ -546,6 +546,30 @@ EFFECT_PATTERNS = [
     }
 ]
 
+CHANGE_SCOPE_PATTERNS = [
+    {
+        "before_scopes": ["self", "ally_single"],
+        "after_scope": "ally_front_all",
+        "patterns": [
+            r"[:：]前衛全体化"
+        ],
+    },
+    {
+        "before_scopes": ["self", "ally_single", "ally_front_all", "ally_back_all"],
+        "after_scope": "ally_all",
+        "patterns": [
+            r"[:：]前後衛全体化"
+        ],
+    },
+    {
+        "before_scopes": ["enemy_single"],
+        "after_scope": "enemy_all",
+        "patterns": [
+            r"[:：]敵全体化"
+        ],
+    },
+]
+
 TAG_MAP = {
     "剣": "sword",
     "槍": "spear",
