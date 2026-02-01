@@ -988,7 +988,7 @@
           "tag": "dagger",
           "cap_group": "buff_damage_phys_dagger",
           "scopes": [
-            "ally_front_all"
+            "ally_all"
           ]
         },
         {
@@ -999,7 +999,7 @@
           "value": 15,
           "cap_group": "buff_damage_crit",
           "scopes": [
-            "ally_front_all"
+            "ally_all"
           ]
         },
         {
@@ -1010,7 +1010,7 @@
           "value": 15,
           "cap_group": "buff_stat_atk_phys",
           "scopes": [
-            "ally_front_all"
+            "ally_all"
           ]
         }
       ],
@@ -5673,7 +5673,7 @@
           "value": 30,
           "cap_group": "buff_stat_atk_phys",
           "scopes": [
-            "self"
+            "ally_front_all"
           ]
         },
         {
@@ -5684,7 +5684,7 @@
           "value": 30,
           "cap_group": "buff_stat_atk_elem",
           "scopes": [
-            "self"
+            "ally_front_all"
           ]
         },
         {
@@ -5695,7 +5695,7 @@
           "value": 30,
           "cap_group": "buff_stat_atk_crit",
           "scopes": [
-            "self"
+            "ally_front_all"
           ]
         },
         {
@@ -5707,7 +5707,7 @@
           "value": 1,
           "cap_group": "critical_elem",
           "scopes": [
-            "self"
+            "ally_front_all"
           ]
         },
         {
@@ -5718,7 +5718,7 @@
           "value": 50000,
           "cap_group": "damage_cap",
           "scopes": [
-            "self"
+            "ally_front_all"
           ]
         }
       ],
@@ -5998,7 +5998,7 @@
           "value": 30,
           "cap_group": "buff_damage_weak",
           "scopes": [
-            "self"
+            "ally_front_all"
           ]
         },
         {
@@ -6009,7 +6009,7 @@
           "value": 100,
           "cap_group": "power_up",
           "scopes": [
-            "self"
+            "ally_front_all"
           ]
         },
         {
@@ -6021,7 +6021,7 @@
           "value": 50,
           "cap_group": "buff_stat_atk_phys",
           "scopes": [
-            "self"
+            "ally_front_all"
           ]
         },
         {
@@ -6033,7 +6033,7 @@
           "value": 50,
           "cap_group": "buff_stat_atk_elem",
           "scopes": [
-            "self"
+            "ally_front_all"
           ]
         }
       ],
@@ -7693,7 +7693,7 @@
           "tag": "light",
           "cap_group": "buff_damage_elem_light",
           "scopes": [
-            "self"
+            "ally_front_all"
           ]
         },
         {
@@ -7704,7 +7704,7 @@
           "value": 30,
           "cap_group": "buff_stat_atk_elem",
           "scopes": [
-            "self"
+            "ally_front_all"
           ]
         }
       ],
@@ -9772,7 +9772,7 @@
           "value": 15,
           "cap_group": "buff_stat_def_phys",
           "scopes": [
-            "ally_single"
+            "ally_front_all"
           ]
         }
       ],
@@ -9903,7 +9903,7 @@
           "value": 30,
           "cap_group": "buff_stat_atk_elem",
           "scopes": [
-            "ally_front_all"
+            "ally_all"
           ]
         }
       ],
@@ -20589,23 +20589,39 @@
         "味方単体のHP回復（回復量 対象の最大HPの40%/後衛選択可能）",
         "回復対象が戦闘不能時は復活させる（回復量 最大HPの40％）",
         "その後、同対象のSP回復（回復量対象の最大SPの25％）し、BPを1回復",
+        "さらに、ダメージ上限アップ（効果量 100000）の効果を付与（3ターン）",
         "※戦闘中3回のみ使用可能"
       ],
-      "raw_text_pre_enhance": [],
+      "raw_text_pre_enhance": [
+        "味方単体のHP回復（回復量 対象の最大HPの40%/後衛選択可能）",
+        "回復対象が戦闘不能時は復活させる（回復量 最大HPの40％）",
+        "その後、同対象のSP回復（回復量対象の最大SPの25％）し、BPを1回復",
+        "※戦闘中3回のみ使用可能"
+      ],
       "raw_text_boost": [
         "【ブースト時】HP回復量60/80/100% SP回復量50/75/100% BP2/3/4回復"
       ],
-      "effects": [],
-      "conditions": [],
-      "unknown": [
-        "味方単体のHP回復（回復量 対象の最大HPの40%/後衛選択可能） 回復対象が戦闘不能時は復活させる（回復量 最大HPの40％） その後、同対象のSP回復（回復量対象の最大SPの25％）し、BPを1回復 ※戦闘中3回のみ使用可能"
+      "effects": [
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 100000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "ally_single"
+          ]
+        }
       ],
+      "conditions": [],
+      "unknown": [],
       "blocks": [
         {
           "scopes": [
             "ally_single"
           ],
-          "text": "味方単体のHP回復（回復量 対象の最大HPの40%/後衛選択可能） 回復対象が戦闘不能時は復活させる（回復量 最大HPの40％） その後、同対象のSP回復（回復量対象の最大SPの25％）し、BPを1回復 ※戦闘中3回のみ使用可能"
+          "text": "味方単体のHP回復（回復量 対象の最大HPの40%/後衛選択可能） 回復対象が戦闘不能時は復活させる（回復量 最大HPの40％） その後、同対象のSP回復（回復量対象の最大SPの25％）し、BPを1回復 さらに、ダメージ上限アップ（効果量 100000）の効果を付与（3ターン） ※戦闘中3回のみ使用可能"
         }
       ]
     },
@@ -20721,20 +20737,29 @@
       "source_type": "support",
       "cost": null,
       "raw_text": [
+        "（",
+        "準備Turn:1/再使用Turn:3",
+        "）",
+        "コマンド選択時、味方前後衛全体に",
+        "特殊効果”かいぞう”を付与（1ターン）",
+        "かいぞう：「剣・槍・斧物理」のいずれかで攻撃時",
+        "威力アップ100%",
+        "の効果（同系統の効果重複不可）"
+      ],
+      "raw_text_pre_enhance": [
         "（準備Turn:3/再使用Turn:6）",
         "コマンド選択時、味方前後衛全体に",
         "特殊効果”かいぞう”を付与（1ターン）",
         "かいぞう：「剣・槍・斧物理」のいずれかで攻撃時",
         "威力アップ75%の効果（同系統の効果重複不可）"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "buff",
           "category": "power",
           "unit": "%",
           "target_source_type": "battle",
-          "value": 75,
+          "value": 100,
           "cap_group": "power_up",
           "scopes": [
             "ally_all"
@@ -20743,18 +20768,18 @@
       ],
       "conditions": [],
       "unknown": [
-        "（準備Turn:3/再使用Turn:6）"
+        "（ 準備Turn:1/再使用Turn:3 ）"
       ],
       "blocks": [
         {
           "scopes": [],
-          "text": "（準備Turn:3/再使用Turn:6）"
+          "text": "（ 準備Turn:1/再使用Turn:3 ）"
         },
         {
           "scopes": [
             "ally_all"
           ],
-          "text": "コマンド選択時、味方前後衛全体に 特殊効果”かいぞう”を付与（1ターン） かいぞう：「剣・槍・斧物理」のいずれかで攻撃時 威力アップ75%の効果（同系統の効果重複不可）"
+          "text": "コマンド選択時、味方前後衛全体に 特殊効果”かいぞう”を付与（1ターン） かいぞう：「剣・槍・斧物理」のいずれかで攻撃時 威力アップ100% の効果（同系統の効果重複不可）"
         }
       ]
     },
@@ -21767,7 +21792,7 @@
           "value": 10,
           "cap_group": "buff_stat_atk_phys",
           "scopes": [
-            "ally_single"
+            "ally_front_all"
           ]
         },
         {
@@ -21778,7 +21803,7 @@
           "value": 10,
           "cap_group": "buff_stat_atk_elem",
           "scopes": [
-            "ally_single"
+            "ally_front_all"
           ]
         },
         {
@@ -21789,7 +21814,7 @@
           "value": 10,
           "cap_group": "buff_stat_atk_crit",
           "scopes": [
-            "ally_single"
+            "ally_front_all"
           ]
         },
         {
@@ -21800,7 +21825,7 @@
           "value": 10,
           "cap_group": "buff_stat_def_phys",
           "scopes": [
-            "ally_single"
+            "ally_front_all"
           ]
         },
         {
@@ -21811,7 +21836,7 @@
           "value": 10,
           "cap_group": "buff_stat_def_elem",
           "scopes": [
-            "ally_single"
+            "ally_front_all"
           ]
         },
         {
@@ -21822,7 +21847,7 @@
           "value": 10,
           "cap_group": "buff_stat_speed",
           "scopes": [
-            "ally_single"
+            "ally_front_all"
           ]
         }
       ],
@@ -28599,7 +28624,7 @@
           "value": 15,
           "cap_group": "buff_damage_elem_all",
           "scopes": [
-            "ally_front_all"
+            "ally_all"
           ]
         },
         {
@@ -28610,7 +28635,7 @@
           "value": 15,
           "cap_group": "buff_stat_atk_elem",
           "scopes": [
-            "ally_front_all"
+            "ally_all"
           ]
         },
         {
@@ -28621,7 +28646,7 @@
           "value": 15,
           "cap_group": "buff_stat_atk_crit",
           "scopes": [
-            "ally_front_all"
+            "ally_all"
           ]
         },
         {
@@ -28632,7 +28657,7 @@
           "value": 30000,
           "cap_group": "damage_cap",
           "scopes": [
-            "ally_front_all"
+            "ally_all"
           ]
         }
       ],
@@ -34230,7 +34255,7 @@
           "tag": "sword",
           "cap_group": "buff_damage_phys_sword",
           "scopes": [
-            "self"
+            "ally_front_all"
           ]
         },
         {
@@ -34241,7 +34266,7 @@
           "value": 30,
           "cap_group": "buff_stat_atk_phys",
           "scopes": [
-            "self"
+            "ally_front_all"
           ]
         }
       ],
@@ -35558,7 +35583,7 @@
           "value": 15,
           "cap_group": "debuff_stat_def_phys",
           "scopes": [
-            "enemy_single"
+            "enemy_all"
           ]
         },
         {
@@ -35569,7 +35594,7 @@
           "value": 15,
           "cap_group": "debuff_stat_def_elem",
           "scopes": [
-            "enemy_single"
+            "enemy_all"
           ]
         }
       ],
@@ -36783,7 +36808,7 @@
           "value": 15,
           "cap_group": "buff_stat_atk_phys",
           "scopes": [
-            "ally_front_all"
+            "ally_all"
           ]
         }
       ],
@@ -37226,7 +37251,7 @@
           "value": 15,
           "cap_group": "buff_stat_atk_phys",
           "scopes": [
-            "ally_single"
+            "ally_front_all"
           ]
         },
         {
@@ -37237,7 +37262,7 @@
           "value": 15,
           "cap_group": "buff_stat_atk_elem",
           "scopes": [
-            "ally_single"
+            "ally_front_all"
           ]
         }
       ],
@@ -47725,7 +47750,7 @@
           "tag": "bow",
           "cap_group": "buff_damage_phys_bow",
           "scopes": [
-            "ally_single"
+            "ally_front_all"
           ]
         },
         {
@@ -47736,7 +47761,7 @@
           "value": 10,
           "cap_group": "buff_stat_atk_phys",
           "scopes": [
-            "ally_single"
+            "ally_front_all"
           ]
         },
         {
@@ -47747,7 +47772,7 @@
           "value": 10,
           "cap_group": "buff_stat_def_phys",
           "scopes": [
-            "ally_single"
+            "ally_front_all"
           ]
         }
       ],
@@ -52350,7 +52375,7 @@
           "value": 10,
           "cap_group": "buff_stat_atk_elem",
           "scopes": [
-            "ally_single"
+            "ally_front_all"
           ]
         },
         {
@@ -52361,7 +52386,7 @@
           "value": 10,
           "cap_group": "buff_stat_atk_crit",
           "scopes": [
-            "ally_single"
+            "ally_front_all"
           ]
         },
         {
@@ -52373,7 +52398,7 @@
           "value": 1,
           "cap_group": "critical_elem",
           "scopes": [
-            "ally_single"
+            "ally_front_all"
           ]
         }
       ],
@@ -63296,24 +63321,36 @@
         "敵単体に4回の光属性攻撃（威力 65）",
         "火弱点を突ける（ダメージ計算は光属性）",
         "対象の状態効果アイコンの数に応じた効果を付与（2ターン）",
+        "6個以上：中確率で",
+        "毒・暗闇",
+        "の状態異常を付与",
+        "12個以上：さらに、",
+        "大確率で麻痺・眩暈",
+        "の状態異常を付与",
+        "眩暈：小確率で攻撃（一部除く）を外す＆",
+        "行動完了後にシールド-1（0にならない）"
+      ],
+      "raw_text_pre_enhance": [
+        "敵単体に4回の光属性攻撃（威力 65）",
+        "火弱点を突ける（ダメージ計算は光属性）",
+        "対象の状態効果アイコンの数に応じた効果を付与（2ターン）",
         "6個以上：中確率で暗闇の状態異常を付与",
         "12個以上：さらに、中確率で麻痺の状態異常を付与"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力75/85/110"
       ],
       "effects": [],
       "conditions": [],
       "unknown": [
-        "敵単体に4回の光属性攻撃（威力 65） 火弱点を突ける（ダメージ計算は光属性） 対象の状態効果アイコンの数に応じた効果を付与（2ターン） 6個以上：中確率で暗闇の状態異常を付与 12個以上：さらに、中確率で麻痺の状態異常を付与"
+        "敵単体に4回の光属性攻撃（威力 65） 火弱点を突ける（ダメージ計算は光属性） 対象の状態効果アイコンの数に応じた効果を付与（2ターン） 6個以上：中確率で 毒・暗闇 の状態異常を付与 12個以上：さらに、 大確率で麻痺・眩暈 の状態異常を付与 眩暈：小確率で攻撃（一部除く）を外す＆ 行動完了後にシールド-1（0にならない）"
       ],
       "blocks": [
         {
           "scopes": [
             "enemy_single"
           ],
-          "text": "敵単体に4回の光属性攻撃（威力 65） 火弱点を突ける（ダメージ計算は光属性） 対象の状態効果アイコンの数に応じた効果を付与（2ターン） 6個以上：中確率で暗闇の状態異常を付与 12個以上：さらに、中確率で麻痺の状態異常を付与"
+          "text": "敵単体に4回の光属性攻撃（威力 65） 火弱点を突ける（ダメージ計算は光属性） 対象の状態効果アイコンの数に応じた効果を付与（2ターン） 6個以上：中確率で 毒・暗闇 の状態異常を付与 12個以上：さらに、 大確率で麻痺・眩暈 の状態異常を付与 眩暈：小確率で攻撃（一部除く）を外す＆ 行動完了後にシールド-1（0にならない）"
         }
       ]
     },
@@ -63416,9 +63453,14 @@
       "cost": null,
       "raw_text": [
         "SP50%以上時：敵全体に",
+        "会心・速度ダウン5%の効果を付与",
+        "HP50%以上時：敵全体に",
+        "光耐性ダウン10％の効果を付与"
+      ],
+      "raw_text_pre_enhance": [
+        "SP50%以上時：敵全体に",
         "会心・速度ダウン5%の効果を付与"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "debuff",
@@ -63441,6 +63483,18 @@
           "scopes": [
             "enemy_all"
           ]
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 10,
+          "tag": "light",
+          "cap_group": "debuff_resist_elem_light",
+          "scopes": [
+            "enemy_all"
+          ]
         }
       ],
       "conditions": [],
@@ -63451,6 +63505,12 @@
             "enemy_all"
           ],
           "text": "SP50%以上時：敵全体に 会心・速度ダウン5%の効果を付与"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "HP50%以上時：敵全体に 光耐性ダウン10％の効果を付与"
         }
       ]
     },
@@ -65527,7 +65587,7 @@
           "value": 15,
           "cap_group": "debuff_stat_speed",
           "scopes": [
-            "enemy_single"
+            "enemy_all"
           ]
         }
       ],
@@ -75776,7 +75836,7 @@
           "value": 15,
           "cap_group": "buff_stat_speed",
           "scopes": [
-            "ally_front_all"
+            "ally_all"
           ]
         }
       ],
@@ -90494,7 +90554,7 @@
           "value": 30,
           "cap_group": "power_up",
           "scopes": [
-            "ally_single"
+            "ally_front_all"
           ]
         }
       ],
@@ -95377,7 +95437,7 @@
           "value": 15,
           "cap_group": "buff_stat_def_phys",
           "scopes": [
-            "ally_front_all"
+            "ally_all"
           ]
         },
         {
@@ -95388,7 +95448,7 @@
           "value": 15,
           "cap_group": "buff_stat_def_elem",
           "scopes": [
-            "ally_front_all"
+            "ally_all"
           ]
         }
       ],
@@ -104518,7 +104578,7 @@
           "value": 15,
           "cap_group": "buff_stat_speed",
           "scopes": [
-            "ally_single"
+            "ally_front_all"
           ]
         }
       ],
@@ -116126,7 +116186,7 @@
           "value": 15,
           "cap_group": "buff_stat_def_phys",
           "scopes": [
-            "ally_single"
+            "ally_front_all"
           ]
         },
         {
@@ -116137,7 +116197,7 @@
           "value": 15,
           "cap_group": "buff_stat_def_elem",
           "scopes": [
-            "ally_single"
+            "ally_front_all"
           ]
         }
       ],
