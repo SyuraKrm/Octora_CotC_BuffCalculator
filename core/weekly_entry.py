@@ -1,6 +1,8 @@
 from datetime import datetime, timezone, timedelta
 import json
 from pathlib import Path
+from core.build_data import build_data_main
+
 
 JST = timezone(timedelta(hours=9))
 WEEK_START_SHIFT = timedelta(days=3, hours=17)
@@ -50,7 +52,6 @@ def main():
             return
 
     print("Run weekly job.")
-    from core.build_data import main as build_data_main
     build_data_main()
 
     save_success(now)
