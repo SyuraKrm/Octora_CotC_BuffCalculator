@@ -1,5 +1,40 @@
 [
   {
+    "character_id": "760002",
+    "character_name": "最終皇帝(女)",
+    "job": "学者",
+    "rarity": "5",
+    "elements": [
+      "火",
+      "風",
+      "光"
+    ],
+    "physicals": [
+      "本"
+    ]
+  },
+  {
+    "character_id": "760001",
+    "character_name": "最終皇帝(男)",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "火",
+      "氷",
+      "雷",
+      "光",
+      "闇"
+    ],
+    "physicals": [
+      "剣",
+      "槍",
+      "短剣",
+      "斧",
+      "弓",
+      "杖"
+    ]
+  },
+  {
     "character_id": "756454",
     "character_name": "スティア",
     "job": "薬師",

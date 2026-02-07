@@ -1,6 +1,1785 @@
 [
   [
     {
+      "character_id": "760002",
+      "character_name": "最終皇帝(女)",
+      "ability_name": "ファイアーボール",
+      "source_type": "battle",
+      "cost": "【消費SP 28】",
+      "raw_text": [
+        "敵単体に2回の火属性攻撃（威力/90）",
+        "ブーストMAX時：敵全体化"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力105/125/180"
+      ],
+      "effects": [],
+      "conditions": [
+        "敵単体に2回の火属性攻撃（威力/90） ブーストMAX時敵全体化"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に2回の火属性攻撃（威力/90） ブーストMAX時：敵全体化"
+        }
+      ]
+    },
+    {
+      "character_id": "760002",
+      "character_name": "最終皇帝(女)",
+      "ability_name": "ライトボール",
+      "source_type": "battle",
+      "cost": "【消費SP 38】",
+      "raw_text": [
+        "敵全体に2回の光属性攻撃（威力 70）",
+        "さらに、中確率で暗間の状態異常を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力80/100/120"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵全体に2回の光属性攻撃（威力 70） さらに、中確率で暗間の状態異常を付与（2ターン）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に2回の光属性攻撃（威力 70） さらに、中確率で暗間の状態異常を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "760002",
+      "character_name": "最終皇帝(女)",
+      "ability_name": "ウインドカッター",
+      "source_type": "battle",
+      "cost": "【消費SP 27】",
+      "raw_text": [
+        "敵単体に3回の風属性攻撃（威力 55）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力65/80/100"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵単体に3回の風属性攻撃（威力 55）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に3回の風属性攻撃（威力 55）"
+        }
+      ]
+    },
+    {
+      "character_id": "760002",
+      "character_name": "最終皇帝(女)",
+      "ability_name": "月光",
+      "source_type": "battle",
+      "cost": "【消費SP 50】",
+      "raw_text": [
+        "味方前衛全体にHP自動回復の効果を付与（2ターン/効力110）し",
+        "暗闇の状態異常を回復",
+        "さらに、味方前後衛全体に",
+        "特殊効果“天術”を付与（サポートアビリティとして付与）",
+        "ブーストMAX時：味方前衛全体のBPを1回復",
+        "天術：ベーシックアビリティに効果記載"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】ターン数3/4/5"
+      ],
+      "effects": [],
+      "conditions": [
+        "ブーストMAX時味方前衛全体のBPを1回復 天術ベーシックアビリティに効果記載"
+      ],
+      "unknown": [
+        "味方前衛全体にHP自動回復の効果を付与（2ターン/効力110）し 暗闇の状態異常を回復",
+        "さらに、味方前後衛全体に 特殊効果“天術”を付与（サポートアビリティとして付与）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体にHP自動回復の効果を付与（2ターン/効力110）し 暗闇の状態異常を回復"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "さらに、味方前後衛全体に 特殊効果“天術”を付与（サポートアビリティとして付与）"
+        },
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "ブーストMAX時：味方前衛全体のBPを1回復 天術：ベーシックアビリティに効果記載"
+        }
+      ]
+    },
+    {
+      "character_id": "760002",
+      "character_name": "最終皇帝(女)",
+      "ability_name": "エアスクリーン",
+      "source_type": "battle",
+      "cost": "【消費SP 64】",
+      "raw_text": [
+        "味方前衛全体に物防・属防アップ15%の効果を付与（2ターン）",
+        "さらに、味方前後衛全体に",
+        "特殊効果”風術”を付与（サポートアビリティとして付与）",
+        "加えて、自身に属性ダメージアップ20%の効果を付与（3ターン）",
+        "風術：ベーシックアビリティに効果記載"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】ターン数3/4/5 ターン数4/5/6"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 15,
+          "cap_group": "buff_stat_def_phys",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 15,
+          "cap_group": "buff_stat_def_elem",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 20,
+          "cap_group": "buff_damage_elem_all",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "さらに、味方前後衛全体に 特殊効果”風術”を付与（サポートアビリティとして付与）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体に物防・属防アップ15%の効果を付与（2ターン）"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "さらに、味方前後衛全体に 特殊効果”風術”を付与（サポートアビリティとして付与）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "加えて、自身に属性ダメージアップ20%の効果を付与（3ターン） 風術：ベーシックアビリティに効果記載"
+        }
+      ]
+    },
+    {
+      "character_id": "760002",
+      "character_name": "最終皇帝(女)",
+      "ability_name": "ファイアストーム",
+      "source_type": "battle",
+      "cost": "【消費SP 62】",
+      "raw_text": [
+        "敵全体に3回の風属性攻撃（威力 65）",
+        "火弱点を突ける（ダメージ計算は風属性）",
+        "さらに、味方前後衛全体に",
+        "特殊効果“火術”を付与（サポートアビリティとして付与）",
+        "その後、自身に属攻アップ20%の効果を付与（2ターン）",
+        "火術：ベーシックアビリティに効果記載"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力75/90/115"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 20,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "敵全体に3回の風属性攻撃（威力 65） 火弱点を突ける（ダメージ計算は風属性）",
+        "さらに、味方前後衛全体に 特殊効果“火術”を付与（サポートアビリティとして付与）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に3回の風属性攻撃（威力 65） 火弱点を突ける（ダメージ計算は風属性）"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "さらに、味方前後衛全体に 特殊効果“火術”を付与（サポートアビリティとして付与）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "その後、自身に属攻アップ20%の効果を付与（2ターン） 火術：ベーシックアビリティに効果記載"
+        }
+      ]
+    },
+    {
+      "character_id": "760002",
+      "character_name": "最終皇帝(女)",
+      "ability_name": "三術連唱",
+      "source_type": "battle",
+      "cost": "【消費SP 45】",
+      "raw_text": [
+        "敵単体に2回ずつ火・風・光属性攻撃（威力40）",
+        "ブーストMAX時：攻撃回数が3回ずつになる"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力45/55/75"
+      ],
+      "effects": [],
+      "conditions": [
+        "敵単体に2回ずつ火・風・光属性攻撃（威力40） ブーストMAX時攻撃回数が3回ずつになる"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に2回ずつ火・風・光属性攻撃（威力40） ブーストMAX時：攻撃回数が3回ずつになる"
+        }
+      ]
+    },
+    {
+      "character_id": "760002",
+      "character_name": "最終皇帝(女)",
+      "ability_name": "太陽風",
+      "source_type": "battle",
+      "cost": "【消費SP 123】",
+      "raw_text": [
+        "敵全体に2回の光属性攻撃（威力 80）",
+        "風弱点を突ける（ダメージ計算は光属性）",
+        "自身に特殊効果“風術”を付与（サポートアビリティとして付与）",
+        "さらに、使用した次のターンがら1ターンに1回",
+        "味方の行動前（一部除く）に継続効果を発揮（継続2回）",
+        "継続効果：敵全体に2回の光属性攻撃（威力 70）",
+        "風弱点を突ける（ダメージ計算は光属性）",
+        "風術：ベーシックアビリティに効果記載"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力95/115/130 継続3/4/5"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵全体に2回の光属性攻撃（威力 80） 風弱点を突ける（ダメージ計算は光属性）",
+        "自身に特殊効果“風術”を付与（サポートアビリティとして付与） さらに、使用した次のターンがら1ターンに1回 味方の行動前（一部除く）に継続効果を発揮（継続2回）",
+        "継続効果：敵全体に2回の光属性攻撃（威力 70） 風弱点を突ける（ダメージ計算は光属性） 風術：ベーシックアビリティに効果記載"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に2回の光属性攻撃（威力 80） 風弱点を突ける（ダメージ計算は光属性）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に特殊効果“風術”を付与（サポートアビリティとして付与） さらに、使用した次のターンがら1ターンに1回 味方の行動前（一部除く）に継続効果を発揮（継続2回）"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "継続効果：敵全体に2回の光属性攻撃（威力 70） 風弱点を突ける（ダメージ計算は光属性） 風術：ベーシックアビリティに効果記載"
+        }
+      ]
+    },
+    {
+      "character_id": "760002",
+      "character_name": "最終皇帝(女)",
+      "ability_name": "セイントファイア",
+      "source_type": "battle",
+      "cost": "【消費SP 111】",
+      "raw_text": [
+        "敵全体に4回の光属性攻撃（威力 45）",
+        "火弱点を突ける（ダメージ計算は光属性）",
+        "さらに、燃焼の状態異常を付与（2ターン）",
+        "その後、自身に特殊効果“火術”を付与（サポートアビリティとして付与）",
+        "攻撃対象がブレイク中の時：威力が1.5倍になり",
+        "さらに、属性耐性ダウン20%の効果を付与（2ターン）",
+        "燃焼：ターン終了時に属攻ダメージ&シールド-1（0にならない）",
+        "火術：ベーシックアビリティに効果記載"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力55/65/80"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 20,
+          "cap_group": "debuff_resist_elem_all",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "敵全体に4回の光属性攻撃（威力 45） 火弱点を突ける（ダメージ計算は光属性） さらに、燃焼の状態異常を付与（2ターン）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に4回の光属性攻撃（威力 45） 火弱点を突ける（ダメージ計算は光属性） さらに、燃焼の状態異常を付与（2ターン）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "その後、自身に特殊効果“火術”を付与（サポートアビリティとして付与） 攻撃対象がブレイク中の時：威力が1.5倍になり さらに、属性耐性ダウン20%の効果を付与（2ターン） 燃焼：ターン終了時に属攻ダメージ&シールド-1（0にならない） 火術：ベーシックアビリティに効果記載"
+        }
+      ]
+    },
+    {
+      "character_id": "760002",
+      "character_name": "最終皇帝(女)",
+      "ability_name": "黒点破",
+      "source_type": "battle",
+      "cost": "【消費SP 300】",
+      "raw_text": [
+        "敵単体に3回の火属性攻撃（威力180）",
+        "さらに、属性耐性ダウン30%と",
+        "バトルアビリティによる属性耐性ダウンを受けた際の上限が50%になる効果を付与（2ターン）",
+        "ブーストMAX時：このアビリティのダメージ上限が500000アップ"
+      ],
+      "raw_text_pre_enhance": [
+        "敵単体に3回の火属性攻撃（威力180）",
+        "さらに、属性耐性ダウン30%の効果を付与（2ターン）"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】威力190/235/300"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 30,
+          "cap_group": "debuff_resist_elem_all",
+          "scopes": [
+            "enemy_single"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に3回の火属性攻撃（威力180） さらに、属性耐性ダウン30%と バトルアビリティによる属性耐性ダウンを受けた際の上限が50%になる効果を付与（2ターン） ブーストMAX時：このアビリティのダメージ上限が500000アップ"
+        }
+      ]
+    },
+    {
+      "character_id": "760002",
+      "character_name": "最終皇帝(女)",
+      "ability_name": "皇帝の術法",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "味方前衛全体に「火・風・光属性」のいずれかで攻撃時",
+        "属性毎に追撃する効果を付与",
+        "（行動順での攻撃のみ/攻撃回数によらず1回のみ発動）",
+        "追撃（火）：自身に特殊効果“火術”を付与",
+        "追撃（風）：自身に特殊効果“風術”を付与",
+        "追撃（光）：自身に特殊効果”天術”を付与",
+        "火術、風術、天術：属攻アップ10%と対応する属性のダメージアップ20%と",
+        "「たたかう」以外の物理・属性攻撃（一部除く）時",
+        "対応する属性の弱点を突ける効果（ダメージ計算は各攻撃に準ずる）",
+        "対応する属性 火術：火、風術：風、天術：光",
+        "この効果は重複時に加算されない"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 20,
+          "cap_group": "buff_damage_elem_all",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 10,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "味方前衛全体に「火・風・光属性」のいずれかで攻撃時 属性毎に追撃する効果を付与 （行動順での攻撃のみ/攻撃回数によらず1回のみ発動）",
+        "追撃（火）：自身に特殊効果“火術”を付与",
+        "追撃（風）：自身に特殊効果“風術”を付与"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体に「火・風・光属性」のいずれかで攻撃時 属性毎に追撃する効果を付与 （行動順での攻撃のみ/攻撃回数によらず1回のみ発動）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "追撃（火）：自身に特殊効果“火術”を付与"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "追撃（風）：自身に特殊効果“風術”を付与"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "追撃（光）：自身に特殊効果”天術”を付与 火術、風術、天術：属攻アップ10%と対応する属性のダメージアップ20%と 「たたかう」以外の物理・属性攻撃（一部除く）時 対応する属性の弱点を突ける効果（ダメージ計算は各攻撃に準ずる） 対応する属性 火術：火、風術：風、天術：光 この効果は重複時に加算されない"
+        }
+      ]
+    },
+    {
+      "character_id": "760002",
+      "character_name": "最終皇帝(女)",
+      "ability_name": "陣形：ラピッドストリーム",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "前衛時かつターン終了時：味方前後衛全体に",
+        "次のターンに素早く行動できる効果を付与"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [],
+      "conditions": [
+        "前衛時かつターン終了時味方前後衛全体に 次のターンに素早く行動できる効果を付与"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "前衛時かつターン終了時：味方前後衛全体に 次のターンに素早く行動できる効果を付与"
+        }
+      ]
+    },
+    {
+      "character_id": "760002",
+      "character_name": "最終皇帝(女)",
+      "ability_name": "継承されし想い",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "自身にパーティ内の生存人数に応じ効果を付与",
+        "4以上：消費SP量軽減30%（枠毎の最大値を適用）",
+        "5以上：さらに、属攻アップ30%と属性ダメージアップ30%とサポアビと装備性能による",
+        "属攻アップと属性ダメージアップの上限が50%になる効果",
+        "6以上：さらに、使用する攻撃アビリティを2回発動する効果",
+        "（追加発動分はSP消費無し）",
+        "7以上：さらに、ダメージ上限アップ（効果量 100000）の効果"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 30,
+          "cap_group": "buff_damage_elem_all",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 30,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 100000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "attack",
+          "target_source_type": "support",
+          "value": 50,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身にパーティ内の生存人数に応じ効果を付与 4以上：消費SP量軽減30%（枠毎の最大値を適用） 5以上：さらに、属攻アップ30%と属性ダメージアップ30%とサポアビと装備性能による 属攻アップと属性ダメージアップの上限が50%になる効果 6以上：さらに、使用する攻撃アビリティを2回発動する効果 （追加発動分はSP消費無し） 7以上：さらに、ダメージ上限アップ（効果量 100000）の効果"
+        }
+      ]
+    },
+    {
+      "character_id": "760002",
+      "character_name": "最終皇帝(女)",
+      "ability_name": "術追法",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "味方前衛全体に",
+        "敵の弱点を突ける攻撃時、最終皇帝(女)が追撃する効果を付与",
+        "（行動順での攻撃のみ/攻撃回数によらず1回のみ発動）",
+        "※“ブレイクさせた時”効果は起点の味方のみ発動",
+        "追撃：敵単体に",
+        "2回の",
+        "無属性攻撃（威力100）",
+        "味方前後衛全体の特殊効果“火術”・“風術”・“天術”の内",
+        "いずれか1つ以上が付与されている人数に応じて追撃の性能が変化",
+        "4以上：威力が1.5倍",
+        "6以上：物防・属防アップとダメージ減少効果を無視する"
+      ],
+      "raw_text_pre_enhance": [
+        "味方前衛全体に",
+        "敵の弱点を突ける攻撃時、最終皇帝(女)が追撃する効果を付与",
+        "（行動順での攻撃のみ/攻撃回数によらず1回のみ発動）",
+        "※“ブレイクさせた時”効果は起点の味方のみ発動",
+        "追撃：敵単体に無属性攻撃（威力100）",
+        "味方前後衛全体の特殊効果“火術”・“風術”・“天術”の内",
+        "いずれか1つ以上が付与されている人数に応じて追撃の性能が変化",
+        "4以上：威力が1.5倍",
+        "6以上：物防・属防アップとダメージ減少効果を無視する"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "味方前衛全体に 敵の弱点を突ける攻撃時、最終皇帝(女)が追撃する効果を付与 （行動順での攻撃のみ/攻撃回数によらず1回のみ発動） ※“ブレイクさせた時”効果は起点の味方のみ発動",
+        "追撃：敵単体に 2回の 無属性攻撃（威力100）",
+        "味方前後衛全体の特殊効果“火術”・“風術”・“天術”の内 いずれか1つ以上が付与されている人数に応じて追撃の性能が変化 4以上：威力が1.5倍 6以上：物防・属防アップとダメージ減少効果を無視する"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体に 敵の弱点を突ける攻撃時、最終皇帝(女)が追撃する効果を付与 （行動順での攻撃のみ/攻撃回数によらず1回のみ発動） ※“ブレイクさせた時”効果は起点の味方のみ発動"
+        },
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "追撃：敵単体に 2回の 無属性攻撃（威力100）"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "味方前後衛全体の特殊効果“火術”・“風術”・“天術”の内 いずれか1つ以上が付与されている人数に応じて追撃の性能が変化 4以上：威力が1.5倍 6以上：物防・属防アップとダメージ減少効果を無視する"
+        }
+      ]
+    },
+    {
+      "character_id": "760002",
+      "character_name": "最終皇帝(女)",
+      "ability_name": "クリムゾンフレア",
+      "source_type": "ultimate",
+      "cost": "超威発動",
+      "raw_text": [
+        "【Lv.MAX】",
+        "敵単体に2回の光属性攻撃（威力 355）",
+        "火弱点を突ける（ダメージ計算は光属性）",
+        "さらに、属防ダウン30%と",
+        "火・風・光耐性ダウン30%の効果を付与（6ターン）",
+        "この必殺技のダメージ上限が300000アップ",
+        "自身に火術・天術の内",
+        "いずれか1つ以上が付与されている時：攻撃回数が4回になる",
+        "自身に火術・風術・天術が",
+        "すべて付与されている時：攻撃回数が6回になる"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 30,
+          "tag": "fire",
+          "cap_group": "debuff_resist_elem_fire",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 30,
+          "tag": "wind",
+          "cap_group": "debuff_resist_elem_wind",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 30,
+          "tag": "light",
+          "cap_group": "debuff_resist_elem_light",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 30,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": [
+            "enemy_single"
+          ]
+        }
+      ],
+      "conditions": [
+        "自身に火術・天術の内 いずれか1つ以上が付与されている時攻撃回数が4回になる",
+        "自身に火術・風術・天術が すべて付与されている時攻撃回数が6回になる"
+      ],
+      "unknown": [
+        "【Lv.MAX】"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "【Lv.MAX】"
+        },
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に2回の光属性攻撃（威力 355） 火弱点を突ける（ダメージ計算は光属性） さらに、属防ダウン30%と 火・風・光耐性ダウン30%の効果を付与（6ターン） この必殺技のダメージ上限が300000アップ"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に火術・天術の内 いずれか1つ以上が付与されている時：攻撃回数が4回になる"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に火術・風術・天術が すべて付与されている時：攻撃回数が6回になる"
+        }
+      ]
+    },
+    {
+      "character_id": "760002",
+      "character_name": "最終皇帝(女)",
+      "ability_name": "ギャラクシィ",
+      "source_type": "ex",
+      "cost": "回数：3",
+      "raw_text": [
+        "敵全体に光属性攻撃（威力 240）",
+        "このアビリティのダメージ上限が500000アップ",
+        "この攻撃は物防・属防アップとダメージ減少効果を無視する",
+        "自身に火術・風術・天術がすべて付与されている時：",
+        "威力が約1.2倍（※威力値に反映）になり、攻撃回数が3回になる"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_condition": [
+        "【使用条件】自身が火術・風術・天術の内、いずれか2つ以上の効果中の時"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】威力265/305/380"
+      ],
+      "effects": [],
+      "conditions": [
+        "自身に火術・風術・天術がすべて付与されている時 威力が約1.2倍（※威力値に反映）になり、攻撃回数が3回になる"
+      ],
+      "unknown": [
+        "敵全体に光属性攻撃（威力 240） このアビリティのダメージ上限が500000アップ この攻撃は物防・属防アップとダメージ減少効果を無視する"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に光属性攻撃（威力 240） このアビリティのダメージ上限が500000アップ この攻撃は物防・属防アップとダメージ減少効果を無視する"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に火術・風術・天術がすべて付与されている時： 威力が約1.2倍（※威力値に反映）になり、攻撃回数が3回になる"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "character_id": "760001",
+      "character_name": "最終皇帝(男)",
+      "ability_name": "切り落とし",
+      "source_type": "battle",
+      "cost": "【消費SP 27】",
+      "raw_text": [
+        "敵単体に剣物理攻撃（威力 170）",
+        "さらに、小確率で麻痺の状態異常を付与（2ターン）",
+        "BP5消費時：このアビリティの効果前に”ツバメ返し”を閃く",
+        "ツバメ返し：敵単体に2回の剣物理攻撃（威力 90）",
+        "さらに、中確率で麻痺の状態異常を付与（2ターン）",
+        "閃く：戦闘中このアビリティは閃いたアビリティに変化する",
+        "（フェーズ間で技変化を維持。パーティ切り替え時は解除）",
+        "※閃いたターンは変化したアビリティを使用する"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力200/350 威力105/180/315"
+      ],
+      "effects": [],
+      "conditions": [
+        "敵単体に剣物理攻撃（威力 170） さらに、小確率で麻痺の状態異常を付与（2ターン） BP5消費時このアビリティの効果前に”ツバメ返し”を閃く"
+      ],
+      "unknown": [
+        "ツバメ返し：敵単体に2回の剣物理攻撃（威力 90） さらに、中確率で麻痺の状態異常を付与（2ターン） 閃く：戦闘中このアビリティは閃いたアビリティに変化する （フェーズ間で技変化を維持。パーティ切り替え時は解除） ※閃いたターンは変化したアビリティを使用する"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に剣物理攻撃（威力 170） さらに、小確率で麻痺の状態異常を付与（2ターン） BP5消費時：このアビリティの効果前に”ツバメ返し”を閃く"
+        },
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "ツバメ返し：敵単体に2回の剣物理攻撃（威力 90） さらに、中確率で麻痺の状態異常を付与（2ターン） 閃く：戦闘中このアビリティは閃いたアビリティに変化する （フェーズ間で技変化を維持。パーティ切り替え時は解除） ※閃いたターンは変化したアビリティを使用する"
+        }
+      ]
+    },
+    {
+      "character_id": "760001",
+      "character_name": "最終皇帝(男)",
+      "ability_name": "パリイ",
+      "source_type": "battle",
+      "cost": "【消費SP 87】",
+      "raw_text": [
+        "ターン中、素早く行動し",
+        "自身に物理攻撃（一部除く）を完全に防ぐ効果を付与（1回）",
+        "さらに防いだ時、自身のBPを2回復"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】回数2/4/6回"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "ターン中、素早く行動し",
+        "自身に物理攻撃（一部除く）を完全に防ぐ効果を付与（1回）",
+        "さらに防いだ時、自身のBPを2回復"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "ターン中、素早く行動し"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に物理攻撃（一部除く）を完全に防ぐ効果を付与（1回）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "さらに防いだ時、自身のBPを2回復"
+        }
+      ]
+    },
+    {
+      "character_id": "760001",
+      "character_name": "最終皇帝(男)",
+      "ability_name": "ダンシングソード",
+      "source_type": "battle",
+      "cost": "【消費SP 25】",
+      "raw_text": [
+        "ランダムなターゲットに3回の剣物理攻撃（威力 55）",
+        "ブーストMAX時：攻撃回数が5回になる"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力65/100/175"
+      ],
+      "effects": [],
+      "conditions": [
+        "ランダムなターゲットに3回の剣物理攻撃（威力 55） ブーストMAX時攻撃回数が5回になる"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "random"
+          ],
+          "text": "ランダムなターゲットに3回の剣物理攻撃（威力 55） ブーストMAX時：攻撃回数が5回になる"
+        }
+      ]
+    },
+    {
+      "character_id": "760001",
+      "character_name": "最終皇帝(男)",
+      "ability_name": "アースヒール",
+      "source_type": "battle",
+      "cost": "【消費SP 81】",
+      "raw_text": [
+        "味方前衛全体のHP回復（効力 205）し、状態異常を回復（一部除く）",
+        "さらに、自身にBP回復量1アップの効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】効力225/295/515"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "味方前衛全体のHP回復（効力 205）し、状態異常を回復（一部除く）",
+        "さらに、自身にBP回復量1アップの効果を付与（2ターン）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体のHP回復（効力 205）し、状態異常を回復（一部除く）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "さらに、自身にBP回復量1アップの効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "760001",
+      "character_name": "最終皇帝(男)",
+      "ability_name": "流し斬り",
+      "source_type": "battle",
+      "cost": "【消費SP 71】",
+      "raw_text": [
+        "敵単体に3回の剣物理攻撃（威力 55）",
+        "さらに、物攻・物防ダウン10%の効果を付与",
+        "（2ターン/技変化時重複可）",
+        "BP5消費時：このアビリティの効果前に“水鳥剣”を閉く",
+        "水鳥剣：敵全体に4回の剣物理攻撃（威力 55）",
+        "氷弱点を突ける（ダメージ計算は剣物理）",
+        "さらに、物攻・物防ダウン15%の効果を付与",
+        "（2ターン/技変化時重複可）",
+        "閃く：戦闘中このアビリティは閃いたアビリティに変化する",
+        "（フェーズ間で技変化を維持。パーティ切り替え時は解除）",
+        "※閃いたターンは変化したアビリティを使用する"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力65/100 威力60/85/150"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 10,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 10,
+          "cap_group": "debuff_stat_atk_phys",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 15,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 15,
+          "cap_group": "debuff_stat_atk_phys",
+          "scopes": [
+            "enemy_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に3回の剣物理攻撃（威力 55） さらに、物攻・物防ダウン10%の効果を付与 （2ターン/技変化時重複可） BP5消費時：このアビリティの効果前に“水鳥剣”を閉く"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "水鳥剣：敵全体に4回の剣物理攻撃（威力 55） 氷弱点を突ける（ダメージ計算は剣物理） さらに、物攻・物防ダウン15%の効果を付与 （2ターン/技変化時重複可） 閃く：戦闘中このアビリティは閃いたアビリティに変化する （フェーズ間で技変化を維持。パーティ切り替え時は解除） ※閃いたターンは変化したアビリティを使用する"
+        }
+      ]
+    },
+    {
+      "character_id": "760001",
+      "character_name": "最終皇帝(男)",
+      "ability_name": "金剛力",
+      "source_type": "battle",
+      "cost": "【消費SP 58】",
+      "raw_text": [
+        "自身に物攻アップ30%の効果を付与（3ターン）",
+        "BP1以上消費時：さらに、",
+        "剣・斧・杖攻撃ダメージアップ30%の効果を付与（3ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】ターン数4/5/6"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 30,
+          "tag": "sword",
+          "cap_group": "buff_damage_phys_sword",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 30,
+          "tag": "axe",
+          "cap_group": "buff_damage_phys_axe",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 30,
+          "tag": "staff",
+          "cap_group": "buff_damage_phys_staff",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 30,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に物攻アップ30%の効果を付与（3ターン） BP1以上消費時：さらに、 剣・斧・杖攻撃ダメージアップ30%の効果を付与（3ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "760001",
+      "character_name": "最終皇帝(男)",
+      "ability_name": "地裂撃",
+      "source_type": "battle",
+      "cost": "【消費SP 103】",
+      "raw_text": [
+        "自身にカウントダウンの効果を付与（カウント 1）",
+        "カウント終了時、敵全体に杖物理攻撃（威力 240）",
+        "BP5消費時：このアビリティの効果前に”グランドスラム”を閉く",
+        "グランドスラム：自身にカウントダウンの効果を付与（カウント 1）",
+        "カウント終了時、敵全体にバトルアビリティによる剣・斧・杖耐性ダウンを受けた際の上限が50%になる効果と",
+        "剣・斧・杖耐性ダウン30%の効果を付与（5ターン）",
+        "さらに、同対象に杖物理攻撃（威力 290）",
+        "閃く：戦闘中このアビリティは閃いたアビリティに変化する",
+        "（フェーズ間で技変化を維持。パーティ切り替え時は解除）",
+        "※閃いたターンは変化したアビリティを使用する"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力265/380 威力320/500/875"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "physical",
+          "target_source_type": "battle",
+          "value": 50,
+          "tag": "sword",
+          "cap_group": "debuff_resist_phys_sword",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "physical",
+          "target_source_type": "battle",
+          "value": 50,
+          "tag": "axe",
+          "cap_group": "debuff_resist_phys_axe",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "physical",
+          "target_source_type": "battle",
+          "value": 50,
+          "tag": "staff",
+          "cap_group": "debuff_resist_phys_staff",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 30,
+          "tag": "sword",
+          "cap_group": "debuff_resist_phys_sword",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 30,
+          "tag": "axe",
+          "cap_group": "debuff_resist_phys_axe",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 30,
+          "tag": "staff",
+          "cap_group": "debuff_resist_phys_staff",
+          "scopes": [
+            "enemy_all"
+          ]
+        }
+      ],
+      "conditions": [
+        "カウント終了時、敵全体に杖物理攻撃（威力 240） BP5消費時このアビリティの効果前に”グランドスラム”を閉く"
+      ],
+      "unknown": [
+        "自身にカウントダウンの効果を付与（カウント 1）",
+        "グランドスラム：自身にカウントダウンの効果を付与（カウント 1）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身にカウントダウンの効果を付与（カウント 1）"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "カウント終了時、敵全体に杖物理攻撃（威力 240） BP5消費時：このアビリティの効果前に”グランドスラム”を閉く"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "グランドスラム：自身にカウントダウンの効果を付与（カウント 1）"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "カウント終了時、敵全体にバトルアビリティによる剣・斧・杖耐性ダウンを受けた際の上限が50%になる効果と 剣・斧・杖耐性ダウン30%の効果を付与（5ターン） さらに、同対象に杖物理攻撃（威力 290） 閃く：戦闘中このアビリティは閃いたアビリティに変化する （フェーズ間で技変化を維持。パーティ切り替え時は解除） ※閃いたターンは変化したアビリティを使用する"
+        }
+      ]
+    },
+    {
+      "character_id": "760001",
+      "character_name": "最終皇帝(男)",
+      "ability_name": "骨砕き",
+      "source_type": "battle",
+      "cost": "【消費SP 84】",
+      "raw_text": [
+        "敵単体に3回の杖物理攻撃（威力 85）",
+        "さらに、物攻ダウン15%の効果を付与（2ターン/技変化時重複可）",
+        "BP5消費時：このアビリティの効果前に”かめごうら割り”を閉く",
+        "かめごうら割り：単体に4回の物理攻撃（威力 85）",
+        "この攻撃は物防・属防アップとダメージ減少効果を無視する",
+        "さらに、バトルアビリティによる",
+        "物防ダウンを受けた際の上限が50%になる効果を付与（4ターン）",
+        "加えて、物攻・物防ダウン30%の効果を付与",
+        "（4ターン/技変化時重複可）",
+        "閃く：戦闘中このアビリティは閃いたアビリティに変化する",
+        "（フェーズ間で技変化を維持。パーティ切り替え時は解除）",
+        "※閃いたターンは変化したアビリティを使用する"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力95/140 威力95/130/230"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "defence",
+          "target_source_type": "battle",
+          "value": 50,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 30,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 15,
+          "cap_group": "debuff_stat_atk_phys",
+          "scopes": [
+            "enemy_single"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に3回の杖物理攻撃（威力 85） さらに、物攻ダウン15%の効果を付与（2ターン/技変化時重複可） BP5消費時：このアビリティの効果前に”かめごうら割り”を閉く かめごうら割り：単体に4回の物理攻撃（威力 85） この攻撃は物防・属防アップとダメージ減少効果を無視する さらに、バトルアビリティによる 物防ダウンを受けた際の上限が50%になる効果を付与（4ターン） 加えて、物攻・物防ダウン30%の効果を付与 （4ターン/技変化時重複可） 閃く：戦闘中このアビリティは閃いたアビリティに変化する （フェーズ間で技変化を維持。パーティ切り替え時は解除） ※閃いたターンは変化したアビリティを使用する"
+        }
+      ]
+    },
+    {
+      "character_id": "760001",
+      "character_name": "最終皇帝(男)",
+      "ability_name": "退魔神剣",
+      "source_type": "battle",
+      "cost": "【消費SP 78】",
+      "raw_text": [
+        "敵全体に剣物理攻撃（威力 240）",
+        "弱点を突ける（ダメージ計算は剣物理）",
+        "攻撃を完全に回避する効果と攻撃を完全に防ぐ効果を無視する",
+        "さらに、与えたダメージ量の10%のHPと1%のSP吸収"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力265/380/665"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵全体に剣物理攻撃（威力 240） 弱点を突ける（ダメージ計算は剣物理） 攻撃を完全に回避する効果と攻撃を完全に防ぐ効果を無視する さらに、与えたダメージ量の10%のHPと1%のSP吸収"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に剣物理攻撃（威力 240） 弱点を突ける（ダメージ計算は剣物理） 攻撃を完全に回避する効果と攻撃を完全に防ぐ効果を無視する さらに、与えたダメージ量の10%のHPと1%のSP吸収"
+        }
+      ]
+    },
+    {
+      "character_id": "760001",
+      "character_name": "最終皇帝(男)",
+      "ability_name": "一人時間差",
+      "source_type": "battle",
+      "cost": "【消費SP 60】",
+      "raw_text": [
+        "ランダムなターゲットに3回の斧物理攻撃（",
+        "威力 95",
+        "）",
+        "BP5消費時：このアビリティの効果前に“高速ナブラ”を閃く",
+        "高速ナブラ：ランダムなターゲットに3回の斧物理攻撃（",
+        "威力 95",
+        "）",
+        "攻撃を完全に回避する効果を無視する",
+        "このアビリティのダメージ上限が500000アップ",
+        "BP3以上消費時：効果を再発動（SP消費無し）する",
+        "BP5消費時：威力が1.5倍 ※威力値に反映",
+        "閃く：戦闘中このアビリティは閃いたアビリティに変化する",
+        "（フェーズ間で技変化を維持。パーティ切り替え時は解除）",
+        "※閃いたターンは変化したアビリティを使用する"
+      ],
+      "raw_text_pre_enhance": [
+        "ランダムなターゲットに3回の斧物理攻撃（威力 85）",
+        "BP5消費時：このアビリティの効果前に“高速ナブラ”を閃く",
+        "高速ナブラ：ランダムなターゲットに3回の斧物理攻撃（威力 85）",
+        "攻撃を完全に回避する効果を無視する",
+        "このアビリティのダメージ上限が500000アップ",
+        "BP3以上消費時：効果を再発動（SP消費無し）する"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】威力110/160/420"
+      ],
+      "effects": [],
+      "conditions": [
+        "ランダムなターゲットに3回の斧物理攻撃（ 威力 95 ） BP5消費時このアビリティの効果前に“高速ナブラ”を閃く",
+        "高速ナブラランダムなターゲットに3回の斧物理攻撃（ 威力 95 ） 攻撃を完全に回避する効果を無視する このアビリティのダメージ上限が500000アップ BP3以上消費時効果を再発動（SP消費無し）する BP5消費時威力が1.5倍 ※威力値に反映 閃く戦闘中このアビリティは閃いたアビリティに変化する （フェーズ間で技変化を維持。パーティ切り替え時は解除） ※閃いたターンは変化したアビリティを使用する"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "random"
+          ],
+          "text": "ランダムなターゲットに3回の斧物理攻撃（ 威力 95 ） BP5消費時：このアビリティの効果前に“高速ナブラ”を閃く"
+        },
+        {
+          "scopes": [
+            "random"
+          ],
+          "text": "高速ナブラ：ランダムなターゲットに3回の斧物理攻撃（ 威力 95 ） 攻撃を完全に回避する効果を無視する このアビリティのダメージ上限が500000アップ BP3以上消費時：効果を再発動（SP消費無し）する BP5消費時：威力が1.5倍 ※威力値に反映 閃く：戦闘中このアビリティは閃いたアビリティに変化する （フェーズ間で技変化を維持。パーティ切り替え時は解除） ※閃いたターンは変化したアビリティを使用する"
+        }
+      ]
+    },
+    {
+      "character_id": "760001",
+      "character_name": "最終皇帝(男)",
+      "ability_name": "皇帝の閃き",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "自身に「たたかう」以外の物理攻撃（一部除く）時",
+        "剣・槍・短剣・弓弱点を突ける効果を付与",
+        "（ダメージ計算は各攻撃に準ずる）",
+        "自身のブーストLvがレベル2/レベル4/レベル6（MAX）になる",
+        "※BPの消費量は1/3/5になる",
+        "BP3以上消費時：自身に必ずクリティカルの効果と",
+        "クリティカル時のダメージ倍率が",
+        "1.5倍（通常時は1.25倍）になる効果を付与",
+        "※属性攻撃でクリティカルが発生するには",
+        "“属性攻撃でクリティカルが発生する効果”が必要"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "critical",
+          "unit": "",
+          "sub_category": "certain",
+          "target_source_type": "battle",
+          "value": 1,
+          "cap_group": "critical_certain",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "自身に「たたかう」以外の物理攻撃（一部除く）時 剣・槍・短剣・弓弱点を突ける効果を付与 （ダメージ計算は各攻撃に準ずる）",
+        "自身のブーストLvがレベル2/レベル4/レベル6（MAX）になる ※BPの消費量は1/3/5になる"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に「たたかう」以外の物理攻撃（一部除く）時 剣・槍・短剣・弓弱点を突ける効果を付与 （ダメージ計算は各攻撃に準ずる）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身のブーストLvがレベル2/レベル4/レベル6（MAX）になる ※BPの消費量は1/3/5になる"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "BP3以上消費時：自身に必ずクリティカルの効果と クリティカル時のダメージ倍率が 1.5倍（通常時は1.25倍）になる効果を付与 ※属性攻撃でクリティカルが発生するには “属性攻撃でクリティカルが発生する効果”が必要"
+        }
+      ]
+    },
+    {
+      "character_id": "760001",
+      "character_name": "最終皇帝(男)",
+      "ability_name": "陣形：ホーリーウォール",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "前衛が3人以上生存時：",
+        "自身にBP回復量1アップの効果を付与",
+        "さらに、味方前衛全体に物防・属防アップ20%と",
+        "ダメージ減少10%（一部除く）の効果を付与",
+        "（同系統の効果重複不可）",
+        "加えて、味方後衛全体にHP自動回復（効力50）と",
+        "SP自動回復（回復量 対象の最大SPの2%）の効果を付与"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 20,
+          "cap_group": "buff_stat_def_phys",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 20,
+          "cap_group": "buff_stat_def_elem",
+          "scopes": [
+            "ally_front_all"
+          ]
+        }
+      ],
+      "conditions": [
+        "前衛が3人以上生存時"
+      ],
+      "unknown": [
+        "自身にBP回復量1アップの効果を付与",
+        "加えて、味方後衛全体にHP自動回復（効力50）と SP自動回復（回復量 対象の最大SPの2%）の効果を付与"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "前衛が3人以上生存時："
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身にBP回復量1アップの効果を付与"
+        },
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "さらに、味方前衛全体に物防・属防アップ20%と ダメージ減少10%（一部除く）の効果を付与 （同系統の効果重複不可）"
+        },
+        {
+          "scopes": [
+            "ally_back_all"
+          ],
+          "text": "加えて、味方後衛全体にHP自動回復（効力50）と SP自動回復（回復量 対象の最大SPの2%）の効果を付与"
+        }
+      ]
+    },
+    {
+      "character_id": "760001",
+      "character_name": "最終皇帝(男)",
+      "ability_name": "継承されし意思",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "自身にパーティ内の生存人数に応じ効果を付与",
+        "4以上：攻撃（一部除く）を50%の確率で回避する効果",
+        "5以上：さらに、バトアビによる物攻アップと剣・斧・杖攻撃ダメージアップの上限が50%になる効果",
+        "6以上：さらに、威力アップ100%（同系統の効果重複不可）",
+        "7以上：さらに、ダメージ上限アップ（効果量 400000）"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "power",
+          "unit": "%",
+          "target_source_type": "battle",
+          "value": 100,
+          "cap_group": "power_up",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 400000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "attack",
+          "target_source_type": "battle",
+          "value": 50,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "physical",
+          "target_source_type": "battle",
+          "value": 50,
+          "tag": "sword",
+          "cap_group": "buff_damage_phys_sword",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "physical",
+          "target_source_type": "battle",
+          "value": 50,
+          "tag": "axe",
+          "cap_group": "buff_damage_phys_axe",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "physical",
+          "target_source_type": "battle",
+          "value": 50,
+          "tag": "staff",
+          "cap_group": "buff_damage_phys_staff",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身にパーティ内の生存人数に応じ効果を付与 4以上：攻撃（一部除く）を50%の確率で回避する効果 5以上：さらに、バトアビによる物攻アップと剣・斧・杖攻撃ダメージアップの上限が50%になる効果 6以上：さらに、威力アップ100%（同系統の効果重複不可） 7以上：さらに、ダメージ上限アップ（効果量 400000）"
+        }
+      ]
+    },
+    {
+      "character_id": "760001",
+      "character_name": "最終皇帝(男)",
+      "ability_name": "リヴァイヴァ",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "ターン終了時かつ自身が2つ以上閃いている時：",
+        "味方前衛全体に自動復活させる効果（回復量 最大HPの100%）",
+        "（戦闘不能の味方は対象外/重ねがけ時、回数増加無し）と",
+        "HP自動回復の効果を付与（1ターン/効力50）",
+        "※このアビリティでの自動復活付与は戦闘中1回のみ"
+      ],
+      "raw_text_pre_enhance": [
+        "ターン終了時かつ自身が2つ以上閃いている時：",
+        "味方前衛全体に自動復活させる効果（回復量 最大HPの100%）",
+        "（戦闘不能の味方は対象外/重ねがけ時、回数増加無し）",
+        "※このアビリティでの自動復活付与は戦闘中1回のみ"
+      ],
+      "effects": [],
+      "conditions": [
+        "ターン終了時かつ自身が2つ以上閃いている時"
+      ],
+      "unknown": [
+        "味方前衛全体に自動復活させる効果（回復量 最大HPの100%） （戦闘不能の味方は対象外/重ねがけ時、回数増加無し）と HP自動回復の効果を付与（1ターン/効力50） ※このアビリティでの自動復活付与は戦闘中1回のみ"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "ターン終了時かつ自身が2つ以上閃いている時："
+        },
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体に自動復活させる効果（回復量 最大HPの100%） （戦闘不能の味方は対象外/重ねがけ時、回数増加無し）と HP自動回復の効果を付与（1ターン/効力50） ※このアビリティでの自動復活付与は戦闘中1回のみ"
+        }
+      ]
+    },
+    {
+      "character_id": "760001",
+      "character_name": "最終皇帝(男)",
+      "ability_name": "乱れ雪月花",
+      "source_type": "ultimate",
+      "cost": "超威発動",
+      "raw_text": [
+        "【Lv.MAX】",
+        "自身にクリティカル時のダメージ倍率が",
+        "1.5倍(通常時は1.25倍)になる効果を付与(3ターン)",
+        "さらに、敵単体に6回の剣物理攻撃（威力 200）",
+        "火・雷・光弱点を突ける（ダメージ計算は剣物理）",
+        "必ずクリティカルダメージ",
+        "この必殺技のダメージ上限が100000アップ",
+        "さらに、自身にBP回復量5アップの効果を付与（3ターン）",
+        "200%発動時：ダメージ上限アップの効果が300000になり",
+        "BP回復量アップの効果が5ターンになる"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [],
+      "conditions": [
+        "さらに、自身にBP回復量5アップの効果を付与（3ターン） 200%発動時ダメージ上限アップの効果が300000になり BP回復量アップの効果が5ターンになる"
+      ],
+      "unknown": [
+        "【Lv.MAX】",
+        "自身にクリティカル時のダメージ倍率が 1.5倍(通常時は1.25倍)になる効果を付与(3ターン)",
+        "さらに、敵単体に6回の剣物理攻撃（威力 200） 火・雷・光弱点を突ける（ダメージ計算は剣物理） 必ずクリティカルダメージ この必殺技のダメージ上限が100000アップ"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "【Lv.MAX】"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身にクリティカル時のダメージ倍率が 1.5倍(通常時は1.25倍)になる効果を付与(3ターン)"
+        },
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "さらに、敵単体に6回の剣物理攻撃（威力 200） 火・雷・光弱点を突ける（ダメージ計算は剣物理） 必ずクリティカルダメージ この必殺技のダメージ上限が100000アップ"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "さらに、自身にBP回復量5アップの効果を付与（3ターン） 200%発動時：ダメージ上限アップの効果が300000になり BP回復量アップの効果が5ターンになる"
+        }
+      ]
+    },
+    {
+      "character_id": "760001",
+      "character_name": "最終皇帝(男)",
+      "ability_name": "聖光",
+      "source_type": "ex",
+      "cost": "回数：2",
+      "raw_text": [
+        "ターン中、素早く行動し",
+        "敵全体に6回の剣物理攻撃（威力 25）",
+        "弱点以外でもシールドポイントを削り",
+        "シールドダメージが1アップ",
+        "さらに、自身のSP回復（回復量 最大SPの25%）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_condition": [
+        "【使用条件】ブレイク中の敵がいない時"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】威力30/40/70 回復量50/75/100"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "ターン中、素早く行動し",
+        "敵全体に6回の剣物理攻撃（威力 25） 弱点以外でもシールドポイントを削り シールドダメージが1アップ",
+        "さらに、自身のSP回復（回復量 最大SPの25%）"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "ターン中、素早く行動し"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に6回の剣物理攻撃（威力 25） 弱点以外でもシールドポイントを削り シールドダメージが1アップ"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "さらに、自身のSP回復（回復量 最大SPの25%）"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "character_id": "756454",
       "character_name": "スティア",
       "ability_name": "応急手当",
@@ -109670,23 +111449,28 @@
       "cost": "【消費SP 80】",
       "raw_text": [
         "敵全体に3回の闇属性攻撃（威力 80）",
+        "さらに、大確率で出血の状態異常を付与（2ターン/",
+        "敵の状態異常耐性を無視する",
+        "）"
+      ],
+      "raw_text_pre_enhance": [
+        "敵全体に3回の闇属性攻撃（威力 80）",
         "さらに、大確率で出血の状態異常を付与（2ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力90/105/130"
       ],
       "effects": [],
       "conditions": [],
       "unknown": [
-        "敵全体に3回の闇属性攻撃（威力 80） さらに、大確率で出血の状態異常を付与（2ターン）"
+        "敵全体に3回の闇属性攻撃（威力 80） さらに、大確率で出血の状態異常を付与（2ターン/ 敵の状態異常耐性を無視する ）"
       ],
       "blocks": [
         {
           "scopes": [
             "enemy_all"
           ],
-          "text": "敵全体に3回の闇属性攻撃（威力 80） さらに、大確率で出血の状態異常を付与（2ターン）"
+          "text": "敵全体に3回の闇属性攻撃（威力 80） さらに、大確率で出血の状態異常を付与（2ターン/ 敵の状態異常耐性を無視する ）"
         }
       ]
     },
@@ -109760,9 +111544,15 @@
       "cost": null,
       "raw_text": [
         "出血状態の敵がいる時",
+        "自身に属攻アップ30%の効果を付与",
+        "さらに、自身が使用する攻撃アビリティを",
+        "2回発動する効果を付与（追加発動分はSP消費無し）",
+        "※出血状態の敵を攻撃中に倒しても効果を発揮する"
+      ],
+      "raw_text_pre_enhance": [
+        "出血状態の敵がいる時",
         "自身に属攻アップ30%の効果を付与"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "buff",
@@ -109789,7 +111579,7 @@
           "scopes": [
             "self"
           ],
-          "text": "自身に属攻アップ30%の効果を付与"
+          "text": "自身に属攻アップ30%の効果を付与 さらに、自身が使用する攻撃アビリティを 2回発動する効果を付与（追加発動分はSP消費無し） ※出血状態の敵を攻撃中に倒しても効果を発揮する"
         }
       ]
     },
@@ -130044,17 +131834,22 @@
       "cost": "【消費SP 40】",
       "raw_text": [
         "敵単体に剣物理攻撃（威力 230）",
+        "さらに、自身のHP回復（効力 180）",
+        "HP満タン時：効果を再発動（SP消費無し）する"
+      ],
+      "raw_text_pre_enhance": [
+        "敵単体に剣物理攻撃（威力 230）",
         "さらに、自身のHP回復（効力 180）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力260/300/400"
       ],
       "effects": [],
-      "conditions": [],
+      "conditions": [
+        "さらに、自身のHP回復（効力 180） HP満タン時効果を再発動（SP消費無し）する"
+      ],
       "unknown": [
-        "敵単体に剣物理攻撃（威力 230）",
-        "さらに、自身のHP回復（効力 180）"
+        "敵単体に剣物理攻撃（威力 230）"
       ],
       "blocks": [
         {
@@ -130067,7 +131862,7 @@
           "scopes": [
             "self"
           ],
-          "text": "さらに、自身のHP回復（効力 180）"
+          "text": "さらに、自身のHP回復（効力 180） HP満タン時：効果を再発動（SP消費無し）する"
         }
       ]
     },
@@ -130138,13 +131933,18 @@
     {
       "character_id": "355881",
       "character_name": "マイルズ",
-      "ability_name": "物防強化Ⅲ",
+      "ability_name": "騎士の護り",
       "source_type": "support",
       "cost": null,
       "raw_text": [
+        "自身に物防アップ20%の効果を付与",
+        "HP満タン時：自身にサポアビと装備性能による",
+        "物防アップの上限が40%になる効果を付与"
+      ],
+      "raw_text_pre_enhance": [
+        "『物防強化Ⅲ』",
         "自身に物防アップ20%の効果を付与"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "buff",
@@ -130158,7 +131958,9 @@
           ]
         }
       ],
-      "conditions": [],
+      "conditions": [
+        "HP満タン時自身にサポアビと装備性能による 物防アップの上限が40%になる効果を付与"
+      ],
       "unknown": [],
       "blocks": [
         {
@@ -130166,6 +131968,12 @@
             "self"
           ],
           "text": "自身に物防アップ20%の効果を付与"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "HP満タン時：自身にサポアビと装備性能による 物防アップの上限が40%になる効果を付与"
         }
       ]
     },
@@ -139509,10 +141317,16 @@
       "source_type": "battle",
       "cost": "【消費SP 46】",
       "raw_text": [
+        "敵単体に",
+        "4回",
+        "の剣物理攻撃（威力 120）",
+        "さらに、物防ダウン10%の効果を付与（2ターン）",
+        "ブーストMAX時：敵全体化"
+      ],
+      "raw_text_pre_enhance": [
         "敵単体に2回の剣物理攻撃（威力 120）",
         "さらに、物防ダウン10%の効果を付与（2ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力135/155/210"
       ],
@@ -139525,7 +141339,7 @@
           "value": 10,
           "cap_group": "debuff_stat_def_phys",
           "scopes": [
-            "enemy_single"
+            "enemy_all"
           ]
         }
       ],
@@ -139536,7 +141350,7 @@
           "scopes": [
             "enemy_single"
           ],
-          "text": "敵単体に2回の剣物理攻撃（威力 120） さらに、物防ダウン10%の効果を付与（2ターン）"
+          "text": "敵単体に 4回 の剣物理攻撃（威力 120） さらに、物防ダウン10%の効果を付与（2ターン） ブーストMAX時：敵全体化"
         }
       ]
     },
@@ -139603,9 +141417,11 @@
       "source_type": "support",
       "cost": null,
       "raw_text": [
+        "自身に物攻アップ30%の効果を付与"
+      ],
+      "raw_text_pre_enhance": [
         "HP満タン時：自身に物攻アップ30%の効果を付与"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "buff",
@@ -139626,7 +141442,7 @@
           "scopes": [
             "self"
           ],
-          "text": "HP満タン時：自身に物攻アップ30%の効果を付与"
+          "text": "自身に物攻アップ30%の効果を付与"
         }
       ]
     },
@@ -145639,23 +147455,48 @@
       "source_type": "battle",
       "cost": "【消費SP 52】",
       "raw_text": [
+        "ランダムなターゲットに3回の斧物理攻撃（威力 85）",
+        "ブーストMAX時：攻撃毎に",
+        "物攻・物防ダウン10%の効果を付与（1ターン）"
+      ],
+      "raw_text_pre_enhance": [
         "ランダムなターゲットに3回の斧物理攻撃（威力 85）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力95/110/140"
       ],
-      "effects": [],
-      "conditions": [],
-      "unknown": [
-        "ランダムなターゲットに3回の斧物理攻撃（威力 85）"
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 10,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "random"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 10,
+          "cap_group": "debuff_stat_atk_phys",
+          "scopes": [
+            "random"
+          ]
+        }
       ],
+      "conditions": [],
+      "unknown": [],
       "blocks": [
         {
           "scopes": [
             "random"
           ],
-          "text": "ランダムなターゲットに3回の斧物理攻撃（威力 85）"
+          "text": "ランダムなターゲットに3回の斧物理攻撃（威力 85） ブーストMAX時：攻撃毎に 物攻・物防ダウン10%の効果を付与（1ターン）"
         }
       ]
     },
@@ -145719,26 +147560,23 @@
       "cost": null,
       "raw_text": [
         "ターン終了時：",
+        "味方前衛全体それぞれに",
+        "50%の確率で状態異常を回復（一部除く）",
+        "50%の確率でHP回復（効力 20）"
+      ],
+      "raw_text_pre_enhance": [
+        "ターン終了時：",
         "味方前衛全体の状態異常を10%の確率で回復（一部除く）"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [],
       "conditions": [
-        "ターン終了時"
+        "ターン終了時 味方前衛全体それぞれに 50%の確率で状態異常を回復（一部除く） 50%の確率でHP回復（効力 20）"
       ],
-      "unknown": [
-        "味方前衛全体の状態異常を10%の確率で回復（一部除く）"
-      ],
+      "unknown": [],
       "blocks": [
         {
           "scopes": [],
-          "text": "ターン終了時："
-        },
-        {
-          "scopes": [
-            "ally_front_all"
-          ],
-          "text": "味方前衛全体の状態異常を10%の確率で回復（一部除く）"
+          "text": "ターン終了時： 味方前衛全体それぞれに 50%の確率で状態異常を回復（一部除く） 50%の確率でHP回復（効力 20）"
         }
       ]
     },
