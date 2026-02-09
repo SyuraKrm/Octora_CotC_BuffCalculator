@@ -48,12 +48,12 @@ def parse_ability(lines):
         "description": description,
     }
 
-def match_effects(block, effects, scopes=None):
+def match_effects(block, effects):
     matched = False
 
     for effect_def in EFFECT_PATTERNS:
         for pattern in effect_def["patterns"]:
-            m = re.search(pattern, block.replace(' ', ''))
+            m = re.search(pattern, block["text"].replace(' ', ''))
             if not m:
                 continue
 
@@ -80,6 +80,9 @@ def match_effects(block, effects, scopes=None):
                 if "sub_category" in effect_def:
                     effect["sub_category"] = effect_def["sub_category"]
 
+                if block["target_source_type"]:
+                    effect["target_source_type"] = block["target_source_type"]
+
                 if "target_source_type" in effect_def:
                     effect["target_source_type"] = effect_def["target_source_type"]
 
@@ -98,11 +101,17 @@ def match_effects(block, effects, scopes=None):
                 else:
                     effect["cap_group"] = effect_def.get("cap_group")
 
-                if scopes:
-                    effect["scopes"] = scopes
+                # scopes
+                if block["scopes"]:
+                    effect["scopes"] = block["scopes"]
 
                 if "scopes" in effect_def:
                     effect["scopes"] = effect_def["scopes"]
+
+                # special effect
+                if block["special_effect_id"]:
+                    effect["special_effect_id"] = block["special_effect_id"]
+                    effect["special_stack"] = "no_stack"
 
                 effects.append(effect)
 
@@ -162,6 +171,8 @@ def split_by_scope(lines: list[str]) -> list[dict]:
                 blocks.append({
                     "scopes": current_scopes,
                     "text": " ".join(current_lines),
+                    "target_source_type": None,
+                    "special_effect_id": None,
                 })
 
             # 新しい scope 開始
@@ -197,9 +208,112 @@ def split_by_scope(lines: list[str]) -> list[dict]:
         blocks.append({
             "scopes": current_scopes,
             "text": " ".join(current_lines),
+            "target_source_type": None,
+            "special_effect_id": None,
         })
 
     return blocks
+
+def resolve_special_effect_blocks(blocks):
+    """
+    特殊効果付与blockと、効果説明blockを再リンクして
+    scope / target_source_type を正しく再帰属する
+
+    blocks: [
+        { "scope": "...", "text": "...", ... }
+    ]
+    """
+
+    # -----------------------------
+    # 1. 特殊効果付与のregistry作成
+    # -----------------------------
+    special_registry = {}
+
+    for block in blocks:
+        text = block.get("text", "")
+
+        # 特殊効果「XXX」を付与
+        m = re.search(r'特殊効果[「”"]([^「”"]*?)[」”"]を付与', text)
+        if not m:
+            continue
+
+        name = m.group(1)
+
+        entry = special_registry.setdefault(name, {
+            "scopes": [],
+            "target_source_type": None
+        })
+
+        scopes = block.get("scopes")
+        for scope in scopes:
+            if scope not in entry["scopes"]:
+                entry["scopes"].append(scope)
+
+        # サポートアビリティとして付与 判定
+        if "サポートアビリティとして付与" in text:
+            entry["target_source_type"] = "support"
+
+        elif "バトルアビリティとして付与" in text:
+            entry["target_source_type"] = "battle"
+
+        elif "必殺技として付与" in text:
+            entry["target_source_type"] = "ultimate"
+
+        special_registry[name] = entry
+
+    if not special_registry:
+        return blocks
+
+    # -----------------------------
+    # 2. block再分割処理
+    # -----------------------------
+    new_blocks = []
+
+    for block in blocks:
+        text = block.get("text", "")
+        original_scope = block.get("scope")
+
+        modified = False
+
+        for name, ctx in special_registry.items():
+
+            # 全角コロン → 半角に統一
+            normalized = text.replace("：", ":")
+
+            marker = f"{name}:"
+            if marker not in normalized:
+                continue
+
+            before, after = normalized.split(marker, 1)
+            before = before.strip()
+            after = after.strip()
+
+            # ---- 元blockを前半だけ残す ----
+            if before:
+                block["text"] = before
+                new_blocks.append(block)
+
+            # ---- 特殊効果block生成 ----
+            special_block = {
+                **block,  # 既存属性継承
+                "scopes": ctx["scopes"],
+                "special_effect_id": name,
+                "text": after
+            }
+
+            # target_source_type 引き継ぎ
+            if ctx.get("target_source_type"):
+                special_block["target_source_type"] = ctx["target_source_type"]
+
+            new_blocks.append(special_block)
+
+            modified = True
+            break
+
+        if not modified:
+            new_blocks.append(block)
+
+    return new_blocks
 
 def normalize_lines(lines: list[str]) -> list[str]:
     result = []
@@ -573,13 +687,14 @@ def parse_ability_table(character_id, character_name, tab, source_type):
                 current["raw_text_pre_enhance"].append(line)
 
         blocks = split_by_scope(current["raw_text"])
+        blocks = resolve_special_effect_blocks(blocks)
 
         effects = []
         conditions = []
         unknown = []
 
         for block in blocks:
-            if match_effects(block["text"], effects, block["scopes"]):
+            if match_effects(block, effects):
                 continue
             if match_conditions(block["text"], conditions):
                 continue

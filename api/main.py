@@ -93,7 +93,6 @@ def calculate(req: CalculateRequest):
                             "character_name": abil["character_name"],
                             "ability_name": abil["ability_name"],
                             "source_type": abil["source_type"],
-                            "target_source_type": e.get("target_source_type"),
 
                             # --- effect 本体 ---
                             "role": e.get("role"),
@@ -109,6 +108,10 @@ def calculate(req: CalculateRequest):
 
                             "scopes": e.get("scopes", []),
                             "condition": e.get("condition"),
+
+                            "target_source_type": e.get("target_source_type"),
+                            "special_effect_id": e.get("special_effect_id"),
+                            "special_stack": e.get("special_stack"),
                         })
 
     #breakpoint()

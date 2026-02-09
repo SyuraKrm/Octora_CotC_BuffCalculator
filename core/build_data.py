@@ -58,21 +58,20 @@ def load_grouped_data():
 # キャラクター一覧のスクレイピング
 def build_characters():
 
-    MODE = "web"  # or "web"
+    items = scrape_character_list()
+    file = load_characters()
 
-    if MODE == "web":
-        items = scrape_character_list()
+    existing_ids = {c["character_id"] for c in file}
+    scraped_ids  = {c["character_id"] for c in items}
+
+    if not scraped_ids.issuperset(existing_ids):
+        print("skip: characters missing")
+        return file
 
     with open(OUTPUT_PATH_CHARACTERS, "w", encoding="utf-8") as f:
-        json.dump(
-            items,
-            f,
-            ensure_ascii=False,
-            indent=2
-        )
+        json.dump(items, f, ensure_ascii=False, indent=2)
 
     print(f"saved: {OUTPUT_PATH_CHARACTERS} ({len(items)} characters)")
-
     return items
 
 # アビリティ一覧のスクレイピング
@@ -203,12 +202,12 @@ def build_data_main(mode="ALL"):
     elif scrapeAbilitiesForPartialChara:
         characters = [
             {
-                "character_id": "662332",
-                "character_name": "ヒカリEx",
+                "character_id": "690198",
+                "character_name": "マフレズ",
             },
             {
-                "character_id": "722276",
-                "character_name": "セリス",
+                "character_id": "745083",
+                "character_name": "ヨミ",
             },
             {
                 "character_id": "733055",
@@ -230,7 +229,8 @@ def build_data_main(mode="ALL"):
 # -----------------------------
 if __name__ == "__main__":
 
-    build_data_main("PARTIAL")
+    build_data_main("ABILITY")
+    #build_data_main("PARTIAL")
     #build_data_main("GROUP_DATA")
 
     #inspect_unknowns()

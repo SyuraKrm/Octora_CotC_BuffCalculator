@@ -52,7 +52,7 @@ function bindHandlers() {
     if (state.ui.tooltip.tooltipRAF) return;
 
     state.ui.tooltip.tooltipRAF = true;
-    requestAnimationFrame(updateTooltipPosition(tooltip));
+    requestAnimationFrame(() => updateTooltipPosition(tooltip));
   }, { passive: true });
 
   document.addEventListener("mouseout", e => {
@@ -429,7 +429,10 @@ function isEffectVisible(effect, viewScope, selectedCharacterId) {
 }
 
 function aggregateToSummaryRows(filteredEffects) {
-  const groups = groupByCapGroup(filteredEffects)
+
+  const merged = mergeNoStackSpecialEffects(filteredEffects)
+  
+  const groups = groupByCapGroup(merged)
   const rows = []
 
   for (const effects of groups.values()) {
@@ -438,6 +441,47 @@ function aggregateToSummaryRows(filteredEffects) {
   }
 
   return rows
+}
+
+function mergeNoStackSpecialEffects(effects) {
+  const normal = []
+  const specialMap = new Map()
+
+  for (const e of effects) {
+
+    if (!e.special_effect_id || e.special_stack !== "no_stack") {
+      normal.push(e)
+      continue
+    }
+
+    const key = e.special_effect_id + e.cap_group
+
+    if (!specialMap.has(key)) {
+      // shallow clone + sources初期化
+      specialMap.set(key, {
+        ...e,
+        merged_sources: [e]
+      })
+      continue
+    }
+
+    const existing = specialMap.get(key)
+
+    // source追加
+    existing.merged_sources.push(e)
+
+    // value大きい方を採用
+    if ((e.value ?? 0) > (existing.value ?? 0)) {
+      existing.value = e.value
+      existing.ability_name = e.ability_name
+      existing.character_name = e.character_name
+    }
+  }
+
+  return [
+    ...normal,
+    ...specialMap.values()
+  ]
 }
 
 function groupByCapGroup(effects) {
@@ -510,7 +554,9 @@ function buildSummaryRow(effectsInGroup) {
 
     meta: {
       stack_group: getTargetStackGroup(base),
-      sources: effectsInGroup
+      sources: effectsInGroup.flatMap(e =>
+        e.merged_sources ? e.merged_sources : [e]
+      )
     },
 
     sortKey: buildSortKey(base)

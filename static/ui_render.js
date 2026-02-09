@@ -572,18 +572,61 @@ function td(row, text, className) {
   const sources = row.meta.sources;
   if (!Array.isArray(sources) || sources.length === 0) return el;
 
-  const tooltipLines = sources
-    .map(s => {
-      if (!s?.ability_name) return null;
+  // 特殊効果まとめ用
+  const specialGroups = new Map();
+  const normalLines = [];
 
+  for (const s of sources) {
+    if (!s?.ability_name) continue;
+
+    const isNoStackSpecial =
+      s.special_effect_id &&
+      s.special_stack === "no_stack";
+
+    if (!isNoStackSpecial) {
+      // 通常行
       const char = s.character_name ?? "不明";
       const suffix = s.category === "cap_increase"
         ? "【上限】"
         : ` ${s.value}${s.unit}`;
 
-      return `${char}：${s.ability_name}${suffix}`;
-    })
-    .filter(Boolean);
+      normalLines.push(`${char}：${s.ability_name}${suffix}`);
+      continue;
+    }
+
+    // 特殊効果まとめ
+    const key = s.special_effect_id;
+
+    if (!specialGroups.has(key)) {
+      specialGroups.set(key, {
+        char: s.character_name ?? "不明",
+        effectName: key,
+        value: s.value,
+        unit: s.unit,
+        abilities: new Set()
+      });
+    }
+
+    const g = specialGroups.get(key);
+    g.abilities.add(s.ability_name);
+
+    // 念のため最大値採用
+    if ((s.value ?? 0) > (g.value ?? 0)) {
+      g.value = s.value;
+    }
+  }
+
+  // 特殊効果行生成
+  const specialLines = Array.from(specialGroups.values()).map(g => {
+    const abilityList = Array.from(g.abilities).join("、");
+    return `${g.char}：特殊効果「${g.effectName}」（${abilityList}） ${g.value}${g.unit}`;
+  });
+
+  // 結合
+  const tooltipLines = [
+    ...specialLines,
+    ...normalLines
+  ];
 
   if (tooltipLines.length > 0) {
     el.classList.add("has-tooltip");
