@@ -80,7 +80,7 @@ def match_effects(block, effects):
                 if "sub_category" in effect_def:
                     effect["sub_category"] = effect_def["sub_category"]
 
-                if block["target_source_type"]:
+                if "target_source_type" in block:
                     effect["target_source_type"] = block["target_source_type"]
 
                 if "target_source_type" in effect_def:
@@ -102,14 +102,14 @@ def match_effects(block, effects):
                     effect["cap_group"] = effect_def.get("cap_group")
 
                 # scopes
-                if block["scopes"]:
+                if "scopes" in block:
                     effect["scopes"] = block["scopes"]
 
                 if "scopes" in effect_def:
                     effect["scopes"] = effect_def["scopes"]
 
                 # special effect
-                if block["special_effect_id"]:
+                if "special_effect_id" in block:
                     effect["special_effect_id"] = block["special_effect_id"]
                     effect["special_stack"] = "no_stack"
 
@@ -171,8 +171,6 @@ def split_by_scope(lines: list[str]) -> list[dict]:
                 blocks.append({
                     "scopes": current_scopes,
                     "text": " ".join(current_lines),
-                    "target_source_type": None,
-                    "special_effect_id": None,
                 })
 
             # 新しい scope 開始
@@ -208,8 +206,6 @@ def split_by_scope(lines: list[str]) -> list[dict]:
         blocks.append({
             "scopes": current_scopes,
             "text": " ".join(current_lines),
-            "target_source_type": None,
-            "special_effect_id": None,
         })
 
     return blocks
