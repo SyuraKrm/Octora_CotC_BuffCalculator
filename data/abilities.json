@@ -41607,16 +41607,22 @@
       "cost": "【消費SP 300】",
       "raw_text": [
         "敵単体に光属性攻撃（威力 630）",
+        "火・氷弱点を突ける（ダメージ計算は光属性）",
+        "さらに、味方前後衛全体に",
+        "SPストックを付与（効果量 使用者の最大SPの100%/重複不可）"
+      ],
+      "raw_text_pre_enhance": [
+        "敵単体に光属性攻撃（威力 630）",
         "火・氷弱点を突ける（ダメージ計算は光属性）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力660/800/1000"
       ],
       "effects": [],
       "conditions": [],
       "unknown": [
-        "敵単体に光属性攻撃（威力 630） 火・氷弱点を突ける（ダメージ計算は光属性）"
+        "敵単体に光属性攻撃（威力 630） 火・氷弱点を突ける（ダメージ計算は光属性）",
+        "さらに、味方前後衛全体に SPストックを付与（効果量 使用者の最大SPの100%/重複不可）"
       ],
       "blocks": [
         {
@@ -41624,6 +41630,14 @@
             "enemy_single"
           ],
           "text": "敵単体に光属性攻撃（威力 630） 火・氷弱点を突ける（ダメージ計算は光属性）",
+          "target_source_type": null,
+          "special_effect_id": null
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "さらに、味方前後衛全体に SPストックを付与（効果量 使用者の最大SPの100%/重複不可）",
           "target_source_type": null,
           "special_effect_id": null
         }
@@ -41698,22 +41712,36 @@
     {
       "character_id": "635577",
       "character_name": "リンユウEx",
-      "ability_name": "後衛移動者BP回復",
+      "ability_name": "明日への活力",
       "source_type": "support",
       "cost": null,
       "raw_text": [
+        "味方が後衛に移動時：移動した味方のBPを1回復",
+        "味方移動時：移動した味方の",
+        "状態異常”恐怖”と特殊効果”畏怖”を回復し",
+        "光属性ダメージアップ15%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [
+        "『後衛移動者BP回復』",
         "味方が後衛に移動時：移動した味方のBPを1回復"
       ],
-      "raw_text_pre_enhance": [],
-      "effects": [],
-      "conditions": [
-        "味方が後衛に移動時移動した味方のBPを1回復"
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 15,
+          "tag": "light",
+          "cap_group": "buff_damage_elem_light"
+        }
       ],
+      "conditions": [],
       "unknown": [],
       "blocks": [
         {
           "scopes": [],
-          "text": "味方が後衛に移動時：移動した味方のBPを1回復",
+          "text": "味方が後衛に移動時：移動した味方のBPを1回復 味方移動時：移動した味方の 状態異常”恐怖”と特殊効果”畏怖”を回復し 光属性ダメージアップ15%の効果を付与（2ターン）",
           "target_source_type": null,
           "special_effect_id": null
         }
