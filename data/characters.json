@@ -1,5 +1,38 @@
 [
   {
+    "character_id": "763255",
+    "character_name": "七英雄ノエル",
+    "job": "盗賊",
+    "rarity": "5",
+    "elements": [
+      "火"
+    ],
+    "physicals": [
+      "剣",
+      "槍",
+      "短剣",
+      "斧",
+      "弓",
+      "杖",
+      "扇",
+      "本"
+    ]
+  },
+  {
+    "character_id": "763254",
+    "character_name": "七英雄ロックブーケ",
+    "job": "踊子",
+    "rarity": "5",
+    "elements": [
+      "雷",
+      "風",
+      "闇"
+    ],
+    "physicals": [
+      "扇"
+    ]
+  },
+  {
     "character_id": "760002",
     "character_name": "最終皇帝(女)",
     "job": "学者",
