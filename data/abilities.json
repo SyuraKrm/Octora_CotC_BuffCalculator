@@ -1,6 +1,1560 @@
 [
   [
     {
+      "character_id": "763255",
+      "character_name": "七英雄ノエル",
+      "ability_name": "ソバット",
+      "source_type": "battle",
+      "cost": "【消費SP 28】",
+      "raw_text": [
+        "敵単体に短剣物理攻撃（威力 170）",
+        "この攻撃は物防・属防アップ効果を無視する"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力200/240/350"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵単体に短剣物理攻撃（威力 170） この攻撃は物防・属防アップ効果を無視する"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に短剣物理攻撃（威力 170） この攻撃は物防・属防アップ効果を無視する"
+        }
+      ]
+    },
+    {
+      "character_id": "763255",
+      "character_name": "七英雄ノエル",
+      "ability_name": "ヒートハンド",
+      "source_type": "battle",
+      "cost": "【消費SP 80】",
+      "raw_text": [
+        "自身に物攻アップ30%と",
+        "物理ダメージアップ30%の効果を付与（3ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】ターン数4/5/6"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 30,
+          "cap_group": "buff_damage_phys_all",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 30,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に物攻アップ30%と 物理ダメージアップ30%の効果を付与（3ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "763255",
+      "character_name": "七英雄ノエル",
+      "ability_name": "カウンター",
+      "source_type": "battle",
+      "cost": "【消費SP 75】",
+      "raw_text": [
+        "使用ターン中、自身に物理攻撃（一部除く）を完全に防ぐ効果を付与し",
+        "敵全体に自身への挑発効果を付与（1ターン）",
+        "さらに防いだ時、短剣物理攻撃で反撃（威力230）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力260/300/400"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "使用ターン中、自身に物理攻撃（一部除く）を完全に防ぐ効果を付与し",
+        "敵全体に自身への挑発効果を付与（1ターン） さらに防いだ時、短剣物理攻撃で反撃（威力230）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "使用ターン中、自身に物理攻撃（一部除く）を完全に防ぐ効果を付与し"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に自身への挑発効果を付与（1ターン） さらに防いだ時、短剣物理攻撃で反撃（威力230）"
+        }
+      ]
+    },
+    {
+      "character_id": "763255",
+      "character_name": "七英雄ノエル",
+      "ability_name": "カポエラキック",
+      "source_type": "battle",
+      "cost": "【消費SP 48】",
+      "raw_text": [
+        "敵単体に短剣物理攻撃（威力 230）",
+        "さらに、中確率で眩暈の状態異常を付与（2ターン）",
+        "この攻撃は物防・属防アップ効果を無視する",
+        "眩暈：小確率で攻撃（一部除く）を外す＆",
+        "行動完了後にシールド-1（0にならない）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力260/300/400"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵単体に短剣物理攻撃（威力 230） さらに、中確率で眩暈の状態異常を付与（2ターン） この攻撃は物防・属防アップ効果を無視する 眩暈：小確率で攻撃（一部除く）を外す＆ 行動完了後にシールド-1（0にならない）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に短剣物理攻撃（威力 230） さらに、中確率で眩暈の状態異常を付与（2ターン） この攻撃は物防・属防アップ効果を無視する 眩暈：小確率で攻撃（一部除く）を外す＆ 行動完了後にシールド-1（0にならない）"
+        }
+      ]
+    },
+    {
+      "character_id": "763255",
+      "character_name": "七英雄ノエル",
+      "ability_name": "カマイタチ",
+      "source_type": "battle",
+      "cost": "【消費SP 66】",
+      "raw_text": [
+        "敵全体に3回の剣物理攻撃（威力 65）",
+        "弓・風弱点を突ける（ダメージ計算は剣物理）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力75/90/115"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵全体に3回の剣物理攻撃（威力 65） 弓・風弱点を突ける（ダメージ計算は剣物理）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に3回の剣物理攻撃（威力 65） 弓・風弱点を突ける（ダメージ計算は剣物理）"
+        }
+      ]
+    },
+    {
+      "character_id": "763255",
+      "character_name": "七英雄ノエル",
+      "ability_name": "流し斬り",
+      "source_type": "battle",
+      "cost": "【消費SP 43】",
+      "raw_text": [
+        "敵単体に3回の剣物理攻撃（威力 65）",
+        "さらに、物攻・物防ダウン15%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力75/90120"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 15,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 15,
+          "cap_group": "debuff_stat_atk_phys",
+          "scopes": [
+            "enemy_single"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に3回の剣物理攻撃（威力 65） さらに、物攻・物防ダウン15%の効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "763255",
+      "character_name": "七英雄ノエル",
+      "ability_name": "音速剣",
+      "source_type": "battle",
+      "cost": "【消費SP 66】",
+      "raw_text": [
+        "敵単体に4回の剣物理攻撃（威力 45）",
+        "風弱点を突ける（ダメージ計算は剣物理）",
+        "さらに、物理耐性ダウン15%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力55/65/90"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 15,
+          "cap_group": "debuff_resist_phys_all",
+          "scopes": [
+            "enemy_single"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に4回の剣物理攻撃（威力 45） 風弱点を突ける（ダメージ計算は剣物理） さらに、物理耐性ダウン15%の効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "763255",
+      "character_name": "七英雄ノエル",
+      "ability_name": "サラマンダークロー",
+      "source_type": "battle",
+      "cost": "【消費SP 36】",
+      "raw_text": [
+        "敵単体に短剣物理攻撃（威力 230）",
+        "火弱点を突ける（ダメージ計算は短剣物理）",
+        "このアビリティのダメージ上限が500000アップ",
+        "コマンド選択時に自身が物攻アップ状態の時：",
+        "威力が2倍※威力値に反映",
+        "コマンド選択時に自身が物理ダメージアップ状態の時：",
+        "さらに、このアビリティのダメージ上限が追加で500000アップ",
+        "ブーストMAX時：さらに、このアビリティのダメージ上限が",
+        "追加で500000アップ"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力260/300/400"
+      ],
+      "effects": [],
+      "conditions": [
+        "敵単体に短剣物理攻撃（威力 230） 火弱点を突ける（ダメージ計算は短剣物理） このアビリティのダメージ上限が500000アップ コマンド選択時に自身が物攻アップ状態の時 威力が2倍※威力値に反映 コマンド選択時に自身が物理ダメージアップ状態の時 さらに、このアビリティのダメージ上限が追加で500000アップ ブーストMAX時さらに、このアビリティのダメージ上限が 追加で500000アップ"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に短剣物理攻撃（威力 230） 火弱点を突ける（ダメージ計算は短剣物理） このアビリティのダメージ上限が500000アップ コマンド選択時に自身が物攻アップ状態の時： 威力が2倍※威力値に反映 コマンド選択時に自身が物理ダメージアップ状態の時： さらに、このアビリティのダメージ上限が追加で500000アップ ブーストMAX時：さらに、このアビリティのダメージ上限が 追加で500000アップ"
+        }
+      ]
+    },
+    {
+      "character_id": "763255",
+      "character_name": "七英雄ノエル",
+      "ability_name": "奈落剣殺法",
+      "source_type": "battle",
+      "cost": "【消費SP 87】",
+      "raw_text": [
+        "敵全体に5回の剣物理攻撃（威力 35）",
+        "さらに、短剣耐性ダウン20%の効果を付与（2ターン）",
+        "ブーストMAX時：効果を再発動（SP消費無し）する"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力40/50/60"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 20,
+          "tag": "dagger",
+          "cap_group": "debuff_resist_phys_dagger",
+          "scopes": [
+            "enemy_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に5回の剣物理攻撃（威力 35） さらに、短剣耐性ダウン20%の効果を付与（2ターン） ブーストMAX時：効果を再発動（SP消費無し）する"
+        }
+      ]
+    },
+    {
+      "character_id": "763255",
+      "character_name": "七英雄ノエル",
+      "ability_name": "月影",
+      "source_type": "battle",
+      "cost": "【消費SP 119】",
+      "raw_text": [
+        "ターン中、素早く行動し",
+        "敵全体に",
+        "8回",
+        "の剣物理攻撃（威力 25）",
+        "氷弱点を突ける（ダメージ計算は剣物理）",
+        "さらに、自身に物理ダメージアップ",
+        "30%",
+        "の効果を付与（3ターン）"
+      ],
+      "raw_text_pre_enhance": [
+        "ターン中、素早く行動し",
+        "敵全体に6回の剣物理攻撃（威力 25）",
+        "氷弱点を突ける（ダメージ計算は剣物理）",
+        "さらに、自身に物理ダメージアップ15%の効果を付与（3ターン）"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】威力30/35/40"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 30,
+          "cap_group": "buff_damage_phys_all",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "ターン中、素早く行動し",
+        "敵全体に 8回 の剣物理攻撃（威力 25） 氷弱点を突ける（ダメージ計算は剣物理）"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "ターン中、素早く行動し"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に 8回 の剣物理攻撃（威力 25） 氷弱点を突ける（ダメージ計算は剣物理）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "さらに、自身に物理ダメージアップ 30% の効果を付与（3ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "763255",
+      "character_name": "七英雄ノエル",
+      "ability_name": "吸収の法",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "（準備Turn:0/再使用Turn:4）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_override_battle": [
+        "吸収の法：自身を除く味方単体に特殊効果”復活不可”を付与",
+        "さらに、自身に特殊効果“吸収の法”を付与",
+        "その後、選択した味方にオーバーキルダメージ",
+        "（後衛選択可能/ふんばる不可）",
+        "復活不可：復活効果の対象にできず、効果発揮されない効果",
+        "吸収の法：対象にした味方のステータスの一部を",
+        "自身に加算する効果（装備ステータスを除く/重複不可/加算上限：最大HP+4000、最大SP+200、他+200）と",
+        "「たたかう」以外の物理攻撃（一部除く）時",
+        "剣・槍・短剣・斧・弓・杖・本・扇弱点を突ける効果（ダメージ計算は各攻撃に準ずる）",
+        "※各効果は戦闘不能時に消えない、コンティニュー時に解除"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "（準備Turn:0/再使用Turn:4）"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "（準備Turn:0/再使用Turn:4）"
+        }
+      ]
+    },
+    {
+      "character_id": "763255",
+      "character_name": "七英雄ノエル",
+      "ability_name": "吸収の法",
+      "source_type": "override",
+      "cost": "【消費SP 1】",
+      "raw_text": [
+        "自身を除く味方単体に特殊効果“復活不可”を付与（5ターン）",
+        "さらに、自身に特殊効果“吸収の法”（効果量 10%）を付与",
+        "その後、選択した味方にオーバーキルダメージ（後衛選択可能/ふんばる不可）",
+        "復活不可：復活効果の対象にできず、効果発揮されない効果",
+        "吸収の法：対象にした味方のステータスの一部を",
+        "自身に加算する効果（装備ステータスを除く/重複不可/",
+        "加算上限：最大HP+4000、最大SP+200、他+200）と",
+        "「たたかう」以外の物理攻撃（一部除く）時",
+        "剣・槍・短剣・斧・弓・杖・本・扇弱点を突ける効果",
+        "（ダメージ計算は各攻撃に準ずる）",
+        "※各効果は戦闘不能時に消えない、コンティニュー時に解除"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】-"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "自身を除く味方単体に特殊効果“復活不可”を付与（5ターン）",
+        "さらに、自身に特殊効果“吸収の法”（効果量 10%）を付与 その後、選択した味方にオーバーキルダメージ（後衛選択可能/ふんばる不可） 復活不可：復活効果の対象にできず、効果発揮されない効果 吸収の法：対象にした味方のステータスの一部を",
+        "自身に加算する効果（装備ステータスを除く/重複不可/ 加算上限：最大HP+4000、最大SP+200、他+200）と 「たたかう」以外の物理攻撃（一部除く）時 剣・槍・短剣・斧・弓・杖・本・扇弱点を突ける効果 （ダメージ計算は各攻撃に準ずる） ※各効果は戦闘不能時に消えない、コンティニュー時に解除"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self_exclude",
+            "ally_single"
+          ],
+          "text": "自身を除く味方単体に特殊効果“復活不可”を付与（5ターン）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "さらに、自身に特殊効果“吸収の法”（効果量 10%）を付与 その後、選択した味方にオーバーキルダメージ（後衛選択可能/ふんばる不可） 復活不可：復活効果の対象にできず、効果発揮されない効果 吸収の法：対象にした味方のステータスの一部を"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に加算する効果（装備ステータスを除く/重複不可/ 加算上限：最大HP+4000、最大SP+200、他+200）と 「たたかう」以外の物理攻撃（一部除く）時 剣・槍・短剣・斧・弓・杖・本・扇弱点を突ける効果 （ダメージ計算は各攻撃に準ずる） ※各効果は戦闘不能時に消えない、コンティニュー時に解除"
+        }
+      ]
+    },
+    {
+      "character_id": "763255",
+      "character_name": "七英雄ノエル",
+      "ability_name": "達人",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "自身に物攻アップ30%と",
+        "クリティカル時のダメージアップ30%と",
+        "必ずクリティカルの効果を付与",
+        "※属性攻撃でクリティカルが発生するには",
+        "“属性攻撃でクリティカルが発生する効果”が必要",
+        "吸収の法効果中：さらに、味方前後衛全体に",
+        "SP自動回復（回復量 対象の最大SPの5%）と",
+        "BP回復量1アップの効果を付与"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "critical",
+          "value": 30,
+          "cap_group": "buff_damage_crit",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 30,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "critical",
+          "unit": "",
+          "sub_category": "certain",
+          "target_source_type": "battle",
+          "value": 1,
+          "cap_group": "critical_certain",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "吸収の法効果中：さらに、味方前後衛全体に SP自動回復（回復量 対象の最大SPの5%）と BP回復量1アップの効果を付与"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に物攻アップ30%と クリティカル時のダメージアップ30%と 必ずクリティカルの効果を付与 ※属性攻撃でクリティカルが発生するには “属性攻撃でクリティカルが発生する効果”が必要"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "吸収の法効果中：さらに、味方前後衛全体に SP自動回復（回復量 対象の最大SPの5%）と BP回復量1アップの効果を付与"
+        }
+      ]
+    },
+    {
+      "character_id": "763255",
+      "character_name": "七英雄ノエル",
+      "ability_name": "一つ上の技巧",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "自身にクリティカル時のダメージ倍率が",
+        "1.4倍になる効果（通常時は1.25倍）とバトルアビリティによる",
+        "短剣攻撃ダメージアップの上限が60%になる効果を付与",
+        "吸収の法効果中：さらに",
+        "アビリティ“サラマンダークロー”と",
+        "必殺技”赤竜波”の攻撃回数が2回になる"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "physical",
+          "target_source_type": "battle",
+          "value": 60,
+          "tag": "dagger",
+          "cap_group": "buff_damage_phys_dagger",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身にクリティカル時のダメージ倍率が 1.4倍になる効果（通常時は1.25倍）とバトルアビリティによる 短剣攻撃ダメージアップの上限が60%になる効果を付与 吸収の法効果中：さらに アビリティ“サラマンダークロー”と 必殺技”赤竜波”の攻撃回数が2回になる"
+        }
+      ]
+    },
+    {
+      "character_id": "763255",
+      "character_name": "七英雄ノエル",
+      "ability_name": "二面性",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "吸収の法効果中：",
+        "自身に「短剣物理」で攻撃時",
+        "威力アップ",
+        "150%",
+        "の効果（同系統の効果重複不可）と",
+        "「短剣物理」で攻撃時",
+        "ダメージ上限アップ（効果量 750000）の効果を付与",
+        "吸収の法効果中ではない時：",
+        "味方前衛全体に物防アップ",
+        "20%",
+        "と",
+        "物理耐性アップ",
+        "20%",
+        "の効果を付与"
+      ],
+      "raw_text_pre_enhance": [
+        "吸収の法効果中：",
+        "自身に「短剣物理」で攻撃時",
+        "威力アップ100%の効果を付与",
+        "（同系統の効果重複不可）",
+        "吸収の法効果中ではない時：",
+        "味方前衛全体に物防アップ15%と",
+        "物理耐性アップ15%の効果を付与"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "power",
+          "unit": "%",
+          "target_source_type": "battle",
+          "value": 150,
+          "cap_group": "power_up",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 750000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 20,
+          "cap_group": "buff_stat_def_phys",
+          "scopes": [
+            "ally_front_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "吸収の法効果中："
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "吸収の法効果中："
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に「短剣物理」で攻撃時 威力アップ 150% の効果（同系統の効果重複不可）と 「短剣物理」で攻撃時 ダメージ上限アップ（効果量 750000）の効果を付与 吸収の法効果中ではない時："
+        },
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体に物防アップ 20% と 物理耐性アップ 20% の効果を付与"
+        }
+      ]
+    },
+    {
+      "character_id": "763255",
+      "character_name": "七英雄ノエル",
+      "ability_name": "赤竜波",
+      "source_type": "ultimate",
+      "cost": "超威発動",
+      "raw_text": [
+        "【Lv.MAX】",
+        "敵全体に短剣物理攻撃（威力 1000）",
+        "火弱点を突ける（ダメージ計算は短剣物理）",
+        "この必殺技のダメージ上限が350000アップ",
+        "自身が物攻アップ状態の時：威力が2倍",
+        "自身が物理ダメージアップ状態の時：",
+        "さらに、この必殺技のダメージ上限が追加で350000アップ",
+        "200%発動時：",
+        "さらに、この必殺技のダメージ上限が追加で350000アップ"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [],
+      "conditions": [
+        "敵全体に短剣物理攻撃（威力 1000） 火弱点を突ける（ダメージ計算は短剣物理） この必殺技のダメージ上限が350000アップ 自身が物攻アップ状態の時威力が2倍 自身が物理ダメージアップ状態の時 さらに、この必殺技のダメージ上限が追加で350000アップ 200%発動時 さらに、この必殺技のダメージ上限が追加で350000アップ"
+      ],
+      "unknown": [
+        "【Lv.MAX】"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "【Lv.MAX】"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に短剣物理攻撃（威力 1000） 火弱点を突ける（ダメージ計算は短剣物理） この必殺技のダメージ上限が350000アップ 自身が物攻アップ状態の時：威力が2倍 自身が物理ダメージアップ状態の時： さらに、この必殺技のダメージ上限が追加で350000アップ 200%発動時： さらに、この必殺技のダメージ上限が追加で350000アップ"
+        }
+      ]
+    },
+    {
+      "character_id": "763255",
+      "character_name": "七英雄ノエル",
+      "ability_name": "ハイパーカウンター",
+      "source_type": "ex",
+      "cost": "回数：2",
+      "raw_text": [
+        "使用ターン中、自身に物理攻撃（一部除く）と",
+        "属性攻撃（一部除く）を完全に防ぐ効果を付与し",
+        "敵全体に自身への挑発効果を付与（1ターン）",
+        "さらに防いだ時、短剣物理攻撃で反撃（威力 520）",
+        "剣弱点を突ける（ダメージ計算は短剣物理）",
+        "攻撃を完全に回避する効果と攻撃を完全に防ぐ効果を無視する"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_condition": [
+        "【使用条件】3ターン目以降"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】威力580/680/900"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "使用ターン中、自身に物理攻撃（一部除く）と 属性攻撃（一部除く）を完全に防ぐ効果を付与し",
+        "敵全体に自身への挑発効果を付与（1ターン） さらに防いだ時、短剣物理攻撃で反撃（威力 520） 剣弱点を突ける（ダメージ計算は短剣物理） 攻撃を完全に回避する効果と攻撃を完全に防ぐ効果を無視する"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "使用ターン中、自身に物理攻撃（一部除く）と 属性攻撃（一部除く）を完全に防ぐ効果を付与し"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に自身への挑発効果を付与（1ターン） さらに防いだ時、短剣物理攻撃で反撃（威力 520） 剣弱点を突ける（ダメージ計算は短剣物理） 攻撃を完全に回避する効果と攻撃を完全に防ぐ効果を無視する"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "character_id": "763254",
+      "character_name": "七英雄ロックブーケ",
+      "ability_name": "ウインドカッター",
+      "source_type": "battle",
+      "cost": "【消費SP 33】",
+      "raw_text": [
+        "敵単体に3回の風属性攻撃（威力55）",
+        "扇・闇弱点を突ける（ダメージ計算は風属性）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力65/80/100"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵単体に3回の風属性攻撃（威力55） 扇・闇弱点を突ける（ダメージ計算は風属性）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に3回の風属性攻撃（威力55） 扇・闇弱点を突ける（ダメージ計算は風属性）"
+        }
+      ]
+    },
+    {
+      "character_id": "763254",
+      "character_name": "七英雄ロックブーケ",
+      "ability_name": "体力吸収",
+      "source_type": "battle",
+      "cost": "【消費SP 35】",
+      "raw_text": [
+        "敵単体に2回の風属性攻撃（威力 75）",
+        "扇・闇弱点を突ける（ダメージ計算は風属性）",
+        "さらに、与えたダメージ量の30%のHP吸収"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力90/110/150"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵単体に2回の風属性攻撃（威力 75） 扇・闇弱点を突ける（ダメージ計算は風属性） さらに、与えたダメージ量の30%のHP吸収"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に2回の風属性攻撃（威力 75） 扇・闇弱点を突ける（ダメージ計算は風属性） さらに、与えたダメージ量の30%のHP吸収"
+        }
+      ]
+    },
+    {
+      "character_id": "763254",
+      "character_name": "七英雄ロックブーケ",
+      "ability_name": "エアヒール",
+      "source_type": "battle",
+      "cost": "【消費SP 42】",
+      "raw_text": [
+        "味方前衛全体のHP回復（効力 55）",
+        "さらに、HP自動回復の効果を付与（2ターン/効力/80）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】回復量70/95/130"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "味方前衛全体のHP回復（効力 55） さらに、HP自動回復の効果を付与（2ターン/効力/80）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体のHP回復（効力 55） さらに、HP自動回復の効果を付与（2ターン/効力/80）"
+        }
+      ]
+    },
+    {
+      "character_id": "763254",
+      "character_name": "七英雄ロックブーケ",
+      "ability_name": "オミナスウインド",
+      "source_type": "battle",
+      "cost": "【消費SP 63】",
+      "raw_text": [
+        "ランダムなターゲットに4回の風属性攻撃（威力 35）",
+        "扇・闇弱点を突ける（ダメージ計算は風属性）",
+        "攻撃毎に中確率で魅惑の状態異常を付与（2ターン）",
+        "深怨状態の敵がいる時：さらに",
+        "攻撃毎に中確率で物攻・属攻ダウン15%の効果を付与（2ターン）",
+        "魅惑：一定確率で行動できなくなる"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力45/55/75"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 15,
+          "cap_group": "debuff_stat_atk_phys",
+          "scopes": [
+            "random"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 15,
+          "cap_group": "debuff_stat_atk_elem",
+          "scopes": [
+            "random"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "random"
+          ],
+          "text": "ランダムなターゲットに4回の風属性攻撃（威力 35） 扇・闇弱点を突ける（ダメージ計算は風属性） 攻撃毎に中確率で魅惑の状態異常を付与（2ターン） 深怨状態の敵がいる時：さらに 攻撃毎に中確率で物攻・属攻ダウン15%の効果を付与（2ターン） 魅惑：一定確率で行動できなくなる"
+        }
+      ]
+    },
+    {
+      "character_id": "763254",
+      "character_name": "七英雄ロックブーケ",
+      "ability_name": "ダークスフィア",
+      "source_type": "battle",
+      "cost": "【消費SP 60】",
+      "raw_text": [
+        "敵単体に3回の闇属性攻撃（威力 65）",
+        "扇・風弱点を突ける（ダメージ計算は闇属性）",
+        "さらに、中確率で暗闇の状態異常を付与（2ターン）",
+        "深怨状態の敵がいる時：さらに",
+        "物防・属防ダウン15%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力75/90/120"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 15,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 15,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": [
+            "enemy_single"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に3回の闇属性攻撃（威力 65） 扇・風弱点を突ける（ダメージ計算は闇属性） さらに、中確率で暗闇の状態異常を付与（2ターン） 深怨状態の敵がいる時：さらに 物防・属防ダウン15%の効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "763254",
+      "character_name": "七英雄ロックブーケ",
+      "ability_name": "夢魔の吐息",
+      "source_type": "battle",
+      "cost": "【消費SP 70】",
+      "raw_text": [
+        "敵全体に3回の風属性攻撃（威力 65）",
+        "扇・闇弱点を突ける（ダメージ計算は風属性）",
+        "さらに、中確率で魅惑の状態異常を付与（2ターン）",
+        "深怨状態の敵がいる時：さらに",
+        "物攻・物防・属攻・属防ダウン10%の効果を付与（2ターン）",
+        "魅惑：一定確率で行動できなくなる"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力75/90/115"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 10,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 10,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 10,
+          "cap_group": "debuff_stat_atk_phys",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 10,
+          "cap_group": "debuff_stat_atk_elem",
+          "scopes": [
+            "enemy_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に3回の風属性攻撃（威力 65） 扇・闇弱点を突ける（ダメージ計算は風属性） さらに、中確率で魅惑の状態異常を付与（2ターン） 深怨状態の敵がいる時：さらに 物攻・物防・属攻・属防ダウン10%の効果を付与（2ターン） 魅惑：一定確率で行動できなくなる"
+        }
+      ]
+    },
+    {
+      "character_id": "763254",
+      "character_name": "七英雄ロックブーケ",
+      "ability_name": "清浄の風",
+      "source_type": "battle",
+      "cost": "【消費SP 67】",
+      "raw_text": [
+        "ターン中、素早く行動し",
+        "味方前衛全体のHP回復（効力 55）",
+        "さらに、HP自動回復の効果を付与（2ターン/効力80）",
+        "その後、状態異常と特殊効果”魅了”を回復し",
+        "状態異常無効化の効果を付与（一部除く/2ターン）",
+        "コマンド選択時に深怨状態の敵がいる時：前後衛全体化"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力70/95/130"
+      ],
+      "effects": [],
+      "conditions": [
+        "味方前衛全体のHP回復（効力 55） さらに、HP自動回復の効果を付与（2ターン/効力80） その後、状態異常と特殊効果”魅了”を回復し 状態異常無効化の効果を付与（一部除く/2ターン） コマンド選択時に深怨状態の敵がいる時前後衛全体化"
+      ],
+      "unknown": [
+        "ターン中、素早く行動し"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "ターン中、素早く行動し"
+        },
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体のHP回復（効力 55） さらに、HP自動回復の効果を付与（2ターン/効力80） その後、状態異常と特殊効果”魅了”を回復し 状態異常無効化の効果を付与（一部除く/2ターン） コマンド選択時に深怨状態の敵がいる時：前後衛全体化"
+        }
+      ]
+    },
+    {
+      "character_id": "763254",
+      "character_name": "七英雄ロックブーケ",
+      "ability_name": "召雷",
+      "source_type": "battle",
+      "cost": "【消費SP 94】",
+      "raw_text": [
+        "敵全体に3回の雷属性攻撃（威力 65）",
+        "扇・風・闇弱点を突ける（ダメージ計算は雷属性）",
+        "さらに、感電の状態異常を付与（2ターン）",
+        "深怨状態の敵がいる時：さらに",
+        "物防・属防ダウン15%の効果を付与（2ターン）",
+        "感電：雷属性攻撃を受ける毎にシールド-1（0にならない）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力75/90/115"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 15,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 15,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": [
+            "enemy_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に3回の雷属性攻撃（威力 65） 扇・風・闇弱点を突ける（ダメージ計算は雷属性） さらに、感電の状態異常を付与（2ターン） 深怨状態の敵がいる時：さらに 物防・属防ダウン15%の効果を付与（2ターン） 感電：雷属性攻撃を受ける毎にシールド-1（0にならない）"
+        }
+      ]
+    },
+    {
+      "character_id": "763254",
+      "character_name": "七英雄ロックブーケ",
+      "ability_name": "冥嵐",
+      "source_type": "battle",
+      "cost": "【消費SP 50】",
+      "raw_text": [
+        "敵単体に5回の風属性攻撃（威力 30）",
+        "扇・闇弱点を突ける（ダメージ計算は風属性）",
+        "深怨状態の敵がいる時：威力が3倍"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力35/45/60"
+      ],
+      "effects": [],
+      "conditions": [
+        "敵単体に5回の風属性攻撃（威力 30） 扇・闇弱点を突ける（ダメージ計算は風属性） 深怨状態の敵がいる時威力が3倍"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に5回の風属性攻撃（威力 30） 扇・闇弱点を突ける（ダメージ計算は風属性） 深怨状態の敵がいる時：威力が3倍"
+        }
+      ]
+    },
+    {
+      "character_id": "763254",
+      "character_name": "七英雄ロックブーケ",
+      "ability_name": "ホラー",
+      "source_type": "battle",
+      "cost": "【消費SP 103】",
+      "raw_text": [
+        "敵全体のシールドポイントを弱点に関係なく2削り",
+        "物攻・属攻ダウン20%の効果を付与（2ターン）",
+        "さらに、眩暈の状態異常を付与（2ターン）",
+        "深怨状態の敵がいる時：さらに",
+        "“物理攻撃（一部除く）を必ず外す”特殊効果と",
+        "“属性攻撃（一部除く）を必ず外す”特殊効果を付与（各1回）",
+        "眩暈：小確率で攻撃（一部除く）を外す＆",
+        "行動完了後にシールド-1（0にならない）"
+      ],
+      "raw_text_pre_enhance": [
+        "敵全体のシールドポイントを弱点に関係なく2削り",
+        "物攻・属攻ダウン20%の効果を付与（2ターン）",
+        "深怨状態の敵がいる時：さらに",
+        "“物理攻撃（一部除く）を必ず外す”特殊効果と",
+        "“属性攻撃（一部除く）を必ず外す”特殊効果を付与（各1回）"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】ターン数3/4/5"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 20,
+          "cap_group": "debuff_stat_atk_phys",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 20,
+          "cap_group": "debuff_stat_atk_elem",
+          "scopes": [
+            "enemy_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体のシールドポイントを弱点に関係なく2削り 物攻・属攻ダウン20%の効果を付与（2ターン） さらに、眩暈の状態異常を付与（2ターン） 深怨状態の敵がいる時：さらに “物理攻撃（一部除く）を必ず外す”特殊効果と “属性攻撃（一部除く）を必ず外す”特殊効果を付与（各1回） 眩暈：小確率で攻撃（一部除く）を外す＆ 行動完了後にシールド-1（0にならない）"
+        }
+      ]
+    },
+    {
+      "character_id": "763254",
+      "character_name": "七英雄ロックブーケ",
+      "ability_name": "弱り目に祟り目",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "味方前衛全体に",
+        "敵の弱点を突ける攻撃時、七英雄ロックブーケが追撃する効果を付与",
+        "（行動順での攻撃のみ/攻撃回数によらず1回のみ発動）",
+        "※”ブレイクさせた時”効果は起点の味方のみ発動",
+        "追撃：敵全体に2回の風属性攻撃（威力 100）",
+        "扇・闇弱点を突ける（ダメージ計算は風属性）",
+        "さらに、深怨の状態異常を付与（1ターン/敵の状態異常耐性を無視する）",
+        "ブレイク中の敵がいる時：攻撃回数が3回になる",
+        "深怨：受ける攻撃の威力が10%増加（一部除く/同系統の効果重複不可）"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [],
+      "conditions": [
+        "追撃敵全体に2回の風属性攻撃（威力 100） 扇・闇弱点を突ける（ダメージ計算は風属性） さらに、深怨の状態異常を付与（1ターン/敵の状態異常耐性を無視する） ブレイク中の敵がいる時攻撃回数が3回になる 深怨受ける攻撃の威力が10%増加（一部除く/同系統の効果重複不可）"
+      ],
+      "unknown": [
+        "味方前衛全体に 敵の弱点を突ける攻撃時、七英雄ロックブーケが追撃する効果を付与 （行動順での攻撃のみ/攻撃回数によらず1回のみ発動） ※”ブレイクさせた時”効果は起点の味方のみ発動"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体に 敵の弱点を突ける攻撃時、七英雄ロックブーケが追撃する効果を付与 （行動順での攻撃のみ/攻撃回数によらず1回のみ発動） ※”ブレイクさせた時”効果は起点の味方のみ発動"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "追撃：敵全体に2回の風属性攻撃（威力 100） 扇・闇弱点を突ける（ダメージ計算は風属性） さらに、深怨の状態異常を付与（1ターン/敵の状態異常耐性を無視する） ブレイク中の敵がいる時：攻撃回数が3回になる 深怨：受ける攻撃の威力が10%増加（一部除く/同系統の効果重複不可）"
+        }
+      ]
+    },
+    {
+      "character_id": "763254",
+      "character_name": "七英雄ロックブーケ",
+      "ability_name": "一途な想い",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "深怨状態の敵がいる時：味方前後衛全体に",
+        "物攻・属攻アップ20%と属性ダメージアップ20%と",
+        "ダメージ上限アップ（効果量 100000）と",
+        "属性攻撃でクリティカルが発生する効果を付与"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 20,
+          "cap_group": "buff_damage_elem_all",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 20,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 20,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "critical",
+          "unit": "",
+          "sub_category": "elemental",
+          "target_source_type": "battle",
+          "value": 1,
+          "cap_group": "critical_elem",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 100000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "ally_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "深怨状態の敵がいる時：味方前後衛全体に 物攻・属攻アップ20%と属性ダメージアップ20%と ダメージ上限アップ（効果量 100000）と 属性攻撃でクリティカルが発生する効果を付与"
+        }
+      ]
+    },
+    {
+      "character_id": "763254",
+      "character_name": "七英雄ロックブーケ",
+      "ability_name": "魅惑の誘い",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "ブレイク中の敵がいる時：敵全体に",
+        "サポアビと装備性能による",
+        "属性耐性ダウンを受けた際の上限が50%になる効果と",
+        "属性耐性ダウン",
+        "20%",
+        "の効果を付与"
+      ],
+      "raw_text_pre_enhance": [
+        "ブレイク中の敵がいる時：敵全体に",
+        "属性耐性ダウン10%の効果を付与"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 20,
+          "cap_group": "debuff_resist_elem_all",
+          "scopes": [
+            "enemy_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "ブレイク中の敵がいる時：敵全体に サポアビと装備性能による 属性耐性ダウンを受けた際の上限が50%になる効果と 属性耐性ダウン 20% の効果を付与"
+        }
+      ]
+    },
+    {
+      "character_id": "763254",
+      "character_name": "七英雄ロックブーケ",
+      "ability_name": "パッションパフューム",
+      "source_type": "ultimate",
+      "cost": "後衛発動",
+      "raw_text": [
+        "【Lv.MAX】",
+        "ターン中、素早く行動し、味方前後衛全体に",
+        "ダメージ上限アップ（効果量 100000）の効果を付与（3ターン）",
+        "敵全体に深怨の状態異常を付与",
+        "（4ターン/敵の状態異常耐性を無視する）",
+        "さらに、味方前後衛全体に威力アップ100%（ターン延長不可/同系統の効果重複不可）と",
+        "七英雄ロックブーケの物防の50%を物攻に加算する効果と",
+        "七英雄ロックブーケの属防の50%を属攻に加算する効果を付与（3ターン）",
+        "（装備ステータス含む/対象ステータス毎に最大値を適用）",
+        "ただし、味方前後衛全体はSPを100失う",
+        "200%発動時：",
+        "さらに、味方前後衛全体にBP回復量1アップの効果を付与（3ターン）",
+        "（この必殺技は使用可能回数の復活不可）",
+        "深怨：受ける攻撃の威力が10%増加（一部除く/同系統の効果重複不可）"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 100000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "power",
+          "unit": "%",
+          "target_source_type": "battle",
+          "value": 100,
+          "cap_group": "power_up",
+          "scopes": [
+            "ally_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "【Lv.MAX】",
+        "敵全体に深怨の状態異常を付与 （4ターン/敵の状態異常耐性を無視する）",
+        "さらに、味方前後衛全体にBP回復量1アップの効果を付与（3ターン） （この必殺技は使用可能回数の復活不可） 深怨：受ける攻撃の威力が10%増加（一部除く/同系統の効果重複不可）"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "【Lv.MAX】"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "ターン中、素早く行動し、味方前後衛全体に ダメージ上限アップ（効果量 100000）の効果を付与（3ターン）"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に深怨の状態異常を付与 （4ターン/敵の状態異常耐性を無視する）"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "さらに、味方前後衛全体に威力アップ100%（ターン延長不可/同系統の効果重複不可）と 七英雄ロックブーケの物防の50%を物攻に加算する効果と 七英雄ロックブーケの属防の50%を属攻に加算する効果を付与（3ターン） （装備ステータス含む/対象ステータス毎に最大値を適用） ただし、味方前後衛全体はSPを100失う 200%発動時："
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "さらに、味方前後衛全体にBP回復量1アップの効果を付与（3ターン） （この必殺技は使用可能回数の復活不可） 深怨：受ける攻撃の威力が10%増加（一部除く/同系統の効果重複不可）"
+        }
+      ]
+    },
+    {
+      "character_id": "763254",
+      "character_name": "七英雄ロックブーケ",
+      "ability_name": "テンプテーション",
+      "source_type": "ex",
+      "cost": "回数：2",
+      "raw_text": [
+        "敵全体のシールドポイントを弱点に関係なく10削り",
+        "極大確率で魅惑の状態異常を付与（2ターン）",
+        "その後、敵全体に",
+        "回避が無視される効果とダメージ無効が無視される効果（3ターン/ターンが長くなるよう上書き）と",
+        "“物理攻撃（一部除く）を必ず外す”特殊効果と",
+        "“属性攻撃（一部除く）を必ず外す”特殊効果（各2回）を付与",
+        "深怨状態の敵がいる時：さらに、バトルアビリティによる物防・属防ダウンを受けた際の上限が50%になる効果と",
+        "物防・属防ダウン30%の効果を付与（2ターン）",
+        "魅惑：一定確率で行動できなくなる"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_condition": [
+        "【使用条件】なし"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】ターン数3/4/5"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "defence",
+          "target_source_type": "battle",
+          "value": 50,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "defence",
+          "target_source_type": "battle",
+          "value": 50,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 30,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 30,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": [
+            "enemy_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "敵全体のシールドポイントを弱点に関係なく10削り 極大確率で魅惑の状態異常を付与（2ターン）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体のシールドポイントを弱点に関係なく10削り 極大確率で魅惑の状態異常を付与（2ターン）"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "その後、敵全体に 回避が無視される効果とダメージ無効が無視される効果（3ターン/ターンが長くなるよう上書き）と “物理攻撃（一部除く）を必ず外す”特殊効果と “属性攻撃（一部除く）を必ず外す”特殊効果（各2回）を付与 深怨状態の敵がいる時：さらに、バトルアビリティによる物防・属防ダウンを受けた際の上限が50%になる効果と 物防・属防ダウン30%の効果を付与（2ターン） 魅惑：一定確率で行動できなくなる"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "character_id": "760002",
       "character_name": "最終皇帝(女)",
       "ability_name": "ファイアーボール",
@@ -140,7 +1694,7 @@
         "味方前衛全体に物防・属防アップ15%の効果を付与（2ターン）",
         "さらに、味方前後衛全体に",
         "特殊効果”風術”を付与（サポートアビリティとして付与）",
-        "加えて、自身に属性ダメージアップ20%の効果を付与（3ターン）",
+        "加えて、自身に風属性ダメージアップ20%の効果を付与（3ターン）",
         "風術：ベーシックアビリティに効果記載"
       ],
       "raw_text_pre_enhance": [],
@@ -176,7 +1730,8 @@
           "unit": "%",
           "sub_category": "elemental",
           "value": 20,
-          "cap_group": "buff_damage_elem_all",
+          "tag": "wind",
+          "cap_group": "buff_damage_elem_wind",
           "scopes": [
             "self"
           ]
@@ -204,7 +1759,7 @@
           "scopes": [
             "self"
           ],
-          "text": "加えて、自身に属性ダメージアップ20%の効果を付与（3ターン）"
+          "text": "加えて、自身に風属性ダメージアップ20%の効果を付与（3ターン）"
         },
         {
           "scopes": [
@@ -38931,21 +40486,13 @@
           "scopes": [
             "enemy_single"
           ],
-<<<<<<< HEAD
           "text": "敵単体に光属性攻撃（威力 630） 火・氷弱点を突ける（ダメージ計算は光属性）"
-=======
-          "text": "敵単体に光属性攻撃（威力 630） 火・氷弱点を突ける（ダメージ計算は光属性）",
-          "target_source_type": null,
-          "special_effect_id": null
         },
         {
           "scopes": [
             "ally_all"
           ],
-          "text": "さらに、味方前後衛全体に SPストックを付与（効果量 使用者の最大SPの100%/重複不可）",
-          "target_source_type": null,
-          "special_effect_id": null
->>>>>>> 2b528318f4b2921ce692c077e81ff65ad90d6826
+          "text": "さらに、味方前後衛全体に SPストックを付与（効果量 使用者の最大SPの100%/重複不可）"
         }
       ]
     },
@@ -39037,7 +40584,8 @@
           "sub_category": "elemental",
           "value": 15,
           "tag": "light",
-          "cap_group": "buff_damage_elem_light"
+          "cap_group": "buff_damage_elem_light",
+          "scopes": []
         }
       ],
       "conditions": [],
@@ -39045,13 +40593,7 @@
       "blocks": [
         {
           "scopes": [],
-<<<<<<< HEAD
-          "text": "味方が後衛に移動時：移動した味方のBPを1回復"
-=======
-          "text": "味方が後衛に移動時：移動した味方のBPを1回復 味方移動時：移動した味方の 状態異常”恐怖”と特殊効果”畏怖”を回復し 光属性ダメージアップ15%の効果を付与（2ターン）",
-          "target_source_type": null,
-          "special_effect_id": null
->>>>>>> 2b528318f4b2921ce692c077e81ff65ad90d6826
+          "text": "味方が後衛に移動時：移動した味方のBPを1回復 味方移動時：移動した味方の 状態異常”恐怖”と特殊効果”畏怖”を回復し 光属性ダメージアップ15%の効果を付与（2ターン）"
         }
       ]
     },
