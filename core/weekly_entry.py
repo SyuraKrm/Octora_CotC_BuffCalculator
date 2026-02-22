@@ -1,7 +1,7 @@
 from datetime import datetime, timezone, timedelta
 import json
 from pathlib import Path
-from core.build_data import build_data_main
+from core.build_data import build_data_main, detect_new_character_ids
 
 
 JST = timezone(timedelta(hours=9))
@@ -46,12 +46,21 @@ def main():
     now_week = get_week_key(now)
 
     last = load_last_success()
-    if last:
-        if get_week_key(last) == now_week:
-            print("Already executed this week. Skip.")
-            return
+    weekly_trigger = False
 
-    print("Run weekly job.")
+    if not last:
+        weekly_trigger = True
+    else:
+        weekly_trigger = get_week_key(last) != now_week
+
+    new_ids = detect_new_character_ids()
+    latest_trigger = bool(new_ids)
+
+    if not (weekly_trigger or latest_trigger):
+        print("Skip: no weekly trigger and no new characters.")
+        return
+
+    print("Run job.")
     build_data_main()
 
     save_success(now)

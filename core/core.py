@@ -1,9 +1,9 @@
-import requests
+﻿import requests
 import re
 import time
 from bs4 import BeautifulSoup
 from collections import Counter
-from core.load_def import SHOKO_BASE_URL, GAME8_BASE_URL, GAME8_LIST_URL_SUFFIX, EFFECT_PATTERNS, CONDITION_PATTERNS, TAG_MAP, UNKNOWN_PATTERNS, SCOPE_PATTERN, SCOPE_NORMALIZE_MAP, SCOPE_OPTIONAL_PREFIX, SCOPE_OPTIONAL_SUFFIX, TAB_DEFS, CHANGE_SCOPE_PATTERNS
+from core.load_def import SHOKO_BASE_URL, GAME8_BASE_URL, GAME8_LIST_URL_SUFFIX, LATEST_CHR_URL_SUFFIX, EFFECT_PATTERNS, CONDITION_PATTERNS, TAG_MAP, UNKNOWN_PATTERNS, SCOPE_PATTERN, SCOPE_NORMALIZE_MAP, SCOPE_OPTIONAL_PREFIX, SCOPE_OPTIONAL_SUFFIX, TAB_DEFS, CHANGE_SCOPE_PATTERNS
 
 
 def match_patterns(line, patterns, target_list):
@@ -530,6 +530,55 @@ def scrape_character_list():
         })
 
     return characters
+
+def scrape_latest_characters():
+    """
+    「最新キャラの評価」見出し直後のテーブルから
+    最新キャラIDを抽出する。
+    """
+
+    res = requests.get(GAME8_BASE_URL + LATEST_CHR_URL_SUFFIX)
+    res.raise_for_status()
+
+    soup = BeautifulSoup(res.text, "html.parser")
+
+    heading = None
+    for h2 in soup.select("h2.a-header--2"):
+        if "最新キャラの評価" in h2.get_text(strip=True):
+            heading = h2
+            break
+
+    if heading is None:
+        raise RuntimeError('heading "最新キャラの評価" not found')
+
+    latest_table = heading.find_next("table")
+    if latest_table is None:
+        raise RuntimeError('latest character table after "最新キャラの評価" not found')
+
+    characters = {}
+    for row in latest_table.find_all("tr"):
+        link = row.find("a", href=re.compile(r"/octopathtraveler-sp/\d+"))
+        if not link:
+            link = row.find("a", href=re.compile(r"/archives/\d+"))
+        if not link:
+            continue
+
+        href = link.get("href", "")
+        character_id = href.rstrip("/").split("/")[-1]
+        if not character_id.isdigit():
+            continue
+
+        character_name = link.get_text(strip=True)
+        if not character_name:
+            continue
+
+        characters[character_id] = {
+            "character_id": character_id,
+            "character_name": character_name,
+        }
+
+    return list(characters.values())
+
 
 def fetch_page2(character_id, character_name):
     url = GAME8_BASE_URL + character_id

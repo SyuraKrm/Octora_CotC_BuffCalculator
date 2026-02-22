@@ -6,6 +6,7 @@ SHOKO_BASE_URL = "https://octopath.mimoza.jp/battle_abilities.php"
 GAME8_BASE_URL = "https://game8.jp/octopathtraveler-sp/"
 
 GAME8_LIST_URL_SUFFIX = "263473"
+LATEST_CHR_URL_SUFFIX = "263474"
 
 ATTACK_RE = re.compile(
     r'(?P<target>ランダムな)?ターゲットに(?P<hits>\d+)回の(?P<attr>.+?)属性攻撃'

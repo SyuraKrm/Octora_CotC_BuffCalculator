@@ -1,7 +1,15 @@
 import json
 from collections import Counter
 from pprint import pprint
-from core.core import fetch_pages, load_items_from_files, parse_item, classify_unknown, scrape_character_list, fetch_page2
+from core.core import (
+    fetch_pages,
+    load_items_from_files,
+    parse_item,
+    classify_unknown,
+    scrape_character_list,
+    scrape_latest_characters,
+    fetch_page2,
+)
 from core.load_def import UNKNOWN_PATTERNS, SOURCE_RULES
 
 OUTPUT_PATH_ABILITIES = "data/abilities.json"
@@ -73,6 +81,30 @@ def build_characters():
 
     print(f"saved: {OUTPUT_PATH_CHARACTERS} ({len(items)} characters)")
     return items
+
+
+def detect_new_character_ids():
+    """
+    一覧ページ + 最新ページからID取得し、
+    既存JSONとの差分を返す
+    """
+    existing = load_characters()
+    existing_ids = {c["character_id"] for c in existing}
+
+    list_items = scrape_character_list()
+    list_ids = {c["character_id"] for c in list_items}
+
+    latest_items = scrape_latest_characters()
+    print(f"[latest] scraped items: {len(latest_items)}")
+    for item in latest_items:
+        print(
+            f"[latest] character_id={item.get('character_id')} "
+            f"character_name={item.get('character_name')}"
+        )
+    latest_ids = {c["character_id"] for c in latest_items}
+
+    unknown_ids = (list_ids | latest_ids) - existing_ids
+    return unknown_ids
 
 # アビリティ一覧のスクレイピング
 def build_abilities_fromwiki(characters):
@@ -229,7 +261,9 @@ def build_data_main(mode="ALL"):
 # -----------------------------
 if __name__ == "__main__":
 
-    build_data_main("ABILITY")
+    detect_new_character_ids()
+
+    #build_data_main("ABILITY")
     #build_data_main("PARTIAL")
     #build_data_main("GROUP_DATA")
 
