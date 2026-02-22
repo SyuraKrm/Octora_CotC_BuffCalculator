@@ -1,4 +1,4 @@
-﻿import requests
+import requests
 import re
 import time
 from bs4 import BeautifulSoup
@@ -556,6 +556,10 @@ def scrape_latest_characters():
         raise RuntimeError('latest character table after "最新キャラの評価" not found')
 
     characters = {}
+    jobs_master = {"剣士", "盗賊", "学者", "狩人", "神官", "踊子", "商人", "薬師"}
+    elements_master = {"火", "氷", "雷", "風", "光", "闇"}
+    physicals_master = {"剣", "槍", "短剣", "斧", "弓", "杖", "本", "扇"}
+
     for row in latest_table.find_all("tr"):
         link = row.find("a", href=re.compile(r"/octopathtraveler-sp/\d+"))
         if not link:
@@ -572,9 +576,35 @@ def scrape_latest_characters():
         if not character_name:
             continue
 
+        tds = row.find_all("td")
+        job = None
+        elements = []
+        physicals = []
+
+        for td in tds:
+            for text in td.stripped_strings:
+                if text in jobs_master:
+                    job = text
+
+            for img in td.find_all("img"):
+                alt = (img.get("alt") or "").strip()
+
+                if alt in elements_master:
+                    elements.append(alt)
+
+                if alt in physicals_master:
+                    physicals.append(alt)
+
+                if alt == "短":
+                    physicals.append("短剣")
+
         characters[character_id] = {
             "character_id": character_id,
             "character_name": character_name,
+            "job": job,
+            "rarity": "5",
+            "elements": sorted(set(elements)),
+            "physicals": sorted(set(physicals)),
         }
 
     return list(characters.values())

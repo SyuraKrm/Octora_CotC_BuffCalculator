@@ -67,6 +67,20 @@ def load_grouped_data():
 def build_characters():
 
     items = scrape_character_list()
+    latest_items = scrape_latest_characters()
+
+    list_ids = {c["character_id"] for c in items}
+    latest_only_items = [
+        c for c in latest_items
+        if c["character_id"] not in list_ids
+    ]
+    if latest_only_items:
+        print(
+            "[characters] prepend latest-only ids: "
+            f"{[c['character_id'] for c in latest_only_items]}"
+        )
+        items = latest_only_items + items
+
     file = load_characters()
 
     existing_ids = {c["character_id"] for c in file}
@@ -95,15 +109,10 @@ def detect_new_character_ids():
     list_ids = {c["character_id"] for c in list_items}
 
     latest_items = scrape_latest_characters()
-    print(f"[latest] scraped items: {len(latest_items)}")
-    for item in latest_items:
-        print(
-            f"[latest] character_id={item.get('character_id')} "
-            f"character_name={item.get('character_name')}"
-        )
     latest_ids = {c["character_id"] for c in latest_items}
 
     unknown_ids = (list_ids | latest_ids) - existing_ids
+    print(f"[detect] unknown_ids={sorted(unknown_ids)}")
     return unknown_ids
 
 # アビリティ一覧のスクレイピング
@@ -262,6 +271,7 @@ def build_data_main(mode="ALL"):
 if __name__ == "__main__":
 
     detect_new_character_ids()
+    build_data_main("CHARA")
 
     #build_data_main("ABILITY")
     #build_data_main("PARTIAL")
