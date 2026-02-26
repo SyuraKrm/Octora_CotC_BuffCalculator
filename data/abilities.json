@@ -452,7 +452,7 @@
       ],
       "raw_text_pre_enhance": [],
       "raw_text_boost": [
-        "【ブースト時】-"
+        "【ブースト時】ターン数4/3/2 効果量20/30/50"
       ],
       "effects": [],
       "conditions": [],
@@ -1555,841 +1555,6 @@
   ],
   [
     {
-      "character_id": "760002",
-      "character_name": "最終皇帝(女)",
-      "ability_name": "ファイアーボール",
-      "source_type": "battle",
-      "cost": "【消費SP 28】",
-      "raw_text": [
-        "敵単体に2回の火属性攻撃（威力/90）",
-        "ブーストMAX時：敵全体化"
-      ],
-      "raw_text_pre_enhance": [],
-      "raw_text_boost": [
-        "【ブースト時】威力105/125/180"
-      ],
-      "effects": [],
-      "conditions": [
-        "敵単体に2回の火属性攻撃（威力/90） ブーストMAX時敵全体化"
-      ],
-      "unknown": [],
-      "blocks": [
-        {
-          "scopes": [
-            "enemy_single"
-          ],
-          "text": "敵単体に2回の火属性攻撃（威力/90） ブーストMAX時：敵全体化"
-        }
-      ]
-    },
-    {
-      "character_id": "760002",
-      "character_name": "最終皇帝(女)",
-      "ability_name": "ライトボール",
-      "source_type": "battle",
-      "cost": "【消費SP 38】",
-      "raw_text": [
-        "敵全体に2回の光属性攻撃（威力 70）",
-        "さらに、中確率で暗間の状態異常を付与（2ターン）"
-      ],
-      "raw_text_pre_enhance": [],
-      "raw_text_boost": [
-        "【ブースト時】威力80/100/120"
-      ],
-      "effects": [],
-      "conditions": [],
-      "unknown": [
-        "敵全体に2回の光属性攻撃（威力 70） さらに、中確率で暗間の状態異常を付与（2ターン）"
-      ],
-      "blocks": [
-        {
-          "scopes": [
-            "enemy_all"
-          ],
-          "text": "敵全体に2回の光属性攻撃（威力 70） さらに、中確率で暗間の状態異常を付与（2ターン）"
-        }
-      ]
-    },
-    {
-      "character_id": "760002",
-      "character_name": "最終皇帝(女)",
-      "ability_name": "ウインドカッター",
-      "source_type": "battle",
-      "cost": "【消費SP 27】",
-      "raw_text": [
-        "敵単体に3回の風属性攻撃（威力 55）"
-      ],
-      "raw_text_pre_enhance": [],
-      "raw_text_boost": [
-        "【ブースト時】威力65/80/100"
-      ],
-      "effects": [],
-      "conditions": [],
-      "unknown": [
-        "敵単体に3回の風属性攻撃（威力 55）"
-      ],
-      "blocks": [
-        {
-          "scopes": [
-            "enemy_single"
-          ],
-          "text": "敵単体に3回の風属性攻撃（威力 55）"
-        }
-      ]
-    },
-    {
-      "character_id": "760002",
-      "character_name": "最終皇帝(女)",
-      "ability_name": "月光",
-      "source_type": "battle",
-      "cost": "【消費SP 50】",
-      "raw_text": [
-        "味方前衛全体にHP自動回復の効果を付与（2ターン/効力110）し",
-        "暗闇の状態異常を回復",
-        "さらに、味方前後衛全体に",
-        "特殊効果“天術”を付与（サポートアビリティとして付与）",
-        "ブーストMAX時：味方前衛全体のBPを1回復",
-        "天術：ベーシックアビリティに効果記載"
-      ],
-      "raw_text_pre_enhance": [],
-      "raw_text_boost": [
-        "【ブースト時】ターン数3/4/5"
-      ],
-      "effects": [],
-      "conditions": [
-        "ブーストMAX時味方前衛全体のBPを1回復 天術ベーシックアビリティに効果記載"
-      ],
-      "unknown": [
-        "味方前衛全体にHP自動回復の効果を付与（2ターン/効力110）し 暗闇の状態異常を回復",
-        "さらに、味方前後衛全体に 特殊効果“天術”を付与（サポートアビリティとして付与）"
-      ],
-      "blocks": [
-        {
-          "scopes": [
-            "ally_front_all"
-          ],
-          "text": "味方前衛全体にHP自動回復の効果を付与（2ターン/効力110）し 暗闇の状態異常を回復"
-        },
-        {
-          "scopes": [
-            "ally_all"
-          ],
-          "text": "さらに、味方前後衛全体に 特殊効果“天術”を付与（サポートアビリティとして付与）"
-        },
-        {
-          "scopes": [
-            "ally_front_all"
-          ],
-          "text": "ブーストMAX時：味方前衛全体のBPを1回復 天術：ベーシックアビリティに効果記載"
-        }
-      ]
-    },
-    {
-      "character_id": "760002",
-      "character_name": "最終皇帝(女)",
-      "ability_name": "エアスクリーン",
-      "source_type": "battle",
-      "cost": "【消費SP 64】",
-      "raw_text": [
-        "味方前衛全体に物防・属防アップ15%の効果を付与（2ターン）",
-        "さらに、味方前後衛全体に",
-        "特殊効果”風術”を付与（サポートアビリティとして付与）",
-        "加えて、自身に風属性ダメージアップ20%の効果を付与（3ターン）",
-        "風術：ベーシックアビリティに効果記載"
-      ],
-      "raw_text_pre_enhance": [],
-      "raw_text_boost": [
-        "【ブースト時】ターン数3/4/5 ターン数4/5/6"
-      ],
-      "effects": [
-        {
-          "role": "buff",
-          "category": "stat",
-          "unit": "%",
-          "sub_category": "defence_physical",
-          "value": 15,
-          "cap_group": "buff_stat_def_phys",
-          "scopes": [
-            "ally_front_all"
-          ]
-        },
-        {
-          "role": "buff",
-          "category": "stat",
-          "unit": "%",
-          "sub_category": "defence_elemental",
-          "value": 15,
-          "cap_group": "buff_stat_def_elem",
-          "scopes": [
-            "ally_front_all"
-          ]
-        },
-        {
-          "role": "buff",
-          "category": "damage",
-          "unit": "%",
-          "sub_category": "elemental",
-          "value": 20,
-          "tag": "wind",
-          "cap_group": "buff_damage_elem_wind",
-          "scopes": [
-            "self"
-          ]
-        }
-      ],
-      "conditions": [],
-      "unknown": [
-        "さらに、味方前後衛全体に 特殊効果”風術”を付与（サポートアビリティとして付与）",
-        "ベーシックアビリティに効果記載"
-      ],
-      "blocks": [
-        {
-          "scopes": [
-            "ally_front_all"
-          ],
-          "text": "味方前衛全体に物防・属防アップ15%の効果を付与（2ターン）"
-        },
-        {
-          "scopes": [
-            "ally_all"
-          ],
-          "text": "さらに、味方前後衛全体に 特殊効果”風術”を付与（サポートアビリティとして付与）"
-        },
-        {
-          "scopes": [
-            "self"
-          ],
-          "text": "加えて、自身に風属性ダメージアップ20%の効果を付与（3ターン）"
-        },
-        {
-          "scopes": [
-            "ally_all"
-          ],
-          "text": "ベーシックアビリティに効果記載",
-          "special_effect_id": "風術",
-          "target_source_type": "support"
-        }
-      ]
-    },
-    {
-      "character_id": "760002",
-      "character_name": "最終皇帝(女)",
-      "ability_name": "ファイアストーム",
-      "source_type": "battle",
-      "cost": "【消費SP 62】",
-      "raw_text": [
-        "敵全体に3回の風属性攻撃（威力 65）",
-        "火弱点を突ける（ダメージ計算は風属性）",
-        "さらに、味方前後衛全体に",
-        "特殊効果“火術”を付与（サポートアビリティとして付与）",
-        "その後、自身に属攻アップ20%の効果を付与（2ターン）",
-        "火術：ベーシックアビリティに効果記載"
-      ],
-      "raw_text_pre_enhance": [],
-      "raw_text_boost": [
-        "【ブースト時】威力75/90/115"
-      ],
-      "effects": [
-        {
-          "role": "buff",
-          "category": "stat",
-          "unit": "%",
-          "sub_category": "attack_elemental",
-          "value": 20,
-          "cap_group": "buff_stat_atk_elem",
-          "scopes": [
-            "self"
-          ]
-        }
-      ],
-      "conditions": [],
-      "unknown": [
-        "敵全体に3回の風属性攻撃（威力 65） 火弱点を突ける（ダメージ計算は風属性）",
-        "さらに、味方前後衛全体に 特殊効果“火術”を付与（サポートアビリティとして付与）"
-      ],
-      "blocks": [
-        {
-          "scopes": [
-            "enemy_all"
-          ],
-          "text": "敵全体に3回の風属性攻撃（威力 65） 火弱点を突ける（ダメージ計算は風属性）"
-        },
-        {
-          "scopes": [
-            "ally_all"
-          ],
-          "text": "さらに、味方前後衛全体に 特殊効果“火術”を付与（サポートアビリティとして付与）"
-        },
-        {
-          "scopes": [
-            "self"
-          ],
-          "text": "その後、自身に属攻アップ20%の効果を付与（2ターン） 火術：ベーシックアビリティに効果記載"
-        }
-      ]
-    },
-    {
-      "character_id": "760002",
-      "character_name": "最終皇帝(女)",
-      "ability_name": "三術連唱",
-      "source_type": "battle",
-      "cost": "【消費SP 45】",
-      "raw_text": [
-        "敵単体に2回ずつ火・風・光属性攻撃（威力40）",
-        "ブーストMAX時：攻撃回数が3回ずつになる"
-      ],
-      "raw_text_pre_enhance": [],
-      "raw_text_boost": [
-        "【ブースト時】威力45/55/75"
-      ],
-      "effects": [],
-      "conditions": [
-        "敵単体に2回ずつ火・風・光属性攻撃（威力40） ブーストMAX時攻撃回数が3回ずつになる"
-      ],
-      "unknown": [],
-      "blocks": [
-        {
-          "scopes": [
-            "enemy_single"
-          ],
-          "text": "敵単体に2回ずつ火・風・光属性攻撃（威力40） ブーストMAX時：攻撃回数が3回ずつになる"
-        }
-      ]
-    },
-    {
-      "character_id": "760002",
-      "character_name": "最終皇帝(女)",
-      "ability_name": "太陽風",
-      "source_type": "battle",
-      "cost": "【消費SP 123】",
-      "raw_text": [
-        "敵全体に2回の光属性攻撃（威力 80）",
-        "風弱点を突ける（ダメージ計算は光属性）",
-        "自身に特殊効果“風術”を付与（サポートアビリティとして付与）",
-        "さらに、使用した次のターンがら1ターンに1回",
-        "味方の行動前（一部除く）に継続効果を発揮（継続2回）",
-        "継続効果：敵全体に2回の光属性攻撃（威力 70）",
-        "風弱点を突ける（ダメージ計算は光属性）",
-        "風術：ベーシックアビリティに効果記載"
-      ],
-      "raw_text_pre_enhance": [],
-      "raw_text_boost": [
-        "【ブースト時】威力95/115/130 継続3/4/5"
-      ],
-      "effects": [],
-      "conditions": [],
-      "unknown": [
-        "敵全体に2回の光属性攻撃（威力 80） 風弱点を突ける（ダメージ計算は光属性）",
-        "自身に特殊効果“風術”を付与（サポートアビリティとして付与） さらに、使用した次のターンがら1ターンに1回 味方の行動前（一部除く）に継続効果を発揮（継続2回）",
-        "継続効果：敵全体に2回の光属性攻撃（威力 70） 風弱点を突ける（ダメージ計算は光属性） 風術：ベーシックアビリティに効果記載"
-      ],
-      "blocks": [
-        {
-          "scopes": [
-            "enemy_all"
-          ],
-          "text": "敵全体に2回の光属性攻撃（威力 80） 風弱点を突ける（ダメージ計算は光属性）"
-        },
-        {
-          "scopes": [
-            "self"
-          ],
-          "text": "自身に特殊効果“風術”を付与（サポートアビリティとして付与） さらに、使用した次のターンがら1ターンに1回 味方の行動前（一部除く）に継続効果を発揮（継続2回）"
-        },
-        {
-          "scopes": [
-            "enemy_all"
-          ],
-          "text": "継続効果：敵全体に2回の光属性攻撃（威力 70） 風弱点を突ける（ダメージ計算は光属性） 風術：ベーシックアビリティに効果記載"
-        }
-      ]
-    },
-    {
-      "character_id": "760002",
-      "character_name": "最終皇帝(女)",
-      "ability_name": "セイントファイア",
-      "source_type": "battle",
-      "cost": "【消費SP 111】",
-      "raw_text": [
-        "敵全体に4回の光属性攻撃（威力 45）",
-        "火弱点を突ける（ダメージ計算は光属性）",
-        "さらに、燃焼の状態異常を付与（2ターン）",
-        "その後、自身に特殊効果“火術”を付与（サポートアビリティとして付与）",
-        "攻撃対象がブレイク中の時：威力が1.5倍になり",
-        "さらに、属性耐性ダウン20%の効果を付与（2ターン）",
-        "燃焼：ターン終了時に属攻ダメージ&シールド-1（0にならない）",
-        "火術：ベーシックアビリティに効果記載"
-      ],
-      "raw_text_pre_enhance": [],
-      "raw_text_boost": [
-        "【ブースト時】威力55/65/80"
-      ],
-      "effects": [
-        {
-          "role": "debuff",
-          "category": "resistance",
-          "unit": "%",
-          "sub_category": "elemental",
-          "value": 20,
-          "cap_group": "debuff_resist_elem_all",
-          "scopes": [
-            "self"
-          ]
-        }
-      ],
-      "conditions": [],
-      "unknown": [
-        "敵全体に4回の光属性攻撃（威力 45） 火弱点を突ける（ダメージ計算は光属性） さらに、燃焼の状態異常を付与（2ターン）"
-      ],
-      "blocks": [
-        {
-          "scopes": [
-            "enemy_all"
-          ],
-          "text": "敵全体に4回の光属性攻撃（威力 45） 火弱点を突ける（ダメージ計算は光属性） さらに、燃焼の状態異常を付与（2ターン）"
-        },
-        {
-          "scopes": [
-            "self"
-          ],
-          "text": "その後、自身に特殊効果“火術”を付与（サポートアビリティとして付与） 攻撃対象がブレイク中の時：威力が1.5倍になり さらに、属性耐性ダウン20%の効果を付与（2ターン） 燃焼：ターン終了時に属攻ダメージ&シールド-1（0にならない） 火術：ベーシックアビリティに効果記載"
-        }
-      ]
-    },
-    {
-      "character_id": "760002",
-      "character_name": "最終皇帝(女)",
-      "ability_name": "黒点破",
-      "source_type": "battle",
-      "cost": "【消費SP 300】",
-      "raw_text": [
-        "敵単体に3回の火属性攻撃（威力180）",
-        "さらに、属性耐性ダウン30%と",
-        "バトルアビリティによる属性耐性ダウンを受けた際の上限が50%になる効果を付与（2ターン）",
-        "ブーストMAX時：このアビリティのダメージ上限が500000アップ"
-      ],
-      "raw_text_pre_enhance": [
-        "敵単体に3回の火属性攻撃（威力180）",
-        "さらに、属性耐性ダウン30%の効果を付与（2ターン）"
-      ],
-      "raw_text_boost": [
-        "【ブースト時】威力190/235/300"
-      ],
-      "effects": [
-        {
-          "role": "debuff",
-          "category": "resistance",
-          "unit": "%",
-          "sub_category": "elemental",
-          "value": 30,
-          "cap_group": "debuff_resist_elem_all",
-          "scopes": [
-            "enemy_single"
-          ]
-        }
-      ],
-      "conditions": [],
-      "unknown": [],
-      "blocks": [
-        {
-          "scopes": [
-            "enemy_single"
-          ],
-          "text": "敵単体に3回の火属性攻撃（威力180） さらに、属性耐性ダウン30%と バトルアビリティによる属性耐性ダウンを受けた際の上限が50%になる効果を付与（2ターン） ブーストMAX時：このアビリティのダメージ上限が500000アップ"
-        }
-      ]
-    },
-    {
-      "character_id": "760002",
-      "character_name": "最終皇帝(女)",
-      "ability_name": "皇帝の術法",
-      "source_type": "support",
-      "cost": null,
-      "raw_text": [
-        "味方前衛全体に「火・風・光属性」のいずれかで攻撃時",
-        "属性毎に追撃する効果を付与",
-        "（行動順での攻撃のみ/攻撃回数によらず1回のみ発動）",
-        "追撃（火）：自身に特殊効果“火術”を付与",
-        "追撃（風）：自身に特殊効果“風術”を付与",
-        "追撃（光）：自身に特殊効果”天術”を付与",
-        "火術、風術、天術：属攻アップ10%と対応する属性のダメージアップ20%と",
-        "「たたかう」以外の物理・属性攻撃（一部除く）時",
-        "対応する属性の弱点を突ける効果（ダメージ計算は各攻撃に準ずる）",
-        "対応する属性 火術：火、風術：風、天術：光",
-        "この効果は重複時に加算されない"
-      ],
-      "raw_text_pre_enhance": [],
-      "effects": [
-        {
-          "role": "buff",
-          "category": "damage",
-          "unit": "%",
-          "sub_category": "elemental",
-          "value": 20,
-          "cap_group": "buff_damage_elem_all",
-          "scopes": [
-            "self"
-          ],
-          "special_effect_id": "天術",
-          "special_stack": "no_stack"
-        },
-        {
-          "role": "buff",
-          "category": "stat",
-          "unit": "%",
-          "sub_category": "attack_elemental",
-          "value": 10,
-          "cap_group": "buff_stat_atk_elem",
-          "scopes": [
-            "self"
-          ],
-          "special_effect_id": "天術",
-          "special_stack": "no_stack"
-        }
-      ],
-      "conditions": [],
-      "unknown": [
-        "味方前衛全体に「火・風・光属性」のいずれかで攻撃時 属性毎に追撃する効果を付与 （行動順での攻撃のみ/攻撃回数によらず1回のみ発動）",
-        "追撃（火）：自身に特殊効果“火術”を付与",
-        "追撃（風）：自身に特殊効果“風術”を付与",
-        "追撃（光）:自身に特殊効果”天術”を付与 火術、風術、"
-      ],
-      "blocks": [
-        {
-          "scopes": [
-            "ally_front_all"
-          ],
-          "text": "味方前衛全体に「火・風・光属性」のいずれかで攻撃時 属性毎に追撃する効果を付与 （行動順での攻撃のみ/攻撃回数によらず1回のみ発動）"
-        },
-        {
-          "scopes": [
-            "self"
-          ],
-          "text": "追撃（火）：自身に特殊効果“火術”を付与"
-        },
-        {
-          "scopes": [
-            "self"
-          ],
-          "text": "追撃（風）：自身に特殊効果“風術”を付与"
-        },
-        {
-          "scopes": [
-            "self"
-          ],
-          "text": "追撃（光）:自身に特殊効果”天術”を付与 火術、風術、"
-        },
-        {
-          "scopes": [
-            "self"
-          ],
-          "text": "属攻アップ10%と対応する属性のダメージアップ20%と 「たたかう」以外の物理・属性攻撃（一部除く）時 対応する属性の弱点を突ける効果（ダメージ計算は各攻撃に準ずる） 対応する属性 火術:火、風術:風、天術:光 この効果は重複時に加算されない",
-          "special_effect_id": "天術"
-        }
-      ]
-    },
-    {
-      "character_id": "760002",
-      "character_name": "最終皇帝(女)",
-      "ability_name": "陣形：ラピッドストリーム",
-      "source_type": "support",
-      "cost": null,
-      "raw_text": [
-        "前衛時かつターン終了時：味方前後衛全体に",
-        "次のターンに素早く行動できる効果を付与"
-      ],
-      "raw_text_pre_enhance": [],
-      "effects": [],
-      "conditions": [
-        "前衛時かつターン終了時味方前後衛全体に 次のターンに素早く行動できる効果を付与"
-      ],
-      "unknown": [],
-      "blocks": [
-        {
-          "scopes": [
-            "ally_all"
-          ],
-          "text": "前衛時かつターン終了時：味方前後衛全体に 次のターンに素早く行動できる効果を付与"
-        }
-      ]
-    },
-    {
-      "character_id": "760002",
-      "character_name": "最終皇帝(女)",
-      "ability_name": "継承されし想い",
-      "source_type": "support",
-      "cost": null,
-      "raw_text": [
-        "自身にパーティ内の生存人数に応じ効果を付与",
-        "4以上：消費SP量軽減30%（枠毎の最大値を適用）",
-        "5以上：さらに、属攻アップ30%と属性ダメージアップ30%とサポアビと装備性能による",
-        "属攻アップと属性ダメージアップの上限が50%になる効果",
-        "6以上：さらに、使用する攻撃アビリティを2回発動する効果",
-        "（追加発動分はSP消費無し）",
-        "7以上：さらに、ダメージ上限アップ（効果量 100000）の効果"
-      ],
-      "raw_text_pre_enhance": [],
-      "effects": [
-        {
-          "role": "buff",
-          "category": "damage",
-          "unit": "%",
-          "sub_category": "elemental",
-          "value": 30,
-          "cap_group": "buff_damage_elem_all",
-          "scopes": [
-            "self"
-          ]
-        },
-        {
-          "role": "buff",
-          "category": "stat",
-          "unit": "%",
-          "sub_category": "attack_elemental",
-          "value": 30,
-          "cap_group": "buff_stat_atk_elem",
-          "scopes": [
-            "self"
-          ]
-        },
-        {
-          "role": "buff",
-          "category": "dmg_cap",
-          "unit": "",
-          "target_source_type": "battle",
-          "value": 100000,
-          "cap_group": "damage_cap",
-          "scopes": [
-            "self"
-          ]
-        },
-        {
-          "role": "buff",
-          "category": "cap_increase",
-          "unit": "%",
-          "sub_category": "attack",
-          "target_source_type": "support",
-          "value": 50,
-          "cap_group": "buff_stat_atk_elem",
-          "scopes": [
-            "self"
-          ]
-        }
-      ],
-      "conditions": [],
-      "unknown": [],
-      "blocks": [
-        {
-          "scopes": [
-            "self"
-          ],
-          "text": "自身にパーティ内の生存人数に応じ効果を付与 4以上：消費SP量軽減30%（枠毎の最大値を適用） 5以上：さらに、属攻アップ30%と属性ダメージアップ30%とサポアビと装備性能による 属攻アップと属性ダメージアップの上限が50%になる効果 6以上：さらに、使用する攻撃アビリティを2回発動する効果 （追加発動分はSP消費無し） 7以上：さらに、ダメージ上限アップ（効果量 100000）の効果"
-        }
-      ]
-    },
-    {
-      "character_id": "760002",
-      "character_name": "最終皇帝(女)",
-      "ability_name": "術追法",
-      "source_type": "support",
-      "cost": null,
-      "raw_text": [
-        "味方前衛全体に",
-        "敵の弱点を突ける攻撃時、最終皇帝(女)が追撃する効果を付与",
-        "（行動順での攻撃のみ/攻撃回数によらず1回のみ発動）",
-        "※“ブレイクさせた時”効果は起点の味方のみ発動",
-        "追撃：敵単体に",
-        "2回の",
-        "無属性攻撃（威力100）",
-        "味方前後衛全体の特殊効果“火術”・“風術”・“天術”の内",
-        "いずれか1つ以上が付与されている人数に応じて追撃の性能が変化",
-        "4以上：威力が1.5倍",
-        "6以上：物防・属防アップとダメージ減少効果を無視する"
-      ],
-      "raw_text_pre_enhance": [
-        "味方前衛全体に",
-        "敵の弱点を突ける攻撃時、最終皇帝(女)が追撃する効果を付与",
-        "（行動順での攻撃のみ/攻撃回数によらず1回のみ発動）",
-        "※“ブレイクさせた時”効果は起点の味方のみ発動",
-        "追撃：敵単体に無属性攻撃（威力100）",
-        "味方前後衛全体の特殊効果“火術”・“風術”・“天術”の内",
-        "いずれか1つ以上が付与されている人数に応じて追撃の性能が変化",
-        "4以上：威力が1.5倍",
-        "6以上：物防・属防アップとダメージ減少効果を無視する"
-      ],
-      "effects": [],
-      "conditions": [],
-      "unknown": [
-        "味方前衛全体に 敵の弱点を突ける攻撃時、最終皇帝(女)が追撃する効果を付与 （行動順での攻撃のみ/攻撃回数によらず1回のみ発動） ※“ブレイクさせた時”効果は起点の味方のみ発動",
-        "追撃：敵単体に 2回の 無属性攻撃（威力100）",
-        "味方前後衛全体の特殊効果“火術”・“風術”・“天術”の内 いずれか1つ以上が付与されている人数に応じて追撃の性能が変化 4以上：威力が1.5倍 6以上：物防・属防アップとダメージ減少効果を無視する"
-      ],
-      "blocks": [
-        {
-          "scopes": [
-            "ally_front_all"
-          ],
-          "text": "味方前衛全体に 敵の弱点を突ける攻撃時、最終皇帝(女)が追撃する効果を付与 （行動順での攻撃のみ/攻撃回数によらず1回のみ発動） ※“ブレイクさせた時”効果は起点の味方のみ発動"
-        },
-        {
-          "scopes": [
-            "enemy_single"
-          ],
-          "text": "追撃：敵単体に 2回の 無属性攻撃（威力100）"
-        },
-        {
-          "scopes": [
-            "ally_all"
-          ],
-          "text": "味方前後衛全体の特殊効果“火術”・“風術”・“天術”の内 いずれか1つ以上が付与されている人数に応じて追撃の性能が変化 4以上：威力が1.5倍 6以上：物防・属防アップとダメージ減少効果を無視する"
-        }
-      ]
-    },
-    {
-      "character_id": "760002",
-      "character_name": "最終皇帝(女)",
-      "ability_name": "クリムゾンフレア",
-      "source_type": "ultimate",
-      "cost": "超威発動",
-      "raw_text": [
-        "【Lv.MAX】",
-        "敵単体に2回の光属性攻撃（威力 355）",
-        "火弱点を突ける（ダメージ計算は光属性）",
-        "さらに、属防ダウン30%と",
-        "火・風・光耐性ダウン30%の効果を付与（6ターン）",
-        "この必殺技のダメージ上限が300000アップ",
-        "自身に火術・天術の内",
-        "いずれか1つ以上が付与されている時：攻撃回数が4回になる",
-        "自身に火術・風術・天術が",
-        "すべて付与されている時：攻撃回数が6回になる"
-      ],
-      "raw_text_pre_enhance": [],
-      "effects": [
-        {
-          "role": "debuff",
-          "category": "resistance",
-          "unit": "%",
-          "sub_category": "elemental",
-          "value": 30,
-          "tag": "fire",
-          "cap_group": "debuff_resist_elem_fire",
-          "scopes": [
-            "enemy_single"
-          ]
-        },
-        {
-          "role": "debuff",
-          "category": "resistance",
-          "unit": "%",
-          "sub_category": "elemental",
-          "value": 30,
-          "tag": "wind",
-          "cap_group": "debuff_resist_elem_wind",
-          "scopes": [
-            "enemy_single"
-          ]
-        },
-        {
-          "role": "debuff",
-          "category": "resistance",
-          "unit": "%",
-          "sub_category": "elemental",
-          "value": 30,
-          "tag": "light",
-          "cap_group": "debuff_resist_elem_light",
-          "scopes": [
-            "enemy_single"
-          ]
-        },
-        {
-          "role": "debuff",
-          "category": "stat",
-          "unit": "%",
-          "sub_category": "defence_elemental",
-          "value": 30,
-          "cap_group": "debuff_stat_def_elem",
-          "scopes": [
-            "enemy_single"
-          ]
-        }
-      ],
-      "conditions": [
-        "自身に火術・天術の内 いずれか1つ以上が付与されている時攻撃回数が4回になる",
-        "自身に火術・風術・天術が すべて付与されている時攻撃回数が6回になる"
-      ],
-      "unknown": [
-        "【Lv.MAX】"
-      ],
-      "blocks": [
-        {
-          "scopes": [],
-          "text": "【Lv.MAX】"
-        },
-        {
-          "scopes": [
-            "enemy_single"
-          ],
-          "text": "敵単体に2回の光属性攻撃（威力 355） 火弱点を突ける（ダメージ計算は光属性） さらに、属防ダウン30%と 火・風・光耐性ダウン30%の効果を付与（6ターン） この必殺技のダメージ上限が300000アップ"
-        },
-        {
-          "scopes": [
-            "self"
-          ],
-          "text": "自身に火術・天術の内 いずれか1つ以上が付与されている時：攻撃回数が4回になる"
-        },
-        {
-          "scopes": [
-            "self"
-          ],
-          "text": "自身に火術・風術・天術が すべて付与されている時：攻撃回数が6回になる"
-        }
-      ]
-    },
-    {
-      "character_id": "760002",
-      "character_name": "最終皇帝(女)",
-      "ability_name": "ギャラクシィ",
-      "source_type": "ex",
-      "cost": "回数：3",
-      "raw_text": [
-        "敵全体に光属性攻撃（威力 240）",
-        "このアビリティのダメージ上限が500000アップ",
-        "この攻撃は物防・属防アップとダメージ減少効果を無視する",
-        "自身に火術・風術・天術がすべて付与されている時：",
-        "威力が約1.2倍（※威力値に反映）になり、攻撃回数が3回になる"
-      ],
-      "raw_text_pre_enhance": [],
-      "raw_text_condition": [
-        "【使用条件】自身が火術・風術・天術の内、いずれか2つ以上の効果中の時"
-      ],
-      "raw_text_boost": [
-        "【ブースト時】威力265/305/380"
-      ],
-      "effects": [],
-      "conditions": [
-        "自身に火術・風術・天術がすべて付与されている時 威力が約1.2倍（※威力値に反映）になり、攻撃回数が3回になる"
-      ],
-      "unknown": [
-        "敵全体に光属性攻撃（威力 240） このアビリティのダメージ上限が500000アップ この攻撃は物防・属防アップとダメージ減少効果を無視する"
-      ],
-      "blocks": [
-        {
-          "scopes": [
-            "enemy_all"
-          ],
-          "text": "敵全体に光属性攻撃（威力 240） このアビリティのダメージ上限が500000アップ この攻撃は物防・属防アップとダメージ減少効果を無視する"
-        },
-        {
-          "scopes": [
-            "self"
-          ],
-          "text": "自身に火術・風術・天術がすべて付与されている時： 威力が約1.2倍（※威力値に反映）になり、攻撃回数が3回になる"
-        }
-      ]
-    }
-  ],
-  [
-    {
       "character_id": "760001",
       "character_name": "最終皇帝(男)",
       "ability_name": "切り落とし",
@@ -3350,6 +2515,841 @@
             "self"
           ],
           "text": "さらに、自身のSP回復（回復量 最大SPの25%）"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "character_id": "760002",
+      "character_name": "最終皇帝(女)",
+      "ability_name": "ファイアーボール",
+      "source_type": "battle",
+      "cost": "【消費SP 28】",
+      "raw_text": [
+        "敵単体に2回の火属性攻撃（威力 90）",
+        "ブーストMAX時：敵全体化"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力105/125/180"
+      ],
+      "effects": [],
+      "conditions": [
+        "敵単体に2回の火属性攻撃（威力 90） ブーストMAX時敵全体化"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に2回の火属性攻撃（威力 90） ブーストMAX時：敵全体化"
+        }
+      ]
+    },
+    {
+      "character_id": "760002",
+      "character_name": "最終皇帝(女)",
+      "ability_name": "ライトボール",
+      "source_type": "battle",
+      "cost": "【消費SP 38】",
+      "raw_text": [
+        "敵全体に2回の光属性攻撃（威力 70）",
+        "さらに、中確率で暗間の状態異常を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力80/100/120"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵全体に2回の光属性攻撃（威力 70） さらに、中確率で暗間の状態異常を付与（2ターン）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に2回の光属性攻撃（威力 70） さらに、中確率で暗間の状態異常を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "760002",
+      "character_name": "最終皇帝(女)",
+      "ability_name": "ウインドカッター",
+      "source_type": "battle",
+      "cost": "【消費SP 27】",
+      "raw_text": [
+        "敵単体に3回の風属性攻撃（威力 55）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力65/80/100"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵単体に3回の風属性攻撃（威力 55）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に3回の風属性攻撃（威力 55）"
+        }
+      ]
+    },
+    {
+      "character_id": "760002",
+      "character_name": "最終皇帝(女)",
+      "ability_name": "月光",
+      "source_type": "battle",
+      "cost": "【消費SP 50】",
+      "raw_text": [
+        "味方前衛全体にHP自動回復の効果を付与（2ターン/効力110）し",
+        "暗闇の状態異常を回復",
+        "さらに、味方前後衛全体に",
+        "特殊効果“天術”を付与（サポートアビリティとして付与）",
+        "ブーストMAX時：味方前衛全体のBPを1回復",
+        "天術：ベーシックアビリティに効果記載"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】ターン数3/4/5"
+      ],
+      "effects": [],
+      "conditions": [
+        "ブーストMAX時味方前衛全体のBPを1回復 天術ベーシックアビリティに効果記載"
+      ],
+      "unknown": [
+        "味方前衛全体にHP自動回復の効果を付与（2ターン/効力110）し 暗闇の状態異常を回復",
+        "さらに、味方前後衛全体に 特殊効果“天術”を付与（サポートアビリティとして付与）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体にHP自動回復の効果を付与（2ターン/効力110）し 暗闇の状態異常を回復"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "さらに、味方前後衛全体に 特殊効果“天術”を付与（サポートアビリティとして付与）"
+        },
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "ブーストMAX時：味方前衛全体のBPを1回復 天術：ベーシックアビリティに効果記載"
+        }
+      ]
+    },
+    {
+      "character_id": "760002",
+      "character_name": "最終皇帝(女)",
+      "ability_name": "エアスクリーン",
+      "source_type": "battle",
+      "cost": "【消費SP 64】",
+      "raw_text": [
+        "味方前衛全体に物防・属防アップ15%の効果を付与（2ターン）",
+        "さらに、味方前後衛全体に",
+        "特殊効果”風術”を付与（サポートアビリティとして付与）",
+        "加えて、自身に風属性ダメージアップ20%の効果を付与（3ターン）",
+        "風術：ベーシックアビリティに効果記載"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】ターン数3/4/5 ターン数4/5/6"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 15,
+          "cap_group": "buff_stat_def_phys",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 15,
+          "cap_group": "buff_stat_def_elem",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 20,
+          "tag": "wind",
+          "cap_group": "buff_damage_elem_wind",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "さらに、味方前後衛全体に 特殊効果”風術”を付与（サポートアビリティとして付与）",
+        "ベーシックアビリティに効果記載"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体に物防・属防アップ15%の効果を付与（2ターン）"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "さらに、味方前後衛全体に 特殊効果”風術”を付与（サポートアビリティとして付与）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "加えて、自身に風属性ダメージアップ20%の効果を付与（3ターン）"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "ベーシックアビリティに効果記載",
+          "special_effect_id": "風術",
+          "target_source_type": "support"
+        }
+      ]
+    },
+    {
+      "character_id": "760002",
+      "character_name": "最終皇帝(女)",
+      "ability_name": "ファイアストーム",
+      "source_type": "battle",
+      "cost": "【消費SP 62】",
+      "raw_text": [
+        "敵全体に3回の風属性攻撃（威力 65）",
+        "火弱点を突ける（ダメージ計算は風属性）",
+        "さらに、味方前後衛全体に",
+        "特殊効果“火術”を付与（サポートアビリティとして付与）",
+        "その後、自身に属攻アップ20%の効果を付与（2ターン）",
+        "火術：ベーシックアビリティに効果記載"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力75/90/115"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 20,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "敵全体に3回の風属性攻撃（威力 65） 火弱点を突ける（ダメージ計算は風属性）",
+        "さらに、味方前後衛全体に 特殊効果“火術”を付与（サポートアビリティとして付与）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に3回の風属性攻撃（威力 65） 火弱点を突ける（ダメージ計算は風属性）"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "さらに、味方前後衛全体に 特殊効果“火術”を付与（サポートアビリティとして付与）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "その後、自身に属攻アップ20%の効果を付与（2ターン） 火術：ベーシックアビリティに効果記載"
+        }
+      ]
+    },
+    {
+      "character_id": "760002",
+      "character_name": "最終皇帝(女)",
+      "ability_name": "三術連唱",
+      "source_type": "battle",
+      "cost": "【消費SP 45】",
+      "raw_text": [
+        "敵単体に2回ずつ火・風・光属性攻撃（威力40）",
+        "ブーストMAX時：攻撃回数が3回ずつになる"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力45/55/75"
+      ],
+      "effects": [],
+      "conditions": [
+        "敵単体に2回ずつ火・風・光属性攻撃（威力40） ブーストMAX時攻撃回数が3回ずつになる"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に2回ずつ火・風・光属性攻撃（威力40） ブーストMAX時：攻撃回数が3回ずつになる"
+        }
+      ]
+    },
+    {
+      "character_id": "760002",
+      "character_name": "最終皇帝(女)",
+      "ability_name": "太陽風",
+      "source_type": "battle",
+      "cost": "【消費SP 123】",
+      "raw_text": [
+        "敵全体に2回の光属性攻撃（威力 80）",
+        "風弱点を突ける（ダメージ計算は光属性）",
+        "自身に特殊効果“風術”を付与（サポートアビリティとして付与）",
+        "さらに、使用した次のターンがら1ターンに1回",
+        "味方の行動前（一部除く）に継続効果を発揮（継続2回）",
+        "継続効果：敵全体に2回の光属性攻撃（威力 70）",
+        "風弱点を突ける（ダメージ計算は光属性）",
+        "風術：ベーシックアビリティに効果記載"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力95/115/130 継続3/4/5"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵全体に2回の光属性攻撃（威力 80） 風弱点を突ける（ダメージ計算は光属性）",
+        "自身に特殊効果“風術”を付与（サポートアビリティとして付与） さらに、使用した次のターンがら1ターンに1回 味方の行動前（一部除く）に継続効果を発揮（継続2回）",
+        "継続効果：敵全体に2回の光属性攻撃（威力 70） 風弱点を突ける（ダメージ計算は光属性） 風術：ベーシックアビリティに効果記載"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に2回の光属性攻撃（威力 80） 風弱点を突ける（ダメージ計算は光属性）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に特殊効果“風術”を付与（サポートアビリティとして付与） さらに、使用した次のターンがら1ターンに1回 味方の行動前（一部除く）に継続効果を発揮（継続2回）"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "継続効果：敵全体に2回の光属性攻撃（威力 70） 風弱点を突ける（ダメージ計算は光属性） 風術：ベーシックアビリティに効果記載"
+        }
+      ]
+    },
+    {
+      "character_id": "760002",
+      "character_name": "最終皇帝(女)",
+      "ability_name": "セイントファイア",
+      "source_type": "battle",
+      "cost": "【消費SP 111】",
+      "raw_text": [
+        "敵全体に4回の光属性攻撃（威力 45）",
+        "火弱点を突ける（ダメージ計算は光属性）",
+        "さらに、燃焼の状態異常を付与（2ターン）",
+        "その後、自身に特殊効果“火術”を付与（サポートアビリティとして付与）",
+        "攻撃対象がブレイク中の時：威力が1.5倍になり",
+        "さらに、属性耐性ダウン20%の効果を付与（2ターン）",
+        "燃焼：ターン終了時に属攻ダメージ&シールド-1（0にならない）",
+        "火術：ベーシックアビリティに効果記載"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力55/65/80"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 20,
+          "cap_group": "debuff_resist_elem_all",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "敵全体に4回の光属性攻撃（威力 45） 火弱点を突ける（ダメージ計算は光属性） さらに、燃焼の状態異常を付与（2ターン）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に4回の光属性攻撃（威力 45） 火弱点を突ける（ダメージ計算は光属性） さらに、燃焼の状態異常を付与（2ターン）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "その後、自身に特殊効果“火術”を付与（サポートアビリティとして付与） 攻撃対象がブレイク中の時：威力が1.5倍になり さらに、属性耐性ダウン20%の効果を付与（2ターン） 燃焼：ターン終了時に属攻ダメージ&シールド-1（0にならない） 火術：ベーシックアビリティに効果記載"
+        }
+      ]
+    },
+    {
+      "character_id": "760002",
+      "character_name": "最終皇帝(女)",
+      "ability_name": "黒点破",
+      "source_type": "battle",
+      "cost": "【消費SP 300】",
+      "raw_text": [
+        "敵単体に3回の火属性攻撃（威力180）",
+        "さらに、属性耐性ダウン30%と",
+        "バトルアビリティによる属性耐性ダウンを受けた際の上限が50%になる効果を付与（2ターン）",
+        "ブーストMAX時：このアビリティのダメージ上限が500000アップ"
+      ],
+      "raw_text_pre_enhance": [
+        "敵単体に3回の火属性攻撃（威力180）",
+        "さらに、属性耐性ダウン30%の効果を付与（2ターン）"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】威力190/235/300"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 30,
+          "cap_group": "debuff_resist_elem_all",
+          "scopes": [
+            "enemy_single"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に3回の火属性攻撃（威力180） さらに、属性耐性ダウン30%と バトルアビリティによる属性耐性ダウンを受けた際の上限が50%になる効果を付与（2ターン） ブーストMAX時：このアビリティのダメージ上限が500000アップ"
+        }
+      ]
+    },
+    {
+      "character_id": "760002",
+      "character_name": "最終皇帝(女)",
+      "ability_name": "皇帝の術法",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "味方前衛全体に「火・風・光属性」のいずれかで攻撃時",
+        "属性毎に追撃する効果を付与",
+        "（行動順での攻撃のみ/攻撃回数によらず1回のみ発動）",
+        "追撃（火）：自身に特殊効果“火術”を付与",
+        "追撃（風）：自身に特殊効果“風術”を付与",
+        "追撃（光）：自身に特殊効果”天術”を付与",
+        "火術、風術、天術：属攻アップ10%と対応する属性のダメージアップ20%と",
+        "「たたかう」以外の物理・属性攻撃（一部除く）時",
+        "対応する属性の弱点を突ける効果（ダメージ計算は各攻撃に準ずる）",
+        "対応する属性 火術：火、風術：風、天術：光",
+        "この効果は重複時に加算されない"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 20,
+          "cap_group": "buff_damage_elem_all",
+          "scopes": [
+            "self"
+          ],
+          "special_effect_id": "天術",
+          "special_stack": "no_stack"
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 10,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "self"
+          ],
+          "special_effect_id": "天術",
+          "special_stack": "no_stack"
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "味方前衛全体に「火・風・光属性」のいずれかで攻撃時 属性毎に追撃する効果を付与 （行動順での攻撃のみ/攻撃回数によらず1回のみ発動）",
+        "追撃（火）：自身に特殊効果“火術”を付与",
+        "追撃（風）：自身に特殊効果“風術”を付与",
+        "追撃（光）:自身に特殊効果”天術”を付与 火術、風術、"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体に「火・風・光属性」のいずれかで攻撃時 属性毎に追撃する効果を付与 （行動順での攻撃のみ/攻撃回数によらず1回のみ発動）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "追撃（火）：自身に特殊効果“火術”を付与"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "追撃（風）：自身に特殊効果“風術”を付与"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "追撃（光）:自身に特殊効果”天術”を付与 火術、風術、"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "属攻アップ10%と対応する属性のダメージアップ20%と 「たたかう」以外の物理・属性攻撃（一部除く）時 対応する属性の弱点を突ける効果（ダメージ計算は各攻撃に準ずる） 対応する属性 火術:火、風術:風、天術:光 この効果は重複時に加算されない",
+          "special_effect_id": "天術"
+        }
+      ]
+    },
+    {
+      "character_id": "760002",
+      "character_name": "最終皇帝(女)",
+      "ability_name": "陣形：ラピッドストリーム",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "前衛時かつターン終了時：味方前後衛全体に",
+        "次のターンに素早く行動できる効果を付与"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [],
+      "conditions": [
+        "前衛時かつターン終了時味方前後衛全体に 次のターンに素早く行動できる効果を付与"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "前衛時かつターン終了時：味方前後衛全体に 次のターンに素早く行動できる効果を付与"
+        }
+      ]
+    },
+    {
+      "character_id": "760002",
+      "character_name": "最終皇帝(女)",
+      "ability_name": "継承されし想い",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "自身にパーティ内の生存人数に応じ効果を付与",
+        "4以上：消費SP量軽減30%（枠毎の最大値を適用）",
+        "5以上：さらに、属攻アップ30%と属性ダメージアップ30%とサポアビと装備性能による",
+        "属攻アップと属性ダメージアップの上限が50%になる効果",
+        "6以上：さらに、使用する攻撃アビリティを2回発動する効果",
+        "（追加発動分はSP消費無し）",
+        "7以上：さらに、ダメージ上限アップ（効果量 100000）の効果"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 30,
+          "cap_group": "buff_damage_elem_all",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 30,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 100000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "attack",
+          "target_source_type": "support",
+          "value": 50,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身にパーティ内の生存人数に応じ効果を付与 4以上：消費SP量軽減30%（枠毎の最大値を適用） 5以上：さらに、属攻アップ30%と属性ダメージアップ30%とサポアビと装備性能による 属攻アップと属性ダメージアップの上限が50%になる効果 6以上：さらに、使用する攻撃アビリティを2回発動する効果 （追加発動分はSP消費無し） 7以上：さらに、ダメージ上限アップ（効果量 100000）の効果"
+        }
+      ]
+    },
+    {
+      "character_id": "760002",
+      "character_name": "最終皇帝(女)",
+      "ability_name": "術追法",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "味方前衛全体に",
+        "敵の弱点を突ける攻撃時、最終皇帝(女)が追撃する効果を付与",
+        "（行動順での攻撃のみ/攻撃回数によらず1回のみ発動）",
+        "※“ブレイクさせた時”効果は起点の味方のみ発動",
+        "追撃：敵単体に",
+        "2回の",
+        "無属性攻撃（威力100）",
+        "味方前後衛全体の特殊効果“火術”・“風術”・“天術”の内",
+        "いずれか1つ以上が付与されている人数に応じて追撃の性能が変化",
+        "4以上：威力が1.5倍",
+        "6以上：物防・属防アップとダメージ減少効果を無視する"
+      ],
+      "raw_text_pre_enhance": [
+        "味方前衛全体に",
+        "敵の弱点を突ける攻撃時、最終皇帝(女)が追撃する効果を付与",
+        "（行動順での攻撃のみ/攻撃回数によらず1回のみ発動）",
+        "※“ブレイクさせた時”効果は起点の味方のみ発動",
+        "追撃：敵単体に無属性攻撃（威力100）",
+        "味方前後衛全体の特殊効果“火術”・“風術”・“天術”の内",
+        "いずれか1つ以上が付与されている人数に応じて追撃の性能が変化",
+        "4以上：威力が1.5倍",
+        "6以上：物防・属防アップとダメージ減少効果を無視する"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "味方前衛全体に 敵の弱点を突ける攻撃時、最終皇帝(女)が追撃する効果を付与 （行動順での攻撃のみ/攻撃回数によらず1回のみ発動） ※“ブレイクさせた時”効果は起点の味方のみ発動",
+        "追撃：敵単体に 2回の 無属性攻撃（威力100）",
+        "味方前後衛全体の特殊効果“火術”・“風術”・“天術”の内 いずれか1つ以上が付与されている人数に応じて追撃の性能が変化 4以上：威力が1.5倍 6以上：物防・属防アップとダメージ減少効果を無視する"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体に 敵の弱点を突ける攻撃時、最終皇帝(女)が追撃する効果を付与 （行動順での攻撃のみ/攻撃回数によらず1回のみ発動） ※“ブレイクさせた時”効果は起点の味方のみ発動"
+        },
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "追撃：敵単体に 2回の 無属性攻撃（威力100）"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "味方前後衛全体の特殊効果“火術”・“風術”・“天術”の内 いずれか1つ以上が付与されている人数に応じて追撃の性能が変化 4以上：威力が1.5倍 6以上：物防・属防アップとダメージ減少効果を無視する"
+        }
+      ]
+    },
+    {
+      "character_id": "760002",
+      "character_name": "最終皇帝(女)",
+      "ability_name": "クリムゾンフレア",
+      "source_type": "ultimate",
+      "cost": "超威発動",
+      "raw_text": [
+        "【Lv.MAX】",
+        "敵単体に2回の光属性攻撃（威力 355）",
+        "火弱点を突ける（ダメージ計算は光属性）",
+        "さらに、属防ダウン30%と",
+        "火・風・光耐性ダウン30%の効果を付与（6ターン）",
+        "この必殺技のダメージ上限が300000アップ",
+        "自身に火術・天術の内",
+        "いずれか1つ以上が付与されている時：攻撃回数が4回になる",
+        "自身に火術・風術・天術が",
+        "すべて付与されている時：攻撃回数が6回になる"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 30,
+          "tag": "fire",
+          "cap_group": "debuff_resist_elem_fire",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 30,
+          "tag": "wind",
+          "cap_group": "debuff_resist_elem_wind",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 30,
+          "tag": "light",
+          "cap_group": "debuff_resist_elem_light",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 30,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": [
+            "enemy_single"
+          ]
+        }
+      ],
+      "conditions": [
+        "自身に火術・天術の内 いずれか1つ以上が付与されている時攻撃回数が4回になる",
+        "自身に火術・風術・天術が すべて付与されている時攻撃回数が6回になる"
+      ],
+      "unknown": [
+        "【Lv.MAX】"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "【Lv.MAX】"
+        },
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に2回の光属性攻撃（威力 355） 火弱点を突ける（ダメージ計算は光属性） さらに、属防ダウン30%と 火・風・光耐性ダウン30%の効果を付与（6ターン） この必殺技のダメージ上限が300000アップ"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に火術・天術の内 いずれか1つ以上が付与されている時：攻撃回数が4回になる"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に火術・風術・天術が すべて付与されている時：攻撃回数が6回になる"
+        }
+      ]
+    },
+    {
+      "character_id": "760002",
+      "character_name": "最終皇帝(女)",
+      "ability_name": "ギャラクシィ",
+      "source_type": "ex",
+      "cost": "回数：3",
+      "raw_text": [
+        "敵全体に光属性攻撃（威力 240）",
+        "このアビリティのダメージ上限が500000アップ",
+        "この攻撃は物防・属防アップとダメージ減少効果を無視する",
+        "自身に火術・風術・天術がすべて付与されている時：",
+        "威力が約1.2倍（※威力値に反映）になり、攻撃回数が3回になる"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_condition": [
+        "【使用条件】自身が火術・風術・天術の内、いずれか2つ以上の効果中の時"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】威力265/305/380"
+      ],
+      "effects": [],
+      "conditions": [
+        "自身に火術・風術・天術がすべて付与されている時 威力が約1.2倍（※威力値に反映）になり、攻撃回数が3回になる"
+      ],
+      "unknown": [
+        "敵全体に光属性攻撃（威力 240） このアビリティのダメージ上限が500000アップ この攻撃は物防・属防アップとダメージ減少効果を無視する"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に光属性攻撃（威力 240） このアビリティのダメージ上限が500000アップ この攻撃は物防・属防アップとダメージ減少効果を無視する"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に火術・風術・天術がすべて付与されている時： 威力が約1.2倍（※威力値に反映）になり、攻撃回数が3回になる"
         }
       ]
     }
@@ -11579,7 +11579,7 @@
       "character_name": "エリカEx2",
       "ability_name": "エドラスの祝祭",
       "source_type": "ultimate",
-      "cost": "超威発動",
+      "cost": "後衛発動",
       "raw_text": [
         "【Lv.MAX】",
         "味方前衛全体に威力アップ75%の効果を付与",
@@ -17549,7 +17549,7 @@
         "味方前衛全体に",
         "「氷属性」攻撃でクリティカル時のダメージ倍率が",
         "1.6倍になる効果を付与（通常時は1.25倍）",
-        "効果対象がHP満タン時：さらに、それそれに特殊効果”波及攻渦”を付与",
+        "効果対象がHP満タン時：さらに、それぞれに特殊効果”波及攻渦”を付与",
         "波及攻渦：属性攻撃でクリティカルが発生する効果"
       ],
       "raw_text_pre_enhance": [],
@@ -17571,14 +17571,14 @@
       ],
       "conditions": [],
       "unknown": [
-        "味方前衛全体に 「氷属性」攻撃でクリティカル時のダメージ倍率が 1.6倍になる効果を付与（通常時は1.25倍） 効果対象がHP満タン時:さらに、それそれに特殊効果”波及攻渦”を付与"
+        "味方前衛全体に 「氷属性」攻撃でクリティカル時のダメージ倍率が 1.6倍になる効果を付与（通常時は1.25倍） 効果対象がHP満タン時:さらに、それぞれに特殊効果”波及攻渦”を付与"
       ],
       "blocks": [
         {
           "scopes": [
             "ally_front_all"
           ],
-          "text": "味方前衛全体に 「氷属性」攻撃でクリティカル時のダメージ倍率が 1.6倍になる効果を付与（通常時は1.25倍） 効果対象がHP満タン時:さらに、それそれに特殊効果”波及攻渦”を付与"
+          "text": "味方前衛全体に 「氷属性」攻撃でクリティカル時のダメージ倍率が 1.6倍になる効果を付与（通常時は1.25倍） 効果対象がHP満タン時:さらに、それぞれに特殊効果”波及攻渦”を付与"
         },
         {
           "scopes": [
@@ -48700,12 +48700,16 @@
       "character_name": "シャナ",
       "ability_name": "プラムの輸液",
       "source_type": "battle",
-      "cost": "【消費SP 150】",
+      "cost": "【消費SP 100】",
       "raw_text": [
         "自身を除く味方前衛全体に",
         "SPストックを付与（効果量 50/重複不可）"
       ],
-      "raw_text_pre_enhance": [],
+      "raw_text_pre_enhance": [
+        "【消費SP 150】",
+        "自身を除く味方前衛全体に",
+        "SPストックを付与（効果量 50/重複不可）"
+      ],
       "raw_text_boost": [
         "【ブースト時】SPストック75/100/150"
       ],
@@ -48794,14 +48798,20 @@
       "cost": null,
       "raw_text": [
         "自身にSP自動回復の効果を付与（回復量 最大SPの5%）",
+        "自身にSPストックがある場合、回復量が2倍になる",
+        "後衛に交代時:自身に",
+        "SPストックを付与（効果量 使用者の最大SPの10%/重複不可）"
+      ],
+      "raw_text_pre_enhance": [
+        "自身にSP自動回復の効果を付与（回復量 最大SPの5%）",
         "自身にSPストックがある場合、回復量が2倍になる"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [],
       "conditions": [],
       "unknown": [
         "自身にSP自動回復の効果を付与（回復量 最大SPの5%）",
-        "自身にSPストックがある場合、回復量が2倍になる"
+        "自身にSPストックがある場合、回復量が2倍になる",
+        "後衛に交代時:自身に SPストックを付与（効果量 使用者の最大SPの10%/重複不可）"
       ],
       "blocks": [
         {
@@ -48815,6 +48825,12 @@
             "self"
           ],
           "text": "自身にSPストックがある場合、回復量が2倍になる"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "後衛に交代時:自身に SPストックを付与（効果量 使用者の最大SPの10%/重複不可）"
         }
       ]
     },
@@ -73958,23 +73974,28 @@
       "cost": "【消費SP 54】",
       "raw_text": [
         "味方前衛全体に",
+        "物理・",
+        "属性",
+        "耐性アップ15%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [
+        "味方前衛全体に",
         "物理耐性アップ15%の効果を付与（2ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】ターン数3/4/5"
       ],
       "effects": [],
       "conditions": [],
       "unknown": [
-        "味方前衛全体に 物理耐性アップ15%の効果を付与（2ターン）"
+        "味方前衛全体に 物理・ 属性 耐性アップ15%の効果を付与（2ターン）"
       ],
       "blocks": [
         {
           "scopes": [
             "ally_front_all"
           ],
-          "text": "味方前衛全体に 物理耐性アップ15%の効果を付与（2ターン）"
+          "text": "味方前衛全体に 物理・ 属性 耐性アップ15%の効果を付与（2ターン）"
         }
       ]
     },
@@ -74091,23 +74112,28 @@
     {
       "character_id": "506045",
       "character_name": "アラウネEx",
-      "ability_name": "強化効果延長(与)",
+      "ability_name": "強化効果延長(与)Ⅱ",
       "source_type": "support",
       "cost": null,
       "raw_text": [
         "自身が強化効果を付与した際の",
+        "効果を",
+        "2",
+        "ターン延長（重複不可）"
+      ],
+      "raw_text_pre_enhance": [
+        "自身が強化効果を付与した際の",
         "効果を1ターン延長（重複不可）"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [],
       "conditions": [],
       "unknown": [
-        "自身が強化効果を付与した際の 効果を1ターン延長（重複不可）"
+        "自身が強化効果を付与した際の 効果を 2 ターン延長（重複不可）"
       ],
       "blocks": [
         {
           "scopes": [],
-          "text": "自身が強化効果を付与した際の 効果を1ターン延長（重複不可）"
+          "text": "自身が強化効果を付与した際の 効果を 2 ターン延長（重複不可）"
         }
       ]
     },
@@ -88156,13 +88182,21 @@
         "味方前衛全体に",
         "SP自動回復の効果を付与（2ターン/回復量 最大SPの5%）",
         "さらに、同対象それぞれに20%の確率で",
+        "HP自動回復の効果を付与（2ターン/効力 110）",
+        "その後、味方前衛全体の剣士に",
+        "SPストックを付与（付与量 使用者の最大SPの10%/重複不可）"
+      ],
+      "raw_text_pre_enhance": [
+        "味方前衛全体に",
+        "SP自動回復の効果を付与（2ターン/回復量 最大SPの5%）",
+        "さらに、同対象それぞれに20%の確率で",
         "HP自動回復の効果を付与（2ターン/効力 110）"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [],
       "conditions": [],
       "unknown": [
-        "味方前衛全体に SP自動回復の効果を付与（2ターン/回復量 最大SPの5%） さらに、同対象それぞれに20%の確率で HP自動回復の効果を付与（2ターン/効力 110）"
+        "味方前衛全体に SP自動回復の効果を付与（2ターン/回復量 最大SPの5%） さらに、同対象それぞれに20%の確率で HP自動回復の効果を付与（2ターン/効力 110）",
+        "その後、味方前衛全体の剣士に SPストックを付与（付与量 使用者の最大SPの10%/重複不可）"
       ],
       "blocks": [
         {
@@ -88170,6 +88204,12 @@
             "ally_front_all"
           ],
           "text": "味方前衛全体に SP自動回復の効果を付与（2ターン/回復量 最大SPの5%） さらに、同対象それぞれに20%の確率で HP自動回復の効果を付与（2ターン/効力 110）"
+        },
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "その後、味方前衛全体の剣士に SPストックを付与（付与量 使用者の最大SPの10%/重複不可）"
         }
       ]
     },
@@ -88229,12 +88269,23 @@
       "source_type": "support",
       "cost": null,
       "raw_text": [
+        "ターン開始時に味方前衛全体それぞれに",
+        "物攻、物防、属攻、属防、会心、速度アップ5%、",
+        "必ずクリティカルの内",
+        "いずれか",
+        "2",
+        "つの効果を付与（2ターン/付与する効果は重複しない）",
+        "※属性攻撃でクリティカルが発生するには“属性攻撃でクリティカルが発生する効果”が必要",
+        "ターン開始時に敵全体それぞれに",
+        "物攻、物防、属攻、属防ダウン10%の内",
+        "いずれか1つの効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [
         "行動選択フェイズ開始時に味方前衛全体それぞれに",
         "物攻、物防、属攻、属防、速度、会心アップ5%の内",
         "いずれか1つの効果",
         "または、必ずクリティカルの効果を付与（2ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "buff",
@@ -88291,13 +88342,39 @@
           "scopes": []
         },
         {
-          "role": "buff",
-          "category": "critical",
-          "unit": "",
-          "sub_category": "certain",
-          "target_source_type": "battle",
-          "value": 1,
-          "cap_group": "critical_certain",
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 10,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": []
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 10,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": []
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 10,
+          "cap_group": "debuff_stat_atk_phys",
+          "scopes": []
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 10,
+          "cap_group": "debuff_stat_atk_elem",
           "scopes": []
         }
       ],
@@ -88306,7 +88383,7 @@
       "blocks": [
         {
           "scopes": [],
-          "text": "行動選択フェイズ開始時に味方前衛全体それぞれに 物攻、物防、属攻、属防、速度、会心アップ5%の内 いずれか1つの効果 または、必ずクリティカルの効果を付与（2ターン）"
+          "text": "ターン開始時に味方前衛全体それぞれに 物攻、物防、属攻、属防、会心、速度アップ5%、 必ずクリティカルの内 いずれか 2 つの効果を付与（2ターン/付与する効果は重複しない） ※属性攻撃でクリティカルが発生するには“属性攻撃でクリティカルが発生する効果”が必要 ターン開始時に敵全体それぞれに 物攻、物防、属攻、属防ダウン10%の内 いずれか1つの効果を付与（2ターン）"
         }
       ]
     },
@@ -130353,23 +130430,27 @@
       "cost": "【消費SP 44】",
       "raw_text": [
         "敵単体に槍物理攻撃（威力 260）",
+        "さらに、自身への挑発効果を付与（2ターン）",
+        "その後、自身へのHP回復（効力 140）"
+      ],
+      "raw_text_pre_enhance": [
+        "敵単体に槍物理攻撃（威力 260）",
         "さらに、自身への挑発効果を付与（2ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力290/340/450"
       ],
       "effects": [],
       "conditions": [],
       "unknown": [
-        "敵単体に槍物理攻撃（威力 260） さらに、自身への挑発効果を付与（2ターン）"
+        "敵単体に槍物理攻撃（威力 260） さらに、自身への挑発効果を付与（2ターン） その後、自身へのHP回復（効力 140）"
       ],
       "blocks": [
         {
           "scopes": [
             "enemy_single"
           ],
-          "text": "敵単体に槍物理攻撃（威力 260） さらに、自身への挑発効果を付与（2ターン）"
+          "text": "敵単体に槍物理攻撃（威力 260） さらに、自身への挑発効果を付与（2ターン） その後、自身へのHP回復（効力 140）"
         }
       ]
     },
@@ -130444,14 +130525,19 @@
       "cost": null,
       "raw_text": [
         "挑発状態の敵がいる時",
+        "自身に最大HPアップ",
+        "30",
+        "%の効果を付与"
+      ],
+      "raw_text_pre_enhance": [
+        "挑発状態の敵がいる時",
         "自身に最大HPアップ15%の効果を付与"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [],
       "conditions": [],
       "unknown": [
         "挑発状態の敵がいる時",
-        "自身に最大HPアップ15%の効果を付与"
+        "自身に最大HPアップ 30 %の効果を付与"
       ],
       "blocks": [
         {
@@ -130462,7 +130548,7 @@
           "scopes": [
             "self"
           ],
-          "text": "自身に最大HPアップ15%の効果を付与"
+          "text": "自身に最大HPアップ 30 %の効果を付与"
         }
       ]
     },
@@ -151031,9 +151117,14 @@
       "raw_text": [
         "ターン中、素早く行動し",
         "味方前衛全体のHP回復（効力 65）",
+        "さらに、氷耐性アップ15%の効果を付与（2ターン）",
+        "ブーストMAX時:同対象の特殊効果”昏睡”を回復"
+      ],
+      "raw_text_pre_enhance": [
+        "ターン中、素早く行動し",
+        "味方前衛全体のHP回復（効力 65）",
         "さらに、氷耐性アップ15%の効果を付与（2ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】効力85/115/155"
       ],
@@ -151041,7 +151132,7 @@
       "conditions": [],
       "unknown": [
         "ターン中、素早く行動し",
-        "味方前衛全体のHP回復（効力 65） さらに、氷耐性アップ15%の効果を付与（2ターン）"
+        "味方前衛全体のHP回復（効力 65） さらに、氷耐性アップ15%の効果を付与（2ターン） ブーストMAX時:同対象の特殊効果”昏睡”を回復"
       ],
       "blocks": [
         {
@@ -151052,7 +151143,7 @@
           "scopes": [
             "ally_front_all"
           ],
-          "text": "味方前衛全体のHP回復（効力 65） さらに、氷耐性アップ15%の効果を付与（2ターン）"
+          "text": "味方前衛全体のHP回復（効力 65） さらに、氷耐性アップ15%の効果を付与（2ターン） ブーストMAX時:同対象の特殊効果”昏睡”を回復"
         }
       ]
     },
@@ -151127,21 +151218,26 @@
     {
       "character_id": "356828",
       "character_name": "ホルヘ",
-      "ability_name": "開始時速度強化(相互)Ⅲ",
+      "ability_name": "開始時速度強化(相互)Ⅴ",
       "source_type": "support",
       "cost": null,
       "raw_text": [
         "戦闘開始時：前衛と後衛に",
-        "速度アップ20%の効果を付与（3ターン）"
+        "速度アップ",
+        "30",
+        "%の効果を付与（3ターン）"
       ],
-      "raw_text_pre_enhance": [],
+      "raw_text_pre_enhance": [
+        "戦闘開始時：前衛と後衛に",
+        "速度アップ20%の効果を付与（3ターン）『開始時速度強化(相互)Ⅲ』"
+      ],
       "effects": [
         {
           "role": "buff",
           "category": "stat",
           "unit": "%",
           "sub_category": "speed",
-          "value": 20,
+          "value": 30,
           "cap_group": "buff_stat_speed",
           "scopes": [
             "buddy",
@@ -151157,7 +151253,7 @@
             "buddy",
             "self"
           ],
-          "text": "戦闘開始時：前衛と後衛に 速度アップ20%の効果を付与（3ターン）"
+          "text": "戦闘開始時：前衛と後衛に 速度アップ 30 %の効果を付与（3ターン）"
         }
       ]
     },
