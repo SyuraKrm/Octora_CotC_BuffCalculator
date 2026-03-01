@@ -1356,6 +1356,18 @@
       "effects": [
         {
           "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "elemental",
+          "target_source_type": "support",
+          "value": 50,
+          "cap_group": "debuff_resist_elem_all",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
           "category": "resistance",
           "unit": "%",
           "sub_category": "elemental",
@@ -2942,6 +2954,18 @@
         "【ブースト時】威力190/235/300"
       ],
       "effects": [
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "elemental",
+          "target_source_type": "battle",
+          "value": 50,
+          "cap_group": "debuff_resist_elem_all",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
         {
           "role": "debuff",
           "category": "resistance",
@@ -29014,10 +29038,34 @@
         "サポアビと装備性能による属性ダメージアップの上限が",
         "50%になる効果を付与"
       ],
-      "effects": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "elemental",
+          "target_source_type": "battle",
+          "value": 50,
+          "cap_group": "buff_damage_elem_all",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "elemental",
+          "target_source_type": "support",
+          "value": 50,
+          "cap_group": "buff_damage_elem_all",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
       "conditions": [],
       "unknown": [
-        "自身にバトアビによる属性ダメージアップの上限と サポアビと装備性能による属性ダメージアップの上限が 50%になる効果を付与 自身が必殺技を200%発動で使用時",
         "自身のEXアビリティの使用可能回数を1増加"
       ],
       "blocks": [

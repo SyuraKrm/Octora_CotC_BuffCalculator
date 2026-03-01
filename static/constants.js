@@ -504,9 +504,11 @@ const CAP_GROUP_UI_DEFINITION = [
         rows: [
           ["CAP_BUFF_STAT_ATK_PHYS", "CAP_BUFF_STAT_ATK_ELEM"],
 
+          ["CAP_BUFF_DAMAGE_PHYS_ALL"],
           ["CAP_BUFF_DAMAGE_PHYS_SWORD", "CAP_BUFF_DAMAGE_PHYS_SPEAR", "CAP_BUFF_DAMAGE_PHYS_DAGGER", "CAP_BUFF_DAMAGE_PHYS_AXE"],
           ["CAP_BUFF_DAMAGE_PHYS_BOW", "CAP_BUFF_DAMAGE_PHYS_STAFF", "CAP_BUFF_DAMAGE_PHYS_TOME", "CAP_BUFF_DAMAGE_PHYS_FAN"],
 
+          ["CAP_BUFF_DAMAGE_ELEM_ALL"],
           ["CAP_BUFF_DAMAGE_ELEM_FIRE", "CAP_BUFF_DAMAGE_ELEM_ICE", "CAP_BUFF_DAMAGE_ELEM_LIGHTNING" ,"CAP_BUFF_DAMAGE_ELEM_WIND", "CAP_BUFF_DAMAGE_ELEM_LIGHT", "CAP_BUFF_DAMAGE_ELEM_DARK"],
         ],
       },
@@ -539,9 +541,11 @@ const CAP_GROUP_UI_DEFINITION = [
         rows: [
           ["CAP_DEBUFF_STAT_DEF_PHYS", "CAP_DEBUFF_STAT_DEF_ELEM"],
 
+          ["CAP_DEBUFF_RESIST_PHYS_ALL"],
           ["CAP_DEBUFF_RESIST_PHYS_SWORD", "CAP_DEBUFF_RESIST_PHYS_SPEAR", "CAP_DEBUFF_RESIST_PHYS_DAGGER", "CAP_DEBUFF_RESIST_PHYS_AXE"],
           ["CAP_DEBUFF_RESIST_PHYS_BOW", "CAP_DEBUFF_RESIST_PHYS_STAFF", "CAP_DEBUFF_RESIST_PHYS_TOME", "CAP_DEBUFF_RESIST_PHYS_FAN"],
 
+          ["CAP_DEBUFF_RESIST_ELEM_ALL"],
           ["CAP_DEBUFF_RESIST_ELEM_FIRE", "CAP_DEBUFF_RESIST_ELEM_ICE", "CAP_DEBUFF_RESIST_ELEM_LIGHTNING", "CAP_DEBUFF_RESIST_ELEM_WIND", "CAP_DEBUFF_RESIST_ELEM_LIGHT", "CAP_DEBUFF_RESIST_ELEM_DARK"]
         ],
       },
@@ -675,6 +679,10 @@ const CAP_GROUP_DEFINITIONS = {
   },
 
   // --- CapIncrease Buff: Damage ---
+  CAP_BUFF_DAMAGE_PHYS_ALL: {
+    label: "全物理",
+    capGroups: ["cap_increase,buff_damage_phys_all"],
+  },
   CAP_BUFF_DAMAGE_PHYS_SWORD: {
     label: "剣",
     capGroups: ["cap_increase,buff_damage_phys_sword"],
@@ -708,6 +716,10 @@ const CAP_GROUP_DEFINITIONS = {
     capGroups: ["cap_increase,buff_damage_phys_fan"],
   },
 
+  CAP_BUFF_DAMAGE_ELEM_ALL: {
+    label: "全属性",
+    capGroups: ["cap_increase,buff_damage_elem_all"],
+  },
   CAP_BUFF_DAMAGE_ELEM_FIRE: {
     label: "火",
     capGroups: ["cap_increase,buff_damage_elem_fire"],
@@ -830,62 +842,70 @@ const CAP_GROUP_DEFINITIONS = {
   },
 
   // --- CapIncrease Debuff: Regist ---
+  CAP_DEBUFF_RESIST_PHYS_ALL: {
+    label: "全物理",
+    capGroups: ["cap_increase,debuff_resist_phys_all"],
+  },
   CAP_DEBUFF_RESIST_PHYS_SWORD: {
     label: "剣",
-    capGroups: ["resistance,debuff_resist_phys_sword"],
+    capGroups: ["cap_increase,debuff_resist_phys_sword"],
   },
   CAP_DEBUFF_RESIST_PHYS_SPEAR: {
     label: "槍",
-    capGroups: ["resistance,debuff_resist_phys_spear"],
+    capGroups: ["cap_increase,debuff_resist_phys_spear"],
   },
   CAP_DEBUFF_RESIST_PHYS_DAGGER: {
     label: "短剣",
-    capGroups: ["resistance,debuff_resist_phys_dagger"],
+    capGroups: ["cap_increase,debuff_resist_phys_dagger"],
   },
   CAP_DEBUFF_RESIST_PHYS_AXE: {
     label: "斧",
-    capGroups: ["resistance,debuff_resist_phys_axe"],
+    capGroups: ["cap_increase,debuff_resist_phys_axe"],
   },
   CAP_DEBUFF_RESIST_PHYS_BOW: {
     label: "弓",
-    capGroups: ["resistance,debuff_resist_phys_bow"],
+    capGroups: ["cap_increase,debuff_resist_phys_bow"],
   },
   CAP_DEBUFF_RESIST_PHYS_STAFF: {
     label: "杖",
-    capGroups: ["resistance,debuff_resist_phys_staff"],
+    capGroups: ["cap_increase,debuff_resist_phys_staff"],
   },
   CAP_DEBUFF_RESIST_PHYS_TOME: {
     label: "本",
-    capGroups: ["resistance,debuff_resist_phys_tome"],
+    capGroups: ["cap_increase,debuff_resist_phys_tome"],
   },
   CAP_DEBUFF_RESIST_PHYS_FAN: {
     label: "扇",
-    capGroups: ["resistance,debuff_resist_phys_fan"],
+    capGroups: ["cap_increase,debuff_resist_phys_fan"],
   },
 
+  CAP_DEBUFF_RESIST_ELEM_ALL: {
+    label: "全属性",
+    capGroups: ["cap_increase,debuff_resist_elem_all"],
+  },
   CAP_DEBUFF_RESIST_ELEM_FIRE: {
     label: "火",
-    capGroups: ["resistance,debuff_resist_elem_fire"],
+    capGroups: ["cap_increase,debuff_resist_elem_fire"],
   },
   CAP_DEBUFF_RESIST_ELEM_ICE: {
     label: "氷",
-    capGroups: ["resistance,debuff_resist_elem_ice"],
+    capGroups: ["cap_increase,debuff_resist_elem_ice"],
   },
   CAP_DEBUFF_RESIST_ELEM_LIGHTNING: {
     label: "雷",
-    capGroups: ["resistance,debuff_resist_elem_lightning"],
+    capGroups: ["cap_increase,debuff_resist_elem_lightning"],
   },
   CAP_DEBUFF_RESIST_ELEM_WIND: {
     label: "風",
-    capGroups: ["resistance,debuff_resist_elem_wind"],
+    capGroups: ["cap_increase,debuff_resist_elem_wind"],
   },
   CAP_DEBUFF_RESIST_ELEM_LIGHT: {
     label: "光",
-    capGroups: ["resistance,debuff_resist_elem_light"],
+    capGroups: ["cap_increase,debuff_resist_elem_light"],
   },
   CAP_DEBUFF_RESIST_ELEM_DARK: {
     label: "闇",
-    capGroups: ["resistance,debuff_resist_elem_dark"],
+    capGroups: ["cap_increase,debuff_resist_elem_dark"],
   },
 };
 

@@ -725,6 +725,11 @@ function resetHighlightSettings() {
   ).forEach(cb => {
     cb.checked = (cb.dataset.stackKey === "battle");
   });
+
+  document.querySelectorAll(
+    '#settings-modal input[data-only-highlights]'
+  )?.forEach(cb => cb.checked = false);
+
 }
 
 

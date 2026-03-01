@@ -1869,6 +1869,14 @@
         "黒脆のオラクルⅡ"
       ]
     },
+    "cap_increase,debuff_resist_elem_all": {
+      "characters": [
+        "760002"
+      ],
+      "abilities": [
+        "黒点破"
+      ]
+    },
     "power,power_up": {
       "characters": [
         "377291",
@@ -4688,6 +4696,14 @@
         "黒炎の巫女"
       ]
     },
+    "cap_increase,debuff_resist_elem_all": {
+      "characters": [
+        "763254"
+      ],
+      "abilities": [
+        "魅惑の誘い"
+      ]
+    },
     "resistance,debuff_resist_elem_all": {
       "characters": [
         "640525",
@@ -5550,6 +5566,14 @@
         "闇属性強化Ⅲ",
         "黒呪の氾濫",
         "黒呪葬生・序"
+      ]
+    },
+    "cap_increase,buff_damage_elem_all": {
+      "characters": [
+        "668688"
+      ],
+      "abilities": [
+        "呪文の使い手"
       ]
     },
     "damage,buff_damage_elem_lightning": {
