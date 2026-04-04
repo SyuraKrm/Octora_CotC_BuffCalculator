@@ -549,7 +549,7 @@ def scrape_latest_characters():
             break
 
     if heading is None:
-        raise RuntimeError('heading "最新キャラの評価" not found')
+        return []
 
     latest_table = heading.find_next("table")
     if latest_table is None:

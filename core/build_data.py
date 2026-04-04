@@ -67,7 +67,7 @@ def load_grouped_data():
 def build_characters():
 
     items = scrape_character_list()
-    latest_items = scrape_latest_characters()
+    latest_items = scrape_latest_characters() or []
 
     list_ids = {c["character_id"] for c in items}
     latest_only_items = [
