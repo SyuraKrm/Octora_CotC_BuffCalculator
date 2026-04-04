@@ -66504,23 +66504,40 @@
       "cost": "【消費SP 52】",
       "raw_text": [
         "ランダムなターゲットに剣物理攻撃",
+        "ブーストLvに応じて攻撃回数増加（威力 120/",
+        "3回",
+        "）",
+        "攻撃毎に剣耐性ダウン10%の効果を付与（1ターン）"
+      ],
+      "raw_text_pre_enhance": [
+        "ランダムなターゲットに剣物理攻撃",
         "ブーストLvに応じて攻撃回数増加（威力 120/2回）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
-        "【ブースト時】威力95/85/100 攻撃回数3/4/5回"
+        "【ブースト時】威力95/85/100 攻撃回数4/5/6回"
       ],
-      "effects": [],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 10,
+          "tag": "sword",
+          "cap_group": "debuff_resist_phys_sword",
+          "scopes": [
+            "random"
+          ]
+        }
+      ],
       "conditions": [],
-      "unknown": [
-        "ランダムなターゲットに剣物理攻撃 ブーストLvに応じて攻撃回数増加（威力 120/2回）"
-      ],
+      "unknown": [],
       "blocks": [
         {
           "scopes": [
             "random"
           ],
-          "text": "ランダムなターゲットに剣物理攻撃 ブーストLvに応じて攻撃回数増加（威力 120/2回）"
+          "text": "ランダムなターゲットに剣物理攻撃 ブーストLvに応じて攻撃回数増加（威力 120/ 3回 ） 攻撃毎に剣耐性ダウン10%の効果を付与（1ターン）"
         }
       ]
     },
@@ -66624,14 +66641,20 @@
     {
       "character_id": "537408",
       "character_name": "セイル",
-      "ability_name": "剣攻撃強化Ⅱ＆限界突破Ⅳ",
+      "ability_name": "黒き力",
       "source_type": "support",
       "cost": null,
       "raw_text": [
         "自身に剣攻撃ダメージアップ15%と",
+        "ダメージ上限アップ（効果量 25000）の効果を付与",
+        "黒蝕効果中：自身にBP回復量2アップと",
+        "「剣物理」で攻撃時威力アップ50%（同系統の効果重複不可）と",
+        "「剣物理」で攻撃時ダメージ上限アップ（効果量 50000）の効果を付与"
+      ],
+      "raw_text_pre_enhance": [
+        "自身に剣攻撃ダメージアップ15%と",
         "ダメージ上限アップ（効果量 25000）の効果を付与"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "buff",
@@ -66655,6 +66678,28 @@
           "scopes": [
             "self"
           ]
+        },
+        {
+          "role": "buff",
+          "category": "power",
+          "unit": "%",
+          "target_source_type": "battle",
+          "value": 50,
+          "cap_group": "power_up",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 50000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "self"
+          ]
         }
       ],
       "conditions": [],
@@ -66665,6 +66710,12 @@
             "self"
           ],
           "text": "自身に剣攻撃ダメージアップ15%と ダメージ上限アップ（効果量 25000）の効果を付与"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "黒蝕効果中：自身にBP回復量2アップと 「剣物理」で攻撃時威力アップ50%（同系統の効果重複不可）と 「剣物理」で攻撃時ダメージ上限アップ（効果量 50000）の効果を付与"
         }
       ]
     },
@@ -86075,30 +86126,35 @@
       "cost": "【消費SP 26】",
       "raw_text": [
         "敵単体に2回の剣物理攻撃（威力 75）",
+        "さらに、",
+        "自身のSP回復（効果量 100）し、",
+        "BPを1回復"
+      ],
+      "raw_text_pre_enhance": [
+        "敵単体に2回の剣物理攻撃（威力 75）",
         "さらに、自身のBPを1回復"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力90/110/150"
       ],
       "effects": [],
       "conditions": [],
       "unknown": [
-        "敵単体に2回の剣物理攻撃（威力 75）",
-        "さらに、自身のBPを1回復"
+        "敵単体に2回の剣物理攻撃（威力 75） さらに、",
+        "自身のSP回復（効果量 100）し、 BPを1回復"
       ],
       "blocks": [
         {
           "scopes": [
             "enemy_single"
           ],
-          "text": "敵単体に2回の剣物理攻撃（威力 75）"
+          "text": "敵単体に2回の剣物理攻撃（威力 75） さらに、"
         },
         {
           "scopes": [
             "self"
           ],
-          "text": "さらに、自身のBPを1回復"
+          "text": "自身のSP回復（効果量 100）し、 BPを1回復"
         }
       ]
     },
@@ -86157,9 +86213,16 @@
       "cost": null,
       "raw_text": [
         "自身に剣攻撃ダメージアップ15%と",
+        "ダメージ上限アップ（効果量 50000）の効果を付与",
+        "さらに、サポアビと装備性能による",
+        "剣攻撃ダメージアップの上限が50%になる効果を付与",
+        "さらに、アビリティ”エーデルフリューゲル”の",
+        "ダメージ上限が500000アップ"
+      ],
+      "raw_text_pre_enhance": [
+        "自身に剣攻撃ダメージアップ15%と",
         "ダメージ上限アップ（効果量 50000）の効果を付与"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "buff",
@@ -86183,6 +86246,19 @@
           "scopes": [
             "self"
           ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "physical",
+          "target_source_type": "support",
+          "value": 50,
+          "tag": "sword",
+          "cap_group": "buff_damage_phys_sword",
+          "scopes": [
+            "self"
+          ]
         }
       ],
       "conditions": [],
@@ -86192,7 +86268,7 @@
           "scopes": [
             "self"
           ],
-          "text": "自身に剣攻撃ダメージアップ15%と ダメージ上限アップ（効果量 50000）の効果を付与"
+          "text": "自身に剣攻撃ダメージアップ15%と ダメージ上限アップ（効果量 50000）の効果を付与 さらに、サポアビと装備性能による 剣攻撃ダメージアップの上限が50%になる効果を付与 さらに、アビリティ”エーデルフリューゲル”の ダメージ上限が500000アップ"
         }
       ]
     },
@@ -134696,23 +134772,39 @@
       "source_type": "battle",
       "cost": "【消費SP 62】",
       "raw_text": [
+        "ランダムなターゲットに",
+        "5回",
+        "の剣物理攻撃（威力 65）",
+        "攻撃毎に小確率で剣耐性ダウン10%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [
         "ランダムなターゲットに4回の剣物理攻撃（威力 65）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力75/85/110"
       ],
-      "effects": [],
-      "conditions": [],
-      "unknown": [
-        "ランダムなターゲットに4回の剣物理攻撃（威力 65）"
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 10,
+          "tag": "sword",
+          "cap_group": "debuff_resist_phys_sword",
+          "scopes": [
+            "random"
+          ]
+        }
       ],
+      "conditions": [],
+      "unknown": [],
       "blocks": [
         {
           "scopes": [
             "random"
           ],
-          "text": "ランダムなターゲットに4回の剣物理攻撃（威力 65）"
+          "text": "ランダムなターゲットに 5回 の剣物理攻撃（威力 65） 攻撃毎に小確率で剣耐性ダウン10%の効果を付与（2ターン）"
         }
       ]
     },
@@ -134783,25 +134875,51 @@
     {
       "character_id": "355879",
       "character_name": "ジークリット",
-      "ability_name": "消費SP軽減Ⅱ",
+      "ability_name": "剣聖の弟子",
       "source_type": "support",
       "cost": null,
       "raw_text": [
+        "自身に消費SP量軽減",
+        "30%",
+        "の効果を付与",
+        "（枠毎の最大値を適用）",
+        "前衛時：味方前衛全体に",
+        "剣攻撃ダメージアップ10%の効果を付与"
+      ],
+      "raw_text_pre_enhance": [
         "自身に消費SP量軽減20%の効果を付与",
         "（枠毎の最大値を適用）"
       ],
-      "raw_text_pre_enhance": [],
-      "effects": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 10,
+          "tag": "sword",
+          "cap_group": "buff_damage_phys_sword",
+          "scopes": [
+            "ally_front_all"
+          ]
+        }
+      ],
       "conditions": [],
       "unknown": [
-        "自身に消費SP量軽減20%の効果を付与 （枠毎の最大値を適用）"
+        "自身に消費SP量軽減 30% の効果を付与 （枠毎の最大値を適用）"
       ],
       "blocks": [
         {
           "scopes": [
             "self"
           ],
-          "text": "自身に消費SP量軽減20%の効果を付与 （枠毎の最大値を適用）"
+          "text": "自身に消費SP量軽減 30% の効果を付与 （枠毎の最大値を適用）"
+        },
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "前衛時：味方前衛全体に 剣攻撃ダメージアップ10%の効果を付与"
         }
       ]
     },
@@ -149099,26 +149217,32 @@
       "source_type": "battle",
       "cost": "【消費SP 59】",
       "raw_text": [
+        "味方前衛全体のHP回復（効力 130）し",
+        "特殊効果”畏怖”を回復",
+        "さらに、同対象それぞれに20%の確率で",
+        "HP自動回復（効力 80）と",
+        "SP自動回復（回復量 最大SPの5%）の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [
         "味方前衛全体のHP回復（効力 130）",
         "さらに、同対象それぞれに20%の確率で",
         "HP自動回復（効力 80）と",
         "SP自動回復（回復量 最大SPの5%）の効果を付与（2ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】効力150/180/220"
       ],
       "effects": [],
       "conditions": [],
       "unknown": [
-        "味方前衛全体のHP回復（効力 130） さらに、同対象それぞれに20%の確率で HP自動回復（効力 80）と SP自動回復（回復量 最大SPの5%）の効果を付与（2ターン）"
+        "味方前衛全体のHP回復（効力 130）し 特殊効果”畏怖”を回復 さらに、同対象それぞれに20%の確率で HP自動回復（効力 80）と SP自動回復（回復量 最大SPの5%）の効果を付与（2ターン）"
       ],
       "blocks": [
         {
           "scopes": [
             "ally_front_all"
           ],
-          "text": "味方前衛全体のHP回復（効力 130） さらに、同対象それぞれに20%の確率で HP自動回復（効力 80）と SP自動回復（回復量 最大SPの5%）の効果を付与（2ターン）"
+          "text": "味方前衛全体のHP回復（効力 130）し 特殊効果”畏怖”を回復 さらに、同対象それぞれに20%の確率で HP自動回復（効力 80）と SP自動回復（回復量 最大SPの5%）の効果を付与（2ターン）"
         }
       ]
     },
@@ -149181,22 +149305,26 @@
     {
       "character_id": "356820",
       "character_name": "テリー",
-      "ability_name": "後衛時SP活性(前単)",
+      "ability_name": "神頼み",
       "source_type": "support",
       "cost": null,
       "raw_text": [
+        "後衛時：前衛にSP自動回復の効果を付与（",
+        "回復量 25",
+        "）"
+      ],
+      "raw_text_pre_enhance": [
         "後衛時：前衛にSP自動回復の効果を付与（回復量 10）"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [],
       "conditions": [
-        "後衛時前衛にSP自動回復の効果を付与（回復量 10）"
+        "後衛時前衛にSP自動回復の効果を付与（ 回復量 25 ）"
       ],
       "unknown": [],
       "blocks": [
         {
           "scopes": [],
-          "text": "後衛時：前衛にSP自動回復の効果を付与（回復量 10）"
+          "text": "後衛時：前衛にSP自動回復の効果を付与（ 回復量 25 ）"
         }
       ]
     },
