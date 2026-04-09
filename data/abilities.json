@@ -1,6 +1,885 @@
 [
   [
     {
+      "character_id": "778302",
+      "character_name": "双炎の聖者",
+      "ability_name": "聖炎波",
+      "source_type": "battle",
+      "cost": "【消費SP 34】",
+      "raw_text": [
+        "敵単体に2回の光属性攻撃（威力 90）",
+        "剣・火弱点を突ける（ダメージ計算は光属性）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力105/125/180"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵単体に2回の光属性攻撃（威力 90） 剣・火弱点を突ける（ダメージ計算は光属性）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に2回の光属性攻撃（威力 90） 剣・火弱点を突ける（ダメージ計算は光属性）"
+        }
+      ]
+    },
+    {
+      "character_id": "778302",
+      "character_name": "双炎の聖者",
+      "ability_name": "健全化（前全）",
+      "source_type": "battle",
+      "cost": "【消費SP 30】",
+      "raw_text": [
+        "味方前衛全体の状態異常を回復",
+        "さらに、状態異常無効化の効果を付与（一部除く/1ターン）",
+        "ブーストMAX時：同対象の特殊効果”交代禁止”、",
+        "“香睡”、”静寂”、”魅了”、“死の宣告”を回復"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】ターン2/3/4"
+      ],
+      "effects": [],
+      "conditions": [
+        "味方前衛全体の状態異常を回復 さらに、状態異常無効化の効果を付与（一部除く/1ターン） ブーストMAX時同対象の特殊効果”交代禁止”、 “香睡”、”静寂”、”魅了”、“死の宣告”を回復"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体の状態異常を回復 さらに、状態異常無効化の効果を付与（一部除く/1ターン） ブーストMAX時：同対象の特殊効果”交代禁止”、 “香睡”、”静寂”、”魅了”、“死の宣告”を回復"
+        }
+      ]
+    },
+    {
+      "character_id": "778302",
+      "character_name": "双炎の聖者",
+      "ability_name": "黒呪破",
+      "source_type": "battle",
+      "cost": "【消費SP 34】",
+      "raw_text": [
+        "敵単体に2回の闇属性攻撃（威力 90）",
+        "剣・火弱点を突ける（ダメージ計算は闇属性）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力105/125/180"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵単体に2回の闇属性攻撃（威力 90） 剣・火弱点を突ける（ダメージ計算は闇属性）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に2回の闇属性攻撃（威力 90） 剣・火弱点を突ける（ダメージ計算は闇属性）"
+        }
+      ]
+    },
+    {
+      "character_id": "778302",
+      "character_name": "双炎の聖者",
+      "ability_name": "退光の火種",
+      "source_type": "battle",
+      "cost": "【消費SP 44】",
+      "raw_text": [
+        "敵全体に2回の光属性攻撃（威力 70）",
+        "剣・火弱点を突ける（ダメージ計算は光属性）",
+        "さらに、光耐性ダウン15%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力80/100/120"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 15,
+          "tag": "light",
+          "cap_group": "debuff_resist_elem_light",
+          "scopes": [
+            "enemy_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に2回の光属性攻撃（威力 70） 剣・火弱点を突ける（ダメージ計算は光属性） さらに、光耐性ダウン15%の効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "778302",
+      "character_name": "双炎の聖者",
+      "ability_name": "退間の火種",
+      "source_type": "battle",
+      "cost": "【消費SP 44】",
+      "raw_text": [
+        "敵全体に2回の闇属性攻撃（威力 70）",
+        "剣・火弱点を突ける（ダメージ計算は闇属性）",
+        "さらに、耐性ダウン15%の効果を付与（2ターン)"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力80/100/120"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵全体に2回の闇属性攻撃（威力 70） 剣・火弱点を突ける（ダメージ計算は闇属性） さらに、耐性ダウン15%の効果を付与（2ターン)"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に2回の闇属性攻撃（威力 70） 剣・火弱点を突ける（ダメージ計算は闇属性） さらに、耐性ダウン15%の効果を付与（2ターン)"
+        }
+      ]
+    },
+    {
+      "character_id": "778302",
+      "character_name": "双炎の聖者",
+      "ability_name": "極光創奏",
+      "source_type": "battle",
+      "cost": "【消費SP 56】",
+      "raw_text": [
+        "ランダムなターゲットに光属性攻撃",
+        "ブーストLvに応じて攻撃回数（威力80/3回）",
+        "剣・火弱点を突ける（ダメージ計算は光属性）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力75/75/70 攻撃回数4/5/6"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "ランダムなターゲットに光属性攻撃 ブーストLvに応じて攻撃回数（威力80/3回） 剣・火弱点を突ける（ダメージ計算は光属性）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "random"
+          ],
+          "text": "ランダムなターゲットに光属性攻撃 ブーストLvに応じて攻撃回数（威力80/3回） 剣・火弱点を突ける（ダメージ計算は光属性）"
+        }
+      ]
+    },
+    {
+      "character_id": "778302",
+      "character_name": "双炎の聖者",
+      "ability_name": "深黒葬送",
+      "source_type": "battle",
+      "cost": "【消費SP 56】",
+      "raw_text": [
+        "ランダムなターゲットに闇属性攻撃",
+        "ブーストLvに応じて攻撃回数増加（威力 85/3回）",
+        "剣・火弱点を突ける（ダメージ計算は闇属性）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力75/75/70 攻撃回数4/5/6"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "ランダムなターゲットに闇属性攻撃 ブーストLvに応じて攻撃回数増加（威力 85/3回） 剣・火弱点を突ける（ダメージ計算は闇属性）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "random"
+          ],
+          "text": "ランダムなターゲットに闇属性攻撃 ブーストLvに応じて攻撃回数増加（威力 85/3回） 剣・火弱点を突ける（ダメージ計算は闇属性）"
+        }
+      ]
+    },
+    {
+      "character_id": "778302",
+      "character_name": "双炎の聖者",
+      "ability_name": "聖炎恢閃",
+      "source_type": "battle",
+      "cost": "【消費SP 113】",
+      "raw_text": [
+        "敵全体に4回の光属性攻撃（威力 25）",
+        "剣・火弱点を突ける（ダメージ計算は光属性）",
+        "さらに、味方前衛全体に",
+        "物攻・物防・属攻・属防アップ15%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力35/45/60"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 15,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 15,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 15,
+          "cap_group": "buff_stat_def_phys",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 15,
+          "cap_group": "buff_stat_def_elem",
+          "scopes": [
+            "ally_front_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "敵全体に4回の光属性攻撃（威力 25） 剣・火弱点を突ける（ダメージ計算は光属性）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に4回の光属性攻撃（威力 25） 剣・火弱点を突ける（ダメージ計算は光属性）"
+        },
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "さらに、味方前衛全体に 物攻・物防・属攻・属防アップ15%の効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "778302",
+      "character_name": "双炎の聖者",
+      "ability_name": "黒呪壊閃",
+      "source_type": "battle",
+      "cost": "【消費SP 84】",
+      "raw_text": [
+        "敵全体に4回の闇属性攻撃（威力 25）",
+        "剣・火弱点を突ける（ダメージ計算は闇属性）",
+        "さらに、物攻・物防・属攻・属防ダウン15%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力35/45/60"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 15,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 15,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 15,
+          "cap_group": "debuff_stat_atk_phys",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 15,
+          "cap_group": "debuff_stat_atk_elem",
+          "scopes": [
+            "enemy_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に4回の闇属性攻撃（威力 25） 剣・火弱点を突ける（ダメージ計算は闇属性） さらに、物攻・物防・属攻・属防ダウン15%の効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "778302",
+      "character_name": "双炎の聖者",
+      "ability_name": "聖呪剣",
+      "source_type": "battle",
+      "cost": "【消費SP 63】",
+      "raw_text": [
+        "敵単体に剣物理攻撃（威力 260）",
+        "火・光・闇弱点を突ける（ダメージ計算は剣物理）",
+        "BP2以上消費時：攻撃効果の前に",
+        "攻撃対象に剣耐性ダウン20%と",
+        "バトルアビリティによる剣耐性ダウンを受けた際の",
+        "上限が50%になる効果",
+        "を付与（2ターン）",
+        "ブーストMAX時：さらに、攻撃効果の後に",
+        "自身を除く味方前衛全体のBPを1回復"
+      ],
+      "raw_text_pre_enhance": [
+        "敵単体に剣物理攻撃（威力 260）",
+        "火・光・闇弱点を突ける（ダメージ計算は剣物理）",
+        "BP2以上消費時：攻撃効果の前に",
+        "攻撃対象に剣耐性ダウン20%の効果を付与（2ターン）",
+        "ブーストMAX時：さらに、攻撃効果の後に",
+        "自身を除く味方前衛全体のBPを1回復"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】威力290/340/450"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "physical",
+          "target_source_type": "battle",
+          "value": 50,
+          "tag": "sword",
+          "cap_group": "debuff_resist_phys_sword",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 20,
+          "tag": "sword",
+          "cap_group": "debuff_resist_phys_sword",
+          "scopes": [
+            "enemy_single"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "自身を除く味方前衛全体のBPを1回復"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に剣物理攻撃（威力 260） 火・光・闇弱点を突ける（ダメージ計算は剣物理） BP2以上消費時：攻撃効果の前に 攻撃対象に剣耐性ダウン20%と バトルアビリティによる剣耐性ダウンを受けた際の 上限が50%になる効果 を付与（2ターン） ブーストMAX時：さらに、攻撃効果の後に"
+        },
+        {
+          "scopes": [
+            "self_exclude",
+            "ally_front_all"
+          ],
+          "text": "自身を除く味方前衛全体のBPを1回復"
+        }
+      ]
+    },
+    {
+      "character_id": "778302",
+      "character_name": "双炎の聖者",
+      "ability_name": "スタイルシフト：黒呪炎",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "自身の「たたかう」が剣物理攻撃になり",
+        "光・闇弱点を突けるようになる（ダメージ計算は剣物理）",
+        "コマンド選択時、“聖炎”と“黒呪炎”にスタイルを切り替えられる",
+        "聖炎時：自身に属攻アップ20%と光属性ダメージアップ20%と",
+        "サポアビと装備性能による属攻アップと",
+        "光属性ダメージアップの上限が50%になる効果を付与",
+        "黒呪炎時：自身に属攻アップ20%と闇属性ダメージアップ20%と",
+        "サポアビと装備性能による属攻アップと",
+        "闇属性ダメージアップの上限が50%になる効果を付与"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 20,
+          "tag": "light",
+          "cap_group": "buff_damage_elem_light",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 20,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "attack",
+          "target_source_type": "support",
+          "value": 50,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "elemental",
+          "target_source_type": "support",
+          "value": 50,
+          "tag": "light",
+          "cap_group": "buff_damage_elem_light",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 20,
+          "tag": "dark",
+          "cap_group": "buff_damage_elem_dark",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 20,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "attack",
+          "target_source_type": "support",
+          "value": 50,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "elemental",
+          "target_source_type": "support",
+          "value": 50,
+          "tag": "dark",
+          "cap_group": "buff_damage_elem_dark",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "自身の「たたかう」が剣物理攻撃になり 光・闇弱点を突けるようになる（ダメージ計算は剣物理） コマンド選択時、“聖炎”と“黒呪炎”にスタイルを切り替えられる"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身の「たたかう」が剣物理攻撃になり 光・闇弱点を突けるようになる（ダメージ計算は剣物理） コマンド選択時、“聖炎”と“黒呪炎”にスタイルを切り替えられる"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "聖炎時：自身に属攻アップ20%と光属性ダメージアップ20%と サポアビと装備性能による属攻アップと 光属性ダメージアップの上限が50%になる効果を付与"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "黒呪炎時：自身に属攻アップ20%と闇属性ダメージアップ20%と サポアビと装備性能による属攻アップと 闇属性ダメージアップの上限が50%になる効果を付与"
+        }
+      ]
+    },
+    {
+      "character_id": "778302",
+      "character_name": "双炎の聖者",
+      "ability_name": "開始時SPストック（全体）Ⅲ",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "戦闘開始時：味方前後衛全体に",
+        "SPストックを付与（効果量 使用者の最大SPの30%/重複不可）"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [],
+      "conditions": [
+        "戦闘開始時味方前後衛全体に SPストックを付与（効果量 使用者の最大SPの30%/重複不可）"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "戦闘開始時：味方前後衛全体に SPストックを付与（効果量 使用者の最大SPの30%/重複不可）"
+        }
+      ]
+    },
+    {
+      "character_id": "778302",
+      "character_name": "双炎の聖者",
+      "ability_name": "原母神の加護",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "ブレイク中の敵がいる時：自身に属攻アップ30%と",
+        "光・闇属性ダメージアップ30%と",
+        "属性攻撃でクリティカルが発生する効果を付与",
+        "さらに、自身の物攻に物防の50%、属攻に属防の50%を加算する",
+        "（装備ステータス含む/対象ステータス毎に最大値を適用）"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 30,
+          "tag": "light",
+          "cap_group": "buff_damage_elem_light",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 30,
+          "tag": "dark",
+          "cap_group": "buff_damage_elem_dark",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 30,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "critical",
+          "unit": "",
+          "sub_category": "elemental",
+          "target_source_type": "battle",
+          "value": 1,
+          "cap_group": "critical_elem",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "さらに、自身の物攻に物防の50%、属攻に属防の50%を加算する （装備ステータス含む/対象ステータス毎に最大値を適用）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "ブレイク中の敵がいる時：自身に属攻アップ30%と 光・闇属性ダメージアップ30%と 属性攻撃でクリティカルが発生する効果を付与"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "さらに、自身の物攻に物防の50%、属攻に属防の50%を加算する （装備ステータス含む/対象ステータス毎に最大値を適用）"
+        }
+      ]
+    },
+    {
+      "character_id": "778302",
+      "character_name": "双炎の聖者",
+      "ability_name": "双炎の猛り",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "聖炎時：自身に",
+        "SP自動回復（回復量 最大SPの8%）と",
+        "BP回復量1アップ",
+        "と",
+        "使用する攻撃アビリティを2回発動する効果を付与",
+        "（追加発動分はSP消費無し）",
+        "黒呪炎時：味方前衛全体に攻撃後（反撃、必殺技など一部除く）",
+        "双炎の聖者が追撃する効果を付与",
+        "（行動順での攻撃のみ/攻撃回数によらず1回のみ発動）",
+        "※”ブレイクさせた時”効果は起点の味方のみ発動",
+        "追撃：敵全体に2回の闇属性攻撃（威力50）",
+        "剣・火弱点を突ける（ダメージ計算は闇属性）"
+      ],
+      "raw_text_pre_enhance": [
+        "聖炎時：自身に使用する攻撃アビリティを2回発動する効果を付与",
+        "（追加発動分はSP消費無し）",
+        "黒呪炎時：味方前衛全体に攻撃後（反撃、必殺技など一部除く）",
+        "双炎の聖者が追撃する効果を付与",
+        "（行動順での攻撃のみ/攻撃回数によらず1回のみ発動）",
+        "※”ブレイクさせた時”効果は起点の味方のみ発動",
+        "追撃：敵全体に2回の闇属性攻撃（威力50）",
+        "剣・火弱点を突ける（ダメージ計算は闇属性）"
+      ],
+      "effects": [],
+      "conditions": [
+        "聖炎時自身に SP自動回復（回復量 最大SPの8%）と BP回復量1アップ と 使用する攻撃アビリティを2回発動する効果を付与 （追加発動分はSP消費無し）",
+        "黒呪炎時味方前衛全体に攻撃後（反撃、必殺技など一部除く） 双炎の聖者が追撃する効果を付与 （行動順での攻撃のみ/攻撃回数によらず1回のみ発動） ※”ブレイクさせた時”効果は起点の味方のみ発動"
+      ],
+      "unknown": [
+        "追撃：敵全体に2回の闇属性攻撃（威力50） 剣・火弱点を突ける（ダメージ計算は闇属性）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "聖炎時：自身に SP自動回復（回復量 最大SPの8%）と BP回復量1アップ と 使用する攻撃アビリティを2回発動する効果を付与 （追加発動分はSP消費無し）"
+        },
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "黒呪炎時：味方前衛全体に攻撃後（反撃、必殺技など一部除く） 双炎の聖者が追撃する効果を付与 （行動順での攻撃のみ/攻撃回数によらず1回のみ発動） ※”ブレイクさせた時”効果は起点の味方のみ発動"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "追撃：敵全体に2回の闇属性攻撃（威力50） 剣・火弱点を突ける（ダメージ計算は闇属性）"
+        }
+      ]
+    },
+    {
+      "character_id": "778302",
+      "character_name": "双炎の聖者",
+      "ability_name": "魔剣フィステラルダ",
+      "source_type": "ultimate",
+      "cost": "超威発動",
+      "raw_text": [
+        "【Lv.MAX】",
+        "自身に物攻アップ30%と",
+        "剣攻撃ダメージアップ30%の効果を付与（1ターン）",
+        "さらに、敵全体に5回の剣物理攻撃（威力 95）",
+        "火・光・闇弱点を突ける（ダメージ計算は剣物理）",
+        "この必殺技のダメージ上限が300000アップ",
+        "200%発動時：さらに、効果を発動（必殺技ゲージ消費無し）する"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 30,
+          "tag": "sword",
+          "cap_group": "buff_damage_phys_sword",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 30,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [
+        "さらに、敵全体に5回の剣物理攻撃（威力 95） 火・光・闇弱点を突ける（ダメージ計算は剣物理） この必殺技のダメージ上限が300000アップ 200%発動時さらに、効果を発動（必殺技ゲージ消費無し）する"
+      ],
+      "unknown": [
+        "【Lv.MAX】"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "【Lv.MAX】"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に物攻アップ30%と 剣攻撃ダメージアップ30%の効果を付与（1ターン）"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "さらに、敵全体に5回の剣物理攻撃（威力 95） 火・光・闇弱点を突ける（ダメージ計算は剣物理） この必殺技のダメージ上限が300000アップ 200%発動時：さらに、効果を発動（必殺技ゲージ消費無し）する"
+        }
+      ]
+    },
+    {
+      "character_id": "778302",
+      "character_name": "双炎の聖者",
+      "ability_name": "無上の理",
+      "source_type": "ex",
+      "cost": "回数：2",
+      "raw_text": [
+        "自身に威力アップ100%の効果を付与",
+        "（2ターン/ターン延長不可/同系統の効果重複不可）、その後",
+        "SP20%未満になるまで自身のSPを最大SPの20%消耗（最大3回）し",
+        "味方前後衛全体に消耗した回数に応じ効果を付与",
+        "1回以上：ダメージ上限アップ（2ターン/効果量 100000）",
+        "2回以上：さらに、特殊効果“聖火の加護”（1ターン）",
+        "3回：さらに、特殊効果“不沈”（2ターン）",
+        "聖火の加護：BP回復量3アップの効果",
+        "不沈：HPが0になるダメージを受けてもHPが1残る効果（一部除く）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_condition": [
+        "【使用条件】なし"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】威力アップ125/150/200%"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "power",
+          "unit": "%",
+          "target_source_type": "battle",
+          "value": 100,
+          "cap_group": "power_up",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "SP20%未満になるまで自身のSPを最大SPの20%消耗（最大3回）し",
+        "味方前後衛全体に消耗した回数に応じ効果を付与 1回以上：ダメージ上限アップ（2ターン/効果量 100000） 2回以上：さらに、特殊効果“聖火の加護”（1ターン） 3回：さらに、特殊効果“不沈”（2ターン） 聖火の加護：BP回復量3アップの効果 不沈：HPが0になるダメージを受けてもHPが1残る効果（一部除く）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に威力アップ100%の効果を付与 （2ターン/ターン延長不可/同系統の効果重複不可）、その後"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "SP20%未満になるまで自身のSPを最大SPの20%消耗（最大3回）し"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "味方前後衛全体に消耗した回数に応じ効果を付与 1回以上：ダメージ上限アップ（2ターン/効果量 100000） 2回以上：さらに、特殊効果“聖火の加護”（1ターン） 3回：さらに、特殊効果“不沈”（2ターン） 聖火の加護：BP回復量3アップの効果 不沈：HPが0になるダメージを受けてもHPが1残る効果（一部除く）"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "character_id": "771643",
       "character_name": "黒蝕の剣士",
       "ability_name": "黒波",
@@ -114215,27 +115094,34 @@
     {
       "character_id": "378300",
       "character_name": "エリザ",
-      "ability_name": "三連光殺閃",
+      "ability_name": "四連眩暈光殺閃",
       "source_type": "battle",
       "cost": "【消費SP 70】",
       "raw_text": [
+        "敵全体に",
+        "4回",
+        "の光属性攻撃（威力 80）",
+        "さらに、眩暈の状態異常を付与（2ターン）",
+        "眩暈：小確率で攻撃（一部除く）を外す＆",
+        "行動完了後にシールド-1（0にならない）"
+      ],
+      "raw_text_pre_enhance": [
         "敵全体に3回の光属性攻撃（威力 80）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力90/105/130"
       ],
       "effects": [],
       "conditions": [],
       "unknown": [
-        "敵全体に3回の光属性攻撃（威力 80）"
+        "敵全体に 4回 の光属性攻撃（威力 80） さらに、眩暈の状態異常を付与（2ターン） 眩暈：小確率で攻撃（一部除く）を外す＆ 行動完了後にシールド-1（0にならない）"
       ],
       "blocks": [
         {
           "scopes": [
             "enemy_all"
           ],
-          "text": "敵全体に3回の光属性攻撃（威力 80）"
+          "text": "敵全体に 4回 の光属性攻撃（威力 80） さらに、眩暈の状態異常を付与（2ターン） 眩暈：小確率で攻撃（一部除く）を外す＆ 行動完了後にシールド-1（0にならない）"
         }
       ]
     },
@@ -114315,19 +115201,26 @@
     {
       "character_id": "378300",
       "character_name": "エリザ",
-      "ability_name": "全快時消費SP軽減(相互)Ⅲ",
+      "ability_name": "信頼の絆",
       "source_type": "support",
       "cost": null,
       "raw_text": [
         "HP満タン時：前衛と後衛に消費SP量軽減30%の効果を付与",
+        "（枠毎の最大値を適用）",
+        "自身にアビリティ”聖火の剣”と”聖火の秘剣”と",
+        "必殺技”聖火の神剣”の最終ダメージアップ50%の効果を付与"
+      ],
+      "raw_text_pre_enhance": [
+        "HP満タン時：前衛と後衛に消費SP量軽減30%の効果を付与",
         "（枠毎の最大値を適用）"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [],
       "conditions": [
         "HP満タン時前衛と後衛に消費SP量軽減30%の効果を付与 （枠毎の最大値を適用）"
       ],
-      "unknown": [],
+      "unknown": [
+        "自身にアビリティ”聖火の剣”と”聖火の秘剣”と 必殺技”聖火の神剣”の最終ダメージアップ50%の効果を付与"
+      ],
       "blocks": [
         {
           "scopes": [
@@ -114335,6 +115228,12 @@
             "self"
           ],
           "text": "HP満タン時：前衛と後衛に消費SP量軽減30%の効果を付与 （枠毎の最大値を適用）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身にアビリティ”聖火の剣”と”聖火の秘剣”と 必殺技”聖火の神剣”の最終ダメージアップ50%の効果を付与"
         }
       ]
     },
@@ -137909,9 +138808,14 @@
       "cost": "【消費SP 50】",
       "raw_text": [
         "ランダムなターゲットに2回の槍物理攻撃（威力 120）",
+        "攻撃毎に物攻・",
+        "属攻",
+        "ダウン15%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [
+        "ランダムなターゲットに2回の槍物理攻撃（威力 120）",
         "攻撃毎に物攻ダウン15%の効果を付与（2ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力135/155/210"
       ],
@@ -137926,6 +138830,17 @@
           "scopes": [
             "random"
           ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 15,
+          "cap_group": "debuff_stat_atk_elem",
+          "scopes": [
+            "random"
+          ]
         }
       ],
       "conditions": [],
@@ -137935,7 +138850,7 @@
           "scopes": [
             "random"
           ],
-          "text": "ランダムなターゲットに2回の槍物理攻撃（威力 120） 攻撃毎に物攻ダウン15%の効果を付与（2ターン）"
+          "text": "ランダムなターゲットに2回の槍物理攻撃（威力 120） 攻撃毎に物攻・ 属攻 ダウン15%の効果を付与（2ターン）"
         }
       ]
     },
@@ -138006,20 +138921,26 @@
       "source_type": "support",
       "cost": null,
       "raw_text": [
+        "攻撃を受けた時、それぞれ50%の確率で",
+        "受けたダメージ量の25%のHPと",
+        "1%のSP",
+        "回復",
+        "（一部除く/同系統の効果重複不可）"
+      ],
+      "raw_text_pre_enhance": [
         "攻撃を受けた時50%の確率で",
         "受けたダメージ量の25%のHP回復",
         "（一部除く/同系統の効果重複不可）"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [],
       "conditions": [],
       "unknown": [
-        "攻撃を受けた時50%の確率で 受けたダメージ量の25%のHP回復 （一部除く/同系統の効果重複不可）"
+        "攻撃を受けた時、それぞれ50%の確率で 受けたダメージ量の25%のHPと 1%のSP 回復 （一部除く/同系統の効果重複不可）"
       ],
       "blocks": [
         {
           "scopes": [],
-          "text": "攻撃を受けた時50%の確率で 受けたダメージ量の25%のHP回復 （一部除く/同系統の効果重複不可）"
+          "text": "攻撃を受けた時、それぞれ50%の確率で 受けたダメージ量の25%のHPと 1%のSP 回復 （一部除く/同系統の効果重複不可）"
         }
       ]
     },
@@ -147617,23 +148538,27 @@
       "cost": "【消費SP 50】",
       "raw_text": [
         "敵単体に弓物理攻撃（威力 140）",
+        "攻撃対象が毒状態の時威力が",
+        "3倍"
+      ],
+      "raw_text_pre_enhance": [
+        "敵単体に弓物理攻撃（威力 140）",
         "攻撃対象が毒状態の時威力が2.5倍"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力170/210/300"
       ],
       "effects": [],
       "conditions": [],
       "unknown": [
-        "敵単体に弓物理攻撃（威力 140） 攻撃対象が毒状態の時威力が2.5倍"
+        "敵単体に弓物理攻撃（威力 140） 攻撃対象が毒状態の時威力が 3倍"
       ],
       "blocks": [
         {
           "scopes": [
             "enemy_single"
           ],
-          "text": "敵単体に弓物理攻撃（威力 140） 攻撃対象が毒状態の時威力が2.5倍"
+          "text": "敵単体に弓物理攻撃（威力 140） 攻撃対象が毒状態の時威力が 3倍"
         }
       ]
     },
@@ -147713,17 +148638,25 @@
       "cost": null,
       "raw_text": [
         "毒状態の敵がいる時",
+        "前衛と後衛に物攻アップ",
+        "10%",
+        "と",
+        "弓攻撃ダメージアップ",
+        "15%",
+        "の効果を付与"
+      ],
+      "raw_text_pre_enhance": [
+        "毒状態の敵がいる時",
         "前衛と後衛に物攻アップ5%と",
         "弓攻撃ダメージアップ10%の効果を付与"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "buff",
           "category": "damage",
           "unit": "%",
           "sub_category": "physical",
-          "value": 10,
+          "value": 15,
           "tag": "bow",
           "cap_group": "buff_damage_phys_bow",
           "scopes": [
@@ -147736,7 +148669,7 @@
           "category": "stat",
           "unit": "%",
           "sub_category": "attack_physical",
-          "value": 5,
+          "value": 10,
           "cap_group": "buff_stat_atk_phys",
           "scopes": [
             "buddy",
@@ -147758,7 +148691,7 @@
             "buddy",
             "self"
           ],
-          "text": "前衛と後衛に物攻アップ5%と 弓攻撃ダメージアップ10%の効果を付与"
+          "text": "前衛と後衛に物攻アップ 10% と 弓攻撃ダメージアップ 15% の効果を付与"
         }
       ]
     },

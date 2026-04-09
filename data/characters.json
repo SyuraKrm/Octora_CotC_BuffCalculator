@@ -1,5 +1,19 @@
 [
   {
+    "character_id": "778302",
+    "character_name": "双炎の聖者",
+    "job": "神官",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "火",
+      "闇"
+    ],
+    "physicals": [
+      "剣"
+    ]
+  },
+  {
     "character_id": "771643",
     "character_name": "黒蝕の剣士",
     "job": "剣士",
