@@ -510,6 +510,8 @@ const CAP_GROUP_UI_DEFINITION = [
 
           ["CAP_BUFF_DAMAGE_ELEM_ALL"],
           ["CAP_BUFF_DAMAGE_ELEM_FIRE", "CAP_BUFF_DAMAGE_ELEM_ICE", "CAP_BUFF_DAMAGE_ELEM_LIGHTNING" ,"CAP_BUFF_DAMAGE_ELEM_WIND", "CAP_BUFF_DAMAGE_ELEM_LIGHT", "CAP_BUFF_DAMAGE_ELEM_DARK"],
+
+          ["CAP_BUFF_DAMAGE_CRITICAL", "CAP_BUFF_DAMAGE_WEAK"]
         ],
       },
     ],
@@ -743,6 +745,11 @@ const CAP_GROUP_DEFINITIONS = {
   CAP_BUFF_DAMAGE_ELEM_DARK: {
     label: "闇",
     capGroups: ["cap_increase,buff_damage_elem_dark"],
+  },
+
+  CAP_BUFF_DAMAGE_WEAK: {
+    label: "弱点を突いた時",
+    capGroups: ["cap_increase,buff_damage_weak"],
   },
 
   // --- Debuff: Stat ---

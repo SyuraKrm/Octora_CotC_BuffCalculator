@@ -325,6 +325,18 @@ EFFECT_PATTERNS = [
         "cap_group_template": "buff_damage_elem_{tag}"
     },
     {
+        "role": "buff",
+        "category": "cap_increase",
+        "sub_category": "weak",
+        "unit": "%",
+        "target_source_type": "battle",
+        "cap_group": "buff_damage_weak",
+        "patterns": [
+            r"(バトアビ|バトルアビリティ)による敵の弱点を突いた時のダメージアップの上限[^0-9]*が(?P<value>\d+)[%％]"
+        ],
+        "cap_group_template": "buff_damage_weak"
+    },
+    {
         "role": "debuff",
         "category": "cap_increase",
         "sub_category": "defence",
@@ -376,7 +388,7 @@ EFFECT_PATTERNS = [
         "cap_group": "debuff_resist_elem_all",
         "target_source_type": "battle",
         "patterns": [
-            r"(バトアビ|バトルアビリティ)による(?:物理・)*[^火氷雷風光闇]?属性耐性ダウンを受けた際の上限[^0-9]*が(?P<value>\d+)[%％]"
+            r"(バトアビ|バトルアビリティ)による(?:物理・)*(?:属攻と)*[^火氷雷風光闇]?属性耐性ダウンを受けた際の上限[^0-9]*が(?P<value>\d+)[%％]"
         ],
     },
     {
@@ -442,7 +454,7 @@ EFFECT_PATTERNS = [
         "cap_group": "buff_damage_elem_all",
         "target_source_type": "support",
         "patterns": [
-            r"サポアビと装備性能による(?:物理・)*[^火氷雷風光闇]?属性ダメージアップの上限[^0-9]*が(?P<value>\d+)[%％]"
+            r"サポアビと装備性能による(?:物理・)*(?:属攻と)*[^火氷雷風光闇]?属性ダメージアップの上限[^0-9]*が(?P<value>\d+)[%％]"
         ],
     },
     {
@@ -455,6 +467,18 @@ EFFECT_PATTERNS = [
             r"サポアビと装備性能による([^0-9火氷雷風光闇]*)(?P<tags>(?:火|氷|雷|風|光|闇)(?:・(?:火|氷|雷|風|光|闇))*)属性ダメージアップの上限[^0-9]*が(?P<value>\d+)[%％]"
         ],
         "cap_group_template": "buff_damage_elem_{tag}"
+    },
+    {
+        "role": "buff",
+        "category": "cap_increase",
+        "sub_category": "weak",
+        "unit": "%",
+        "target_source_type": "support",
+        "cap_group": "buff_damage_weak",
+        "patterns": [
+            r"サポアビと装備性能による敵の弱点を突いた時のダメージアップの上限[^0-9]*が(?P<value>\d+)[%％]"
+        ],
+        "cap_group_template": "buff_damage_weak"
     },
     {
         "role": "debuff",
