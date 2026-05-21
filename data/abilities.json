@@ -125400,27 +125400,32 @@
     {
       "character_id": "365293",
       "character_name": "ケネス",
-      "ability_name": "氷結魔法(単体)Ⅳ",
+      "ability_name": "氷結凍傷魔法(単体)Ⅳ",
       "source_type": "battle",
       "cost": "【消費SP 42】",
       "raw_text": [
+        "敵単体に氷属性攻撃（威力 260）",
+        "さらに、凍傷の状態異常を付与（2ターン）",
+        "ブーストMAX時：効果を再発動（SP消費なし）"
+      ],
+      "raw_text_pre_enhance": [
+        "『氷結魔法(単体)Ⅳ』",
         "敵単体に氷属性攻撃（威力 260）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力290/340/450"
       ],
       "effects": [],
-      "conditions": [],
-      "unknown": [
-        "敵単体に氷属性攻撃（威力 260）"
+      "conditions": [
+        "敵単体に氷属性攻撃（威力 260） さらに、凍傷の状態異常を付与（2ターン） ブーストMAX時効果を再発動（SP消費なし）"
       ],
+      "unknown": [],
       "blocks": [
         {
           "scopes": [
             "enemy_single"
           ],
-          "text": "敵単体に氷属性攻撃（威力 260）"
+          "text": "敵単体に氷属性攻撃（威力 260） さらに、凍傷の状態異常を付与（2ターン） ブーストMAX時：効果を再発動（SP消費なし）"
         }
       ]
     },
@@ -125485,21 +125490,39 @@
     {
       "character_id": "365293",
       "character_name": "ケネス",
-      "ability_name": "属攻強化Ⅲ",
+      "ability_name": "属性強化Ⅴ＆属性会心",
       "source_type": "support",
       "cost": null,
       "raw_text": [
+        "自身に属攻アップ",
+        "30%",
+        "と",
+        "属性攻撃でクリティカルが発生する効果を付与"
+      ],
+      "raw_text_pre_enhance": [
+        "『属攻強化Ⅲ』",
         "自身に属攻アップ20%の効果を付与"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "buff",
           "category": "stat",
           "unit": "%",
           "sub_category": "attack_elemental",
-          "value": 20,
+          "value": 30,
           "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "critical",
+          "unit": "",
+          "sub_category": "elemental",
+          "target_source_type": "battle",
+          "value": 1,
+          "cap_group": "critical_elem",
           "scopes": [
             "self"
           ]
@@ -125512,7 +125535,7 @@
           "scopes": [
             "self"
           ],
-          "text": "自身に属攻アップ20%の効果を付与"
+          "text": "自身に属攻アップ 30% と 属性攻撃でクリティカルが発生する効果を付与"
         }
       ]
     },
@@ -128984,23 +129007,26 @@
       "source_type": "battle",
       "cost": "【消費SP 500】",
       "raw_text": [
+        "敵全体に氷属性攻撃（威力 530）",
+        "このアビリティのダメージ上限が100000アップ"
+      ],
+      "raw_text_pre_enhance": [
         "敵全体に氷属性攻撃（威力 530）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力560/700/900"
       ],
       "effects": [],
       "conditions": [],
       "unknown": [
-        "敵全体に氷属性攻撃（威力 530）"
+        "敵全体に氷属性攻撃（威力 530） このアビリティのダメージ上限が100000アップ"
       ],
       "blocks": [
         {
           "scopes": [
             "enemy_all"
           ],
-          "text": "敵全体に氷属性攻撃（威力 530）"
+          "text": "敵全体に氷属性攻撃（威力 530） このアビリティのダメージ上限が100000アップ"
         }
       ]
     },
@@ -129089,9 +129115,14 @@
       "cost": null,
       "raw_text": [
         "HP満タン時：自身に属攻アップ15%と",
+        "ダメージ上限アップ（",
+        "効果量 100000",
+        "）の効果を付与"
+      ],
+      "raw_text_pre_enhance": [
+        "HP満タン時：自身に属攻アップ15%と",
         "ダメージ上限アップ（効果量 50000）の効果を付与"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "buff",
@@ -129109,7 +129140,7 @@
           "category": "dmg_cap",
           "unit": "",
           "target_source_type": "battle",
-          "value": 50000,
+          "value": 100000,
           "cap_group": "damage_cap",
           "scopes": [
             "self"
@@ -129123,7 +129154,7 @@
           "scopes": [
             "self"
           ],
-          "text": "HP満タン時：自身に属攻アップ15%と ダメージ上限アップ（効果量 50000）の効果を付与"
+          "text": "HP満タン時：自身に属攻アップ15%と ダメージ上限アップ（ 効果量 100000 ）の効果を付与"
         }
       ]
     },
@@ -129492,15 +129523,25 @@
     {
       "character_id": "355676",
       "character_name": "フィオル",
-      "ability_name": "ワンスモア",
+      "ability_name": "覚悟を決める",
       "source_type": "battle",
       "cost": "【消費SP 40】",
       "raw_text": [
+        "自身に威力アップ100%の効果",
+        "（3ターン/ターン延長不可/同系統の効果重複不可）",
+        "と",
+        "使用する攻撃アビリティを2回発動する効果を付与",
+        "（2ターン/ターン延長不可/追加発動分はSP消費無し）",
+        "さらに、必ずクリティカルの効果を付与（3ターン）",
+        "※属性攻撃でクリティカルが発生するには",
+        "“属性攻撃でクリティカルが発生する効果”が必要"
+      ],
+      "raw_text_pre_enhance": [
+        "『ワンスモア』",
         "自身に使用する攻撃アビリティを2回発動する効果を付与",
         "（2ターン/ターン延長不可/追加発動分はSP消費無し）",
         "さらに、必ずクリティカルの効果を付与（3ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】ターン数4/5/6（必ずクリティカルのみ）"
       ],
@@ -129516,6 +129557,17 @@
           "scopes": [
             "self"
           ]
+        },
+        {
+          "role": "buff",
+          "category": "power",
+          "unit": "%",
+          "target_source_type": "battle",
+          "value": 100,
+          "cap_group": "power_up",
+          "scopes": [
+            "self"
+          ]
         }
       ],
       "conditions": [],
@@ -129525,7 +129577,7 @@
           "scopes": [
             "self"
           ],
-          "text": "自身に使用する攻撃アビリティを2回発動する効果を付与 （2ターン/ターン延長不可/追加発動分はSP消費無し） さらに、必ずクリティカルの効果を付与（3ターン）"
+          "text": "自身に威力アップ100%の効果 （3ターン/ターン延長不可/同系統の効果重複不可） と 使用する攻撃アビリティを2回発動する効果を付与 （2ターン/ターン延長不可/追加発動分はSP消費無し） さらに、必ずクリティカルの効果を付与（3ターン） ※属性攻撃でクリティカルが発生するには “属性攻撃でクリティカルが発生する効果”が必要"
         }
       ]
     },
@@ -129612,9 +129664,16 @@
         "ブレイク中の敵がいる時",
         "自身に物攻アップ10%と",
         "剣攻撃ダメージアップ10%と",
+        "ダメージ上限アップ（効果量 50000）の効果を付与",
+        "さらに、味方全後衛全体に",
+        "「剣物理」で攻撃時ダメージ上限アップ（効果量 20000）の効果を付与"
+      ],
+      "raw_text_pre_enhance": [
+        "ブレイク中の敵がいる時",
+        "自身に物攻アップ10%と",
+        "剣攻撃ダメージアップ10%と",
         "ダメージ上限アップ（効果量 50000）の効果を付与"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "buff",
@@ -129664,7 +129723,7 @@
           "scopes": [
             "self"
           ],
-          "text": "自身に物攻アップ10%と 剣攻撃ダメージアップ10%と ダメージ上限アップ（効果量 50000）の効果を付与"
+          "text": "自身に物攻アップ10%と 剣攻撃ダメージアップ10%と ダメージ上限アップ（効果量 50000）の効果を付与 さらに、味方全後衛全体に 「剣物理」で攻撃時ダメージ上限アップ（効果量 20000）の効果を付与"
         }
       ]
     },
@@ -156664,18 +156723,36 @@
     {
       "character_id": "356832",
       "character_name": "マヌエル",
-      "ability_name": "土竜の舞踏扇",
+      "ability_name": "武人の舞踏扇",
       "source_type": "battle",
       "cost": "【消費SP 54】",
       "raw_text": [
         "敵単体に扇物理攻撃（威力 260）",
+        "さらに、味方前衛全体に",
+        "物攻",
+        "・物防アップ10%の効果を付与（2ターン）",
+        "ブーストMAX時：効果を再発動（SP消費なし）する"
+      ],
+      "raw_text_pre_enhance": [
+        "『土竜の舞踏扇』",
+        "敵単体に扇物理攻撃（威力 260）",
         "さらに、味方前衛全体に物防アップ10%の効果を付与（2ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力290/340/450"
       ],
       "effects": [
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 10,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
         {
           "role": "buff",
           "category": "stat",
@@ -156703,7 +156780,7 @@
           "scopes": [
             "ally_front_all"
           ],
-          "text": "さらに、味方前衛全体に物防アップ10%の効果を付与（2ターン）"
+          "text": "さらに、味方前衛全体に 物攻 ・物防アップ10%の効果を付与（2ターン） ブーストMAX時：効果を再発動（SP消費なし）する"
         }
       ]
     },
@@ -156778,13 +156855,19 @@
     {
       "character_id": "356832",
       "character_name": "マヌエル",
-      "ability_name": "前衛時物防強化(前全)",
+      "ability_name": "前衛時防御強化(前全)",
       "source_type": "support",
       "cost": null,
       "raw_text": [
+        "前衛時：味方前衛全体に",
+        "物防・",
+        "属防",
+        "アップ10%の効果を付与"
+      ],
+      "raw_text_pre_enhance": [
+        "『前衛時物防強化(前全)』",
         "前衛時：味方前衛全体に物防アップ10%の効果を付与"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "buff",
@@ -156793,6 +156876,17 @@
           "sub_category": "defence_physical",
           "value": 10,
           "cap_group": "buff_stat_def_phys",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 10,
+          "cap_group": "buff_stat_def_elem",
           "scopes": [
             "ally_front_all"
           ]
@@ -156805,7 +156899,7 @@
           "scopes": [
             "ally_front_all"
           ],
-          "text": "前衛時：味方前衛全体に物防アップ10%の効果を付与"
+          "text": "前衛時：味方前衛全体に 物防・ 属防 アップ10%の効果を付与"
         }
       ]
     },
