@@ -47923,7 +47923,9 @@
       "source_type": "support",
       "cost": null,
       "raw_text": [
-        "（準備Turn：3/再使用Turn：6）"
+        "（",
+        "準備Turn：0/再使用Turn：3",
+        "）"
       ],
       "raw_text_pre_enhance": [
         "（準備Turn：3/再使用Turn：6）",
@@ -47944,12 +47946,12 @@
       "effects": [],
       "conditions": [],
       "unknown": [
-        "（準備Turn：3/再使用Turn：6）"
+        "（ 準備Turn：0/再使用Turn：3 ）"
       ],
       "blocks": [
         {
           "scopes": [],
-          "text": "（準備Turn：3/再使用Turn：6）"
+          "text": "（ 準備Turn：0/再使用Turn：3 ）"
         }
       ]
     },
