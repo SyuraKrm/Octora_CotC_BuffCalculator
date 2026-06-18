@@ -119890,23 +119890,26 @@
       "source_type": "battle",
       "cost": "【消費SP 40】",
       "raw_text": [
+        "敵単体に剣物理攻撃（威力 260）",
+        "ブーストMAX時：効果を再発動（SP消費なし）する"
+      ],
+      "raw_text_pre_enhance": [
         "敵単体に剣物理攻撃（威力 260）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力290/340/450"
       ],
       "effects": [],
-      "conditions": [],
-      "unknown": [
-        "敵単体に剣物理攻撃（威力 260）"
+      "conditions": [
+        "敵単体に剣物理攻撃（威力 260） ブーストMAX時効果を再発動（SP消費なし）する"
       ],
+      "unknown": [],
       "blocks": [
         {
           "scopes": [
             "enemy_single"
           ],
-          "text": "敵単体に剣物理攻撃（威力 260）"
+          "text": "敵単体に剣物理攻撃（威力 260） ブーストMAX時：効果を再発動（SP消費なし）する"
         }
       ]
     },
@@ -119981,14 +119984,20 @@
     {
       "character_id": "372246",
       "character_name": "ヨルン",
-      "ability_name": "ブレイク中会心強化(相互)Ⅲ",
+      "ability_name": "遍歴の剣士",
       "source_type": "support",
       "cost": null,
       "raw_text": [
         "ブレイク中の敵がいる時",
+        "前衛と後衛に会心アップ20%の効果を付与",
+        "自身にサポアビと装備性能による",
+        "剣攻撃ダメージアップの上限が50%になる効果を付与"
+      ],
+      "raw_text_pre_enhance": [
+        "『ブレイク中会心強化(相互)Ⅲ』",
+        "ブレイク中の敵がいる時",
         "前衛と後衛に会心アップ20%の効果を付与"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "buff",
@@ -119999,6 +120008,19 @@
           "cap_group": "buff_stat_atk_crit",
           "scopes": [
             "buddy",
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "physical",
+          "target_source_type": "support",
+          "value": 50,
+          "tag": "sword",
+          "cap_group": "buff_damage_phys_sword",
+          "scopes": [
             "self"
           ]
         }
@@ -120018,6 +120040,12 @@
             "self"
           ],
           "text": "前衛と後衛に会心アップ20%の効果を付与"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身にサポアビと装備性能による 剣攻撃ダメージアップの上限が50%になる効果を付与"
         }
       ]
     },
@@ -156422,10 +156450,14 @@
       "source_type": "battle",
       "cost": "【消費SP 54】",
       "raw_text": [
+        "味方前後衛全体",
+        "に",
+        "物攻・属攻・物防・属防アップ10%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [
         "味方前衛全体に",
         "物攻・属攻・物防・属防アップ10%の効果を付与（2ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】ターン数3/4/5"
       ],
@@ -156437,9 +156469,7 @@
           "sub_category": "attack_physical",
           "value": 10,
           "cap_group": "buff_stat_atk_phys",
-          "scopes": [
-            "ally_front_all"
-          ]
+          "scopes": []
         },
         {
           "role": "buff",
@@ -156448,9 +156478,7 @@
           "sub_category": "attack_elemental",
           "value": 10,
           "cap_group": "buff_stat_atk_elem",
-          "scopes": [
-            "ally_front_all"
-          ]
+          "scopes": []
         },
         {
           "role": "buff",
@@ -156459,9 +156487,7 @@
           "sub_category": "defence_physical",
           "value": 10,
           "cap_group": "buff_stat_def_phys",
-          "scopes": [
-            "ally_front_all"
-          ]
+          "scopes": []
         },
         {
           "role": "buff",
@@ -156470,19 +156496,15 @@
           "sub_category": "defence_elemental",
           "value": 10,
           "cap_group": "buff_stat_def_elem",
-          "scopes": [
-            "ally_front_all"
-          ]
+          "scopes": []
         }
       ],
       "conditions": [],
       "unknown": [],
       "blocks": [
         {
-          "scopes": [
-            "ally_front_all"
-          ],
-          "text": "味方前衛全体に 物攻・属攻・物防・属防アップ10%の効果を付与（2ターン）"
+          "scopes": [],
+          "text": "味方前後衛全体 に 物攻・属攻・物防・属防アップ10%の効果を付与（2ターン）"
         }
       ]
     },
@@ -156557,20 +156579,41 @@
     {
       "character_id": "356830",
       "character_name": "イヴリン",
-      "ability_name": "属攻強化(相互)",
+      "ability_name": "大陸一を目指して",
       "source_type": "support",
       "cost": null,
       "raw_text": [
+        "前衛と後衛に",
+        "物攻",
+        "・属攻アップ",
+        "20%",
+        "の効果を付与",
+        "自身が強化効果を付与した際の",
+        "効果を1ターン延長（重複不可）"
+      ],
+      "raw_text_pre_enhance": [
+        "『属攻強化(相互)』",
         "前衛と後衛に属攻アップ10%の効果を付与"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "buff",
           "category": "stat",
           "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 20,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "buddy",
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
           "sub_category": "attack_elemental",
-          "value": 10,
+          "value": 20,
           "cap_group": "buff_stat_atk_elem",
           "scopes": [
             "buddy",
@@ -156586,7 +156629,7 @@
             "buddy",
             "self"
           ],
-          "text": "前衛と後衛に属攻アップ10%の効果を付与"
+          "text": "前衛と後衛に 物攻 ・属攻アップ 20% の効果を付与 自身が強化効果を付与した際の 効果を1ターン延長（重複不可）"
         }
       ]
     },
