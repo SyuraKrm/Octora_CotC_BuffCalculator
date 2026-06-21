@@ -1,49 +1,214 @@
 [
   [
     {
-      "character_id": "781063",
-      "character_name": "テメノスEx",
-      "ability_name": "特大火炎魔法(単体)Ⅱ",
+      "character_id": "793075",
+      "character_name": "アーロン",
+      "ability_name": "ニ連斬",
       "source_type": "battle",
-      "cost": "【消費SP 40】",
+      "cost": "【消費SP 26】",
       "raw_text": [
-        "敵単体に3回の火属性攻撃（威力 65）",
-        "※スタイルに応じて攻撃分類が変化"
+        "敵単体に2回の剣物理攻撃（威力90）"
       ],
       "raw_text_pre_enhance": [],
       "raw_text_boost": [
-        "【ブースト時】威力75/90/120"
+        "【ブースト時】威力105/125/180"
       ],
       "effects": [],
       "conditions": [],
       "unknown": [
-        "敵単体に3回の火属性攻撃（威力 65） ※スタイルに応じて攻撃分類が変化"
+        "敵単体に2回の剣物理攻撃（威力90）"
       ],
       "blocks": [
         {
           "scopes": [
             "enemy_single"
           ],
-          "text": "敵単体に3回の火属性攻撃（威力 65） ※スタイルに応じて攻撃分類が変化"
+          "text": "敵単体に2回の剣物理攻撃（威力90）"
         }
       ]
     },
     {
-      "character_id": "781063",
-      "character_name": "テメノスEx",
-      "ability_name": "大火炎破護魔法(全体)Ⅱ",
+      "character_id": "793075",
+      "character_name": "アーロン",
+      "ability_name": "かばう",
       "source_type": "battle",
-      "cost": "【消費SP 45】",
+      "cost": "【消費SP 59】",
       "raw_text": [
-        "敵全体に2回の火属性攻撃（威力80）",
-        "さらに、属防ダウン15%の効果を付与（2ターン）",
-        "※スタイルに応じて攻撃分類が変化"
+        "使用条件：HP回復不可が付与されていない",
+        "ターン中、素早く行動し自身に特殊効果”不沈”（1ターン）と",
+        "特殊効果”HP回復不可”を付与（1ターン）",
+        "さらに、味方前衛への単体攻撃ダメージを",
+        "代わりに受ける効果を付与（1ターン/後衛でも発動）",
+        "※戦闘中4回のみ使用可能",
+        "不沈：HPが0になるダメージを受けてもHPが1残る効果（一部除く）",
+        "HP回復不可：効果によるHP回復が発揮されない効果（一部除く）"
       ],
       "raw_text_pre_enhance": [],
       "raw_text_boost": [
-        "【ブースト時】威力95/115/130"
+        "【ブースト時】ターン2/3/4"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "使用条件：HP回復不可が付与されていない",
+        "ターン中、素早く行動し自身に特殊効果”不沈”（1ターン）と 特殊効果”HP回復不可”を付与（1ターン） さらに、味方前衛への単体攻撃ダメージを 代わりに受ける効果を付与（1ターン/後衛でも発動） ※戦闘中4回のみ使用可能 不沈:HPが0になるダメージを受けてもHPが1残る効果（一部除く）",
+        "効果によるHP回復が発揮されない効果（一部除く）"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "使用条件：HP回復不可が付与されていない"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "ターン中、素早く行動し自身に特殊効果”不沈”（1ターン）と 特殊効果”HP回復不可”を付与（1ターン） さらに、味方前衛への単体攻撃ダメージを 代わりに受ける効果を付与（1ターン/後衛でも発動） ※戦闘中4回のみ使用可能 不沈:HPが0になるダメージを受けてもHPが1残る効果（一部除く）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "効果によるHP回復が発揮されない効果（一部除く）",
+          "special_effect_id": "HP回復不可"
+        }
+      ]
+    },
+    {
+      "character_id": "793075",
+      "character_name": "アーロン",
+      "ability_name": "おどす",
+      "source_type": "battle",
+      "cost": "【消費SP 18】",
+      "raw_text": [
+        "敵単体に物攻・属攻・速度ダウン10%の効果を付与（2ターン）",
+        "※行動順影響は2ターン目"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】ターン3/4/5"
       ],
       "effects": [
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 10,
+          "cap_group": "debuff_stat_atk_phys",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 10,
+          "cap_group": "debuff_stat_atk_elem",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "speed",
+          "value": 10,
+          "cap_group": "debuff_stat_speed",
+          "scopes": [
+            "enemy_single"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に物攻・属攻・速度ダウン10%の効果を付与（2ターン） ※行動順影響は2ターン目"
+        }
+      ]
+    },
+    {
+      "character_id": "793075",
+      "character_name": "アーロン",
+      "ability_name": "ガードブレイク",
+      "source_type": "battle",
+      "cost": "【消費SP 30】",
+      "raw_text": [
+        "敵単体に剣物理攻撃（威力 170）",
+        "さらに、物防・属防ダウン10%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力200/240/350"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 10,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 10,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": [
+            "enemy_single"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に剣物理攻撃（威力 170） さらに、物防・属防ダウン10%の効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "793075",
+      "character_name": "アーロン",
+      "ability_name": "フルブレイク",
+      "source_type": "battle",
+      "cost": "【消費SP 50】",
+      "raw_text": [
+        "敵単体に剣物理攻撃（威力 170）",
+        "さらに、物攻・物防・属攻・属防ダウン15%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力200/240/350"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 15,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
         {
           "role": "debuff",
           "category": "stat",
@@ -52,917 +217,29 @@
           "value": 15,
           "cap_group": "debuff_stat_def_elem",
           "scopes": [
-            "enemy_all"
-          ]
-        }
-      ],
-      "conditions": [],
-      "unknown": [],
-      "blocks": [
-        {
-          "scopes": [
-            "enemy_all"
-          ],
-          "text": "敵全体に2回の火属性攻撃（威力80） さらに、属防ダウン15%の効果を付与（2ターン） ※スタイルに応じて攻撃分類が変化"
-        }
-      ]
-    },
-    {
-      "character_id": "781063",
-      "character_name": "テメノスEx",
-      "ability_name": "大火炎魔法(全体)Ⅱ",
-      "source_type": "battle",
-      "cost": "【消費SP 37】",
-      "raw_text": [
-        "敵全体に2回の火属性攻撃（威力80）",
-        "※スタイルに応じて攻撃分類が変化"
-      ],
-      "raw_text_pre_enhance": [],
-      "raw_text_boost": [
-        "【ブースト時】威力95/115/130"
-      ],
-      "effects": [],
-      "conditions": [],
-      "unknown": [
-        "敵全体に2回の火属性攻撃（威力80） ※スタイルに応じて攻撃分類が変化"
-      ],
-      "blocks": [
-        {
-          "scopes": [
-            "enemy_all"
-          ],
-          "text": "敵全体に2回の火属性攻撃（威力80） ※スタイルに応じて攻撃分類が変化"
-        }
-      ]
-    },
-    {
-      "character_id": "781063",
-      "character_name": "テメノスEx",
-      "ability_name": "特大火炎激化魔法(全体)Ⅲ",
-      "source_type": "battle",
-      "cost": "【消費SP 90】",
-      "raw_text": [
-        "敵全体に3回の火属性攻撃（威力80）",
-        "さらに、味方前衛全体に",
-        "火属性ダメージアップ20%の効果を付与（2ターン）",
-        "※スタイルに応じて攻撃分類・ダメージアップの属性が変化"
-      ],
-      "raw_text_pre_enhance": [],
-      "raw_text_boost": [
-        "【ブースト時】威力90/105/130"
-      ],
-      "effects": [
-        {
-          "role": "buff",
-          "category": "damage",
-          "unit": "%",
-          "sub_category": "elemental",
-          "value": 20,
-          "tag": "fire",
-          "cap_group": "buff_damage_elem_fire",
-          "scopes": [
-            "ally_front_all"
-          ]
-        }
-      ],
-      "conditions": [],
-      "unknown": [
-        "敵全体に3回の火属性攻撃（威力80）"
-      ],
-      "blocks": [
-        {
-          "scopes": [
-            "enemy_all"
-          ],
-          "text": "敵全体に3回の火属性攻撃（威力80）"
-        },
-        {
-          "scopes": [
-            "ally_front_all"
-          ],
-          "text": "さらに、味方前衛全体に 火属性ダメージアップ20%の効果を付与（2ターン） ※スタイルに応じて攻撃分類・ダメージアップの属性が変化"
-        }
-      ]
-    },
-    {
-      "character_id": "781063",
-      "character_name": "テメノスEx",
-      "ability_name": "極大火炎吸収魔法(単体)Ⅲ",
-      "source_type": "battle",
-      "cost": "【消費SP 94】",
-      "raw_text": [
-        "敵単体に4回の火属性攻撃（威力 65）",
-        "さらに、与えたダメージ量の2%のSP吸収",
-        "ブレイク中の敵がいる時：さらに、自身のBPを5回復",
-        "※スタイルに応じて攻撃分類が変化"
-      ],
-      "raw_text_pre_enhance": [],
-      "raw_text_boost": [
-        "【ブースト時】威力75/85/110"
-      ],
-      "effects": [],
-      "conditions": [
-        "ブレイク中の敵がいる時さらに、自身のBPを5回復 ※スタイルに応じて攻撃分類が変化"
-      ],
-      "unknown": [
-        "敵単体に4回の火属性攻撃（威力 65） さらに、与えたダメージ量の2%のSP吸収"
-      ],
-      "blocks": [
-        {
-          "scopes": [
             "enemy_single"
-          ],
-          "text": "敵単体に4回の火属性攻撃（威力 65） さらに、与えたダメージ量の2%のSP吸収"
+          ]
         },
-        {
-          "scopes": [
-            "self"
-          ],
-          "text": "ブレイク中の敵がいる時：さらに、自身のBPを5回復 ※スタイルに応じて攻撃分類が変化"
-        }
-      ]
-    },
-    {
-      "character_id": "781063",
-      "character_name": "テメノスEx",
-      "ability_name": "超絶乱火炎魔法",
-      "source_type": "battle",
-      "cost": "【消費SP 46】",
-      "raw_text": [
-        "ランダムなターゲットに5回の火属性攻撃（威力30）",
-        "攻撃毎に火耐性ダウン15%の効果を付与（1ターン）",
-        "※スタイルに応じて攻撃分類・耐性ダウンの属性が変化"
-      ],
-      "raw_text_pre_enhance": [],
-      "raw_text_boost": [
-        "【ブースト時】威力35/45/60"
-      ],
-      "effects": [
         {
           "role": "debuff",
-          "category": "resistance",
+          "category": "stat",
           "unit": "%",
-          "sub_category": "elemental",
+          "sub_category": "attack_physical",
           "value": 15,
-          "tag": "fire",
-          "cap_group": "debuff_resist_elem_fire",
+          "cap_group": "debuff_stat_atk_phys",
           "scopes": [
-            "random"
+            "enemy_single"
           ]
-        }
-      ],
-      "conditions": [],
-      "unknown": [],
-      "blocks": [
+        },
         {
-          "scopes": [
-            "random"
-          ],
-          "text": "ランダムなターゲットに5回の火属性攻撃（威力30） 攻撃毎に火耐性ダウン15%の効果を付与（1ターン） ※スタイルに応じて攻撃分類・耐性ダウンの属性が変化"
-        }
-      ]
-    },
-    {
-      "character_id": "781063",
-      "character_name": "テメノスEx",
-      "ability_name": "極大火炎魔法(全体)Ⅱ",
-      "source_type": "battle",
-      "cost": "【消費SP 63】",
-      "raw_text": [
-        "敵全体に4回の火属性攻撃（威力 35）",
-        "ブーストMAX時：効果を再発動（SP消費無し）する",
-        "※スタイルに応じて攻撃分類が変化"
-      ],
-      "raw_text_pre_enhance": [],
-      "raw_text_boost": [
-        "【ブースト時】威力45/55/70"
-      ],
-      "effects": [],
-      "conditions": [
-        "敵全体に4回の火属性攻撃（威力 35） ブーストMAX時効果を再発動（SP消費無し）する ※スタイルに応じて攻撃分類が変化"
-      ],
-      "unknown": [],
-      "blocks": [
-        {
-          "scopes": [
-            "enemy_all"
-          ],
-          "text": "敵全体に4回の火属性攻撃（威力 35） ブーストMAX時：効果を再発動（SP消費無し）する ※スタイルに応じて攻撃分類が変化"
-        }
-      ]
-    },
-    {
-      "character_id": "781063",
-      "character_name": "テメノスEx",
-      "ability_name": "魔大公の加護",
-      "source_type": "battle",
-      "cost": "【消費SP 50】",
-      "raw_text": [
-        "味方前衛全体に属攻アップ20%と",
-        "BP回復量1アップの効果を付与（2ターン）"
-      ],
-      "raw_text_pre_enhance": [],
-      "raw_text_boost": [
-        "【ブースト時】ターン3/4/5"
-      ],
-      "effects": [
-        {
-          "role": "buff",
+          "role": "debuff",
           "category": "stat",
           "unit": "%",
           "sub_category": "attack_elemental",
-          "value": 20,
-          "cap_group": "buff_stat_atk_elem",
-          "scopes": [
-            "ally_front_all"
-          ]
-        }
-      ],
-      "conditions": [],
-      "unknown": [],
-      "blocks": [
-        {
-          "scopes": [
-            "ally_front_all"
-          ],
-          "text": "味方前衛全体に属攻アップ20%と BP回復量1アップの効果を付与（2ターン）"
-        }
-      ]
-    },
-    {
-      "character_id": "781063",
-      "character_name": "テメノスEx",
-      "ability_name": "ウルティマ・イグニス",
-      "source_type": "battle",
-      "cost": "【消費SP 400】",
-      "raw_text": [
-        "敵全体に2回の火属性攻撃（威力260）",
-        "このアビリティのダメージ上限が300000アップし",
-        "（※カウントダウン、継続効果のダメージ上限もアップ）",
-        "このアビリティのブーストLvがレベル2/レベル4/レベル6（MAX）になる",
-        "※BPの消費量は1/3/5になる",
-        "BP3以上消費時：さらに、自身にカウントダウンの効果を付与（カウント 1）",
-        "カウント終了時、敵全体に2回の火属性攻撃（威力 300）",
-        "BP5消費時：さらに、使用したターンから1ターンに1回",
-        "ターン終了時に継続効果を発揮（継続2回/効果・回数上書き）",
-        "継続効果：敵全体に2回の火属性攻撃（威力 300）",
-        "※スタイルに応じて攻撃分類が変化",
-        "※継続効果の攻撃分類はアビリティ使用時の攻撃分類"
-      ],
-      "raw_text_pre_enhance": [],
-      "raw_text_boost": [
-        "【ブースト時】威力290/340/450 ※継続効果の威力は変化しない"
-      ],
-      "effects": [],
-      "conditions": [
-        "BP3以上消費時さらに、自身にカウントダウンの効果を付与（カウント 1）",
-        "カウント終了時、敵全体に2回の火属性攻撃（威力 300） BP5消費時さらに、使用したターンから1ターンに1回 ターン終了時に継続効果を発揮（継続2回/効果・回数上書き）"
-      ],
-      "unknown": [
-        "敵全体に2回の火属性攻撃（威力260） このアビリティのダメージ上限が300000アップし （※カウントダウン、継続効果のダメージ上限もアップ） このアビリティのブーストLvがレベル2/レベル4/レベル6（MAX）になる ※BPの消費量は1/3/5になる",
-        "継続効果：敵全体に2回の火属性攻撃（威力 300） ※スタイルに応じて攻撃分類が変化 ※継続効果の攻撃分類はアビリティ使用時の攻撃分類"
-      ],
-      "blocks": [
-        {
-          "scopes": [
-            "enemy_all"
-          ],
-          "text": "敵全体に2回の火属性攻撃（威力260） このアビリティのダメージ上限が300000アップし （※カウントダウン、継続効果のダメージ上限もアップ） このアビリティのブーストLvがレベル2/レベル4/レベル6（MAX）になる ※BPの消費量は1/3/5になる"
-        },
-        {
-          "scopes": [
-            "self"
-          ],
-          "text": "BP3以上消費時：さらに、自身にカウントダウンの効果を付与（カウント 1）"
-        },
-        {
-          "scopes": [
-            "enemy_all"
-          ],
-          "text": "カウント終了時、敵全体に2回の火属性攻撃（威力 300） BP5消費時：さらに、使用したターンから1ターンに1回 ターン終了時に継続効果を発揮（継続2回/効果・回数上書き）"
-        },
-        {
-          "scopes": [
-            "enemy_all"
-          ],
-          "text": "継続効果：敵全体に2回の火属性攻撃（威力 300） ※スタイルに応じて攻撃分類が変化 ※継続効果の攻撃分類はアビリティ使用時の攻撃分類"
-        }
-      ]
-    },
-    {
-      "character_id": "781063",
-      "character_name": "テメノスEx",
-      "ability_name": "三複素のオーラ",
-      "source_type": "battle",
-      "cost": "【消費SP 36】",
-      "raw_text": [
-        "味方前衛全体に「たたかう」以外の属性攻撃（一部除く）時",
-        "風・光・闇弱点を突ける効果を付与",
-        "（2ターン/ダメージ計算は各攻撃に準ずる）",
-        "ブーストMAX時：前後衛全体化"
-      ],
-      "raw_text_pre_enhance": [
-        "味方前衛全体に「たたかう」以外の属性攻撃（一部除く）時",
-        "風・光・闇弱点を突ける効果を付与",
-        "（2ターン/ダメージ計算は各攻撃に準ずる）"
-      ],
-      "raw_text_boost": [
-        "【ブースト時】ターン3/4/5"
-      ],
-      "effects": [],
-      "conditions": [
-        "味方前衛全体に「たたかう」以外の属性攻撃（一部除く）時 風・光・闇弱点を突ける効果を付与 （2ターン/ダメージ計算は各攻撃に準ずる） ブーストMAX時前後衛全体化"
-      ],
-      "unknown": [],
-      "blocks": [
-        {
-          "scopes": [
-            "ally_front_all"
-          ],
-          "text": "味方前衛全体に「たたかう」以外の属性攻撃（一部除く）時 風・光・闇弱点を突ける効果を付与 （2ターン/ダメージ計算は各攻撃に準ずる） ブーストMAX時：前後衛全体化"
-        }
-      ]
-    },
-    {
-      "character_id": "781063",
-      "character_name": "テメノスEx",
-      "ability_name": "スタイルシフト：三元素",
-      "source_type": "support",
-      "cost": null,
-      "raw_text": [
-        "コマンド選択時、“火炎”と”氷結”と“雷撃”に",
-        "スタイルを切り替えられる",
-        "スタイルに応じて、自身の一部アビリティの攻撃分類や性能が変化し",
-        "自身に対応する属性ダメージアップ20%の効果を付与",
-        "対応する属性火炎：火、氷結：氷、雷撃：雷"
-      ],
-      "raw_text_pre_enhance": [],
-      "effects": [
-        {
-          "role": "buff",
-          "category": "damage",
-          "unit": "%",
-          "sub_category": "elemental",
-          "value": 20,
-          "cap_group": "buff_damage_elem_all",
-          "scopes": [
-            "self"
-          ]
-        }
-      ],
-      "conditions": [],
-      "unknown": [
-        "コマンド選択時、“火炎”と”氷結”と“雷撃”に スタイルを切り替えられる",
-        "スタイルに応じて、自身の一部アビリティの攻撃分類や性能が変化し"
-      ],
-      "blocks": [
-        {
-          "scopes": [],
-          "text": "コマンド選択時、“火炎”と”氷結”と“雷撃”に スタイルを切り替えられる"
-        },
-        {
-          "scopes": [
-            "self"
-          ],
-          "text": "スタイルに応じて、自身の一部アビリティの攻撃分類や性能が変化し"
-        },
-        {
-          "scopes": [
-            "self"
-          ],
-          "text": "自身に対応する属性ダメージアップ20%の効果を付与 対応する属性火炎：火、氷結：氷、雷撃：雷"
-        }
-      ]
-    },
-    {
-      "character_id": "781063",
-      "character_name": "テメノスEx",
-      "ability_name": "弱点の洞察",
-      "source_type": "support",
-      "cost": null,
-      "raw_text": [
-        "自身に敵の弱点を突いた時のダメージアップ30%の効果と",
-        "サポアビと装備性能による敵の弱点を突いた時のダメージアップの上限が50%になる効果を付与",
-        "ブレイク中の敵がいる時：さらに",
-        "ダメージ上限アップ（効果量 300000）の効果を付与"
-      ],
-      "raw_text_pre_enhance": [],
-      "effects": [
-        {
-          "role": "buff",
-          "category": "damage",
-          "unit": "%",
-          "sub_category": "weak",
-          "value": 30,
-          "cap_group": "buff_damage_weak",
-          "scopes": [
-            "self"
-          ]
-        },
-        {
-          "role": "buff",
-          "category": "dmg_cap",
-          "unit": "",
-          "target_source_type": "battle",
-          "value": 300000,
-          "cap_group": "damage_cap",
-          "scopes": [
-            "self"
-          ]
-        },
-        {
-          "role": "buff",
-          "category": "cap_increase",
-          "unit": "%",
-          "sub_category": "weak",
-          "target_source_type": "support",
-          "value": 50,
-          "cap_group": "buff_damage_weak",
-          "scopes": [
-            "self"
-          ]
-        }
-      ],
-      "conditions": [],
-      "unknown": [],
-      "blocks": [
-        {
-          "scopes": [
-            "self"
-          ],
-          "text": "自身に敵の弱点を突いた時のダメージアップ30%の効果と サポアビと装備性能による敵の弱点を突いた時のダメージアップの上限が50%になる効果を付与 ブレイク中の敵がいる時：さらに ダメージ上限アップ（効果量 300000）の効果を付与"
-        }
-      ]
-    },
-    {
-      "character_id": "781063",
-      "character_name": "テメノスEx",
-      "ability_name": "魔大公の剔抉",
-      "source_type": "support",
-      "cost": null,
-      "raw_text": [
-        "味方が敵をブレイクさせた時",
-        "ブレイクさせた敵に自身のスタイルに応じた効果を付与",
-        "火炎：火耐性ダウン20%とサポアビと装備性能による",
-        "火耐性ダウンを受けた際の上限が50%になる効果（2ターン）",
-        "氷結：氷耐性ダウン20%とサポアビと装備性能による",
-        "氷耐性ダウンを受けた際の上限が50%になる効果（2ターン）",
-        "雷撃：雷耐性ダウン20%とサポアビと装備性能による",
-        "雷耐性ダウンを受けた際の上限が50%になる効果（2ターン）"
-      ],
-      "raw_text_pre_enhance": [],
-      "effects": [
-        {
-          "role": "debuff",
-          "category": "cap_increase",
-          "unit": "%",
-          "sub_category": "elemental",
-          "target_source_type": "support",
-          "value": 50,
-          "tag": "fire",
-          "cap_group": "debuff_resist_elem_fire",
-          "scopes": [
-            "enemy_single"
-          ]
-        },
-        {
-          "role": "debuff",
-          "category": "resistance",
-          "unit": "%",
-          "sub_category": "elemental",
-          "value": 20,
-          "tag": "fire",
-          "cap_group": "debuff_resist_elem_fire",
-          "scopes": [
-            "enemy_single"
-          ]
-        }
-      ],
-      "conditions": [],
-      "unknown": [
-        "味方が敵をブレイクさせた時"
-      ],
-      "blocks": [
-        {
-          "scopes": [],
-          "text": "味方が敵をブレイクさせた時"
-        },
-        {
-          "scopes": [
-            "enemy_single"
-          ],
-          "text": "ブレイクさせた敵に自身のスタイルに応じた効果を付与 火炎：火耐性ダウン20%とサポアビと装備性能による 火耐性ダウンを受けた際の上限が50%になる効果（2ターン） 氷結：氷耐性ダウン20%とサポアビと装備性能による 氷耐性ダウンを受けた際の上限が50%になる効果（2ターン） 雷撃：雷耐性ダウン20%とサポアビと装備性能による 雷耐性ダウンを受けた際の上限が50%になる効果（2ターン）"
-        }
-      ]
-    },
-    {
-      "character_id": "781063",
-      "character_name": "テメノスEx",
-      "ability_name": "三属性の噴出",
-      "source_type": "support",
-      "cost": null,
-      "raw_text": [
-        "自身が攻撃毎（一部除く）に小確率で敵に自身のスタイルに応じ効果を付与",
-        "火炎：火耐性ダウン",
-        "20%",
-        "の効果と燃焼の状態異常（2ターン）",
-        "氷結：氷耐性ダウン",
-        "20%",
-        "の効果と凍傷の状態異常（2ターン）",
-        "雷撃：雷耐性ダウン",
-        "20%",
-        "の効果と漏電の状態異常（2ターン）",
-        "燃焼：ターン終了時に属攻ダメージ＆シールド-1（0にならない）",
-        "凍傷：行動完了後に属攻ダメージ＆シールド-1（0にならない）",
-        "漏電：行動完了後に属攻ダメージ＆シールド-1（0にならない）"
-      ],
-      "raw_text_pre_enhance": [
-        "自身が攻撃毎（一部除く）に小確率で敵に自身のスタイルに応じ効果を付与",
-        "火炎：火耐性ダウン15%の効果と燃焼の状態異常（2ターン）",
-        "氷結：氷耐性ダウン15%の効果と凍傷の状態異常（2ターン）",
-        "雷撃：雷耐性ダウン15%の効果と漏電の状態異常（2ターン）",
-        "燃焼：ターン終了時に属攻ダメージ&シールド-1（0にならない）",
-        "凍傷：行動完了後に属攻ダメージ＆シールド-1（0にならない）",
-        "漏電：行動完了後に属攻ダメージ&シールド-1（0にならない）"
-      ],
-      "effects": [
-        {
-          "role": "debuff",
-          "category": "resistance",
-          "unit": "%",
-          "sub_category": "elemental",
-          "value": 20,
-          "tag": "fire",
-          "cap_group": "debuff_resist_elem_fire",
-          "scopes": [
-            "enemy_single"
-          ]
-        }
-      ],
-      "conditions": [],
-      "unknown": [],
-      "blocks": [
-        {
-          "scopes": [
-            "enemy_single"
-          ],
-          "text": "自身が攻撃毎（一部除く）に小確率で敵に自身のスタイルに応じ効果を付与 火炎：火耐性ダウン 20% の効果と燃焼の状態異常（2ターン） 氷結：氷耐性ダウン 20% の効果と凍傷の状態異常（2ターン） 雷撃：雷耐性ダウン 20% の効果と漏電の状態異常（2ターン） 燃焼：ターン終了時に属攻ダメージ＆シールド-1（0にならない） 凍傷：行動完了後に属攻ダメージ＆シールド-1（0にならない） 漏電：行動完了後に属攻ダメージ＆シールド-1（0にならない）"
-        }
-      ]
-    },
-    {
-      "character_id": "781063",
-      "character_name": "テメノスEx",
-      "ability_name": "魔大公の秘術",
-      "source_type": "ultimate",
-      "cost": "後衛発動",
-      "raw_text": [
-        "【Lv.MAX】",
-        "自身に威力アップ200%（ターン延長不可/同系統の効果重複不可）と",
-        "属性ダメージアップ20%の効果を付与（4ターン）",
-        "さらに、属性攻撃でクリティカルが発生する効果と",
-        "必ずクリティカルの効果を付与（9ターン）",
-        "200%発動時：加えて、クリティカル時のダメージ倍率が",
-        "1.5倍になる効果を付与（9ターン/通常時は1.25倍）"
-      ],
-      "raw_text_pre_enhance": [],
-      "effects": [
-        {
-          "role": "buff",
-          "category": "damage",
-          "unit": "%",
-          "sub_category": "elemental",
-          "value": 20,
-          "cap_group": "buff_damage_elem_all",
-          "scopes": [
-            "self"
-          ]
-        },
-        {
-          "role": "buff",
-          "category": "critical",
-          "unit": "",
-          "sub_category": "certain",
-          "target_source_type": "battle",
-          "value": 1,
-          "cap_group": "critical_certain",
-          "scopes": [
-            "self"
-          ]
-        },
-        {
-          "role": "buff",
-          "category": "critical",
-          "unit": "",
-          "sub_category": "elemental",
-          "target_source_type": "battle",
-          "value": 1,
-          "cap_group": "critical_elem",
-          "scopes": [
-            "self"
-          ]
-        },
-        {
-          "role": "buff",
-          "category": "power",
-          "unit": "%",
-          "target_source_type": "battle",
-          "value": 200,
-          "cap_group": "power_up",
-          "scopes": [
-            "self"
-          ]
-        }
-      ],
-      "conditions": [],
-      "unknown": [
-        "【Lv.MAX】"
-      ],
-      "blocks": [
-        {
-          "scopes": [],
-          "text": "【Lv.MAX】"
-        },
-        {
-          "scopes": [
-            "self"
-          ],
-          "text": "自身に威力アップ200%（ターン延長不可/同系統の効果重複不可）と 属性ダメージアップ20%の効果を付与（4ターン） さらに、属性攻撃でクリティカルが発生する効果と 必ずクリティカルの効果を付与（9ターン） 200%発動時：加えて、クリティカル時のダメージ倍率が 1.5倍になる効果を付与（9ターン/通常時は1.25倍）"
-        }
-      ]
-    },
-    {
-      "character_id": "781063",
-      "character_name": "テメノスEx",
-      "ability_name": "フラギス・イグニス",
-      "source_type": "ex",
-      "cost": "回数：1",
-      "raw_text": [
-        "敵全体に特殊効果“火脆点”の効果を付与（9回）",
-        "その後、同対象に火属性攻撃",
-        "ブーストLvに応じて攻撃回数増加（威力 150/1回）",
-        "さらに、自身にSP自動回復（回復量 最大SPの25%）と",
-        "BP回復量3アップの効果を付与（3ターン）",
-        "※スタイルに応じて脆点の属性・攻撃分類が変化",
-        "脆点付与：付与方法によらず脆点毎に回数は合算（最大9回）",
-        "脆点は物理・属性毎に1種まで（2種目は上書）",
-        "合致する攻撃分類の攻撃を受ける時",
-        "シールドポイントが弱点に関係なく1削られ",
-        "ダメージ倍率がプラス50%",
-        "※弱点とは別効果。弱点を突ける効果では発動しない"
-      ],
-      "raw_text_pre_enhance": [],
-      "raw_text_condition": [
-        "【使用条件】3ターン目以降"
-      ],
-      "raw_text_boost": [
-        "【ブースト時】威力55/35/20 3/5/9回"
-      ],
-      "effects": [],
-      "conditions": [],
-      "unknown": [
-        "敵全体に特殊効果“火脆点”の効果を付与（9回） その後、同対象に火属性攻撃 ブーストLvに応じて攻撃回数増加（威力 150/1回）",
-        "さらに、自身にSP自動回復（回復量 最大SPの25%）と BP回復量3アップの効果を付与（3ターン） ※スタイルに応じて脆点の属性・攻撃分類が変化 脆点付与：付与方法によらず脆点毎に回数は合算（最大9回） 脆点は物理・属性毎に1種まで（2種目は上書） 合致する攻撃分類の攻撃を受ける時 シールドポイントが弱点に関係なく1削られ ダメージ倍率がプラス50% ※弱点とは別効果。弱点を突ける効果では発動しない"
-      ],
-      "blocks": [
-        {
-          "scopes": [
-            "enemy_all"
-          ],
-          "text": "敵全体に特殊効果“火脆点”の効果を付与（9回） その後、同対象に火属性攻撃 ブーストLvに応じて攻撃回数増加（威力 150/1回）"
-        },
-        {
-          "scopes": [
-            "self"
-          ],
-          "text": "さらに、自身にSP自動回復（回復量 最大SPの25%）と BP回復量3アップの効果を付与（3ターン） ※スタイルに応じて脆点の属性・攻撃分類が変化 脆点付与：付与方法によらず脆点毎に回数は合算（最大9回） 脆点は物理・属性毎に1種まで（2種目は上書） 合致する攻撃分類の攻撃を受ける時 シールドポイントが弱点に関係なく1削られ ダメージ倍率がプラス50% ※弱点とは別効果。弱点を突ける効果では発動しない"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "character_id": "781061",
-      "character_name": "ミディヤEx",
-      "ability_name": "星彩魔法(単体)Ⅲ",
-      "source_type": "battle",
-      "cost": "【消費SP 46】",
-      "raw_text": [
-        "敵単体に3回の光属性攻撃（威力 65）",
-        "風・闇弱点を突ける（ダメージ計算は光属性）"
-      ],
-      "raw_text_pre_enhance": [],
-      "raw_text_boost": [
-        "【ブースト時】威力75/90/120"
-      ],
-      "effects": [],
-      "conditions": [],
-      "unknown": [
-        "敵単体に3回の光属性攻撃（威力 65） 風・闇弱点を突ける（ダメージ計算は光属性）"
-      ],
-      "blocks": [
-        {
-          "scopes": [
-            "enemy_single"
-          ],
-          "text": "敵単体に3回の光属性攻撃（威力 65） 風・闇弱点を突ける（ダメージ計算は光属性）"
-        }
-      ]
-    },
-    {
-      "character_id": "781061",
-      "character_name": "ミディヤEx",
-      "ability_name": "会心のまたたき",
-      "source_type": "battle",
-      "cost": "【消費SP 68】",
-      "raw_text": [
-        "味方単体と自身に",
-        "属性攻撃でクリティカルが発生する効果と",
-        "必ずクリティカルの効果を付与（3ターン）",
-        "ブーストMAX時：さらに、クリティカル時のダメージ倍率が",
-        "1.4倍になる効果（通常時は1.25倍）を付与（6ターン）"
-      ],
-      "raw_text_pre_enhance": [],
-      "raw_text_boost": [
-        "【ブースト時】ターン4/5/6"
-      ],
-      "effects": [
-        {
-          "role": "buff",
-          "category": "critical",
-          "unit": "",
-          "sub_category": "certain",
-          "target_source_type": "battle",
-          "value": 1,
-          "cap_group": "critical_certain",
-          "scopes": [
-            "self"
-          ]
-        },
-        {
-          "role": "buff",
-          "category": "critical",
-          "unit": "",
-          "sub_category": "elemental",
-          "target_source_type": "battle",
-          "value": 1,
-          "cap_group": "critical_elem",
-          "scopes": [
-            "self"
-          ]
-        }
-      ],
-      "conditions": [],
-      "unknown": [],
-      "blocks": [
-        {
-          "scopes": [
-            "self"
-          ],
-          "text": "味方単体と自身に 属性攻撃でクリティカルが発生する効果と 必ずクリティカルの効果を付与（3ターン） ブーストMAX時：さらに、クリティカル時のダメージ倍率が 1.4倍になる効果（通常時は1.25倍）を付与（6ターン）"
-        }
-      ]
-    },
-    {
-      "character_id": "781061",
-      "character_name": "ミディヤEx",
-      "ability_name": "継続回復魔法(前全)Ⅱ",
-      "source_type": "battle",
-      "cost": "【消費SP 36】",
-      "raw_text": [
-        "味方前衛全体にHP自動回復の効果を付与（2ターン/効力110）"
-      ],
-      "raw_text_pre_enhance": [],
-      "raw_text_boost": [
-        "【ブースト時】ターン3/4/5"
-      ],
-      "effects": [],
-      "conditions": [],
-      "unknown": [
-        "味方前衛全体にHP自動回復の効果を付与（2ターン/効力110）"
-      ],
-      "blocks": [
-        {
-          "scopes": [
-            "ally_front_all"
-          ],
-          "text": "味方前衛全体にHP自動回復の効果を付与（2ターン/効力110）"
-        }
-      ]
-    },
-    {
-      "character_id": "781061",
-      "character_name": "ミディヤEx",
-      "ability_name": "BPブーストのまたたき",
-      "source_type": "battle",
-      "cost": "【消費SP 76】",
-      "raw_text": [
-        "自身を除く味方単体にBP回復量1アップの効果を付与（2ターン）",
-        "ブーストMAX時：サポートアビリティ“満天の星”の",
-        "BPストックの付与数が2になる"
-      ],
-      "raw_text_pre_enhance": [],
-      "raw_text_boost": [
-        "【ブースト時】ターン3/4/5"
-      ],
-      "effects": [],
-      "conditions": [
-        "自身を除く味方単体にBP回復量1アップの効果を付与（2ターン） ブーストMAX時サポートアビリティ“満天の星”の BPストックの付与数が2になる"
-      ],
-      "unknown": [],
-      "blocks": [
-        {
-          "scopes": [
-            "self_exclude",
-            "ally_single"
-          ],
-          "text": "自身を除く味方単体にBP回復量1アップの効果を付与（2ターン） ブーストMAX時：サポートアビリティ“満天の星”の BPストックの付与数が2になる"
-        }
-      ]
-    },
-    {
-      "character_id": "781061",
-      "character_name": "ミディヤEx",
-      "ability_name": "お返しのまたたき",
-      "source_type": "battle",
-      "cost": "【消費SP 24】",
-      "raw_text": [
-        "自身に味方が属性攻撃を受けた時に反撃する効果を付与（1回）",
-        "反撃：敵単体に光属性攻撃（威力150）"
-      ],
-      "raw_text_pre_enhance": [],
-      "raw_text_boost": [
-        "【ブースト時】2/3/4回"
-      ],
-      "effects": [],
-      "conditions": [],
-      "unknown": [
-        "自身に味方が属性攻撃を受けた時に反撃する効果を付与（1回）",
-        "反撃：敵単体に光属性攻撃（威力150）"
-      ],
-      "blocks": [
-        {
-          "scopes": [
-            "self"
-          ],
-          "text": "自身に味方が属性攻撃を受けた時に反撃する効果を付与（1回）"
-        },
-        {
-          "scopes": [
-            "enemy_single"
-          ],
-          "text": "反撃：敵単体に光属性攻撃（威力150）"
-        }
-      ]
-    },
-    {
-      "character_id": "781061",
-      "character_name": "ミディヤEx",
-      "ability_name": "星詠みの奏",
-      "source_type": "battle",
-      "cost": "【消費SP 84】",
-      "raw_text": [
-        "味方前衛全体に",
-        "物防・属防・速度アップ15%の効果を付与（3ターン）",
-        "さらに、物理攻撃（一部除く）を応ず回避する効果と",
-        "属性攻撃（一部除く）を必ず回避する効果を付与（1回）"
-      ],
-      "raw_text_pre_enhance": [],
-      "raw_text_boost": [
-        "【ブースト時】ターン4/5/6"
-      ],
-      "effects": [
-        {
-          "role": "buff",
-          "category": "stat",
-          "unit": "%",
-          "sub_category": "defence_physical",
           "value": 15,
-          "cap_group": "buff_stat_def_phys",
+          "cap_group": "debuff_stat_atk_elem",
           "scopes": [
-            "ally_front_all"
-          ]
-        },
-        {
-          "role": "buff",
-          "category": "stat",
-          "unit": "%",
-          "sub_category": "defence_elemental",
-          "value": 15,
-          "cap_group": "buff_stat_def_elem",
-          "scopes": [
-            "ally_front_all"
-          ]
-        },
-        {
-          "role": "buff",
-          "category": "stat",
-          "unit": "%",
-          "sub_category": "speed",
-          "value": 15,
-          "cap_group": "buff_stat_speed",
-          "scopes": [
-            "ally_front_all"
+            "enemy_single"
           ]
         }
       ],
@@ -971,212 +248,27 @@
       "blocks": [
         {
           "scopes": [
-            "ally_front_all"
+            "enemy_single"
           ],
-          "text": "味方前衛全体に 物防・属防・速度アップ15%の効果を付与（3ターン） さらに、物理攻撃（一部除く）を応ず回避する効果と 属性攻撃（一部除く）を必ず回避する効果を付与（1回）"
+          "text": "敵単体に剣物理攻撃（威力 170） さらに、物攻・物防・属攻・属防ダウン15%の効果を付与（2ターン）"
         }
       ]
     },
     {
-      "character_id": "781061",
-      "character_name": "ミディヤEx",
-      "ability_name": "凶星",
+      "character_id": "793075",
+      "character_name": "アーロン",
+      "ability_name": "牙龍",
       "source_type": "battle",
-      "cost": "【消費SP 62】",
+      "cost": "【消費SP 65】",
       "raw_text": [
-        "ランダムなターゲットに5回の光属性攻撃（威力30）",
-        "その後、敵全体に",
-        "風・光・闇耐性ダウン15%の効果を付与（2ターン）",
-        "ブーストMAX時：弱点以外でもシールドポイントを削る"
-      ],
-      "raw_text_pre_enhance": [],
-      "raw_text_boost": [
-        "【ブースト時】威力35/45/60"
-      ],
-      "effects": [
-        {
-          "role": "debuff",
-          "category": "resistance",
-          "unit": "%",
-          "sub_category": "elemental",
-          "value": 15,
-          "tag": "wind",
-          "cap_group": "debuff_resist_elem_wind",
-          "scopes": [
-            "enemy_all"
-          ]
-        },
-        {
-          "role": "debuff",
-          "category": "resistance",
-          "unit": "%",
-          "sub_category": "elemental",
-          "value": 15,
-          "tag": "light",
-          "cap_group": "debuff_resist_elem_light",
-          "scopes": [
-            "enemy_all"
-          ]
-        },
-        {
-          "role": "debuff",
-          "category": "resistance",
-          "unit": "%",
-          "sub_category": "elemental",
-          "value": 15,
-          "tag": "dark",
-          "cap_group": "debuff_resist_elem_dark",
-          "scopes": [
-            "enemy_all"
-          ]
-        }
-      ],
-      "conditions": [],
-      "unknown": [
-        "ランダムなターゲットに5回の光属性攻撃（威力30）"
-      ],
-      "blocks": [
-        {
-          "scopes": [
-            "random"
-          ],
-          "text": "ランダムなターゲットに5回の光属性攻撃（威力30）"
-        },
-        {
-          "scopes": [
-            "enemy_all"
-          ],
-          "text": "その後、敵全体に 風・光・闇耐性ダウン15%の効果を付与（2ターン） ブーストMAX時：弱点以外でもシールドポイントを削る"
-        }
-      ]
-    },
-    {
-      "character_id": "781061",
-      "character_name": "ミディヤEx",
-      "ability_name": "流星",
-      "source_type": "battle",
-      "cost": "【消費SP 62】",
-      "raw_text": [
-        "敵全体に2回ずつ風・光・闇属性攻撃（威力120）",
+        "敵全体に剣物理攻撃（威力 210）",
         "この攻撃は物防・属防アップとダメージ減少効果を無視する",
-        "ブーストMAX時：効果を再発動（SP消費無し）する"
+        "ブーストMAX時：さらに、速度ダウン30%の効果を付与（2ターン）",
+        "※行動順影響は2ターン目"
       ],
       "raw_text_pre_enhance": [],
       "raw_text_boost": [
-        "【ブースト時】威力130/160/195"
-      ],
-      "effects": [],
-      "conditions": [
-        "敵全体に2回ずつ風・光・闇属性攻撃（威力120） この攻撃は物防・属防アップとダメージ減少効果を無視する ブーストMAX時効果を再発動（SP消費無し）する"
-      ],
-      "unknown": [],
-      "blocks": [
-        {
-          "scopes": [
-            "enemy_all"
-          ],
-          "text": "敵全体に2回ずつ風・光・闇属性攻撃（威力120） この攻撃は物防・属防アップとダメージ減少効果を無視する ブーストMAX時：効果を再発動（SP消費無し）する"
-        }
-      ]
-    },
-    {
-      "character_id": "781061",
-      "character_name": "ミディヤEx",
-      "ability_name": "魔力のまたたき",
-      "source_type": "battle",
-      "cost": "【消費SP 96】",
-      "raw_text": [
-        "味方前後衛全体に属攻アップ15%と",
-        "風・光・闇属性ダメージアップ15%の効果を付与（2ターン）",
-        "ブーストMAX時：サポートアビリティ“満天の星”の",
-        "BPストックの付与数が2になる"
-      ],
-      "raw_text_pre_enhance": [],
-      "raw_text_boost": [
-        "【ブースト時】ターン3/4/5"
-      ],
-      "effects": [
-        {
-          "role": "buff",
-          "category": "damage",
-          "unit": "%",
-          "sub_category": "elemental",
-          "value": 15,
-          "tag": "wind",
-          "cap_group": "buff_damage_elem_wind",
-          "scopes": [
-            "ally_all"
-          ]
-        },
-        {
-          "role": "buff",
-          "category": "damage",
-          "unit": "%",
-          "sub_category": "elemental",
-          "value": 15,
-          "tag": "light",
-          "cap_group": "buff_damage_elem_light",
-          "scopes": [
-            "ally_all"
-          ]
-        },
-        {
-          "role": "buff",
-          "category": "damage",
-          "unit": "%",
-          "sub_category": "elemental",
-          "value": 15,
-          "tag": "dark",
-          "cap_group": "buff_damage_elem_dark",
-          "scopes": [
-            "ally_all"
-          ]
-        },
-        {
-          "role": "buff",
-          "category": "stat",
-          "unit": "%",
-          "sub_category": "attack_elemental",
-          "value": 15,
-          "cap_group": "buff_stat_atk_elem",
-          "scopes": [
-            "ally_all"
-          ]
-        }
-      ],
-      "conditions": [],
-      "unknown": [],
-      "blocks": [
-        {
-          "scopes": [
-            "ally_all"
-          ],
-          "text": "味方前後衛全体に属攻アップ15%と 風・光・闇属性ダメージアップ15%の効果を付与（2ターン） ブーストMAX時：サポートアビリティ“満天の星”の BPストックの付与数が2になる"
-        }
-      ]
-    },
-    {
-      "character_id": "781061",
-      "character_name": "ミディヤEx",
-      "ability_name": "妖星",
-      "source_type": "battle",
-      "cost": "【消費SP 48】",
-      "raw_text": [
-        "敵単体のシールドポイントを弱点に関係なく1削る",
-        "さらに、物防・属防・速度ダウン",
-        "30%",
-        "の効果を付与（3ターン）",
-        "ブーストMAX時：敵全体化",
-        "※行動順影響は2ターン目"
-      ],
-      "raw_text_pre_enhance": [
-        "敵単体のシールドポイントを弱点に関係なく1削る",
-        "さらに、物防・属防・速度ダウン15%の効果を付与（3ターン）",
-        "ブーストMAX時：敵全体化",
-        "※行動順影響は2ターン目"
-      ],
-      "raw_text_boost": [
-        "【ブースト時】2/3/4削る"
+        "【ブースト時】威力235/275/340"
       ],
       "effects": [
         {
@@ -1218,589 +310,56 @@
       "blocks": [
         {
           "scopes": [
-            "enemy_single"
-          ],
-          "text": "敵単体のシールドポイントを弱点に関係なく1削る さらに、物防・属防・速度ダウン 30% の効果を付与（3ターン） ブーストMAX時：敵全体化 ※行動順影響は2ターン目"
-        }
-      ]
-    },
-    {
-      "character_id": "781061",
-      "character_name": "ミディヤEx",
-      "ability_name": "明けの明星",
-      "source_type": "support",
-      "cost": null,
-      "raw_text": [
-        "戦闘開始時：味方前後衛全体にBPストックを3付与（最大3）",
-        "BPストック：ブースト時、BPの代わりにBPストックを消費する",
-        "※BP現在値を参照する効果の対象外"
-      ],
-      "raw_text_pre_enhance": [],
-      "effects": [],
-      "conditions": [
-        "戦闘開始時味方前後衛全体にBPストックを3付与（最大3） BPストックブースト時、BPの代わりにBPストックを消費する ※BP現在値を参照する効果の対象外"
-      ],
-      "unknown": [],
-      "blocks": [
-        {
-          "scopes": [
-            "ally_all"
-          ],
-          "text": "戦闘開始時：味方前後衛全体にBPストックを3付与（最大3） BPストック：ブースト時、BPの代わりにBPストックを消費する ※BP現在値を参照する効果の対象外"
-        }
-      ]
-    },
-    {
-      "character_id": "781061",
-      "character_name": "ミディヤEx",
-      "ability_name": "満天の星",
-      "source_type": "support",
-      "cost": null,
-      "raw_text": [
-        "自身にBP回復量1アップの効果を付与",
-        "自身がブーストMAXでアビリティを使用後",
-        "味方前後衛全体にBPストックを1付与（最大3）",
-        "BPストック：ブースト時、BPの代わりにBPストックを消費する",
-        "※BP現在値を参照する効果の対象外"
-      ],
-      "raw_text_pre_enhance": [],
-      "effects": [],
-      "conditions": [],
-      "unknown": [
-        "自身にBP回復量1アップの効果を付与 自身がブーストMAXでアビリティを使用後",
-        "味方前後衛全体にBPストックを1付与（最大3） BPストック：ブースト時、BPの代わりにBPストックを消費する ※BP現在値を参照する効果の対象外"
-      ],
-      "blocks": [
-        {
-          "scopes": [
-            "self"
-          ],
-          "text": "自身にBP回復量1アップの効果を付与 自身がブーストMAXでアビリティを使用後"
-        },
-        {
-          "scopes": [
-            "ally_all"
-          ],
-          "text": "味方前後衛全体にBPストックを1付与（最大3） BPストック：ブースト時、BPの代わりにBPストックを消費する ※BP現在値を参照する効果の対象外"
-        }
-      ]
-    },
-    {
-      "character_id": "781061",
-      "character_name": "ミディヤEx",
-      "ability_name": "超新星の眩耀",
-      "source_type": "support",
-      "cost": null,
-      "raw_text": [
-        "味方がBPストックを消費できた時",
-        "消費したBPストック量に応じて",
-        "その味方の行動中の最終ダメージアップ",
-        "1消費時：5%、2消費時：10%、3消費時：20%"
-      ],
-      "raw_text_pre_enhance": [],
-      "effects": [],
-      "conditions": [
-        "味方がBPストックを消費できた時 消費したBPストック量に応じて その味方の行動中の最終ダメージアップ 1消費時5%、2消費時10%、3消費時20%"
-      ],
-      "unknown": [],
-      "blocks": [
-        {
-          "scopes": [],
-          "text": "味方がBPストックを消費できた時 消費したBPストック量に応じて その味方の行動中の最終ダメージアップ 1消費時：5%、2消費時：10%、3消費時：20%"
-        }
-      ]
-    },
-    {
-      "character_id": "781061",
-      "character_name": "ミディヤEx",
-      "ability_name": "無辺際の星食",
-      "source_type": "support",
-      "cost": null,
-      "raw_text": [
-        "味方がBP3以上消費してアビリティを使用時",
-        "その味方に物攻・属攻アップ",
-        "30%",
-        "の効果と",
-        "サポアビと装備性能による物攻・属攻アップの上限が",
-        "60%",
-        "になる効果を付与（4ターン）",
-        "コマンド選択時にBP5以上の味方に",
-        "威力アップ",
-        "75%",
-        "の効果を付与（同系統の効果重複不可）"
-      ],
-      "raw_text_pre_enhance": [
-        "味方がBP3以上消費してアビリティを使用時",
-        "その味方に物攻・属攻アップ20%の効果と",
-        "サポアビと装備性能による物攻・属攻アップの上限が",
-        "50%になる効果を付与（4ターン）",
-        "コマンド選択時にBP5以上の味方に",
-        "威力アップ50%の効果を付与（同系統の効果重複不可）"
-      ],
-      "effects": [
-        {
-          "role": "buff",
-          "category": "stat",
-          "unit": "%",
-          "sub_category": "attack_physical",
-          "value": 30,
-          "cap_group": "buff_stat_atk_phys",
-          "scopes": []
-        },
-        {
-          "role": "buff",
-          "category": "stat",
-          "unit": "%",
-          "sub_category": "attack_elemental",
-          "value": 30,
-          "cap_group": "buff_stat_atk_elem",
-          "scopes": []
-        },
-        {
-          "role": "buff",
-          "category": "power",
-          "unit": "%",
-          "target_source_type": "battle",
-          "value": 75,
-          "cap_group": "power_up",
-          "scopes": []
-        },
-        {
-          "role": "buff",
-          "category": "cap_increase",
-          "unit": "%",
-          "sub_category": "attack",
-          "target_source_type": "support",
-          "value": 60,
-          "cap_group": "buff_stat_atk_phys",
-          "scopes": []
-        },
-        {
-          "role": "buff",
-          "category": "cap_increase",
-          "unit": "%",
-          "sub_category": "attack",
-          "target_source_type": "support",
-          "value": 60,
-          "cap_group": "buff_stat_atk_elem",
-          "scopes": []
-        }
-      ],
-      "conditions": [],
-      "unknown": [],
-      "blocks": [
-        {
-          "scopes": [],
-          "text": "味方がBP3以上消費してアビリティを使用時 その味方に物攻・属攻アップ 30% の効果と サポアビと装備性能による物攻・属攻アップの上限が 60% になる効果を付与（4ターン） コマンド選択時にBP5以上の味方に 威力アップ 75% の効果を付与（同系統の効果重複不可）"
-        }
-      ]
-    },
-    {
-      "character_id": "781061",
-      "character_name": "ミディヤEx",
-      "ability_name": "星占師の予言",
-      "source_type": "ultimate",
-      "cost": "超威発動",
-      "raw_text": [
-        "【Lv.MAX】",
-        "敵全体に4回の光属性攻撃（威力 250）",
-        "味方前後衛全体の残BP1つにつき",
-        "この必殺技のダメージ上限が50000上昇する",
-        "（消費予定のBPもカウントする/BPストックは対象外）",
-        "コマンド選択時に自身のBPが3以上の時威力が1.5倍"
-      ],
-      "raw_text_pre_enhance": [],
-      "effects": [],
-      "conditions": [],
-      "unknown": [
-        "【Lv.MAX】",
-        "敵全体に4回の光属性攻撃（威力 250）",
-        "味方前後衛全体の残BP1つにつき この必殺技のダメージ上限が50000上昇する （消費予定のBPもカウントする/BPストックは対象外）",
-        "コマンド選択時に自身のBPが3以上の時威力が1.5倍"
-      ],
-      "blocks": [
-        {
-          "scopes": [],
-          "text": "【Lv.MAX】"
-        },
-        {
-          "scopes": [
             "enemy_all"
           ],
-          "text": "敵全体に4回の光属性攻撃（威力 250）"
-        },
-        {
-          "scopes": [
-            "ally_all"
-          ],
-          "text": "味方前後衛全体の残BP1つにつき この必殺技のダメージ上限が50000上昇する （消費予定のBPもカウントする/BPストックは対象外）"
-        },
-        {
-          "scopes": [
-            "self"
-          ],
-          "text": "コマンド選択時に自身のBPが3以上の時威力が1.5倍"
+          "text": "敵全体に剣物理攻撃（威力 210） この攻撃は物防・属防アップとダメージ減少効果を無視する ブーストMAX時：さらに、速度ダウン30%の効果を付与（2ターン） ※行動順影響は2ターン目"
         }
       ]
     },
     {
-      "character_id": "781061",
-      "character_name": "ミディヤEx",
-      "ability_name": "星のゆりかご",
-      "source_type": "ex",
-      "cost": "回数：1",
-      "raw_text": [
-        "ターン中、素早く行動し、味方前後衛全体に",
-        "BP回復量2アップの効果と",
-        "ダメージ上限アップ（効果量 /100000）の効果を付与（1ターン）し",
-        "BPストックを2付与（最大3）",
-        "ブーストMAX時：さらに、",
-        "威力アップ100%の効果を付与（自身2ターン/他1ターン/",
-        "ターン延長不可/同系統の効果重複不可）",
-        "BPストック：ブースト時、BPの代わりにBPストックを消費する",
-        "※BP現在値を参照する効果の対象外"
-      ],
-      "raw_text_pre_enhance": [],
-      "raw_text_condition": [
-        "【使用条件】3ターン目以降"
-      ],
-      "raw_text_boost": [
-        "【ブースト時】ターン2/3/4"
-      ],
-      "effects": [
-        {
-          "role": "buff",
-          "category": "power",
-          "unit": "%",
-          "target_source_type": "battle",
-          "value": 100,
-          "cap_group": "power_up",
-          "scopes": [
-            "ally_all"
-          ]
-        }
-      ],
-      "conditions": [],
-      "unknown": [],
-      "blocks": [
-        {
-          "scopes": [
-            "ally_all"
-          ],
-          "text": "ターン中、素早く行動し、味方前後衛全体に BP回復量2アップの効果と ダメージ上限アップ（効果量 /100000）の効果を付与（1ターン）し BPストックを2付与（最大3） ブーストMAX時：さらに、 威力アップ100%の効果を付与（自身2ターン/他1ターン/ ターン延長不可/同系統の効果重複不可） BPストック：ブースト時、BPの代わりにBPストックを消費する ※BP現在値を参照する効果の対象外"
-        }
-      ]
-    }
-  ],
-  [
-    {
-      "character_id": "778302",
-      "character_name": "双炎の聖者",
-      "ability_name": "聖炎波",
+      "character_id": "793075",
+      "character_name": "アーロン",
+      "ability_name": "流星",
       "source_type": "battle",
-      "cost": "【消費SP 34】",
+      "cost": "【消費SP 61】",
       "raw_text": [
-        "敵単体に2回の光属性攻撃（威力 90）",
-        "剣・火弱点を突ける（ダメージ計算は光属性）"
+        "敵単体に剣物理攻撃（威力 290）",
+        "この攻撃は物防・属防アップとダメージ減少効果を無視する",
+        "ブーストMAX時：攻撃回数が3回になる"
       ],
       "raw_text_pre_enhance": [],
       "raw_text_boost": [
-        "【ブースト時】威力105/125/180"
+        "【ブースト時】威力320/380/500"
       ],
       "effects": [],
-      "conditions": [],
-      "unknown": [
-        "敵単体に2回の光属性攻撃（威力 90） 剣・火弱点を突ける（ダメージ計算は光属性）"
+      "conditions": [
+        "敵単体に剣物理攻撃（威力 290） この攻撃は物防・属防アップとダメージ減少効果を無視する ブーストMAX時攻撃回数が3回になる"
       ],
+      "unknown": [],
       "blocks": [
         {
           "scopes": [
             "enemy_single"
           ],
-          "text": "敵単体に2回の光属性攻撃（威力 90） 剣・火弱点を突ける（ダメージ計算は光属性）"
+          "text": "敵単体に剣物理攻撃（威力 290） この攻撃は物防・属防アップとダメージ減少効果を無視する ブーストMAX時：攻撃回数が3回になる"
         }
       ]
     },
     {
-      "character_id": "778302",
-      "character_name": "双炎の聖者",
-      "ability_name": "健全化(前全)",
+      "character_id": "793075",
+      "character_name": "アーロン",
+      "ability_name": "征伐",
       "source_type": "battle",
-      "cost": "【消費SP 30】",
+      "cost": "【消費SP 70】",
       "raw_text": [
-        "味方前衛全体の状態異常を回復",
-        "さらに、状態異常無効化の効果を付与（一部除く/1ターン）",
-        "ブーストMAX時：同対象の特殊効果”交代禁止”、",
-        "“昏睡”、”静寂”、”魅了”、“死の宣告”を回復"
+        "敵全体に剣物理攻撃（威力 180）",
+        "この攻撃は物防・属防アップとダメージ減少効果を無視する",
+        "ブーストMAX時：さらに",
+        "物攻・物防・属攻・属防ダウン20%の効果を付与（2ターン）"
       ],
       "raw_text_pre_enhance": [],
       "raw_text_boost": [
-        "【ブースト時】ターン2/3/4"
-      ],
-      "effects": [],
-      "conditions": [
-        "味方前衛全体の状態異常を回復 さらに、状態異常無効化の効果を付与（一部除く/1ターン） ブーストMAX時同対象の特殊効果”交代禁止”、 “昏睡”、”静寂”、”魅了”、“死の宣告”を回復"
-      ],
-      "unknown": [],
-      "blocks": [
-        {
-          "scopes": [
-            "ally_front_all"
-          ],
-          "text": "味方前衛全体の状態異常を回復 さらに、状態異常無効化の効果を付与（一部除く/1ターン） ブーストMAX時：同対象の特殊効果”交代禁止”、 “昏睡”、”静寂”、”魅了”、“死の宣告”を回復"
-        }
-      ]
-    },
-    {
-      "character_id": "778302",
-      "character_name": "双炎の聖者",
-      "ability_name": "黒呪破",
-      "source_type": "battle",
-      "cost": "【消費SP 34】",
-      "raw_text": [
-        "敵単体に2回の闇属性攻撃（威力 90）",
-        "剣・火弱点を突ける（ダメージ計算は闇属性）"
-      ],
-      "raw_text_pre_enhance": [],
-      "raw_text_boost": [
-        "【ブースト時】威力105/125/180"
-      ],
-      "effects": [],
-      "conditions": [],
-      "unknown": [
-        "敵単体に2回の闇属性攻撃（威力 90） 剣・火弱点を突ける（ダメージ計算は闇属性）"
-      ],
-      "blocks": [
-        {
-          "scopes": [
-            "enemy_single"
-          ],
-          "text": "敵単体に2回の闇属性攻撃（威力 90） 剣・火弱点を突ける（ダメージ計算は闇属性）"
-        }
-      ]
-    },
-    {
-      "character_id": "778302",
-      "character_name": "双炎の聖者",
-      "ability_name": "退光の火種",
-      "source_type": "battle",
-      "cost": "【消費SP 44】",
-      "raw_text": [
-        "敵全体に2回の光属性攻撃（威力 70）",
-        "剣・火弱点を突ける（ダメージ計算は光属性）",
-        "さらに、光耐性ダウン15%の効果を付与（2ターン）"
-      ],
-      "raw_text_pre_enhance": [],
-      "raw_text_boost": [
-        "【ブースト時】威力80/100/120"
-      ],
-      "effects": [
-        {
-          "role": "debuff",
-          "category": "resistance",
-          "unit": "%",
-          "sub_category": "elemental",
-          "value": 15,
-          "tag": "light",
-          "cap_group": "debuff_resist_elem_light",
-          "scopes": [
-            "enemy_all"
-          ]
-        }
-      ],
-      "conditions": [],
-      "unknown": [],
-      "blocks": [
-        {
-          "scopes": [
-            "enemy_all"
-          ],
-          "text": "敵全体に2回の光属性攻撃（威力 70） 剣・火弱点を突ける（ダメージ計算は光属性） さらに、光耐性ダウン15%の効果を付与（2ターン）"
-        }
-      ]
-    },
-    {
-      "character_id": "778302",
-      "character_name": "双炎の聖者",
-      "ability_name": "退間の火種",
-      "source_type": "battle",
-      "cost": "【消費SP 44】",
-      "raw_text": [
-        "敵全体に2回の闇属性攻撃（威力 70）",
-        "剣・火弱点を突ける（ダメージ計算は闇属性）",
-        "さらに、耐性ダウン15%の効果を付与（2ターン)"
-      ],
-      "raw_text_pre_enhance": [],
-      "raw_text_boost": [
-        "【ブースト時】威力80/100/120"
-      ],
-      "effects": [],
-      "conditions": [],
-      "unknown": [
-        "敵全体に2回の闇属性攻撃（威力 70） 剣・火弱点を突ける（ダメージ計算は闇属性） さらに、耐性ダウン15%の効果を付与（2ターン)"
-      ],
-      "blocks": [
-        {
-          "scopes": [
-            "enemy_all"
-          ],
-          "text": "敵全体に2回の闇属性攻撃（威力 70） 剣・火弱点を突ける（ダメージ計算は闇属性） さらに、耐性ダウン15%の効果を付与（2ターン)"
-        }
-      ]
-    },
-    {
-      "character_id": "778302",
-      "character_name": "双炎の聖者",
-      "ability_name": "極光創奏",
-      "source_type": "battle",
-      "cost": "【消費SP 56】",
-      "raw_text": [
-        "ランダムなターゲットに光属性攻撃",
-        "ブーストLvに応じて攻撃回数（威力80/3回）",
-        "剣・火弱点を突ける（ダメージ計算は光属性）"
-      ],
-      "raw_text_pre_enhance": [],
-      "raw_text_boost": [
-        "【ブースト時】威力75/75/70 攻撃回数4/5/6"
-      ],
-      "effects": [],
-      "conditions": [],
-      "unknown": [
-        "ランダムなターゲットに光属性攻撃 ブーストLvに応じて攻撃回数（威力80/3回） 剣・火弱点を突ける（ダメージ計算は光属性）"
-      ],
-      "blocks": [
-        {
-          "scopes": [
-            "random"
-          ],
-          "text": "ランダムなターゲットに光属性攻撃 ブーストLvに応じて攻撃回数（威力80/3回） 剣・火弱点を突ける（ダメージ計算は光属性）"
-        }
-      ]
-    },
-    {
-      "character_id": "778302",
-      "character_name": "双炎の聖者",
-      "ability_name": "深黒葬送",
-      "source_type": "battle",
-      "cost": "【消費SP 56】",
-      "raw_text": [
-        "ランダムなターゲットに闇属性攻撃",
-        "ブーストLvに応じて攻撃回数増加（威力 85/3回）",
-        "剣・火弱点を突ける（ダメージ計算は闇属性）"
-      ],
-      "raw_text_pre_enhance": [],
-      "raw_text_boost": [
-        "【ブースト時】威力75/75/70 攻撃回数4/5/6"
-      ],
-      "effects": [],
-      "conditions": [],
-      "unknown": [
-        "ランダムなターゲットに闇属性攻撃 ブーストLvに応じて攻撃回数増加（威力 85/3回） 剣・火弱点を突ける（ダメージ計算は闇属性）"
-      ],
-      "blocks": [
-        {
-          "scopes": [
-            "random"
-          ],
-          "text": "ランダムなターゲットに闇属性攻撃 ブーストLvに応じて攻撃回数増加（威力 85/3回） 剣・火弱点を突ける（ダメージ計算は闇属性）"
-        }
-      ]
-    },
-    {
-      "character_id": "778302",
-      "character_name": "双炎の聖者",
-      "ability_name": "聖炎恢閃",
-      "source_type": "battle",
-      "cost": "【消費SP 113】",
-      "raw_text": [
-        "敵全体に4回の光属性攻撃（威力 25）",
-        "剣・火弱点を突ける（ダメージ計算は光属性）",
-        "さらに、味方前衛全体に",
-        "物攻・物防・属攻・属防アップ15%の効果を付与（2ターン）"
-      ],
-      "raw_text_pre_enhance": [],
-      "raw_text_boost": [
-        "【ブースト時】威力35/45/60"
-      ],
-      "effects": [
-        {
-          "role": "buff",
-          "category": "stat",
-          "unit": "%",
-          "sub_category": "attack_physical",
-          "value": 15,
-          "cap_group": "buff_stat_atk_phys",
-          "scopes": [
-            "ally_front_all"
-          ]
-        },
-        {
-          "role": "buff",
-          "category": "stat",
-          "unit": "%",
-          "sub_category": "attack_elemental",
-          "value": 15,
-          "cap_group": "buff_stat_atk_elem",
-          "scopes": [
-            "ally_front_all"
-          ]
-        },
-        {
-          "role": "buff",
-          "category": "stat",
-          "unit": "%",
-          "sub_category": "defence_physical",
-          "value": 15,
-          "cap_group": "buff_stat_def_phys",
-          "scopes": [
-            "ally_front_all"
-          ]
-        },
-        {
-          "role": "buff",
-          "category": "stat",
-          "unit": "%",
-          "sub_category": "defence_elemental",
-          "value": 15,
-          "cap_group": "buff_stat_def_elem",
-          "scopes": [
-            "ally_front_all"
-          ]
-        }
-      ],
-      "conditions": [],
-      "unknown": [
-        "敵全体に4回の光属性攻撃（威力 25） 剣・火弱点を突ける（ダメージ計算は光属性）"
-      ],
-      "blocks": [
-        {
-          "scopes": [
-            "enemy_all"
-          ],
-          "text": "敵全体に4回の光属性攻撃（威力 25） 剣・火弱点を突ける（ダメージ計算は光属性）"
-        },
-        {
-          "scopes": [
-            "ally_front_all"
-          ],
-          "text": "さらに、味方前衛全体に 物攻・物防・属攻・属防アップ15%の効果を付与（2ターン）"
-        }
-      ]
-    },
-    {
-      "character_id": "778302",
-      "character_name": "双炎の聖者",
-      "ability_name": "黒呪壊閃",
-      "source_type": "battle",
-      "cost": "【消費SP 84】",
-      "raw_text": [
-        "敵全体に4回の闇属性攻撃（威力 25）",
-        "剣・火弱点を突ける（ダメージ計算は闇属性）",
-        "さらに、物攻・物防・属攻・属防ダウン15%の効果を付与（2ターン）"
-      ],
-      "raw_text_pre_enhance": [],
-      "raw_text_boost": [
-        "【ブースト時】威力35/45/60"
+        "【ブースト時】威力205/245/300"
       ],
       "effects": [
         {
@@ -1808,7 +367,7 @@
           "category": "stat",
           "unit": "%",
           "sub_category": "defence_physical",
-          "value": 15,
+          "value": 20,
           "cap_group": "debuff_stat_def_phys",
           "scopes": [
             "enemy_all"
@@ -1819,7 +378,7 @@
           "category": "stat",
           "unit": "%",
           "sub_category": "defence_elemental",
-          "value": 15,
+          "value": 20,
           "cap_group": "debuff_stat_def_elem",
           "scopes": [
             "enemy_all"
@@ -1830,7 +389,7 @@
           "category": "stat",
           "unit": "%",
           "sub_category": "attack_physical",
-          "value": 15,
+          "value": 20,
           "cap_group": "debuff_stat_atk_phys",
           "scopes": [
             "enemy_all"
@@ -1841,7 +400,7 @@
           "category": "stat",
           "unit": "%",
           "sub_category": "attack_elemental",
-          "value": 15,
+          "value": 20,
           "cap_group": "debuff_stat_atk_elem",
           "scopes": [
             "enemy_all"
@@ -1855,286 +414,72 @@
           "scopes": [
             "enemy_all"
           ],
-          "text": "敵全体に4回の闇属性攻撃（威力 25） 剣・火弱点を突ける（ダメージ計算は闇属性） さらに、物攻・物防・属攻・属防ダウン15%の効果を付与（2ターン）"
+          "text": "敵全体に剣物理攻撃（威力 180） この攻撃は物防・属防アップとダメージ減少効果を無視する ブーストMAX時：さらに 物攻・物防・属攻・属防ダウン20%の効果を付与（2ターン）"
         }
       ]
     },
     {
-      "character_id": "778302",
-      "character_name": "双炎の聖者",
-      "ability_name": "聖呪剣",
+      "character_id": "793075",
+      "character_name": "アーロン",
+      "ability_name": "陣風",
       "source_type": "battle",
-      "cost": "【消費SP 63】",
+      "cost": "【消費SP 88】",
       "raw_text": [
-        "敵単体に剣物理攻撃（威力 260）",
-        "火・光・闇弱点を突ける（ダメージ計算は剣物理）",
-        "BP2以上消費時：攻撃効果の前に",
-        "攻撃対象に剣耐性ダウン20%と",
-        "バトルアビリティによる剣耐性ダウンを受けた際の",
-        "上限が50%になる効果",
-        "を付与（2ターン）",
-        "ブーストMAX時：さらに、攻撃効果の後に",
-        "自身を除く味方前衛全体のBPを1回復"
+        "敵全体に4回の剣物理攻撃（威力 45）",
+        "風弱点を突ける（ダメージ計算は剣物理）",
+        "この攻撃は物防・属防アップとダメージ減少効果を無視する",
+        "ブーストMAX時：威力が1.5倍（※威力値に反映）になり",
+        "火弱点も突けるようになる"
       ],
-      "raw_text_pre_enhance": [
-        "敵単体に剣物理攻撃（威力 260）",
-        "火・光・闇弱点を突ける（ダメージ計算は剣物理）",
-        "BP2以上消費時：攻撃効果の前に",
-        "攻撃対象に剣耐性ダウン20%の効果を付与（2ターン）",
-        "ブーストMAX時：さらに、攻撃効果の後に",
-        "自身を除く味方前衛全体のBPを1回復"
-      ],
+      "raw_text_pre_enhance": [],
       "raw_text_boost": [
-        "【ブースト時】威力290/340/450"
+        "【ブースト時】威力55/65/120"
       ],
-      "effects": [
-        {
-          "role": "debuff",
-          "category": "cap_increase",
-          "unit": "%",
-          "sub_category": "physical",
-          "target_source_type": "battle",
-          "value": 50,
-          "tag": "sword",
-          "cap_group": "debuff_resist_phys_sword",
-          "scopes": [
-            "enemy_single"
-          ]
-        },
-        {
-          "role": "debuff",
-          "category": "resistance",
-          "unit": "%",
-          "sub_category": "physical",
-          "value": 20,
-          "tag": "sword",
-          "cap_group": "debuff_resist_phys_sword",
-          "scopes": [
-            "enemy_single"
-          ]
-        }
-      ],
-      "conditions": [],
-      "unknown": [
-        "自身を除く味方前衛全体のBPを1回復"
-      ],
-      "blocks": [
-        {
-          "scopes": [
-            "enemy_single"
-          ],
-          "text": "敵単体に剣物理攻撃（威力 260） 火・光・闇弱点を突ける（ダメージ計算は剣物理） BP2以上消費時：攻撃効果の前に 攻撃対象に剣耐性ダウン20%と バトルアビリティによる剣耐性ダウンを受けた際の 上限が50%になる効果 を付与（2ターン） ブーストMAX時：さらに、攻撃効果の後に"
-        },
-        {
-          "scopes": [
-            "self_exclude",
-            "ally_front_all"
-          ],
-          "text": "自身を除く味方前衛全体のBPを1回復"
-        }
-      ]
-    },
-    {
-      "character_id": "778302",
-      "character_name": "双炎の聖者",
-      "ability_name": "スタイルシフト：黒呪炎",
-      "source_type": "support",
-      "cost": null,
-      "raw_text": [
-        "自身の「たたかう」が剣物理攻撃になり",
-        "光・闇弱点を突けるようになる（ダメージ計算は剣物理）",
-        "コマンド選択時、“聖炎”と“黒呪炎”にスタイルを切り替えられる",
-        "聖炎時：自身に属攻アップ20%と光属性ダメージアップ20%と",
-        "サポアビと装備性能による属攻アップと",
-        "光属性ダメージアップの上限が50%になる効果を付与",
-        "黒呪炎時：自身に属攻アップ20%と闇属性ダメージアップ20%と",
-        "サポアビと装備性能による属攻アップと",
-        "闇属性ダメージアップの上限が50%になる効果を付与"
-      ],
-      "raw_text_pre_enhance": [],
-      "effects": [
-        {
-          "role": "buff",
-          "category": "damage",
-          "unit": "%",
-          "sub_category": "elemental",
-          "value": 20,
-          "tag": "light",
-          "cap_group": "buff_damage_elem_light",
-          "scopes": [
-            "self"
-          ]
-        },
-        {
-          "role": "buff",
-          "category": "stat",
-          "unit": "%",
-          "sub_category": "attack_elemental",
-          "value": 20,
-          "cap_group": "buff_stat_atk_elem",
-          "scopes": [
-            "self"
-          ]
-        },
-        {
-          "role": "buff",
-          "category": "cap_increase",
-          "unit": "%",
-          "sub_category": "attack",
-          "target_source_type": "support",
-          "value": 50,
-          "cap_group": "buff_stat_atk_elem",
-          "scopes": [
-            "self"
-          ]
-        },
-        {
-          "role": "buff",
-          "category": "cap_increase",
-          "unit": "%",
-          "sub_category": "elemental",
-          "target_source_type": "support",
-          "value": 50,
-          "tag": "light",
-          "cap_group": "buff_damage_elem_light",
-          "scopes": [
-            "self"
-          ]
-        },
-        {
-          "role": "buff",
-          "category": "damage",
-          "unit": "%",
-          "sub_category": "elemental",
-          "value": 20,
-          "tag": "dark",
-          "cap_group": "buff_damage_elem_dark",
-          "scopes": [
-            "self"
-          ]
-        },
-        {
-          "role": "buff",
-          "category": "stat",
-          "unit": "%",
-          "sub_category": "attack_elemental",
-          "value": 20,
-          "cap_group": "buff_stat_atk_elem",
-          "scopes": [
-            "self"
-          ]
-        },
-        {
-          "role": "buff",
-          "category": "cap_increase",
-          "unit": "%",
-          "sub_category": "attack",
-          "target_source_type": "support",
-          "value": 50,
-          "cap_group": "buff_stat_atk_elem",
-          "scopes": [
-            "self"
-          ]
-        },
-        {
-          "role": "buff",
-          "category": "cap_increase",
-          "unit": "%",
-          "sub_category": "elemental",
-          "target_source_type": "support",
-          "value": 50,
-          "tag": "dark",
-          "cap_group": "buff_damage_elem_dark",
-          "scopes": [
-            "self"
-          ]
-        }
-      ],
-      "conditions": [],
-      "unknown": [
-        "自身の「たたかう」が剣物理攻撃になり 光・闇弱点を突けるようになる（ダメージ計算は剣物理） コマンド選択時、“聖炎”と“黒呪炎”にスタイルを切り替えられる"
-      ],
-      "blocks": [
-        {
-          "scopes": [
-            "self"
-          ],
-          "text": "自身の「たたかう」が剣物理攻撃になり 光・闇弱点を突けるようになる（ダメージ計算は剣物理） コマンド選択時、“聖炎”と“黒呪炎”にスタイルを切り替えられる"
-        },
-        {
-          "scopes": [
-            "self"
-          ],
-          "text": "聖炎時：自身に属攻アップ20%と光属性ダメージアップ20%と サポアビと装備性能による属攻アップと 光属性ダメージアップの上限が50%になる効果を付与"
-        },
-        {
-          "scopes": [
-            "self"
-          ],
-          "text": "黒呪炎時：自身に属攻アップ20%と闇属性ダメージアップ20%と サポアビと装備性能による属攻アップと 闇属性ダメージアップの上限が50%になる効果を付与"
-        }
-      ]
-    },
-    {
-      "character_id": "778302",
-      "character_name": "双炎の聖者",
-      "ability_name": "開始時SPストック(全体)Ⅲ",
-      "source_type": "support",
-      "cost": null,
-      "raw_text": [
-        "戦闘開始時：味方前後衛全体に",
-        "SPストックを付与（効果量 使用者の最大SPの30%/重複不可）"
-      ],
-      "raw_text_pre_enhance": [],
       "effects": [],
       "conditions": [
-        "戦闘開始時味方前後衛全体に SPストックを付与（効果量 使用者の最大SPの30%/重複不可）"
+        "敵全体に4回の剣物理攻撃（威力 45） 風弱点を突ける（ダメージ計算は剣物理） この攻撃は物防・属防アップとダメージ減少効果を無視する ブーストMAX時威力が1.5倍（※威力値に反映）になり 火弱点も突けるようになる"
       ],
       "unknown": [],
       "blocks": [
         {
           "scopes": [
-            "ally_all"
+            "enemy_all"
           ],
-          "text": "戦闘開始時：味方前後衛全体に SPストックを付与（効果量 使用者の最大SPの30%/重複不可）"
+          "text": "敵全体に4回の剣物理攻撃（威力 45） 風弱点を突ける（ダメージ計算は剣物理） この攻撃は物防・属防アップとダメージ減少効果を無視する ブーストMAX時：威力が1.5倍（※威力値に反映）になり 火弱点も突けるようになる"
         }
       ]
     },
     {
-      "character_id": "778302",
-      "character_name": "双炎の聖者",
-      "ability_name": "原母神の加護",
-      "source_type": "support",
-      "cost": null,
+      "character_id": "793075",
+      "character_name": "アーロン",
+      "ability_name": "鉄壁",
+      "source_type": "battle",
+      "cost": "【消費SP 80】",
       "raw_text": [
-        "ブレイク中の敵がいる時：自身に属攻アップ30%と",
-        "光・闇属性ダメージアップ30%と",
-        "属性攻撃でクリティカルが発生する効果を付与",
-        "さらに、自身の物攻に物防の50%、属攻に属防の50%を加算する",
-        "（装備ステータス含む/対象ステータス毎に最大値を適用）"
+        "ターン中、素早く行動し",
+        "自身に物防・属防アップ30%の効果（2ターン）と",
+        "自身の物防と属防に物攻の50%を加算する効果を付与（2ターン）",
+        "（装備ステータス含む/対象ステータス毎に最大値を適用）",
+        "さらに、味方前衛への単体攻撃ダメージを",
+        "代わりに受ける効果を付与（2ターン/後衛でも発動）"
       ],
-      "raw_text_pre_enhance": [],
+      "raw_text_pre_enhance": [
+        "ターン中、素早く行動し",
+        "自身に物防・属防アップ30%の効果を付与（2ターン）",
+        "さらに、味方前衛への単体攻撃ダメージを",
+        "代わりに受ける効果を付与（2ターン/後衛でも発動）"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】ターン3/4/5"
+      ],
       "effects": [
         {
           "role": "buff",
-          "category": "damage",
+          "category": "stat",
           "unit": "%",
-          "sub_category": "elemental",
+          "sub_category": "defence_physical",
           "value": 30,
-          "tag": "light",
-          "cap_group": "buff_damage_elem_light",
-          "scopes": [
-            "self"
-          ]
-        },
-        {
-          "role": "buff",
-          "category": "damage",
-          "unit": "%",
-          "sub_category": "elemental",
-          "value": 30,
-          "tag": "dark",
-          "cap_group": "buff_damage_elem_dark",
+          "cap_group": "buff_stat_def_phys",
           "scopes": [
             "self"
           ]
@@ -2143,21 +488,9 @@
           "role": "buff",
           "category": "stat",
           "unit": "%",
-          "sub_category": "attack_elemental",
+          "sub_category": "defence_elemental",
           "value": 30,
-          "cap_group": "buff_stat_atk_elem",
-          "scopes": [
-            "self"
-          ]
-        },
-        {
-          "role": "buff",
-          "category": "critical",
-          "unit": "",
-          "sub_category": "elemental",
-          "target_source_type": "battle",
-          "value": 1,
-          "cap_group": "critical_elem",
+          "cap_group": "buff_stat_def_elem",
           "scopes": [
             "self"
           ]
@@ -2165,98 +498,149 @@
       ],
       "conditions": [],
       "unknown": [
-        "さらに、自身の物攻に物防の50%、属攻に属防の50%を加算する （装備ステータス含む/対象ステータス毎に最大値を適用）"
+        "ターン中、素早く行動し",
+        "自身の物防と属防に物攻の50%を加算する効果を付与（2ターン） （装備ステータス含む/対象ステータス毎に最大値を適用） さらに、味方前衛への単体攻撃ダメージを 代わりに受ける効果を付与（2ターン/後衛でも発動）"
       ],
       "blocks": [
         {
-          "scopes": [
-            "self"
-          ],
-          "text": "ブレイク中の敵がいる時：自身に属攻アップ30%と 光・闇属性ダメージアップ30%と 属性攻撃でクリティカルが発生する効果を付与"
+          "scopes": [],
+          "text": "ターン中、素早く行動し"
         },
         {
           "scopes": [
             "self"
           ],
-          "text": "さらに、自身の物攻に物防の50%、属攻に属防の50%を加算する （装備ステータス含む/対象ステータス毎に最大値を適用）"
+          "text": "自身に物防・属防アップ30%の効果（2ターン）と"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身の物防と属防に物攻の50%を加算する効果を付与（2ターン） （装備ステータス含む/対象ステータス毎に最大値を適用） さらに、味方前衛への単体攻撃ダメージを 代わりに受ける効果を付与（2ターン/後衛でも発動）"
         }
       ]
     },
     {
-      "character_id": "778302",
-      "character_name": "双炎の聖者",
-      "ability_name": "双炎の猛り",
+      "character_id": "793075",
+      "character_name": "アーロン",
+      "ability_name": "伝説のガード",
       "source_type": "support",
       "cost": null,
       "raw_text": [
-        "聖炎時：自身に",
-        "SP自動回復（回復量 最大SPの8%）と",
-        "BP回復量1アップ",
-        "と",
-        "使用する攻撃アビリティを2回発動する効果を付与",
-        "（追加発動分はSP消費無し）",
-        "黒呪炎時：味方前衛全体に攻撃後（反撃、必殺技など一部除く）",
-        "双炎の聖者が追撃する効果を付与",
-        "（行動順での攻撃のみ/攻撃回数によらず1回のみ発動）",
-        "※”ブレイクさせた時”効果は起点の味方のみ発動",
-        "追撃：敵全体に2回の闇属性攻撃（威力50）",
-        "剣・火弱点を突ける（ダメージ計算は闇属性）"
+        "前衛が3人以上生存時：自身に",
+        "物理・属性攻撃に対して反撃する効果を付与",
+        "反撃：対象に剣物理攻撃（威力1000）",
+        "攻撃を完全に回避する効果と攻撃を完全に防ぐ効果を無視する",
+        "※この攻撃ではシールドは減少しない",
+        "前衛が3人以上生存時かつブレイク中の敵がいる時",
+        "自身にダメージ上限アップ（効果量 300000）の効果を付与"
       ],
-      "raw_text_pre_enhance": [
-        "聖炎時：自身に使用する攻撃アビリティを2回発動する効果を付与",
-        "（追加発動分はSP消費無し）",
-        "黒呪炎時：味方前衛全体に攻撃後（反撃、必殺技など一部除く）",
-        "双炎の聖者が追撃する効果を付与",
-        "（行動順での攻撃のみ/攻撃回数によらず1回のみ発動）",
-        "※”ブレイクさせた時”効果は起点の味方のみ発動",
-        "追撃：敵全体に2回の闇属性攻撃（威力50）",
-        "剣・火弱点を突ける（ダメージ計算は闇属性）"
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 300000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "self"
+          ]
+        }
       ],
-      "effects": [],
       "conditions": [
-        "聖炎時自身に SP自動回復（回復量 最大SPの8%）と BP回復量1アップ と 使用する攻撃アビリティを2回発動する効果を付与 （追加発動分はSP消費無し）",
-        "黒呪炎時味方前衛全体に攻撃後（反撃、必殺技など一部除く） 双炎の聖者が追撃する効果を付与 （行動順での攻撃のみ/攻撃回数によらず1回のみ発動） ※”ブレイクさせた時”効果は起点の味方のみ発動"
+        "前衛が3人以上生存時自身に 物理・属性攻撃に対して反撃する効果を付与 反撃対象に剣物理攻撃（威力1000） 攻撃を完全に回避する効果と攻撃を完全に防ぐ効果を無視する ※この攻撃ではシールドは減少しない 前衛が3人以上生存時かつブレイク中の敵がいる時"
       ],
-      "unknown": [
-        "追撃：敵全体に2回の闇属性攻撃（威力50） 剣・火弱点を突ける（ダメージ計算は闇属性）"
-      ],
+      "unknown": [],
       "blocks": [
         {
           "scopes": [
             "self"
           ],
-          "text": "聖炎時：自身に SP自動回復（回復量 最大SPの8%）と BP回復量1アップ と 使用する攻撃アビリティを2回発動する効果を付与 （追加発動分はSP消費無し）"
+          "text": "前衛が3人以上生存時：自身に 物理・属性攻撃に対して反撃する効果を付与 反撃：対象に剣物理攻撃（威力1000） 攻撃を完全に回避する効果と攻撃を完全に防ぐ効果を無視する ※この攻撃ではシールドは減少しない 前衛が3人以上生存時かつブレイク中の敵がいる時"
         },
         {
           "scopes": [
-            "ally_front_all"
+            "self"
           ],
-          "text": "黒呪炎時：味方前衛全体に攻撃後（反撃、必殺技など一部除く） 双炎の聖者が追撃する効果を付与 （行動順での攻撃のみ/攻撃回数によらず1回のみ発動） ※”ブレイクさせた時”効果は起点の味方のみ発動"
-        },
-        {
-          "scopes": [
-            "enemy_all"
-          ],
-          "text": "追撃：敵全体に2回の闇属性攻撃（威力50） 剣・火弱点を突ける（ダメージ計算は闇属性）"
+          "text": "自身にダメージ上限アップ（効果量 300000）の効果を付与"
         }
       ]
     },
     {
-      "character_id": "778302",
-      "character_name": "双炎の聖者",
-      "ability_name": "魔剣フィステラルダ",
-      "source_type": "ultimate",
-      "cost": "超威発動",
+      "character_id": "793075",
+      "character_name": "アーロン",
+      "ability_name": "力をためる",
+      "source_type": "support",
+      "cost": null,
       "raw_text": [
-        "【Lv.MAX】",
-        "自身に物攻アップ30%と",
-        "剣攻撃ダメージアップ30%の効果を付与（1ターン）",
-        "さらに、敵全体に5回の剣物理攻撃（威力 95）",
-        "火・光・闇弱点を突ける（ダメージ計算は剣物理）",
-        "この必殺技のダメージ上限が300000アップ",
-        "200%発動時：さらに、効果を再発動（必殺技ゲージ消費無し）する"
+        "ターン終了時かつ自身が攻撃行動を選択していない時：",
+        "自身に威力アップ100%の効果",
+        "（2ターン/ターン延長不可/同系統の効果重複不可）と",
+        "使用する攻撃アビリティを2回発動する効果",
+        "（2ターン/ターン延長不可/追加発動分はSP消費無し）と",
+        "「たたかう」以外の物理攻撃（一部除く）時",
+        "短剣・斧・本・扇弱点を突ける効果を付与",
+        "（2ターン/ダメージ計算は各攻撃に準ずる）"
       ],
       "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "power",
+          "unit": "%",
+          "target_source_type": "battle",
+          "value": 100,
+          "cap_group": "power_up",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [
+        "ターン終了時かつ自身が攻撃行動を選択していない時"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "ターン終了時かつ自身が攻撃行動を選択していない時："
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に威力アップ100%の効果 （2ターン/ターン延長不可/同系統の効果重複不可）と 使用する攻撃アビリティを2回発動する効果 （2ターン/ターン延長不可/追加発動分はSP消費無し）と 「たたかう」以外の物理攻撃（一部除く）時 短剣・斧・本・扇弱点を突ける効果を付与 （2ターン/ダメージ計算は各攻撃に準ずる）"
+        }
+      ]
+    },
+    {
+      "character_id": "793075",
+      "character_name": "アーロン",
+      "ability_name": "正宗",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "自身に物攻アップ30%と",
+        "剣攻撃ダメージアップ30%と",
+        "ダメージ上限アップ（効果量 200000）",
+        "と",
+        "自身の残りHPが低いほど最終ダメージアップの効果を付与",
+        "最大99%（HP1%以下時）",
+        "ターン終了時かつ自身が攻撃行動を選択していない時：",
+        "自身のSP回復（回復量 最大SPの30%）",
+        "さらに、BPを2回復"
+      ],
+      "raw_text_pre_enhance": [
+        "自身に物攻アップ30%と",
+        "剣攻撃ダメージアップ30%と",
+        "自身の残りHPが低いほど最終ダメージアップの効果を付与",
+        "最大99%（HP1%以下時）",
+        "ターン終了時かつ自身が攻撃行動を選択していない時：",
+        "自身のSP回復（回復量 最大SPの30%）",
+        "さらに、BPを2回復"
+      ],
       "effects": [
         {
           "role": "buff",
@@ -2280,10 +664,63 @@
           "scopes": [
             "self"
           ]
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 200000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "self"
+          ]
         }
       ],
       "conditions": [
-        "さらに、敵全体に5回の剣物理攻撃（威力 95） 火・光・闇弱点を突ける（ダメージ計算は剣物理） この必殺技のダメージ上限が300000アップ 200%発動時さらに、効果を再発動（必殺技ゲージ消費無し）する"
+        "自身の残りHPが低いほど最終ダメージアップの効果を付与 最大99%（HP1%以下時） ターン終了時かつ自身が攻撃行動を選択していない時"
+      ],
+      "unknown": [
+        "自身のSP回復（回復量 最大SPの30%） さらに、BPを2回復"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に物攻アップ30%と 剣攻撃ダメージアップ30%と ダメージ上限アップ（効果量 200000） と"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身の残りHPが低いほど最終ダメージアップの効果を付与 最大99%（HP1%以下時） ターン終了時かつ自身が攻撃行動を選択していない時："
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身のSP回復（回復量 最大SPの30%） さらに、BPを2回復"
+        }
+      ]
+    },
+    {
+      "character_id": "793075",
+      "character_name": "アーロン",
+      "ability_name": "征獄龍",
+      "source_type": "ultimate",
+      "cost": "超威発動",
+      "raw_text": [
+        "【Lv.MAX】",
+        "敵単体に剣物理攻撃（威力1000）",
+        "この必殺技のダメージ上限が100000アップ",
+        "200%発動時：攻撃回数が3回になり",
+        "この必殺技のダメージ上限が追加で500000アップする"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [],
+      "conditions": [
+        "敵単体に剣物理攻撃（威力1000） この必殺技のダメージ上限が100000アップ 200%発動時攻撃回数が3回になり この必殺技のダメージ上限が追加で500000アップする"
       ],
       "unknown": [
         "【Lv.MAX】"
@@ -2295,43 +732,768 @@
         },
         {
           "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に剣物理攻撃（威力1000） この必殺技のダメージ上限が100000アップ 200%発動時：攻撃回数が3回になり この必殺技のダメージ上限が追加で500000アップする"
+        }
+      ]
+    },
+    {
+      "character_id": "793075",
+      "character_name": "アーロン",
+      "ability_name": "龍征嵐",
+      "source_type": "ex",
+      "cost": "回数：3",
+      "raw_text": [
+        "敵全体に剣物理攻撃（威力240）",
+        "火・風弱点を突ける（ダメージ計算は剣物理）",
+        "さらに、物攻・物防・属攻・属防・速度ダウン20%の効果を付与（2ターン）",
+        "この攻撃は物防・属防アップとダメージ減少効果を無視する",
+        "ブーストMAX時：攻撃回数が3回になり、威力が1.5倍※威力値に反映",
+        "※行動順影響は2ターン目"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_condition": [
+        "【使用条件】3ターン目以降"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】威力265/305/570"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 20,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 20,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 20,
+          "cap_group": "debuff_stat_atk_phys",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 20,
+          "cap_group": "debuff_stat_atk_elem",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "speed",
+          "value": 20,
+          "cap_group": "debuff_stat_speed",
+          "scopes": [
+            "enemy_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に剣物理攻撃（威力240） 火・風弱点を突ける（ダメージ計算は剣物理） さらに、物攻・物防・属攻・属防・速度ダウン20%の効果を付与（2ターン） この攻撃は物防・属防アップとダメージ減少効果を無視する ブーストMAX時：攻撃回数が3回になり、威力が1.5倍※威力値に反映 ※行動順影響は2ターン目"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "character_id": "793074",
+      "character_name": "ユウナ",
+      "ability_name": "ケアル（単体）",
+      "source_type": "battle",
+      "cost": "【消費SP 24】",
+      "raw_text": [
+        "味方単体のHP回復（効力 160）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】効力180/220/280"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "味方単体のHP回復（効力 160）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_single"
+          ],
+          "text": "味方単体のHP回復（効力 160）"
+        }
+      ]
+    },
+    {
+      "character_id": "793074",
+      "character_name": "ユウナ",
+      "ability_name": "エスナ",
+      "source_type": "battle",
+      "cost": "【消費SP 15】",
+      "raw_text": [
+        "味方単体の状態異常を回復",
+        "さらに、状態異常無効化の効果を付与（一部除く/1ターン）",
+        "ブースト MAX時：前衛全体化"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】ターン2/3/4"
+      ],
+      "effects": [],
+      "conditions": [
+        "味方単体の状態異常を回復 さらに、状態異常無効化の効果を付与（一部除く/1ターン） ブースト MAX時前衛全体化"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_single"
+          ],
+          "text": "味方単体の状態異常を回復 さらに、状態異常無効化の効果を付与（一部除く/1ターン） ブースト MAX時：前衛全体化"
+        }
+      ]
+    },
+    {
+      "character_id": "793074",
+      "character_name": "ユウナ",
+      "ability_name": "召喚：ヴァルファーレ",
+      "source_type": "battle",
+      "cost": "【消費SP 107】",
+      "raw_text": [
+        "敵全体に3回の風属性攻撃（威力25）",
+        "弱点以外でもシールドポイントを削り",
+        "シールドダメージが1アップ",
+        "さらに、自身とバディに特殊効果”召喚獣ヴァルファーレ”を付与",
+        "ただし、他の特殊効果“召喚獣”を解除する",
+        "召喚獣ヴァルファーレ：行動後にユウナが追撃する効果",
+        "（行動順での行動のみ/行動によらず1回のみ発動）",
+        "※“ブレイクすせた時”効果は起点の味方のみ発動",
+        "※このアビリティ後にも追撃 ※ユウナ戦闘不能時に解除",
+        "追撃：敵全体に風属性攻撃",
+        "行動時のブーストLvに応じて攻撃回数増加（威力25/1〜4回）",
+        "弱点以外でもシールドポイントを削る",
+        "さらに、物防・属防ダウン10%の効果を付与（2ターン）",
+        "※ブレイク復帰行動前の敵はブレイクできない",
+        "※BP3以上消費で追撃の攻撃回数は最大になる"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力35/45/60"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 10,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 10,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": [
+            "enemy_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "敵全体に3回の風属性攻撃（威力25） 弱点以外でもシールドポイントを削り シールドダメージが1アップ",
+        "さらに、自身とバディに特殊効果”召喚獣ヴァルファーレ”を付与 ただし、他の特殊効果“召喚獣”を解除する",
+        "行動後にユウナが追撃する効果 （行動順での行動のみ/行動によらず1回のみ発動） ※“ブレイクすせた時”効果は起点の味方のみ発動 ※このアビリティ後にも追撃 ※ユウナ戦闘不能時に解除"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に3回の風属性攻撃（威力25） 弱点以外でもシールドポイントを削り シールドダメージが1アップ"
+        },
+        {
+          "scopes": [
+            "buddy",
             "self"
           ],
-          "text": "自身に物攻アップ30%と 剣攻撃ダメージアップ30%の効果を付与（1ターン）"
+          "text": "さらに、自身とバディに特殊効果”召喚獣ヴァルファーレ”を付与 ただし、他の特殊効果“召喚獣”を解除する"
+        },
+        {
+          "scopes": [
+            "buddy",
+            "self"
+          ],
+          "text": "行動後にユウナが追撃する効果 （行動順での行動のみ/行動によらず1回のみ発動） ※“ブレイクすせた時”効果は起点の味方のみ発動 ※このアビリティ後にも追撃 ※ユウナ戦闘不能時に解除",
+          "special_effect_id": "召喚獣ヴァルファーレ"
         },
         {
           "scopes": [
             "enemy_all"
           ],
-          "text": "さらに、敵全体に5回の剣物理攻撃（威力 95） 火・光・闇弱点を突ける（ダメージ計算は剣物理） この必殺技のダメージ上限が300000アップ 200%発動時：さらに、効果を再発動（必殺技ゲージ消費無し）する"
+          "text": "追撃：敵全体に風属性攻撃 行動時のブーストLvに応じて攻撃回数増加（威力25/1〜4回） 弱点以外でもシールドポイントを削る さらに、物防・属防ダウン10%の効果を付与（2ターン） ※ブレイク復帰行動前の敵はブレイクできない ※BP3以上消費で追撃の攻撃回数は最大になる"
         }
       ]
     },
     {
-      "character_id": "778302",
-      "character_name": "双炎の聖者",
-      "ability_name": "無上の理",
-      "source_type": "ex",
-      "cost": "回数：2",
+      "character_id": "793074",
+      "character_name": "ユウナ",
+      "ability_name": "祈る",
+      "source_type": "battle",
+      "cost": "【消費SP 80】",
       "raw_text": [
-        "自身に威力アップ100%の効果を付与",
-        "（2ターン/ターン延長不可/同系統の効果重複不可）、その後",
-        "SP20%未満になるまで自身のSPを最大SPの20%消耗（最大3回）し",
-        "味方前後衛全体に消耗した回数に応じ効果を付与",
-        "1回以上：ダメージ上限アップ（2ターン/効果量 100000）",
-        "2回以上：さらに、特殊効果“聖火の加護”（1ターン）",
-        "3回：さらに、特殊効果“不沈”（2ターン）",
-        "聖火の加護：BP回復量3アップの効果",
-        "不沈：HPが0になるダメージを受けてもHPが1残る効果（一部除く）"
+        "味方前衛全体のHP回復（効力 65）",
+        "さらに、属性ダメージアップ30%の効果を付与（2ターン）",
+        "ブーストMAX時：前後衛全体化"
       ],
       "raw_text_pre_enhance": [],
-      "raw_text_condition": [
-        "【使用条件】なし"
-      ],
       "raw_text_boost": [
-        "【ブースト時】威力アップ125/150/200%"
+        "【ブースト時】効力85/115/155"
       ],
       "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 30,
+          "cap_group": "buff_damage_elem_all",
+          "scopes": [
+            "ally_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体のHP回復（効力 65） さらに、属性ダメージアップ30%の効果を付与（2ターン） ブーストMAX時：前後衛全体化"
+        }
+      ]
+    },
+    {
+      "character_id": "793074",
+      "character_name": "ユウナ",
+      "ability_name": "召喚：イクシオン",
+      "source_type": "battle",
+      "cost": "【消費SP 84】",
+      "raw_text": [
+        "敵全体に6回の雷属性攻撃（威力20）",
+        "攻撃を完全に回避する効果を無視する",
+        "さらに、自身とバディに特殊効果“召喚獣イクシオン”を付与",
+        "ただし、他の特殊効果”召喚獣”を解除する",
+        "召喚獣イクシオン：行動後にユウナが追撃する効果",
+        "（行動順での行動のみ/行動によらず1回のみ発動）",
+        "※ ブレイクすせた時”効果は起点の味方のみ発動",
+        "※このアビリティ使用後にも追撃 ※ユウナ戦闘不能時に解除",
+        "追撃：敵単体に雷属性攻撃",
+        "行動時のブーストLvに応じて攻撃回数増加（威力 65/3〜6回）",
+        "攻撃を完全に回避する効果を無視する",
+        "さらに、物攻・属攻ダウン10%の効果を付与（2ターン）",
+        "※対象は行動時に選択しているターゲット",
+        "※ブレイク復帰行動前の敵はブレイクできない",
+        "※BP3以上消費で追撃の攻撃回数は最大になる"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力25/30/35"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 10,
+          "cap_group": "debuff_stat_atk_phys",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 10,
+          "cap_group": "debuff_stat_atk_elem",
+          "scopes": [
+            "enemy_single"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "敵全体に6回の雷属性攻撃（威力20） 攻撃を完全に回避する効果を無視する",
+        "さらに、自身とバディに特殊効果“召喚獣イクシオン”を付与 ただし、他の特殊効果”召喚獣”を解除する 召喚獣イクシオン：行動後にユウナが追撃する効果 （行動順での行動のみ/行動によらず1回のみ発動） ※ ブレイクすせた時”効果は起点の味方のみ発動 ※このアビリティ使用後にも追撃 ※ユウナ戦闘不能時に解除"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に6回の雷属性攻撃（威力20） 攻撃を完全に回避する効果を無視する"
+        },
+        {
+          "scopes": [
+            "buddy",
+            "self"
+          ],
+          "text": "さらに、自身とバディに特殊効果“召喚獣イクシオン”を付与 ただし、他の特殊効果”召喚獣”を解除する 召喚獣イクシオン：行動後にユウナが追撃する効果 （行動順での行動のみ/行動によらず1回のみ発動） ※ ブレイクすせた時”効果は起点の味方のみ発動 ※このアビリティ使用後にも追撃 ※ユウナ戦闘不能時に解除"
+        },
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "追撃：敵単体に雷属性攻撃 行動時のブーストLvに応じて攻撃回数増加（威力 65/3〜6回） 攻撃を完全に回避する効果を無視する さらに、物攻・属攻ダウン10%の効果を付与（2ターン） ※対象は行動時に選択しているターゲット ※ブレイク復帰行動前の敵はブレイクできない ※BP3以上消費で追撃の攻撃回数は最大になる"
+        }
+      ]
+    },
+    {
+      "character_id": "793074",
+      "character_name": "ユウナ",
+      "ability_name": "ホーリー",
+      "source_type": "battle",
+      "cost": "【消費SP 91】",
+      "raw_text": [
+        "単体に4回の光属性攻撃（威力 85）",
+        "さらに、属防ダウン30%と",
+        "バトアビによる属防ダウンを受けた際の上限が",
+        "50%になる効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力95/105/130"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "defence",
+          "target_source_type": "battle",
+          "value": 50,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": []
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 30,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": []
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "単体に4回の光属性攻撃（威力 85） さらに、属防ダウン30%と バトアビによる属防ダウンを受けた際の上限が 50%になる効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "793074",
+      "character_name": "ユウナ",
+      "ability_name": "祈り子の加護",
+      "source_type": "battle",
+      "cost": "【消費SP 135】",
+      "raw_text": [
+        "味方前衛全体にHP自動回復（効力 140）と",
+        "物攻・属攻アップ30%の効果を付与（2ターン）",
+        "さらに、HPバリアを付与（効果量 使用者の最大HPの10%/重複不可）",
+        "ブーストMAX時：前後衛全体化し",
+        "さらに、必殺技ゲージを50.0%増加"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】ターン3/4/5"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 30,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 30,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "ally_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体にHP自動回復（効力 140）と 物攻・属攻アップ30%の効果を付与（2ターン） さらに、HPバリアを付与（効果量 使用者の最大HPの10%/重複不可） ブーストMAX時：前後衛全体化し さらに、必殺技ゲージを50.0%増加"
+        }
+      ]
+    },
+    {
+      "character_id": "793074",
+      "character_name": "ユウナ",
+      "ability_name": "召喚：アニマ",
+      "source_type": "battle",
+      "cost": "【消費SP 240】",
+      "raw_text": [
+        "敵全体に4回の闇属性攻撃（威力180）",
+        "このアビリティのダメージ上限が200000アップ",
+        "この攻撃は物防・属防アップとダメージ減少効果を無視する",
+        "さらに、自身とバディに特殊効果”召喚獣アニマ”を付与",
+        "ただし、他の特殊効果“召喚獣”を解除する",
+        "召喚獣アニマ：行動後にユウナが追撃する効果",
+        "（行動順での行動のみ/行動によらず1回のみ発動）",
+        "※“ブレイクさせた時”効果は起点の味方のみ発動",
+        "※このアビリティ使用後にも追撃※ユウナ戦闘不能時に解除",
+        "追撃：敵単体に闇属性攻撃",
+        "行動時のブーストLvに応じて攻撃回数増加（威力 300/1〜4回）",
+        "この攻撃は物防・属防アップとダメージ減少効果を無視する",
+        "※対象は行動時に選択しているターゲット",
+        "※ブレイク復帰行動前の敵はブレイクできない",
+        "※BP3以上消費で追撃の攻撃回数は最大になる"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力205/245/300"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵全体に4回の闇属性攻撃（威力180） このアビリティのダメージ上限が200000アップ この攻撃は物防・属防アップとダメージ減少効果を無視する",
+        "さらに、自身とバディに特殊効果”召喚獣アニマ”を付与 ただし、他の特殊効果“召喚獣”を解除する",
+        "行動後にユウナが追撃する効果 （行動順での行動のみ/行動によらず1回のみ発動） ※“ブレイクさせた時”効果は起点の味方のみ発動 ※このアビリティ使用後にも追撃※ユウナ戦闘不能時に解除",
+        "追撃：敵単体に闇属性攻撃 行動時のブーストLvに応じて攻撃回数増加（威力 300/1〜4回） この攻撃は物防・属防アップとダメージ減少効果を無視する ※対象は行動時に選択しているターゲット ※ブレイク復帰行動前の敵はブレイクできない ※BP3以上消費で追撃の攻撃回数は最大になる"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に4回の闇属性攻撃（威力180） このアビリティのダメージ上限が200000アップ この攻撃は物防・属防アップとダメージ減少効果を無視する"
+        },
+        {
+          "scopes": [
+            "buddy",
+            "self"
+          ],
+          "text": "さらに、自身とバディに特殊効果”召喚獣アニマ”を付与 ただし、他の特殊効果“召喚獣”を解除する"
+        },
+        {
+          "scopes": [
+            "buddy",
+            "self"
+          ],
+          "text": "行動後にユウナが追撃する効果 （行動順での行動のみ/行動によらず1回のみ発動） ※“ブレイクさせた時”効果は起点の味方のみ発動 ※このアビリティ使用後にも追撃※ユウナ戦闘不能時に解除",
+          "special_effect_id": "召喚獣アニマ"
+        },
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "追撃：敵単体に闇属性攻撃 行動時のブーストLvに応じて攻撃回数増加（威力 300/1〜4回） この攻撃は物防・属防アップとダメージ減少効果を無視する ※対象は行動時に選択しているターゲット ※ブレイク復帰行動前の敵はブレイクできない ※BP3以上消費で追撃の攻撃回数は最大になる"
+        }
+      ]
+    },
+    {
+      "character_id": "793074",
+      "character_name": "ユウナ",
+      "ability_name": "アルテマ",
+      "source_type": "battle",
+      "cost": "【消費SP 400】",
+      "raw_text": [
+        "敵全体に4回の火属性攻撃（威力105）",
+        "氷・雷・風・光・闇弱点を突ける（ダメージ計算は火属性）",
+        "攻撃を完全に回避する効果と攻撃を完全に防ぐ効果を無視する",
+        "ブーストMAX時かつブレイク中の敵がいる時：",
+        "効果を再発動（SP消費無し）する",
+        "※このアビリティでブレイクした場合も含む"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力115/150/200"
+      ],
+      "effects": [],
+      "conditions": [
+        "敵全体に4回の火属性攻撃（威力105） 氷・雷・風・光・闇弱点を突ける（ダメージ計算は火属性） 攻撃を完全に回避する効果と攻撃を完全に防ぐ効果を無視する ブーストMAX時かつブレイク中の敵がいる時 効果を再発動（SP消費無し）する ※このアビリティでブレイクした場合も含む"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に4回の火属性攻撃（威力105） 氷・雷・風・光・闇弱点を突ける（ダメージ計算は火属性） 攻撃を完全に回避する効果と攻撃を完全に防ぐ効果を無視する ブーストMAX時かつブレイク中の敵がいる時： 効果を再発動（SP消費無し）する ※このアビリティでブレイクした場合も含む"
+        }
+      ]
+    },
+    {
+      "character_id": "793074",
+      "character_name": "ユウナ",
+      "ability_name": "ナギ節の祈り",
+      "source_type": "battle",
+      "cost": "【消費SP 240】",
+      "raw_text": [
+        "味方前後衛全体の",
+        "HP回復（回復量 最大HPの25%）",
+        "その後、自動復活させる効果を付与（回復量 最大HPの25%）",
+        "戦闘不能時は即時発動（重ねがけ時、回数増加無し）",
+        "※戦闘中2回のみ使用可能"
+      ],
+      "raw_text_pre_enhance": [
+        "味方前後衛全体に自動復活させる効果を付与（回復量 最大HPの25%）",
+        "戦闘不能時は即時発動（重ねがけ時、回数増加無し）",
+        "※戦闘中2回のみ使用可能"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】回復量50%/75%/100%"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "味方前後衛全体の HP回復（回復量 最大HPの25%） その後、自動復活させる効果を付与（回復量 最大HPの25%） 戦闘不能時は即時発動（重ねがけ時、回数増加無し） ※戦闘中2回のみ使用可能"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "味方前後衛全体の HP回復（回復量 最大HPの25%） その後、自動復活させる効果を付与（回復量 最大HPの25%） 戦闘不能時は即時発動（重ねがけ時、回数増加無し） ※戦闘中2回のみ使用可能"
+        }
+      ]
+    },
+    {
+      "character_id": "793074",
+      "character_name": "ユウナ",
+      "ability_name": "マスター召喚・OD",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "（準備Turn:2/再使用Turn:2）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_override_battle": [
+        "※呼び出している召喚獣に応じたアビリティのみ使用可能",
+        "※特殊効果”異界送り”効果中は全て使用可能になる",
+        "ヴァルファーレ：全体に3回の風属性攻撃",
+        "弱点以外でもシールドを削り、シールドダメージが1アップ",
+        "イクシオン：全体に6回の雷属性攻撃",
+        "攻撃を完全に回避する効果を無視する",
+        "アニマ：全体に4回の闇属性攻撃",
+        "このアビリティのダメージ上限が200000アップ",
+        "この攻撃は物防・属防アップとダメージ減少効果を無視する",
+        "バハムート：全体に6回の火属性攻撃",
+        "このアビリティのブーストLvがレベル2/4/6（MAX）になる"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "（準備Turn:2/再使用Turn:2）"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "（準備Turn:2/再使用Turn:2）"
+        }
+      ]
+    },
+    {
+      "character_id": "793074",
+      "character_name": "ユウナ",
+      "ability_name": "ニルヴァーナ",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "前衛が3人以上生存時：",
+        "自身に属性ダメージアップ30%の効果と",
+        "サポアビと装備性能による",
+        "属性ダメーシアップの上限が50%になる効果と",
+        "消費SP量軽減30%（枠毎の最大値を適用）の効果を付与"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 30,
+          "cap_group": "buff_damage_elem_all",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [
+        "前衛が3人以上生存時"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "前衛が3人以上生存時："
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に属性ダメージアップ30%の効果と サポアビと装備性能による 属性ダメーシアップの上限が50%になる効果と 消費SP量軽減30%（枠毎の最大値を適用）の効果を付与"
+        }
+      ]
+    },
+    {
+      "character_id": "793074",
+      "character_name": "ユウナ",
+      "ability_name": "月輪の祝福",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "“召喚獣ヴァルファーレ”、“召喚獣イクシオン、",
+        "“召喚獣アニマ”、“召喚獣バハムード”いずれかの効果中",
+        "または特殊効果”異界送り”効果中：",
+        "味方前衛全体に",
+        "ダメージ上限アップ（効果量 100000）の効果と",
+        "クリティカル時のダメージ倍率が",
+        "1.4倍になる効果（通常時は1.25倍）と",
+        "属性攻撃でクリティカルが発生する効果を付与"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "critical",
+          "unit": "",
+          "sub_category": "elemental",
+          "target_source_type": "battle",
+          "value": 1,
+          "cap_group": "critical_elem",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 100000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "ally_front_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "“召喚獣ヴァルファーレ”、“召喚獣イクシオン、 “召喚獣アニマ”、“召喚獣バハムード”いずれかの効果中 または特殊効果”異界送り”効果中："
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "“召喚獣ヴァルファーレ”、“召喚獣イクシオン、 “召喚獣アニマ”、“召喚獣バハムード”いずれかの効果中 または特殊効果”異界送り”効果中："
+        },
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体に ダメージ上限アップ（効果量 100000）の効果と クリティカル時のダメージ倍率が 1.4倍になる効果（通常時は1.25倍）と 属性攻撃でクリティカルが発生する効果を付与"
+        }
+      ]
+    },
+    {
+      "character_id": "793074",
+      "character_name": "ユウナ",
+      "ability_name": "スピラの大召喚士",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "BP3以上消費時、またはブレイク中の敵がいる時",
+        "自身に「たたかう」以外の属性攻撃（一部除く）時",
+        "火・氷・雷・風・光・闇弱点を突ける効果を付与",
+        "（ダメージ計算は各攻撃に準ずる）",
+        "BP3以上消費時かつブレイク中の敵がいる時：さらに",
+        "自身にダメージ上限アップ（効果量 300000）の効果を付与",
+        "“召喚獣ヴァルファーレ”、“召喚獣イクシオン、",
+        "“召喚獣アニマ、“召喚獣バハムード“いずれかの効果中",
+        "または特殊効果”異界送り”効果中：",
+        "自身にBP回復量1アップの効果と",
+        "威力アップ100%（同系統の効果重複不可）の効果を付与"
+      ],
+      "raw_text_pre_enhance": [
+        "BP3以上消費時、またはブレイク中の敵がいる時",
+        "自身に「たたかう」以外の属性攻撃（一部除く）時",
+        "火・氷・雷・風・光・闇弱点を突ける効果を付与",
+        "（ダメージ計算は各攻撃に準ずる）"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 300000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "self"
+          ]
+        },
         {
           "role": "buff",
           "category": "power",
@@ -2344,29 +1506,1037 @@
           ]
         }
       ],
+      "conditions": [
+        "自身に「たたかう」以外の属性攻撃（一部除く）時 火・氷・雷・風・光・闇弱点を突ける効果を付与 （ダメージ計算は各攻撃に準ずる） BP3以上消費時かつブレイク中の敵がいる時さらに"
+      ],
+      "unknown": [
+        "BP3以上消費時、またはブレイク中の敵がいる時"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "BP3以上消費時、またはブレイク中の敵がいる時"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に「たたかう」以外の属性攻撃（一部除く）時 火・氷・雷・風・光・闇弱点を突ける効果を付与 （ダメージ計算は各攻撃に準ずる） BP3以上消費時かつブレイク中の敵がいる時：さらに"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身にダメージ上限アップ（効果量 300000）の効果を付与 “召喚獣ヴァルファーレ”、“召喚獣イクシオン、 “召喚獣アニマ、“召喚獣バハムード“いずれかの効果中 または特殊効果”異界送り”効果中："
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身にBP回復量1アップの効果と 威力アップ100%（同系統の効果重複不可）の効果を付与"
+        }
+      ]
+    },
+    {
+      "character_id": "793074",
+      "character_name": "ユウナ",
+      "ability_name": "異界送り",
+      "source_type": "ultimate",
+      "cost": "後衛発動",
+      "raw_text": [
+        "【Lv.MAX】",
+        "自身に特殊効果”異界送り”を付与（7ターン/ターンが長くなるよう上書）",
+        "さらに、自身とバディに",
+        "SPストックを付与（効果量 使用者の最大SPの100%/重複不可）し",
+        "HP自動回復（効力 150）と",
+        "BP回復量2アップの効果を付与（4ターン）",
+        "その後、味方前後衛全体に属性ダメージアップ20%と",
+        "ダメーシ上限アップ（効果量 100000）の効果を付与（3ターン）",
+        "異界送り：ベーシックアビリティ”マスター召喚・OD”が使え",
+        "呼び出している召喚獣にかかわらず全て使用可能になり",
+        "再使用Turnが0になる効果"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 20,
+          "cap_group": "buff_damage_elem_all",
+          "scopes": [
+            "ally_all"
+          ]
+        }
+      ],
       "conditions": [],
       "unknown": [
-        "SP20%未満になるまで自身のSPを最大SPの20%消耗（最大3回）し",
-        "味方前後衛全体に消耗した回数に応じ効果を付与 1回以上：ダメージ上限アップ（2ターン/効果量 100000） 2回以上：さらに、特殊効果“聖火の加護”（1ターン） 3回：さらに、特殊効果“不沈”（2ターン） 聖火の加護：BP回復量3アップの効果 不沈：HPが0になるダメージを受けてもHPが1残る効果（一部除く）"
+        "【Lv.MAX】",
+        "自身に特殊効果”異界送り”を付与（7ターン/ターンが長くなるよう上書）",
+        "さらに、自身とバディに SPストックを付与（効果量 使用者の最大SPの100%/重複不可）し HP自動回復（効力 150）と BP回復量2アップの効果を付与（4ターン）",
+        "ベーシックアビリティ”マスター召喚・OD”が使え 呼び出している召喚獣にかかわらず全て使用可能になり 再使用Turnが0になる効果"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "【Lv.MAX】"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に特殊効果”異界送り”を付与（7ターン/ターンが長くなるよう上書）"
+        },
+        {
+          "scopes": [
+            "buddy",
+            "self"
+          ],
+          "text": "さらに、自身とバディに SPストックを付与（効果量 使用者の最大SPの100%/重複不可）し HP自動回復（効力 150）と BP回復量2アップの効果を付与（4ターン）"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "その後、味方前後衛全体に属性ダメージアップ20%と ダメーシ上限アップ（効果量 100000）の効果を付与（3ターン）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "ベーシックアビリティ”マスター召喚・OD”が使え 呼び出している召喚獣にかかわらず全て使用可能になり 再使用Turnが0になる効果",
+          "special_effect_id": "異界送り"
+        }
+      ]
+    },
+    {
+      "character_id": "793074",
+      "character_name": "ユウナ",
+      "ability_name": "召喚：バハムート",
+      "source_type": "ex",
+      "cost": "回数：4",
+      "raw_text": [
+        "全体に6回の火属性攻撃（威力180）",
+        "このアビリティのブーストLvがレベル2/レベル4/レベル6（MAX）になる",
+        "※BPの消費量は1/3/5になる",
+        "さらに、自身とバディに特殊効果”召喚獣バハムート”を付与",
+        "ただし、他の特殊効果”召喚獣”を解除する",
+        "召喚獣バハムート：行動後にユウナが追撃する効果",
+        "（行動順での行動のみ/行動によらず1回のみ発動）",
+        "※“ブレイクさせた時”効果は起点の味方のみ発動",
+        "※このアビリティ使用後にも追撃※ユウナ戦闘不能時に解除",
+        "追撃：敵全体に火属性攻撃",
+        "行動時のブーストLVに応じて攻撃回数増加（威力250/1〜4回）",
+        "※ブレイク復帰行動前の敵はブレイクできない",
+        "※BP3以上消費で追撃の攻撃回数は最大になる"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_condition": [
+        "【使用条件】3ターン目以降"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】威力205/300/525"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "全体に6回の火属性攻撃（威力180） このアビリティのブーストLvがレベル2/レベル4/レベル6（MAX）になる ※BPの消費量は1/3/5になる",
+        "さらに、自身とバディに特殊効果”召喚獣バハムート”を付与 ただし、他の特殊効果”召喚獣”を解除する",
+        "行動後にユウナが追撃する効果 （行動順での行動のみ/行動によらず1回のみ発動） ※“ブレイクさせた時”効果は起点の味方のみ発動 ※このアビリティ使用後にも追撃※ユウナ戦闘不能時に解除",
+        "追撃：敵全体に火属性攻撃 行動時のブーストLVに応じて攻撃回数増加（威力250/1〜4回） ※ブレイク復帰行動前の敵はブレイクできない ※BP3以上消費で追撃の攻撃回数は最大になる"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "全体に6回の火属性攻撃（威力180） このアビリティのブーストLvがレベル2/レベル4/レベル6（MAX）になる ※BPの消費量は1/3/5になる"
+        },
+        {
+          "scopes": [
+            "buddy",
+            "self"
+          ],
+          "text": "さらに、自身とバディに特殊効果”召喚獣バハムート”を付与 ただし、他の特殊効果”召喚獣”を解除する"
+        },
+        {
+          "scopes": [
+            "buddy",
+            "self"
+          ],
+          "text": "行動後にユウナが追撃する効果 （行動順での行動のみ/行動によらず1回のみ発動） ※“ブレイクさせた時”効果は起点の味方のみ発動 ※このアビリティ使用後にも追撃※ユウナ戦闘不能時に解除",
+          "special_effect_id": "召喚獣バハムート"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "追撃：敵全体に火属性攻撃 行動時のブーストLVに応じて攻撃回数増加（威力250/1〜4回） ※ブレイク復帰行動前の敵はブレイクできない ※BP3以上消費で追撃の攻撃回数は最大になる"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "character_id": "793073",
+      "character_name": "ティーダ",
+      "ability_name": "スピードアタック",
+      "source_type": "battle",
+      "cost": "【消費SP 41】",
+      "raw_text": [
+        "ターン中、素早く行動し",
+        "敵単体に3回の短剣物理攻撃（威力55）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力65/80/100"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "ターン中、素早く行動し",
+        "敵単体に3回の短剣物理攻撃（威力55）"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "ターン中、素早く行動し"
+        },
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に3回の短剣物理攻撃（威力55）"
+        }
+      ]
+    },
+    {
+      "character_id": "793073",
+      "character_name": "ティーダ",
+      "ability_name": "ヘイスト",
+      "source_type": "battle",
+      "cost": "【消費SP 66】",
+      "raw_text": [
+        "自身に特殊効果”ヘイスト”を付与",
+        "（3ターン/ターン延長不可・上書き）",
+        "ヘイスト：素早く行動できる効果と",
+        "使用する攻撃アビリティを2回発動する効果",
+        "（追加発動分はSP消費無し） ※行動順影響は行動開始時"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】ターン4/5/6"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "自身に特殊効果”ヘイスト”を付与 （3ターン/ターン延長不可・上書き）",
+        "素早く行動できる効果と 使用する攻撃アビリティを2回発動する効果 （追加発動分はSP消費無し） ※行動順影響は行動開始時"
       ],
       "blocks": [
         {
           "scopes": [
             "self"
           ],
-          "text": "自身に威力アップ100%の効果を付与 （2ターン/ターン延長不可/同系統の効果重複不可）、その後"
+          "text": "自身に特殊効果”ヘイスト”を付与 （3ターン/ターン延長不可・上書き）"
         },
         {
           "scopes": [
             "self"
           ],
-          "text": "SP20%未満になるまで自身のSPを最大SPの20%消耗（最大3回）し"
+          "text": "素早く行動できる効果と 使用する攻撃アビリティを2回発動する効果 （追加発動分はSP消費無し） ※行動順影響は行動開始時",
+          "special_effect_id": "ヘイスト"
+        }
+      ]
+    },
+    {
+      "character_id": "793073",
+      "character_name": "ティーダ",
+      "ability_name": "はげます",
+      "source_type": "battle",
+      "cost": "【消費SP 39】",
+      "raw_text": [
+        "味方前衛全体に物攻アップ15%と",
+        "ダメージ上限アップ（効果量 30000）の効果を付与（2ターン）",
+        "ブーストMAX時：さらに",
+        "BP回復量1アップの効果を付与（5ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】ターン3/4/5"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 15,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 30000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "ally_front_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体に物攻アップ15%と ダメージ上限アップ（効果量 30000）の効果を付与（2ターン） ブーストMAX時：さらに BP回復量1アップの効果を付与（5ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "793073",
+      "character_name": "ティーダ",
+      "ability_name": "ディレイアタック",
+      "source_type": "battle",
+      "cost": "【消費SP 58】",
+      "raw_text": [
+        "単体に3回の短剣物理攻撃（威力 85）",
+        "さらに、特殊効果”鈍重”を付与（2ターン）",
+        "鈍重：行動順が1つ後ろに下がる効果（同系統の効果重複不可）",
+        "※一部特殊な行動では変動しない",
+        "※素早く行動のような効果で行動順が変動している場合",
+        "同じ効果で変動している対象内でのみ変動する",
+        "※行動順影響は2ターン目"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力95/110/140"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "単体に3回の短剣物理攻撃（威力 85） さらに、特殊効果”鈍重”を付与（2ターン）",
+        "行動順が1つ後ろに下がる効果（同系統の効果重複不可） ※一部特殊な行動では変動しない ※素早く行動のような効果で行動順が変動している場合 同じ効果で変動している対象内でのみ変動する ※行動順影響は2ターン目"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "単体に3回の短剣物理攻撃（威力 85） さらに、特殊効果”鈍重”を付与（2ターン）"
+        },
+        {
+          "scopes": [],
+          "text": "行動順が1つ後ろに下がる効果（同系統の効果重複不可） ※一部特殊な行動では変動しない ※素早く行動のような効果で行動順が変動している場合 同じ効果で変動している対象内でのみ変動する ※行動順影響は2ターン目",
+          "special_effect_id": "鈍重"
+        }
+      ]
+    },
+    {
+      "character_id": "793073",
+      "character_name": "ティーダ",
+      "ability_name": "スパイラルカット",
+      "source_type": "battle",
+      "cost": "【消費SP 50】",
+      "raw_text": [
+        "敵単体に3回の短剣物理攻撃（威力65）",
+        "ブーストMAX時：さらに、物防ダウン20%と",
+        "短剣耐性ダウン20%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力75/90/120"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 20,
+          "tag": "dagger",
+          "cap_group": "debuff_resist_phys_dagger",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 20,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_single"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に3回の短剣物理攻撃（威力65） ブーストMAX時：さらに、物防ダウン20%と 短剣耐性ダウン20%の効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "793073",
+      "character_name": "ティーダ",
+      "ability_name": "ディレイバスター",
+      "source_type": "battle",
+      "cost": "【消費SP 46】",
+      "raw_text": [
+        "敵全体に短剣物理攻撃（威力 210）",
+        "さらに、特殊効果”鈍重”を付与（2ターン）",
+        "鈍重：行動順が1つ後ろに下がる効果（同系統の効果重複不可）",
+        "※一部特殊な行動では変動しない",
+        "※素早く行動のような効果で行動順が変動している場合",
+        "同じ効果で変動している対象内でのみ変動する",
+        "※行動順影響は2ターン目"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力235/275/340"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵全体に短剣物理攻撃（威力 210） さらに、特殊効果”鈍重”を付与（2ターン）",
+        "行動順が1つ後ろに下がる効果（同系統の効果重複不可） ※一部特殊な行動では変動しない ※素早く行動のような効果で行動順が変動している場合 同じ効果で変動している対象内でのみ変動する ※行動順影響は2ターン目"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に短剣物理攻撃（威力 210） さらに、特殊効果”鈍重”を付与（2ターン）"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "行動順が1つ後ろに下がる効果（同系統の効果重複不可） ※一部特殊な行動では変動しない ※素早く行動のような効果で行動順が変動している場合 同じ効果で変動している対象内でのみ変動する ※行動順影響は2ターン目",
+          "special_effect_id": "鈍重"
+        }
+      ]
+    },
+    {
+      "character_id": "793073",
+      "character_name": "ティーダ",
+      "ability_name": "チャージ＆アサルト",
+      "source_type": "battle",
+      "cost": "【消費SP 66】",
+      "raw_text": [
+        "自身に物攻アップ30%の効果を付与（2ターン）",
+        "その後、単体に3回の短剣物理攻撃（威力95）",
+        "ブーストMAX時：攻撃回数が5回になる"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力110/125/160"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 30,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に物攻アップ30%の効果を付与（2ターン） その後、単体に3回の短剣物理攻撃（威力95） ブーストMAX時：攻撃回数が5回になる"
+        }
+      ]
+    },
+    {
+      "character_id": "793073",
+      "character_name": "ティーダ",
+      "ability_name": "エナジーレイン",
+      "source_type": "battle",
+      "cost": "【消費SP 83】",
+      "raw_text": [
+        "自身に短剣攻撃ダメージアップ30%の効果を付与（2ターン）",
+        "さらに、“クイックpt“を3追加",
+        "その後、全体に5回の短剣物理攻撃（威力35）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力40/50/60"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 30,
+          "tag": "dagger",
+          "cap_group": "buff_damage_phys_dagger",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に短剣攻撃ダメージアップ30%の効果を付与（2ターン） さらに、“クイックpt“を3追加 その後、全体に5回の短剣物理攻撃（威力35）"
+        }
+      ]
+    },
+    {
+      "character_id": "793073",
+      "character_name": "ティーダ",
+      "ability_name": "クイックトリック",
+      "source_type": "battle",
+      "cost": "【消費SP 78】",
+      "raw_text": [
+        "自身に”クイックptを3追加",
+        "その後、敵単体に短剣物理攻撃（威力30）",
+        "ブーストMAX時：自身の“クイックpt”と同数分",
+        "同対象に短剣物理攻撃（威力 60）",
+        "を繰り返す（最大9回）",
+        "さらに、自身にカウントダウンの効果を付与（カウント 1）",
+        "カウント終了時、自身のSP回復（回復量 最大SPの50%）",
+        "ただし、自身のクイックptを0にする"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力35/40/60"
+      ],
+      "effects": [],
+      "conditions": [
+        "ブーストMAX時自身の“クイックpt”と同数分 同対象に短剣物理攻撃（威力 60） を繰り返す（最大9回）"
+      ],
+      "unknown": [
+        "自身に”クイックptを3追加",
+        "その後、敵単体に短剣物理攻撃（威力30）",
+        "さらに、自身にカウントダウンの効果を付与（カウント 1）",
+        "カウント終了時、自身のSP回復（回復量 最大SPの50%）",
+        "ただし、自身のクイックptを0にする"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に”クイックptを3追加"
+        },
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "その後、敵単体に短剣物理攻撃（威力30）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "ブーストMAX時：自身の“クイックpt”と同数分 同対象に短剣物理攻撃（威力 60） を繰り返す（最大9回）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "さらに、自身にカウントダウンの効果を付与（カウント 1）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "カウント終了時、自身のSP回復（回復量 最大SPの50%）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "ただし、自身のクイックptを0にする"
+        }
+      ]
+    },
+    {
+      "character_id": "793073",
+      "character_name": "ティーダ",
+      "ability_name": "ジェクトシュート",
+      "source_type": "battle",
+      "cost": "【消費SP 166】",
+      "raw_text": [
+        "敵単体に物防ダウン30%と短剣耐性ダウン30%と",
+        "バトアビによる",
+        "物防ダウンと短剣耐性ダウンを受けた際の上限が",
+        "50%になる効果を付与（2ターン）",
+        "その後、同対象に",
+        "4回",
+        "の短剣物理攻撃（威力 110）",
+        "弱点以外でもシールドポイントを削る",
+        "このアビリティのブーストLVがLV.2/レベル4/レベル6（MAX）になる",
+        "※BPの消費量は1/3/5になる",
+        "ブレイク中の敵がいる時：",
+        "このアビリティのダメージ上限が400000アップする"
+      ],
+      "raw_text_pre_enhance": [
+        "敵単体に物防ダウン30%と短剣耐性ダウン30%と",
+        "バトアビによる",
+        "物防ダウンと短剣耐性ダウンを受けた際の上限が",
+        "50%になる効果を付与（2ターン）",
+        "その後、同対象に3回の短剣物理攻撃（威力 110）",
+        "弱点以外でもシールドポイントを削る"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】ターン3/5/7 威力120/180/315"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "defence",
+          "target_source_type": "battle",
+          "value": 50,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "physical",
+          "target_source_type": "battle",
+          "value": 50,
+          "tag": "dagger",
+          "cap_group": "debuff_resist_phys_dagger",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 30,
+          "tag": "dagger",
+          "cap_group": "debuff_resist_phys_dagger",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 30,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_single"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に物防ダウン30%と短剣耐性ダウン30%と バトアビによる 物防ダウンと短剣耐性ダウンを受けた際の上限が 50%になる効果を付与（2ターン） その後、同対象に 4回 の短剣物理攻撃（威力 110） 弱点以外でもシールドポイントを削る このアビリティのブーストLVがLV.2/レベル4/レベル6（MAX）になる ※BPの消費量は1/3/5になる ブレイク中の敵がいる時： このアビリティのダメージ上限が400000アップする"
+        }
+      ]
+    },
+    {
+      "character_id": "793073",
+      "character_name": "ティーダ",
+      "ability_name": "フラタニティ",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "自身に物攻アップ15%と",
+        "短剣攻撃ダメージアップ15%の効果を付与",
+        "さらに、「たたかう」を含む物理攻撃（一部除く）時",
+        "剣・氷弱点を突ける効果を付与",
+        "（ダメージ計算は各攻撃に準ずる）",
+        "BP1以上消費時：",
+        "自身に「たたかう」以外の物理攻撃（一部除く）時",
+        "斧・扇・風・光弱点を突ける効果を付与",
+        "（ダメージ計算は各攻撃に準ずる）"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 15,
+          "tag": "dagger",
+          "cap_group": "buff_damage_phys_dagger",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 15,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "自身に「たたかう」以外の物理攻撃（一部除く）時 斧・扇・風・光弱点を突ける効果を付与 （ダメージ計算は各攻撃に準ずる）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に物攻アップ15%と 短剣攻撃ダメージアップ15%の効果を付与 さらに、「たたかう」を含む物理攻撃（一部除く）時 剣・氷弱点を突ける効果を付与 （ダメージ計算は各攻撃に準ずる） BP1以上消費時："
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に「たたかう」以外の物理攻撃（一部除く）時 斧・扇・風・光弱点を突ける効果を付与 （ダメージ計算は各攻撃に準ずる）"
+        }
+      ]
+    },
+    {
+      "character_id": "793073",
+      "character_name": "ティーダ",
+      "ability_name": "スピードスター",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "自身の行動順が早いほど最終ダメージアップ",
+        "1番目：100%、2番目：60%、3番目：30%、4番目以降：効果なし",
+        "※反撃・追撃時は起点になった対象の行動順を適用"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "自身の行動順が早いほど最終ダメージアップ 1番目：100%、2番目：60%、3番目：30%、4番目以降：効果なし ※反撃・追撃時は起点になった対象の行動順を適用"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身の行動順が早いほど最終ダメージアップ 1番目：100%、2番目：60%、3番目：30%、4番目以降：効果なし ※反撃・追撃時は起点になった対象の行動順を適用"
+        }
+      ]
+    },
+    {
+      "character_id": "793073",
+      "character_name": "ティーダ",
+      "ability_name": "エースストライカー",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "自身がヘイスト効果中かつブレイク中の敵がいる時：",
+        "自身に「短剣物理」で攻撃時",
+        "ダメージ上限アップ（効果量 200000）の効果を付与",
+        "さらに、味方前後衛全体にBP回復量1アップの効果と",
+        "物攻アップ30%と短剣攻撃ダメージアップ30%と",
+        "サポアビと装備性能による物攻アップと",
+        "短剣攻撃ダメージアップの上限が50%になる効果と",
+        "ダメージ上限アップ（効果量 50000）の効果を付与",
+        "加えて、ティーダの速度の30%を物攻に加算する効果を付与",
+        "（装備ステータス含む/対象ステータス毎に最大値を適用）"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 200000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 30,
+          "tag": "dagger",
+          "cap_group": "buff_damage_phys_dagger",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 30,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 50000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "attack",
+          "target_source_type": "support",
+          "value": 50,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "physical",
+          "target_source_type": "support",
+          "value": 50,
+          "tag": "dagger",
+          "cap_group": "buff_damage_phys_dagger",
+          "scopes": [
+            "ally_all"
+          ]
+        }
+      ],
+      "conditions": [
+        "自身がヘイスト効果中かつブレイク中の敵がいる時"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "自身がヘイスト効果中かつブレイク中の敵がいる時："
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に「短剣物理」で攻撃時 ダメージ上限アップ（効果量 200000）の効果を付与"
         },
         {
           "scopes": [
             "ally_all"
           ],
-          "text": "味方前後衛全体に消耗した回数に応じ効果を付与 1回以上：ダメージ上限アップ（2ターン/効果量 100000） 2回以上：さらに、特殊効果“聖火の加護”（1ターン） 3回：さらに、特殊効果“不沈”（2ターン） 聖火の加護：BP回復量3アップの効果 不沈：HPが0になるダメージを受けてもHPが1残る効果（一部除く）"
+          "text": "さらに、味方前後衛全体にBP回復量1アップの効果と 物攻アップ30%と短剣攻撃ダメージアップ30%と サポアビと装備性能による物攻アップと 短剣攻撃ダメージアップの上限が50%になる効果と ダメージ上限アップ（効果量 50000）の効果を付与 加えて、ティーダの速度の30%を物攻に加算する効果を付与 （装備ステータス含む/対象ステータス毎に最大値を適用）"
+        }
+      ]
+    },
+    {
+      "character_id": "793073",
+      "character_name": "ティーダ",
+      "ability_name": "オートヘイスト",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "戦闘開始時：自身に特殊効果”ヘイスト”を付与",
+        "（4ターン/ターン延長不可・上書/バトアビとして付与）",
+        "さらに、特殊効果”気合”を付与",
+        "（4ターン/ターンが長くなるよう上書き）",
+        "加えて、“クイックpt“を6追加、BPを2回復し",
+        "SPストックを付与（効果量 使用者の最大SPの30%/重複不可）",
+        "ヘイスト：素早く行動できる効果と",
+        "使用する攻撃アビリティを2回発動する効果",
+        "（追加発動分はSP消費無し）※行動順影響は行動開始時",
+        "気合：BPが減少しない（消耗時も含む/一部除く）",
+        "※ブーストする分のBPは必要、BP消費・消耗条件は発揮される"
+      ],
+      "raw_text_pre_enhance": [
+        "戦闘開始時：自身に特殊効果”ヘイスト”を付与",
+        "（4ターン/ターン延長不可・上書/バトアビとして付与）",
+        "ヘイスト：素早く行動できる効果と",
+        "使用する攻撃アビリティを2回発動する効果",
+        "（追加発動分はSP消費無し）※行動順影響は行動開始時"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "戦闘開始時:自身に特殊効果”ヘイスト”を付与 （4ターン/ターン延長不可・上書/バトアビとして付与） さらに、特殊効果”気合”を付与 （4ターン/ターンが長くなるよう上書き） 加えて、“クイックpt“を6追加、BPを2回復し SPストックを付与（効果量 使用者の最大SPの30%/重複不可）",
+        "素早く行動できる効果と 使用する攻撃アビリティを2回発動する効果 （追加発動分はSP消費無し）※行動順影響は行動開始時 気合:BPが減少しない（消耗時も含む/一部除く） ※ブーストする分のBPは必要、BP消費・消耗条件は発揮される"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "戦闘開始時:自身に特殊効果”ヘイスト”を付与 （4ターン/ターン延長不可・上書/バトアビとして付与） さらに、特殊効果”気合”を付与 （4ターン/ターンが長くなるよう上書き） 加えて、“クイックpt“を6追加、BPを2回復し SPストックを付与（効果量 使用者の最大SPの30%/重複不可）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "素早く行動できる効果と 使用する攻撃アビリティを2回発動する効果 （追加発動分はSP消費無し）※行動順影響は行動開始時 気合:BPが減少しない（消耗時も含む/一部除く） ※ブーストする分のBPは必要、BP消費・消耗条件は発揮される",
+          "special_effect_id": "ヘイスト"
+        }
+      ]
+    },
+    {
+      "character_id": "793073",
+      "character_name": "ティーダ",
+      "ability_name": "エース・オブ・ザ・ブリッツ",
+      "source_type": "ultimate",
+      "cost": "超威発動",
+      "raw_text": [
+        "【Lv.MAX】",
+        "自身に短剣攻撃ダメージアップ30%の効果を付与（2ターン）",
+        "その後、敵単体に8回の短剣物理攻撃（威力70）",
+        "斧・扇・風・光弱点を突ける（ダメージ計算は短剣物理）",
+        "200%発動時：さらに、敵単体に短剣弱点を付与（2回）",
+        "その後、同対象に2回の短剣物理攻撃（威力 500）",
+        "この200%発動時攻撃のダメージ上限が500000アップさらに、自身に特殊効果”ヘイスト”を付与（3ターン/ターン延長不可・上書き/バトルアビリティとして付与）",
+        "さらに、特殊効果”気合”を付与（3ターン/ターンが長くなるよう上書き）",
+        "弱点付与：付与方法によらず弱点毎に回数は合算（最大9回）",
+        "元からその弱点があればその弱点ダメージ倍率をプラス20%",
+        "ヘイスト：素早く行動できる効果と",
+        "使用する攻撃アビリティを2回発動する効果（追加発動分はSP消費無し） ※行動順影響は行動開始時",
+        "気合：BPが減少しない（消耗時も含む/一部除く）",
+        "※ただし、ブーストする分のBPは貯まっている必要がある",
+        "※BP消費、BP消耗を条件にする効果は発揮される"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 30,
+          "tag": "dagger",
+          "cap_group": "buff_damage_phys_dagger",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [
+        "200%発動時さらに、敵単体に短剣弱点を付与（2回） その後、同対象に2回の短剣物理攻撃（威力 500）"
+      ],
+      "unknown": [
+        "【Lv.MAX】",
+        "その後、敵単体に8回の短剣物理攻撃（威力70） 斧・扇・風・光弱点を突ける（ダメージ計算は短剣物理）",
+        "この200%発動時攻撃のダメージ上限が500000アップさらに、自身に特殊効果”ヘイスト”を付与（3ターン/ターン延長不可・上書き/バトルアビリティとして付与） さらに、特殊効果”気合”を付与（3ターン/ターンが長くなるよう上書き） 弱点付与:付与方法によらず弱点毎に回数は合算（最大9回） 元からその弱点があればその弱点ダメージ倍率をプラス20%",
+        "素早く行動できる効果と 使用する攻撃アビリティを2回発動する効果（追加発動分はSP消費無し） ※行動順影響は行動開始時 気合:BPが減少しない（消耗時も含む/一部除く） ※ただし、ブーストする分のBPは貯まっている必要がある ※BP消費、BP消耗を条件にする効果は発揮される"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "【Lv.MAX】"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に短剣攻撃ダメージアップ30%の効果を付与（2ターン）"
+        },
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "その後、敵単体に8回の短剣物理攻撃（威力70） 斧・扇・風・光弱点を突ける（ダメージ計算は短剣物理）"
+        },
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "200%発動時：さらに、敵単体に短剣弱点を付与（2回） その後、同対象に2回の短剣物理攻撃（威力 500）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "この200%発動時攻撃のダメージ上限が500000アップさらに、自身に特殊効果”ヘイスト”を付与（3ターン/ターン延長不可・上書き/バトルアビリティとして付与） さらに、特殊効果”気合”を付与（3ターン/ターンが長くなるよう上書き） 弱点付与:付与方法によらず弱点毎に回数は合算（最大9回） 元からその弱点があればその弱点ダメージ倍率をプラス20%"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "素早く行動できる効果と 使用する攻撃アビリティを2回発動する効果（追加発動分はSP消費無し） ※行動順影響は行動開始時 気合:BPが減少しない（消耗時も含む/一部除く） ※ただし、ブーストする分のBPは貯まっている必要がある ※BP消費、BP消耗を条件にする効果は発揮される",
+          "special_effect_id": "ヘイスト",
+          "target_source_type": "battle"
+        }
+      ]
+    },
+    {
+      "character_id": "793073",
+      "character_name": "ティーダ",
+      "ability_name": "すぐに終わらせてやる！",
+      "source_type": "ex",
+      "cost": "回数：1",
+      "raw_text": [
+        "単体に特殊効果”短剣脆点”の効果を付与（8回）",
+        "その後、同対象に8回の短剣物理攻撃（威力 10）",
+        "脆点付与：付与方法によらず点毎に回数は合算（最大9回）",
+        "脆点は物理・属性毎に1種まで（2種目は上書）",
+        "合致する攻撃分類の攻撃を受ける時",
+        "シールドポイントが弱点に関係なく1削られ",
+        "ダメージ倍率がプラス50%",
+        "※弱点とは別効果。弱点を突ける効果では発動しない"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_condition": [
+        "【使用条件】5ターン目以内"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】威力15/20/30"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "単体に特殊効果”短剣脆点”の効果を付与（8回） その後、同対象に8回の短剣物理攻撃（威力 10） 脆点付与：付与方法によらず点毎に回数は合算（最大9回） 脆点は物理・属性毎に1種まで（2種目は上書） 合致する攻撃分類の攻撃を受ける時 シールドポイントが弱点に関係なく1削られ ダメージ倍率がプラス50% ※弱点とは別効果。弱点を突ける効果では発動しない"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "単体に特殊効果”短剣脆点”の効果を付与（8回） その後、同対象に8回の短剣物理攻撃（威力 10） 脆点付与：付与方法によらず点毎に回数は合算（最大9回） 脆点は物理・属性毎に1種まで（2種目は上書） 合致する攻撃分類の攻撃を受ける時 シールドポイントが弱点に関係なく1削られ ダメージ倍率がプラス50% ※弱点とは別効果。弱点を突ける効果では発動しない"
         }
       ]
     }
@@ -157176,6 +157346,2378 @@
             "ally_front_all"
           ],
           "text": "味方前衛全体に 1度だけダメージ減少10%（一部除く）の効果を付与 （同系統の効果重複不可/重ねがけ時、回数増加無し）"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "character_id": "781063",
+      "character_name": "テメノスEx",
+      "ability_name": "特大火炎魔法(単体)Ⅱ",
+      "source_type": "battle",
+      "cost": "【消費SP 40】",
+      "raw_text": [
+        "敵単体に3回の火属性攻撃（威力 65）",
+        "※スタイルに応じて攻撃分類が変化"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力75/90/120"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵単体に3回の火属性攻撃（威力 65） ※スタイルに応じて攻撃分類が変化"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に3回の火属性攻撃（威力 65） ※スタイルに応じて攻撃分類が変化"
+        }
+      ]
+    },
+    {
+      "character_id": "781063",
+      "character_name": "テメノスEx",
+      "ability_name": "大火炎破護魔法(全体)Ⅱ",
+      "source_type": "battle",
+      "cost": "【消費SP 45】",
+      "raw_text": [
+        "敵全体に2回の火属性攻撃（威力80）",
+        "さらに、属防ダウン15%の効果を付与（2ターン）",
+        "※スタイルに応じて攻撃分類が変化"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力95/115/130"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 15,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": [
+            "enemy_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に2回の火属性攻撃（威力80） さらに、属防ダウン15%の効果を付与（2ターン） ※スタイルに応じて攻撃分類が変化"
+        }
+      ]
+    },
+    {
+      "character_id": "781063",
+      "character_name": "テメノスEx",
+      "ability_name": "大火炎魔法(全体)Ⅱ",
+      "source_type": "battle",
+      "cost": "【消費SP 37】",
+      "raw_text": [
+        "敵全体に2回の火属性攻撃（威力80）",
+        "※スタイルに応じて攻撃分類が変化"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力95/115/130"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵全体に2回の火属性攻撃（威力80） ※スタイルに応じて攻撃分類が変化"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に2回の火属性攻撃（威力80） ※スタイルに応じて攻撃分類が変化"
+        }
+      ]
+    },
+    {
+      "character_id": "781063",
+      "character_name": "テメノスEx",
+      "ability_name": "特大火炎激化魔法(全体)Ⅲ",
+      "source_type": "battle",
+      "cost": "【消費SP 90】",
+      "raw_text": [
+        "敵全体に3回の火属性攻撃（威力80）",
+        "さらに、味方前衛全体に",
+        "火属性ダメージアップ20%の効果を付与（2ターン）",
+        "※スタイルに応じて攻撃分類・ダメージアップの属性が変化"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力90/105/130"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 20,
+          "tag": "fire",
+          "cap_group": "buff_damage_elem_fire",
+          "scopes": [
+            "ally_front_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "敵全体に3回の火属性攻撃（威力80）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に3回の火属性攻撃（威力80）"
+        },
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "さらに、味方前衛全体に 火属性ダメージアップ20%の効果を付与（2ターン） ※スタイルに応じて攻撃分類・ダメージアップの属性が変化"
+        }
+      ]
+    },
+    {
+      "character_id": "781063",
+      "character_name": "テメノスEx",
+      "ability_name": "極大火炎吸収魔法(単体)Ⅲ",
+      "source_type": "battle",
+      "cost": "【消費SP 94】",
+      "raw_text": [
+        "敵単体に4回の火属性攻撃（威力 65）",
+        "さらに、与えたダメージ量の2%のSP吸収",
+        "ブレイク中の敵がいる時：さらに、自身のBPを5回復",
+        "※スタイルに応じて攻撃分類が変化"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力75/85/110"
+      ],
+      "effects": [],
+      "conditions": [
+        "ブレイク中の敵がいる時さらに、自身のBPを5回復 ※スタイルに応じて攻撃分類が変化"
+      ],
+      "unknown": [
+        "敵単体に4回の火属性攻撃（威力 65） さらに、与えたダメージ量の2%のSP吸収"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に4回の火属性攻撃（威力 65） さらに、与えたダメージ量の2%のSP吸収"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "ブレイク中の敵がいる時：さらに、自身のBPを5回復 ※スタイルに応じて攻撃分類が変化"
+        }
+      ]
+    },
+    {
+      "character_id": "781063",
+      "character_name": "テメノスEx",
+      "ability_name": "超絶乱火炎魔法",
+      "source_type": "battle",
+      "cost": "【消費SP 46】",
+      "raw_text": [
+        "ランダムなターゲットに5回の火属性攻撃（威力30）",
+        "攻撃毎に火耐性ダウン15%の効果を付与（1ターン）",
+        "※スタイルに応じて攻撃分類・耐性ダウンの属性が変化"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力35/45/60"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 15,
+          "tag": "fire",
+          "cap_group": "debuff_resist_elem_fire",
+          "scopes": [
+            "random"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "random"
+          ],
+          "text": "ランダムなターゲットに5回の火属性攻撃（威力30） 攻撃毎に火耐性ダウン15%の効果を付与（1ターン） ※スタイルに応じて攻撃分類・耐性ダウンの属性が変化"
+        }
+      ]
+    },
+    {
+      "character_id": "781063",
+      "character_name": "テメノスEx",
+      "ability_name": "極大火炎魔法(全体)Ⅱ",
+      "source_type": "battle",
+      "cost": "【消費SP 63】",
+      "raw_text": [
+        "敵全体に4回の火属性攻撃（威力 35）",
+        "ブーストMAX時：効果を再発動（SP消費無し）する",
+        "※スタイルに応じて攻撃分類が変化"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力45/55/70"
+      ],
+      "effects": [],
+      "conditions": [
+        "敵全体に4回の火属性攻撃（威力 35） ブーストMAX時効果を再発動（SP消費無し）する ※スタイルに応じて攻撃分類が変化"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に4回の火属性攻撃（威力 35） ブーストMAX時：効果を再発動（SP消費無し）する ※スタイルに応じて攻撃分類が変化"
+        }
+      ]
+    },
+    {
+      "character_id": "781063",
+      "character_name": "テメノスEx",
+      "ability_name": "魔大公の加護",
+      "source_type": "battle",
+      "cost": "【消費SP 50】",
+      "raw_text": [
+        "味方前衛全体に属攻アップ20%と",
+        "BP回復量1アップの効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】ターン3/4/5"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 20,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "ally_front_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体に属攻アップ20%と BP回復量1アップの効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "781063",
+      "character_name": "テメノスEx",
+      "ability_name": "ウルティマ・イグニス",
+      "source_type": "battle",
+      "cost": "【消費SP 400】",
+      "raw_text": [
+        "敵全体に2回の火属性攻撃（威力260）",
+        "このアビリティのダメージ上限が300000アップし",
+        "（※カウントダウン、継続効果のダメージ上限もアップ）",
+        "このアビリティのブーストLvがレベル2/レベル4/レベル6（MAX）になる",
+        "※BPの消費量は1/3/5になる",
+        "BP3以上消費時：さらに、自身にカウントダウンの効果を付与（カウント 1）",
+        "カウント終了時、敵全体に2回の火属性攻撃（威力 300）",
+        "BP5消費時：さらに、使用したターンから1ターンに1回",
+        "ターン終了時に継続効果を発揮（継続2回/効果・回数上書き）",
+        "継続効果：敵全体に2回の火属性攻撃（威力 300）",
+        "※スタイルに応じて攻撃分類が変化",
+        "※継続効果の攻撃分類はアビリティ使用時の攻撃分類"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力290/340/450 ※継続効果の威力は変化しない"
+      ],
+      "effects": [],
+      "conditions": [
+        "BP3以上消費時さらに、自身にカウントダウンの効果を付与（カウント 1）",
+        "カウント終了時、敵全体に2回の火属性攻撃（威力 300） BP5消費時さらに、使用したターンから1ターンに1回 ターン終了時に継続効果を発揮（継続2回/効果・回数上書き）"
+      ],
+      "unknown": [
+        "敵全体に2回の火属性攻撃（威力260） このアビリティのダメージ上限が300000アップし （※カウントダウン、継続効果のダメージ上限もアップ） このアビリティのブーストLvがレベル2/レベル4/レベル6（MAX）になる ※BPの消費量は1/3/5になる",
+        "継続効果：敵全体に2回の火属性攻撃（威力 300） ※スタイルに応じて攻撃分類が変化 ※継続効果の攻撃分類はアビリティ使用時の攻撃分類"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に2回の火属性攻撃（威力260） このアビリティのダメージ上限が300000アップし （※カウントダウン、継続効果のダメージ上限もアップ） このアビリティのブーストLvがレベル2/レベル4/レベル6（MAX）になる ※BPの消費量は1/3/5になる"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "BP3以上消費時：さらに、自身にカウントダウンの効果を付与（カウント 1）"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "カウント終了時、敵全体に2回の火属性攻撃（威力 300） BP5消費時：さらに、使用したターンから1ターンに1回 ターン終了時に継続効果を発揮（継続2回/効果・回数上書き）"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "継続効果：敵全体に2回の火属性攻撃（威力 300） ※スタイルに応じて攻撃分類が変化 ※継続効果の攻撃分類はアビリティ使用時の攻撃分類"
+        }
+      ]
+    },
+    {
+      "character_id": "781063",
+      "character_name": "テメノスEx",
+      "ability_name": "三複素のオーラ",
+      "source_type": "battle",
+      "cost": "【消費SP 36】",
+      "raw_text": [
+        "味方前衛全体に「たたかう」以外の属性攻撃（一部除く）時",
+        "風・光・闇弱点を突ける効果を付与",
+        "（2ターン/ダメージ計算は各攻撃に準ずる）",
+        "ブーストMAX時：前後衛全体化"
+      ],
+      "raw_text_pre_enhance": [
+        "味方前衛全体に「たたかう」以外の属性攻撃（一部除く）時",
+        "風・光・闇弱点を突ける効果を付与",
+        "（2ターン/ダメージ計算は各攻撃に準ずる）"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】ターン3/4/5"
+      ],
+      "effects": [],
+      "conditions": [
+        "味方前衛全体に「たたかう」以外の属性攻撃（一部除く）時 風・光・闇弱点を突ける効果を付与 （2ターン/ダメージ計算は各攻撃に準ずる） ブーストMAX時前後衛全体化"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体に「たたかう」以外の属性攻撃（一部除く）時 風・光・闇弱点を突ける効果を付与 （2ターン/ダメージ計算は各攻撃に準ずる） ブーストMAX時：前後衛全体化"
+        }
+      ]
+    },
+    {
+      "character_id": "781063",
+      "character_name": "テメノスEx",
+      "ability_name": "スタイルシフト：三元素",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "コマンド選択時、“火炎”と”氷結”と“雷撃”に",
+        "スタイルを切り替えられる",
+        "スタイルに応じて、自身の一部アビリティの攻撃分類や性能が変化し",
+        "自身に対応する属性ダメージアップ20%の効果を付与",
+        "対応する属性火炎：火、氷結：氷、雷撃：雷"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 20,
+          "cap_group": "buff_damage_elem_all",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "コマンド選択時、“火炎”と”氷結”と“雷撃”に スタイルを切り替えられる",
+        "スタイルに応じて、自身の一部アビリティの攻撃分類や性能が変化し"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "コマンド選択時、“火炎”と”氷結”と“雷撃”に スタイルを切り替えられる"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "スタイルに応じて、自身の一部アビリティの攻撃分類や性能が変化し"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に対応する属性ダメージアップ20%の効果を付与 対応する属性火炎：火、氷結：氷、雷撃：雷"
+        }
+      ]
+    },
+    {
+      "character_id": "781063",
+      "character_name": "テメノスEx",
+      "ability_name": "弱点の洞察",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "自身に敵の弱点を突いた時のダメージアップ30%の効果と",
+        "サポアビと装備性能による敵の弱点を突いた時のダメージアップの上限が50%になる効果を付与",
+        "ブレイク中の敵がいる時：さらに",
+        "ダメージ上限アップ（効果量 300000）の効果を付与"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "weak",
+          "value": 30,
+          "cap_group": "buff_damage_weak",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 300000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "weak",
+          "target_source_type": "support",
+          "value": 50,
+          "cap_group": "buff_damage_weak",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に敵の弱点を突いた時のダメージアップ30%の効果と サポアビと装備性能による敵の弱点を突いた時のダメージアップの上限が50%になる効果を付与 ブレイク中の敵がいる時：さらに ダメージ上限アップ（効果量 300000）の効果を付与"
+        }
+      ]
+    },
+    {
+      "character_id": "781063",
+      "character_name": "テメノスEx",
+      "ability_name": "魔大公の剔抉",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "味方が敵をブレイクさせた時",
+        "ブレイクさせた敵に自身のスタイルに応じた効果を付与",
+        "火炎：火耐性ダウン20%とサポアビと装備性能による",
+        "火耐性ダウンを受けた際の上限が50%になる効果（2ターン）",
+        "氷結：氷耐性ダウン20%とサポアビと装備性能による",
+        "氷耐性ダウンを受けた際の上限が50%になる効果（2ターン）",
+        "雷撃：雷耐性ダウン20%とサポアビと装備性能による",
+        "雷耐性ダウンを受けた際の上限が50%になる効果（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "elemental",
+          "target_source_type": "support",
+          "value": 50,
+          "tag": "fire",
+          "cap_group": "debuff_resist_elem_fire",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 20,
+          "tag": "fire",
+          "cap_group": "debuff_resist_elem_fire",
+          "scopes": [
+            "enemy_single"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "味方が敵をブレイクさせた時"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "味方が敵をブレイクさせた時"
+        },
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "ブレイクさせた敵に自身のスタイルに応じた効果を付与 火炎：火耐性ダウン20%とサポアビと装備性能による 火耐性ダウンを受けた際の上限が50%になる効果（2ターン） 氷結：氷耐性ダウン20%とサポアビと装備性能による 氷耐性ダウンを受けた際の上限が50%になる効果（2ターン） 雷撃：雷耐性ダウン20%とサポアビと装備性能による 雷耐性ダウンを受けた際の上限が50%になる効果（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "781063",
+      "character_name": "テメノスEx",
+      "ability_name": "三属性の噴出",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "自身が攻撃毎（一部除く）に小確率で敵に自身のスタイルに応じ効果を付与",
+        "火炎：火耐性ダウン",
+        "20%",
+        "の効果と燃焼の状態異常（2ターン）",
+        "氷結：氷耐性ダウン",
+        "20%",
+        "の効果と凍傷の状態異常（2ターン）",
+        "雷撃：雷耐性ダウン",
+        "20%",
+        "の効果と漏電の状態異常（2ターン）",
+        "燃焼：ターン終了時に属攻ダメージ＆シールド-1（0にならない）",
+        "凍傷：行動完了後に属攻ダメージ＆シールド-1（0にならない）",
+        "漏電：行動完了後に属攻ダメージ＆シールド-1（0にならない）"
+      ],
+      "raw_text_pre_enhance": [
+        "自身が攻撃毎（一部除く）に小確率で敵に自身のスタイルに応じ効果を付与",
+        "火炎：火耐性ダウン15%の効果と燃焼の状態異常（2ターン）",
+        "氷結：氷耐性ダウン15%の効果と凍傷の状態異常（2ターン）",
+        "雷撃：雷耐性ダウン15%の効果と漏電の状態異常（2ターン）",
+        "燃焼：ターン終了時に属攻ダメージ&シールド-1（0にならない）",
+        "凍傷：行動完了後に属攻ダメージ＆シールド-1（0にならない）",
+        "漏電：行動完了後に属攻ダメージ&シールド-1（0にならない）"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 20,
+          "tag": "fire",
+          "cap_group": "debuff_resist_elem_fire",
+          "scopes": [
+            "enemy_single"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "自身が攻撃毎（一部除く）に小確率で敵に自身のスタイルに応じ効果を付与 火炎：火耐性ダウン 20% の効果と燃焼の状態異常（2ターン） 氷結：氷耐性ダウン 20% の効果と凍傷の状態異常（2ターン） 雷撃：雷耐性ダウン 20% の効果と漏電の状態異常（2ターン） 燃焼：ターン終了時に属攻ダメージ＆シールド-1（0にならない） 凍傷：行動完了後に属攻ダメージ＆シールド-1（0にならない） 漏電：行動完了後に属攻ダメージ＆シールド-1（0にならない）"
+        }
+      ]
+    },
+    {
+      "character_id": "781063",
+      "character_name": "テメノスEx",
+      "ability_name": "魔大公の秘術",
+      "source_type": "ultimate",
+      "cost": "後衛発動",
+      "raw_text": [
+        "【Lv.MAX】",
+        "自身に威力アップ200%（ターン延長不可/同系統の効果重複不可）と",
+        "属性ダメージアップ20%の効果を付与（4ターン）",
+        "さらに、属性攻撃でクリティカルが発生する効果と",
+        "必ずクリティカルの効果を付与（9ターン）",
+        "200%発動時：加えて、クリティカル時のダメージ倍率が",
+        "1.5倍になる効果を付与（9ターン/通常時は1.25倍）"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 20,
+          "cap_group": "buff_damage_elem_all",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "critical",
+          "unit": "",
+          "sub_category": "certain",
+          "target_source_type": "battle",
+          "value": 1,
+          "cap_group": "critical_certain",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "critical",
+          "unit": "",
+          "sub_category": "elemental",
+          "target_source_type": "battle",
+          "value": 1,
+          "cap_group": "critical_elem",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "power",
+          "unit": "%",
+          "target_source_type": "battle",
+          "value": 200,
+          "cap_group": "power_up",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "【Lv.MAX】"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "【Lv.MAX】"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に威力アップ200%（ターン延長不可/同系統の効果重複不可）と 属性ダメージアップ20%の効果を付与（4ターン） さらに、属性攻撃でクリティカルが発生する効果と 必ずクリティカルの効果を付与（9ターン） 200%発動時：加えて、クリティカル時のダメージ倍率が 1.5倍になる効果を付与（9ターン/通常時は1.25倍）"
+        }
+      ]
+    },
+    {
+      "character_id": "781063",
+      "character_name": "テメノスEx",
+      "ability_name": "フラギス・イグニス",
+      "source_type": "ex",
+      "cost": "回数：1",
+      "raw_text": [
+        "敵全体に特殊効果“火脆点”の効果を付与（9回）",
+        "その後、同対象に火属性攻撃",
+        "ブーストLvに応じて攻撃回数増加（威力 150/1回）",
+        "さらに、自身にSP自動回復（回復量 最大SPの25%）と",
+        "BP回復量3アップの効果を付与（3ターン）",
+        "※スタイルに応じて脆点の属性・攻撃分類が変化",
+        "脆点付与：付与方法によらず脆点毎に回数は合算（最大9回）",
+        "脆点は物理・属性毎に1種まで（2種目は上書）",
+        "合致する攻撃分類の攻撃を受ける時",
+        "シールドポイントが弱点に関係なく1削られ",
+        "ダメージ倍率がプラス50%",
+        "※弱点とは別効果。弱点を突ける効果では発動しない"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_condition": [
+        "【使用条件】3ターン目以降"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】威力55/35/20 3/5/9回"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵全体に特殊効果“火脆点”の効果を付与（9回） その後、同対象に火属性攻撃 ブーストLvに応じて攻撃回数増加（威力 150/1回）",
+        "さらに、自身にSP自動回復（回復量 最大SPの25%）と BP回復量3アップの効果を付与（3ターン） ※スタイルに応じて脆点の属性・攻撃分類が変化 脆点付与：付与方法によらず脆点毎に回数は合算（最大9回） 脆点は物理・属性毎に1種まで（2種目は上書） 合致する攻撃分類の攻撃を受ける時 シールドポイントが弱点に関係なく1削られ ダメージ倍率がプラス50% ※弱点とは別効果。弱点を突ける効果では発動しない"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に特殊効果“火脆点”の効果を付与（9回） その後、同対象に火属性攻撃 ブーストLvに応じて攻撃回数増加（威力 150/1回）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "さらに、自身にSP自動回復（回復量 最大SPの25%）と BP回復量3アップの効果を付与（3ターン） ※スタイルに応じて脆点の属性・攻撃分類が変化 脆点付与：付与方法によらず脆点毎に回数は合算（最大9回） 脆点は物理・属性毎に1種まで（2種目は上書） 合致する攻撃分類の攻撃を受ける時 シールドポイントが弱点に関係なく1削られ ダメージ倍率がプラス50% ※弱点とは別効果。弱点を突ける効果では発動しない"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "character_id": "781061",
+      "character_name": "ミディヤEx",
+      "ability_name": "星彩魔法(単体)Ⅲ",
+      "source_type": "battle",
+      "cost": "【消費SP 46】",
+      "raw_text": [
+        "敵単体に3回の光属性攻撃（威力 65）",
+        "風・闇弱点を突ける（ダメージ計算は光属性）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力75/90/120"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵単体に3回の光属性攻撃（威力 65） 風・闇弱点を突ける（ダメージ計算は光属性）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に3回の光属性攻撃（威力 65） 風・闇弱点を突ける（ダメージ計算は光属性）"
+        }
+      ]
+    },
+    {
+      "character_id": "781061",
+      "character_name": "ミディヤEx",
+      "ability_name": "会心のまたたき",
+      "source_type": "battle",
+      "cost": "【消費SP 68】",
+      "raw_text": [
+        "味方単体と自身に",
+        "属性攻撃でクリティカルが発生する効果と",
+        "必ずクリティカルの効果を付与（3ターン）",
+        "ブーストMAX時：さらに、クリティカル時のダメージ倍率が",
+        "1.4倍になる効果（通常時は1.25倍）を付与（6ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】ターン4/5/6"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "critical",
+          "unit": "",
+          "sub_category": "certain",
+          "target_source_type": "battle",
+          "value": 1,
+          "cap_group": "critical_certain",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "critical",
+          "unit": "",
+          "sub_category": "elemental",
+          "target_source_type": "battle",
+          "value": 1,
+          "cap_group": "critical_elem",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "味方単体と自身に 属性攻撃でクリティカルが発生する効果と 必ずクリティカルの効果を付与（3ターン） ブーストMAX時：さらに、クリティカル時のダメージ倍率が 1.4倍になる効果（通常時は1.25倍）を付与（6ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "781061",
+      "character_name": "ミディヤEx",
+      "ability_name": "継続回復魔法(前全)Ⅱ",
+      "source_type": "battle",
+      "cost": "【消費SP 36】",
+      "raw_text": [
+        "味方前衛全体にHP自動回復の効果を付与（2ターン/効力110）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】ターン3/4/5"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "味方前衛全体にHP自動回復の効果を付与（2ターン/効力110）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体にHP自動回復の効果を付与（2ターン/効力110）"
+        }
+      ]
+    },
+    {
+      "character_id": "781061",
+      "character_name": "ミディヤEx",
+      "ability_name": "BPブーストのまたたき",
+      "source_type": "battle",
+      "cost": "【消費SP 76】",
+      "raw_text": [
+        "自身を除く味方単体にBP回復量1アップの効果を付与（2ターン）",
+        "ブーストMAX時：サポートアビリティ“満天の星”の",
+        "BPストックの付与数が2になる"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】ターン3/4/5"
+      ],
+      "effects": [],
+      "conditions": [
+        "自身を除く味方単体にBP回復量1アップの効果を付与（2ターン） ブーストMAX時サポートアビリティ“満天の星”の BPストックの付与数が2になる"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "self_exclude",
+            "ally_single"
+          ],
+          "text": "自身を除く味方単体にBP回復量1アップの効果を付与（2ターン） ブーストMAX時：サポートアビリティ“満天の星”の BPストックの付与数が2になる"
+        }
+      ]
+    },
+    {
+      "character_id": "781061",
+      "character_name": "ミディヤEx",
+      "ability_name": "お返しのまたたき",
+      "source_type": "battle",
+      "cost": "【消費SP 24】",
+      "raw_text": [
+        "自身に味方が属性攻撃を受けた時に反撃する効果を付与（1回）",
+        "反撃：敵単体に光属性攻撃（威力150）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】2/3/4回"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "自身に味方が属性攻撃を受けた時に反撃する効果を付与（1回）",
+        "反撃：敵単体に光属性攻撃（威力150）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に味方が属性攻撃を受けた時に反撃する効果を付与（1回）"
+        },
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "反撃：敵単体に光属性攻撃（威力150）"
+        }
+      ]
+    },
+    {
+      "character_id": "781061",
+      "character_name": "ミディヤEx",
+      "ability_name": "星詠みの奏",
+      "source_type": "battle",
+      "cost": "【消費SP 84】",
+      "raw_text": [
+        "味方前衛全体に",
+        "物防・属防・速度アップ15%の効果を付与（3ターン）",
+        "さらに、物理攻撃（一部除く）を応ず回避する効果と",
+        "属性攻撃（一部除く）を必ず回避する効果を付与（1回）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】ターン4/5/6"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 15,
+          "cap_group": "buff_stat_def_phys",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 15,
+          "cap_group": "buff_stat_def_elem",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "speed",
+          "value": 15,
+          "cap_group": "buff_stat_speed",
+          "scopes": [
+            "ally_front_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体に 物防・属防・速度アップ15%の効果を付与（3ターン） さらに、物理攻撃（一部除く）を応ず回避する効果と 属性攻撃（一部除く）を必ず回避する効果を付与（1回）"
+        }
+      ]
+    },
+    {
+      "character_id": "781061",
+      "character_name": "ミディヤEx",
+      "ability_name": "凶星",
+      "source_type": "battle",
+      "cost": "【消費SP 62】",
+      "raw_text": [
+        "ランダムなターゲットに5回の光属性攻撃（威力30）",
+        "その後、敵全体に",
+        "風・光・闇耐性ダウン15%の効果を付与（2ターン）",
+        "ブーストMAX時：弱点以外でもシールドポイントを削る"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力35/45/60"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 15,
+          "tag": "wind",
+          "cap_group": "debuff_resist_elem_wind",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 15,
+          "tag": "light",
+          "cap_group": "debuff_resist_elem_light",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 15,
+          "tag": "dark",
+          "cap_group": "debuff_resist_elem_dark",
+          "scopes": [
+            "enemy_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "ランダムなターゲットに5回の光属性攻撃（威力30）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "random"
+          ],
+          "text": "ランダムなターゲットに5回の光属性攻撃（威力30）"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "その後、敵全体に 風・光・闇耐性ダウン15%の効果を付与（2ターン） ブーストMAX時：弱点以外でもシールドポイントを削る"
+        }
+      ]
+    },
+    {
+      "character_id": "781061",
+      "character_name": "ミディヤEx",
+      "ability_name": "流星",
+      "source_type": "battle",
+      "cost": "【消費SP 62】",
+      "raw_text": [
+        "敵全体に2回ずつ風・光・闇属性攻撃（威力120）",
+        "この攻撃は物防・属防アップとダメージ減少効果を無視する",
+        "ブーストMAX時：効果を再発動（SP消費無し）する"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力130/160/195"
+      ],
+      "effects": [],
+      "conditions": [
+        "敵全体に2回ずつ風・光・闇属性攻撃（威力120） この攻撃は物防・属防アップとダメージ減少効果を無視する ブーストMAX時効果を再発動（SP消費無し）する"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に2回ずつ風・光・闇属性攻撃（威力120） この攻撃は物防・属防アップとダメージ減少効果を無視する ブーストMAX時：効果を再発動（SP消費無し）する"
+        }
+      ]
+    },
+    {
+      "character_id": "781061",
+      "character_name": "ミディヤEx",
+      "ability_name": "魔力のまたたき",
+      "source_type": "battle",
+      "cost": "【消費SP 96】",
+      "raw_text": [
+        "味方前後衛全体に属攻アップ15%と",
+        "風・光・闇属性ダメージアップ15%の効果を付与（2ターン）",
+        "ブーストMAX時：サポートアビリティ“満天の星”の",
+        "BPストックの付与数が2になる"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】ターン3/4/5"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 15,
+          "tag": "wind",
+          "cap_group": "buff_damage_elem_wind",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 15,
+          "tag": "light",
+          "cap_group": "buff_damage_elem_light",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 15,
+          "tag": "dark",
+          "cap_group": "buff_damage_elem_dark",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 15,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "ally_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "味方前後衛全体に属攻アップ15%と 風・光・闇属性ダメージアップ15%の効果を付与（2ターン） ブーストMAX時：サポートアビリティ“満天の星”の BPストックの付与数が2になる"
+        }
+      ]
+    },
+    {
+      "character_id": "781061",
+      "character_name": "ミディヤEx",
+      "ability_name": "妖星",
+      "source_type": "battle",
+      "cost": "【消費SP 48】",
+      "raw_text": [
+        "敵単体のシールドポイントを弱点に関係なく1削る",
+        "さらに、物防・属防・速度ダウン",
+        "30%",
+        "の効果を付与（3ターン）",
+        "ブーストMAX時：敵全体化",
+        "※行動順影響は2ターン目"
+      ],
+      "raw_text_pre_enhance": [
+        "敵単体のシールドポイントを弱点に関係なく1削る",
+        "さらに、物防・属防・速度ダウン15%の効果を付与（3ターン）",
+        "ブーストMAX時：敵全体化",
+        "※行動順影響は2ターン目"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】2/3/4削る"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 30,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 30,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "speed",
+          "value": 30,
+          "cap_group": "debuff_stat_speed",
+          "scopes": [
+            "enemy_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体のシールドポイントを弱点に関係なく1削る さらに、物防・属防・速度ダウン 30% の効果を付与（3ターン） ブーストMAX時：敵全体化 ※行動順影響は2ターン目"
+        }
+      ]
+    },
+    {
+      "character_id": "781061",
+      "character_name": "ミディヤEx",
+      "ability_name": "明けの明星",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "戦闘開始時：味方前後衛全体にBPストックを3付与（最大3）",
+        "BPストック：ブースト時、BPの代わりにBPストックを消費する",
+        "※BP現在値を参照する効果の対象外"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [],
+      "conditions": [
+        "戦闘開始時味方前後衛全体にBPストックを3付与（最大3） BPストックブースト時、BPの代わりにBPストックを消費する ※BP現在値を参照する効果の対象外"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "戦闘開始時：味方前後衛全体にBPストックを3付与（最大3） BPストック：ブースト時、BPの代わりにBPストックを消費する ※BP現在値を参照する効果の対象外"
+        }
+      ]
+    },
+    {
+      "character_id": "781061",
+      "character_name": "ミディヤEx",
+      "ability_name": "満天の星",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "自身にBP回復量1アップの効果を付与",
+        "自身がブーストMAXでアビリティを使用後",
+        "味方前後衛全体にBPストックを1付与（最大3）",
+        "BPストック：ブースト時、BPの代わりにBPストックを消費する",
+        "※BP現在値を参照する効果の対象外"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "自身にBP回復量1アップの効果を付与 自身がブーストMAXでアビリティを使用後",
+        "味方前後衛全体にBPストックを1付与（最大3） BPストック：ブースト時、BPの代わりにBPストックを消費する ※BP現在値を参照する効果の対象外"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身にBP回復量1アップの効果を付与 自身がブーストMAXでアビリティを使用後"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "味方前後衛全体にBPストックを1付与（最大3） BPストック：ブースト時、BPの代わりにBPストックを消費する ※BP現在値を参照する効果の対象外"
+        }
+      ]
+    },
+    {
+      "character_id": "781061",
+      "character_name": "ミディヤEx",
+      "ability_name": "超新星の眩耀",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "味方がBPストックを消費できた時",
+        "消費したBPストック量に応じて",
+        "その味方の行動中の最終ダメージアップ",
+        "1消費時：5%、2消費時：10%、3消費時：20%"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [],
+      "conditions": [
+        "味方がBPストックを消費できた時 消費したBPストック量に応じて その味方の行動中の最終ダメージアップ 1消費時5%、2消費時10%、3消費時20%"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "味方がBPストックを消費できた時 消費したBPストック量に応じて その味方の行動中の最終ダメージアップ 1消費時：5%、2消費時：10%、3消費時：20%"
+        }
+      ]
+    },
+    {
+      "character_id": "781061",
+      "character_name": "ミディヤEx",
+      "ability_name": "無辺際の星食",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "味方がBP3以上消費してアビリティを使用時",
+        "その味方に物攻・属攻アップ",
+        "30%",
+        "の効果と",
+        "サポアビと装備性能による物攻・属攻アップの上限が",
+        "60%",
+        "になる効果を付与（4ターン）",
+        "コマンド選択時にBP5以上の味方に",
+        "威力アップ",
+        "75%",
+        "の効果を付与（同系統の効果重複不可）"
+      ],
+      "raw_text_pre_enhance": [
+        "味方がBP3以上消費してアビリティを使用時",
+        "その味方に物攻・属攻アップ20%の効果と",
+        "サポアビと装備性能による物攻・属攻アップの上限が",
+        "50%になる効果を付与（4ターン）",
+        "コマンド選択時にBP5以上の味方に",
+        "威力アップ50%の効果を付与（同系統の効果重複不可）"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 30,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": []
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 30,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": []
+        },
+        {
+          "role": "buff",
+          "category": "power",
+          "unit": "%",
+          "target_source_type": "battle",
+          "value": 75,
+          "cap_group": "power_up",
+          "scopes": []
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "attack",
+          "target_source_type": "support",
+          "value": 60,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": []
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "attack",
+          "target_source_type": "support",
+          "value": 60,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": []
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "味方がBP3以上消費してアビリティを使用時 その味方に物攻・属攻アップ 30% の効果と サポアビと装備性能による物攻・属攻アップの上限が 60% になる効果を付与（4ターン） コマンド選択時にBP5以上の味方に 威力アップ 75% の効果を付与（同系統の効果重複不可）"
+        }
+      ]
+    },
+    {
+      "character_id": "781061",
+      "character_name": "ミディヤEx",
+      "ability_name": "星占師の予言",
+      "source_type": "ultimate",
+      "cost": "超威発動",
+      "raw_text": [
+        "【Lv.MAX】",
+        "敵全体に4回の光属性攻撃（威力 250）",
+        "味方前後衛全体の残BP1つにつき",
+        "この必殺技のダメージ上限が50000上昇する",
+        "（消費予定のBPもカウントする/BPストックは対象外）",
+        "コマンド選択時に自身のBPが3以上の時威力が1.5倍"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "【Lv.MAX】",
+        "敵全体に4回の光属性攻撃（威力 250）",
+        "味方前後衛全体の残BP1つにつき この必殺技のダメージ上限が50000上昇する （消費予定のBPもカウントする/BPストックは対象外）",
+        "コマンド選択時に自身のBPが3以上の時威力が1.5倍"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "【Lv.MAX】"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に4回の光属性攻撃（威力 250）"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "味方前後衛全体の残BP1つにつき この必殺技のダメージ上限が50000上昇する （消費予定のBPもカウントする/BPストックは対象外）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "コマンド選択時に自身のBPが3以上の時威力が1.5倍"
+        }
+      ]
+    },
+    {
+      "character_id": "781061",
+      "character_name": "ミディヤEx",
+      "ability_name": "星のゆりかご",
+      "source_type": "ex",
+      "cost": "回数：1",
+      "raw_text": [
+        "ターン中、素早く行動し、味方前後衛全体に",
+        "BP回復量2アップの効果と",
+        "ダメージ上限アップ（効果量 /100000）の効果を付与（1ターン）し",
+        "BPストックを2付与（最大3）",
+        "ブーストMAX時：さらに、",
+        "威力アップ100%の効果を付与（自身2ターン/他1ターン/",
+        "ターン延長不可/同系統の効果重複不可）",
+        "BPストック：ブースト時、BPの代わりにBPストックを消費する",
+        "※BP現在値を参照する効果の対象外"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_condition": [
+        "【使用条件】3ターン目以降"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】ターン2/3/4"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "power",
+          "unit": "%",
+          "target_source_type": "battle",
+          "value": 100,
+          "cap_group": "power_up",
+          "scopes": [
+            "ally_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "ターン中、素早く行動し、味方前後衛全体に BP回復量2アップの効果と ダメージ上限アップ（効果量 /100000）の効果を付与（1ターン）し BPストックを2付与（最大3） ブーストMAX時：さらに、 威力アップ100%の効果を付与（自身2ターン/他1ターン/ ターン延長不可/同系統の効果重複不可） BPストック：ブースト時、BPの代わりにBPストックを消費する ※BP現在値を参照する効果の対象外"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "character_id": "778302",
+      "character_name": "双炎の聖者",
+      "ability_name": "聖炎波",
+      "source_type": "battle",
+      "cost": "【消費SP 34】",
+      "raw_text": [
+        "敵単体に2回の光属性攻撃（威力 90）",
+        "剣・火弱点を突ける（ダメージ計算は光属性）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力105/125/180"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵単体に2回の光属性攻撃（威力 90） 剣・火弱点を突ける（ダメージ計算は光属性）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に2回の光属性攻撃（威力 90） 剣・火弱点を突ける（ダメージ計算は光属性）"
+        }
+      ]
+    },
+    {
+      "character_id": "778302",
+      "character_name": "双炎の聖者",
+      "ability_name": "健全化(前全)",
+      "source_type": "battle",
+      "cost": "【消費SP 30】",
+      "raw_text": [
+        "味方前衛全体の状態異常を回復",
+        "さらに、状態異常無効化の効果を付与（一部除く/1ターン）",
+        "ブーストMAX時：同対象の特殊効果”交代禁止”、",
+        "“昏睡”、”静寂”、”魅了”、“死の宣告”を回復"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】ターン2/3/4"
+      ],
+      "effects": [],
+      "conditions": [
+        "味方前衛全体の状態異常を回復 さらに、状態異常無効化の効果を付与（一部除く/1ターン） ブーストMAX時同対象の特殊効果”交代禁止”、 “昏睡”、”静寂”、”魅了”、“死の宣告”を回復"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体の状態異常を回復 さらに、状態異常無効化の効果を付与（一部除く/1ターン） ブーストMAX時：同対象の特殊効果”交代禁止”、 “昏睡”、”静寂”、”魅了”、“死の宣告”を回復"
+        }
+      ]
+    },
+    {
+      "character_id": "778302",
+      "character_name": "双炎の聖者",
+      "ability_name": "黒呪破",
+      "source_type": "battle",
+      "cost": "【消費SP 34】",
+      "raw_text": [
+        "敵単体に2回の闇属性攻撃（威力 90）",
+        "剣・火弱点を突ける（ダメージ計算は闇属性）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力105/125/180"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵単体に2回の闇属性攻撃（威力 90） 剣・火弱点を突ける（ダメージ計算は闇属性）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に2回の闇属性攻撃（威力 90） 剣・火弱点を突ける（ダメージ計算は闇属性）"
+        }
+      ]
+    },
+    {
+      "character_id": "778302",
+      "character_name": "双炎の聖者",
+      "ability_name": "退光の火種",
+      "source_type": "battle",
+      "cost": "【消費SP 44】",
+      "raw_text": [
+        "敵全体に2回の光属性攻撃（威力 70）",
+        "剣・火弱点を突ける（ダメージ計算は光属性）",
+        "さらに、光耐性ダウン15%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力80/100/120"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 15,
+          "tag": "light",
+          "cap_group": "debuff_resist_elem_light",
+          "scopes": [
+            "enemy_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に2回の光属性攻撃（威力 70） 剣・火弱点を突ける（ダメージ計算は光属性） さらに、光耐性ダウン15%の効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "778302",
+      "character_name": "双炎の聖者",
+      "ability_name": "退間の火種",
+      "source_type": "battle",
+      "cost": "【消費SP 44】",
+      "raw_text": [
+        "敵全体に2回の闇属性攻撃（威力 70）",
+        "剣・火弱点を突ける（ダメージ計算は闇属性）",
+        "さらに、耐性ダウン15%の効果を付与（2ターン)"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力80/100/120"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵全体に2回の闇属性攻撃（威力 70） 剣・火弱点を突ける（ダメージ計算は闇属性） さらに、耐性ダウン15%の効果を付与（2ターン)"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に2回の闇属性攻撃（威力 70） 剣・火弱点を突ける（ダメージ計算は闇属性） さらに、耐性ダウン15%の効果を付与（2ターン)"
+        }
+      ]
+    },
+    {
+      "character_id": "778302",
+      "character_name": "双炎の聖者",
+      "ability_name": "極光創奏",
+      "source_type": "battle",
+      "cost": "【消費SP 56】",
+      "raw_text": [
+        "ランダムなターゲットに光属性攻撃",
+        "ブーストLvに応じて攻撃回数（威力80/3回）",
+        "剣・火弱点を突ける（ダメージ計算は光属性）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力75/75/70 攻撃回数4/5/6"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "ランダムなターゲットに光属性攻撃 ブーストLvに応じて攻撃回数（威力80/3回） 剣・火弱点を突ける（ダメージ計算は光属性）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "random"
+          ],
+          "text": "ランダムなターゲットに光属性攻撃 ブーストLvに応じて攻撃回数（威力80/3回） 剣・火弱点を突ける（ダメージ計算は光属性）"
+        }
+      ]
+    },
+    {
+      "character_id": "778302",
+      "character_name": "双炎の聖者",
+      "ability_name": "深黒葬送",
+      "source_type": "battle",
+      "cost": "【消費SP 56】",
+      "raw_text": [
+        "ランダムなターゲットに闇属性攻撃",
+        "ブーストLvに応じて攻撃回数増加（威力 85/3回）",
+        "剣・火弱点を突ける（ダメージ計算は闇属性）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力75/75/70 攻撃回数4/5/6"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "ランダムなターゲットに闇属性攻撃 ブーストLvに応じて攻撃回数増加（威力 85/3回） 剣・火弱点を突ける（ダメージ計算は闇属性）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "random"
+          ],
+          "text": "ランダムなターゲットに闇属性攻撃 ブーストLvに応じて攻撃回数増加（威力 85/3回） 剣・火弱点を突ける（ダメージ計算は闇属性）"
+        }
+      ]
+    },
+    {
+      "character_id": "778302",
+      "character_name": "双炎の聖者",
+      "ability_name": "聖炎恢閃",
+      "source_type": "battle",
+      "cost": "【消費SP 113】",
+      "raw_text": [
+        "敵全体に4回の光属性攻撃（威力 25）",
+        "剣・火弱点を突ける（ダメージ計算は光属性）",
+        "さらに、味方前衛全体に",
+        "物攻・物防・属攻・属防アップ15%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力35/45/60"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 15,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 15,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 15,
+          "cap_group": "buff_stat_def_phys",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 15,
+          "cap_group": "buff_stat_def_elem",
+          "scopes": [
+            "ally_front_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "敵全体に4回の光属性攻撃（威力 25） 剣・火弱点を突ける（ダメージ計算は光属性）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に4回の光属性攻撃（威力 25） 剣・火弱点を突ける（ダメージ計算は光属性）"
+        },
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "さらに、味方前衛全体に 物攻・物防・属攻・属防アップ15%の効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "778302",
+      "character_name": "双炎の聖者",
+      "ability_name": "黒呪壊閃",
+      "source_type": "battle",
+      "cost": "【消費SP 84】",
+      "raw_text": [
+        "敵全体に4回の闇属性攻撃（威力 25）",
+        "剣・火弱点を突ける（ダメージ計算は闇属性）",
+        "さらに、物攻・物防・属攻・属防ダウン15%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力35/45/60"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 15,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 15,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 15,
+          "cap_group": "debuff_stat_atk_phys",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 15,
+          "cap_group": "debuff_stat_atk_elem",
+          "scopes": [
+            "enemy_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に4回の闇属性攻撃（威力 25） 剣・火弱点を突ける（ダメージ計算は闇属性） さらに、物攻・物防・属攻・属防ダウン15%の効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "778302",
+      "character_name": "双炎の聖者",
+      "ability_name": "聖呪剣",
+      "source_type": "battle",
+      "cost": "【消費SP 63】",
+      "raw_text": [
+        "敵単体に剣物理攻撃（威力 260）",
+        "火・光・闇弱点を突ける（ダメージ計算は剣物理）",
+        "BP2以上消費時：攻撃効果の前に",
+        "攻撃対象に剣耐性ダウン20%と",
+        "バトルアビリティによる剣耐性ダウンを受けた際の",
+        "上限が50%になる効果",
+        "を付与（2ターン）",
+        "ブーストMAX時：さらに、攻撃効果の後に",
+        "自身を除く味方前衛全体のBPを1回復"
+      ],
+      "raw_text_pre_enhance": [
+        "敵単体に剣物理攻撃（威力 260）",
+        "火・光・闇弱点を突ける（ダメージ計算は剣物理）",
+        "BP2以上消費時：攻撃効果の前に",
+        "攻撃対象に剣耐性ダウン20%の効果を付与（2ターン）",
+        "ブーストMAX時：さらに、攻撃効果の後に",
+        "自身を除く味方前衛全体のBPを1回復"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】威力290/340/450"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "physical",
+          "target_source_type": "battle",
+          "value": 50,
+          "tag": "sword",
+          "cap_group": "debuff_resist_phys_sword",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 20,
+          "tag": "sword",
+          "cap_group": "debuff_resist_phys_sword",
+          "scopes": [
+            "enemy_single"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "自身を除く味方前衛全体のBPを1回復"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に剣物理攻撃（威力 260） 火・光・闇弱点を突ける（ダメージ計算は剣物理） BP2以上消費時：攻撃効果の前に 攻撃対象に剣耐性ダウン20%と バトルアビリティによる剣耐性ダウンを受けた際の 上限が50%になる効果 を付与（2ターン） ブーストMAX時：さらに、攻撃効果の後に"
+        },
+        {
+          "scopes": [
+            "self_exclude",
+            "ally_front_all"
+          ],
+          "text": "自身を除く味方前衛全体のBPを1回復"
+        }
+      ]
+    },
+    {
+      "character_id": "778302",
+      "character_name": "双炎の聖者",
+      "ability_name": "スタイルシフト：黒呪炎",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "自身の「たたかう」が剣物理攻撃になり",
+        "光・闇弱点を突けるようになる（ダメージ計算は剣物理）",
+        "コマンド選択時、“聖炎”と“黒呪炎”にスタイルを切り替えられる",
+        "聖炎時：自身に属攻アップ20%と光属性ダメージアップ20%と",
+        "サポアビと装備性能による属攻アップと",
+        "光属性ダメージアップの上限が50%になる効果を付与",
+        "黒呪炎時：自身に属攻アップ20%と闇属性ダメージアップ20%と",
+        "サポアビと装備性能による属攻アップと",
+        "闇属性ダメージアップの上限が50%になる効果を付与"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 20,
+          "tag": "light",
+          "cap_group": "buff_damage_elem_light",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 20,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "attack",
+          "target_source_type": "support",
+          "value": 50,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "elemental",
+          "target_source_type": "support",
+          "value": 50,
+          "tag": "light",
+          "cap_group": "buff_damage_elem_light",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 20,
+          "tag": "dark",
+          "cap_group": "buff_damage_elem_dark",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 20,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "attack",
+          "target_source_type": "support",
+          "value": 50,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "elemental",
+          "target_source_type": "support",
+          "value": 50,
+          "tag": "dark",
+          "cap_group": "buff_damage_elem_dark",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "自身の「たたかう」が剣物理攻撃になり 光・闇弱点を突けるようになる（ダメージ計算は剣物理） コマンド選択時、“聖炎”と“黒呪炎”にスタイルを切り替えられる"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身の「たたかう」が剣物理攻撃になり 光・闇弱点を突けるようになる（ダメージ計算は剣物理） コマンド選択時、“聖炎”と“黒呪炎”にスタイルを切り替えられる"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "聖炎時：自身に属攻アップ20%と光属性ダメージアップ20%と サポアビと装備性能による属攻アップと 光属性ダメージアップの上限が50%になる効果を付与"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "黒呪炎時：自身に属攻アップ20%と闇属性ダメージアップ20%と サポアビと装備性能による属攻アップと 闇属性ダメージアップの上限が50%になる効果を付与"
+        }
+      ]
+    },
+    {
+      "character_id": "778302",
+      "character_name": "双炎の聖者",
+      "ability_name": "開始時SPストック(全体)Ⅲ",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "戦闘開始時：味方前後衛全体に",
+        "SPストックを付与（効果量 使用者の最大SPの30%/重複不可）"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [],
+      "conditions": [
+        "戦闘開始時味方前後衛全体に SPストックを付与（効果量 使用者の最大SPの30%/重複不可）"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "戦闘開始時：味方前後衛全体に SPストックを付与（効果量 使用者の最大SPの30%/重複不可）"
+        }
+      ]
+    },
+    {
+      "character_id": "778302",
+      "character_name": "双炎の聖者",
+      "ability_name": "原母神の加護",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "ブレイク中の敵がいる時：自身に属攻アップ30%と",
+        "光・闇属性ダメージアップ30%と",
+        "属性攻撃でクリティカルが発生する効果を付与",
+        "さらに、自身の物攻に物防の50%、属攻に属防の50%を加算する",
+        "（装備ステータス含む/対象ステータス毎に最大値を適用）"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 30,
+          "tag": "light",
+          "cap_group": "buff_damage_elem_light",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 30,
+          "tag": "dark",
+          "cap_group": "buff_damage_elem_dark",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 30,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "critical",
+          "unit": "",
+          "sub_category": "elemental",
+          "target_source_type": "battle",
+          "value": 1,
+          "cap_group": "critical_elem",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "さらに、自身の物攻に物防の50%、属攻に属防の50%を加算する （装備ステータス含む/対象ステータス毎に最大値を適用）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "ブレイク中の敵がいる時：自身に属攻アップ30%と 光・闇属性ダメージアップ30%と 属性攻撃でクリティカルが発生する効果を付与"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "さらに、自身の物攻に物防の50%、属攻に属防の50%を加算する （装備ステータス含む/対象ステータス毎に最大値を適用）"
+        }
+      ]
+    },
+    {
+      "character_id": "778302",
+      "character_name": "双炎の聖者",
+      "ability_name": "双炎の猛り",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "聖炎時：自身に",
+        "SP自動回復（回復量 最大SPの8%）と",
+        "BP回復量1アップ",
+        "と",
+        "使用する攻撃アビリティを2回発動する効果を付与",
+        "（追加発動分はSP消費無し）",
+        "黒呪炎時：味方前衛全体に攻撃後（反撃、必殺技など一部除く）",
+        "双炎の聖者が追撃する効果を付与",
+        "（行動順での攻撃のみ/攻撃回数によらず1回のみ発動）",
+        "※”ブレイクさせた時”効果は起点の味方のみ発動",
+        "追撃：敵全体に2回の闇属性攻撃（威力50）",
+        "剣・火弱点を突ける（ダメージ計算は闇属性）"
+      ],
+      "raw_text_pre_enhance": [
+        "聖炎時：自身に使用する攻撃アビリティを2回発動する効果を付与",
+        "（追加発動分はSP消費無し）",
+        "黒呪炎時：味方前衛全体に攻撃後（反撃、必殺技など一部除く）",
+        "双炎の聖者が追撃する効果を付与",
+        "（行動順での攻撃のみ/攻撃回数によらず1回のみ発動）",
+        "※”ブレイクさせた時”効果は起点の味方のみ発動",
+        "追撃：敵全体に2回の闇属性攻撃（威力50）",
+        "剣・火弱点を突ける（ダメージ計算は闇属性）"
+      ],
+      "effects": [],
+      "conditions": [
+        "聖炎時自身に SP自動回復（回復量 最大SPの8%）と BP回復量1アップ と 使用する攻撃アビリティを2回発動する効果を付与 （追加発動分はSP消費無し）",
+        "黒呪炎時味方前衛全体に攻撃後（反撃、必殺技など一部除く） 双炎の聖者が追撃する効果を付与 （行動順での攻撃のみ/攻撃回数によらず1回のみ発動） ※”ブレイクさせた時”効果は起点の味方のみ発動"
+      ],
+      "unknown": [
+        "追撃：敵全体に2回の闇属性攻撃（威力50） 剣・火弱点を突ける（ダメージ計算は闇属性）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "聖炎時：自身に SP自動回復（回復量 最大SPの8%）と BP回復量1アップ と 使用する攻撃アビリティを2回発動する効果を付与 （追加発動分はSP消費無し）"
+        },
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "黒呪炎時：味方前衛全体に攻撃後（反撃、必殺技など一部除く） 双炎の聖者が追撃する効果を付与 （行動順での攻撃のみ/攻撃回数によらず1回のみ発動） ※”ブレイクさせた時”効果は起点の味方のみ発動"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "追撃：敵全体に2回の闇属性攻撃（威力50） 剣・火弱点を突ける（ダメージ計算は闇属性）"
+        }
+      ]
+    },
+    {
+      "character_id": "778302",
+      "character_name": "双炎の聖者",
+      "ability_name": "魔剣フィステラルダ",
+      "source_type": "ultimate",
+      "cost": "超威発動",
+      "raw_text": [
+        "【Lv.MAX】",
+        "自身に物攻アップ30%と",
+        "剣攻撃ダメージアップ30%の効果を付与（1ターン）",
+        "さらに、敵全体に5回の剣物理攻撃（威力 95）",
+        "火・光・闇弱点を突ける（ダメージ計算は剣物理）",
+        "この必殺技のダメージ上限が300000アップ",
+        "200%発動時：さらに、効果を再発動（必殺技ゲージ消費無し）する"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 30,
+          "tag": "sword",
+          "cap_group": "buff_damage_phys_sword",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 30,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [
+        "さらに、敵全体に5回の剣物理攻撃（威力 95） 火・光・闇弱点を突ける（ダメージ計算は剣物理） この必殺技のダメージ上限が300000アップ 200%発動時さらに、効果を再発動（必殺技ゲージ消費無し）する"
+      ],
+      "unknown": [
+        "【Lv.MAX】"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "【Lv.MAX】"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に物攻アップ30%と 剣攻撃ダメージアップ30%の効果を付与（1ターン）"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "さらに、敵全体に5回の剣物理攻撃（威力 95） 火・光・闇弱点を突ける（ダメージ計算は剣物理） この必殺技のダメージ上限が300000アップ 200%発動時：さらに、効果を再発動（必殺技ゲージ消費無し）する"
+        }
+      ]
+    },
+    {
+      "character_id": "778302",
+      "character_name": "双炎の聖者",
+      "ability_name": "無上の理",
+      "source_type": "ex",
+      "cost": "回数：2",
+      "raw_text": [
+        "自身に威力アップ100%の効果を付与",
+        "（2ターン/ターン延長不可/同系統の効果重複不可）、その後",
+        "SP20%未満になるまで自身のSPを最大SPの20%消耗（最大3回）し",
+        "味方前後衛全体に消耗した回数に応じ効果を付与",
+        "1回以上：ダメージ上限アップ（2ターン/効果量 100000）",
+        "2回以上：さらに、特殊効果“聖火の加護”（1ターン）",
+        "3回：さらに、特殊効果“不沈”（2ターン）",
+        "聖火の加護：BP回復量3アップの効果",
+        "不沈：HPが0になるダメージを受けてもHPが1残る効果（一部除く）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_condition": [
+        "【使用条件】なし"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】威力アップ125/150/200%"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "power",
+          "unit": "%",
+          "target_source_type": "battle",
+          "value": 100,
+          "cap_group": "power_up",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "SP20%未満になるまで自身のSPを最大SPの20%消耗（最大3回）し",
+        "味方前後衛全体に消耗した回数に応じ効果を付与 1回以上：ダメージ上限アップ（2ターン/効果量 100000） 2回以上：さらに、特殊効果“聖火の加護”（1ターン） 3回：さらに、特殊効果“不沈”（2ターン） 聖火の加護：BP回復量3アップの効果 不沈：HPが0になるダメージを受けてもHPが1残る効果（一部除く）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に威力アップ100%の効果を付与 （2ターン/ターン延長不可/同系統の効果重複不可）、その後"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "SP20%未満になるまで自身のSPを最大SPの20%消耗（最大3回）し"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "味方前後衛全体に消耗した回数に応じ効果を付与 1回以上：ダメージ上限アップ（2ターン/効果量 100000） 2回以上：さらに、特殊効果“聖火の加護”（1ターン） 3回：さらに、特殊効果“不沈”（2ターン） 聖火の加護：BP回復量3アップの効果 不沈：HPが0になるダメージを受けてもHPが1残る効果（一部除く）"
         }
       ]
     }
