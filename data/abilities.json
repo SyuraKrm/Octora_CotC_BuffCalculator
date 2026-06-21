@@ -157352,6 +157352,734 @@
   ],
   [
     {
+      "character_id": "784968",
+      "character_name": "ヴィオラEx2",
+      "ability_name": "みじん斬り",
+      "source_type": "battle",
+      "cost": "【消費SP 25】",
+      "raw_text": [
+        "敵単体に3回の剣物理攻撃（威力 55）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力65/80/100"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵単体に3回の剣物理攻撃（威力 55）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に3回の剣物理攻撃（威力 55）"
+        }
+      ]
+    },
+    {
+      "character_id": "784968",
+      "character_name": "ヴィオラEx2",
+      "ability_name": "武王の闘技：烈火の如く",
+      "source_type": "battle",
+      "cost": "【消費SP 80】",
+      "raw_text": [
+        "自身に物攻アップ30%と",
+        "物理ダメージアップ30%の効果を付与（3ターン）",
+        "ブーストMAX時：前衛全体化"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】3/4/5ターン"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 30,
+          "cap_group": "buff_damage_phys_all",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 30,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "ally_front_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に物攻アップ30%と 物理ダメージアップ30%の効果を付与（3ターン） ブーストMAX時：前衛全体化"
+        }
+      ]
+    },
+    {
+      "character_id": "784968",
+      "character_name": "ヴィオラEx2",
+      "ability_name": "真一文字斬り",
+      "source_type": "battle",
+      "cost": "【消費SP 44】",
+      "raw_text": [
+        "敵全体に剣物理攻撃（威力 180）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力205/245/300"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵全体に剣物理攻撃（威力 180）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に剣物理攻撃（威力 180）"
+        }
+      ]
+    },
+    {
+      "character_id": "784968",
+      "character_name": "ヴィオラEx2",
+      "ability_name": "覇王の剣技：乾坤一擲",
+      "source_type": "battle",
+      "cost": "【消費SP 180】",
+      "raw_text": [
+        "自身にカウントダウンの効果を付与（カウント 3）",
+        "カウント終了時、敵全体に3回の剣物理攻撃（威力 220）",
+        "このアビリティのダメージ上限が150000アップ",
+        "さらに、自身のBPを2回復",
+        "攻撃対象がブレイク中の時",
+        "このアビリティのダメージ上限が750000アップになる",
+        "ブーストMAXでカウントダウン付与時：攻撃回数が6回になる",
+        "※この攻撃はサポアビ”神器の神髄”（★6強化後）の効果で再発動しない"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力240/270/320"
+      ],
+      "effects": [],
+      "conditions": [
+        "さらに、自身のBPを2回復 攻撃対象がブレイク中の時 このアビリティのダメージ上限が750000アップになる ブーストMAXでカウントダウン付与時攻撃回数が6回になる ※この攻撃はサポアビ”神器の神髄”（★6強化後）の効果で再発動しない"
+      ],
+      "unknown": [
+        "自身にカウントダウンの効果を付与（カウント 3）",
+        "カウント終了時、敵全体に3回の剣物理攻撃（威力 220） このアビリティのダメージ上限が150000アップ"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身にカウントダウンの効果を付与（カウント 3）"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "カウント終了時、敵全体に3回の剣物理攻撃（威力 220） このアビリティのダメージ上限が150000アップ"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "さらに、自身のBPを2回復 攻撃対象がブレイク中の時 このアビリティのダメージ上限が750000アップになる ブーストMAXでカウントダウン付与時：攻撃回数が6回になる ※この攻撃はサポアビ”神器の神髄”（★6強化後）の効果で再発動しない"
+        }
+      ]
+    },
+    {
+      "character_id": "784968",
+      "character_name": "ヴィオラEx2",
+      "ability_name": "戦王の槍技：大旋転",
+      "source_type": "battle",
+      "cost": "【消費SP 67】",
+      "raw_text": [
+        "敵全体に2回の槍物理攻撃（威力 80）",
+        "このアビリティのダメージ上限が50000アップ",
+        "さらに、味方前後衛全体のBPを1回復"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力95/115/130"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵全体に2回の槍物理攻撃（威力 80） このアビリティのダメージ上限が50000アップ",
+        "さらに、味方前後衛全体のBPを1回復"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に2回の槍物理攻撃（威力 80） このアビリティのダメージ上限が50000アップ"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "さらに、味方前後衛全体のBPを1回復"
+        }
+      ]
+    },
+    {
+      "character_id": "784968",
+      "character_name": "ヴィオラEx2",
+      "ability_name": "舞王の刃技：花蝶の舞",
+      "source_type": "battle",
+      "cost": "【消費SP 66】",
+      "raw_text": [
+        "ランダムなターゲットに5回の短剣物理攻撃（威力 35）",
+        "攻撃毎に中確率で毒・出血・暗闇の状態異常を付与（3ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力45/55/80"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "ランダムなターゲットに5回の短剣物理攻撃（威力 35） 攻撃毎に中確率で毒・出血・暗闇の状態異常を付与（3ターン）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "random"
+          ],
+          "text": "ランダムなターゲットに5回の短剣物理攻撃（威力 35） 攻撃毎に中確率で毒・出血・暗闇の状態異常を付与（3ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "784968",
+      "character_name": "ヴィオラEx2",
+      "ability_name": "勇王の斧技：大狼狩り",
+      "source_type": "battle",
+      "cost": "【消費SP 62】",
+      "raw_text": [
+        "敵単体に2回の斧物理攻撃（威力 150）",
+        "このアビリティのダメージ上限が100000アップ",
+        "攻撃対象の開示弱点の数（弱点付与も含む）に応じて威力と",
+        "このアビリティによるダメージ上限アップ量が変化",
+        "4以上：威力とダメージ上限アップ量が1.3倍",
+        "6以上：威力とダメージ上限アップ量が1.5倍",
+        "8以上：威力とダメージ上限アップ量が2倍",
+        "※倍率が高いほうのみ適用される",
+        "攻撃対象がブレイク中の時",
+        "攻撃回数が3回になり",
+        "このアビリティのダメージ上限が500000アップになる",
+        "（※500000に対してダメージ上限アップ量変化を反映）",
+        "※このアビリティでブレイクした場合も含む"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力165/195/260"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵単体に2回の斧物理攻撃（威力 150） このアビリティのダメージ上限が100000アップ 攻撃対象の開示弱点の数（弱点付与も含む）に応じて威力と このアビリティによるダメージ上限アップ量が変化 4以上：威力とダメージ上限アップ量が1.3倍 6以上：威力とダメージ上限アップ量が1.5倍 8以上：威力とダメージ上限アップ量が2倍 ※倍率が高いほうのみ適用される 攻撃対象がブレイク中の時 攻撃回数が3回になり このアビリティのダメージ上限が500000アップになる （※500000に対してダメージ上限アップ量変化を反映） ※このアビリティでブレイクした場合も含む"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に2回の斧物理攻撃（威力 150） このアビリティのダメージ上限が100000アップ 攻撃対象の開示弱点の数（弱点付与も含む）に応じて威力と このアビリティによるダメージ上限アップ量が変化 4以上：威力とダメージ上限アップ量が1.3倍 6以上：威力とダメージ上限アップ量が1.5倍 8以上：威力とダメージ上限アップ量が2倍 ※倍率が高いほうのみ適用される 攻撃対象がブレイク中の時 攻撃回数が3回になり このアビリティのダメージ上限が500000アップになる （※500000に対してダメージ上限アップ量変化を反映） ※このアビリティでブレイクした場合も含む"
+        }
+      ]
+    },
+    {
+      "character_id": "784968",
+      "character_name": "ヴィオラEx2",
+      "ability_name": "狩王の号技：むらしぐれ",
+      "source_type": "battle",
+      "cost": "【消費SP 98】",
+      "raw_text": [
+        "ターン中、素早く行動し",
+        "敵全体に4回の弓物理攻撃（威力 45）",
+        "弱点以外でもシールドポイントを削る",
+        "さらに、物攻・属攻ダウン15%の効果を付与（3ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力55/65/80"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 15,
+          "cap_group": "debuff_stat_atk_phys",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 15,
+          "cap_group": "debuff_stat_atk_elem",
+          "scopes": [
+            "enemy_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "ターン中、素早く行動し"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "ターン中、素早く行動し"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に4回の弓物理攻撃（威力 45） 弱点以外でもシールドポイントを削る さらに、物攻・属攻ダウン15%の効果を付与（3ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "784968",
+      "character_name": "ヴィオラEx2",
+      "ability_name": "霊王の杖技：黄泉渡し",
+      "source_type": "battle",
+      "cost": "【消費SP 61】",
+      "raw_text": [
+        "自身の物攻に属攻の50%を加算する効果を付与（2ターン）",
+        "（装備ステータス含む/対象ステータス毎に最大値を適用）",
+        "その後、敵単体に杖物理攻撃（威力 290）",
+        "このアビリティのダメージ上限が100000アップ",
+        "さらに、与えたダメージ量の1%のSP吸収",
+        "攻撃対象がブレイク中の時",
+        "攻撃回数が2回になり",
+        "このアビリティのダメージ上限が500000アップになる",
+        "※このアビリティでブレイクした場合も含む"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】3/4/5ターン 威力320/380/500"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "自身の物攻に属攻の50%を加算する効果を付与（2ターン） （装備ステータス含む/対象ステータス毎に最大値を適用）",
+        "その後、敵単体に杖物理攻撃（威力 290） このアビリティのダメージ上限が100000アップ さらに、与えたダメージ量の1%のSP吸収 攻撃対象がブレイク中の時 攻撃回数が2回になり このアビリティのダメージ上限が500000アップになる ※このアビリティでブレイクした場合も含む"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身の物攻に属攻の50%を加算する効果を付与（2ターン） （装備ステータス含む/対象ステータス毎に最大値を適用）"
+        },
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "その後、敵単体に杖物理攻撃（威力 290） このアビリティのダメージ上限が100000アップ さらに、与えたダメージ量の1%のSP吸収 攻撃対象がブレイク中の時 攻撃回数が2回になり このアビリティのダメージ上限が500000アップになる ※このアビリティでブレイクした場合も含む"
+        }
+      ]
+    },
+    {
+      "character_id": "784968",
+      "character_name": "ヴィオラEx2",
+      "ability_name": "影王の謀技：城砦抜き",
+      "source_type": "battle",
+      "cost": "【消費SP 88】",
+      "raw_text": [
+        "敵全体に物防ダウン30%の効果と",
+        "バトルアビリティによる",
+        "物防ダウンを受けた際の上限が50%になる効果",
+        "を付与（2ターン）",
+        "ブーストMAX時：さらに",
+        "物理耐性ダウン30%の効果を付与（5ターン）"
+      ],
+      "raw_text_pre_enhance": [
+        "敵全体に物防ダウン30%の効果を付与（2ターン）",
+        "ブーストMAX時：さらに",
+        "物理耐性ダウン30%の効果を付与（5ターン）"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】3/4/5ターン"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "defence",
+          "target_source_type": "battle",
+          "value": 50,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 30,
+          "cap_group": "debuff_resist_phys_all",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 30,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に物防ダウン30%の効果と バトルアビリティによる 物防ダウンを受けた際の上限が50%になる効果 を付与（2ターン） ブーストMAX時：さらに 物理耐性ダウン30%の効果を付与（5ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "784968",
+      "character_name": "ヴィオラEx2",
+      "ability_name": "ウェポンマスター",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "戦闘中：自身のジョブが",
+        "「商人・盗賊・薬師・狩人・神官・学者・踊子」",
+        "としても判定される"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "戦闘中：自身のジョブが 「商人・盗賊・薬師・狩人・神官・学者・踊子」 としても判定される"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "戦闘中：自身のジョブが 「商人・盗賊・薬師・狩人・神官・学者・踊子」 としても判定される"
+        }
+      ]
+    },
+    {
+      "character_id": "784968",
+      "character_name": "ヴィオラEx2",
+      "ability_name": "神器の神髄",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "BP1以上消費時：自身に威力アップ100%の効果を付与",
+        "（同系統の効果重複不可）",
+        "BP2以上消費時：威力アップの効果が150%になる",
+        "BP3消費時：さらに",
+        "自身が使用する攻撃アビリティを2回発動する",
+        "（追加発動分はSP消費無し）"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "power",
+          "unit": "%",
+          "target_source_type": "battle",
+          "value": 100,
+          "cap_group": "power_up",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "BP1以上消費時：自身に威力アップ100%の効果を付与 （同系統の効果重複不可） BP2以上消費時：威力アップの効果が150%になる BP3消費時：さらに 自身が使用する攻撃アビリティを2回発動する （追加発動分はSP消費無し）"
+        }
+      ]
+    },
+    {
+      "character_id": "784968",
+      "character_name": "ヴィオラEx2",
+      "ability_name": "神器の継承者",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "自身に物攻アップ30%と",
+        "物理ダメージアップ30%の効果を付与",
+        "さらに、サポアビと装備性能による",
+        "物攻アップと物理ダメージアップの上限が50%になる効果を付与"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 30,
+          "cap_group": "buff_damage_phys_all",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 30,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "attack",
+          "target_source_type": "support",
+          "value": 50,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "physical",
+          "target_source_type": "support",
+          "value": 50,
+          "cap_group": "buff_damage_phys_all",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に物攻アップ30%と 物理ダメージアップ30%の効果を付与 さらに、サポアビと装備性能による 物攻アップと物理ダメージアップの上限が50%になる効果を付与"
+        }
+      ]
+    },
+    {
+      "character_id": "784968",
+      "character_name": "ヴィオラEx2",
+      "ability_name": "神器の名手",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "ブレイク中の敵がいる時",
+        "自身にBP回復量2アップ",
+        "と",
+        "物攻アップ",
+        "20%",
+        "と物理ダメージアップ",
+        "20%",
+        "と",
+        "必ずクリティカルの効果を付与",
+        "※属性攻撃でクリティカルが発生するには",
+        "“属性攻撃でクリティカルが発生する効果”が必要"
+      ],
+      "raw_text_pre_enhance": [
+        "ブレイク中の敵がいる時",
+        "自身に物攻アップ15%と物理ダメージアップ15%と",
+        "必ずクリティカルの効果を付与",
+        "※属性攻撃でクリティカルが発生するには",
+        "“属性攻撃でクリティカルが発生する効果”が必要"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 20,
+          "cap_group": "buff_damage_phys_all",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 20,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "critical",
+          "unit": "",
+          "sub_category": "certain",
+          "target_source_type": "battle",
+          "value": 1,
+          "cap_group": "critical_certain",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "ブレイク中の敵がいる時"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "ブレイク中の敵がいる時"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身にBP回復量2アップ と 物攻アップ 20% と物理ダメージアップ 20% と 必ずクリティカルの効果を付与 ※属性攻撃でクリティカルが発生するには “属性攻撃でクリティカルが発生する効果”が必要"
+        }
+      ]
+    },
+    {
+      "character_id": "784968",
+      "character_name": "ヴィオラEx2",
+      "ability_name": "妨阻の戦盾",
+      "source_type": "ultimate",
+      "cost": "後衛発動",
+      "raw_text": [
+        "【Lv.MAX】",
+        "ターン中、素早く行動し",
+        "敵全体のシールドポイントを弱点に関係なく7削り",
+        "剣・槍・短剣・斧・弓・杖・本・扇弱点を付与（各6回）",
+        "その後、味方前後衛全体にHPバリアを付与",
+        "（効果量 使用者の最大HPの50%/重複不可）",
+        "さらに、攻撃時に弱点付与の回数を消費しない効果を付与",
+        "（5ターン）",
+        "弱点付与：付与方法によらず弱点毎に回数は合算（最大9回）",
+        "元からその弱点があればその弱点ダメージ倍率をプラス20%"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "【Lv.MAX】 ターン中、素早く行動し",
+        "敵全体のシールドポイントを弱点に関係なく7削り 剣・槍・短剣・斧・弓・杖・本・扇弱点を付与（各6回）",
+        "その後、味方前後衛全体にHPバリアを付与 （効果量 使用者の最大HPの50%/重複不可） さらに、攻撃時に弱点付与の回数を消費しない効果を付与 （5ターン） 弱点付与：付与方法によらず弱点毎に回数は合算（最大9回） 元からその弱点があればその弱点ダメージ倍率をプラス20%"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "【Lv.MAX】 ターン中、素早く行動し"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体のシールドポイントを弱点に関係なく7削り 剣・槍・短剣・斧・弓・杖・本・扇弱点を付与（各6回）"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "その後、味方前後衛全体にHPバリアを付与 （効果量 使用者の最大HPの50%/重複不可） さらに、攻撃時に弱点付与の回数を消費しない効果を付与 （5ターン） 弱点付与：付与方法によらず弱点毎に回数は合算（最大9回） 元からその弱点があればその弱点ダメージ倍率をプラス20%"
+        }
+      ]
+    },
+    {
+      "character_id": "784968",
+      "character_name": "ヴィオラEx2",
+      "ability_name": "八器繚乱",
+      "source_type": "ex",
+      "cost": "回数：4",
+      "raw_text": [
+        "自身に「たたかう」以外の物理攻撃（一部除く）時",
+        "剣・槍・短剣・斧・弓・杖・本・扇弱点を突ける効果を付与",
+        "（4ターン/ダメージ計算は各攻撃に準ずる）",
+        "その後、ランダムなターゲットに1回ずつ",
+        "剣・槍・短剣・斧・弓・杖・本・扇物理攻撃（威力 15）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_condition": [
+        "【使用条件】ブレイク中の敵がいない時"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】5/6/7ターン 威力20/25/30"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "自身に「たたかう」以外の物理攻撃（一部除く）時 剣・槍・短剣・斧・弓・杖・本・扇弱点を突ける効果を付与 （4ターン/ダメージ計算は各攻撃に準ずる）",
+        "その後、ランダムなターゲットに1回ずつ 剣・槍・短剣・斧・弓・杖・本・扇物理攻撃（威力 15）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に「たたかう」以外の物理攻撃（一部除く）時 剣・槍・短剣・斧・弓・杖・本・扇弱点を突ける効果を付与 （4ターン/ダメージ計算は各攻撃に準ずる）"
+        },
+        {
+          "scopes": [
+            "random"
+          ],
+          "text": "その後、ランダムなターゲットに1回ずつ 剣・槍・短剣・斧・弓・杖・本・扇物理攻撃（威力 15）"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "character_id": "781063",
       "character_name": "テメノスEx",
       "ability_name": "特大火炎魔法(単体)Ⅱ",
