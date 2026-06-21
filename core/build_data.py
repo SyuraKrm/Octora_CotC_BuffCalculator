@@ -87,8 +87,19 @@ def build_characters():
     scraped_ids  = {c["character_id"] for c in items}
 
     if not scraped_ids.issuperset(existing_ids):
-        print("skip: characters missing")
-        return file
+        if latest_only_items:
+            missing_items = [
+                c for c in file
+                if c["character_id"] not in scraped_ids
+            ]
+            print(
+                "[characters] keep existing missing ids: "
+                f"{[c['character_id'] for c in missing_items]}"
+            )
+            items = items + missing_items
+        else:
+            print("skip: characters missing")
+            return file
 
     with open(OUTPUT_PATH_CHARACTERS, "w", encoding="utf-8") as f:
         json.dump(items, f, ensure_ascii=False, indent=2)
