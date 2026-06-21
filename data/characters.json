@@ -46,6 +46,23 @@
     ]
   },
   {
+    "character_id": "784968",
+    "character_name": "ヴィオラEx2",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [],
+    "physicals": [
+      "剣",
+      "弓",
+      "扇",
+      "斧",
+      "本",
+      "杖",
+      "槍",
+      "短剣"
+    ]
+  },
+  {
     "character_id": "771643",
     "character_name": "黒蝕の剣士",
     "job": "剣士",
