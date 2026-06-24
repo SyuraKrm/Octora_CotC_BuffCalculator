@@ -4,7 +4,10 @@
     "character_name": "アーロン",
     "job": "剣士",
     "rarity": "5",
-    "elements": [],
+    "elements": [
+      "火",
+      "風"
+    ],
     "physicals": [
       "剣",
       "扇",
@@ -60,6 +63,18 @@
       "杖",
       "槍",
       "短剣"
+    ]
+  },
+  {
+    "character_id": "783718",
+    "character_name": "シアーシャ",
+    "job": "踊子",
+    "rarity": "5",
+    "elements": [
+      "風"
+    ],
+    "physicals": [
+      "扇"
     ]
   },
   {
