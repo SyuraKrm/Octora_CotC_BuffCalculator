@@ -1,6 +1,1580 @@
 [
   [
     {
+      "character_id": "797466",
+      "character_name": "ジェクト",
+      "ability_name": "三連両断",
+      "source_type": "battle",
+      "cost": "【消費SP 62】",
+      "raw_text": [
+        "敵単体に3回の斧物理攻撃（威力 85）",
+        "オーバードライブ効果中：威力が1.25倍"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力95/110/140"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵単体に3回の斧物理攻撃（威力 85） オーバードライブ効果中：威力が1.25倍"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に3回の斧物理攻撃（威力 85） オーバードライブ効果中：威力が1.25倍"
+        }
+      ]
+    },
+    {
+      "character_id": "797466",
+      "character_name": "ジェクト",
+      "ability_name": "パワーアップ",
+      "source_type": "battle",
+      "cost": "【消費SP 46】",
+      "raw_text": [
+        "味方単体に物攻アップ20%と斧攻撃ダメージアップ20%と",
+        "敵の弱点を突いた時のダメージアップ20%の効果を付与（2ターン）",
+        "ブーストMAX時：前衛全体化"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】ターン3/4/5"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 20,
+          "tag": "axe",
+          "cap_group": "buff_damage_phys_axe",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "weak",
+          "value": 20,
+          "cap_group": "buff_damage_weak",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 20,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "ally_front_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_single"
+          ],
+          "text": "味方単体に物攻アップ20%と斧攻撃ダメージアップ20%と 敵の弱点を突いた時のダメージアップ20%の効果を付与（2ターン） ブーストMAX時：前衛全体化"
+        }
+      ]
+    },
+    {
+      "character_id": "797466",
+      "character_name": "ジェクト",
+      "ability_name": "薙ぎ払い",
+      "source_type": "battle",
+      "cost": "【消費SP 44】",
+      "raw_text": [
+        "敵全体に斧物理攻撃（威力 180）",
+        "オーバードライブ効果中：攻撃回数が2回になる"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力205/245/300"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵全体に斧物理攻撃（威力 180） オーバードライブ効果中：攻撃回数が2回になる"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に斧物理攻撃（威力 180） オーバードライブ効果中：攻撃回数が2回になる"
+        }
+      ]
+    },
+    {
+      "character_id": "797466",
+      "character_name": "ジェクト",
+      "ability_name": "ジェクトシュレッド",
+      "source_type": "battle",
+      "cost": "【消費SP 52】",
+      "raw_text": [
+        "ランダムなターゲットに3回の斧物理攻撃（威力 65）",
+        "弱点以外でもシールドポイントを削る",
+        "オーバードライブ効果中：攻撃回数が4回になる",
+        "ただし、使用した次のターンに行動が遅くなる"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力75/90/120"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "ランダムなターゲットに3回の斧物理攻撃（威力 65） 弱点以外でもシールドポイントを削る オーバードライブ効果中：攻撃回数が4回になる ただし、使用した次のターンに行動が遅くなる"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "random"
+          ],
+          "text": "ランダムなターゲットに3回の斧物理攻撃（威力 65） 弱点以外でもシールドポイントを削る オーバードライブ効果中：攻撃回数が4回になる ただし、使用した次のターンに行動が遅くなる"
+        }
+      ]
+    },
+    {
+      "character_id": "797466",
+      "character_name": "ジェクト",
+      "ability_name": "ジェクトクリーヴ",
+      "source_type": "battle",
+      "cost": "【消費SP 64】",
+      "raw_text": [
+        "敵全体に斧物理攻撃（威力 180）",
+        "自身の行動順が遅いほど威力アップ",
+        "最大1.5倍（4番目以降時）",
+        "オーバードライブ効果中：攻撃回数が2回になり",
+        "物防・属防アップとダメージ減少効果を無視するようになる"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力205/245/300"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵全体に斧物理攻撃（威力 180）",
+        "自身の行動順が遅いほど威力アップ 最大1.5倍（4番目以降時） オーバードライブ効果中：攻撃回数が2回になり 物防・属防アップとダメージ減少効果を無視するようになる"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に斧物理攻撃（威力 180）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身の行動順が遅いほど威力アップ 最大1.5倍（4番目以降時） オーバードライブ効果中：攻撃回数が2回になり 物防・属防アップとダメージ減少効果を無視するようになる"
+        }
+      ]
+    },
+    {
+      "character_id": "797466",
+      "character_name": "ジェクト",
+      "ability_name": "パワーウェーブ",
+      "source_type": "battle",
+      "cost": "【消費SP 44】",
+      "raw_text": [
+        "味方単体のHP回復（効力230）し、状態異常を回復",
+        "さらに、状態異常無効化の効果を付与（一部除く/2ターン）",
+        "その後、物攻・物防・属攻・属防・会心・速度ダウン状態を回復",
+        "ブーストMAX時：前衛全体化"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力250/290/350 ターン3/4/5"
+      ],
+      "effects": [],
+      "conditions": [
+        "味方単体のHP回復（効力230）し、状態異常を回復 さらに、状態異常無効化の効果を付与（一部除く/2ターン） その後、物攻・物防・属攻・属防・会心・速度ダウン状態を回復 ブーストMAX時前衛全体化"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_single"
+          ],
+          "text": "味方単体のHP回復（効力230）し、状態異常を回復 さらに、状態異常無効化の効果を付与（一部除く/2ターン） その後、物攻・物防・属攻・属防・会心・速度ダウン状態を回復 ブーストMAX時：前衛全体化"
+        }
+      ]
+    },
+    {
+      "character_id": "797466",
+      "character_name": "ジェクト",
+      "ability_name": "ジェクトビーム",
+      "source_type": "battle",
+      "cost": "【消費SP 79】",
+      "raw_text": [
+        "単体に3回の斧物理攻撃（威力 65）",
+        "さらに、物攻ダウン30%の効果を付与（2ターン）",
+        "中確率で麻痺の状態異常を付与（2ターン）",
+        "オーバードライブ効果中：威力が2倍になり",
+        "さらに、自身にBP回復量1アップの効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力75/90/120 ターン3/4/5"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 30,
+          "cap_group": "debuff_stat_atk_phys",
+          "scopes": []
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "さらに、自身にBP回復量1アップの効果を付与（2ターン）"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "単体に3回の斧物理攻撃（威力 65） さらに、物攻ダウン30%の効果を付与（2ターン） 中確率で麻痺の状態異常を付与（2ターン） オーバードライブ効果中：威力が2倍になり"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "さらに、自身にBP回復量1アップの効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "797466",
+      "character_name": "ジェクト",
+      "ability_name": "ジェクトボマー",
+      "source_type": "battle",
+      "cost": "【消費SP 108】",
+      "raw_text": [
+        "敵全体に斧物理攻撃（威力210）",
+        "攻撃を完全に回避する効果と攻撃を完全に防ぐ効果を無視する",
+        "オーバードライブ効果中：さらに",
+        "物防ダウン50%と斧耐性ダウン50%と",
+        "バトアビによる物防ダウンと斧耐性ダウンを",
+        "受けた際の上限が50%になる効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力235/275/340 ターン3/4/5"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "defence",
+          "target_source_type": "battle",
+          "value": 50,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "physical",
+          "target_source_type": "battle",
+          "value": 50,
+          "tag": "axe",
+          "cap_group": "debuff_resist_phys_axe",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 50,
+          "tag": "axe",
+          "cap_group": "debuff_resist_phys_axe",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 50,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に斧物理攻撃（威力210） 攻撃を完全に回避する効果と攻撃を完全に防ぐ効果を無視する オーバードライブ効果中：さらに 物防ダウン50%と斧耐性ダウン50%と バトアビによる物防ダウンと斧耐性ダウンを 受けた際の上限が50%になる効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "797466",
+      "character_name": "ジェクト",
+      "ability_name": "ジェクトフィンガー",
+      "source_type": "battle",
+      "cost": "【消費SP 240】",
+      "raw_text": [
+        "敵単体に斧弱点を付与（1回）し",
+        "特殊効果“斧脆点”の効果を付与（1回）",
+        "その後、同対象に斧物理攻撃（威力 530）",
+        "オーバードライブ効果中：",
+        "自身の行動順が遅いほど威力アップ",
+        "最大2倍（4番目以降時）",
+        "このアビリティのダメージ上限が700000アップし",
+        "さらに、効果を再発動（SP消費無し）する",
+        "弱点付与：付与方法によらず弱点毎に回数は合算（最大9回）",
+        "元からその弱点があればその弱点ダメージ倍率をプラス20%",
+        "点付与：付与方法によらず点毎に回数は合算（最大9回）",
+        "点は物理・属性毎に1種まで（2種目は上書き）",
+        "合致する攻撃分類の攻撃を受ける時",
+        "シールドポイントが弱点に関係なく1削られ",
+        "ダメージ倍率がプラス50%",
+        "※弱点とは別効果。弱点を突ける効果では発動しない"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力560/700/900"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵単体に斧弱点を付与（1回）し 特殊効果“斧脆点”の効果を付与（1回） その後、同対象に斧物理攻撃（威力 530） オーバードライブ効果中：",
+        "自身の行動順が遅いほど威力アップ 最大2倍（4番目以降時） このアビリティのダメージ上限が700000アップし さらに、効果を再発動（SP消費無し）する 弱点付与：付与方法によらず弱点毎に回数は合算（最大9回） 元からその弱点があればその弱点ダメージ倍率をプラス20% 点付与：付与方法によらず点毎に回数は合算（最大9回） 点は物理・属性毎に1種まで（2種目は上書き） 合致する攻撃分類の攻撃を受ける時 シールドポイントが弱点に関係なく1削られ ダメージ倍率がプラス50% ※弱点とは別効果。弱点を突ける効果では発動しない"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に斧弱点を付与（1回）し 特殊効果“斧脆点”の効果を付与（1回） その後、同対象に斧物理攻撃（威力 530） オーバードライブ効果中："
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身の行動順が遅いほど威力アップ 最大2倍（4番目以降時） このアビリティのダメージ上限が700000アップし さらに、効果を再発動（SP消費無し）する 弱点付与：付与方法によらず弱点毎に回数は合算（最大9回） 元からその弱点があればその弱点ダメージ倍率をプラス20% 点付与：付与方法によらず点毎に回数は合算（最大9回） 点は物理・属性毎に1種まで（2種目は上書き） 合致する攻撃分類の攻撃を受ける時 シールドポイントが弱点に関係なく1削られ ダメージ倍率がプラス50% ※弱点とは別効果。弱点を突ける効果では発動しない"
+        }
+      ]
+    },
+    {
+      "character_id": "797466",
+      "character_name": "ジェクト",
+      "ability_name": "ジェクトブレイド",
+      "source_type": "battle",
+      "cost": "【消費SP 52】",
+      "raw_text": [
+        "単体に",
+        "2回",
+        "の斧物理攻撃（威力 230）",
+        "自身の行動順が遅いほど威力アップ",
+        "最大2倍（4番目以降時）",
+        "ただし、使用した次のターンに行動が遅くなる",
+        "オーバードライブ効果中：攻撃回数が",
+        "3回",
+        "になり",
+        "物防・属防アップとダメージ減少効果を無視するようになる"
+      ],
+      "raw_text_pre_enhance": [
+        "単体に斧物理攻撃（威力 230）",
+        "自身の行動順が遅いほど威力アップ",
+        "最大2倍（4番目以降時）",
+        "ただし、使用した次のターンに行動が遅くなる",
+        "オーバードライブ効果中：攻撃回数が2回になり",
+        "物防・属防アップとダメージ減少効果を無視するようになる"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】威力260/300/400"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "単体に 2回 の斧物理攻撃（威力 230）",
+        "自身の行動順が遅いほど威力アップ 最大2倍（4番目以降時） ただし、使用した次のターンに行動が遅くなる オーバードライブ効果中：攻撃回数が 3回 になり 物防・属防アップとダメージ減少効果を無視するようになる"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "単体に 2回 の斧物理攻撃（威力 230）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身の行動順が遅いほど威力アップ 最大2倍（4番目以降時） ただし、使用した次のターンに行動が遅くなる オーバードライブ効果中：攻撃回数が 3回 になり 物防・属防アップとダメージ減少効果を無視するようになる"
+        }
+      ]
+    },
+    {
+      "character_id": "797466",
+      "character_name": "ジェクト",
+      "ability_name": "ジェクトOVERDRIVE！",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "（準備Turn:1/使用Turn:4）",
+        "コマンド選択時、自身に特殊効果”オーバードライブを付与（2ターン）",
+        "オーバードライブ：SP自動回復（回復量 最大SPの30%）と",
+        "必ずクリティカルの効果と",
+        "クリティカル時のダメージ倍率が",
+        "1.4倍になる効果（通常時は1.25倍）",
+        "※属性攻撃でクリティカルが発生するには",
+        "“属性攻撃でクリティカルが発生する効果”が必要"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "（準備Turn:1/使用Turn:4）",
+        "コマンド選択時、自身に特殊効果”オーバードライブを付与（2ターン） オーバードライブ：SP自動回復（回復量 最大SPの30%）と 必ずクリティカルの効果と クリティカル時のダメージ倍率が 1.4倍になる効果（通常時は1.25倍） ※属性攻撃でクリティカルが発生するには “属性攻撃でクリティカルが発生する効果”が必要"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "（準備Turn:1/使用Turn:4）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "コマンド選択時、自身に特殊効果”オーバードライブを付与（2ターン） オーバードライブ：SP自動回復（回復量 最大SPの30%）と 必ずクリティカルの効果と クリティカル時のダメージ倍率が 1.4倍になる効果（通常時は1.25倍） ※属性攻撃でクリティカルが発生するには “属性攻撃でクリティカルが発生する効果”が必要"
+        }
+      ]
+    },
+    {
+      "character_id": "797466",
+      "character_name": "ジェクト",
+      "ability_name": "ダブルドライブ",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "自身に敵の弱点を突ける攻撃時、追撃する効果を付与（行動順での攻撃のみ/攻撃回数によらず1回のみ発動）",
+        "追撃：自身のベーシックアビリティ",
+        "“ジェクトOVERDRIVE！”の再使用Turnを1短縮"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "自身に敵の弱点を突ける攻撃時、追撃する効果を付与（行動順での攻撃のみ/攻撃回数によらず1回のみ発動）",
+        "追撃：自身のベーシックアビリティ “ジェクトOVERDRIVE！”の再使用Turnを1短縮"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に敵の弱点を突ける攻撃時、追撃する効果を付与（行動順での攻撃のみ/攻撃回数によらず1回のみ発動）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "追撃：自身のベーシックアビリティ “ジェクトOVERDRIVE！”の再使用Turnを1短縮"
+        }
+      ]
+    },
+    {
+      "character_id": "797466",
+      "character_name": "ジェクト",
+      "ability_name": "親父の拳",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "自身の物攻に最大HPの5%を加算する",
+        "（装備ステータス含む/対象ステータス毎に最大値を適用）",
+        "ブレイク中の敵がいる時かつ行動順が4番目以降の時：",
+        "自身に「斧物理」で攻撃時",
+        "ダメージ上限アップ（効果量 500000）の効果を付与",
+        "ブレイク中の敵がいる時かつ行動順が4番目以降かつ",
+        "HP満タン時かつオーバードライブ効果中：",
+        "「斧物理」で攻撃時",
+        "ダメージ上限アップの効果量 が1000000になる",
+        "※反撃・追撃時は起点になった対象の行動順を適用"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 500000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [
+        "自身の物攻に最大HPの5%を加算する （装備ステータス含む/対象ステータス毎に最大値を適用） ブレイク中の敵がいる時かつ行動順が4番目以降の時"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身の物攻に最大HPの5%を加算する （装備ステータス含む/対象ステータス毎に最大値を適用） ブレイク中の敵がいる時かつ行動順が4番目以降の時："
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に「斧物理」で攻撃時 ダメージ上限アップ（効果量 500000）の効果を付与 ブレイク中の敵がいる時かつ行動順が4番目以降かつ HP満タン時かつオーバードライブ効果中： 「斧物理」で攻撃時 ダメージ上限アップの効果量 が1000000になる ※反撃・追撃時は起点になった対象の行動順を適用"
+        }
+      ]
+    },
+    {
+      "character_id": "797466",
+      "character_name": "ジェクト",
+      "ability_name": "ブリッツの王者",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "自身に「たかう」以外の物理攻撃（一部除く）時",
+        "剣・火・光弱点を突ける効果を付与",
+        "（ダメージ計算は各攻撃に準ずる）",
+        "前衛が3人以上生存時：さらに、自身にバトルアビリティによる物攻アップと",
+        "斧攻撃ダメージアップの上限が50%になる効果を付与",
+        "オーバードライブ効果中：自身に",
+        "ダメージ上限アップ（効果量 300000）の効果を付与"
+      ],
+      "raw_text_pre_enhance": [
+        "自身に「たかう」以外の物理攻撃（一部除く）時",
+        "剣・火・光弱点を突ける効果を付与",
+        "（ダメージ計算は各攻撃に準ずる）",
+        "前衛が3人以上生存時：さらに、自身にバトルアビリティによる物攻アップと",
+        "斧攻撃ダメージアップの上限が50%になる効果を付与"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "attack",
+          "target_source_type": "battle",
+          "value": 50,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "physical",
+          "target_source_type": "battle",
+          "value": 50,
+          "tag": "axe",
+          "cap_group": "buff_damage_phys_axe",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 300000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "自身に「たかう」以外の物理攻撃（一部除く）時 剣・火・光弱点を突ける効果を付与 （ダメージ計算は各攻撃に準ずる）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に「たかう」以外の物理攻撃（一部除く）時 剣・火・光弱点を突ける効果を付与 （ダメージ計算は各攻撃に準ずる）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "前衛が3人以上生存時：さらに、自身にバトルアビリティによる物攻アップと 斧攻撃ダメージアップの上限が50%になる効果を付与"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "オーバードライブ効果中：自身に ダメージ上限アップ（効果量 300000）の効果を付与"
+        }
+      ]
+    },
+    {
+      "character_id": "797466",
+      "character_name": "ジェクト",
+      "ability_name": "キング・オブ・ザ・ブリッツ",
+      "source_type": "ultimate",
+      "cost": "超威発動",
+      "raw_text": [
+        "【Lv.MAX】",
+        "自身に物攻アップ30%と",
+        "斧攻撃ダメージアップ30%の効果を付与（2ターン）",
+        "その後、敵単体に3回の斧物理攻撃（威力225）",
+        "オーバードライブ効果中：攻撃回数が6回になる"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 30,
+          "tag": "axe",
+          "cap_group": "buff_damage_phys_axe",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 30,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "【Lv.MAX】",
+        "その後、敵単体に3回の斧物理攻撃（威力225） オーバードライブ効果中：攻撃回数が6回になる"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "【Lv.MAX】"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に物攻アップ30%と 斧攻撃ダメージアップ30%の効果を付与（2ターン）"
+        },
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "その後、敵単体に3回の斧物理攻撃（威力225） オーバードライブ効果中：攻撃回数が6回になる"
+        }
+      ]
+    },
+    {
+      "character_id": "797466",
+      "character_name": "ジェクト",
+      "ability_name": "真・ジェクトシュート",
+      "source_type": "ex",
+      "cost": "回数：2",
+      "raw_text": [
+        "味方前衛全体に物攻アップ30%と",
+        "斧攻撃ダメージアップ30%の効果を付与（3ターン）",
+        "さらに、威力アップ100%の効果を付与",
+        "（3ターン/ターン延長不可/同系統の効果重複不可）",
+        "その後、敵全体に2回の斧物理攻撃（威力 115）",
+        "このアビリティのダメージ上限が150000アップ",
+        "ブーストMAX時：威力が3倍",
+        "※威力値に反映"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_condition": [
+        "【使用条件】自身がオーバードライブ状態の時"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】威力130/150/570"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 30,
+          "tag": "axe",
+          "cap_group": "buff_damage_phys_axe",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 30,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "power",
+          "unit": "%",
+          "target_source_type": "battle",
+          "value": 100,
+          "cap_group": "power_up",
+          "scopes": [
+            "ally_front_all"
+          ]
+        }
+      ],
+      "conditions": [
+        "その後、敵全体に2回の斧物理攻撃（威力 115） このアビリティのダメージ上限が150000アップ ブーストMAX時威力が3倍 ※威力値に反映"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体に物攻アップ30%と 斧攻撃ダメージアップ30%の効果を付与（3ターン） さらに、威力アップ100%の効果を付与 （3ターン/ターン延長不可/同系統の効果重複不可）"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "その後、敵全体に2回の斧物理攻撃（威力 115） このアビリティのダメージ上限が150000アップ ブーストMAX時：威力が3倍 ※威力値に反映"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "character_id": "797465",
+      "character_name": "リュック",
+      "ability_name": "盗む",
+      "source_type": "battle",
+      "cost": "【消費SP 59】",
+      "raw_text": [
+        "敵単体に物防・属防ダウン20%の効果を付与（2ターン）",
+        "さらに、自身に物防・属防アップ20%の効果を付与（2ターン）",
+        "“調合pt”を1追加",
+        "調合pt：数に応じて一部アビリティの効果が追加・変化する",
+        "戦闘不能時に消えない"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】ターン3/4/5"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 20,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 20,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 20,
+          "cap_group": "buff_stat_def_phys",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 20,
+          "cap_group": "buff_stat_def_elem",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に物防・属防ダウン20%の効果を付与（2ターン）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "さらに、自身に物防・属防アップ20%の効果を付与（2ターン） “調合pt”を1追加 調合pt：数に応じて一部アビリティの効果が追加・変化する 戦闘不能時に消えない"
+        }
+      ]
+    },
+    {
+      "character_id": "797465",
+      "character_name": "リュック",
+      "ability_name": "調合：カオスグレネード",
+      "source_type": "battle",
+      "cost": "【消費SP 62】",
+      "raw_text": [
+        "敵全体に光属性攻撃（威力 150）",
+        "さらに、毒・暗闇の状態異常を付与（1ターン）",
+        "※調合pt”6以上：効果を再発動（SP消費無し）する"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力175/215/260"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵全体に光属性攻撃（威力 150） さらに、毒・暗闇の状態異常を付与（1ターン） ※調合pt”6以上：効果を再発動（SP消費無し）する"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に光属性攻撃（威力 150） さらに、毒・暗闇の状態異常を付与（1ターン） ※調合pt”6以上：効果を再発動（SP消費無し）する"
+        }
+      ]
+    },
+    {
+      "character_id": "797465",
+      "character_name": "リュック",
+      "ability_name": "調合：徹甲手榴弹",
+      "source_type": "battle",
+      "cost": "【消費SP 58】",
+      "raw_text": [
+        "敵全体に光属性攻撃（威力 150）",
+        "弱点以外でもシールドポイントを削る",
+        "攻撃対象がブレイク中の時威力が1.3倍"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力175/215/260"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵全体に光属性攻撃（威力 150） 弱点以外でもシールドポイントを削る 攻撃対象がブレイク中の時威力が1.3倍"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に光属性攻撃（威力 150） 弱点以外でもシールドポイントを削る 攻撃対象がブレイク中の時威力が1.3倍"
+        }
+      ]
+    },
+    {
+      "character_id": "797465",
+      "character_name": "リュック",
+      "ability_name": "調合：バイタルW",
+      "source_type": "battle",
+      "cost": "【消費SP 66】",
+      "raw_text": [
+        "味方単体に最大HPアップ30%の効果を付与（2ターン）",
+        "ブーストMAX時：前衛全体化"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】ターン3/4/5"
+      ],
+      "effects": [],
+      "conditions": [
+        "味方単体に最大HPアップ30%の効果を付与（2ターン） ブーストMAX時前衛全体化"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_single"
+          ],
+          "text": "味方単体に最大HPアップ30%の効果を付与（2ターン） ブーストMAX時：前衛全体化"
+        }
+      ]
+    },
+    {
+      "character_id": "797465",
+      "character_name": "リュック",
+      "ability_name": "調合：メンタルW",
+      "source_type": "battle",
+      "cost": "【消費SP 30】",
+      "raw_text": [
+        "味方単体にSPストックを付与",
+        "（効果量 使用者の最大SPの5%/重複不可）",
+        "ブーストMAX時：前衛全体化"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】SP10/20/30%"
+      ],
+      "effects": [],
+      "conditions": [
+        "味方単体にSPストックを付与 （効果量 使用者の最大SPの5%/重複不可） ブーストMAX時前衛全体化"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_single"
+          ],
+          "text": "味方単体にSPストックを付与 （効果量 使用者の最大SPの5%/重複不可） ブーストMAX時：前衛全体化"
+        }
+      ]
+    },
+    {
+      "character_id": "797465",
+      "character_name": "リュック",
+      "ability_name": "調合：ブラスターマイン",
+      "source_type": "battle",
+      "cost": "【消費SP 82】",
+      "raw_text": [
+        "敵単体に3回の光属性攻撃（威力 85）",
+        "さらに、属防ダウン30%の効果を付与（3ターン）",
+        "“調合pt6以上：さらに、物防ダウン30%の効果を付与（3ターン）",
+        "“調合pt“9以上：さらに",
+        "バトルアビリティによる物防・属防ダウンを受けた際の",
+        "上限が50%になる効果を付与（3ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力95/110/140"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "defence",
+          "target_source_type": "battle",
+          "value": 50,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "defence",
+          "target_source_type": "battle",
+          "value": 50,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 30,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 30,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": [
+            "enemy_single"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に3回の光属性攻撃（威力 85） さらに、属防ダウン30%の効果を付与（3ターン） “調合pt6以上：さらに、物防ダウン30%の効果を付与（3ターン） “調合pt“9以上：さらに バトルアビリティによる物防・属防ダウンを受けた際の 上限が50%になる効果を付与（3ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "797465",
+      "character_name": "リュック",
+      "ability_name": "調合：ライトニングボルト",
+      "source_type": "battle",
+      "cost": "【消費SP 62】",
+      "raw_text": [
+        "ランダムなターゲットに6回の光属性攻撃（威力 30）",
+        "弱点以外でもシールドポイントを削る",
+        "“調合pt“6以上：攻撃回数が9回になる"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力35/40/60"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "ランダムなターゲットに6回の光属性攻撃（威力 30） 弱点以外でもシールドポイントを削る “調合pt“6以上：攻撃回数が9回になる"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "random"
+          ],
+          "text": "ランダムなターゲットに6回の光属性攻撃（威力 30） 弱点以外でもシールドポイントを削る “調合pt“6以上：攻撃回数が9回になる"
+        }
+      ]
+    },
+    {
+      "character_id": "797465",
+      "character_name": "リュック",
+      "ability_name": "調合：バオール",
+      "source_type": "battle",
+      "cost": "【消費SP 94】",
+      "raw_text": [
+        "味方単体に物攻・属攻・会心アップ30%と",
+        "属性耐性アップ30%の効果を付与（2ターン）",
+        "“調合pt”6以上：さらに",
+        "ダメージ上限アップ（効果量 100000）の効果を付与（2ターン）",
+        "BP1以上消費時：前衛全体化"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】ターン3/4/5"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 30,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 30,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_critical_rate",
+          "value": 30,
+          "cap_group": "buff_stat_atk_crit",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 100000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "ally_front_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_single"
+          ],
+          "text": "味方単体に物攻・属攻・会心アップ30%と 属性耐性アップ30%の効果を付与（2ターン） “調合pt”6以上：さらに ダメージ上限アップ（効果量 100000）の効果を付与（2ターン） BP1以上消費時：前衛全体化"
+        }
+      ]
+    },
+    {
+      "character_id": "797465",
+      "character_name": "リュック",
+      "ability_name": "調合：マイティG",
+      "source_type": "battle",
+      "cost": "【消費SP 72】",
+      "raw_text": [
+        "味方単体に物防・属防・速度アップ30%の効果を付与（2ターン）",
+        "さらに、HP自動回復の効果を付与（2ターン/効力120）",
+        "BP1以上消費時：前衛全体化",
+        "※行動順影響は2ターン目"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】ターン3/4/5"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 30,
+          "cap_group": "buff_stat_def_phys",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 30,
+          "cap_group": "buff_stat_def_elem",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "speed",
+          "value": 30,
+          "cap_group": "buff_stat_speed",
+          "scopes": [
+            "ally_front_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_single"
+          ],
+          "text": "味方単体に物防・属防・速度アップ30%の効果を付与（2ターン） さらに、HP自動回復の効果を付与（2ターン/効力120） BP1以上消費時：前衛全体化 ※行動順影響は2ターン目"
+        }
+      ]
+    },
+    {
+      "character_id": "797465",
+      "character_name": "リュック",
+      "ability_name": "調合：カルテット99",
+      "source_type": "battle",
+      "cost": "【消費SP 56】",
+      "raw_text": [
+        "ターン中、素早く行動し、",
+        "味方前衛全体",
+        "に",
+        "ダメージ上限アップ（効果量 99999）の効果を付与（1ターン）",
+        "“調合pt”9以上：さらに特殊効果”カルテット99”を付与",
+        "（自身 4回/他2回/ダメージによらず攻撃毎に消費）",
+        "※戦闘中2回のみ使用可能",
+        "カルテット99：ダメージ上限アップ（効果量 999999）の効果"
+      ],
+      "raw_text_pre_enhance": [
+        "ターン中、素早く行動し、味方単体に",
+        "ダメージ上限アップ（効果量 9999）の効果を付与（1ターン）",
+        "ブーストMAX時：味方前衛全体化",
+        "※戦闘中2回のみ使用可能"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】ターン2/3/4"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 99999,
+          "cap_group": "damage_cap",
+          "scopes": []
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 999999,
+          "cap_group": "damage_cap",
+          "scopes": [],
+          "special_effect_id": "カルテット99",
+          "special_stack": "no_stack"
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "ターン中、素早く行動し、 味方前衛全体 に ダメージ上限アップ（効果量 99999）の効果を付与（1ターン） “調合pt”9以上:さらに特殊効果”カルテット99”を付与 （自身 4回/他2回/ダメージによらず攻撃毎に消費） ※戦闘中2回のみ使用可能"
+        },
+        {
+          "scopes": [],
+          "text": "ダメージ上限アップ（効果量 999999）の効果",
+          "special_effect_id": "カルテット99"
+        }
+      ]
+    },
+    {
+      "character_id": "797465",
+      "character_name": "リュック",
+      "ability_name": "リュックのポーチ",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "自身がアビリティ使用時",
+        "自身のSP回復（回復量 30）",
+        "さらに、自身に調合ptを1追加（※攻撃回数の影響を受けない）",
+        "BP3消費してアビリティを使用時",
+        "さらに、自身に調合ptを2追加（※攻撃回数の影響を受けない）",
+        "調合pt：数に応じて一部アビリティの効果が追加・変化する",
+        "戦闘不能時に消えない"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "自身がアビリティ使用時",
+        "自身のSP回復（回復量 30）",
+        "さらに、自身に調合ptを1追加（※攻撃回数の影響を受けない） BP3消費してアビリティを使用時",
+        "さらに、自身に調合ptを2追加（※攻撃回数の影響を受けない） 調合pt：数に応じて一部アビリティの効果が追加・変化する 戦闘不能時に消えない"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "自身がアビリティ使用時"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身のSP回復（回復量 30）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "さらに、自身に調合ptを1追加（※攻撃回数の影響を受けない） BP3消費してアビリティを使用時"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "さらに、自身に調合ptを2追加（※攻撃回数の影響を受けない） 調合pt：数に応じて一部アビリティの効果が追加・変化する 戦闘不能時に消えない"
+        }
+      ]
+    },
+    {
+      "character_id": "797465",
+      "character_name": "リュック",
+      "ability_name": "アルベド族長の娘",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "味方前衛全体に自身の“調合pt”の数に応じた効果を付与",
+        "6以上：サポアビと装備性能による物攻・属攻アップの上限が60%になる効果",
+        "9以上：さらに、ダメージ上限アップ（効果量 100000）"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 100000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "attack",
+          "target_source_type": "support",
+          "value": 60,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "attack",
+          "target_source_type": "support",
+          "value": 60,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "ally_front_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体に自身の“調合pt”の数に応じた効果を付与 6以上：サポアビと装備性能による物攻・属攻アップの上限が60%になる効果 9以上：さらに、ダメージ上限アップ（効果量 100000）"
+        }
+      ]
+    },
+    {
+      "character_id": "797465",
+      "character_name": "リュック",
+      "ability_name": "追撃のパイナップル",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "ブレイク中の敵がいる時：味方前衛全体に行動後にリュックが追撃する効果を付与",
+        "（行動順での行動のみ/行動によらず1回のみ発動）",
+        "※“ブレイクさせた時”効果は起点の味方のみ発動",
+        "追撃：全体に光属性攻撃（威力 300）",
+        "剣・短剣・斧弱点を突ける（ダメージ計算は光属性）",
+        "リュックの“調合pt6以上：威力が2倍",
+        "リュックの“調合pt“9以上：威力が3倍",
+        "※威力倍率が高いほうのみ適用される",
+        "※ブレイク復帰行動前の敵はブレイクできない"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [],
+      "conditions": [
+        "ブレイク中の敵がいる時味方前衛全体に行動後にリュックが追撃する効果を付与 （行動順での行動のみ/行動によらず1回のみ発動） ※“ブレイクさせた時”効果は起点の味方のみ発動 追撃全体に光属性攻撃（威力 300） 剣・短剣・斧弱点を突ける（ダメージ計算は光属性） リュックの“調合pt6以上威力が2倍 リュックの“調合pt“9以上威力が3倍 ※威力倍率が高いほうのみ適用される ※ブレイク復帰行動前の敵はブレイクできない"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "ブレイク中の敵がいる時：味方前衛全体に行動後にリュックが追撃する効果を付与 （行動順での行動のみ/行動によらず1回のみ発動） ※“ブレイクさせた時”効果は起点の味方のみ発動 追撃：全体に光属性攻撃（威力 300） 剣・短剣・斧弱点を突ける（ダメージ計算は光属性） リュックの“調合pt6以上：威力が2倍 リュックの“調合pt“9以上：威力が3倍 ※威力倍率が高いほうのみ適用される ※ブレイク復帰行動前の敵はブレイクできない"
+        }
+      ]
+    },
+    {
+      "character_id": "797465",
+      "character_name": "リュック",
+      "ability_name": "ユウナのガード",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "前衛時：味方前衛全体の神官に",
+        "ダメージ減少50%（一部除く）の効果を付与",
+        "（同系統の効果重複不可）",
+        "戦闘開始時：自身の必殺技ゲージを100.0%増加さらに、",
+        "“調合pt”を9追加",
+        "調合pt：数に応じて一部アビリティの効果が追加・変化する",
+        "戦闘不能時に消えない"
+      ],
+      "raw_text_pre_enhance": [
+        "前衛時：味方前衛全体の神官に",
+        "ダメージ減少50%（一部除く）の効果を付与",
+        "（同系統の効果重複不可）"
+      ],
+      "effects": [],
+      "conditions": [
+        "前衛時味方前衛全体の神官に ダメージ減少50%（一部除く）の効果を付与 （同系統の効果重複不可）",
+        "戦闘開始時自身の必殺技ゲージを100.0%増加さらに、 “調合pt”を9追加 調合pt数に応じて一部アビリティの効果が追加・変化する 戦闘不能時に消えない"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "前衛時：味方前衛全体の神官に ダメージ減少50%（一部除く）の効果を付与 （同系統の効果重複不可）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "戦闘開始時：自身の必殺技ゲージを100.0%増加さらに、 “調合pt”を9追加 調合pt：数に応じて一部アビリティの効果が追加・変化する 戦闘不能時に消えない"
+        }
+      ]
+    },
+    {
+      "character_id": "797465",
+      "character_name": "リュック",
+      "ability_name": "調合：ファイナルエリクサー",
+      "source_type": "ultimate",
+      "cost": "後衛発動",
+      "raw_text": [
+        "【Lv.MAX】",
+        "味方前後衛全体のHP回復（回復量 最大HPの100%）",
+        "回復対象が戦闘不能時は復活（回復量 最大HPの100%）し",
+        "SP回復（回復量 最大SPの100%）",
+        "さらに、状態異常を回復し",
+        "HPバリアを付与（効果量 使用者の最大HPの50%/重複不可）",
+        "加えて、BP回復量1アップと",
+        "状態異常無効化（一部除く）の効果を付与（5ターン）",
+        "その後、自動復活すせる効果を付与",
+        "（回復量 最大HPの35%/重ねがけ時、/回数増加無し）",
+        "“調合pt”6以上：さらに、威力アップ100%の効果を付与",
+        "（3ターン/ターン延長不可/同系統の効果重複不可）",
+        "“調合pt”9以上：さらに",
+        "ダメージ上限アップ（効果量 200000）の効果を付与（3ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "power",
+          "unit": "%",
+          "target_source_type": "battle",
+          "value": 100,
+          "cap_group": "power_up",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 200000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "ally_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "【Lv.MAX】"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "【Lv.MAX】"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "味方前後衛全体のHP回復（回復量 最大HPの100%） 回復対象が戦闘不能時は復活（回復量 最大HPの100%）し SP回復（回復量 最大SPの100%） さらに、状態異常を回復し HPバリアを付与（効果量 使用者の最大HPの50%/重複不可） 加えて、BP回復量1アップと 状態異常無効化（一部除く）の効果を付与（5ターン） その後、自動復活すせる効果を付与 （回復量 最大HPの35%/重ねがけ時、/回数増加無し） “調合pt”6以上：さらに、威力アップ100%の効果を付与 （3ターン/ターン延長不可/同系統の効果重複不可） “調合pt”9以上：さらに ダメージ上限アップ（効果量 200000）の効果を付与（3ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "797465",
+      "character_name": "リュック",
+      "ability_name": "調合：エキセントリック",
+      "source_type": "ex",
+      "cost": "回数：1",
+      "raw_text": [
+        "自身を除く味方前後衛全体の",
+        "必殺技とEXアビリティの使用回数を1回復させる",
+        "さらに、必殺技ゲージを10.0%増加",
+        "ただし、ターン中、行動が遅くなり",
+        "自身の“調合ptを0にする",
+        "（このEXアビリティは使用可能数の復活不可）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_condition": [
+        "【使用条件】自身の”調合pt”が9以上"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】必殺技ゲージ20.0/30.0/50.0"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "自身を除く味方前後衛全体の 必殺技とEXアビリティの使用回数を1回復させる さらに、必殺技ゲージを10.0%増加 ただし、ターン中、行動が遅くなり",
+        "自身の“調合ptを0にする （このEXアビリティは使用可能数の復活不可）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self_exclude",
+            "ally_all"
+          ],
+          "text": "自身を除く味方前後衛全体の 必殺技とEXアビリティの使用回数を1回復させる さらに、必殺技ゲージを10.0%増加 ただし、ターン中、行動が遅くなり"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身の“調合ptを0にする （このEXアビリティは使用可能数の復活不可）"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "character_id": "793075",
       "character_name": "アーロン",
       "ability_name": "ニ連斬",
@@ -2379,7 +3953,7 @@
       "cost": null,
       "raw_text": [
         "戦闘開始時：自身に特殊効果”ヘイスト”を付与",
-        "（4ターン/ターン延長不可・上書/バトアビとして付与）",
+        "（4ターン/ターン延長不可・上書き/バトアビとして付与）",
         "さらに、特殊効果”気合”を付与",
         "（4ターン/ターンが長くなるよう上書き）",
         "加えて、“クイックpt“を6追加、BPを2回復し",
@@ -2400,7 +3974,7 @@
       "effects": [],
       "conditions": [],
       "unknown": [
-        "戦闘開始時:自身に特殊効果”ヘイスト”を付与 （4ターン/ターン延長不可・上書/バトアビとして付与） さらに、特殊効果”気合”を付与 （4ターン/ターンが長くなるよう上書き） 加えて、“クイックpt“を6追加、BPを2回復し SPストックを付与（効果量 使用者の最大SPの30%/重複不可）",
+        "戦闘開始時:自身に特殊効果”ヘイスト”を付与 （4ターン/ターン延長不可・上書き/バトアビとして付与） さらに、特殊効果”気合”を付与 （4ターン/ターンが長くなるよう上書き） 加えて、“クイックpt“を6追加、BPを2回復し SPストックを付与（効果量 使用者の最大SPの30%/重複不可）",
         "素早く行動できる効果と 使用する攻撃アビリティを2回発動する効果 （追加発動分はSP消費無し）※行動順影響は行動開始時 気合:BPが減少しない（消耗時も含む/一部除く） ※ブーストする分のBPは必要、BP消費・消耗条件は発揮される"
       ],
       "blocks": [
@@ -2408,7 +3982,7 @@
           "scopes": [
             "self"
           ],
-          "text": "戦闘開始時:自身に特殊効果”ヘイスト”を付与 （4ターン/ターン延長不可・上書/バトアビとして付与） さらに、特殊効果”気合”を付与 （4ターン/ターンが長くなるよう上書き） 加えて、“クイックpt“を6追加、BPを2回復し SPストックを付与（効果量 使用者の最大SPの30%/重複不可）"
+          "text": "戦闘開始時:自身に特殊効果”ヘイスト”を付与 （4ターン/ターン延長不可・上書き/バトアビとして付与） さらに、特殊効果”気合”を付与 （4ターン/ターンが長くなるよう上書き） 加えて、“クイックpt“を6追加、BPを2回復し SPストックを付与（効果量 使用者の最大SPの30%/重複不可）"
         },
         {
           "scopes": [
@@ -139504,14 +141078,20 @@
     {
       "character_id": "355784",
       "character_name": "ハインツ",
-      "ability_name": "大乱暗闇魔法Ⅲ",
+      "ability_name": "ダーククロウズ",
       "source_type": "battle",
       "cost": "【消費SP 65】",
       "raw_text": [
         "ランダムなターゲットに3回の闇属性攻撃（威力 85）",
+        "攻撃毎に闇耐性ダウン15%の効果を付与（2ターン）",
+        "ブーストMAX時:さらに",
+        "攻撃毎に属防ダウン15%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [
+        "『大乱暗闇魔法Ⅲ』",
+        "ランダムなターゲットに3回の闇属性攻撃（威力 85）",
         "攻撃毎に闇耐性ダウン15%の効果を付与（2ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力95/110/140"
       ],
@@ -139527,6 +141107,17 @@
           "scopes": [
             "random"
           ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 15,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": [
+            "random"
+          ]
         }
       ],
       "conditions": [],
@@ -139536,7 +141127,7 @@
           "scopes": [
             "random"
           ],
-          "text": "ランダムなターゲットに3回の闇属性攻撃（威力 85） 攻撃毎に闇耐性ダウン15%の効果を付与（2ターン）"
+          "text": "ランダムなターゲットに3回の闇属性攻撃（威力 85） 攻撃毎に闇耐性ダウン15%の効果を付与（2ターン） ブーストMAX時:さらに 攻撃毎に属防ダウン15%の効果を付与（2ターン）"
         }
       ]
     },
@@ -139614,13 +141205,19 @@
     {
       "character_id": "355784",
       "character_name": "ハインツ",
-      "ability_name": "属攻・属防強化Ⅱ",
+      "ability_name": "社会階層学者",
       "source_type": "support",
       "cost": null,
       "raw_text": [
+        "自身と",
+        "バディ",
+        "に属攻・属防アップ15%と",
+        "ダメージ上限アップ（効果量 20000）の効果を付与"
+      ],
+      "raw_text_pre_enhance": [
+        "『属攻・属防強化Ⅱ』",
         "自身に属攻・属防アップ15%の効果を付与"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "buff",
@@ -139629,9 +141226,7 @@
           "sub_category": "attack_elemental",
           "value": 15,
           "cap_group": "buff_stat_atk_elem",
-          "scopes": [
-            "self"
-          ]
+          "scopes": []
         },
         {
           "role": "buff",
@@ -139640,19 +141235,24 @@
           "sub_category": "defence_elemental",
           "value": 15,
           "cap_group": "buff_stat_def_elem",
-          "scopes": [
-            "self"
-          ]
+          "scopes": []
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 20000,
+          "cap_group": "damage_cap",
+          "scopes": []
         }
       ],
       "conditions": [],
       "unknown": [],
       "blocks": [
         {
-          "scopes": [
-            "self"
-          ],
-          "text": "自身に属攻・属防アップ15%の効果を付与"
+          "scopes": [],
+          "text": "自身と バディ に属攻・属防アップ15%と ダメージ上限アップ（効果量 20000）の効果を付与"
         }
       ]
     },
@@ -157878,25 +159478,31 @@
       "source_type": "battle",
       "cost": "【消費SP 26】",
       "raw_text": [
+        "敵単体に",
+        "3回",
+        "の短剣物理攻撃（威力 75）",
+        "その直後、後衛に移動する（交代として扱われない）",
+        "弱点以外でもシールドポイントを削る"
+      ],
+      "raw_text_pre_enhance": [
         "敵単体に2回の短剣物理攻撃（威力 75）",
         "その直後、後衛に移動する（交代として扱われない）",
         "弱点以外でもシールドポイントを削る"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力90/110/150"
       ],
       "effects": [],
       "conditions": [],
       "unknown": [
-        "敵単体に2回の短剣物理攻撃（威力 75） その直後、後衛に移動する（交代として扱われない） 弱点以外でもシールドポイントを削る"
+        "敵単体に 3回 の短剣物理攻撃（威力 75） その直後、後衛に移動する（交代として扱われない） 弱点以外でもシールドポイントを削る"
       ],
       "blocks": [
         {
           "scopes": [
             "enemy_single"
           ],
-          "text": "敵単体に2回の短剣物理攻撃（威力 75） その直後、後衛に移動する（交代として扱われない） 弱点以外でもシールドポイントを削る"
+          "text": "敵単体に 3回 の短剣物理攻撃（威力 75） その直後、後衛に移動する（交代として扱われない） 弱点以外でもシールドポイントを削る"
         }
       ]
     },
@@ -157961,16 +159567,21 @@
       "cost": null,
       "raw_text": [
         "自身が敵をブレイクさせた時",
+        "ブレイクさせた敵に物攻・物防ダウン",
+        "10%",
+        "の効果を付与（3ターン）"
+      ],
+      "raw_text_pre_enhance": [
+        "自身が敵をブレイクさせた時",
         "ブレイクさせた敵に物攻・物防ダウン5%の効果を付与（3ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "debuff",
           "category": "stat",
           "unit": "%",
           "sub_category": "defence_physical",
-          "value": 5,
+          "value": 10,
           "cap_group": "debuff_stat_def_phys",
           "scopes": [
             "enemy_single"
@@ -157981,7 +159592,7 @@
           "category": "stat",
           "unit": "%",
           "sub_category": "attack_physical",
-          "value": 5,
+          "value": 10,
           "cap_group": "debuff_stat_atk_phys",
           "scopes": [
             "enemy_single"
@@ -158001,7 +159612,7 @@
           "scopes": [
             "enemy_single"
           ],
-          "text": "ブレイクさせた敵に物攻・物防ダウン5%の効果を付与（3ターン）"
+          "text": "ブレイクさせた敵に物攻・物防ダウン 10% の効果を付与（3ターン）"
         }
       ]
     },

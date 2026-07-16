@@ -1,5 +1,34 @@
 [
   {
+    "character_id": "797466",
+    "character_name": "ジェクト",
+    "job": "薬師",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "火"
+    ],
+    "physicals": [
+      "剣",
+      "斧"
+    ]
+  },
+  {
+    "character_id": "797465",
+    "character_name": "リュック",
+    "job": "学者",
+    "rarity": "5",
+    "elements": [
+      "光"
+    ],
+    "physicals": [
+      "剣",
+      "斧",
+      "本",
+      "短剣"
+    ]
+  },
+  {
     "character_id": "793075",
     "character_name": "アーロン",
     "job": "剣士",
