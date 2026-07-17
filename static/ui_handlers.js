@@ -515,9 +515,12 @@ function buildSummaryRow(effectsInGroup) {
     }
   }
 
-  const sum = effectsInGroup
+  const valueEffects = effectsInGroup
     .filter(e => e.category !== "cap_increase")
-    .reduce((acc, e) => acc + e.value, 0)
+
+  const sum = base.category === "power"
+    ? valueEffects.reduce((max, e) => Math.max(max, e.value), 0)
+    : valueEffects.reduce((acc, e) => acc + e.value, 0)
 
   let defaultCap = CATEGORY_CAP_MAP[base.category];
 
@@ -640,17 +643,22 @@ function applyHighlightSettings() {
     '#settings-modal input[data-only-highlights]'
   )?.checked ?? false;
 
+  const exSingle = document.querySelector(
+    '#settings-modal input[data-ex-single]'
+  )?.checked ?? false;
+
   state.ui.highlightSettings = {
     cap_groups: capGroups,
     stack_groups: stackGroups,
     view_only_highlights: onlyHighlights,
+    ex_single: exSingle,
   };
 
   buildHighlightIndex();
 }
 
 function buildHighlightIndex() {
-  const { cap_groups, stack_groups } = state.ui.highlightSettings;
+  const { cap_groups, stack_groups, ex_single } = state.ui.highlightSettings;
 
   if (!cap_groups.length || !stack_groups.length) {
     state.highlightIndex = null;
@@ -669,9 +677,15 @@ function buildHighlightIndex() {
       for (const cap of caps) {
         const entry = stackData[cap];
         if (!entry) continue;
+
+        const source = ex_single
+          ? entry.scope_groups?.ex_single
+          : entry;
+
+        if (!source) continue;
   
-        entry.characters?.forEach(id => characterIds.add(id));
-        entry.abilities?.forEach(name => abilityNames.add(name));
+        source.characters?.forEach(id => characterIds.add(id));
+        source.abilities?.forEach(name => abilityNames.add(name));
       }
     }
   }
@@ -706,7 +720,21 @@ function normalize(rawIndex) {
       result[stackGroup][capGroup] = {
         characters: new Set(entry.characters ?? []),
         abilities: new Set(entry.abilities ?? []),
+        scope_groups: normalizeScopeGroups(entry.scope_groups),
       }
+    }
+  }
+
+  return result
+}
+
+function normalizeScopeGroups(scopeGroups = {}) {
+  const result = {}
+
+  for (const [scopeGroup, entry] of Object.entries(scopeGroups)) {
+    result[scopeGroup] = {
+      characters: new Set(entry.characters ?? []),
+      abilities: new Set(entry.abilities ?? []),
     }
   }
 
@@ -728,6 +756,10 @@ function resetHighlightSettings() {
 
   document.querySelectorAll(
     '#settings-modal input[data-only-highlights]'
+  )?.forEach(cb => cb.checked = false);
+
+  document.querySelectorAll(
+    '#settings-modal input[data-ex-single]'
   )?.forEach(cb => cb.checked = false);
 
 }

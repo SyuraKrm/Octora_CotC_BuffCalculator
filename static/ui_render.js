@@ -799,6 +799,7 @@ function renderFilterCharacterOptions(container) {
   section.innerHTML = ``;
 
   const label = document.createElement("label");
+  label.style.display = "block";
   const checked = state.ui.highlightSettings?.view_only_highlights;
 
   label.innerHTML = `
@@ -811,6 +812,21 @@ function renderFilterCharacterOptions(container) {
   `;
 
   section.appendChild(label);
+
+  const exSingleLabel = document.createElement("label");
+  exSingleLabel.style.display = "block";
+  const exSingleChecked = state.ui.highlightSettings?.ex_single;
+
+  exSingleLabel.innerHTML = `
+    <input
+      type="checkbox"
+      data-ex-single
+      ${exSingleChecked ? "checked" : ""}
+    />
+    自身のみ／敵単体のみ の効果は除外
+  `;
+
+  section.appendChild(exSingleLabel);
 
   container.appendChild(section);
 }

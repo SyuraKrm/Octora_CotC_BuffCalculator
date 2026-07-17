@@ -35,6 +35,7 @@ const state = {
       cap_groups: [],
       stack_groups: ["battle"],
       view_only_highlights: false,
+      ex_single: false,
     },
     settingsModal: {
       open: false,

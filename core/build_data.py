@@ -184,15 +184,30 @@ def build_datas_group_by_cap_group():
                     datas[stack_group][key] = {
                         "characters": set(),
                         "abilities": set(),
+                        "scope_groups": {
+                            "ex_single": {
+                                "characters": set(),
+                                "abilities": set(),
+                            },
+                        },
                     }
 
                 datas[stack_group][key]["characters"].add(character_id)
                 datas[stack_group][key]["abilities"].add(ability_name)
 
+                scopes = set(effect.get("scopes") or [])
+                if scopes and scopes not in ({"self"}, {"enemy_single"}):
+                    ex_single = datas[stack_group][key]["scope_groups"]["ex_single"]
+                    ex_single["characters"].add(character_id)
+                    ex_single["abilities"].add(ability_name)
+
     for stackGroup in datas:
         for key, v in datas[stackGroup].items():
             v["characters"] = sorted(v["characters"])
             v["abilities"] = sorted(v["abilities"])
+            for scope_group in v["scope_groups"].values():
+                scope_group["characters"] = sorted(scope_group["characters"])
+                scope_group["abilities"] = sorted(scope_group["abilities"])
 
     
     with open(OUTPUT_PATH_GROUPED_DATA, "w", encoding="utf-8") as f:
@@ -203,7 +218,7 @@ def build_datas_group_by_cap_group():
             indent=2
         )
 
-    print(f"saved: {OUTPUT_PATH_CHARACTERS} ({len(datas)} stack groups)")
+    print(f"saved: {OUTPUT_PATH_GROUPED_DATA} ({len(datas)} stack groups)")
 
     return datas
 
