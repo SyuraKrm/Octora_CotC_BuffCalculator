@@ -604,7 +604,7 @@ EFFECT_PATTERNS = [
         "unit": "%",
         "cap_group": "debuff_stat_def_phys",
         "patterns": [
-            r"物防([^0-9]*)ダウン(?P<value>\d+)[%％]"
+            r"物防(?:(?!効果を無視する)[^0-9])*ダウン(?P<value>\d+)[%％]"
         ],
     },
     {
@@ -614,7 +614,7 @@ EFFECT_PATTERNS = [
         "unit": "%",
         "cap_group": "debuff_stat_def_elem",
         "patterns": [
-            r"属防([^0-9]*)ダウン(?P<value>\d+)[%％]"
+            r"属防(?:(?!効果を無視する)[^0-9])*ダウン(?P<value>\d+)[%％]"
         ],
     },
     {

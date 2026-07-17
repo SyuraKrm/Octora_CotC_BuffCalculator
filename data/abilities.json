@@ -1849,28 +1849,6 @@
           "role": "debuff",
           "category": "stat",
           "unit": "%",
-          "sub_category": "defence_physical",
-          "value": 30,
-          "cap_group": "debuff_stat_def_phys",
-          "scopes": [
-            "enemy_all"
-          ]
-        },
-        {
-          "role": "debuff",
-          "category": "stat",
-          "unit": "%",
-          "sub_category": "defence_elemental",
-          "value": 30,
-          "cap_group": "debuff_stat_def_elem",
-          "scopes": [
-            "enemy_all"
-          ]
-        },
-        {
-          "role": "debuff",
-          "category": "stat",
-          "unit": "%",
           "sub_category": "speed",
           "value": 30,
           "cap_group": "debuff_stat_speed",
