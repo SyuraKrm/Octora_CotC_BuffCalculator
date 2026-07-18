@@ -13,7 +13,7 @@
 
   <meta charset="UTF-8">
   <title>大陸の覇者　バフシミュレータ</title>
-  <link rel="stylesheet" href="/static/style.css?v=20260131" type="text/css">
+  <link rel="stylesheet" href="/static/style.css?v=20260718" type="text/css">
   <link rel="icon" href="/static/favicon/favicon.ico">
 </head>
 <body>
@@ -24,6 +24,9 @@
   <header class="app-header">
     <div class="app-title">オクトラ大陸の覇者 バフシミュレータ</div>
     <div class="header-actions">
+      <button class="header-btn header-usage-btn" id="open-usage" aria-label="使い方">
+        使い方
+      </button>
       <button class="header-btn" id="open-settings" aria-label="設定">
         <svg viewBox="0 0 24 24" class="icon-gear" aria-hidden="true">
           <path d="M19.14 12.94c.04-.31.06-.63.06-.94s-.02-.63-.06-.94l2.03-1.58a.5.5 0 0 0 .12-.64l-1.92-3.32a.5.5 0 0 0-.6-.22l-2.39.96a7.03 7.03 0 0 0-1.63-.94l-.36-2.54a.5.5 0 0 0-.5-.42h-3.84a.5.5 0 0 0-.5.42l-.36 2.54c-.58.23-1.12.54-1.63.94l-2.39-.96a.5.5 0 0 0-.6.22L2.68 7.84a.5.5 0 0 0 .12.64l2.03 1.58c-.04.31-.06.63-.06.94s.02.63.06.94L2.8 13.52a.5.5 0 0 0-.12.64l1.92 3.32c.13.22.39.31.6.22l2.39-.96c.5.4 1.05.71 1.63.94l.36 2.54c.05.24.26.42.5.42h3.84c.25 0 .46-.18.5-.42l.36-2.54c.58-.23 1.12-.54 1.63-.94l2.39.96c.22.09.47 0 .6-.22l1.92-3.32a.5.5 0 0 0-.12-.64l-2.03-1.58ZM12 15.5A3.5 3.5 0 1 1 12 8a3.5 3.5 0 0 1 0 7.5Z"/>
@@ -93,6 +96,36 @@
     </div>
   </div>
 
+  <!-- Usage Modal -->
+  <div id="usage-modal" class="modal hidden">
+    <div class="modal-backdrop"></div>
+
+    <div class="modal-content help-modal">
+      <div class="modal-header">
+        <h2>使い方</h2>
+        <button class="modal-close" id="close-usage" aria-label="使い方を閉じる">×</button>
+      </div>
+
+      <div class="modal-body">
+        <section>
+          <h3>基本の流れ</h3>
+          <ol>
+            <li>まずは、キャラクターとバトアビを選びます。<br>キャラの位置は関係ありません。「自身とバディに」などは全員に乗ります。</li>
+            <li>次に、左下で表示内容を変更します。<br>特に【キャラ視点】で誰にかかるバフを見るか選択してください。</li>
+            <li>右下に、対象キャラにかかるバフの合計値が表示されます。<br>タップ／マウスオーバーで内訳を確認することもできます。</li>
+          </ol>
+        </section>
+
+        <section>
+          <h3>補足</h3>
+          <p>キャラとバトアビの選択状況は、設定画面から1設定だけ保存・ロードできます。</p>
+          <p>設定画面から、特定の効果を持つキャラ・アビをハイライト／絞り込みできます。</p>
+          <p>左下の項目（下線あり）は、タップ／マウスオーバーで詳細説明が出て来ます</li>
+        </section>
+      </div>
+    </div>
+  </div>
+
   <!-- Help Modal -->
   <div id="help-modal" class="modal hidden">
     <div class="modal-backdrop"></div>
@@ -117,15 +150,6 @@
             データの更新は基本的に木曜25時前後です。<br>
             <br>
           </p>
-        </section>
-
-        <section>
-          <h3>数値について</h3>
-          <ul>
-            <li>表示される数値は効果量の理論上の合算結果です</li>
-            <li>ゲーム内挙動と完全一致を保証するものではありません</li>
-            <li>フィルタ項目(下線あり)や計算結果部分は、スマホやタブレットはタップで、PCはマウスオーバーで詳細説明が出て来ます</li>
-          </ul>
         </section>
 
         <section>
@@ -228,10 +252,10 @@
     </div>
   </div>
 
-  <script src="/static/constants.js?v=20260422"></script>
+  <script src="/static/constants.js?v=20260718"></script>
   <script src="/static/state.js?v=20260718"></script>
-  <script src="/static/ui_render.js?v=20260718"></script>
-  <script src="/static/ui_handlers.js?v=20260718"></script>
+  <script src="/static/ui_render.js?v=20260718_2"></script>
+  <script src="/static/ui_handlers.js?v=20260718_2"></script>
   <script src="/static/app.js?v=20260129"></script>
 </body>
 

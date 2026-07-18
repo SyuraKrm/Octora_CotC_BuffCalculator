@@ -406,14 +406,12 @@ function renderSummaryFilters() {
   root.innerHTML = `
     <div class="filter-group">
       <div class="filter-title has-tooltip"
-          data-tooltip="味方の攻撃に関連するバフ・デバフか
-      味方の防御に関連するバフ・デバフかを切り替えられます。">
-        対象
+          data-tooltip="効果を「誰視点」で見るかを指定します。
+      列対象効果に加えて、自身対象の効果なども合算されます。">
+        キャラ視点
       </div>
       <div class="filter-options">
-        <button data-filter-tab="attack" class="${tab === "attack" ? "active" : ""}">攻撃</button>
-        <button data-filter-tab="defense" class="${tab === "defense" ? "active" : ""}">防御</button>
-        <button data-filter-tab="both" class="${tab === "both" ? "active" : ""}">両方</button>
+        ${renderCharacterSelect(selectedCharacter)}
       </div>
     </div>
 
@@ -431,6 +429,29 @@ function renderSummaryFilters() {
 
     <div class="filter-group">
       <div class="filter-title has-tooltip"
+          data-tooltip="表示する効果を、攻撃種に関連するものに絞り込みます。">
+        攻撃種
+      </div>
+      <div class="filter-options">
+        ${renderAttackCategorySelect(attackCategory)}
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <div class="filter-title has-tooltip"
+          data-tooltip="味方の攻撃に関連するバフ・デバフか
+      味方の防御に関連するバフ・デバフかを切り替えられます。">
+        対象
+      </div>
+      <div class="filter-options">
+        <button data-filter-tab="attack" class="${tab === "attack" ? "active" : ""}">攻撃</button>
+        <button data-filter-tab="defense" class="${tab === "defense" ? "active" : ""}">防御</button>
+        <button data-filter-tab="both" class="${tab === "both" ? "active" : ""}">両方</button>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <div class="filter-title has-tooltip"
           data-tooltip="どの列を対象としたバフを合算するか指定します。
       例えば「前衛のみ」だと「前衛全体」「前後衛全体」を合算します。
       「すべて」だと「前衛全体」「後衛全体」「前後衛全体」を合算します。">
@@ -440,27 +461,6 @@ function renderSummaryFilters() {
         ${renderRadio("scope", "both", "すべて", scope)}
         ${renderRadio("scope", "front", "前衛のみ", scope)}
         ${renderRadio("scope", "back", "後衛のみ", scope)}
-      </div>
-    </div>
-
-    <div class="filter-group">
-      <div class="filter-title has-tooltip"
-          data-tooltip="効果を「誰視点」で見るかを指定します。
-      列対象効果に加えて、自身対象の効果なども合算されます。">
-        キャラ視点
-      </div>
-      <div class="filter-options">
-        ${renderCharacterSelect(selectedCharacter)}
-      </div>
-    </div>
-
-    <div class="filter-group">
-      <div class="filter-title has-tooltip"
-          data-tooltip="表示する効果を、攻撃種に関連するものに絞り込みます。">
-        攻撃種
-      </div>
-      <div class="filter-options">
-        ${renderAttackCategorySelect(attackCategory)}
       </div>
     </div>
   `
@@ -587,7 +587,7 @@ function td(row, text, className) {
       // 通常行
       const char = s.character_name ?? "不明";
       const suffix = s.category === "cap_increase"
-        ? "【上限】"
+        ? "【上限" + `${s.value}${s.unit}` + "】"
         : ` ${s.value}${s.unit}`;
 
       normalLines.push(`${char}：${s.ability_name}${suffix}`);
@@ -637,17 +637,17 @@ function td(row, text, className) {
 }
 
 function formatValue(value, unit) {
-  return `${value}${unit}`
+  return `${value.toLocaleString()}${unit}`
 }
 
 function formatCap(cap, unit) {
-  return cap == null ? "―" : `${cap}${unit}`
+  return cap == null ? "―" : `${cap.toLocaleString()}${unit}`
 }
 
 function formatApplied(value, unit) {
   return value.capped
-    ? `${value.applied}${unit}`
-    : `${value.applied}${unit}`
+    ? `${value.applied.toLocaleString()}${unit}`
+    : `${value.applied.toLocaleString()}${unit}`
 }
 
 

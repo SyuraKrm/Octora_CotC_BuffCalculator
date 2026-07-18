@@ -101,6 +101,26 @@ html, body {
   line-height: 1;
 }
 
+/* 設定モーダル内のロードボタンと同系統の見た目を、ヘッダー用に縮小 */
+.header-usage-btn {
+  box-sizing: border-box;
+  width: auto;
+  height: 28px;
+  padding: 4px 10px;
+  border: 1px solid #9f8542;
+  border-radius: 4px;
+  background: linear-gradient(180deg, #c9a24d, #9f8542);
+  color: #111;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.header-usage-btn:hover {
+  color: #111;
+  background: linear-gradient(180deg, #dfba62, #b29247);
+}
+
 /* 
 ==================================================
 　　ヘルプモーダル部分
@@ -132,6 +152,10 @@ html, body {
   margin-top: 16px;
   font-size: 12px;
   color: #9ca3af;
+}
+
+.help-modal li {
+  margin-bottom: 8px;
 }
 
 /* 

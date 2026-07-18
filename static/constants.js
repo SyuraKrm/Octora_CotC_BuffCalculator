@@ -158,8 +158,8 @@ const CATEGORY_CAP_MAP = {
   resistance: 30,
   damage: 30,
   stat: 30,
-  dmg_cap: 999999,
-  power: 999999,
+  power: 999,
+  dmg_cap: 9999999,
   critical: 1,
 }
 

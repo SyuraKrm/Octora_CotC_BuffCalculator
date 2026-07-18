@@ -27,6 +27,14 @@ function bindHandlers() {
     document.getElementById("help-modal")?.classList.add("hidden");
   });
 
+  document.getElementById("open-usage")?.addEventListener("click", () => {
+    document.getElementById("usage-modal")?.classList.remove("hidden");
+  });
+
+  document.getElementById("close-usage")?.addEventListener("click", () => {
+    document.getElementById("usage-modal")?.classList.add("hidden");
+  });
+
   document.getElementById("open-settings")
     .addEventListener("click", () => {
       openSettingsModal();
