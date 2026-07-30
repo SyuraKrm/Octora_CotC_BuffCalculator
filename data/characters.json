@@ -1,5 +1,13 @@
 [
   {
+    "character_id": "802469",
+    "character_name": "セルク",
+    "job": "学者",
+    "rarity": "5",
+    "elements": [],
+    "physicals": []
+  },
+  {
     "character_id": "797466",
     "character_name": "ジェクト",
     "job": "薬師",
