@@ -1,6 +1,1731 @@
 [
   [
     {
+      "character_id": "805825",
+      "character_name": "アーギュストEx",
+      "ability_name": "三連凍波衝",
+      "source_type": "battle",
+      "cost": "【消費SP 40】",
+      "raw_text": [
+        "敵単体に3回の氷属性攻撃（威力 65）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力75/90/120"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵単体に3回の氷属性攻撃（威力 65）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に3回の氷属性攻撃（威力 65）"
+        }
+      ]
+    },
+    {
+      "character_id": "805825",
+      "character_name": "アーギュストEx",
+      "ability_name": "四連乱凍波衝",
+      "source_type": "battle",
+      "cost": "【消費SP 48】",
+      "raw_text": [
+        "ランダムなターゲットに4回の氷属性攻撃（威力35）",
+        "攻撃毎に氷耐性ダウン15%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力45/55/75"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 15,
+          "tag": "ice",
+          "cap_group": "debuff_resist_elem_ice",
+          "scopes": [
+            "random"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "random"
+          ],
+          "text": "ランダムなターゲットに4回の氷属性攻撃（威力35） 攻撃毎に氷耐性ダウン15%の効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "805825",
+      "character_name": "アーギュストEx",
+      "ability_name": "砕氷閃",
+      "source_type": "battle",
+      "cost": "【消費SP 40】",
+      "raw_text": [
+        "敵全体に氷属性攻撃（威力 150）",
+        "さらに、属防ダウン15%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力175/215/260"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 15,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": [
+            "enemy_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に氷属性攻撃（威力 150） さらに、属防ダウン15%の効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "805825",
+      "character_name": "アーギュストEx",
+      "ability_name": "氷弱化のアントラクト",
+      "source_type": "battle",
+      "cost": "【消費SP 47】",
+      "raw_text": [
+        "味方前衛全体にHP自動回復（効力 110）と",
+        "攻撃時に弱点付与の回数を消費しない効果を付与（2ターン）",
+        "さらに、敵全体に氷弱点を付与（3回）",
+        "弱点付与：付与方法によらず弱点毎に回数は合算（最大9回）",
+        "元からその弱点があればその弱点ダメージ倍率をプラス20%"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】3/4/5ターン"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "味方前衛全体にHP自動回復（効力 110）と 攻撃時に弱点付与の回数を消費しない効果を付与（2ターン）",
+        "さらに、敵全体に氷弱点を付与（3回） 弱点付与：付与方法によらず弱点毎に回数は合算（最大9回） 元からその弱点があればその弱点ダメージ倍率をプラス20%"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体にHP自動回復（効力 110）と 攻撃時に弱点付与の回数を消費しない効果を付与（2ターン）"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "さらに、敵全体に氷弱点を付与（3回） 弱点付与：付与方法によらず弱点毎に回数は合算（最大9回） 元からその弱点があればその弱点ダメージ倍率をプラス20%"
+        }
+      ]
+    },
+    {
+      "character_id": "805825",
+      "character_name": "アーギュストEx",
+      "ability_name": "四連凍波閃",
+      "source_type": "battle",
+      "cost": "【消費SP 72】",
+      "raw_text": [
+        "敵全体に4回の氷属性攻撃（威力 35）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力45/55/75"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵全体に4回の氷属性攻撃（威力 35）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に4回の氷属性攻撃（威力 35）"
+        }
+      ]
+    },
+    {
+      "character_id": "805825",
+      "character_name": "アーギュストEx",
+      "ability_name": "纏わる薄氷",
+      "source_type": "battle",
+      "cost": "【消費SP 43】",
+      "raw_text": [
+        "敵全体に属攻・属防ダウン15%と",
+        "氷耐性ダウン15%の効果を付与（2ターン）",
+        "効果対象が氷弱点付与または氷脆点付与状態の時：",
+        "さらに、バトアビによる氷耐性ダウンを受けた際の",
+        "上限が60%になる効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】3/4/5ターン"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "elemental",
+          "target_source_type": "battle",
+          "value": 60,
+          "tag": "ice",
+          "cap_group": "debuff_resist_elem_ice",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 15,
+          "tag": "ice",
+          "cap_group": "debuff_resist_elem_ice",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 15,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 15,
+          "cap_group": "debuff_stat_atk_elem",
+          "scopes": [
+            "enemy_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に属攻・属防ダウン15%と 氷耐性ダウン15%の効果を付与（2ターン） 効果対象が氷弱点付与または氷脆点付与状態の時： さらに、バトアビによる氷耐性ダウンを受けた際の 上限が60%になる効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "805825",
+      "character_name": "アーギュストEx",
+      "ability_name": "禍根の衝波",
+      "source_type": "battle",
+      "cost": "【消費SP 54】",
+      "raw_text": [
+        "単体に6回の氷属性攻撃（威力25）",
+        "さらに、氷弱点を付与（4回）",
+        "BP1以上消費時：攻撃効果の前に攻撃対象に",
+        "攻撃された時に弱点付与の回数が消費されない効果を付与",
+        "（4ターン/ターンが長くなるよう上書き）",
+        "弱点付与：付与方法によらず弱点毎に回数は合算（最大9回）",
+        "元からその弱点があればその弱点ダメージ倍率をプラス20%"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力30/35/50"
+      ],
+      "effects": [],
+      "conditions": [
+        "単体に6回の氷属性攻撃（威力25） さらに、氷弱点を付与（4回） BP1以上消費時攻撃効果の前に攻撃対象に 攻撃された時に弱点付与の回数が消費されない効果を付与 （4ターン/ターンが長くなるよう上書き） 弱点付与付与方法によらず弱点毎に回数は合算（最大9回） 元からその弱点があればその弱点ダメージ倍率をプラス20%"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "単体に6回の氷属性攻撃（威力25） さらに、氷弱点を付与（4回） BP1以上消費時：攻撃効果の前に攻撃対象に 攻撃された時に弱点付与の回数が消費されない効果を付与 （4ターン/ターンが長くなるよう上書き） 弱点付与：付与方法によらず弱点毎に回数は合算（最大9回） 元からその弱点があればその弱点ダメージ倍率をプラス20%"
+        }
+      ]
+    },
+    {
+      "character_id": "805825",
+      "character_name": "アーギュストEx",
+      "ability_name": "戯れの葬海",
+      "source_type": "battle",
+      "cost": "【消費SP 240】",
+      "raw_text": [
+        "自身を除く味方単体にオーバーキルダメージ",
+        "（後衛選択可能/ふんばる不可）",
+        "その後、自身に属攻アップ30%と氷属性ダメージアップ30%（1ターン）と",
+        "威力アップ100%の効果を付与",
+        "（1ターン/ターン延長不可/同系統の効果重複不可）し",
+        "敵単体に4回の氷属性攻撃（威力 185）",
+        "攻撃対象がブレイク中の時：攻撃回数が8回になり",
+        "このアビリティのダメージ上限が500000アップする",
+        "※このアビリティでブレイクした場合も含む"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力190/225/300"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 30,
+          "tag": "ice",
+          "cap_group": "buff_damage_elem_ice",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 30,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "power",
+          "unit": "%",
+          "target_source_type": "battle",
+          "value": 100,
+          "cap_group": "power_up",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [
+        "敵単体に4回の氷属性攻撃（威力 185） 攻撃対象がブレイク中の時攻撃回数が8回になり このアビリティのダメージ上限が500000アップする ※このアビリティでブレイクした場合も含む"
+      ],
+      "unknown": [
+        "自身を除く味方単体にオーバーキルダメージ （後衛選択可能/ふんばる不可）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self_exclude",
+            "ally_single"
+          ],
+          "text": "自身を除く味方単体にオーバーキルダメージ （後衛選択可能/ふんばる不可）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "その後、自身に属攻アップ30%と氷属性ダメージアップ30%（1ターン）と 威力アップ100%の効果を付与 （1ターン/ターン延長不可/同系統の効果重複不可）し"
+        },
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に4回の氷属性攻撃（威力 185） 攻撃対象がブレイク中の時：攻撃回数が8回になり このアビリティのダメージ上限が500000アップする ※このアビリティでブレイクした場合も含む"
+        }
+      ]
+    },
+    {
+      "character_id": "805825",
+      "character_name": "アーギュストEx",
+      "ability_name": "願いを砕く凍波",
+      "source_type": "battle",
+      "cost": "【消費SP 81】",
+      "raw_text": [
+        "敵全体に5回の氷属性攻撃（威力 25）",
+        "この攻撃は弱点付与・脆点付与の回数を消費しない",
+        "（弱点・脆点を突いた効果は発動する）",
+        "さらに、氷耐性ダウン30%の効果を付与（2ターン）",
+        "ブーストMAX時：威力が約1.5倍 ※威力値に反映"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力30/35/70"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 30,
+          "tag": "ice",
+          "cap_group": "debuff_resist_elem_ice",
+          "scopes": [
+            "enemy_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に5回の氷属性攻撃（威力 25） この攻撃は弱点付与・脆点付与の回数を消費しない （弱点・脆点を突いた効果は発動する） さらに、氷耐性ダウン30%の効果を付与（2ターン） ブーストMAX時：威力が約1.5倍 ※威力値に反映"
+        }
+      ]
+    },
+    {
+      "character_id": "805825",
+      "character_name": "アーギュストEx",
+      "ability_name": "深碧のアンサンブル",
+      "source_type": "battle",
+      "cost": "【消費SP 51】",
+      "raw_text": [
+        "味方前衛全体に属攻アップ15%と",
+        "氷属性ダメージアップ15%の効果を付与（2ターン）",
+        "さらに、敵全体に氷弱点を付与（",
+        "6回",
+        "）",
+        "ブーストMAX時：さらに",
+        "味方前衛全体に威力アップ100%の効果を付与",
+        "（3ターン/ターン延長不可/同系統の効果重複不可）",
+        "弱点付与：付与方法によらず弱点毎に回数は合算（最大9回）",
+        "元からその弱点があればその弱点ダメージ倍率をプラス20%"
+      ],
+      "raw_text_pre_enhance": [
+        "味方前衛全体に属攻アップ15%と",
+        "氷属性ダメージアップ15%の効果を付与（2ターン）",
+        "さらに、敵全体に氷弱点を付与（3回）"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】3/4/5ターン"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 15,
+          "tag": "ice",
+          "cap_group": "buff_damage_elem_ice",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 15,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "power",
+          "unit": "%",
+          "target_source_type": "battle",
+          "value": 100,
+          "cap_group": "power_up",
+          "scopes": [
+            "ally_front_all"
+          ]
+        }
+      ],
+      "conditions": [
+        "さらに、敵全体に氷弱点を付与（ 6回 ） ブーストMAX時さらに"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体に属攻アップ15%と 氷属性ダメージアップ15%の効果を付与（2ターン）"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "さらに、敵全体に氷弱点を付与（ 6回 ） ブーストMAX時：さらに"
+        },
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体に威力アップ100%の効果を付与 （3ターン/ターン延長不可/同系統の効果重複不可） 弱点付与：付与方法によらず弱点毎に回数は合算（最大9回） 元からその弱点があればその弱点ダメージ倍率をプラス20%"
+        }
+      ]
+    },
+    {
+      "character_id": "805825",
+      "character_name": "アーギュストEx",
+      "ability_name": "海辺の劇作家",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "自身に「たたかう」以外の属性攻撃（一部除く）時",
+        "雷・闇弱点を突ける効果を付与",
+        "（ダメージ計算は各攻撃に準ずる）"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "自身に「たたかう」以外の属性攻撃（一部除く）時 雷・闇弱点を突ける効果を付与 （ダメージ計算は各攻撃に準ずる）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に「たたかう」以外の属性攻撃（一部除く）時 雷・闇弱点を突ける効果を付与 （ダメージ計算は各攻撃に準ずる）"
+        }
+      ]
+    },
+    {
+      "character_id": "805825",
+      "character_name": "アーギュストEx",
+      "ability_name": "やすあがる熱情",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "HP満タン時：自身に属性攻撃でクリティカルが発生する効果と",
+        "必ずクリティカルの効果と",
+        "「氷属性」攻撃でクリティカル時のダメージ倍率が",
+        "1.7倍になる効果を付与（通常時は1.25倍）",
+        "さらに、",
+        "「氷属性」で攻撃時",
+        "ダメージ上限アップ（効果量 150000）の効果を付与"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "critical",
+          "unit": "",
+          "sub_category": "certain",
+          "target_source_type": "battle",
+          "value": 1,
+          "cap_group": "critical_certain",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "critical",
+          "unit": "",
+          "sub_category": "elemental",
+          "target_source_type": "battle",
+          "value": 1,
+          "cap_group": "critical_elem",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 150000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "HP満タン時：自身に属性攻撃でクリティカルが発生する効果と 必ずクリティカルの効果と 「氷属性」攻撃でクリティカル時のダメージ倍率が 1.7倍になる効果を付与（通常時は1.25倍） さらに、 「氷属性」で攻撃時 ダメージ上限アップ（効果量 150000）の効果を付与"
+        }
+      ]
+    },
+    {
+      "character_id": "805825",
+      "character_name": "アーギュストEx",
+      "ability_name": "氷怖症",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "氷弱点付与または氷脆点付与されている敵に「氷属性」攻撃を受けた時",
+        "受けるダメージの上限アップ（効果量 100000）の効果を付与"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "氷弱点付与または氷脆点付与されている敵に「氷属性」攻撃を受けた時 受けるダメージの上限アップ（効果量 100000）の効果を付与"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "氷弱点付与または氷脆点付与されている敵に「氷属性」攻撃を受けた時 受けるダメージの上限アップ（効果量 100000）の効果を付与"
+        }
+      ]
+    },
+    {
+      "character_id": "805825",
+      "character_name": "アーギュストEx",
+      "ability_name": "死出の潤色",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "“氷弱点付与または氷脆点付与されている敵に属防ダウン",
+        "30%",
+        "と",
+        "バトアビによる属防ダウンを受けた際の上限と",
+        "サポアビと装備性能による属防ダウンを受けた際の上限が",
+        "60%",
+        "になる効果を付与",
+        "ターン開始時かつ前衛が3人以上生存時：",
+        "敵全体に特殊効果”氷脆点”の効果を付与（",
+        "9回",
+        "）",
+        "脆点付与：付与方法によらず点毎に回数は合算（最大9回）",
+        "脆点は物理・属性毎に1種まで（2種目は上書）",
+        "合致する攻撃分類の攻撃を受ける時",
+        "シールドポイントが弱点に関係なく1削られ",
+        "ダメージ倍率がプラス50%",
+        "※弱点とは別効果。弱点を突ける効果では発動しない“"
+      ],
+      "raw_text_pre_enhance": [
+        "“氷弱点付与または氷脆点付与されている敵に属防ダウン20%と",
+        "バトアビによる属防ダウンを受けた際の上限と",
+        "サポアビと装備性能による属防ダウンを受けた際の上限が",
+        "50%になる効果を付与",
+        "ターン開始時かつ前衛が3人以上生存時：",
+        "敵全体に特殊効果”氷脆点”の効果を付与（3回）",
+        "脆点付与：付与方法によらず点毎に回数は合算（最大9回）",
+        "脆点は物理・属性毎に1種まで（2種目は上書）",
+        "合致する攻撃分類の攻撃を受ける時",
+        "シールドポイントが弱点に関係なく1削られ",
+        "ダメージ倍率がプラス50%",
+        "※弱点とは別効果。弱点を突ける効果では発動しない“"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "defence",
+          "target_source_type": "battle",
+          "value": 60,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": []
+        },
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "defence",
+          "target_source_type": "support",
+          "value": 60,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": []
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 30,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": []
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "敵全体に特殊効果”氷脆点”の効果を付与（ 9回 ） 脆点付与：付与方法によらず点毎に回数は合算（最大9回） 脆点は物理・属性毎に1種まで（2種目は上書） 合致する攻撃分類の攻撃を受ける時 シールドポイントが弱点に関係なく1削られ ダメージ倍率がプラス50% ※弱点とは別効果。弱点を突ける効果では発動しない“"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "“氷弱点付与または氷脆点付与されている敵に属防ダウン 30% と バトアビによる属防ダウンを受けた際の上限と サポアビと装備性能による属防ダウンを受けた際の上限が 60% になる効果を付与 ターン開始時かつ前衛が3人以上生存時："
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に特殊効果”氷脆点”の効果を付与（ 9回 ） 脆点付与：付与方法によらず点毎に回数は合算（最大9回） 脆点は物理・属性毎に1種まで（2種目は上書） 合致する攻撃分類の攻撃を受ける時 シールドポイントが弱点に関係なく1削られ ダメージ倍率がプラス50% ※弱点とは別効果。弱点を突ける効果では発動しない“"
+        }
+      ]
+    },
+    {
+      "character_id": "805825",
+      "character_name": "アーギュストEx",
+      "ability_name": "滄海に沈む",
+      "source_type": "ultimate",
+      "cost": "超威発動",
+      "raw_text": [
+        "【Lv.MAX】",
+        "氷弱点付与または氷脆点付与されている敵に",
+        "その付与が無くなるまで氷属性攻撃（威力 185/最大9回）",
+        "この攻撃は物・属防アップ効果を無視するその後、敵全体に氷属性攻撃（威力185）",
+        "この攻撃は物防・属防アップ効果を無視する",
+        "200%発動時かつブレイク中の敵がいる時：",
+        "ブレイク中の敵へのこの必殺技のダメージ上限が300000アップ",
+        "※この必殺技でブレイクした場合も含む"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [],
+      "conditions": [
+        "この攻撃は物・属防アップ効果を無視するその後、敵全体に氷属性攻撃（威力185） この攻撃は物防・属防アップ効果を無視する 200%発動時かつブレイク中の敵がいる時 ブレイク中の敵へのこの必殺技のダメージ上限が300000アップ ※この必殺技でブレイクした場合も含む"
+      ],
+      "unknown": [
+        "【Lv.MAX】 氷弱点付与または氷脆点付与されている敵に その付与が無くなるまで氷属性攻撃（威力 185/最大9回）"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "【Lv.MAX】 氷弱点付与または氷脆点付与されている敵に その付与が無くなるまで氷属性攻撃（威力 185/最大9回）"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "この攻撃は物・属防アップ効果を無視するその後、敵全体に氷属性攻撃（威力185） この攻撃は物防・属防アップ効果を無視する 200%発動時かつブレイク中の敵がいる時： ブレイク中の敵へのこの必殺技のダメージ上限が300000アップ ※この必殺技でブレイクした場合も含む"
+        }
+      ]
+    },
+    {
+      "character_id": "805825",
+      "character_name": "アーギュストEx",
+      "ability_name": "人魚の悲恋",
+      "source_type": "ex",
+      "cost": "回数：2",
+      "raw_text": [
+        "単体に6回の氷属性攻撃（威力 40）",
+        "この攻撃はダメージ減少効果を無視するこの攻撃の開始時点で",
+        "攻撃対象が氷弱点付与または氷脆点付与状態の時：",
+        "攻撃回数が6回増加",
+        "ブレイク中の敵がいる時：攻撃回数が6回増加",
+        "※このアビリティでブレイクした場合も含む"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_condition": [
+        "【使用条件】9ターン目以内"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】威力45/50/70"
+      ],
+      "effects": [],
+      "conditions": [
+        "単体に6回の氷属性攻撃（威力 40） この攻撃はダメージ減少効果を無視するこの攻撃の開始時点で 攻撃対象が氷弱点付与または氷脆点付与状態の時 攻撃回数が6回増加 ブレイク中の敵がいる時攻撃回数が6回増加 ※このアビリティでブレイクした場合も含む"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "単体に6回の氷属性攻撃（威力 40） この攻撃はダメージ減少効果を無視するこの攻撃の開始時点で 攻撃対象が氷弱点付与または氷脆点付与状態の時： 攻撃回数が6回増加 ブレイク中の敵がいる時：攻撃回数が6回増加 ※このアビリティでブレイクした場合も含む"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "character_id": "805824",
+      "character_name": "リンユウEx2",
+      "ability_name": "大氷結魔法（単体）Ⅱ",
+      "source_type": "battle",
+      "cost": "【消費SP 28】",
+      "raw_text": [
+        "敵単体に2回の氷属性攻撃（威力 90）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力105/180/315"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵単体に2回の氷属性攻撃（威力 90）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に2回の氷属性攻撃（威力 90）"
+        }
+      ]
+    },
+    {
+      "character_id": "805824",
+      "character_name": "リンユウEx2",
+      "ability_name": "治癒魔法（前全）Ⅱ",
+      "source_type": "battle",
+      "cost": "【消費SP 42】",
+      "raw_text": [
+        "味方前衛全体のHP回復（効力 55）",
+        "さらに、HP自動回復の効果を付与（2ターン/効力80）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】効力70/130/230"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "味方前衛全体のHP回復（効力 55） さらに、HP自動回復の効果を付与（2ターン/効力80）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体のHP回復（効力 55） さらに、HP自動回復の効果を付与（2ターン/効力80）"
+        }
+      ]
+    },
+    {
+      "character_id": "805824",
+      "character_name": "リンユウEx2",
+      "ability_name": "大氷結魔法（全体）Ⅱ",
+      "source_type": "battle",
+      "cost": "【消費SP 37】",
+      "raw_text": [
+        "敵全体に2回の氷属性攻撃（威力 80）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力95/130/230"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵全体に2回の氷属性攻撃（威力 80）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に2回の氷属性攻撃（威力 80）"
+        }
+      ]
+    },
+    {
+      "character_id": "805824",
+      "character_name": "リンユウEx2",
+      "ability_name": "氷風光強化魔法（前全）Ⅴ",
+      "source_type": "battle",
+      "cost": "【消費SP 108】",
+      "raw_text": [
+        "味方前衛全体に",
+        "氷・風・光属性ダメージアップ30%の効果を付与（2ターン）",
+        "BP3以上消費時：前後衛全体化"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】3/5/7ターン"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 30,
+          "tag": "ice",
+          "cap_group": "buff_damage_elem_ice",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 30,
+          "tag": "wind",
+          "cap_group": "buff_damage_elem_wind",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 30,
+          "tag": "light",
+          "cap_group": "buff_damage_elem_light",
+          "scopes": [
+            "ally_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体に 氷・風・光属性ダメージアップ30%の効果を付与（2ターン） BP3以上消費時：前後衛全体化"
+        }
+      ]
+    },
+    {
+      "character_id": "805824",
+      "character_name": "リンユウEx2",
+      "ability_name": "嵐のオラクル（全体）Ⅴ",
+      "source_type": "battle",
+      "cost": "【消費SP 58】",
+      "raw_text": [
+        "敵全体に氷・風・光耐性ダウン30%の効果を付与（7ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】3/5/7ターン"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 30,
+          "tag": "ice",
+          "cap_group": "debuff_resist_elem_ice",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 30,
+          "tag": "wind",
+          "cap_group": "debuff_resist_elem_wind",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 30,
+          "tag": "light",
+          "cap_group": "debuff_resist_elem_light",
+          "scopes": [
+            "enemy_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に氷・風・光耐性ダウン30%の効果を付与（7ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "805824",
+      "character_name": "リンユウEx2",
+      "ability_name": "氷風光弱化のオラクル（全体）Ⅲ",
+      "source_type": "battle",
+      "cost": "【消費SP 45】",
+      "raw_text": [
+        "敵全体に氷・風・光弱点を付与（各3回）",
+        "弱点付与：付与方法によらず弱点毎に回数は合算（最大9回）",
+        "元からその弱点があればその弱点ダメージ倍率をプラス20%"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】4/6/8回"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵全体に氷・風・光弱点を付与（各3回） 弱点付与：付与方法によらず弱点毎に回数は合算（最大9回） 元からその弱点があればその弱点ダメージ倍率をプラス20%"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に氷・風・光弱点を付与（各3回） 弱点付与：付与方法によらず弱点毎に回数は合算（最大9回） 元からその弱点があればその弱点ダメージ倍率をプラス20%"
+        }
+      ]
+    },
+    {
+      "character_id": "805824",
+      "character_name": "リンユウEx2",
+      "ability_name": "戒告の祈り",
+      "source_type": "battle",
+      "cost": "【消費SP 48】",
+      "raw_text": [
+        "敵全体に特殊効果”戒告の祈り”を付与",
+        "行動完了後、後衛に移動する（交代として扱われない）",
+        "BP5消費時：さらに、同対象に特殊効果”戒告の祈り＋”を付与",
+        "特殊効果”戒告の祈り”・“戒告の祈り＋”は",
+        "自身が行動する（追撃は対象外）が行動不能になるまで継続する",
+        "（継続消耗SP150/継続SPが不足した時も解除）",
+        "戒告の祈り：氷・風・光耐性ダウン50%の効果（通常時は上限30%）",
+        "戒告の祈り＋：属攻・属防・速度ダウン15%の効果",
+        "※行動順影響は2ターン目"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】消耗SP120/50/40"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 50,
+          "tag": "ice",
+          "cap_group": "debuff_resist_elem_ice",
+          "scopes": [
+            "enemy_all"
+          ],
+          "special_effect_id": "戒告の祈り",
+          "special_stack": "no_stack"
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 50,
+          "tag": "wind",
+          "cap_group": "debuff_resist_elem_wind",
+          "scopes": [
+            "enemy_all"
+          ],
+          "special_effect_id": "戒告の祈り",
+          "special_stack": "no_stack"
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 50,
+          "tag": "light",
+          "cap_group": "debuff_resist_elem_light",
+          "scopes": [
+            "enemy_all"
+          ],
+          "special_effect_id": "戒告の祈り",
+          "special_stack": "no_stack"
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 15,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": [
+            "enemy_all"
+          ],
+          "special_effect_id": "戒告の祈り",
+          "special_stack": "no_stack"
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 15,
+          "cap_group": "debuff_stat_atk_elem",
+          "scopes": [
+            "enemy_all"
+          ],
+          "special_effect_id": "戒告の祈り",
+          "special_stack": "no_stack"
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "speed",
+          "value": 15,
+          "cap_group": "debuff_stat_speed",
+          "scopes": [
+            "enemy_all"
+          ],
+          "special_effect_id": "戒告の祈り",
+          "special_stack": "no_stack"
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "敵全体に特殊効果”戒告の祈り”を付与 行動完了後、後衛に移動する（交代として扱われない） BP5消費時:さらに、同対象に特殊効果”戒告の祈り＋”を付与 特殊効果”戒告の祈り”・“戒告の祈り＋”は 自身が行動する（追撃は対象外）が行動不能になるまで継続する （継続消耗SP150/継続SPが不足した時も解除）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に特殊効果”戒告の祈り”を付与 行動完了後、後衛に移動する（交代として扱われない） BP5消費時:さらに、同対象に特殊効果”戒告の祈り＋”を付与 特殊効果”戒告の祈り”・“戒告の祈り＋”は 自身が行動する（追撃は対象外）が行動不能になるまで継続する （継続消耗SP150/継続SPが不足した時も解除）"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "氷・風・光耐性ダウン50%の効果（通常時は上限30%） 戒告の祈り＋:属攻・属防・速度ダウン15%の効果 ※行動順影響は2ターン目",
+          "special_effect_id": "戒告の祈り"
+        }
+      ]
+    },
+    {
+      "character_id": "805824",
+      "character_name": "リンユウEx2",
+      "ability_name": "寵愛の祈り",
+      "source_type": "battle",
+      "cost": "【消費SP 48】",
+      "raw_text": [
+        "味方前後衛全体に特殊効果“寵愛の祈り”を付与",
+        "行動完了後、後衛に移動する（交代として扱われない）",
+        "BP5消費時：さらに、同対象に特殊効果”寵愛の祈り+”を付与",
+        "特殊効果“寵愛の祈り”・“寵愛の祈り＋”は",
+        "自身が行動する（追撃は対象外）か行動不能になるまで継続する",
+        "（継続消耗SP150/継続SPが不足した時も解除）",
+        "寵愛の祈り：HP自動回復（効力 80）と",
+        "ダメージ減少30%（一部除く/同系統の効果重複不可）の効果",
+        "寵愛の祈り＋：特殊効果”香睡”・“静寂”・“魅了”無効化の効果"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】消耗SP120/50/40"
+      ],
+      "effects": [],
+      "conditions": [
+        "味方前後衛全体に特殊効果“寵愛の祈り”を付与 行動完了後、後衛に移動する（交代として扱われない） BP5消費時さらに、同対象に特殊効果”寵愛の祈り+”を付与 特殊効果“寵愛の祈り”・“寵愛の祈り＋”は 自身が行動する（追撃は対象外）か行動不能になるまで継続する （継続消耗SP150/継続SPが不足した時も解除） 寵愛の祈りHP自動回復（効力 80）と ダメージ減少30%（一部除く/同系統の効果重複不可）の効果 寵愛の祈り＋特殊効果”香睡”・“静寂”・“魅了”無効化の効果"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "味方前後衛全体に特殊効果“寵愛の祈り”を付与 行動完了後、後衛に移動する（交代として扱われない） BP5消費時：さらに、同対象に特殊効果”寵愛の祈り+”を付与 特殊効果“寵愛の祈り”・“寵愛の祈り＋”は 自身が行動する（追撃は対象外）か行動不能になるまで継続する （継続消耗SP150/継続SPが不足した時も解除） 寵愛の祈り：HP自動回復（効力 80）と ダメージ減少30%（一部除く/同系統の効果重複不可）の効果 寵愛の祈り＋：特殊効果”香睡”・“静寂”・“魅了”無効化の効果"
+        }
+      ]
+    },
+    {
+      "character_id": "805824",
+      "character_name": "リンユウEx2",
+      "ability_name": "懲罰の祈り",
+      "source_type": "battle",
+      "cost": "【消費SP 56】",
+      "raw_text": [
+        "敵全体に特殊効果”懲罰の祈り”を付与",
+        "行動完了後、後衛に移動する（交代として扱われない）",
+        "BP5消費時：さらに、バディに特殊効果”懲罰の祈り＋”を付与",
+        "特殊効果”懲罰の祈り”・“懲罰の祈り＋”は",
+        "自身が行動する（追撃は対象外）が行動不能になるまで継続する",
+        "（継続消耗SP180/継続SPが不足した時も解除）",
+        "懲罰の祈り：属防ダウン30%の効果と",
+        "特殊効果”氷脆点”（上書き不可）の効果",
+        "懲罰の祈り＋：行動後に追撃する効果（行動順での行動のみ/行動によらず1回のみ発動）",
+        "追撃：全体に2回の氷属性攻撃（威力100）",
+        "風・光弱点を突ける（ダメージ計算は氷属性）",
+        "※ブレイク復帰行動前の敵はブレイクできない",
+        "脆点付与：付与方法によらず点毎に回数は合算（最大9回）",
+        "脆点は物理・属性毎に1種まで（2種目は上書き）",
+        "合致する攻撃分類の攻撃を受ける時",
+        "シールドポイントが弱点に関係なく1削られ",
+        "ダメージ倍率がプラス50%",
+        "※弱点とは別効果。弱点を突ける効果では発動しない"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】消耗SP140/60/48"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 30,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": [
+            "enemy_all"
+          ],
+          "special_effect_id": "懲罰の祈り",
+          "special_stack": "no_stack"
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "敵全体に特殊効果”懲罰の祈り”を付与 行動完了後、後衛に移動する（交代として扱われない） BP5消費時:さらに、バディに特殊効果”懲罰の祈り＋”を付与 特殊効果”懲罰の祈り”・“懲罰の祈り＋”は 自身が行動する（追撃は対象外）が行動不能になるまで継続する （継続消耗SP180/継続SPが不足した時も解除）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に特殊効果”懲罰の祈り”を付与 行動完了後、後衛に移動する（交代として扱われない） BP5消費時:さらに、バディに特殊効果”懲罰の祈り＋”を付与 特殊効果”懲罰の祈り”・“懲罰の祈り＋”は 自身が行動する（追撃は対象外）が行動不能になるまで継続する （継続消耗SP180/継続SPが不足した時も解除）"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "属防ダウン30%の効果と 特殊効果”氷脆点”（上書き不可）の効果 懲罰の祈り＋:行動後に追撃する効果（行動順での行動のみ/行動によらず1回のみ発動） 追撃:全体に2回の氷属性攻撃（威力100） 風・光弱点を突ける（ダメージ計算は氷属性） ※ブレイク復帰行動前の敵はブレイクできない 脆点付与:付与方法によらず点毎に回数は合算（最大9回） 脆点は物理・属性毎に1種まで（2種目は上書き） 合致する攻撃分類の攻撃を受ける時 シールドポイントが弱点に関係なく1削られ ダメージ倍率がプラス50% ※弱点とは別効果。弱点を突ける効果では発動しない",
+          "special_effect_id": "懲罰の祈り"
+        }
+      ]
+    },
+    {
+      "character_id": "805824",
+      "character_name": "リンユウEx2",
+      "ability_name": "海母神の抱擁",
+      "source_type": "battle",
+      "cost": "【消費SP 158】",
+      "raw_text": [
+        "味方前衛全体に",
+        "自動復活させる効果を付与（回復量 最大HPの25%）",
+        "戦闘不能時は即時発動（重ねがけ時、回数増加無し）",
+        "さらに、HPバリアを付与（効果量 使用者の最大HPの15%/重複不可）",
+        "BP5消費時：さらに、同対象のSP回復（回復量",
+        "100",
+        "）、",
+        "BPを3回復",
+        "※戦闘中2回のみ使用可能"
+      ],
+      "raw_text_pre_enhance": [
+        "味方前衛全体に",
+        "自動復活させる効果を付与（回復量 最大HPの25%）",
+        "戦闘不能時は即時発動（重ねがけ時、回数増加無し）",
+        "さらに、HPバリアを付与（効果量 使用者の最大HPの15%/重複不可）",
+        "BP5消費時：さらに、同対象のSP回復（回復量 50）",
+        "※戦闘中2回のみ使用可能"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】回復量50%/100%/100% HPバリア30%/60%/105%"
+      ],
+      "effects": [],
+      "conditions": [
+        "味方前衛全体に 自動復活させる効果を付与（回復量 最大HPの25%） 戦闘不能時は即時発動（重ねがけ時、回数増加無し） さらに、HPバリアを付与（効果量 使用者の最大HPの15%/重複不可） BP5消費時さらに、同対象のSP回復（回復量 100 ）、 BPを3回復 ※戦闘中2回のみ使用可能"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体に 自動復活させる効果を付与（回復量 最大HPの25%） 戦闘不能時は即時発動（重ねがけ時、回数増加無し） さらに、HPバリアを付与（効果量 使用者の最大HPの15%/重複不可） BP5消費時：さらに、同対象のSP回復（回復量 100 ）、 BPを3回復 ※戦闘中2回のみ使用可能"
+        }
+      ]
+    },
+    {
+      "character_id": "805824",
+      "character_name": "リンユウEx2",
+      "ability_name": "畏海の人魚",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "自身の「たたかう」が氷属性攻撃になる",
+        "さらに、自身に属性攻撃でクリティカルが発生する効果と",
+        "「たたかう」を含む属性攻撃（一部除く）時",
+        "風・光弱点を突ける効果を付与",
+        "（ダメージ計算は各攻撃に準ずる）",
+        "自身のブーストLvがレベル2/レベル4/レベル6（MAX）になる",
+        "※BPの消費量は1/3/5になる"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "critical",
+          "unit": "",
+          "sub_category": "elemental",
+          "target_source_type": "battle",
+          "value": 1,
+          "cap_group": "critical_elem",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "自身の「たたかう」が氷属性攻撃になる",
+        "自身のブーストLvがレベル2/レベル4/レベル6（MAX）になる ※BPの消費量は1/3/5になる"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身の「たたかう」が氷属性攻撃になる"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "さらに、自身に属性攻撃でクリティカルが発生する効果と 「たたかう」を含む属性攻撃（一部除く）時 風・光弱点を突ける効果を付与 （ダメージ計算は各攻撃に準ずる）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身のブーストLvがレベル2/レベル4/レベル6（MAX）になる ※BPの消費量は1/3/5になる"
+        }
+      ]
+    },
+    {
+      "character_id": "805824",
+      "character_name": "リンユウEx2",
+      "ability_name": "人魚の悲情",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "味方が敵をブレイクさせた時",
+        "敵全体に氷・風・光耐性ダウン30%と",
+        "バトアビによる氷・風・光耐性ダウンを受けた際の上限と",
+        "サポアビと装備性能による",
+        "氷・風・光耐性ダウンを受けた際の",
+        "上限が50%になる効果を付与（3ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "elemental",
+          "target_source_type": "battle",
+          "value": 50,
+          "tag": "ice",
+          "cap_group": "debuff_resist_elem_ice",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "elemental",
+          "target_source_type": "battle",
+          "value": 50,
+          "tag": "wind",
+          "cap_group": "debuff_resist_elem_wind",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "elemental",
+          "target_source_type": "battle",
+          "value": 50,
+          "tag": "light",
+          "cap_group": "debuff_resist_elem_light",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "elemental",
+          "target_source_type": "support",
+          "value": 50,
+          "tag": "ice",
+          "cap_group": "debuff_resist_elem_ice",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "elemental",
+          "target_source_type": "support",
+          "value": 50,
+          "tag": "wind",
+          "cap_group": "debuff_resist_elem_wind",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "elemental",
+          "target_source_type": "support",
+          "value": 50,
+          "tag": "light",
+          "cap_group": "debuff_resist_elem_light",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 30,
+          "tag": "ice",
+          "cap_group": "debuff_resist_elem_ice",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 30,
+          "tag": "wind",
+          "cap_group": "debuff_resist_elem_wind",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 30,
+          "tag": "light",
+          "cap_group": "debuff_resist_elem_light",
+          "scopes": [
+            "enemy_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "味方が敵をブレイクさせた時"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "味方が敵をブレイクさせた時"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に氷・風・光耐性ダウン30%と バトアビによる氷・風・光耐性ダウンを受けた際の上限と サポアビと装備性能による 氷・風・光耐性ダウンを受けた際の 上限が50%になる効果を付与（3ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "805824",
+      "character_name": "リンユウEx2",
+      "ability_name": "人魚の波濤",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "後衛時：自身を除く味方前衛全体に",
+        "攻撃後（反撃、必殺技など一部除く）追撃する効果を付与",
+        "（行動順での攻撃のみ/攻撃回数によらず各1回のみ発動）",
+        "追撃：全体に氷属性攻撃（威力100）",
+        "ブレイク中の敵がいる時：攻撃回数が2回になり",
+        "さらに、起点の味方にBP回復量1アップの効果を付与（1ターン）",
+        "※このアビリティでブレイクした場合も含む"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [],
+      "conditions": [
+        "後衛時自身を除く味方前衛全体に 攻撃後（反撃、必殺技など一部除く）追撃する効果を付与 （行動順での攻撃のみ/攻撃回数によらず各1回のみ発動） 追撃全体に氷属性攻撃（威力100） ブレイク中の敵がいる時攻撃回数が2回になり さらに、起点の味方にBP回復量1アップの効果を付与（1ターン） ※このアビリティでブレイクした場合も含む"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "self_exclude",
+            "ally_front_all"
+          ],
+          "text": "後衛時：自身を除く味方前衛全体に 攻撃後（反撃、必殺技など一部除く）追撃する効果を付与 （行動順での攻撃のみ/攻撃回数によらず各1回のみ発動） 追撃：全体に氷属性攻撃（威力100） ブレイク中の敵がいる時：攻撃回数が2回になり さらに、起点の味方にBP回復量1アップの効果を付与（1ターン） ※このアビリティでブレイクした場合も含む"
+        }
+      ]
+    },
+    {
+      "character_id": "805824",
+      "character_name": "リンユウEx2",
+      "ability_name": "人魚の伝説",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "自動復活させる効果が付与れている味方前後衛全体に",
+        "ダメージ上限アップ（効果量 50000）と",
+        "「氷・風・光属性」のいずれかで攻撃時",
+        "ダメージ上限アップ（効果量 100000）の効果を付与",
+        "さらに、「たかう」以外の属性攻撃（一部除く）時",
+        "氷弱点を突ける効果を付与（ダメージ計算は各攻撃に準ずる）",
+        "戦闘開始時：自身のBPを5回復",
+        "さらに、味方前衛全体に特殊効果”厄除げ”を付与",
+        "（4ターン/ターンが長くなるよう上書）",
+        "厄除け：HPが0になるダメージを受けてもHPが1残る効果（一部除く）",
+        "一時的でもHPが1であったターンの終了時",
+        "HP回復（回復量 最大HPの100%）し、“厄除げ”を解除",
+        "※付与者が戦闘不能になっても味方の“応除げ”は解除しない",
+        "※例外的な効果で戦闘不能になった時は解除される"
+      ],
+      "raw_text_pre_enhance": [
+        "自動復活させる効果が付与れている味方前後衛全体に",
+        "ダメージ上限アップ（効果量 50000）の効果を付与"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 50000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "ally_all"
+          ]
+        }
+      ],
+      "conditions": [
+        "戦闘開始時自身のBPを5回復"
+      ],
+      "unknown": [
+        "さらに、味方前衛全体に特殊効果”厄除げ”を付与 （4ターン/ターンが長くなるよう上書） 厄除け：HPが0になるダメージを受けてもHPが1残る効果（一部除く） 一時的でもHPが1であったターンの終了時 HP回復（回復量 最大HPの100%）し、“厄除げ”を解除 ※付与者が戦闘不能になっても味方の“応除げ”は解除しない ※例外的な効果で戦闘不能になった時は解除される"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "自動復活させる効果が付与れている味方前後衛全体に ダメージ上限アップ（効果量 50000）と 「氷・風・光属性」のいずれかで攻撃時 ダメージ上限アップ（効果量 100000）の効果を付与 さらに、「たかう」以外の属性攻撃（一部除く）時 氷弱点を突ける効果を付与（ダメージ計算は各攻撃に準ずる）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "戦闘開始時：自身のBPを5回復"
+        },
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "さらに、味方前衛全体に特殊効果”厄除げ”を付与 （4ターン/ターンが長くなるよう上書） 厄除け：HPが0になるダメージを受けてもHPが1残る効果（一部除く） 一時的でもHPが1であったターンの終了時 HP回復（回復量 最大HPの100%）し、“厄除げ”を解除 ※付与者が戦闘不能になっても味方の“応除げ”は解除しない ※例外的な効果で戦闘不能になった時は解除される"
+        }
+      ]
+    },
+    {
+      "character_id": "805824",
+      "character_name": "リンユウEx2",
+      "ability_name": "大海の息吹",
+      "source_type": "ultimate",
+      "cost": "後衛発動",
+      "raw_text": [
+        "【Lv.MAX】",
+        "味方前後衛全体を復活させる（回復量 最大HPの100%）",
+        "その後、味方前後衛全体のBPを5回復し、必殺技ゲージを100.0%増加",
+        "さらに、自動復活させる効果を付与（回復量 最大HPの100%/重ねがけ時、回数増加無し）",
+        "200%発動時：加えて",
+        "味方前後衛全体に氷・風・光属性ダメージアップ20%と",
+        "「氷・風・光属性」のいずれかで攻撃時",
+        "ダメージ上限アップ（効果量 100000）の効果を付与（6ターン）",
+        "（この必殺技は使用可能回数の復活不可）",
+        "※後衛発動時、“戒告の祈り”・“戒告の祈り＋”。“寵愛の祈り”。",
+        "“寵愛の祈り＋”・“懲罰の祈り”。”“懲罰の祈り＋”は解除されない"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 20,
+          "tag": "ice",
+          "cap_group": "buff_damage_elem_ice",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 20,
+          "tag": "wind",
+          "cap_group": "buff_damage_elem_wind",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 20,
+          "tag": "light",
+          "cap_group": "buff_damage_elem_light",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 100000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "ally_all"
+          ]
+        }
+      ],
+      "conditions": [
+        "その後、味方前後衛全体のBPを5回復し、必殺技ゲージを100.0%増加 さらに、自動復活させる効果を付与（回復量 最大HPの100%/重ねがけ時、回数増加無し） 200%発動時加えて"
+      ],
+      "unknown": [
+        "【Lv.MAX】",
+        "味方前後衛全体を復活させる（回復量 最大HPの100%）"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "【Lv.MAX】"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "味方前後衛全体を復活させる（回復量 最大HPの100%）"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "その後、味方前後衛全体のBPを5回復し、必殺技ゲージを100.0%増加 さらに、自動復活させる効果を付与（回復量 最大HPの100%/重ねがけ時、回数増加無し） 200%発動時：加えて"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "味方前後衛全体に氷・風・光属性ダメージアップ20%と 「氷・風・光属性」のいずれかで攻撃時 ダメージ上限アップ（効果量 100000）の効果を付与（6ターン） （この必殺技は使用可能回数の復活不可） ※後衛発動時、“戒告の祈り”・“戒告の祈り＋”。“寵愛の祈り”。 “寵愛の祈り＋”・“懲罰の祈り”。”“懲罰の祈り＋”は解除されない"
+        }
+      ]
+    },
+    {
+      "character_id": "805824",
+      "character_name": "リンユウEx2",
+      "ability_name": "氷海の洗礼",
+      "source_type": "ex",
+      "cost": "回数：1",
+      "raw_text": [
+        "ターン中、素早く行動し",
+        "敵全体に特殊効果”ブレイクターン延長”を付与",
+        "その後、同対象に4回の氷属性攻撃（威力 60）し",
+        "特殊効果”懲罰の祈り”を付与",
+        "さらに、バディに特殊効果”懲罰の祈り＋”を付与",
+        "行動完了後、後衛に移動する（交代として扱われない）",
+        "特殊効果”懲罰の祈り”・“懲罰の祈り＋”は",
+        "自身が行動する（追撃は対象外）か行動不能になるまで継続する",
+        "（継続消耗SP180/継続SPが不足した時も解除）",
+        "ブレイクターン延長：ブレイクターンが1ターン延長される",
+        "（重複不可/ブレイク復帰時に解除）",
+        "懲罰の祈り・懲罰の祈り＋：",
+        "アビリティ”懲罰の祈り”に効果記載"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_condition": [
+        "【使用条件】9ターン目以内"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】威力65/90/160 消耗SP140/60/48"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "ターン中、素早く行動し",
+        "敵全体に特殊効果”ブレイクターン延長”を付与 その後、同対象に4回の氷属性攻撃（威力 60）し 特殊効果”懲罰の祈り”を付与 さらに、バディに特殊効果”懲罰の祈り＋”を付与 行動完了後、後衛に移動する（交代として扱われない） 特殊効果”懲罰の祈り”・“懲罰の祈り＋”は 自身が行動する（追撃は対象外）か行動不能になるまで継続する （継続消耗SP180/継続SPが不足した時も解除）",
+        "ブレイクターンが1ターン延長される （重複不可/ブレイク復帰時に解除） 懲罰の祈り・懲罰の祈り＋: アビリティ”懲罰の祈り”に効果記載"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "ターン中、素早く行動し"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に特殊効果”ブレイクターン延長”を付与 その後、同対象に4回の氷属性攻撃（威力 60）し 特殊効果”懲罰の祈り”を付与 さらに、バディに特殊効果”懲罰の祈り＋”を付与 行動完了後、後衛に移動する（交代として扱われない） 特殊効果”懲罰の祈り”・“懲罰の祈り＋”は 自身が行動する（追撃は対象外）か行動不能になるまで継続する （継続消耗SP180/継続SPが不足した時も解除）"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "ブレイクターンが1ターン延長される （重複不可/ブレイク復帰時に解除） 懲罰の祈り・懲罰の祈り＋: アビリティ”懲罰の祈り”に効果記載",
+          "special_effect_id": "ブレイクターン延長"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "character_id": "802469",
       "character_name": "セルク",
       "ability_name": "素材調達",
@@ -2233,7 +3958,7 @@
         "HPバリアを付与（効果量 使用者の最大HPの50%/重複不可）",
         "加えて、BP回復量1アップと",
         "状態異常無効化（一部除く）の効果を付与（5ターン）",
-        "その後、自動復活すせる効果を付与",
+        "その後、自動復活させる効果を付与",
         "（回復量 最大HPの35%/重ねがけ時、/回数増加無し）",
         "“調合pt”6以上：さらに、威力アップ100%の効果を付与",
         "（3ターン/ターン延長不可/同系統の効果重複不可）",
@@ -2278,7 +4003,7 @@
           "scopes": [
             "ally_all"
           ],
-          "text": "味方前後衛全体のHP回復（回復量 最大HPの100%） 回復対象が戦闘不能時は復活（回復量 最大HPの100%）し SP回復（回復量 最大SPの100%） さらに、状態異常を回復し HPバリアを付与（効果量 使用者の最大HPの50%/重複不可） 加えて、BP回復量1アップと 状態異常無効化（一部除く）の効果を付与（5ターン） その後、自動復活すせる効果を付与 （回復量 最大HPの35%/重ねがけ時、/回数増加無し） “調合pt”6以上：さらに、威力アップ100%の効果を付与 （3ターン/ターン延長不可/同系統の効果重複不可） “調合pt”9以上：さらに ダメージ上限アップ（効果量 200000）の効果を付与（3ターン）"
+          "text": "味方前後衛全体のHP回復（回復量 最大HPの100%） 回復対象が戦闘不能時は復活（回復量 最大HPの100%）し SP回復（回復量 最大SPの100%） さらに、状態異常を回復し HPバリアを付与（効果量 使用者の最大HPの50%/重複不可） 加えて、BP回復量1アップと 状態異常無効化（一部除く）の効果を付与（5ターン） その後、自動復活させる効果を付与 （回復量 最大HPの35%/重ねがけ時、/回数増加無し） “調合pt”6以上：さらに、威力アップ100%の効果を付与 （3ターン/ターン延長不可/同系統の効果重複不可） “調合pt”9以上：さらに ダメージ上限アップ（効果量 200000）の効果を付与（3ターン）"
         }
       ]
     },
@@ -92841,7 +94566,9 @@
         "会心アップ10%",
         "クリティカル時のダメージアップ10%",
         "と",
-        "ダメージ上限アップ（効果量 40000）の効果を付与"
+        "ダメージ上限アップ（効果量",
+        "40000",
+        "）の効果を付与"
       ],
       "raw_text_pre_enhance": [
         "燃焼状態の敵がいる時",
@@ -92907,7 +94634,7 @@
           "scopes": [
             "ally_front_all"
           ],
-          "text": "味方前衛全体に物攻アップ10%と 会心アップ10% クリティカル時のダメージアップ10% と ダメージ上限アップ（効果量 40000）の効果を付与"
+          "text": "味方前衛全体に物攻アップ10%と 会心アップ10% クリティカル時のダメージアップ10% と ダメージ上限アップ（効果量 40000 ）の効果を付与"
         }
       ]
     },
@@ -104623,10 +106350,17 @@
       "source_type": "battle",
       "cost": "【消費SP 56】",
       "raw_text": [
+        "敵単体に",
+        "5回",
+        "の剣物理攻撃（威力 45）",
+        "さらに、物防ダウン",
+        "30%",
+        "の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [
         "敵単体に4回の剣物理攻撃（威力 45）",
         "さらに、物防ダウン15%の効果を付与（2ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力55/65/90"
       ],
@@ -104636,7 +106370,7 @@
           "category": "stat",
           "unit": "%",
           "sub_category": "defence_physical",
-          "value": 15,
+          "value": 30,
           "cap_group": "debuff_stat_def_phys",
           "scopes": [
             "enemy_single"
@@ -104650,7 +106384,7 @@
           "scopes": [
             "enemy_single"
           ],
-          "text": "敵単体に4回の剣物理攻撃（威力 45） さらに、物防ダウン15%の効果を付与（2ターン）"
+          "text": "敵単体に 5回 の剣物理攻撃（威力 45） さらに、物防ダウン 30% の効果を付与（2ターン）"
         }
       ]
     },
@@ -104745,9 +106479,14 @@
       "cost": null,
       "raw_text": [
         "戦闘開始時：味方前衛全体に",
+        "物理ダメージアップ15%の効果を付与（",
+        "6ターン",
+        "）"
+      ],
+      "raw_text_pre_enhance": [
+        "戦闘開始時：味方前衛全体に",
         "物理ダメージアップ15%の効果を付与（3ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "buff",
@@ -104768,7 +106507,7 @@
           "scopes": [
             "ally_front_all"
           ],
-          "text": "戦闘開始時：味方前衛全体に 物理ダメージアップ15%の効果を付与（3ターン）"
+          "text": "戦闘開始時：味方前衛全体に 物理ダメージアップ15%の効果を付与（ 6ターン ）"
         }
       ]
     },
@@ -111534,15 +113273,19 @@
       "cost": "【消費SP 20】",
       "raw_text": [
         "敵単体に剣物理攻撃（威力 170）",
+        "このアビリティのダメージ上限が100000アップ",
         "ブーストMAX時：効果を再発動（SP消費無し）する"
       ],
-      "raw_text_pre_enhance": [],
+      "raw_text_pre_enhance": [
+        "敵単体に剣物理攻撃（威力 170）",
+        "ブーストMAX時：効果を再発動（SP消費無し）する"
+      ],
       "raw_text_boost": [
         "【ブースト時】威力200/240/350"
       ],
       "effects": [],
       "conditions": [
-        "敵単体に剣物理攻撃（威力 170） ブーストMAX時効果を再発動（SP消費無し）する"
+        "敵単体に剣物理攻撃（威力 170） このアビリティのダメージ上限が100000アップ ブーストMAX時効果を再発動（SP消費無し）する"
       ],
       "unknown": [],
       "blocks": [
@@ -111550,7 +113293,7 @@
           "scopes": [
             "enemy_single"
           ],
-          "text": "敵単体に剣物理攻撃（威力 170） ブーストMAX時：効果を再発動（SP消費無し）する"
+          "text": "敵単体に剣物理攻撃（威力 170） このアビリティのダメージ上限が100000アップ ブーストMAX時：効果を再発動（SP消費無し）する"
         }
       ]
     },
@@ -111630,9 +113373,15 @@
       "raw_text": [
         "ブレイク中の敵がいる時",
         "自身に物攻アップ15%と",
+        "ダメージ上限アップ（効果量 50000）と",
+        "「剣物理」で攻撃時",
+        "ダメージ上限アップ（効果量 500000）の効果を付与"
+      ],
+      "raw_text_pre_enhance": [
+        "ブレイク中の敵がいる時",
+        "自身に物攻アップ15%と",
         "ダメージ上限アップ（効果量 50000）の効果を付与"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "buff",
@@ -111670,7 +113419,7 @@
           "scopes": [
             "self"
           ],
-          "text": "自身に物攻アップ15%と ダメージ上限アップ（効果量 50000）の効果を付与"
+          "text": "自身に物攻アップ15%と ダメージ上限アップ（効果量 50000）と 「剣物理」で攻撃時 ダメージ上限アップ（効果量 500000）の効果を付与"
         }
       ]
     },
@@ -138544,24 +140293,51 @@
       "source_type": "battle",
       "cost": "【消費SP 58】",
       "raw_text": [
+        "ランダムなターゲットに",
+        "5回",
+        "の短剣物理攻撃（威力 45）",
+        "弱点以外でもシールドポイントを削る",
+        "攻撃毎に中確率で物防・属防ダウン5%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [
         "ランダムなターゲットに4回の短剣物理攻撃（威力 45）",
         "弱点以外でもシールドポイントを削る"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力55/65/90"
       ],
-      "effects": [],
-      "conditions": [],
-      "unknown": [
-        "ランダムなターゲットに4回の短剣物理攻撃（威力 45） 弱点以外でもシールドポイントを削る"
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 5,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "random"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 5,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": [
+            "random"
+          ]
+        }
       ],
+      "conditions": [],
+      "unknown": [],
       "blocks": [
         {
           "scopes": [
             "random"
           ],
-          "text": "ランダムなターゲットに4回の短剣物理攻撃（威力 45） 弱点以外でもシールドポイントを削る"
+          "text": "ランダムなターゲットに 5回 の短剣物理攻撃（威力 45） 弱点以外でもシールドポイントを削る 攻撃毎に中確率で物防・属防ダウン5%の効果を付与（2ターン）"
         }
       ]
     },
@@ -138616,21 +140392,26 @@
     {
       "character_id": "355674",
       "character_name": "ヴィオラ",
-      "ability_name": "ブレイク時防御弱体Ⅱ",
+      "ability_name": "リベンジタイム",
       "source_type": "support",
       "cost": null,
       "raw_text": [
         "自身が敵をブレイクさせた時",
+        "ブレイクさせた敵に物防・属防ダウン30%の効果を付与（3ターン）",
+        "さらに、自身のBPを5回復"
+      ],
+      "raw_text_pre_enhance": [
+        "『ブレイク時防御弱体Ⅱ』",
+        "自身が敵をブレイクさせた時",
         "ブレイクさせた敵に物防・属防ダウン15%の効果を付与（3ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "debuff",
           "category": "stat",
           "unit": "%",
           "sub_category": "defence_physical",
-          "value": 15,
+          "value": 30,
           "cap_group": "debuff_stat_def_phys",
           "scopes": [
             "enemy_single"
@@ -138641,7 +140422,7 @@
           "category": "stat",
           "unit": "%",
           "sub_category": "defence_elemental",
-          "value": 15,
+          "value": 30,
           "cap_group": "debuff_stat_def_elem",
           "scopes": [
             "enemy_single"
@@ -138650,7 +140431,8 @@
       ],
       "conditions": [],
       "unknown": [
-        "自身が敵をブレイクさせた時"
+        "自身が敵をブレイクさせた時",
+        "さらに、自身のBPを5回復"
       ],
       "blocks": [
         {
@@ -138661,7 +140443,13 @@
           "scopes": [
             "enemy_single"
           ],
-          "text": "ブレイクさせた敵に物防・属防ダウン15%の効果を付与（3ターン）"
+          "text": "ブレイクさせた敵に物防・属防ダウン30%の効果を付与（3ターン）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "さらに、自身のBPを5回復"
         }
       ]
     },
@@ -142909,28 +144697,34 @@
     {
       "character_id": "355844",
       "character_name": "ラウラ",
-      "ability_name": "大乱雷撃麻痺魔法Ⅲ",
+      "ability_name": "特大乱雷撃漏電麻痺魔法Ⅲ",
       "source_type": "battle",
       "cost": "【消費SP 62】",
       "raw_text": [
         "ランダムなターゲットに3回の雷属性攻撃（威力 85）",
+        "攻撃毎に",
+        "漏電の状態異常（1ターン）と",
+        "中確率で麻痺の状態異常（2ターン）を付与"
+      ],
+      "raw_text_pre_enhance": [
+        "『大乱雷撃麻痺魔法Ⅲ』",
+        "ランダムなターゲットに3回の雷属性攻撃（威力 85）",
         "攻撃毎に中確率で麻痺の状態異常を付与（2ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力95/110/140"
       ],
       "effects": [],
       "conditions": [],
       "unknown": [
-        "ランダムなターゲットに3回の雷属性攻撃（威力 85） 攻撃毎に中確率で麻痺の状態異常を付与（2ターン）"
+        "ランダムなターゲットに3回の雷属性攻撃（威力 85） 攻撃毎に 漏電の状態異常（1ターン）と 中確率で麻痺の状態異常（2ターン）を付与"
       ],
       "blocks": [
         {
           "scopes": [
             "random"
           ],
-          "text": "ランダムなターゲットに3回の雷属性攻撃（威力 85） 攻撃毎に中確率で麻痺の状態異常を付与（2ターン）"
+          "text": "ランダムなターゲットに3回の雷属性攻撃（威力 85） 攻撃毎に 漏電の状態異常（1ターン）と 中確率で麻痺の状態異常（2ターン）を付与"
         }
       ]
     },
@@ -143010,20 +144804,41 @@
     {
       "character_id": "355844",
       "character_name": "ラウラ",
-      "ability_name": "属攻強化Ⅲ",
+      "ability_name": "遺跡発掘調査",
       "source_type": "support",
       "cost": null,
       "raw_text": [
+        "自身に属攻アップ",
+        "30%",
+        "の効果を付与",
+        "雷属性ダメージアップ10%を付与",
+        "ブレイク中の敵がいる時",
+        "敵全体に「雷属性」攻撃を受けた時",
+        "受けるダメージの上限アップ（効果量 30000）の効果を付与"
+      ],
+      "raw_text_pre_enhance": [
+        "『属攻強化Ⅲ』",
         "自身に属攻アップ20%の効果を付与"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 10,
+          "tag": "lightning",
+          "cap_group": "buff_damage_elem_lightning",
+          "scopes": [
+            "self"
+          ]
+        },
         {
           "role": "buff",
           "category": "stat",
           "unit": "%",
           "sub_category": "attack_elemental",
-          "value": 20,
+          "value": 30,
           "cap_group": "buff_stat_atk_elem",
           "scopes": [
             "self"
@@ -143031,13 +144846,21 @@
         }
       ],
       "conditions": [],
-      "unknown": [],
+      "unknown": [
+        "敵全体に「雷属性」攻撃を受けた時 受けるダメージの上限アップ（効果量 30000）の効果を付与"
+      ],
       "blocks": [
         {
           "scopes": [
             "self"
           ],
-          "text": "自身に属攻アップ20%の効果を付与"
+          "text": "自身に属攻アップ 30% の効果を付与 雷属性ダメージアップ10%を付与 ブレイク中の敵がいる時"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に「雷属性」攻撃を受けた時 受けるダメージの上限アップ（効果量 30000）の効果を付与"
         }
       ]
     },
@@ -156797,23 +158620,28 @@
       "cost": "【消費SP 38】",
       "raw_text": [
         "敵単体に弓物理攻撃",
+        "ブーストLvに応じて攻撃回数増加（威力 90/",
+        "5回",
+        "）"
+      ],
+      "raw_text_pre_enhance": [
+        "敵単体に弓物理攻撃",
         "ブーストLvに応じて攻撃回数増加（威力 90/2回）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力75/65/80 攻撃回数3/4/5回"
       ],
       "effects": [],
       "conditions": [],
       "unknown": [
-        "敵単体に弓物理攻撃 ブーストLvに応じて攻撃回数増加（威力 90/2回）"
+        "敵単体に弓物理攻撃 ブーストLvに応じて攻撃回数増加（威力 90/ 5回 ）"
       ],
       "blocks": [
         {
           "scopes": [
             "enemy_single"
           ],
-          "text": "敵単体に弓物理攻撃 ブーストLvに応じて攻撃回数増加（威力 90/2回）"
+          "text": "敵単体に弓物理攻撃 ブーストLvに応じて攻撃回数増加（威力 90/ 5回 ）"
         }
       ]
     },
@@ -156876,13 +158704,20 @@
     {
       "character_id": "356594",
       "character_name": "サニー",
-      "ability_name": "会心強化Ⅴ",
+      "ability_name": "サニーエイミング",
       "source_type": "support",
       "cost": null,
       "raw_text": [
+        "自身に会心アップ30%の効果を付与",
+        "BP2以上消費時：自身に必ずクリティカルと",
+        "弓攻撃ダメージアップ20%の効果を付与",
+        "※属性攻撃でクリティカルが発生するには",
+        "“属性攻撃でクリティカルが発生する効果”が必要"
+      ],
+      "raw_text_pre_enhance": [
+        "『会心強化Ⅴ』",
         "自身に会心アップ30%の効果を付与"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "buff",
@@ -156891,6 +158726,18 @@
           "sub_category": "attack_critical_rate",
           "value": 30,
           "cap_group": "buff_stat_atk_crit",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 20,
+          "tag": "bow",
+          "cap_group": "buff_damage_phys_bow",
           "scopes": [
             "self"
           ]
@@ -156904,6 +158751,12 @@
             "self"
           ],
           "text": "自身に会心アップ30%の効果を付与"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "BP2以上消費時：自身に必ずクリティカルと 弓攻撃ダメージアップ20%の効果を付与 ※属性攻撃でクリティカルが発生するには “属性攻撃でクリティカルが発生する効果”が必要"
         }
       ]
     },

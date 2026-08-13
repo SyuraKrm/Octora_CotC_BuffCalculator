@@ -1,10 +1,41 @@
 [
   {
+    "character_id": "805825",
+    "character_name": "アーギュストEx",
+    "job": "学者",
+    "rarity": "5",
+    "elements": [
+      "氷",
+      "闇",
+      "雷"
+    ],
+    "physicals": []
+  },
+  {
+    "character_id": "805824",
+    "character_name": "リンユウEx2",
+    "job": "踊子",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "氷",
+      "風"
+    ],
+    "physicals": []
+  },
+  {
     "character_id": "802469",
     "character_name": "セルク",
     "job": "学者",
     "rarity": "5",
-    "elements": [],
+    "elements": [
+      "光",
+      "氷",
+      "火",
+      "闇",
+      "雷",
+      "風"
+    ],
     "physicals": []
   },
   {
