@@ -1,5 +1,13 @@
 [
   {
+    "character_id": "811824",
+    "character_name": "デリティア",
+    "job": "狩人",
+    "rarity": "5",
+    "elements": [],
+    "physicals": []
+  },
+  {
     "character_id": "805825",
     "character_name": "アーギュストEx",
     "job": "学者",
