@@ -4,8 +4,12 @@
     "character_name": "デリティア",
     "job": "狩人",
     "rarity": "5",
-    "elements": [],
-    "physicals": []
+    "elements": [
+      "氷"
+    ],
+    "physicals": [
+      "弓"
+    ]
   },
   {
     "character_id": "805825",
