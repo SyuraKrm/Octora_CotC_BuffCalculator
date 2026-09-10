@@ -1,5 +1,21 @@
 [
   {
+    "character_id": "814948",
+    "character_name": "ロンドEx2",
+    "job": "盗賊",
+    "rarity": "5",
+    "elements": [],
+    "physicals": [
+      "剣",
+      "扇",
+      "斧",
+      "本",
+      "杖",
+      "槍",
+      "短剣"
+    ]
+  },
+  {
     "character_id": "811824",
     "character_name": "デリティア",
     "job": "狩人",

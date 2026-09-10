@@ -1,6 +1,756 @@
 [
   [
     {
+      "character_id": "814948",
+      "character_name": "ロンドEx2",
+      "ability_name": "トリプルエッジ",
+      "source_type": "battle",
+      "cost": "【消費SP 38】",
+      "raw_text": [
+        "敵単体に3回の短剣物理攻撃（威力 65）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力75/90/120"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵単体に3回の短剣物理攻撃（威力 65）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に3回の短剣物理攻撃（威力 65）"
+        }
+      ]
+    },
+    {
+      "character_id": "814948",
+      "character_name": "ロンドEx2",
+      "ability_name": "溝",
+      "source_type": "battle",
+      "cost": "【消費SP 54】",
+      "raw_text": [
+        "ランダムなターゲットに4回の短剣物理攻撃（威力 45）",
+        "攻撃毎に物防ダウン10%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力55/65/90"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 10,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "random"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "random"
+          ],
+          "text": "ランダムなターゲットに4回の短剣物理攻撃（威力 45） 攻撃毎に物防ダウン10%の効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "814948",
+      "character_name": "ロンドEx2",
+      "ability_name": "オウルトラップ",
+      "source_type": "battle",
+      "cost": "【消費SP 38】",
+      "raw_text": [
+        "敵全体に短剣物理攻撃（威力150）",
+        "さらに、物防ダウン15%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力175/215/260"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 15,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に短剣物理攻撃（威力150） さらに、物防ダウン15%の効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "814948",
+      "character_name": "ロンドEx2",
+      "ability_name": "トリプルワイドバースト",
+      "source_type": "battle",
+      "cost": "【消費SP 76】",
+      "raw_text": [
+        "敵全体に3回の短剣物理攻撃（威力 65）",
+        "弱点以外でもシールドポイントを削る"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力75/90/115"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵全体に3回の短剣物理攻撃（威力 65） 弱点以外でもシールドポイントを削る"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に3回の短剣物理攻撃（威力 65） 弱点以外でもシールドポイントを削る"
+        }
+      ]
+    },
+    {
+      "character_id": "814948",
+      "character_name": "ロンドEx2",
+      "ability_name": "極",
+      "source_type": "battle",
+      "cost": "【消費SP 50】",
+      "raw_text": [
+        "ランダムなターゲットに2回の短剣物理攻撃（威力 75）",
+        "その後、自身にBP回復量2アップの効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力90/110/150"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "ランダムなターゲットに2回の短剣物理攻撃（威力 75）",
+        "その後、自身にBP回復量2アップの効果を付与（2ターン）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "random"
+          ],
+          "text": "ランダムなターゲットに2回の短剣物理攻撃（威力 75）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "その後、自身にBP回復量2アップの効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "814948",
+      "character_name": "ロンドEx2",
+      "ability_name": "攻速の刃宣Ⅲ",
+      "source_type": "battle",
+      "cost": "【消費SP 56】",
+      "raw_text": [
+        "味方前衛全体に物攻・速度アップ20%と",
+        "短剣攻撃ダメージアップ20%の効果を付与（2ターン）",
+        "※行動順影響は2ターン目"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】3/4/5ターン"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 20,
+          "tag": "dagger",
+          "cap_group": "buff_damage_phys_dagger",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 20,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "speed",
+          "value": 20,
+          "cap_group": "buff_stat_speed",
+          "scopes": [
+            "ally_front_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体に物攻・速度アップ20%と 短剣攻撃ダメージアップ20%の効果を付与（2ターン） ※行動順影響は2ターン目"
+        }
+      ]
+    },
+    {
+      "character_id": "814948",
+      "character_name": "ロンドEx2",
+      "ability_name": "フラッシュバイト",
+      "source_type": "battle",
+      "cost": "【消費SP 52】",
+      "raw_text": [
+        "ターン中、素早く行動し",
+        "敵単体に3回の短剣物理攻撃（威力55）",
+        "弱点以外でもシールドポイントを削る",
+        "さらに、速度ダウン15%と",
+        "短剣耐性ダウン15%の効果を付与（2ターン）",
+        "※行動順影響は2ターン目"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力65/80/100"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 15,
+          "tag": "dagger",
+          "cap_group": "debuff_resist_phys_dagger",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "speed",
+          "value": 15,
+          "cap_group": "debuff_stat_speed",
+          "scopes": [
+            "enemy_single"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "ターン中、素早く行動し"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "ターン中、素早く行動し"
+        },
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に3回の短剣物理攻撃（威力55） 弱点以外でもシールドポイントを削る さらに、速度ダウン15%と 短剣耐性ダウン15%の効果を付与（2ターン） ※行動順影響は2ターン目"
+        }
+      ]
+    },
+    {
+      "character_id": "814948",
+      "character_name": "ロンドEx2",
+      "ability_name": "好機逸すべからず",
+      "source_type": "battle",
+      "cost": "【消費SP 62】",
+      "raw_text": [
+        "ランダムなターゲットに4回の短剣物理攻撃（威力 35）",
+        "BP1以上消費時かつ自身がカウントダウン状態ではない時：",
+        "さらに、自身にカウントダウンの効果を付与（カウント 2）",
+        "カウント終了時、自身と自身を除く味方前衛全体に",
+        "ダメージ上限アップ（効果量 150000）の効果を付与（3ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力45/55/75"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 150000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "self_exclude",
+            "ally_front_all"
+          ]
+        }
+      ],
+      "conditions": [
+        "ランダムなターゲットに4回の短剣物理攻撃（威力 35） BP1以上消費時かつ自身がカウントダウン状態ではない時"
+      ],
+      "unknown": [
+        "さらに、自身にカウントダウンの効果を付与（カウント 2）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "random"
+          ],
+          "text": "ランダムなターゲットに4回の短剣物理攻撃（威力 35） BP1以上消費時かつ自身がカウントダウン状態ではない時："
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "さらに、自身にカウントダウンの効果を付与（カウント 2）"
+        },
+        {
+          "scopes": [
+            "self_exclude",
+            "ally_front_all"
+          ],
+          "text": "カウント終了時、自身と自身を除く味方前衛全体に ダメージ上限アップ（効果量 150000）の効果を付与（3ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "814948",
+      "character_name": "ロンドEx2",
+      "ability_name": "残光",
+      "source_type": "battle",
+      "cost": "【消費SP 67】",
+      "raw_text": [
+        "敵全体に2回の短剣物理攻撃（威力 115）",
+        "自身の行動順が早いほど攻撃回数が増加",
+        "3番目以内：3回、4番目：2回、5番目：1回、6番目以降：増加なし"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力130/150/190"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵全体に2回の短剣物理攻撃（威力 115）",
+        "自身の行動順が早いほど攻撃回数が増加 3番目以内：3回、4番目：2回、5番目：1回、6番目以降：増加なし"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に2回の短剣物理攻撃（威力 115）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身の行動順が早いほど攻撃回数が増加 3番目以内：3回、4番目：2回、5番目：1回、6番目以降：増加なし"
+        }
+      ]
+    },
+    {
+      "character_id": "814948",
+      "character_name": "ロンドEx2",
+      "ability_name": "恒河沙",
+      "source_type": "battle",
+      "cost": "【消費SP 56】",
+      "raw_text": [
+        "敵単体に短剣物理攻撃（威力290）",
+        "自身の行動順が",
+        "3番目以内",
+        "の時：攻撃回数が2回になる",
+        "ブーストMAX時：攻撃を完全に回避する効果と",
+        "攻撃を完全に防ぐ効果を無視するようになり",
+        "このアビリティのダメージ上限が500000アップ"
+      ],
+      "raw_text_pre_enhance": [
+        "敵単体に短剣物理攻撃（威力290）",
+        "自身の行動順が1番の時：攻撃回数が2回になる",
+        "ブーストMAX時：攻撃を完全に回避する効果と",
+        "攻撃を完全に防ぐ効果を無視するようになる"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】威力320/380/500"
+      ],
+      "effects": [],
+      "conditions": [
+        "自身の行動順が 3番目以内 の時攻撃回数が2回になる ブーストMAX時攻撃を完全に回避する効果と 攻撃を完全に防ぐ効果を無視するようになり このアビリティのダメージ上限が500000アップ"
+      ],
+      "unknown": [
+        "敵単体に短剣物理攻撃（威力290）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に短剣物理攻撃（威力290）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身の行動順が 3番目以内 の時：攻撃回数が2回になる ブーストMAX時：攻撃を完全に回避する効果と 攻撃を完全に防ぐ効果を無視するようになり このアビリティのダメージ上限が500000アップ"
+        }
+      ]
+    },
+    {
+      "character_id": "814948",
+      "character_name": "ロンドEx2",
+      "ability_name": "レイヴァースの剣",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "自身に敵の弱点を突いた時のダメージアップ20%の効果と",
+        "「たたかう」以外の物理攻撃（一部除く）時",
+        "剣弱点を突ける効果を付与",
+        "（ダメージ計算は各攻撃に準ずる）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】-"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "weak",
+          "value": 20,
+          "cap_group": "buff_damage_weak",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に敵の弱点を突いた時のダメージアップ20%の効果と 「たたかう」以外の物理攻撃（一部除く）時 剣弱点を突ける効果を付与 （ダメージ計算は各攻撃に準ずる）"
+        }
+      ]
+    },
+    {
+      "character_id": "814948",
+      "character_name": "ロンドEx2",
+      "ability_name": "チェイスダガー",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "自身を除く味方前衛全体に攻撃後（反撃、必殺技など一部除く）",
+        "ロンドが追撃する効果を付与",
+        "（行動順での攻撃のみ/攻撃回数によらず各1回のみ発動）",
+        "※“ブレイクさせた時”効果は起点の味方のみ発動",
+        "追撃：敵全体に短剣物理攻撃（威力50）",
+        "弱点以外でもシールドポイントを削る",
+        "さらに、ブレイクしていない敵に2回の短剣物理攻撃（威力 50）",
+        "弱点以外でもシールドポイントを削る",
+        "※ブレイクした時点でその対象への以降の攻撃は行われない",
+        "その後、ブレイク中の敵がいなければロンドのBPを1回復"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】-"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "自身を除く味方前衛全体に攻撃後（反撃、必殺技など一部除く） ロンドが追撃する効果を付与 （行動順での攻撃のみ/攻撃回数によらず各1回のみ発動） ※“ブレイクさせた時”効果は起点の味方のみ発動",
+        "追撃：敵全体に短剣物理攻撃（威力50） 弱点以外でもシールドポイントを削る さらに、ブレイクしていない敵に2回の短剣物理攻撃（威力 50） 弱点以外でもシールドポイントを削る ※ブレイクした時点でその対象への以降の攻撃は行われない その後、ブレイク中の敵がいなければロンドのBPを1回復"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self_exclude",
+            "ally_front_all"
+          ],
+          "text": "自身を除く味方前衛全体に攻撃後（反撃、必殺技など一部除く） ロンドが追撃する効果を付与 （行動順での攻撃のみ/攻撃回数によらず各1回のみ発動） ※“ブレイクさせた時”効果は起点の味方のみ発動"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "追撃：敵全体に短剣物理攻撃（威力50） 弱点以外でもシールドポイントを削る さらに、ブレイクしていない敵に2回の短剣物理攻撃（威力 50） 弱点以外でもシールドポイントを削る ※ブレイクした時点でその対象への以降の攻撃は行われない その後、ブレイク中の敵がいなければロンドのBPを1回復"
+        }
+      ]
+    },
+    {
+      "character_id": "814948",
+      "character_name": "ロンドEx2",
+      "ability_name": "貴族を覚悟",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "ブレイク中の敵がいる時：",
+        "自身に「たたかう」以外の物理攻撃（一部除く）時",
+        "剣・槍・短剣・斧・弓・杖・本・扇弱点を突ける効果を付与",
+        "（ダメージ計算は各攻撃に準ずる）",
+        "さらに、自身の物攻に属攻の75%を加算する",
+        "（装備ステータス含む/対象ステータス毎に最大値を適用）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】-"
+      ],
+      "effects": [],
+      "conditions": [
+        "ブレイク中の敵がいる時"
+      ],
+      "unknown": [
+        "自身に「たたかう」以外の物理攻撃（一部除く）時 剣・槍・短剣・斧・弓・杖・本・扇弱点を突ける効果を付与 （ダメージ計算は各攻撃に準ずる）",
+        "さらに、自身の物攻に属攻の75%を加算する （装備ステータス含む/対象ステータス毎に最大値を適用）"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "ブレイク中の敵がいる時："
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に「たたかう」以外の物理攻撃（一部除く）時 剣・槍・短剣・斧・弓・杖・本・扇弱点を突ける効果を付与 （ダメージ計算は各攻撃に準ずる）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "さらに、自身の物攻に属攻の75%を加算する （装備ステータス含む/対象ステータス毎に最大値を適用）"
+        }
+      ]
+    },
+    {
+      "character_id": "814948",
+      "character_name": "ロンドEx2",
+      "ability_name": "機先を制す",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "戦闘開始時：自身に",
+        "使用する攻撃アビリティを2回発動する効果を付与",
+        "（",
+        "6ターン",
+        "/ターン延長不可/追加発動分はSP消費無し）",
+        "味方が敵をブレイクさせた時",
+        "自身と自身を除く味方前衛全体に",
+        "「短剣物理」で攻撃時威力アップ150%の効果を付与",
+        "（3ターン/ターン延長不可/同系統の効果重複不可）",
+        "さらに、必ずクリティカルの効果を付与（3ターン）",
+        "※ロンドが行動不能時、このブレイク時効果は発動しない",
+        "※属性攻撃でクリティカルが発生するには",
+        "“属性攻撃でクリティカルが発生する効果”が必要"
+      ],
+      "raw_text_pre_enhance": [
+        "戦闘開始時：自身に",
+        "使用する攻撃アビリティを2回発動する効果を付与",
+        "（3ターン/ターン延長不可/追加発動分はSP消費無し）"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】-"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "critical",
+          "unit": "",
+          "sub_category": "certain",
+          "target_source_type": "battle",
+          "value": 1,
+          "cap_group": "critical_certain",
+          "scopes": [
+            "self_exclude",
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "power",
+          "unit": "%",
+          "target_source_type": "battle",
+          "value": 150,
+          "cap_group": "power_up",
+          "scopes": [
+            "self_exclude",
+            "ally_front_all"
+          ]
+        }
+      ],
+      "conditions": [
+        "戦闘開始時自身に 使用する攻撃アビリティを2回発動する効果を付与 （ 6ターン /ターン延長不可/追加発動分はSP消費無し） 味方が敵をブレイクさせた時"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "戦闘開始時：自身に 使用する攻撃アビリティを2回発動する効果を付与 （ 6ターン /ターン延長不可/追加発動分はSP消費無し） 味方が敵をブレイクさせた時"
+        },
+        {
+          "scopes": [
+            "self_exclude",
+            "ally_front_all"
+          ],
+          "text": "自身と自身を除く味方前衛全体に 「短剣物理」で攻撃時威力アップ150%の効果を付与 （3ターン/ターン延長不可/同系統の効果重複不可） さらに、必ずクリティカルの効果を付与（3ターン） ※ロンドが行動不能時、このブレイク時効果は発動しない ※属性攻撃でクリティカルが発生するには “属性攻撃でクリティカルが発生する効果”が必要"
+        }
+      ]
+    },
+    {
+      "character_id": "814948",
+      "character_name": "ロンドEx2",
+      "ability_name": "レイヴァースの興灯",
+      "source_type": "ultimate",
+      "cost": "後衛発動",
+      "raw_text": [
+        "【Lv.MAX】",
+        "ターン中、素早く行動し",
+        "味方前後衛全体に物攻・速度アップ30%の効果を付与（4ターン）",
+        "さらに、特殊効果“輝鋭刃”を付与（4ターン/ターンが長くなるよう上書き）",
+        "輝鋭刃：「短剣物理」で攻撃時",
+        "ダメージ上限アップ（効果量 200000）の効果"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 30,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "speed",
+          "value": 30,
+          "cap_group": "buff_stat_speed",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 200000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "ally_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "【Lv.MAX】 ターン中、素早く行動し"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "【Lv.MAX】 ターン中、素早く行動し"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "味方前後衛全体に物攻・速度アップ30%の効果を付与（4ターン） さらに、特殊効果“輝鋭刃”を付与（4ターン/ターンが長くなるよう上書き） 輝鋭刃：「短剣物理」で攻撃時 ダメージ上限アップ（効果量 200000）の効果"
+        }
+      ]
+    },
+    {
+      "character_id": "814948",
+      "character_name": "ロンドEx2",
+      "ability_name": "白光",
+      "source_type": "ex",
+      "cost": "回数：2",
+      "raw_text": [
+        "ターン中、素早く行動し",
+        "敵全体に短剣物理攻撃",
+        "ブーストLvに応じて攻撃回数増加（威力 65/5回）",
+        "弱点以外でもシールドポイントを削る",
+        "さらに、自身に使用する攻撃アビリティを2回発動する効果を付与（6ターン",
+        "/ターン延長不可/付与した時から効果を発揮/追加発動分はSP消費無し）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_condition": [
+        "【使用条件】9ターン目以内"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】威力75/85/110 6/7/8回"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "ターン中、素早く行動し",
+        "敵全体に短剣物理攻撃 ブーストLvに応じて攻撃回数増加（威力 65/5回） 弱点以外でもシールドポイントを削る",
+        "さらに、自身に使用する攻撃アビリティを2回発動する効果を付与（6ターン /ターン延長不可/付与した時から効果を発揮/追加発動分はSP消費無し）"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "ターン中、素早く行動し"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に短剣物理攻撃 ブーストLvに応じて攻撃回数増加（威力 65/5回） 弱点以外でもシールドポイントを削る"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "さらに、自身に使用する攻撃アビリティを2回発動する効果を付与（6ターン /ターン延長不可/付与した時から効果を発揮/追加発動分はSP消費無し）"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "character_id": "811824",
       "character_name": "デリティア",
       "ability_name": "流し矢",
@@ -104722,15 +105472,22 @@
     {
       "character_id": "446383",
       "character_name": "アラウネ",
-      "ability_name": "大乱光明炎魔法Ⅲ",
+      "ability_name": "フランマ・スペス",
       "source_type": "battle",
       "cost": "【消費SP 79】",
       "raw_text": [
+        "ランダムなターゲットに",
+        "6回",
+        "の光属性攻撃（威力 85）",
+        "火弱点を突ける（ダメージ計算は光属性）",
+        "攻撃毎に火・光耐性ダウン15%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [
+        "『大乱光明炎魔法Ⅲ』",
         "ランダムなターゲットに3回の光属性攻撃（威力 85）",
         "火弱点を突ける（ダメージ計算は光属性）",
         "攻撃毎に火・光耐性ダウン15%の効果を付与（2ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力95/110/140"
       ],
@@ -104767,7 +105524,7 @@
           "scopes": [
             "random"
           ],
-          "text": "ランダムなターゲットに3回の光属性攻撃（威力 85） 火弱点を突ける（ダメージ計算は光属性） 攻撃毎に火・光耐性ダウン15%の効果を付与（2ターン）"
+          "text": "ランダムなターゲットに 6回 の光属性攻撃（威力 85） 火弱点を突ける（ダメージ計算は光属性） 攻撃毎に火・光耐性ダウン15%の効果を付与（2ターン）"
         }
       ]
     },
@@ -104848,20 +105605,52 @@
     {
       "character_id": "446383",
       "character_name": "アラウネ",
-      "ability_name": "前衛時属攻強化(前全)Ⅱ",
+      "ability_name": "エドラスの女王",
       "source_type": "support",
       "cost": null,
       "raw_text": [
+        "味方前衛全体に属攻アップ",
+        "30%",
+        "と",
+        "サポアビと装備性能による",
+        "属攻アップの上限が50%になる効果と",
+        "「火・光属性」のいずれかで攻撃時",
+        "ダメージ上限アップ（効果量 50000）の効果を付与"
+      ],
+      "raw_text_pre_enhance": [
+        "『前衛時属攻強化(前全)Ⅱ』",
         "前衛時：味方前衛全体に属攻アップ15%の効果を付与"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "buff",
           "category": "stat",
           "unit": "%",
           "sub_category": "attack_elemental",
-          "value": 15,
+          "value": 30,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 50000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "attack",
+          "target_source_type": "support",
+          "value": 50,
           "cap_group": "buff_stat_atk_elem",
           "scopes": [
             "ally_front_all"
@@ -104875,7 +105664,7 @@
           "scopes": [
             "ally_front_all"
           ],
-          "text": "前衛時：味方前衛全体に属攻アップ15%の効果を付与"
+          "text": "味方前衛全体に属攻アップ 30% と サポアビと装備性能による 属攻アップの上限が50%になる効果と 「火・光属性」のいずれかで攻撃時 ダメージ上限アップ（効果量 50000）の効果を付与"
         }
       ]
     },
@@ -138205,14 +138994,21 @@
       "source_type": "battle",
       "cost": "【消費SP 54】",
       "raw_text": [
+        "敵単体に6回の弓物理攻撃（威力 25）",
+        "ブーストMAX時：自身に",
+        "使用するアビリティを2回発動する効果を付与（2ターン",
+        "/ターン延長不可/付与した時から効果を発揮/追加発動分はSP消費無し"
+      ],
+      "raw_text_pre_enhance": [
         "敵単体に6回の弓物理攻撃（威力 25）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力30/35/50"
       ],
       "effects": [],
-      "conditions": [],
+      "conditions": [
+        "ブーストMAX時自身に 使用するアビリティを2回発動する効果を付与（2ターン /ターン延長不可/付与した時から効果を発揮/追加発動分はSP消費無し"
+      ],
       "unknown": [
         "敵単体に6回の弓物理攻撃（威力 25）"
       ],
@@ -138222,6 +139018,12 @@
             "enemy_single"
           ],
           "text": "敵単体に6回の弓物理攻撃（威力 25）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "ブーストMAX時：自身に 使用するアビリティを2回発動する効果を付与（2ターン /ターン延長不可/付与した時から効果を発揮/追加発動分はSP消費無し"
         }
       ]
     },
@@ -138283,13 +139085,19 @@
     {
       "character_id": "358828",
       "character_name": "ハンイット",
-      "ability_name": "弓攻撃強化Ⅲ",
+      "ability_name": "黒き森の掟",
       "source_type": "support",
       "cost": null,
       "raw_text": [
+        "味方前衛全体に",
+        "に弓攻撃ダメージアップ20%と",
+        "「弓物理」で攻撃時",
+        "ダメージ上限アップ（効果量 30000）の効果を付与"
+      ],
+      "raw_text_pre_enhance": [
+        "『弓攻撃強化Ⅲ』",
         "自身に弓攻撃ダメージアップ20%の効果を付与"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "buff",
@@ -138300,7 +139108,18 @@
           "tag": "bow",
           "cap_group": "buff_damage_phys_bow",
           "scopes": [
-            "self"
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 30000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "ally_front_all"
           ]
         }
       ],
@@ -138309,9 +139128,9 @@
       "blocks": [
         {
           "scopes": [
-            "self"
+            "ally_front_all"
           ],
-          "text": "自身に弓攻撃ダメージアップ20%の効果を付与"
+          "text": "味方前衛全体に に弓攻撃ダメージアップ20%と 「弓物理」で攻撃時 ダメージ上限アップ（効果量 30000）の効果を付与"
         }
       ]
     },
@@ -141856,23 +142675,35 @@
       "cost": "【消費SP 80】",
       "raw_text": [
         "敵単体に4回の斧物理攻撃（威力 85）",
+        "さらに、味方前衛全体のHP自動回復効果を延長（2ターン）",
         "ブーストMAX時：敵全体化"
       ],
-      "raw_text_pre_enhance": [],
+      "raw_text_pre_enhance": [
+        "敵単体に4回の斧物理攻撃（威力 85）",
+        "ブーストMAX時：敵全体化"
+      ],
       "raw_text_boost": [
         "【ブースト時】威力95/105/130"
       ],
       "effects": [],
       "conditions": [
-        "敵単体に4回の斧物理攻撃（威力 85） ブーストMAX時敵全体化"
+        "さらに、味方前衛全体のHP自動回復効果を延長（2ターン） ブーストMAX時敵全体化"
       ],
-      "unknown": [],
+      "unknown": [
+        "敵単体に4回の斧物理攻撃（威力 85）"
+      ],
       "blocks": [
         {
           "scopes": [
             "enemy_single"
           ],
-          "text": "敵単体に4回の斧物理攻撃（威力 85） ブーストMAX時：敵全体化"
+          "text": "敵単体に4回の斧物理攻撃（威力 85）"
+        },
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "さらに、味方前衛全体のHP自動回復効果を延長（2ターン） ブーストMAX時：敵全体化"
         }
       ]
     },
@@ -141931,16 +142762,24 @@
     {
       "character_id": "355671",
       "character_name": "テオ",
-      "ability_name": "強化効果延長(与)Ⅱ",
+      "ability_name": "ボロニア印の秘伝書",
       "source_type": "support",
       "cost": null,
       "raw_text": [
         "自身が強化効果を付与した際の",
+        "効果を2ターン延長（重複不可）",
+        "戦闘開始時：地震を除く味方前後衛全体に",
+        "BP回復量1アップの効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [
+        "『強化効果延長(与)Ⅱ』",
+        "自身が強化効果を付与した際の",
         "効果を2ターン延長（重複不可）"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [],
-      "conditions": [],
+      "conditions": [
+        "戦闘開始時地震を除く味方前後衛全体に BP回復量1アップの効果を付与（2ターン）"
+      ],
       "unknown": [
         "自身が強化効果を付与した際の 効果を2ターン延長（重複不可）"
       ],
@@ -141948,6 +142787,12 @@
         {
           "scopes": [],
           "text": "自身が強化効果を付与した際の 効果を2ターン延長（重複不可）"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "戦闘開始時：地震を除く味方前後衛全体に BP回復量1アップの効果を付与（2ターン）"
         }
       ]
     },
@@ -146610,14 +147455,31 @@
       "source_type": "battle",
       "cost": "【消費SP 72】",
       "raw_text": [
+        "味方前衛全体のHP回復（効力 205）、",
+        "SP回復（回復量 25）",
+        "さらに、物攻アップ15%と",
+        "剣攻撃ダメージアップ15%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [
         "味方前衛全体のHP回復（効力 205）",
         "さらに、物攻アップ15%の効果を付与（2ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】効力225/255/295"
       ],
       "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 15,
+          "tag": "sword",
+          "cap_group": "buff_damage_phys_sword",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
         {
           "role": "buff",
           "category": "stat",
@@ -146637,7 +147499,7 @@
           "scopes": [
             "ally_front_all"
           ],
-          "text": "味方前衛全体のHP回復（効力 205） さらに、物攻アップ15%の効果を付与（2ターン）"
+          "text": "味方前衛全体のHP回復（効力 205）、 SP回復（回復量 25） さらに、物攻アップ15%と 剣攻撃ダメージアップ15%の効果を付与（2ターン）"
         }
       ]
     },
@@ -146695,17 +147557,25 @@
       "source_type": "support",
       "cost": null,
       "raw_text": [
+        "自身が攻撃時（一部除く）、",
+        "中確率",
+        "で",
+        "敵に剣耐性ダウン",
+        "15%",
+        "の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [
+        "『攻撃時剣耐性弱体』",
         "自身が攻撃時（一部除く）、小確率で",
         "敵に剣耐性ダウン10%の効果を付与（2ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "debuff",
           "category": "resistance",
           "unit": "%",
           "sub_category": "physical",
-          "value": 10,
+          "value": 15,
           "tag": "sword",
           "cap_group": "debuff_resist_phys_sword",
           "scopes": []
@@ -146716,7 +147586,7 @@
       "blocks": [
         {
           "scopes": [],
-          "text": "自身が攻撃時（一部除く）、小確率で 敵に剣耐性ダウン10%の効果を付与（2ターン）"
+          "text": "自身が攻撃時（一部除く）、 中確率 で 敵に剣耐性ダウン 15% の効果を付与（2ターン）"
         }
       ]
     },
@@ -161644,9 +162514,14 @@
       "raw_text": [
         "ターン中、素早く行動し",
         "自身に属性攻撃に対して反撃する効果を付与（3ターン）",
+        "反撃：敵全体に槍物理攻撃（威力 180）",
+        "さらに、”物理攻撃（一部除く）を必ず外す”特殊効果を付与(1回)"
+      ],
+      "raw_text_pre_enhance": [
+        "ターン中、素早く行動し",
+        "自身に属性攻撃に対して反撃する効果を付与（3ターン）",
         "反撃：敵全体に槍物理攻撃（威力 180）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】ターン数4/5/6"
       ],
@@ -161655,7 +162530,7 @@
       "unknown": [
         "ターン中、素早く行動し",
         "自身に属性攻撃に対して反撃する効果を付与（3ターン）",
-        "反撃：敵全体に槍物理攻撃（威力 180）"
+        "反撃：敵全体に槍物理攻撃（威力 180） さらに、”物理攻撃（一部除く）を必ず外す”特殊効果を付与(1回)"
       ],
       "blocks": [
         {
@@ -161672,7 +162547,7 @@
           "scopes": [
             "enemy_all"
           ],
-          "text": "反撃：敵全体に槍物理攻撃（威力 180）"
+          "text": "反撃：敵全体に槍物理攻撃（威力 180） さらに、”物理攻撃（一部除く）を必ず外す”特殊効果を付与(1回)"
         }
       ]
     },
@@ -161747,22 +162622,42 @@
     {
       "character_id": "356599",
       "character_name": "フアン",
-      "ability_name": "ふんばる",
+      "ability_name": "踏ん張りどころ",
       "source_type": "support",
       "cost": null,
       "raw_text": [
+        "戦闘中1度だけ、敵からHPが0になるダメージを受けてもHPが1残る",
+        "ターン終了時かつ自身のHP10%以下時：",
+        "自身のHP回復（回復量 最大HPの100%）"
+      ],
+      "raw_text_pre_enhance": [
+        "『ふんばる』",
         "戦闘中1度だけ、敵からHPが0になるダメージを受けてもHPが1残る"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [],
-      "conditions": [],
+      "conditions": [
+        "ターン終了時かつ自身のHP10%以下時"
+      ],
       "unknown": [
-        "戦闘中1度だけ、敵からHPが0になるダメージを受けてもHPが1残る"
+        "戦闘中1度だけ、敵からHPが0になるダメージを受けてもHPが1残る",
+        "自身のHP回復（回復量 最大HPの100%）"
       ],
       "blocks": [
         {
           "scopes": [],
           "text": "戦闘中1度だけ、敵からHPが0になるダメージを受けてもHPが1残る"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "ターン終了時かつ自身のHP10%以下時："
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身のHP回復（回復量 最大HPの100%）"
         }
       ]
     },
