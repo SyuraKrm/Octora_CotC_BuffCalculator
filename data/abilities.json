@@ -442,9 +442,6 @@
         "（ダメージ計算は各攻撃に準ずる）"
       ],
       "raw_text_pre_enhance": [],
-      "raw_text_boost": [
-        "【ブースト時】-"
-      ],
       "effects": [
         {
           "role": "buff",
@@ -488,9 +485,6 @@
         "その後、ブレイク中の敵がいなければロンドのBPを1回復"
       ],
       "raw_text_pre_enhance": [],
-      "raw_text_boost": [
-        "【ブースト時】-"
-      ],
       "effects": [],
       "conditions": [],
       "unknown": [
@@ -528,9 +522,6 @@
         "（装備ステータス含む/対象ステータス毎に最大値を適用）"
       ],
       "raw_text_pre_enhance": [],
-      "raw_text_boost": [
-        "【ブースト時】-"
-      ],
       "effects": [],
       "conditions": [
         "ブレイク中の敵がいる時"
@@ -583,9 +574,6 @@
         "戦闘開始時：自身に",
         "使用する攻撃アビリティを2回発動する効果を付与",
         "（3ターン/ターン延長不可/追加発動分はSP消費無し）"
-      ],
-      "raw_text_boost": [
-        "【ブースト時】-"
       ],
       "effects": [
         {
