@@ -1,5 +1,35 @@
 [
   {
+    "character_id": "817223",
+    "character_name": "プリムロゼEx2",
+    "job": "神官",
+    "rarity": "5",
+    "elements": [
+      "火",
+      "雷",
+      "風"
+    ],
+    "physicals": [
+      "杖"
+    ]
+  },
+  {
+    "character_id": "817222",
+    "character_name": "エアハルト",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [
+      "光",
+      "闇",
+      "風"
+    ],
+    "physicals": [
+      "剣",
+      "扇",
+      "短剣"
+    ]
+  },
+  {
     "character_id": "814948",
     "character_name": "ロンドEx2",
     "job": "盗賊",

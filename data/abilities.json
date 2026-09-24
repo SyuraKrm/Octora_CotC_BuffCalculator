@@ -1,6 +1,1608 @@
 [
   [
     {
+      "character_id": "817223",
+      "character_name": "プリムロゼEx2",
+      "ability_name": "特大風塵魔法（単体）",
+      "source_type": "battle",
+      "cost": "【消費SP 27】",
+      "raw_text": [
+        "敵単体に3回の風属性攻撃（威力 55）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力65/80/100"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵単体に3回の風属性攻撃（威力 55）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に3回の風属性攻撃（威力 55）"
+        }
+      ]
+    },
+    {
+      "character_id": "817223",
+      "character_name": "プリムロゼEx2",
+      "ability_name": "守護喪失のオラクルⅡ",
+      "source_type": "battle",
+      "cost": "【消費SP 30】",
+      "raw_text": [
+        "敵単体に物防・属防ダウン15%と",
+        "クリティカル率耐性ダウン15%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】3/4/5ターン"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 15,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 15,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": [
+            "enemy_single"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に物防・属防ダウン15%と クリティカル率耐性ダウン15%の効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "817223",
+      "character_name": "プリムロゼEx2",
+      "ability_name": "大回復魔法（単体）",
+      "source_type": "battle",
+      "cost": "【消費SP 24】",
+      "raw_text": [
+        "味方単体のHP回復（効力 160）",
+        "ブーストMAX時：前衛全体化"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】効力180/220/280"
+      ],
+      "effects": [],
+      "conditions": [
+        "味方単体のHP回復（効力 160） ブーストMAX時前衛全体化"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_single"
+          ],
+          "text": "味方単体のHP回復（効力 160） ブーストMAX時：前衛全体化"
+        }
+      ]
+    },
+    {
+      "character_id": "817223",
+      "character_name": "プリムロゼEx2",
+      "ability_name": "大風塵破護魔法（全体）Ⅱ",
+      "source_type": "battle",
+      "cost": "【消費SP 45】",
+      "raw_text": [
+        "敵全体に2回の風属性攻撃（威力 80）",
+        "さらに、属防ダウン15%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力95/115/130"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 15,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": [
+            "enemy_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に2回の風属性攻撃（威力 80） さらに、属防ダウン15%の効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "817223",
+      "character_name": "プリムロゼEx2",
+      "ability_name": "破戦の吸精連痛打",
+      "source_type": "battle",
+      "cost": "【消費SP 48】",
+      "raw_text": [
+        "敵単体に2回の物理攻撃（威力90）し",
+        "物攻・属攻ダウン10%の効果を付与（2ターン）",
+        "さらに、与えたダメージ量の1%のSP吸収"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力105/125/180"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 10,
+          "cap_group": "debuff_stat_atk_phys",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 10,
+          "cap_group": "debuff_stat_atk_elem",
+          "scopes": [
+            "enemy_single"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に2回の物理攻撃（威力90）し 物攻・属攻ダウン10%の効果を付与（2ターン） さらに、与えたダメージ量の1%のSP吸収"
+        }
+      ]
+    },
+    {
+      "character_id": "817223",
+      "character_name": "プリムロゼEx2",
+      "ability_name": "プリムローズグレイス",
+      "source_type": "battle",
+      "cost": "【消費SP 70】",
+      "raw_text": [
+        "味方前衛全体にHP自動回復の効果を付与（2ターン/効力110）",
+        "さらに、物攻・属攻アップ15%と",
+        "クリティカル時のダメージアップ15%の効果を付与（2ターン）",
+        "ブーストMAX時：前後衛全体化"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】3/4/5ターン"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "critical",
+          "value": 15,
+          "cap_group": "buff_damage_crit",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 15,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 15,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "ally_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体にHP自動回復の効果を付与（2ターン/効力110） さらに、物攻・属攻アップ15%と クリティカル時のダメージアップ15%の効果を付与（2ターン） ブーストMAX時：前後衛全体化"
+        }
+      ]
+    },
+    {
+      "character_id": "817223",
+      "character_name": "プリムロゼEx2",
+      "ability_name": "颯美の詩",
+      "source_type": "battle",
+      "cost": "【消費SP 54】",
+      "raw_text": [
+        "ランダムなターゲットに6回の風属性攻撃（威力25）",
+        "攻撃毎に小確率で風耐性ダウン15%の効果を付与（2ターン）",
+        "ブーストMAX時：攻撃回数が8回になる"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力30/35/50"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 15,
+          "tag": "wind",
+          "cap_group": "debuff_resist_elem_wind",
+          "scopes": [
+            "random"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "random"
+          ],
+          "text": "ランダムなターゲットに6回の風属性攻撃（威力25） 攻撃毎に小確率で風耐性ダウン15%の効果を付与（2ターン） ブーストMAX時：攻撃回数が8回になる"
+        }
+      ]
+    },
+    {
+      "character_id": "817223",
+      "character_name": "プリムロゼEx2",
+      "ability_name": "ルースストーム",
+      "source_type": "battle",
+      "cost": "【消費SP 102】",
+      "raw_text": [
+        "敵全体に4回の風属性攻撃（威力 55）",
+        "弱点以外でもシールドポイントを削る",
+        "さらに、物防・属防ダウン15%と",
+        "クリティカル率耐性ダウン15%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力60/70/85 3/4/5ターン"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 15,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 15,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": [
+            "enemy_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に4回の風属性攻撃（威力 55） 弱点以外でもシールドポイントを削る さらに、物防・属防ダウン15%と クリティカル率耐性ダウン15%の効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "817223",
+      "character_name": "プリムロゼEx2",
+      "ability_name": "荊棘の詩",
+      "source_type": "battle",
+      "cost": "【消費SP 88】",
+      "raw_text": [
+        "敵単体に2回の風属性攻撃（威力150）",
+        "この攻撃は物防・属防アップとダメージ減少効果を無視する",
+        "攻撃対象がブレイク中の時威力が1.5倍になり",
+        "このアビリティのダメージ上限が250000アップ",
+        "ブーストMAX時：効果を再発動（SP消費無し）する"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力165/195/260"
+      ],
+      "effects": [],
+      "conditions": [
+        "敵単体に2回の風属性攻撃（威力150） この攻撃は物防・属防アップとダメージ減少効果を無視する 攻撃対象がブレイク中の時威力が1.5倍になり このアビリティのダメージ上限が250000アップ ブーストMAX時効果を再発動（SP消費無し）する"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に2回の風属性攻撃（威力150） この攻撃は物防・属防アップとダメージ減少効果を無視する 攻撃対象がブレイク中の時威力が1.5倍になり このアビリティのダメージ上限が250000アップ ブーストMAX時：効果を再発動（SP消費無し）する"
+        }
+      ]
+    },
+    {
+      "character_id": "817223",
+      "character_name": "プリムロゼEx2",
+      "ability_name": "ロサ・プロセラ",
+      "source_type": "battle",
+      "cost": "【消費SP 300】",
+      "raw_text": [
+        "単体に3回の風属性攻撃（威力 180）",
+        "必ずクリティカルダメージ",
+        "攻撃対象がブレイク中の時威力が1.5倍になり",
+        "このアビリティのダメージ上限が250000アップ",
+        "ブーストMAX時：効果を再発動（SP消費無し）する",
+        "※属性攻撃でクリティカルが発生するには",
+        "“属性攻撃でクリティカルが発生する効果”が必要"
+      ],
+      "raw_text_pre_enhance": [
+        "単体に3回の風属性攻撃（威力 180）",
+        "必ずクリティカルダメージ",
+        "※属性攻撃でクリティカルが発生するには",
+        "“属性攻撃でクリティカルが発生する効果”が必要"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】威力190/235/300"
+      ],
+      "effects": [],
+      "conditions": [
+        "単体に3回の風属性攻撃（威力 180） 必ずクリティカルダメージ 攻撃対象がブレイク中の時威力が1.5倍になり このアビリティのダメージ上限が250000アップ ブーストMAX時効果を再発動（SP消費無し）する ※属性攻撃でクリティカルが発生するには “属性攻撃でクリティカルが発生する効果”が必要"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "単体に3回の風属性攻撃（威力 180） 必ずクリティカルダメージ 攻撃対象がブレイク中の時威力が1.5倍になり このアビリティのダメージ上限が250000アップ ブーストMAX時：効果を再発動（SP消費無し）する ※属性攻撃でクリティカルが発生するには “属性攻撃でクリティカルが発生する効果”が必要"
+        }
+      ]
+    },
+    {
+      "character_id": "817223",
+      "character_name": "プリムロゼEx2",
+      "ability_name": "淑雅の貴族",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "自身に「たたかう」以外の属性攻撃（一部除く）時",
+        "杖・火・雷弱点を突ける効果を付与",
+        "（ダメージ計算は各攻撃に準ずる）"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "自身に「たたかう」以外の属性攻撃（一部除く）時 杖・火・雷弱点を突ける効果を付与 （ダメージ計算は各攻撃に準ずる）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に「たたかう」以外の属性攻撃（一部除く）時 杖・火・雷弱点を突ける効果を付与 （ダメージ計算は各攻撃に準ずる）"
+        }
+      ]
+    },
+    {
+      "character_id": "817223",
+      "character_name": "プリムロゼEx2",
+      "ability_name": "運命を掴み取る者",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "味方前衛全体に属攻・会心アップ30%と",
+        "クリティカル時のダメージアップ30%と",
+        "ダメージ上限アップ（効果量 50000）と",
+        "属性攻撃でクリティカルが発生する効果を付与",
+        "前衛時：味方前衛全体に「風属性」で攻撃時",
+        "ダメージ上限アップ（効果量 50000）と",
+        "サポアビと装備性能による属攻アップと",
+        "風属性ダメージアップの上限が60%になる効果を付与"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "critical",
+          "value": 30,
+          "cap_group": "buff_damage_crit",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 30,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_critical_rate",
+          "value": 30,
+          "cap_group": "buff_stat_atk_crit",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "critical",
+          "unit": "",
+          "sub_category": "elemental",
+          "target_source_type": "battle",
+          "value": 1,
+          "cap_group": "critical_elem",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 50000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 50000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "attack",
+          "target_source_type": "support",
+          "value": 60,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "elemental",
+          "target_source_type": "support",
+          "value": 60,
+          "tag": "wind",
+          "cap_group": "buff_damage_elem_wind",
+          "scopes": [
+            "ally_front_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体に属攻・会心アップ30%と クリティカル時のダメージアップ30%と ダメージ上限アップ（効果量 50000）と 属性攻撃でクリティカルが発生する効果を付与"
+        },
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "前衛時：味方前衛全体に「風属性」で攻撃時 ダメージ上限アップ（効果量 50000）と サポアビと装備性能による属攻アップと 風属性ダメージアップの上限が60%になる効果を付与"
+        }
+      ]
+    },
+    {
+      "character_id": "817223",
+      "character_name": "プリムロゼEx2",
+      "ability_name": "高貴なる審判",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "BP3消費時：自身に必ずクリティカルの効果と",
+        "超クリティカルが発生する効果を付与",
+        "※属性攻撃でクリティカルが発生するには",
+        "“属性攻撃でクリティカルが発生する効果”が必要",
+        "超クリティカル解放：クリティカル時のダメージ倍率が",
+        "1.4倍（通常時は1.25倍）になるクリティカル判定成立時",
+        "必ずクリティカルを無視したクリティカル判定を再度行う",
+        "これが成功した場合、クリティカル時のダメージ倍率が",
+        "2倍（通常時は1.25倍）になり”超クリティカル”として扱う",
+        "※ダメージ倍率が高いほうのみ適用される",
+        "※“超クリティカル”は通常のクリティカルとしても扱う"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "critical",
+          "unit": "",
+          "sub_category": "certain",
+          "target_source_type": "battle",
+          "value": 1,
+          "cap_group": "critical_certain",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "BP3消費時：自身に必ずクリティカルの効果と 超クリティカルが発生する効果を付与 ※属性攻撃でクリティカルが発生するには “属性攻撃でクリティカルが発生する効果”が必要 超クリティカル解放：クリティカル時のダメージ倍率が 1.4倍（通常時は1.25倍）になるクリティカル判定成立時 必ずクリティカルを無視したクリティカル判定を再度行う これが成功した場合、クリティカル時のダメージ倍率が 2倍（通常時は1.25倍）になり”超クリティカル”として扱う ※ダメージ倍率が高いほうのみ適用される ※“超クリティカル”は通常のクリティカルとしても扱う"
+        }
+      ]
+    },
+    {
+      "character_id": "817223",
+      "character_name": "プリムロゼEx2",
+      "ability_name": "エゼルアートの誓い",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "自身に超クリティカル時",
+        "ダメージ上限アップ（効果量",
+        "250000",
+        "）の効果を付与",
+        "ブレイク中の敵がいる時・自身に",
+        "威力アップ100%の効果を付与（同系統の効果重複不可）"
+      ],
+      "raw_text_pre_enhance": [
+        "自身に超クリティカル時",
+        "ダメージ上限アップ（効果量 100000）の効果を付与"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 250000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "power",
+          "unit": "%",
+          "target_source_type": "battle",
+          "value": 100,
+          "cap_group": "power_up",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に超クリティカル時 ダメージ上限アップ（効果量 250000 ）の効果を付与"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "ブレイク中の敵がいる時・自身に 威力アップ100%の効果を付与（同系統の効果重複不可）"
+        }
+      ]
+    },
+    {
+      "character_id": "817223",
+      "character_name": "プリムロゼEx2",
+      "ability_name": "スブロサー・フラマ",
+      "source_type": "ultimate",
+      "cost": "後衛発動",
+      "raw_text": [
+        "【Lv.MAX】",
+        "使用ターン中、自身の受けるダメージが50%減少（一部除く）",
+        "さらに、味方前衛全体にHPバリアを付与",
+        "（効果量 使用者の最大HPの40%/重複不可）し",
+        "物理攻撃（一部除く）を必ず回避する効果と",
+        "属性攻撃（一部除く）を必ず回避する効果を付与（各2回）",
+        "200%発動時：HPバリアの効果量が2倍になり",
+        "さらに、敵全体に“物理攻撃（一部除く）を必ず外す”特殊効果と",
+        "“属性攻撃（一部除く）を必ず外す”特殊効果を付与（各2回）"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [],
+      "conditions": [
+        "さらに、味方前衛全体にHPバリアを付与 （効果量 使用者の最大HPの40%/重複不可）し 物理攻撃（一部除く）を必ず回避する効果と 属性攻撃（一部除く）を必ず回避する効果を付与（各2回） 200%発動時HPバリアの効果量が2倍になり"
+      ],
+      "unknown": [
+        "【Lv.MAX】",
+        "使用ターン中、自身の受けるダメージが50%減少（一部除く）",
+        "さらに、敵全体に“物理攻撃（一部除く）を必ず外す”特殊効果と “属性攻撃（一部除く）を必ず外す”特殊効果を付与（各2回）"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "【Lv.MAX】"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "使用ターン中、自身の受けるダメージが50%減少（一部除く）"
+        },
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "さらに、味方前衛全体にHPバリアを付与 （効果量 使用者の最大HPの40%/重複不可）し 物理攻撃（一部除く）を必ず回避する効果と 属性攻撃（一部除く）を必ず回避する効果を付与（各2回） 200%発動時：HPバリアの効果量が2倍になり"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "さらに、敵全体に“物理攻撃（一部除く）を必ず外す”特殊効果と “属性攻撃（一部除く）を必ず外す”特殊効果を付与（各2回）"
+        }
+      ]
+    },
+    {
+      "character_id": "817223",
+      "character_name": "プリムロゼEx2",
+      "ability_name": "ロサ・デュオデシム",
+      "source_type": "ex",
+      "cost": "回数：1",
+      "raw_text": [
+        "自身にSP自動回復（回復量 最大SPの20%）と",
+        "BP回復量3アップの効果を付与（6ターン）",
+        "さらに、会心アップ30%と超クリティカル時",
+        "ダメージ上限アップ（効果量 750000）の効果を付与（4ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_condition": [
+        "【使用条件】なし"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】7/8/9ターン"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_critical_rate",
+          "value": 30,
+          "cap_group": "buff_stat_atk_crit",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 750000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身にSP自動回復（回復量 最大SPの20%）と BP回復量3アップの効果を付与（6ターン） さらに、会心アップ30%と超クリティカル時 ダメージ上限アップ（効果量 750000）の効果を付与（4ターン）"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "character_id": "817222",
+      "character_name": "エアハルト",
+      "ability_name": "三連斬",
+      "source_type": "battle",
+      "cost": "【消費SP 38】",
+      "raw_text": [
+        "烈剣時：敵単体に3回の剣物理攻撃（威力 65）",
+        "風神時：単体に風属性攻撃（威力 170）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力75/90/120 威力200/240/350"
+      ],
+      "effects": [],
+      "conditions": [
+        "烈剣時敵単体に3回の剣物理攻撃（威力 65） 風神時単体に風属性攻撃（威力 170）"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "烈剣時：敵単体に3回の剣物理攻撃（威力 65） 風神時：単体に風属性攻撃（威力 170）"
+        }
+      ]
+    },
+    {
+      "character_id": "817222",
+      "character_name": "エアハルト",
+      "ability_name": "十文字斬り",
+      "source_type": "battle",
+      "cost": "【消費SP 32】",
+      "raw_text": [
+        "烈剣時：敵単体に剣物理攻撃（威力230）",
+        "風神時：敵単体に風属性攻撃（威力230）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力260/300/400"
+      ],
+      "effects": [],
+      "conditions": [
+        "烈剣時敵単体に剣物理攻撃（威力230）",
+        "風神時敵単体に風属性攻撃（威力230）"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "烈剣時：敵単体に剣物理攻撃（威力230）"
+        },
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "風神時：敵単体に風属性攻撃（威力230）"
+        }
+      ]
+    },
+    {
+      "character_id": "817222",
+      "character_name": "エアハルト",
+      "ability_name": "横一文字斬り",
+      "source_type": "battle",
+      "cost": "【消費SP 22】",
+      "raw_text": [
+        "烈剣時：全体に剣物理攻撃（威力 150）",
+        "風神時：全体に風属性攻撃（威力 150）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力175/215/260"
+      ],
+      "effects": [],
+      "conditions": [
+        "烈剣時全体に剣物理攻撃（威力 150） 風神時全体に風属性攻撃（威力 150）"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "烈剣時：全体に剣物理攻撃（威力 150） 風神時：全体に風属性攻撃（威力 150）"
+        }
+      ]
+    },
+    {
+      "character_id": "817222",
+      "character_name": "エアハルト",
+      "ability_name": "気力昂場・烈",
+      "source_type": "battle",
+      "cost": "【消費SP 36】",
+      "raw_text": [
+        "自身にBP回復量1アップの効果と",
+        "ダメージ上限アップ（効果量 100000）の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】3/4/5ターン"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 100000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身にBP回復量1アップの効果と ダメージ上限アップ（効果量 100000）の効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "817222",
+      "character_name": "エアハルト",
+      "ability_name": "烈剣闘気",
+      "source_type": "battle",
+      "cost": "【消費SP 74】",
+      "raw_text": [
+        "烈剣時：味方前後衛全体に",
+        "剣攻撃ダメージアップ30%の効果を付与（2ターン）",
+        "風神時：味方前後衛全体に",
+        "風属性ダメージアップ30%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】3/4/5ターン"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 30,
+          "tag": "sword",
+          "cap_group": "buff_damage_phys_sword",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 30,
+          "tag": "wind",
+          "cap_group": "buff_damage_elem_wind",
+          "scopes": [
+            "ally_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "烈剣時：味方前後衛全体に 剣攻撃ダメージアップ30%の効果を付与（2ターン）"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "風神時：味方前後衛全体に 風属性ダメージアップ30%の効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "817222",
+      "character_name": "エアハルト",
+      "ability_name": "瞬烈崩斬",
+      "source_type": "battle",
+      "cost": "【消費SP 56】",
+      "raw_text": [
+        "烈剣時：単体に4回の剣物理攻撃（威力 65）",
+        "攻撃毎に小確率で剣耐性ダウン15%の効果を付与（2ターン）",
+        "風神時：単体に4回の風属性攻撃（威力 65）",
+        "攻撃毎に小確率で風耐性ダウン15%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力75/85/110"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 15,
+          "tag": "sword",
+          "cap_group": "debuff_resist_phys_sword",
+          "scopes": []
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 15,
+          "tag": "wind",
+          "cap_group": "debuff_resist_elem_wind",
+          "scopes": []
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "烈剣時：単体に4回の剣物理攻撃（威力 65） 攻撃毎に小確率で剣耐性ダウン15%の効果を付与（2ターン） 風神時：単体に4回の風属性攻撃（威力 65） 攻撃毎に小確率で風耐性ダウン15%の効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "817222",
+      "character_name": "エアハルト",
+      "ability_name": "乱烈斬",
+      "source_type": "battle",
+      "cost": "【消費SP 56】",
+      "raw_text": [
+        "烈剣時：ランダムなターゲットに5回の剣物理攻撃（威力55）",
+        "風神時：ランダムなターゲットに5回の風属性攻撃（威力 55）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力65/75/100"
+      ],
+      "effects": [],
+      "conditions": [
+        "烈剣時ランダムなターゲットに5回の剣物理攻撃（威力55）",
+        "風神時ランダムなターゲットに5回の風属性攻撃（威力 55）"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "random"
+          ],
+          "text": "烈剣時：ランダムなターゲットに5回の剣物理攻撃（威力55）"
+        },
+        {
+          "scopes": [
+            "random"
+          ],
+          "text": "風神時：ランダムなターゲットに5回の風属性攻撃（威力 55）"
+        }
+      ]
+    },
+    {
+      "character_id": "817222",
+      "character_name": "エアハルト",
+      "ability_name": "烈神覇",
+      "source_type": "battle",
+      "cost": "【消費SP 78】",
+      "raw_text": [
+        "烈剣時：単体に4回の剣物理攻撃（威力100）",
+        "この攻撃はダメージ減少効果を無視する",
+        "真・烈剣の構え効果中：",
+        "このアビリティのダメージ上限が200000アップ",
+        "風神時：単体に4回の風属性攻撃（威力100）",
+        "この攻撃はダメージ減少効果を無視する",
+        "真・烈剣の構え効果中：",
+        "このアビリティのダメージ上限が200000アップ"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力110/120/145"
+      ],
+      "effects": [],
+      "conditions": [
+        "烈剣時単体に4回の剣物理攻撃（威力100） この攻撃はダメージ減少効果を無視する 真・烈剣の構え効果中 このアビリティのダメージ上限が200000アップ 風神時単体に4回の風属性攻撃（威力100） この攻撃はダメージ減少効果を無視する 真・烈剣の構え効果中 このアビリティのダメージ上限が200000アップ"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "烈剣時：単体に4回の剣物理攻撃（威力100） この攻撃はダメージ減少効果を無視する 真・烈剣の構え効果中： このアビリティのダメージ上限が200000アップ 風神時：単体に4回の風属性攻撃（威力100） この攻撃はダメージ減少効果を無視する 真・烈剣の構え効果中： このアビリティのダメージ上限が200000アップ"
+        }
+      ]
+    },
+    {
+      "character_id": "817222",
+      "character_name": "エアハルト",
+      "ability_name": "烈神連斬",
+      "source_type": "battle",
+      "cost": "【消費SP 47】",
+      "raw_text": [
+        "烈剣時：敵単体に剣物理攻撃",
+        "ブーストLvに応じて攻撃回数増加（威力 5/7回）",
+        "風神時：敵単体に風属性攻撃",
+        "ブーストLvに応じて攻撃回数増加（威力 5/7回）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力10/15/20 8/9/10回"
+      ],
+      "effects": [],
+      "conditions": [
+        "烈剣時敵単体に剣物理攻撃 ブーストLvに応じて攻撃回数増加（威力 5/7回）",
+        "風神時敵単体に風属性攻撃 ブーストLvに応じて攻撃回数増加（威力 5/7回）"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "烈剣時：敵単体に剣物理攻撃 ブーストLvに応じて攻撃回数増加（威力 5/7回）"
+        },
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "風神時：敵単体に風属性攻撃 ブーストLvに応じて攻撃回数増加（威力 5/7回）"
+        }
+      ]
+    },
+    {
+      "character_id": "817222",
+      "character_name": "エアハルト",
+      "ability_name": "烈砕塵",
+      "source_type": "battle",
+      "cost": "【消費SP 103】",
+      "raw_text": [
+        "烈剣時：全体に",
+        "8",
+        "回の剣物理攻撃（威力 40）",
+        "ただし、この攻撃ではシールドを削れない",
+        "風神時：全体に",
+        "8",
+        "回の風属性攻撃（威力 40）",
+        "ただし、この攻撃ではシールドを削れない"
+      ],
+      "raw_text_pre_enhance": [
+        "烈剣時：全体に6回の剣物理攻撃（威力 40）",
+        "ただし、この攻撃ではシールドを削れない",
+        "風神時：全体に6回の風属性攻撃（威力 40）",
+        "ただし、この攻撃ではシールドを削れない"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】威力45/50/65"
+      ],
+      "effects": [],
+      "conditions": [
+        "烈剣時全体に 8 回の剣物理攻撃（威力 40） ただし、この攻撃ではシールドを削れない 風神時全体に 8 回の風属性攻撃（威力 40） ただし、この攻撃ではシールドを削れない"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "烈剣時：全体に 8 回の剣物理攻撃（威力 40） ただし、この攻撃ではシールドを削れない 風神時：全体に 8 回の風属性攻撃（威力 40） ただし、この攻撃ではシールドを削れない"
+        }
+      ]
+    },
+    {
+      "character_id": "817222",
+      "character_name": "エアハルト",
+      "ability_name": "スタイルシフト：風神",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "コマンド選択時、“烈剣”と”風神”にスタイルを切り替えられる",
+        "烈剣時：自身に物攻アップ30%と剣攻撃ダメージアップ30%と",
+        "「たたかう」以外の物理攻撃（一部除く）時",
+        "短剣・扇弱点を突ける効果を付与（ダメージ計算は各攻撃に準ずる）",
+        "風神時：自身に属攻アップ30%と風属性ダメージアップ30%と",
+        "属性攻撃でクリティカルが発生する効果と「たかう」以外の属性攻撃（一部除く）時",
+        "光・闇弱点を突ける効果を付与（ダメージ計算は各攻撃に準ずる）"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 30,
+          "tag": "sword",
+          "cap_group": "buff_damage_phys_sword",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 30,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 30,
+          "tag": "wind",
+          "cap_group": "buff_damage_elem_wind",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 30,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "critical",
+          "unit": "",
+          "sub_category": "elemental",
+          "target_source_type": "battle",
+          "value": 1,
+          "cap_group": "critical_elem",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "コマンド選択時、“烈剣”と”風神”にスタイルを切り替えられる"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "コマンド選択時、“烈剣”と”風神”にスタイルを切り替えられる"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "烈剣時：自身に物攻アップ30%と剣攻撃ダメージアップ30%と 「たたかう」以外の物理攻撃（一部除く）時 短剣・扇弱点を突ける効果を付与（ダメージ計算は各攻撃に準ずる）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "風神時：自身に属攻アップ30%と風属性ダメージアップ30%と 属性攻撃でクリティカルが発生する効果と「たかう」以外の属性攻撃（一部除く）時 光・闇弱点を突ける効果を付与（ダメージ計算は各攻撃に準ずる）"
+        }
+      ]
+    },
+    {
+      "character_id": "817222",
+      "character_name": "エアハルト",
+      "ability_name": "瞬刃の騎士",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "BP1以上消費時：自身にクリティカル時のダメージ倍率が",
+        "1.5倍になる効果を付与（通常時は1.25倍）",
+        "BP2以上消費時：さらに、威力アップ100%の効果を付与",
+        "（同系統の効果重複不可）",
+        "BP3消費時かつ烈絶状態ではない時",
+        "加えて、自身が使用する攻撃アビリティを2回発動する",
+        "（追加発動分はSP消費無し）",
+        "ただし、再発動した攻撃ではシールドを削れない"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "power",
+          "unit": "%",
+          "target_source_type": "battle",
+          "value": 100,
+          "cap_group": "power_up",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "BP1以上消費時：自身にクリティカル時のダメージ倍率が 1.5倍になる効果を付与（通常時は1.25倍） BP2以上消費時：さらに、威力アップ100%の効果を付与 （同系統の効果重複不可） BP3消費時かつ烈絶状態ではない時 加えて、自身が使用する攻撃アビリティを2回発動する （追加発動分はSP消費無し） ただし、再発動した攻撃ではシールドを削れない"
+        }
+      ]
+    },
+    {
+      "character_id": "817222",
+      "character_name": "エアハルト",
+      "ability_name": "真・烈剣の構え",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "自身の使用する攻撃アビリティで",
+        "攻撃が5回以上ヒットした時：自身のBPを1回復",
+        "さらに、特殊効果”真・烈剣の構え”を付与（3ターン）",
+        "真・烈剣の構え：物攻・属攻・速度アップ30%の効果",
+        "※行動順影響は2ターン目"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 30,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "self"
+          ],
+          "special_effect_id": "真・烈剣の構え",
+          "special_stack": "no_stack"
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 30,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "self"
+          ],
+          "special_effect_id": "真・烈剣の構え",
+          "special_stack": "no_stack"
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "speed",
+          "value": 30,
+          "cap_group": "buff_stat_speed",
+          "scopes": [
+            "self"
+          ],
+          "special_effect_id": "真・烈剣の構え",
+          "special_stack": "no_stack"
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "自身の使用する攻撃アビリティで",
+        "攻撃が5回以上ヒットした時:自身のBPを1回復 さらに、特殊効果”真・烈剣の構え”を付与（3ターン）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身の使用する攻撃アビリティで"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "攻撃が5回以上ヒットした時:自身のBPを1回復 さらに、特殊効果”真・烈剣の構え”を付与（3ターン）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "物攻・属攻・速度アップ30%の効果 ※行動順影響は2ターン目",
+          "special_effect_id": "真・烈剣の構え"
+        }
+      ]
+    },
+    {
+      "character_id": "817222",
+      "character_name": "エアハルト",
+      "ability_name": "剣風双転",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "烈剣時かつブレイク中の敵がいる時：自身に",
+        "サポアビと装備性能による物攻アップの上限が",
+        "60%になる効果を付与",
+        "さらに、自身の物攻に属攻の60%を加算する",
+        "（装備ステータス含む/対象ステータス毎に最大値を適用）",
+        "風神時かつブレイク中の敵がいる時：自身に",
+        "サポアビと装備性能による属攻アップの上限が",
+        "60%になる効果を付与",
+        "さらに、自身の属攻に物攻の60%を加算する",
+        "（装備ステータス含む/対象ステータス毎に最大値を適用）"
+      ],
+      "raw_text_pre_enhance": [
+        "烈剣時かつブレイク中の敵がいる時：自身に",
+        "サポアビと装備性能による物攻アップの上限が",
+        "60%になる効果を付与",
+        "風神時かつブレイク中の敵がいる時：自身に",
+        "サポアビと装備性能による属攻アップの上限が",
+        "60%になる効果を付与"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "attack",
+          "target_source_type": "support",
+          "value": 60,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "attack",
+          "target_source_type": "support",
+          "value": 60,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "さらに、自身の物攻に属攻の60%を加算する （装備ステータス含む/対象ステータス毎に最大値を適用）",
+        "さらに、自身の属攻に物攻の60%を加算する （装備ステータス含む/対象ステータス毎に最大値を適用）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "烈剣時かつブレイク中の敵がいる時：自身に サポアビと装備性能による物攻アップの上限が 60%になる効果を付与"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "さらに、自身の物攻に属攻の60%を加算する （装備ステータス含む/対象ステータス毎に最大値を適用）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "風神時かつブレイク中の敵がいる時：自身に サポアビと装備性能による属攻アップの上限が 60%になる効果を付与"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "さらに、自身の属攻に物攻の60%を加算する （装備ステータス含む/対象ステータス毎に最大値を適用）"
+        }
+      ]
+    },
+    {
+      "character_id": "817222",
+      "character_name": "エアハルト",
+      "ability_name": "烈剣の神髄",
+      "source_type": "ultimate",
+      "cost": "後衛発動",
+      "raw_text": [
+        "【Lv.MAX】",
+        "自身のSP回復（回復量 最大SPの100%）し、BPを5回復",
+        "さらに、特殊効果”真・烈剣の構え”を付与",
+        "（9ターン/サポートアビリティとして付与）",
+        "200%発動時：さらに、特殊効果”気合”を付与（3ターン/ターンが長くなるよう上書き）し",
+        "特殊効果”不沈”を付与（3ターン）",
+        "真・烈剣の構え：物攻・属攻・速度アップ30%の効果",
+        "※行動順影響は2ターン目",
+        "気合：BPが減少しない（消耗時も含む/一部除く）",
+        "※ただし、ブーストする分のBPは貯まっている必要がある",
+        "※BP消費、BP消耗を条件にする効果は発揮される",
+        "不沈：HPが0になるダメージを受けてもHPが1残る効果（一部除く）"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "target_source_type": "support",
+          "value": 30,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "self"
+          ],
+          "special_effect_id": "真・烈剣の構え",
+          "special_stack": "no_stack"
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "target_source_type": "support",
+          "value": 30,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "self"
+          ],
+          "special_effect_id": "真・烈剣の構え",
+          "special_stack": "no_stack"
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "speed",
+          "target_source_type": "support",
+          "value": 30,
+          "cap_group": "buff_stat_speed",
+          "scopes": [
+            "self"
+          ],
+          "special_effect_id": "真・烈剣の構え",
+          "special_stack": "no_stack"
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "【Lv.MAX】",
+        "自身のSP回復（回復量 最大SPの100%）し、BPを5回復 さらに、特殊効果”真・烈剣の構え”を付与 （9ターン/サポートアビリティとして付与） 200%発動時:さらに、特殊効果”気合”を付与（3ターン/ターンが長くなるよう上書き）し 特殊効果”不沈”を付与（3ターン）"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "【Lv.MAX】"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身のSP回復（回復量 最大SPの100%）し、BPを5回復 さらに、特殊効果”真・烈剣の構え”を付与 （9ターン/サポートアビリティとして付与） 200%発動時:さらに、特殊効果”気合”を付与（3ターン/ターンが長くなるよう上書き）し 特殊効果”不沈”を付与（3ターン）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "物攻・属攻・速度アップ30%の効果 ※行動順影響は2ターン目 気合:BPが減少しない（消耗時も含む/一部除く） ※ただし、ブーストする分のBPは貯まっている必要がある ※BP消費、BP消耗を条件にする効果は発揮される 不沈:HPが0になるダメージを受けてもHPが1残る効果（一部除く）",
+          "special_effect_id": "真・烈剣の構え",
+          "target_source_type": "support"
+        }
+      ]
+    },
+    {
+      "character_id": "817222",
+      "character_name": "エアハルト",
+      "ability_name": "烈絶",
+      "source_type": "ex",
+      "cost": "回数：2",
+      "raw_text": [
+        "自身のBPを3回復し",
+        "特殊効果”烈絶”を付与（1回）",
+        "さらに、敵全体のシールドポイントを弱点に関係なく6削る",
+        "ただし、この効果ではブレイクできない",
+        "ブーストMAX時：シールドポイントを削る量が12になる",
+        "烈絶：使用する攻撃アビリティを3回発動する",
+        "（追加発動分はSP消費無し）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_condition": [
+        "【使用条件】ブレイク中の敵がいない時"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】2/3/4回"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "自身のBPを3回復し 特殊効果”烈絶”を付与（1回）",
+        "さらに、敵全体のシールドポイントを弱点に関係なく6削る ただし、この効果ではブレイクできない ブーストMAX時:シールドポイントを削る量が12になる",
+        "使用する攻撃アビリティを3回発動する （追加発動分はSP消費無し）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身のBPを3回復し 特殊効果”烈絶”を付与（1回）"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "さらに、敵全体のシールドポイントを弱点に関係なく6削る ただし、この効果ではブレイクできない ブーストMAX時:シールドポイントを削る量が12になる"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "使用する攻撃アビリティを3回発動する （追加発動分はSP消費無し）",
+          "special_effect_id": "烈絶"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "character_id": "814948",
       "character_name": "ロンドEx2",
       "ability_name": "トリプルエッジ",
@@ -120175,9 +121777,15 @@
       "source_type": "battle",
       "cost": "【消費SP 26】",
       "raw_text": [
+        "敵全体に物攻・属攻ダウン",
+        "20",
+        "%の効果を付与（",
+        "4",
+        "ターン）"
+      ],
+      "raw_text_pre_enhance": [
         "敵全体に物攻・属攻ダウン15%の効果を付与（2ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】ターン数3/4/5"
       ],
@@ -120187,7 +121795,7 @@
           "category": "stat",
           "unit": "%",
           "sub_category": "attack_physical",
-          "value": 15,
+          "value": 20,
           "cap_group": "debuff_stat_atk_phys",
           "scopes": [
             "enemy_all"
@@ -120198,7 +121806,7 @@
           "category": "stat",
           "unit": "%",
           "sub_category": "attack_elemental",
-          "value": 15,
+          "value": 20,
           "cap_group": "debuff_stat_atk_elem",
           "scopes": [
             "enemy_all"
@@ -120212,7 +121820,7 @@
           "scopes": [
             "enemy_all"
           ],
-          "text": "敵全体に物攻・属攻ダウン15%の効果を付与（2ターン）"
+          "text": "敵全体に物攻・属攻ダウン 20 %の効果を付与（ 4 ターン）"
         }
       ]
     },
@@ -120275,11 +121883,20 @@
       "source_type": "support",
       "cost": null,
       "raw_text": [
+        "味方",
+        "が敵をブレイクさせた時",
+        "ブレイクさせた敵に物防・",
+        "属攻",
+        "ダウン15%と",
+        "扇・",
+        "闇",
+        "耐性ダウン15%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [
         "自身が敵をブレイクさせた時",
         "ブレイクさせた敵に物防ダウン15%と",
         "扇耐性ダウン15%の効果を付与（2ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "debuff",
@@ -120295,6 +121912,18 @@
         },
         {
           "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 15,
+          "tag": "dark",
+          "cap_group": "debuff_resist_elem_dark",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
+        {
+          "role": "debuff",
           "category": "stat",
           "unit": "%",
           "sub_category": "defence_physical",
@@ -120303,22 +121932,33 @@
           "scopes": [
             "enemy_single"
           ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 15,
+          "cap_group": "debuff_stat_atk_elem",
+          "scopes": [
+            "enemy_single"
+          ]
         }
       ],
       "conditions": [],
       "unknown": [
-        "自身が敵をブレイクさせた時"
+        "味方 が敵をブレイクさせた時"
       ],
       "blocks": [
         {
           "scopes": [],
-          "text": "自身が敵をブレイクさせた時"
+          "text": "味方 が敵をブレイクさせた時"
         },
         {
           "scopes": [
             "enemy_single"
           ],
-          "text": "ブレイクさせた敵に物防ダウン15%と 扇耐性ダウン15%の効果を付与（2ターン）"
+          "text": "ブレイクさせた敵に物防・ 属攻 ダウン15%と 扇・ 闇 耐性ダウン15%の効果を付与（2ターン）"
         }
       ]
     },
@@ -143243,23 +144883,49 @@
       "cost": "【消費SP 42】",
       "raw_text": [
         "敵単体に火属性攻撃（威力 260）",
+        "さらに、地震とバディに",
+        "物攻・属攻アップ20%の効果を付与（2ターン）",
         "行動完了後、後衛に移動する（交代として扱われない）"
       ],
-      "raw_text_pre_enhance": [],
+      "raw_text_pre_enhance": [
+        "敵単体に火属性攻撃（威力 260）",
+        "行動完了後、後衛に移動する（交代として扱われない）"
+      ],
       "raw_text_boost": [
         "【ブースト時】威力290/340/450"
       ],
-      "effects": [],
-      "conditions": [],
-      "unknown": [
-        "敵単体に火属性攻撃（威力 260） 行動完了後、後衛に移動する（交代として扱われない）"
+      "effects": [
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 20,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 20,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "enemy_single"
+          ]
+        }
       ],
+      "conditions": [],
+      "unknown": [],
       "blocks": [
         {
           "scopes": [
             "enemy_single"
           ],
-          "text": "敵単体に火属性攻撃（威力 260） 行動完了後、後衛に移動する（交代として扱われない）"
+          "text": "敵単体に火属性攻撃（威力 260） さらに、地震とバディに 物攻・属攻アップ20%の効果を付与（2ターン） 行動完了後、後衛に移動する（交代として扱われない）"
         }
       ]
     },
@@ -143355,23 +145021,36 @@
     {
       "character_id": "355673",
       "character_name": "リネット",
-      "ability_name": "強化効果延長(与)",
+      "ability_name": "暁天のステップ",
       "source_type": "support",
       "cost": null,
       "raw_text": [
         "自身が強化効果を付与した際の",
+        "効果を1ターン延長（重複不可）",
+        "ターン終了後：",
+        "自身の必殺技ゲージを200.0%増加"
+      ],
+      "raw_text_pre_enhance": [
+        "『強化効果延長(与)』",
+        "自身が強化効果を付与した際の",
         "効果を1ターン延長（重複不可）"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [],
       "conditions": [],
       "unknown": [
-        "自身が強化効果を付与した際の 効果を1ターン延長（重複不可）"
+        "自身が強化効果を付与した際の 効果を1ターン延長（重複不可） ターン終了後：",
+        "自身の必殺技ゲージを200.0%増加"
       ],
       "blocks": [
         {
           "scopes": [],
-          "text": "自身が強化効果を付与した際の 効果を1ターン延長（重複不可）"
+          "text": "自身が強化効果を付与した際の 効果を1ターン延長（重複不可） ターン終了後："
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身の必殺技ゲージを200.0%増加"
         }
       ]
     },
@@ -147892,23 +149571,28 @@
       "cost": "【消費SP 59】",
       "raw_text": [
         "敵単体に剣物理攻撃（威力 290）",
+        "火弱点を突ける（ダメージ計算は剣物理）",
+        "ブーストMAX時：さらに",
+        "特殊効果”剣脆点”と”火脆点”の効果を付与（各6回）"
+      ],
+      "raw_text_pre_enhance": [
+        "敵単体に剣物理攻撃（威力 290）",
         "火弱点を突ける（ダメージ計算は剣物理）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力320/380/500"
       ],
       "effects": [],
-      "conditions": [],
-      "unknown": [
-        "敵単体に剣物理攻撃（威力 290） 火弱点を突ける（ダメージ計算は剣物理）"
+      "conditions": [
+        "敵単体に剣物理攻撃（威力 290） 火弱点を突ける（ダメージ計算は剣物理） ブーストMAX時さらに 特殊効果”剣脆点”と”火脆点”の効果を付与（各6回）"
       ],
+      "unknown": [],
       "blocks": [
         {
           "scopes": [
             "enemy_single"
           ],
-          "text": "敵単体に剣物理攻撃（威力 290） 火弱点を突ける（ダメージ計算は剣物理）"
+          "text": "敵単体に剣物理攻撃（威力 290） 火弱点を突ける（ダメージ計算は剣物理） ブーストMAX時：さらに 特殊効果”剣脆点”と”火脆点”の効果を付与（各6回）"
         }
       ]
     },
@@ -148005,13 +149689,20 @@
     {
       "character_id": "355847",
       "character_name": "ターヒル",
-      "ability_name": "物攻強化Ⅲ",
+      "ability_name": "赤ターバンの剣士",
       "source_type": "support",
       "cost": null,
       "raw_text": [
+        "自身に物攻アップ20%の効果を付与",
+        "戦闘開始時：味方前後衛全体に",
+        "「たたかう」以外の物理攻撃（一部除く）時",
+        "火弱点を突ける効果を付与",
+        "（4ターン/ダメージ計算は各攻撃に準ずる）"
+      ],
+      "raw_text_pre_enhance": [
+        "『物攻強化Ⅲ』",
         "自身に物攻アップ20%の効果を付与"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "buff",
@@ -148025,7 +149716,9 @@
           ]
         }
       ],
-      "conditions": [],
+      "conditions": [
+        "戦闘開始時味方前後衛全体に 「たたかう」以外の物理攻撃（一部除く）時 火弱点を突ける効果を付与 （4ターン/ダメージ計算は各攻撃に準ずる）"
+      ],
       "unknown": [],
       "blocks": [
         {
@@ -148033,6 +149726,12 @@
             "self"
           ],
           "text": "自身に物攻アップ20%の効果を付与"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "戦闘開始時：味方前後衛全体に 「たたかう」以外の物理攻撃（一部除く）時 火弱点を突ける効果を付与 （4ターン/ダメージ計算は各攻撃に準ずる）"
         }
       ]
     },
@@ -164694,14 +166393,21 @@
     {
       "character_id": "356824",
       "character_name": "フェリーネ",
-      "ability_name": "ダブルバットアサルト",
+      "ability_name": "クワトロバットアサルト",
       "source_type": "battle",
       "cost": "【消費SP 41】",
       "raw_text": [
+        "敵全体に",
+        "4",
+        "回の短剣物理攻撃（威力 80）",
+        "弱点以外でもシールドポイントを削る",
+        "さらに、物攻ダウン10%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [
+        "『ダブルバットアサルト』",
         "敵全体に2回の短剣物理攻撃（威力 80）",
         "さらに、物攻ダウン10%の効果を付与（2ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力90/105/130"
       ],
@@ -164725,7 +166431,7 @@
           "scopes": [
             "enemy_all"
           ],
-          "text": "敵全体に2回の短剣物理攻撃（威力 80） さらに、物攻ダウン10%の効果を付与（2ターン）"
+          "text": "敵全体に 4 回の短剣物理攻撃（威力 80） 弱点以外でもシールドポイントを削る さらに、物攻ダウン10%の効果を付与（2ターン）"
         }
       ]
     },
@@ -164799,23 +166505,53 @@
     {
       "character_id": "356824",
       "character_name": "フェリーネ",
-      "ability_name": "機を見るに敏",
+      "ability_name": "弱り目に袋叩き",
       "source_type": "support",
       "cost": null,
       "raw_text": [
         "物攻ダウン状態の敵がいる時",
         "味方前衛全体に",
+        "物攻・会心アップ15%と",
+        "クリティカル時のダメージアップ",
+        "15%",
+        "の効果を付与"
+      ],
+      "raw_text_pre_enhance": [
+        "『機を見るに敏』",
+        "物攻ダウン状態の敵がいる時",
+        "味方前衛全体に",
         "クリティカル時のダメージアップ10%の効果を付与"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "buff",
           "category": "damage",
           "unit": "%",
           "sub_category": "critical",
-          "value": 10,
+          "value": 15,
           "cap_group": "buff_damage_crit",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 15,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_critical_rate",
+          "value": 15,
+          "cap_group": "buff_stat_atk_crit",
           "scopes": [
             "ally_front_all"
           ]
@@ -164834,7 +166570,7 @@
           "scopes": [
             "ally_front_all"
           ],
-          "text": "味方前衛全体に クリティカル時のダメージアップ10%の効果を付与"
+          "text": "味方前衛全体に 物攻・会心アップ15%と クリティカル時のダメージアップ 15% の効果を付与"
         }
       ]
     },
