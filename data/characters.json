@@ -1,5 +1,21 @@
 [
   {
+    "character_id": "822567",
+    "character_name": "狂騒の愚者",
+    "job": "商人",
+    "rarity": "5",
+    "elements": [],
+    "physicals": []
+  },
+  {
+    "character_id": "822566",
+    "character_name": "バルバラ",
+    "job": "剣士",
+    "rarity": "5",
+    "elements": [],
+    "physicals": []
+  },
+  {
     "character_id": "817223",
     "character_name": "プリムロゼEx2",
     "job": "神官",

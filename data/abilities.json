@@ -1,6 +1,1714 @@
 [
   [
     {
+      "character_id": "822567",
+      "character_name": "狂騒の愚者",
+      "ability_name": "砕滅の槍",
+      "source_type": "battle",
+      "cost": "【消費SP 50】",
+      "raw_text": [
+        "敵単体に4回の物理攻撃（威力 35）",
+        "その後、攻撃対象のシールドポイントが2以上かつ自身の“砕滅pt”が6以上の時：さらに",
+        "シールドポイントを弱点に関係なく3削る",
+        "ただし、この効果ではブレイクできず",
+        "アビリティ使用後、“砕減pt”を6消費"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力45/55/75"
+      ],
+      "effects": [],
+      "conditions": [
+        "その後、攻撃対象のシールドポイントが2以上かつ自身の“砕滅pt”が6以上の時さらに シールドポイントを弱点に関係なく3削る ただし、この効果ではブレイクできず アビリティ使用後、“砕減pt”を6消費"
+      ],
+      "unknown": [
+        "敵単体に4回の物理攻撃（威力 35）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に4回の物理攻撃（威力 35）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "その後、攻撃対象のシールドポイントが2以上かつ自身の“砕滅pt”が6以上の時：さらに シールドポイントを弱点に関係なく3削る ただし、この効果ではブレイクできず アビリティ使用後、“砕減pt”を6消費"
+        }
+      ]
+    },
+    {
+      "character_id": "822567",
+      "character_name": "狂騒の愚者",
+      "ability_name": "雨槍",
+      "source_type": "battle",
+      "cost": "【消費SP 54】",
+      "raw_text": [
+        "敵全体に3回の槍物理攻撃（威力55）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力65/75/100"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵全体に3回の槍物理攻撃（威力55）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に3回の槍物理攻撃（威力55）"
+        }
+      ]
+    },
+    {
+      "character_id": "822567",
+      "character_name": "狂騒の愚者",
+      "ability_name": "利己の儲け",
+      "source_type": "battle",
+      "cost": "【消費SP 38】",
+      "raw_text": [
+        "自身にHP自動回復（効力 110）と",
+        "BP回復量1アップの効果を付与（3ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】4/5/6ターン"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "自身にHP自動回復（効力 110）と BP回復量1アップの効果を付与（3ターン）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身にHP自動回復（効力 110）と BP回復量1アップの効果を付与（3ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "822567",
+      "character_name": "狂騒の愚者",
+      "ability_name": "五連乱槍",
+      "source_type": "battle",
+      "cost": "【消費SP 44】",
+      "raw_text": [
+        "ランダムなターゲットに5回の槍物理攻撃（威力 30）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力35/45/60"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "ランダムなターゲットに5回の槍物理攻撃（威力 30）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "random"
+          ],
+          "text": "ランダムなターゲットに5回の槍物理攻撃（威力 30）"
+        }
+      ]
+    },
+    {
+      "character_id": "822567",
+      "character_name": "狂騒の愚者",
+      "ability_name": "雨乞の槍",
+      "source_type": "battle",
+      "cost": "【消費SP 56】",
+      "raw_text": [
+        "使用した次のターンから1ターンに1回",
+        "味方の行動前（一部除く）に継続効果を発揮（継続2回）",
+        "継続効果：敵全体に槍物理攻撃（威力150）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】3/4/5回"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "使用した次のターンから1ターンに1回 味方の行動前（一部除く）に継続効果を発揮（継続2回）",
+        "継続効果：敵全体に槍物理攻撃（威力150）"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "使用した次のターンから1ターンに1回 味方の行動前（一部除く）に継続効果を発揮（継続2回）"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "継続効果：敵全体に槍物理攻撃（威力150）"
+        }
+      ]
+    },
+    {
+      "character_id": "822567",
+      "character_name": "狂騒の愚者",
+      "ability_name": "略奪者の猛り",
+      "source_type": "battle",
+      "cost": "【消費SP 21】",
+      "raw_text": [
+        "敵全体に物防ダウン15%と",
+        "槍耐性ダウン15%の効果を付与（2ターン）",
+        "さらに、自身に“砕滅pt”を5追加"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】3/4/5ターン"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 15,
+          "tag": "spear",
+          "cap_group": "debuff_resist_phys_spear",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 15,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "さらに、自身に“砕滅pt”を5追加"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に物防ダウン15%と 槍耐性ダウン15%の効果を付与（2ターン）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "さらに、自身に“砕滅pt”を5追加"
+        }
+      ]
+    },
+    {
+      "character_id": "822567",
+      "character_name": "狂騒の愚者",
+      "ability_name": "砕滅の業槍",
+      "source_type": "battle",
+      "cost": "【消費SP 70】",
+      "raw_text": [
+        "敵単体に5回の物理攻撃（威力 35）",
+        "その後、攻撃対象のシールドポイントが2以上かつ",
+        "自身の“砕滅ptが9以上の時：さらに",
+        "シールドポイントを弱点に関係なく6削る",
+        "ただし、この効果ではブレイクできず",
+        "アビリティ使用後、“砕滅ptを9消費"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力45/55/80"
+      ],
+      "effects": [],
+      "conditions": [
+        "自身の“砕滅ptが9以上の時さらに シールドポイントを弱点に関係なく6削る ただし、この効果ではブレイクできず アビリティ使用後、“砕滅ptを9消費"
+      ],
+      "unknown": [
+        "敵単体に5回の物理攻撃（威力 35） その後、攻撃対象のシールドポイントが2以上かつ"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に5回の物理攻撃（威力 35） その後、攻撃対象のシールドポイントが2以上かつ"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身の“砕滅ptが9以上の時：さらに シールドポイントを弱点に関係なく6削る ただし、この効果ではブレイクできず アビリティ使用後、“砕滅ptを9消費"
+        }
+      ]
+    },
+    {
+      "character_id": "822567",
+      "character_name": "狂騒の愚者",
+      "ability_name": "強奪の槍",
+      "source_type": "battle",
+      "cost": "【消費SP 64】",
+      "raw_text": [
+        "敵全体に槍物理攻撃（威力240）",
+        "この攻撃は物防・属防アップとダメージ減少効果を無視する",
+        "このアビリティのダメージ上限が100000アップ",
+        "この攻撃前に”砕滅ptが5以上の時：攻撃効果の前に",
+        "攻撃対象に物理耐性ダウン15%の効果を付与（2ターン）",
+        "さらに、敵全体に槍物理攻撃（威力240）",
+        "この攻撃は物防・属防アップとダメージ減少効果を無視する",
+        "ただし、アビリティ使用後、“砕滅ptを5消費",
+        "ブーストMAX時：各攻撃回数が2回になる"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力265/305/380"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 15,
+          "cap_group": "debuff_resist_phys_all",
+          "scopes": [
+            "enemy_all"
+          ]
+        }
+      ],
+      "conditions": [
+        "さらに、敵全体に槍物理攻撃（威力240） この攻撃は物防・属防アップとダメージ減少効果を無視する ただし、アビリティ使用後、“砕滅ptを5消費 ブーストMAX時各攻撃回数が2回になる"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に槍物理攻撃（威力240） この攻撃は物防・属防アップとダメージ減少効果を無視する このアビリティのダメージ上限が100000アップ この攻撃前に”砕滅ptが5以上の時：攻撃効果の前に 攻撃対象に物理耐性ダウン15%の効果を付与（2ターン）"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "さらに、敵全体に槍物理攻撃（威力240） この攻撃は物防・属防アップとダメージ減少効果を無視する ただし、アビリティ使用後、“砕滅ptを5消費 ブーストMAX時：各攻撃回数が2回になる"
+        }
+      ]
+    },
+    {
+      "character_id": "822567",
+      "character_name": "狂騒の愚者",
+      "ability_name": "拒絶の槍",
+      "source_type": "battle",
+      "cost": "【消費SP 240】",
+      "raw_text": [
+        "敵単体に4回の物理攻撃（威力160）",
+        "“砕滅ptが9以上の時：さらに同対象に4回の槍物理攻撃（威力 160）",
+        "ただし、アビリティ使用後、“砕滅ptを9消費",
+        "ブーストMAX時：各攻撃回数が6回になる"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力165/200/250"
+      ],
+      "effects": [],
+      "conditions": [
+        "敵単体に4回の物理攻撃（威力160） “砕滅ptが9以上の時さらに同対象に4回の槍物理攻撃（威力 160） ただし、アビリティ使用後、“砕滅ptを9消費 ブーストMAX時各攻撃回数が6回になる"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に4回の物理攻撃（威力160） “砕滅ptが9以上の時：さらに同対象に4回の槍物理攻撃（威力 160） ただし、アビリティ使用後、“砕滅ptを9消費 ブーストMAX時：各攻撃回数が6回になる"
+        }
+      ]
+    },
+    {
+      "character_id": "822567",
+      "character_name": "狂騒の愚者",
+      "ability_name": "荒れ狂う槍嵐",
+      "source_type": "battle",
+      "cost": "【消費SP 125】",
+      "raw_text": [
+        "敵全体に4回の槍物理攻撃（威力 25）",
+        "さらに、味方前衛全体に特殊効果”荒狂槍”を付与",
+        "（",
+        "6ターン",
+        "/ターンが長くなるよう上書き）",
+        "ブーストMAX時：特殊効果付与対象が味方前後衛全体になる",
+        "荒狂槍：行動後に狂騒の愚者が追撃する効果",
+        "（行動順での行動のみ/行動によらず1回のみ発動）",
+        "※”ブレイクさせた時”効果は起点の味方のみ発動",
+        "※このアビリティ使用後にも追撃※狂騒の愚者戦闘不能時に解除",
+        "追撃：敵全体に槍物理攻撃（威力 100）",
+        "この攻撃はダメージ減少効果を無視する",
+        "攻撃対象がブレイク中の時威力が2倍になり攻撃回数が2回になる",
+        "※この追撃でブレイクした場合も含む",
+        "※ブレイク復帰行動前の敵はブレイクできない"
+      ],
+      "raw_text_pre_enhance": [
+        "敵全体に4回の槍物理攻撃（威力 25）",
+        "さらに、味方前衛全体に特殊効果”荒狂槍”を付与",
+        "（3ターン/ターンが長くなるよう上書き）",
+        "荒狂槍：行動後に狂騒の愚者が追撃する効果",
+        "（行動順での行動のみ/行動によらず1回のみ発動）",
+        "※”ブレイクさせた時”効果は起点の味方のみ発動",
+        "※このアビリティ使用後にも追撃※狂騒の愚者戦闘不能時に解除",
+        "追撃：敵全体に槍物理攻撃（威力 100）",
+        "この攻撃はダメージ減少効果を無視する",
+        "攻撃対象がブレイク中の時威力が2倍になり攻撃回数が2回になる",
+        "※この追撃でブレイクした場合も含む",
+        "※ブレイク復帰行動前の敵はブレイクできない"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】威力35/45/60"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵全体に4回の槍物理攻撃（威力 25）",
+        "さらに、味方前衛全体に特殊効果”荒狂槍”を付与 （ 6ターン /ターンが長くなるよう上書き）",
+        "ブーストMAX時:特殊効果付与対象が味方前後衛全体になる",
+        "行動後に狂騒の愚者が追撃する効果 （行動順での行動のみ/行動によらず1回のみ発動） ※”ブレイクさせた時”効果は起点の味方のみ発動 ※このアビリティ使用後にも追撃※狂騒の愚者戦闘不能時に解除",
+        "追撃：敵全体に槍物理攻撃（威力 100） この攻撃はダメージ減少効果を無視する 攻撃対象がブレイク中の時威力が2倍になり攻撃回数が2回になる ※この追撃でブレイクした場合も含む ※ブレイク復帰行動前の敵はブレイクできない"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に4回の槍物理攻撃（威力 25）"
+        },
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "さらに、味方前衛全体に特殊効果”荒狂槍”を付与 （ 6ターン /ターンが長くなるよう上書き）"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "ブーストMAX時:特殊効果付与対象が味方前後衛全体になる"
+        },
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "行動後に狂騒の愚者が追撃する効果 （行動順での行動のみ/行動によらず1回のみ発動） ※”ブレイクさせた時”効果は起点の味方のみ発動 ※このアビリティ使用後にも追撃※狂騒の愚者戦闘不能時に解除",
+          "special_effect_id": "荒狂槍"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "追撃：敵全体に槍物理攻撃（威力 100） この攻撃はダメージ減少効果を無視する 攻撃対象がブレイク中の時威力が2倍になり攻撃回数が2回になる ※この追撃でブレイクした場合も含む ※ブレイク復帰行動前の敵はブレイクできない"
+        }
+      ]
+    },
+    {
+      "character_id": "822567",
+      "character_name": "狂騒の愚者",
+      "ability_name": "血染めの罪貨",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "自身の攻撃でダメージが発生し攻撃毎（一部除く）に",
+        "自身に“砕滅ptを1追加",
+        "砕滅pt：一部アビリティで消費することで効果が追加される"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "自身の攻撃でダメージが発生し攻撃毎（一部除く）に",
+        "自身に“砕滅ptを1追加 砕滅pt：一部アビリティで消費することで効果が追加される"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身の攻撃でダメージが発生し攻撃毎（一部除く）に"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に“砕滅ptを1追加 砕滅pt：一部アビリティで消費することで効果が追加される"
+        }
+      ]
+    },
+    {
+      "character_id": "822567",
+      "character_name": "狂騒の愚者",
+      "ability_name": "果てぬ羨望",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "自身に「たたかう」以外の物理攻撃（一部除く）時",
+        "斧・闇弱点を突ける効果を付与",
+        "（ダメージ計算は各攻撃に準ずる）"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "自身に「たたかう」以外の物理攻撃（一部除く）時 斧・闇弱点を突ける効果を付与 （ダメージ計算は各攻撃に準ずる）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に「たたかう」以外の物理攻撃（一部除く）時 斧・闇弱点を突ける効果を付与 （ダメージ計算は各攻撃に準ずる）"
+        }
+      ]
+    },
+    {
+      "character_id": "822567",
+      "character_name": "狂騒の愚者",
+      "ability_name": "蓄積せし憎悪",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "HP満タン時：敵全体に",
+        "付与されているパラメーターダウン効果の効果量 が2倍",
+        "（割合効果のみ/上限は超えない/最大HPダウンを除く）になる効果と",
+        "付与されている耐性ダウン効果の効果量が2倍",
+        "（割合効果のみ/上限は超えない）になる効果を付与",
+        "（重複不可/同系統の特殊効果にも適用される）"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [],
+      "conditions": [
+        "HP満タン時敵全体に 付与されているパラメーターダウン効果の効果量 が2倍 （割合効果のみ/上限は超えない/最大HPダウンを除く）になる効果と 付与されている耐性ダウン効果の効果量が2倍 （割合効果のみ/上限は超えない）になる効果を付与 （重複不可/同系統の特殊効果にも適用される）"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "HP満タン時：敵全体に 付与されているパラメーターダウン効果の効果量 が2倍 （割合効果のみ/上限は超えない/最大HPダウンを除く）になる効果と 付与されている耐性ダウン効果の効果量が2倍 （割合効果のみ/上限は超えない）になる効果を付与 （重複不可/同系統の特殊効果にも適用される）"
+        }
+      ]
+    },
+    {
+      "character_id": "822567",
+      "character_name": "狂騒の愚者",
+      "ability_name": "満ちる叛意",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "敵全体に物防ダウン",
+        "15%",
+        "と槍・斧・闇耐性ダウン",
+        "15%",
+        "と",
+        "バトアビによる物防ダウンと",
+        "槍・斧・闇耐性ダウンを受けた際の上限と",
+        "サポアビと装備性能による物防ダウンと",
+        "槍・斧・闇耐性ダウンを受けた際の上限が",
+        "60%",
+        "になる効果を付与",
+        "前衛時：物防ダウンと槍・斧・闇耐性ダウンの効果量が2倍になる"
+      ],
+      "raw_text_pre_enhance": [
+        "敵全体に物防ダウン10%と槍・斧・闇耐性ダウン10%と",
+        "バトアビによる物防ダウンと",
+        "槍・斧・闇耐性ダウンを受けた際の上限と",
+        "サポアビと装備性能による物防ダウンと",
+        "槍・斧・闇耐性ダウンを受けた際の上限が50%になる効果を付与",
+        "前衛時：物防ダウンと槍・斧・闇耐性ダウンの効果量が2倍になる"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "defence",
+          "target_source_type": "battle",
+          "value": 60,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "physical",
+          "target_source_type": "battle",
+          "value": 60,
+          "tag": "spear",
+          "cap_group": "debuff_resist_phys_spear",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "physical",
+          "target_source_type": "battle",
+          "value": 60,
+          "tag": "axe",
+          "cap_group": "debuff_resist_phys_axe",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "elemental",
+          "target_source_type": "battle",
+          "value": 60,
+          "tag": "dark",
+          "cap_group": "debuff_resist_elem_dark",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "defence",
+          "target_source_type": "support",
+          "value": 60,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "physical",
+          "target_source_type": "support",
+          "value": 60,
+          "tag": "spear",
+          "cap_group": "debuff_resist_phys_spear",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "physical",
+          "target_source_type": "support",
+          "value": 60,
+          "tag": "axe",
+          "cap_group": "debuff_resist_phys_axe",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "elemental",
+          "target_source_type": "support",
+          "value": 60,
+          "tag": "dark",
+          "cap_group": "debuff_resist_elem_dark",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 15,
+          "tag": "spear",
+          "cap_group": "debuff_resist_phys_spear",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 15,
+          "tag": "axe",
+          "cap_group": "debuff_resist_phys_axe",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 15,
+          "tag": "dark",
+          "cap_group": "debuff_resist_elem_dark",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 15,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に物防ダウン 15% と槍・斧・闇耐性ダウン 15% と バトアビによる物防ダウンと 槍・斧・闇耐性ダウンを受けた際の上限と サポアビと装備性能による物防ダウンと 槍・斧・闇耐性ダウンを受けた際の上限が 60% になる効果を付与 前衛時：物防ダウンと槍・斧・闇耐性ダウンの効果量が2倍になる"
+        }
+      ]
+    },
+    {
+      "character_id": "822567",
+      "character_name": "狂騒の愚者",
+      "ability_name": "紳商伯の哄笑",
+      "source_type": "ultimate",
+      "cost": "後衛発動",
+      "raw_text": [
+        "【Lv.MAX】",
+        "ターン中、素早く行動し",
+        "敵全体に物攻・物防・属攻・属防・速度ダウン15%の効果を付与（4ターン）",
+        "「槍・斧物理」「闇属性」いずれかの攻撃を受けた時",
+        "受けるダメージの上限アップ（効果量 100000）の効果を付与",
+        "（4ターン/ターンが長くなるよう上書き）",
+        "さらに、自身のBPを5回復し",
+        "威力アップ150%の効果を付与",
+        "（4ターン/ターン延長不可/同系統の効果重複不可）",
+        "200%発動時：加えて、味方前後衛全体にダメージ上限アップ（効果量 100000）の効果を付与（4ターン）",
+        "※行動順影響は2ターン目"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 15,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 15,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 15,
+          "cap_group": "debuff_stat_atk_phys",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 15,
+          "cap_group": "debuff_stat_atk_elem",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "speed",
+          "value": 15,
+          "cap_group": "debuff_stat_speed",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "power",
+          "unit": "%",
+          "target_source_type": "battle",
+          "value": 150,
+          "cap_group": "power_up",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 100000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "ally_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "【Lv.MAX】 ターン中、素早く行動し"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "【Lv.MAX】 ターン中、素早く行動し"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に物攻・物防・属攻・属防・速度ダウン15%の効果を付与（4ターン） 「槍・斧物理」「闇属性」いずれかの攻撃を受けた時 受けるダメージの上限アップ（効果量 100000）の効果を付与 （4ターン/ターンが長くなるよう上書き）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "さらに、自身のBPを5回復し 威力アップ150%の効果を付与 （4ターン/ターン延長不可/同系統の効果重複不可）"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "200%発動時：加えて、味方前後衛全体にダメージ上限アップ（効果量 100000）の効果を付与（4ターン） ※行動順影響は2ターン目"
+        }
+      ]
+    },
+    {
+      "character_id": "822567",
+      "character_name": "狂騒の愚者",
+      "ability_name": "破滅の死槍",
+      "source_type": "ex",
+      "cost": "回数：1",
+      "raw_text": [
+        "敵全体に3回の槍物理攻撃（威力 110）",
+        "ブレイク中の敵がいる時：さらに同対象に3回の槍物理攻撃（威力 110）",
+        "“砕滅ptが9以上の時：さらに",
+        "同対象に3回の槍物理攻撃（威力 110）",
+        "ブレイク中の敵に特殊効果”ブレイクターン延長”を付与",
+        "ただし、アビリティ使用後、“砕滅pt”を9消費",
+        "※このアビリティでブレイクした場合も含む",
+        "ブレイクターン延長：ブレイクターンが1ターン延長される",
+        "（重複不可/ブレイク復帰時に解除）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_condition": [
+        "【使用条件】なし"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】威力120/135/160"
+      ],
+      "effects": [],
+      "conditions": [
+        "敵全体に3回の槍物理攻撃（威力 110） ブレイク中の敵がいる時さらに同対象に3回の槍物理攻撃（威力 110） “砕滅ptが9以上の時さらに 同対象に3回の槍物理攻撃（威力 110）"
+      ],
+      "unknown": [
+        "ブレイク中の敵に特殊効果”ブレイクターン延長”を付与 ただし、アビリティ使用後、“砕滅pt”を9消費 ※このアビリティでブレイクした場合も含む",
+        "ブレイクターンが1ターン延長される （重複不可/ブレイク復帰時に解除）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に3回の槍物理攻撃（威力 110） ブレイク中の敵がいる時：さらに同対象に3回の槍物理攻撃（威力 110） “砕滅ptが9以上の時：さらに 同対象に3回の槍物理攻撃（威力 110）"
+        },
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "ブレイク中の敵に特殊効果”ブレイクターン延長”を付与 ただし、アビリティ使用後、“砕滅pt”を9消費 ※このアビリティでブレイクした場合も含む"
+        },
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "ブレイクターンが1ターン延長される （重複不可/ブレイク復帰時に解除）",
+          "special_effect_id": "ブレイクターン延長"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "character_id": "822566",
+      "character_name": "バルバラ",
+      "ability_name": "ニ連斬",
+      "source_type": "battle",
+      "cost": "【消費SP 26】",
+      "raw_text": [
+        "敵単体に2回の剣物理攻撃（威力90）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力105/125/180"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵単体に2回の剣物理攻撃（威力90）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に2回の剣物理攻撃（威力90）"
+        }
+      ]
+    },
+    {
+      "character_id": "822566",
+      "character_name": "バルバラ",
+      "ability_name": "熾返の構え",
+      "source_type": "battle",
+      "cost": "【消費SP 48】",
+      "raw_text": [
+        "自身に物理・属性攻撃に対して反撃する効果を付与（3ターン）",
+        "反撃：対象に1回ずつ剣・槍物理攻撃（威力 75）",
+        "さらに、剣・槍耐性ダウン15%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】4/5/6ターン"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 15,
+          "tag": "sword",
+          "cap_group": "debuff_resist_phys_sword",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 15,
+          "tag": "spear",
+          "cap_group": "debuff_resist_phys_spear",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に物理・属性攻撃に対して反撃する効果を付与（3ターン） 反撃：対象に1回ずつ剣・槍物理攻撃（威力 75） さらに、剣・槍耐性ダウン15%の効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "822566",
+      "character_name": "バルバラ",
+      "ability_name": "ニ連突撃",
+      "source_type": "battle",
+      "cost": "【消費SP 28】",
+      "raw_text": [
+        "敵全体に2回の槍物理攻撃（威力70）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力80/100/120"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵全体に2回の槍物理攻撃（威力70）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に2回の槍物理攻撃（威力70）"
+        }
+      ]
+    },
+    {
+      "character_id": "822566",
+      "character_name": "バルバラ",
+      "ability_name": "熾閃突き",
+      "source_type": "battle",
+      "cost": "【消費SP 52】",
+      "raw_text": [
+        "敵単体に3回の槍物理攻撃（威力 85）",
+        "この攻撃は対多段シールドロックを無視する",
+        "熾烈状態ではない時：攻撃回数が6回になる",
+        "※対多段シールドロック：敵の1回の行動によって受ける",
+        "シールドダメージを一定以上は受けなくなる"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力95/110/140"
+      ],
+      "effects": [],
+      "conditions": [
+        "敵単体に3回の槍物理攻撃（威力 85） この攻撃は対多段シールドロックを無視する 熾烈状態ではない時攻撃回数が6回になる ※対多段シールドロック敵の1回の行動によって受ける シールドダメージを一定以上は受けなくなる"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に3回の槍物理攻撃（威力 85） この攻撃は対多段シールドロックを無視する 熾烈状態ではない時：攻撃回数が6回になる ※対多段シールドロック：敵の1回の行動によって受ける シールドダメージを一定以上は受けなくなる"
+        }
+      ]
+    },
+    {
+      "character_id": "822566",
+      "character_name": "バルバラ",
+      "ability_name": "壊進乱撃",
+      "source_type": "battle",
+      "cost": "【消費SP 60】",
+      "raw_text": [
+        "ランダムなターゲットに3回の槍物理攻撃（威力 85）",
+        "弱点以外でもシールドポイントを削る"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力95/110/140"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "ランダムなターゲットに3回の槍物理攻撃（威力 85） 弱点以外でもシールドポイントを削る"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "random"
+          ],
+          "text": "ランダムなターゲットに3回の槍物理攻撃（威力 85） 弱点以外でもシールドポイントを削る"
+        }
+      ]
+    },
+    {
+      "character_id": "822566",
+      "character_name": "バルバラ",
+      "ability_name": "不撓のオーラ",
+      "source_type": "battle",
+      "cost": "【消費SP 16】",
+      "raw_text": [
+        "味方前衛全体に特殊効果”不撓”を付与（2ターン）",
+        "ブーストMAX時：前後衛全体化",
+        "不撓：アビリティが使用できなくなる効果を無視し",
+        "前衛時に敵からの強制交代を無効にする",
+        "※バディが強制交代させられ場合は行動不可"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】3/4/5ターン"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "味方前衛全体に特殊効果”不撓”を付与（2ターン） ブーストMAX時:前後衛全体化",
+        "アビリティが使用できなくなる効果を無視し 前衛時に敵からの強制交代を無効にする ※バディが強制交代させられ場合は行動不可"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体に特殊効果”不撓”を付与（2ターン） ブーストMAX時:前後衛全体化"
+        },
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "アビリティが使用できなくなる効果を無視し 前衛時に敵からの強制交代を無効にする ※バディが強制交代させられ場合は行動不可",
+          "special_effect_id": "不撓"
+        }
+      ]
+    },
+    {
+      "character_id": "822566",
+      "character_name": "バルバラ",
+      "ability_name": "剣槍の熾勢",
+      "source_type": "battle",
+      "cost": "【消費SP 112】",
+      "raw_text": [
+        "自身に物攻アップ50%と",
+        "剣・槍攻撃ダメージアップ50%とバトアビによる物攻アップと",
+        "剣・槍攻撃ダメージアップの上限が50%になる効果を付与（3ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】4/5/6ターン"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 50,
+          "tag": "sword",
+          "cap_group": "buff_damage_phys_sword",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 50,
+          "tag": "spear",
+          "cap_group": "buff_damage_phys_spear",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 50,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "attack",
+          "target_source_type": "battle",
+          "value": 50,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "physical",
+          "target_source_type": "battle",
+          "value": 50,
+          "tag": "sword",
+          "cap_group": "buff_damage_phys_sword",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "physical",
+          "target_source_type": "battle",
+          "value": 50,
+          "tag": "spear",
+          "cap_group": "buff_damage_phys_spear",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に物攻アップ50%と 剣・槍攻撃ダメージアップ50%とバトアビによる物攻アップと 剣・槍攻撃ダメージアップの上限が50%になる効果を付与（3ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "822566",
+      "character_name": "バルバラ",
+      "ability_name": "熾旋槍",
+      "source_type": "battle",
+      "cost": "【消費SP 77】",
+      "raw_text": [
+        "敵全体に4回の槍物理攻撃（威力 55）",
+        "攻撃を完全に回避する効果と攻撃を完全に防ぐ効果を無視する",
+        "ブーストMAX時：威力が2倍※威力値に反映"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力60/70/170"
+      ],
+      "effects": [],
+      "conditions": [
+        "敵全体に4回の槍物理攻撃（威力 55） 攻撃を完全に回避する効果と攻撃を完全に防ぐ効果を無視する ブーストMAX時威力が2倍※威力値に反映"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に4回の槍物理攻撃（威力 55） 攻撃を完全に回避する効果と攻撃を完全に防ぐ効果を無視する ブーストMAX時：威力が2倍※威力値に反映"
+        }
+      ]
+    },
+    {
+      "character_id": "822566",
+      "character_name": "バルバラ",
+      "ability_name": "熾迅剣",
+      "source_type": "battle",
+      "cost": "【消費SP 22】",
+      "raw_text": [
+        "敵単体に剣物理攻撃（威力 170）",
+        "ブーストMAX時：攻撃回数が3回になり",
+        "このアビリティのダメージ上限が200000アップ",
+        "物防・属防アップとダメージ減少効果を無視するようになる"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力200/240/350"
+      ],
+      "effects": [],
+      "conditions": [
+        "敵単体に剣物理攻撃（威力 170） ブーストMAX時攻撃回数が3回になり このアビリティのダメージ上限が200000アップ 物防・属防アップとダメージ減少効果を無視するようになる"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に剣物理攻撃（威力 170） ブーストMAX時：攻撃回数が3回になり このアビリティのダメージ上限が200000アップ 物防・属防アップとダメージ減少効果を無視するようになる"
+        }
+      ]
+    },
+    {
+      "character_id": "822566",
+      "character_name": "バルバラ",
+      "ability_name": "熾煉斬穿",
+      "source_type": "battle",
+      "cost": "【消費SP 40】",
+      "raw_text": [
+        "敵単体に",
+        "3回",
+        "の剣物理攻撃（威力 45）",
+        "さらに、",
+        "4回",
+        "の槍物理攻撃（威力 45）",
+        "※この攻撃ではシールドは減少しない"
+      ],
+      "raw_text_pre_enhance": [
+        "敵単体に2回の剣物理攻撃（威力 45）",
+        "さらに、3回の槍物理攻撃（威力 45）",
+        "※この攻撃ではシールドは減少しない"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】威力55/70/90"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵単体に 3回 の剣物理攻撃（威力 45） さらに、 4回 の槍物理攻撃（威力 45） ※この攻撃ではシールドは減少しない"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に 3回 の剣物理攻撃（威力 45） さらに、 4回 の槍物理攻撃（威力 45） ※この攻撃ではシールドは減少しない"
+        }
+      ]
+    },
+    {
+      "character_id": "822566",
+      "character_name": "バルバラ",
+      "ability_name": "疾実剛剣",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "自身に自身の物攻・物防・属攻・属防ダウンを無視する効果と",
+        "「たたかう」を含む物理攻撃（一部除く）時",
+        "剣・槍・雷・風弱点を突ける効果を付与",
+        "（ダメージ計算は各攻撃に準ずる）"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "自身に自身の物攻・物防・属攻・属防ダウンを無視する効果と 「たたかう」を含む物理攻撃（一部除く）時 剣・槍・雷・風弱点を突ける効果を付与 （ダメージ計算は各攻撃に準ずる）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に自身の物攻・物防・属攻・属防ダウンを無視する効果と 「たたかう」を含む物理攻撃（一部除く）時 剣・槍・雷・風弱点を突ける効果を付与 （ダメージ計算は各攻撃に準ずる）"
+        }
+      ]
+    },
+    {
+      "character_id": "822566",
+      "character_name": "バルバラ",
+      "ability_name": "底力：熾烈",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "（準備Turn:1/使用Turn:3）",
+        "コマンド選択時、自身に特殊効果”熾烈”を付与（2ターン）",
+        "熾烈：自身のコマンド選択が不能（交代は可能）になり",
+        "アビリティ枠1をブーストMAXで3回実行（SP・BP消費無し）",
+        "※アビリティ枠1が「設定なし」の場合は使用できない",
+        "※アビリティが使用できなくなる効果の影響を受けない"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "（準備Turn:1/使用Turn:3）",
+        "コマンド選択時、自身に特殊効果”熾烈”を付与（2ターン）",
+        "自身のコマンド選択が不能（交代は可能）になり アビリティ枠1をブーストMAXで3回実行（SP・BP消費無し） ※アビリティ枠1が「設定なし」の場合は使用できない ※アビリティが使用できなくなる効果の影響を受けない"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "（準備Turn:1/使用Turn:3）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "コマンド選択時、自身に特殊効果”熾烈”を付与（2ターン）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身のコマンド選択が不能（交代は可能）になり アビリティ枠1をブーストMAXで3回実行（SP・BP消費無し） ※アビリティ枠1が「設定なし」の場合は使用できない ※アビリティが使用できなくなる効果の影響を受けない",
+          "special_effect_id": "熾烈"
+        }
+      ]
+    },
+    {
+      "character_id": "822566",
+      "character_name": "バルバラ",
+      "ability_name": "猛勢の心胆",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "ブレイク中の敵がいる時",
+        "自身に物攻アップ30%と",
+        "剣・槍攻撃ダメージアップ30%と必ずクリティカルの効果を付与",
+        "自身が熾烈状態の時かつブレイク中の敵がいる時：",
+        "さらに、ダメージ上限アップ（効果量 100000）の効果を付与",
+        "※属性攻撃でクリティカルが発生するには",
+        "“属性攻撃でクリティカルが発生する効果”が必要"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 30,
+          "tag": "sword",
+          "cap_group": "buff_damage_phys_sword",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 30,
+          "tag": "spear",
+          "cap_group": "buff_damage_phys_spear",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 30,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "critical",
+          "unit": "",
+          "sub_category": "certain",
+          "target_source_type": "battle",
+          "value": 1,
+          "cap_group": "critical_certain",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 100000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "ブレイク中の敵がいる時"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "ブレイク中の敵がいる時"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に物攻アップ30%と 剣・槍攻撃ダメージアップ30%と必ずクリティカルの効果を付与 自身が熾烈状態の時かつブレイク中の敵がいる時： さらに、ダメージ上限アップ（効果量 100000）の効果を付与 ※属性攻撃でクリティカルが発生するには “属性攻撃でクリティカルが発生する効果”が必要"
+        }
+      ]
+    },
+    {
+      "character_id": "822566",
+      "character_name": "バルバラ",
+      "ability_name": "熾烈なる騎士",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "戦闘開始時：自身に",
+        "BP回復量",
+        "3",
+        "アップの効果を付与（2ターン）",
+        "自身が熾烈状態の時",
+        "自身に威力アップ",
+        "150%",
+        "の効果（同系統の効果重複不可）と",
+        "ダメージ上限アップ（効果量",
+        "200000",
+        "）の効果と",
+        "クリティカル時のダメージ倍率が",
+        "1.5倍になる効果（通常時は1.25倍）",
+        "と特殊効果”不撓”を付与",
+        "さらに、1ターンに1回",
+        "味方の行動前（一部除く）に継続効果を発揮",
+        "継続効果：全体に3回の物理攻撃（威力30）",
+        "不撓：アビリティが使用できなくなる効果を無視し",
+        "前衛時に敵からの強制交代を無効にする",
+        "※バディが強制交代させられた場合は行動不可"
+      ],
+      "raw_text_pre_enhance": [
+        "戦闘開始時：自身に",
+        "BP回復量2アップの効果を付与（2ターン）",
+        "自身が熾烈状態の時",
+        "自身に威力アップ100%の効果（同系統の効果重複不可）と",
+        "ダメージ上限アップ（効果量 100000）の効果と",
+        "特殊効果”不撓”を付与",
+        "不撓：アビリティが使用できなくなる効果を無視し",
+        "前衛時に敵からの強制交代を無効にする",
+        "※バディが強制交代させられた場合は行動不可"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "power",
+          "unit": "%",
+          "target_source_type": "battle",
+          "value": 150,
+          "cap_group": "power_up",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 200000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [
+        "戦闘開始時自身に BP回復量 3 アップの効果を付与（2ターン） 自身が熾烈状態の時"
+      ],
+      "unknown": [
+        "アビリティが使用できなくなる効果を無視し 前衛時に敵からの強制交代を無効にする ※バディが強制交代させられた場合は行動不可"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "戦闘開始時：自身に BP回復量 3 アップの効果を付与（2ターン） 自身が熾烈状態の時"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に威力アップ 150% の効果（同系統の効果重複不可）と ダメージ上限アップ（効果量 200000 ）の効果と クリティカル時のダメージ倍率が 1.5倍になる効果（通常時は1.25倍） と特殊効果”不撓”を付与 さらに、1ターンに1回 味方の行動前（一部除く）に継続効果を発揮 継続効果:全体に3回の物理攻撃（威力30）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "アビリティが使用できなくなる効果を無視し 前衛時に敵からの強制交代を無効にする ※バディが強制交代させられた場合は行動不可",
+          "special_effect_id": "不撓"
+        }
+      ]
+    },
+    {
+      "character_id": "822566",
+      "character_name": "バルバラ",
+      "ability_name": "熾開",
+      "source_type": "ultimate",
+      "cost": "後衛発動",
+      "raw_text": [
+        "【Lv.MAX】",
+        "自身に物攻アップ30%と",
+        "剣・槍攻撃ダメージアップ30%の効果を付与（4ターン）",
+        "200%発動時：さらに",
+        "自身にカウントダウンの効果を付与（カウント 2）",
+        "カウント終了時、敵全体に6回の剣物理攻撃（威力300）",
+        "この必殺技のダメージ上限が300000アップ"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 30,
+          "tag": "sword",
+          "cap_group": "buff_damage_phys_sword",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 30,
+          "tag": "spear",
+          "cap_group": "buff_damage_phys_spear",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 30,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "【Lv.MAX】",
+        "自身にカウントダウンの効果を付与（カウント 2）",
+        "カウント終了時、敵全体に6回の剣物理攻撃（威力300） この必殺技のダメージ上限が300000アップ"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "【Lv.MAX】"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に物攻アップ30%と 剣・槍攻撃ダメージアップ30%の効果を付与（4ターン） 200%発動時：さらに"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身にカウントダウンの効果を付与（カウント 2）"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "カウント終了時、敵全体に6回の剣物理攻撃（威力300） この必殺技のダメージ上限が300000アップ"
+        }
+      ]
+    },
+    {
+      "character_id": "822566",
+      "character_name": "バルバラ",
+      "ability_name": "熾限",
+      "source_type": "ex",
+      "cost": "回数：2",
+      "raw_text": [
+        "自身に威力アップ150%の効果",
+        "（2ターン/ターン延長不可/同系統の効果重複不可）と",
+        "特殊効果”熾限”を付与（2回",
+        "/ダメージによらず攻撃毎に消費/同系統・回数制の内最大値を適用）",
+        "さらに、自身を除く味方衛全体に特殊効果”熾限”を付与（1回",
+        "/ダメージによらず攻撃毎に消費/同系統・回数制の内最大値を適用）",
+        "その後、敵全体に剣物理攻撃",
+        "ブーストLvに応じて攻撃回数増加（威力 180/2回）",
+        "この行動前にブレイク中の敵がいる時：攻撃回数が4回増加し",
+        "自身への特殊効果”熾限”の回数が4回増加する",
+        "熾限：ダメージ上限アップ（効果量 500000）の効果",
+        "効果対象がバルバラの時、効果量が1.5倍になる"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_condition": [
+        "【使用条件】なし"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】威力205/245/300 3/4/5回"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "power",
+          "unit": "%",
+          "target_source_type": "battle",
+          "value": 150,
+          "cap_group": "power_up",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 500000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "self"
+          ],
+          "special_effect_id": "熾限",
+          "special_stack": "no_stack"
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "さらに、自身を除く味方衛全体に特殊効果”熾限”を付与（1回 /ダメージによらず攻撃毎に消費/同系統・回数制の内最大値を適用）",
+        "その後、敵全体に剣物理攻撃 ブーストLvに応じて攻撃回数増加（威力 180/2回） この行動前にブレイク中の敵がいる時:攻撃回数が4回増加し 自身への特殊効果”熾限”の回数が4回増加する"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に威力アップ150%の効果 （2ターン/ターン延長不可/同系統の効果重複不可）と 特殊効果”熾限”を付与（2回 /ダメージによらず攻撃毎に消費/同系統・回数制の内最大値を適用）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "さらに、自身を除く味方衛全体に特殊効果”熾限”を付与（1回 /ダメージによらず攻撃毎に消費/同系統・回数制の内最大値を適用）"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "その後、敵全体に剣物理攻撃 ブーストLvに応じて攻撃回数増加（威力 180/2回） この行動前にブレイク中の敵がいる時:攻撃回数が4回増加し 自身への特殊効果”熾限”の回数が4回増加する"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "ダメージ上限アップ（効果量 500000）の効果 効果対象がバルバラの時、効果量が1.5倍になる",
+          "special_effect_id": "熾限"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "character_id": "817223",
       "character_name": "プリムロゼEx2",
       "ability_name": "特大風塵魔法（単体）",
