@@ -1,5 +1,31 @@
 [
   {
+    "character_id": "833737",
+    "character_name": "ソニアEx",
+    "job": "薬師",
+    "rarity": "5",
+    "elements": [
+      "風"
+    ],
+    "physicals": [
+      "斧",
+      "短剣"
+    ]
+  },
+  {
+    "character_id": "833729",
+    "character_name": "バルジェロEx2",
+    "job": "商人",
+    "rarity": "5",
+    "elements": [
+      "風"
+    ],
+    "physicals": [
+      "槍",
+      "短剣"
+    ]
+  },
+  {
     "character_id": "822567",
     "character_name": "狂騒の愚者",
     "job": "商人",

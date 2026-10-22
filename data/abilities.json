@@ -1,6 +1,1648 @@
 [
   [
     {
+      "character_id": "833737",
+      "character_name": "ソニアEx",
+      "ability_name": "枝刈",
+      "source_type": "battle",
+      "cost": "【消費SP 7】",
+      "raw_text": [
+        "敵単体に斧物理攻撃（威力 140）",
+        "ブーストMAX時：攻撃回数が2回になる"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力170/210/300"
+      ],
+      "effects": [],
+      "conditions": [
+        "敵単体に斧物理攻撃（威力 140） ブーストMAX時攻撃回数が2回になる"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に斧物理攻撃（威力 140） ブーストMAX時：攻撃回数が2回になる"
+        }
+      ]
+    },
+    {
+      "character_id": "833737",
+      "character_name": "ソニアEx",
+      "ability_name": "破戦のリチェッタ",
+      "source_type": "battle",
+      "cost": "【消費SP 73】",
+      "raw_text": [
+        "単体に物攻・属攻ダウン30%の効果を付与（2ターン）",
+        "ブーストMAX時：さらに、斧・風弱点を付与（各6回）",
+        "弱点付与：付与方法によらず弱点毎に回数は合算（最大9回）",
+        "元からその弱点があればその弱点ダメージ倍率をプラス20%"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】3/4/5ターン"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 30,
+          "cap_group": "debuff_stat_atk_phys",
+          "scopes": []
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 30,
+          "cap_group": "debuff_stat_atk_elem",
+          "scopes": []
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "単体に物攻・属攻ダウン30%の効果を付与（2ターン） ブーストMAX時：さらに、斧・風弱点を付与（各6回） 弱点付与：付与方法によらず弱点毎に回数は合算（最大9回） 元からその弱点があればその弱点ダメージ倍率をプラス20%"
+        }
+      ]
+    },
+    {
+      "character_id": "833737",
+      "character_name": "ソニアEx",
+      "ability_name": "草薙ぎ",
+      "source_type": "battle",
+      "cost": "【消費SP 22】",
+      "raw_text": [
+        "敵全体に斧物理攻撃（威力120）",
+        "ブーストMAX時：攻撃回数が2回になる"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力145/185/220"
+      ],
+      "effects": [],
+      "conditions": [
+        "敵全体に斧物理攻撃（威力120） ブーストMAX時攻撃回数が2回になる"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に斧物理攻撃（威力120） ブーストMAX時：攻撃回数が2回になる"
+        }
+      ]
+    },
+    {
+      "character_id": "833737",
+      "character_name": "ソニアEx",
+      "ability_name": "健全化（前全）",
+      "source_type": "battle",
+      "cost": "【消費SP 30】",
+      "raw_text": [
+        "味方前衛全体の状態異常を回復",
+        "さらに、状態無効化の効果を付与（一部除く/1ターン）",
+        "ブーストMAX時：後衛全体化"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】2/3/4ターン"
+      ],
+      "effects": [],
+      "conditions": [
+        "味方前衛全体の状態異常を回復 さらに、状態無効化の効果を付与（一部除く/1ターン） ブーストMAX時後衛全体化"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体の状態異常を回復 さらに、状態無効化の効果を付与（一部除く/1ターン） ブーストMAX時：後衛全体化"
+        }
+      ]
+    },
+    {
+      "character_id": "833737",
+      "character_name": "ソニアEx",
+      "ability_name": "舞天撃",
+      "source_type": "battle",
+      "cost": "【消費SP 23】",
+      "raw_text": [
+        "単体に斧物理攻撃（威力 140）",
+        "さらに、自身にBP回復量1アップの効果を付与（1ターン）",
+        "ブーストMAX時：攻撃回数が2回になる"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力170/210/300"
+      ],
+      "effects": [],
+      "conditions": [
+        "さらに、自身にBP回復量1アップの効果を付与（1ターン） ブーストMAX時攻撃回数が2回になる"
+      ],
+      "unknown": [
+        "単体に斧物理攻撃（威力 140）"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "単体に斧物理攻撃（威力 140）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "さらに、自身にBP回復量1アップの効果を付与（1ターン） ブーストMAX時：攻撃回数が2回になる"
+        }
+      ]
+    },
+    {
+      "character_id": "833737",
+      "character_name": "ソニアEx",
+      "ability_name": "勇斧のサルタレロ",
+      "source_type": "battle",
+      "cost": "【消費SP 149】",
+      "raw_text": [
+        "ターン中、素早く行動し",
+        "味方前衛全体に物攻アップ20%と",
+        "斧攻撃ダメージアップ20%の効果を付与（2ターン）",
+        "さらに、使用したターンから1ターンに1回",
+        "ターン終了時に継続効果を発揮（継続1回/回数上書）",
+        "ただし、自身の他の継続効果を解除する",
+        "継続効果：味方前後衛全体のHP回復（効力90）",
+        "その直後、後衛に移動する（交代として扱われない）",
+        "※一部のターン終了時効果は",
+        "この交代によって隊列条件を満たしても効果を発揮しない"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】3/4/5ターン 2/3/4回"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 20,
+          "tag": "axe",
+          "cap_group": "buff_damage_phys_axe",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 20,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "ally_front_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "ターン中、素早く行動し",
+        "ただし、自身の他の継続効果を解除する",
+        "継続効果：味方前後衛全体のHP回復（効力90） その直後、後衛に移動する（交代として扱われない） ※一部のターン終了時効果は この交代によって隊列条件を満たしても効果を発揮しない"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "ターン中、素早く行動し"
+        },
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体に物攻アップ20%と 斧攻撃ダメージアップ20%の効果を付与（2ターン） さらに、使用したターンから1ターンに1回 ターン終了時に継続効果を発揮（継続1回/回数上書）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "ただし、自身の他の継続効果を解除する"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "継続効果：味方前後衛全体のHP回復（効力90） その直後、後衛に移動する（交代として扱われない） ※一部のターン終了時効果は この交代によって隊列条件を満たしても効果を発揮しない"
+        }
+      ]
+    },
+    {
+      "character_id": "833737",
+      "character_name": "ソニアEx",
+      "ability_name": "大鎌のタランテラ",
+      "source_type": "battle",
+      "cost": "【消費SP 163】",
+      "raw_text": [
+        "ターン中、素早く行動し使用したターンから1ターンに21回",
+        "ターン終了時に継続効果を発揮（継続 1回/回数上書）",
+        "ただし、自身の他の継続効果を解除する",
+        "継続効果：全体に4回の斧物理攻撃（威力50）",
+        "その直後、後衛に移動する（交代として扱われない）",
+        "※一部のターン終了時効果は",
+        "この交代によって隊列条件を満たしても効果を発揮しない",
+        "弱点以外でもシールドポイントを削る",
+        "※この攻撃ではブレイクできない",
+        "※このアビリティはサポアビ”全力瞬身の構え”の効果で再発動しない"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】2/3/4回"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "ターン中、素早く行動し使用したターンから1ターンに21回 ターン終了時に継続効果を発揮（継続 1回/回数上書）",
+        "ただし、自身の他の継続効果を解除する 継続効果：全体に4回の斧物理攻撃（威力50） その直後、後衛に移動する（交代として扱われない） ※一部のターン終了時効果は この交代によって隊列条件を満たしても効果を発揮しない 弱点以外でもシールドポイントを削る ※この攻撃ではブレイクできない ※このアビリティはサポアビ”全力瞬身の構え”の効果で再発動しない"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "ターン中、素早く行動し使用したターンから1ターンに21回 ターン終了時に継続効果を発揮（継続 1回/回数上書）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "ただし、自身の他の継続効果を解除する 継続効果：全体に4回の斧物理攻撃（威力50） その直後、後衛に移動する（交代として扱われない） ※一部のターン終了時効果は この交代によって隊列条件を満たしても効果を発揮しない 弱点以外でもシールドポイントを削る ※この攻撃ではブレイクできない ※このアビリティはサポアビ”全力瞬身の構え”の効果で再発動しない"
+        }
+      ]
+    },
+    {
+      "character_id": "833737",
+      "character_name": "ソニアEx",
+      "ability_name": "ヴィブラーレ・ウナーシャ",
+      "source_type": "battle",
+      "cost": "【消費SP 62】",
+      "raw_text": [
+        "単体に2回の斧物理攻撃（威力 150）",
+        "攻撃対象がブレイク中の時：",
+        "このアビリティのダメージ上限が300000アップする",
+        "※このアビリティでブレイクした場合も含む",
+        "ブーストMAX時：この攻撃は",
+        "物防・属防アップとダメージ減少効果を無視するようになる"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力165/195/260"
+      ],
+      "effects": [],
+      "conditions": [
+        "単体に2回の斧物理攻撃（威力 150） 攻撃対象がブレイク中の時 このアビリティのダメージ上限が300000アップする ※このアビリティでブレイクした場合も含む ブーストMAX時この攻撃は 物防・属防アップとダメージ減少効果を無視するようになる"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "単体に2回の斧物理攻撃（威力 150） 攻撃対象がブレイク中の時： このアビリティのダメージ上限が300000アップする ※このアビリティでブレイクした場合も含む ブーストMAX時：この攻撃は 物防・属防アップとダメージ減少効果を無視するようになる"
+        }
+      ]
+    },
+    {
+      "character_id": "833737",
+      "character_name": "ソニアEx",
+      "ability_name": "アバテレ・ウナアルベロ",
+      "source_type": "battle",
+      "cost": "【消費SP 53】",
+      "raw_text": [
+        "敵単体に斧物理攻撃（威力230）",
+        "さらに、中確率で物防・属防ダウン30%の効果を付与（1ターン）",
+        "攻撃対象がブレイク中の時：",
+        "このアビリティのダメージ上限が100000アップする",
+        "※このアビリティでブレイクした場合も含む",
+        "ブーストMAX時：攻撃回数が2回になり",
+        "物防・属防ダウンの効果は攻撃毎に中確率で付与するようになる"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力260/300/400"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 30,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_single"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 30,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": [
+            "enemy_single"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に斧物理攻撃（威力230） さらに、中確率で物防・属防ダウン30%の効果を付与（1ターン） 攻撃対象がブレイク中の時： このアビリティのダメージ上限が100000アップする ※このアビリティでブレイクした場合も含む ブーストMAX時：攻撃回数が2回になり 物防・属防ダウンの効果は攻撃毎に中確率で付与するようになる"
+        }
+      ]
+    },
+    {
+      "character_id": "833737",
+      "character_name": "ソニアEx",
+      "ability_name": "嵐断撃",
+      "source_type": "battle",
+      "cost": "【消費SP 25】",
+      "raw_text": [
+        "ランダムなターゲットに",
+        "4回",
+        "の斧物理攻撃（威力30）",
+        "ブーストMAX時：攻撃回数が",
+        "5回",
+        "になる"
+      ],
+      "raw_text_pre_enhance": [
+        "ランダムなターゲットに3回の斧物理攻撃（威力30）",
+        "ブーストMAX時：攻撃回数が4回になる"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】威力45/55/75"
+      ],
+      "effects": [],
+      "conditions": [
+        "ランダムなターゲットに 4回 の斧物理攻撃（威力30） ブーストMAX時攻撃回数が 5回 になる"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "random"
+          ],
+          "text": "ランダムなターゲットに 4回 の斧物理攻撃（威力30） ブーストMAX時：攻撃回数が 5回 になる"
+        }
+      ]
+    },
+    {
+      "character_id": "833737",
+      "character_name": "ソニアEx",
+      "ability_name": "祝祭のラコルト",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "自身に敵の弱点を突いた時のダメージアップ30%の効果と",
+        "「たたかう」を含む物理攻撃（一部除く）時",
+        "短剣・風弱点を突ける効果を付与",
+        "（ダメージ計算は各効果に準ずる）"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "weak",
+          "value": 30,
+          "cap_group": "buff_damage_weak",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に敵の弱点を突いた時のダメージアップ30%の効果と 「たたかう」を含む物理攻撃（一部除く）時 短剣・風弱点を突ける効果を付与 （ダメージ計算は各効果に準ずる）"
+        }
+      ]
+    },
+    {
+      "character_id": "833737",
+      "character_name": "ソニアEx",
+      "ability_name": "豊穣のサグラ",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "攻撃開始時にBP3消費する場合",
+        "味方前衛全体に物攻アップ30%の効果を付与（2ターン）",
+        "効果付与時に自身が後衛にいる時",
+        "さらに、自身に物攻アップ30%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 30,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 30,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "攻撃開始時にBP3消費する場合"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "攻撃開始時にBP3消費する場合"
+        },
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体に物攻アップ30%の効果を付与（2ターン） 効果付与時に自身が後衛にいる時"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "さらに、自身に物攻アップ30%の効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "833737",
+      "character_name": "ソニアEx",
+      "ability_name": "全力瞬身の構え",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "前衛に交代時かつBP3消費時：自身が使用する",
+        "攻撃アビリティを3回発動する（追加発動分はSP消費無し）",
+        "さらに、自身に威力アップ200%（同系統の効果重複不可）と必ずクリティカルの効果を付与",
+        "※属性攻撃でクリティカルが発生するには",
+        "“属性攻撃でクリティカルが発生する効果”が必要"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "critical",
+          "unit": "",
+          "sub_category": "certain",
+          "target_source_type": "battle",
+          "value": 1,
+          "cap_group": "critical_certain",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "power",
+          "unit": "%",
+          "target_source_type": "battle",
+          "value": 200,
+          "cap_group": "power_up",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [
+        "前衛に交代時かつBP3消費時自身が使用する 攻撃アビリティを3回発動する（追加発動分はSP消費無し）"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "前衛に交代時かつBP3消費時：自身が使用する 攻撃アビリティを3回発動する（追加発動分はSP消費無し）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "さらに、自身に威力アップ200%（同系統の効果重複不可）と必ずクリティカルの効果を付与 ※属性攻撃でクリティカルが発生するには “属性攻撃でクリティカルが発生する効果”が必要"
+        }
+      ]
+    },
+    {
+      "character_id": "833737",
+      "character_name": "ソニアEx",
+      "ability_name": "好機のアウグーリ",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "味方が敵をブレイクした時",
+        "味方前後衛全体にBPストックを1付与（最大3）",
+        "※ソニアExが行動不能時、このブレイク時効果は発動しない",
+        "ブレイク中の敵がいる時・自身に",
+        "ダメージ上限アップ（効果量 200000）の効果を付与",
+        "BP3消費時かつブレイク中の敵がいる時：",
+        "さらに、",
+        "「斧物理」で攻撃時",
+        "ダメージ上限アップ（効果量 300000）の効果を付与",
+        "BPストック：ブースト時、BPの代わりにBPストックを消費する",
+        "※BP現在値を参照する効果の対象外"
+      ],
+      "raw_text_pre_enhance": [
+        "味方が敵をブレイクした時",
+        "味方前後衛全体にBPストックを1付与（最大3）",
+        "※ソニアExが行動不能時、このブレイク時効果は発動しない",
+        "BPストック：ブースト時、BPの代わりにBPストックを消費する",
+        "※BP現在値を参照する効果の対象外"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 200000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "味方が敵をブレイクした時",
+        "味方前後衛全体にBPストックを1付与（最大3） ※ソニアExが行動不能時、このブレイク時効果は発動しない"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "味方が敵をブレイクした時"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "味方前後衛全体にBPストックを1付与（最大3） ※ソニアExが行動不能時、このブレイク時効果は発動しない"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "ブレイク中の敵がいる時・自身に ダメージ上限アップ（効果量 200000）の効果を付与 BP3消費時かつブレイク中の敵がいる時： さらに、 「斧物理」で攻撃時 ダメージ上限アップ（効果量 300000）の効果を付与 BPストック：ブースト時、BPの代わりにBPストックを消費する ※BP現在値を参照する効果の対象外"
+        }
+      ]
+    },
+    {
+      "character_id": "833737",
+      "character_name": "ソニアEx",
+      "ability_name": "ノッテビアンカ",
+      "source_type": "ultimate",
+      "cost": "超威発動",
+      "raw_text": [
+        "【Lv.MAX】",
+        "ターン中、素早く行動し",
+        "敵全体に3回の斧物理攻撃（威力185）",
+        "この必殺技のダメージ上限が250000アップ",
+        "ブレイク中の敵がいる時：",
+        "この必殺技のダメージ上限が750000アップになる",
+        "200%発動時：攻撃回数が6回になり",
+        "さらに、攻撃効果の前に自身に威力アップ200%の効果を付与",
+        "（4ターン/ターン延長不可/同系統の効果重複不可）し",
+        "味方前後衛全体にダメージ上限アップ（効果量 200000）と",
+        "ソニアの物防の60%を物攻に加算する効果と",
+        "ソニアの属防の50%を属攻に加算する効果を付与（4ターン）",
+        "（装備ステータス含む/対象ステータス毎に最大値を適用）"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "power",
+          "unit": "%",
+          "target_source_type": "battle",
+          "value": 200,
+          "cap_group": "power_up",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 200000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "ally_all"
+          ]
+        }
+      ],
+      "conditions": [
+        "敵全体に3回の斧物理攻撃（威力185） この必殺技のダメージ上限が250000アップ ブレイク中の敵がいる時 この必殺技のダメージ上限が750000アップになる 200%発動時攻撃回数が6回になり"
+      ],
+      "unknown": [
+        "【Lv.MAX】 ターン中、素早く行動し"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "【Lv.MAX】 ターン中、素早く行動し"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に3回の斧物理攻撃（威力185） この必殺技のダメージ上限が250000アップ ブレイク中の敵がいる時： この必殺技のダメージ上限が750000アップになる 200%発動時：攻撃回数が6回になり"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "さらに、攻撃効果の前に自身に威力アップ200%の効果を付与 （4ターン/ターン延長不可/同系統の効果重複不可）し"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "味方前後衛全体にダメージ上限アップ（効果量 200000）と ソニアの物防の60%を物攻に加算する効果と ソニアの属防の50%を属攻に加算する効果を付与（4ターン） （装備ステータス含む/対象ステータス毎に最大値を適用）"
+        }
+      ]
+    },
+    {
+      "character_id": "833737",
+      "character_name": "ソニアEx",
+      "ability_name": "ヴェンデミア",
+      "source_type": "ex",
+      "cost": "回数：",
+      "raw_text": [
+        "ターン中、素早く行動し",
+        "敵全体に物理耐性ダウン30%の効果を付与（4ターン）",
+        "さらに、使用したターンから1ターンに1回",
+        "ターン終了時に継続効果を発揮（継続 4回/回数上書）",
+        "ただし、自身の他の継続効果を解除する",
+        "継続効果：敵全体に2回の斧物理攻撃（威力180）",
+        "さらに、味方前衛全体のBPを2回復",
+        "その直後、後衛に移動する（交代として扱われない）",
+        "※一部のターン終了時効果は",
+        "この交代によって隊列条件を満たしても効果を発揮しない",
+        "※このアビリティはサポアビ“全力瞬身の構え”の効果で再発動しない"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_condition": [
+        "【使用条件】8ターン目以内"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】威力205/245/300"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 30,
+          "cap_group": "debuff_resist_phys_all",
+          "scopes": [
+            "enemy_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "ターン中、素早く行動し",
+        "ただし、自身の他の継続効果を解除する",
+        "継続効果：敵全体に2回の斧物理攻撃（威力180）",
+        "さらに、味方前衛全体のBPを2回復 その直後、後衛に移動する（交代として扱われない） ※一部のターン終了時効果は この交代によって隊列条件を満たしても効果を発揮しない ※このアビリティはサポアビ“全力瞬身の構え”の効果で再発動しない"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "ターン中、素早く行動し"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に物理耐性ダウン30%の効果を付与（4ターン） さらに、使用したターンから1ターンに1回 ターン終了時に継続効果を発揮（継続 4回/回数上書）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "ただし、自身の他の継続効果を解除する"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "継続効果：敵全体に2回の斧物理攻撃（威力180）"
+        },
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "さらに、味方前衛全体のBPを2回復 その直後、後衛に移動する（交代として扱われない） ※一部のターン終了時効果は この交代によって隊列条件を満たしても効果を発揮しない ※このアビリティはサポアビ“全力瞬身の構え”の効果で再発動しない"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "character_id": "833729",
+      "character_name": "バルジェロEx2",
+      "ability_name": "破守のスランシオ",
+      "source_type": "battle",
+      "cost": "【消費SP 42】",
+      "raw_text": [
+        "全体に2回の槍物理攻撃（威力80）",
+        "さらに、物防・属防ダウン10%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力95/115/130"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 10,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": []
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 10,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": []
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "全体に2回の槍物理攻撃（威力80） さらに、物防・属防ダウン10%の効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "833729",
+      "character_name": "バルジェロEx2",
+      "ability_name": "破耐のオラクル（全体）Ⅱ",
+      "source_type": "battle",
+      "cost": "【消費SP 72】",
+      "raw_text": [
+        "敵全体に物理・属性耐性ダウン15%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】3/4/5ターン"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 15,
+          "cap_group": "debuff_resist_phys_all",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 15,
+          "cap_group": "debuff_resist_elem_all",
+          "scopes": [
+            "enemy_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に物理・属性耐性ダウン15%の効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "833729",
+      "character_name": "バルジェロEx2",
+      "ability_name": "節制の促進（前全）Ⅲ",
+      "source_type": "battle",
+      "cost": "【消費SP 60】",
+      "raw_text": [
+        "味方前衛全体に消費SP量軽減30%の効果を付与",
+        "（2ターン/枠の最大値を適用）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】3/4/5ターン"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "味方前衛全体に消費SP量軽減30%の効果を付与 （2ターン/枠の最大値を適用）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体に消費SP量軽減30%の効果を付与 （2ターン/枠の最大値を適用）"
+        }
+      ]
+    },
+    {
+      "character_id": "833729",
+      "character_name": "バルジェロEx2",
+      "ability_name": "鼓吹のトラフィジェレ",
+      "source_type": "battle",
+      "cost": "【消費SP 106】",
+      "raw_text": [
+        "単体に3回の槍物理攻撃（威力65）",
+        "さらに、味方前衛全体に",
+        "物攻・属攻アップ30%の効果を付与（2ターン）",
+        "加えて、“金貨”が付与されている味方前後衛全体に",
+        "バトアビによる物攻・属攻アップの上限が",
+        "50%になる効果を付与（4ターン）",
+        "ただし、同対象の“金貨”を解除する"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力75/90/120"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 30,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 30,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "attack",
+          "target_source_type": "battle",
+          "value": 50,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "attack",
+          "target_source_type": "battle",
+          "value": 50,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "ally_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "単体に3回の槍物理攻撃（威力65）"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "単体に3回の槍物理攻撃（威力65）"
+        },
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "さらに、味方前衛全体に 物攻・属攻アップ30%の効果を付与（2ターン）"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "加えて、“金貨”が付与されている味方前後衛全体に バトアビによる物攻・属攻アップの上限が 50%になる効果を付与（4ターン） ただし、同対象の“金貨”を解除する"
+        }
+      ]
+    },
+    {
+      "character_id": "833729",
+      "character_name": "バルジェロEx2",
+      "ability_name": "両手突き・重出",
+      "source_type": "battle",
+      "cost": "【消費SP 70】",
+      "raw_text": [
+        "ランダムなターゲットに4回の槍物理攻撃（威力 45）",
+        "攻撃毎に物攻ダウン15%と",
+        "槍耐性ダウン15%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力55/65/90"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 15,
+          "tag": "spear",
+          "cap_group": "debuff_resist_phys_spear",
+          "scopes": [
+            "random"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 15,
+          "cap_group": "debuff_stat_atk_phys",
+          "scopes": [
+            "random"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "random"
+          ],
+          "text": "ランダムなターゲットに4回の槍物理攻撃（威力 45） 攻撃毎に物攻ダウン15%と 槍耐性ダウン15%の効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "833729",
+      "character_name": "バルジェロEx2",
+      "ability_name": "突入のアパンツァータ",
+      "source_type": "battle",
+      "cost": "【消費SP 87】",
+      "raw_text": [
+        "全体に2回の槍物理攻撃（威力 80）",
+        "さらに、槍・短剣・風弱点を付与（各6回）",
+        "加えて、“金貨”が付与されている味方前後衛全体に",
+        "敵の弱点を突いた時のダメージアップ30%と",
+        "物理耐性アップ30%の効果を付与（4ターン）",
+        "ただし、同対象の“金貨”を解除する",
+        "弱点付与：付与方法によらず弱点毎に回数は合算（最大9回）",
+        "元からその弱点があればその弱点ダメージ倍率をプラス20%"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力95/115/130"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "weak",
+          "value": 30,
+          "cap_group": "buff_damage_weak",
+          "scopes": [
+            "ally_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "全体に2回の槍物理攻撃（威力 80） さらに、槍・短剣・風弱点を付与（各6回）"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "全体に2回の槍物理攻撃（威力 80） さらに、槍・短剣・風弱点を付与（各6回）"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "加えて、“金貨”が付与されている味方前後衛全体に 敵の弱点を突いた時のダメージアップ30%と 物理耐性アップ30%の効果を付与（4ターン） ただし、同対象の“金貨”を解除する 弱点付与：付与方法によらず弱点毎に回数は合算（最大9回） 元からその弱点があればその弱点ダメージ倍率をプラス20%"
+        }
+      ]
+    },
+    {
+      "character_id": "833729",
+      "character_name": "バルジェロEx2",
+      "ability_name": "決壊のコルピレ",
+      "source_type": "battle",
+      "cost": "【消費SP 240】",
+      "raw_text": [
+        "敵単体に3回の槍物理攻撃（威力180）",
+        "この攻撃はダメージ減少効果を無視する",
+        "金貨状態の味方が3人以上の時：攻撃回数が9回になる",
+        "ブレイク中の敵がいる時：",
+        "このアビリティのダメージ上限が400000アップする",
+        "※このアビリティでブレイクした場合も含む"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力190/235/300"
+      ],
+      "effects": [],
+      "conditions": [
+        "敵単体に3回の槍物理攻撃（威力180） この攻撃はダメージ減少効果を無視する 金貨状態の味方が3人以上の時攻撃回数が9回になる ブレイク中の敵がいる時 このアビリティのダメージ上限が400000アップする ※このアビリティでブレイクした場合も含む"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に3回の槍物理攻撃（威力180） この攻撃はダメージ減少効果を無視する 金貨状態の味方が3人以上の時：攻撃回数が9回になる ブレイク中の敵がいる時： このアビリティのダメージ上限が400000アップする ※このアビリティでブレイクした場合も含む"
+        }
+      ]
+    },
+    {
+      "character_id": "833729",
+      "character_name": "バルジェロEx2",
+      "ability_name": "金は天下の回り物",
+      "source_type": "battle",
+      "cost": "【消費SP 88】",
+      "raw_text": [
+        "味方前後衛全体に物攻・属攻アップ15%の効果を付与（2ターン）",
+        "ブーストMAX時：金貨状態の味方の人数に応じて効果を追加",
+        "ただし、効果付与後に同対象の“金貨”を解除する",
+        "1以上：同対象にダメージ上限アップ（効果量 50000）の効果を付与（5ターン）",
+        "2以上：さらに、同対象に",
+        "物理・属性ダメージアップ15%の効果を付与（5ターン）",
+        "3以上：さらに、同対象にHP自動回復（効力 80）と",
+        "SP自動回復（回復量 対象の最大SPの5%）と",
+        "BP回復量1アップの効果を付与（5ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】3/4/5ターン"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 15,
+          "cap_group": "buff_damage_phys_all",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 15,
+          "cap_group": "buff_damage_elem_all",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 15,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 15,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 50000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "ally_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "味方前後衛全体に物攻・属攻アップ15%の効果を付与（2ターン） ブーストMAX時：金貨状態の味方の人数に応じて効果を追加 ただし、効果付与後に同対象の“金貨”を解除する 1以上：同対象にダメージ上限アップ（効果量 50000）の効果を付与（5ターン） 2以上：さらに、同対象に 物理・属性ダメージアップ15%の効果を付与（5ターン） 3以上：さらに、同対象にHP自動回復（効力 80）と SP自動回復（回復量 対象の最大SPの5%）と BP回復量1アップの効果を付与（5ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "833729",
+      "character_name": "バルジェロEx2",
+      "ability_name": "アルディート・フィエロ",
+      "source_type": "battle",
+      "cost": "【消費SP 18】",
+      "raw_text": [
+        "敵単体に3回の槍物理攻撃（威力10）",
+        "ブーストMAX時：自身を除く味方前後衛全体のSPをそれぞれ30消耗し",
+        "消耗した人数分、同対象に1回の物理攻撃（威力40）",
+        "を繰り返す（最大7回）",
+        "4人以上消耗できた時：さらに、自身のBPを3回復"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力20/30/40"
+      ],
+      "effects": [],
+      "conditions": [
+        "ブーストMAX時自身を除く味方前後衛全体のSPをそれぞれ30消耗し 消耗した人数分、同対象に1回の物理攻撃（威力40） を繰り返す（最大7回）",
+        "4人以上消耗できた時さらに、自身のBPを3回復"
+      ],
+      "unknown": [
+        "敵単体に3回の槍物理攻撃（威力10）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に3回の槍物理攻撃（威力10）"
+        },
+        {
+          "scopes": [
+            "self_exclude",
+            "ally_all"
+          ],
+          "text": "ブーストMAX時：自身を除く味方前後衛全体のSPをそれぞれ30消耗し 消耗した人数分、同対象に1回の物理攻撃（威力40） を繰り返す（最大7回）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "4人以上消耗できた時：さらに、自身のBPを3回復"
+        }
+      ]
+    },
+    {
+      "character_id": "833729",
+      "character_name": "バルジェロEx2",
+      "ability_name": "トゥッティペルウーノ",
+      "source_type": "battle",
+      "cost": "【消費SP 47】",
+      "raw_text": [
+        "単体に3回の槍物理攻撃（威力 80）",
+        "ブーストMAX時：自身を除く味方前後衛全体のHPとSPを",
+        "それぞれ対象の最大値の25%消耗し",
+        "消耗した人数分、同対象に1回の槍物理攻撃（威力160）",
+        "を繰り返す（最大7回）",
+        "さらに、消耗した人数が多いほどこのアビリティの威力アップ",
+        "最大2.4倍（7人消耗時）",
+        "4人以上消耗できた時：このアビリティのダメージ上限が800000アップ",
+        "※HPとSPのどちらも消耗できる時のみ消耗"
+      ],
+      "raw_text_pre_enhance": [
+        "単体に3回の槍物理攻撃（威力 80）",
+        "ブーストMAX時：自身を除く味方前後衛全体のHPとSPを",
+        "それぞれ対象の最大値の25%消耗し",
+        "消耗した人数分、同対象に1回の槍物理攻撃（威力160）",
+        "を繰り返す（最大7回）",
+        "さらに、消耗した人数が多いほどこのアビリティの威力アップ",
+        "最大2.4倍（7人消耗時）",
+        "※HPとSPのどちらも消耗できる時のみ消耗"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】威力100/120/160"
+      ],
+      "effects": [],
+      "conditions": [
+        "ブーストMAX時自身を除く味方前後衛全体のHPとSPを それぞれ対象の最大値の25%消耗し 消耗した人数分、同対象に1回の槍物理攻撃（威力160） を繰り返す（最大7回） さらに、消耗した人数が多いほどこのアビリティの威力アップ 最大2.4倍（7人消耗時） 4人以上消耗できた時このアビリティのダメージ上限が800000アップ ※HPとSPのどちらも消耗できる時のみ消耗"
+      ],
+      "unknown": [
+        "単体に3回の槍物理攻撃（威力 80）"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "単体に3回の槍物理攻撃（威力 80）"
+        },
+        {
+          "scopes": [
+            "self_exclude",
+            "ally_all"
+          ],
+          "text": "ブーストMAX時：自身を除く味方前後衛全体のHPとSPを それぞれ対象の最大値の25%消耗し 消耗した人数分、同対象に1回の槍物理攻撃（威力160） を繰り返す（最大7回） さらに、消耗した人数が多いほどこのアビリティの威力アップ 最大2.4倍（7人消耗時） 4人以上消耗できた時：このアビリティのダメージ上限が800000アップ ※HPとSPのどちらも消耗できる時のみ消耗"
+        }
+      ]
+    },
+    {
+      "character_id": "833729",
+      "character_name": "バルジェロEx2",
+      "ability_name": "働くものに対価を",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "自身を除く金貨が付与されていない味方前衛全体に行動後に追撃する効果を付与",
+        "（行動順での行動のみ/行動によらず1回のみ発動）",
+        "追撃：自身に特殊効果”金貨”を付与（バトアビとして付与）",
+        "金貨：SP自動回復（回復量 最大SPの3%）の効果"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "自身を除く金貨が付与されていない味方前衛全体に行動後に追撃する効果を付与 （行動順での行動のみ/行動によらず1回のみ発動）",
+        "追撃:自身に特殊効果”金貨”を付与（バトアビとして付与）",
+        "SP自動回復（回復量 最大SPの3%）の効果"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身を除く金貨が付与されていない味方前衛全体に行動後に追撃する効果を付与 （行動順での行動のみ/行動によらず1回のみ発動）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "追撃:自身に特殊効果”金貨”を付与（バトアビとして付与）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "SP自動回復（回復量 最大SPの3%）の効果",
+          "special_effect_id": "金貨"
+        }
+      ]
+    },
+    {
+      "character_id": "833729",
+      "character_name": "バルジェロEx2",
+      "ability_name": "バルジェロ商会の主",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "自身に物攻アップ30%と",
+        "槍攻撃ダメージアップ30%と",
+        "「たたかう」以外の物理攻撃（一部除く）時",
+        "短剣・風弱点を突ける効果を付与",
+        "（ダメージ計算は各攻撃に準ずる）",
+        "さらに、“金貨”が付与されている味方前後衛全体に",
+        "ダメージ減少30%（一部除く）の効果を付与",
+        "（同系統の効果重複不可）"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 30,
+          "tag": "spear",
+          "cap_group": "buff_damage_phys_spear",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 30,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "さらに、“金貨”が付与されている味方前後衛全体に ダメージ減少30%（一部除く）の効果を付与 （同系統の効果重複不可）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に物攻アップ30%と 槍攻撃ダメージアップ30%と 「たたかう」以外の物理攻撃（一部除く）時 短剣・風弱点を突ける効果を付与 （ダメージ計算は各攻撃に準ずる）"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "さらに、“金貨”が付与されている味方前後衛全体に ダメージ減少30%（一部除く）の効果を付与 （同系統の効果重複不可）"
+        }
+      ]
+    },
+    {
+      "character_id": "833729",
+      "character_name": "バルジェロEx2",
+      "ability_name": "充実の福利厚生",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "ターン開始時：味方前衛全体に",
+        "HPバリア（効果量 使用者の最大HPの10%/重複不可）と",
+        "SPストック（効果量 使用者の最大SPの10%/重複不可）を付与",
+        "効果対象に金貨が付与されている時：",
+        "HPバリアの効果量が30%になり",
+        "さらに、BPストックを1付与（最大3）",
+        "BPストック：ブースト時、BPの代わりにBPストックを消費する",
+        "※BP現在値を参照する効果の対象外"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [],
+      "conditions": [
+        "ターン開始時味方前衛全体に HPバリア（効果量 使用者の最大HPの10%/重複不可）と SPストック（効果量 使用者の最大SPの10%/重複不可）を付与 効果対象に金貨が付与されている時 HPバリアの効果量が30%になり さらに、BPストックを1付与（最大3） BPストックブースト時、BPの代わりにBPストックを消費する ※BP現在値を参照する効果の対象外"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "ターン開始時：味方前衛全体に HPバリア（効果量 使用者の最大HPの10%/重複不可）と SPストック（効果量 使用者の最大SPの10%/重複不可）を付与 効果対象に金貨が付与されている時： HPバリアの効果量が30%になり さらに、BPストックを1付与（最大3） BPストック：ブースト時、BPの代わりにBPストックを消費する ※BP現在値を参照する効果の対象外"
+        }
+      ]
+    },
+    {
+      "character_id": "833729",
+      "character_name": "バルジェロEx2",
+      "ability_name": "ウーノペルトウッティ",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "前衛時かつターン終了時：",
+        "自身のHPが20%以上ならば自身のHPを最大HPの10%消耗し",
+        "自身を除く味方前後衛全体のHP回復（回復量 対象の最大HPの50%）",
+        "さらに、自身のSPが10%以上ならば自身のSPを最大SPの5%消耗し",
+        "自身を除く味方前後衛全体のSP回復（回復量 対象の最大SPの10%）",
+        "加えて、自身のBPが1以上ならば自身のBPを1消耗し",
+        "自身を除く味方前後衛全体のBPを1回復",
+        "戦闘開始時：自身に",
+        "HPバリア（効果量 使用者の最大HPの50%/重複不可）と",
+        "SPストック（効果量 使用者の最大SPの20%/重複不可）を付与し",
+        "BPストックを3付与（最大3）",
+        "BPストック：ブースト時、BPの代わりにBPストックを消費する",
+        "※BP現在値を参照する効果の対象外"
+      ],
+      "raw_text_pre_enhance": [
+        "前衛時かつターン終了時：",
+        "自身のHPが20%以上ならば自身のHPを最大HPの10%消耗し",
+        "自身を除く味方前後衛全体のHP回復（回復量 対象の最大HPの50%）",
+        "さらに、自身のSPが10%以上ならば自身のSPを最大SPの5%消耗し",
+        "自身を除く味方前後衛全体のSP回復（回復量 対象の最大SPの10%）",
+        "加えて、自身のBPが1以上ならば自身のBPを1消耗し",
+        "自身を除く味方前後衛全体のBPを1回復",
+        "戦闘開始時：自身にBPストックを3付与（最大3）",
+        "BPストック：ブースト時、BPの代わりにBPストックを消費する",
+        "※BP現在値を参照する効果の対象外"
+      ],
+      "effects": [],
+      "conditions": [
+        "前衛時かつターン終了時",
+        "戦闘開始時自身に HPバリア（効果量 使用者の最大HPの50%/重複不可）と SPストック（効果量 使用者の最大SPの20%/重複不可）を付与し BPストックを3付与（最大3） BPストックブースト時、BPの代わりにBPストックを消費する ※BP現在値を参照する効果の対象外"
+      ],
+      "unknown": [
+        "自身のHPが20%以上ならば自身のHPを最大HPの10%消耗し",
+        "自身を除く味方前後衛全体のHP回復（回復量 対象の最大HPの50%）",
+        "さらに、自身のSPが10%以上ならば自身のSPを最大SPの5%消耗し",
+        "自身を除く味方前後衛全体のSP回復（回復量 対象の最大SPの10%）",
+        "加えて、自身のBPが1以上ならば自身のBPを1消耗し",
+        "自身を除く味方前後衛全体のBPを1回復"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "前衛時かつターン終了時："
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身のHPが20%以上ならば自身のHPを最大HPの10%消耗し"
+        },
+        {
+          "scopes": [
+            "self_exclude",
+            "ally_all"
+          ],
+          "text": "自身を除く味方前後衛全体のHP回復（回復量 対象の最大HPの50%）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "さらに、自身のSPが10%以上ならば自身のSPを最大SPの5%消耗し"
+        },
+        {
+          "scopes": [
+            "self_exclude",
+            "ally_all"
+          ],
+          "text": "自身を除く味方前後衛全体のSP回復（回復量 対象の最大SPの10%）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "加えて、自身のBPが1以上ならば自身のBPを1消耗し"
+        },
+        {
+          "scopes": [
+            "self_exclude",
+            "ally_all"
+          ],
+          "text": "自身を除く味方前後衛全体のBPを1回復"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "戦闘開始時：自身に HPバリア（効果量 使用者の最大HPの50%/重複不可）と SPストック（効果量 使用者の最大SPの20%/重複不可）を付与し BPストックを3付与（最大3） BPストック：ブースト時、BPの代わりにBPストックを消費する ※BP現在値を参照する効果の対象外"
+        }
+      ]
+    },
+    {
+      "character_id": "833729",
+      "character_name": "バルジェロEx2",
+      "ability_name": "実のある商談",
+      "source_type": "ultimate",
+      "cost": "後衛発動",
+      "raw_text": [
+        "【Lv.MAX】",
+        "ターン中、素早く行動し",
+        "自身を除く味方単体と自身に威力アップ150%の効果を付与",
+        "（自身 4ターン/他 3ターン/ターン延長不可/同系統の効果重複不可）",
+        "さらに、効果対象が商人の時、同対象に",
+        "ダメージ上限が1.5倍になる効果を付与",
+        "（自身 4ターン/他 3ターン/重複不可）"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "power",
+          "unit": "%",
+          "target_source_type": "battle",
+          "value": 150,
+          "cap_group": "power_up",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "【Lv.MAX】 ターン中、素早く行動し"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "【Lv.MAX】 ターン中、素早く行動し"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身を除く味方単体と自身に威力アップ150%の効果を付与 （自身 4ターン/他 3ターン/ターン延長不可/同系統の効果重複不可） さらに、効果対象が商人の時、同対象に ダメージ上限が1.5倍になる効果を付与 （自身 4ターン/他 3ターン/重複不可）"
+        }
+      ]
+    },
+    {
+      "character_id": "833729",
+      "character_name": "バルジェロEx2",
+      "ability_name": "ボンラボーロ",
+      "source_type": "ex",
+      "cost": "回数：2",
+      "raw_text": [
+        "ターン中、素早く行動し",
+        "味方前衛全体に特殊効果“気合”を付与（1ターン/ターンが長くなるよう上書き）",
+        "さらに、BPストックを1付与（最大3）し、必殺技ゲージを20.0%増加",
+        "このアビリティのブーストLVがLV.2/LV.4/LV.6（MAX）になる",
+        "※BPの消費量は1/3/5になる",
+        "BP5消費時：前後衛全体化し",
+        "加えて、ダメージ上限アップ（効果量 100000）の効果を付与（4ターン）",
+        "（このEXアビリティは使用可能回数の復活不可）",
+        "気合：BPが減少しない（消耗時も含む/一部除く）",
+        "※ただし、ブーストする分のBPは貯まっている必要がある",
+        "※BP消費、BP消耗を条件にする効果は発揮される",
+        "BPストック：ブースト時、BPの代わりにBPストックを消費する",
+        "※BP現在値を参照する効果の対象外"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_condition": [
+        "【使用条件】9ターン目以内"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】2/3/4ターン 2/3/3付与 30.0/50.0/100.0%増加"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 100000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "ally_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "ターン中、素早く行動し"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "ターン中、素早く行動し"
+        },
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体に特殊効果“気合”を付与（1ターン/ターンが長くなるよう上書き） さらに、BPストックを1付与（最大3）し、必殺技ゲージを20.0%増加 このアビリティのブーストLVがLV.2/LV.4/LV.6（MAX）になる ※BPの消費量は1/3/5になる BP5消費時：前後衛全体化し 加えて、ダメージ上限アップ（効果量 100000）の効果を付与（4ターン） （このEXアビリティは使用可能回数の復活不可） 気合：BPが減少しない（消耗時も含む/一部除く） ※ただし、ブーストする分のBPは貯まっている必要がある ※BP消費、BP消耗を条件にする効果は発揮される BPストック：ブースト時、BPの代わりにBPストックを消費する ※BP現在値を参照する効果の対象外"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "character_id": "822567",
       "character_name": "狂騒の愚者",
       "ability_name": "砕滅の槍",
@@ -72885,25 +74527,35 @@
       "source_type": "battle",
       "cost": "【消費SP 78】",
       "raw_text": [
+        "敵全体に",
+        "5回",
+        "の雷属性攻撃（威力 80）",
+        "攻撃対象が速度ダウン状態の時",
+        "さらに、",
+        "大確率",
+        "で麻痺・",
+        "感電",
+        "の状態異常を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [
         "敵全体に3回の雷属性攻撃（威力 80）",
         "攻撃対象が速度ダウン状態の時",
         "さらに、 中確率で麻痺の状態異常を付与（2ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力90/105/130"
       ],
       "effects": [],
       "conditions": [],
       "unknown": [
-        "敵全体に3回の雷属性攻撃（威力 80） 攻撃対象が速度ダウン状態の時 さらに、 中確率で麻痺の状態異常を付与（2ターン）"
+        "敵全体に 5回 の雷属性攻撃（威力 80） 攻撃対象が速度ダウン状態の時 さらに、 大確率 で麻痺・ 感電 の状態異常を付与（2ターン）"
       ],
       "blocks": [
         {
           "scopes": [
             "enemy_all"
           ],
-          "text": "敵全体に3回の雷属性攻撃（威力 80） 攻撃対象が速度ダウン状態の時 さらに、 中確率で麻痺の状態異常を付与（2ターン）"
+          "text": "敵全体に 5回 の雷属性攻撃（威力 80） 攻撃対象が速度ダウン状態の時 さらに、 大確率 で麻痺・ 感電 の状態異常を付与（2ターン）"
         }
       ]
     },
@@ -72986,12 +74638,22 @@
       "cost": null,
       "raw_text": [
         "（準備Turn：2/再使用Turn：4）",
+        "コマンド選択時、自身に特殊効果”ブレイブリーセカンド”を付与（",
+        "2ターン",
+        "）",
+        "ブレイブリーセカンド：自身に槍攻撃ダメージアップ30%と",
+        "ダメージ上限アップ",
+        "100000",
+        "と",
+        "必ずクリティカルの効果"
+      ],
+      "raw_text_pre_enhance": [
+        "（準備Turn：2/再使用Turn：4）",
         "コマンド選択時、自身に特殊効果”ブレイブリーセカンド”を付与（1ターン）",
         "ブレイブリーセカンド：自身に槍攻撃ダメージアップ30%と",
         "ダメージ上限アップ50000と",
         "必ずクリティカルの効果"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "buff",
@@ -73011,7 +74673,7 @@
       "conditions": [],
       "unknown": [
         "（準備Turn：2/再使用Turn：4）",
-        "コマンド選択時、自身に特殊効果”ブレイブリーセカンド”を付与（1ターン）"
+        "コマンド選択時、自身に特殊効果”ブレイブリーセカンド”を付与（ 2ターン ）"
       ],
       "blocks": [
         {
@@ -73022,13 +74684,13 @@
           "scopes": [
             "self"
           ],
-          "text": "コマンド選択時、自身に特殊効果”ブレイブリーセカンド”を付与（1ターン）"
+          "text": "コマンド選択時、自身に特殊効果”ブレイブリーセカンド”を付与（ 2ターン ）"
         },
         {
           "scopes": [
             "self"
           ],
-          "text": "自身に槍攻撃ダメージアップ30%と ダメージ上限アップ50000と 必ずクリティカルの効果",
+          "text": "自身に槍攻撃ダメージアップ30%と ダメージ上限アップ 100000 と 必ずクリティカルの効果",
           "special_effect_id": "ブレイブリーセカンド"
         }
       ]
@@ -73430,18 +75092,36 @@
       "cost": "【消費SP 74】",
       "raw_text": [
         "自身に特殊効果”不沈”を付与（3ターン）",
+        "さらに、BP回復量3アップと",
+        "ダメージ上限アップ（効果量 100000）",
+        "の効果を付与（3ターン）",
+        "不沈：HPが0になるダメージを受けてもHPが1残る効果（一部除く）",
+        "※戦闘中1回のみ使用可能"
+      ],
+      "raw_text_pre_enhance": [
+        "自身に特殊効果”不沈”を付与（3ターン）",
         "さらに、BP回復量3アップの効果を付与（3ターン）",
         "不沈：HPが0になるダメージを受けてもHPが1残る効果（一部除く）",
         "※戦闘中1回のみ使用可能"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】ターン数4/5/6"
       ],
-      "effects": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 100000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
       "conditions": [],
       "unknown": [
-        "自身に特殊効果”不沈”を付与（3ターン） さらに、BP回復量3アップの効果を付与（3ターン）",
         "HPが0になるダメージを受けてもHPが1残る効果（一部除く） ※戦闘中1回のみ使用可能"
       ],
       "blocks": [
@@ -73449,7 +75129,7 @@
           "scopes": [
             "self"
           ],
-          "text": "自身に特殊効果”不沈”を付与（3ターン） さらに、BP回復量3アップの効果を付与（3ターン）"
+          "text": "自身に特殊効果”不沈”を付与（3ターン） さらに、BP回復量3アップと ダメージ上限アップ（効果量 100000） の効果を付与（3ターン）"
         },
         {
           "scopes": [
@@ -73536,14 +75216,31 @@
     {
       "character_id": "578179",
       "character_name": "リングアベル",
-      "ability_name": "最大HP強化Ⅴ",
+      "ability_name": "記憶喪失の少年",
       "source_type": "support",
       "cost": null,
       "raw_text": [
+        "自身に最大HPアップ30%の効果を付与",
+        "HP30%以下時：自身に",
+        "ダメージ上限アップ（効果量 100000）の効果を付与"
+      ],
+      "raw_text_pre_enhance": [
+        "『最大HP強化Ⅴ』",
         "自身に最大HPアップ30%の効果を付与"
       ],
-      "raw_text_pre_enhance": [],
-      "effects": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 100000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
       "conditions": [],
       "unknown": [
         "自身に最大HPアップ30%の効果を付与"
@@ -73554,6 +75251,12 @@
             "self"
           ],
           "text": "自身に最大HPアップ30%の効果を付与"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "HP30%以下時：自身に ダメージ上限アップ（効果量 100000）の効果を付与"
         }
       ]
     },
@@ -74035,9 +75738,21 @@
         "使用したターンから3ターンに1回 ※最初の適用は2ターン後",
         "ターン終了時に",
         "味方前衛全体のHP回復（回復量 最大HPの100%）",
+        "SP回復（回復量 最大SPの50%）、BPを3回復（継続 1回）",
+        "さらに、HPバリア（効果量使用者の最大HPの20%",
+        "重複不可）",
+        "SPストック（効果量 使用者の最大SPの20％",
+        "重複不可）",
+        "BPストックを1付与（最大3）",
+        "BPストック：ブースト時、BPの代わりにBPストックを消費する",
+        "※BP現在値を参照する効果の対象外"
+      ],
+      "raw_text_pre_enhance": [
+        "使用したターンから3ターンに1回 ※最初の適用は2ターン後",
+        "ターン終了時に",
+        "味方前衛全体のHP回復（回復量 最大HPの100%）",
         "SP回復（回復量 最大SPの50%）、BPを3回復（継続 1回）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】継続2/3/4回"
       ],
@@ -74045,7 +75760,7 @@
       "conditions": [],
       "unknown": [
         "使用したターンから3ターンに1回 ※最初の適用は2ターン後 ターン終了時に",
-        "味方前衛全体のHP回復（回復量 最大HPの100%） SP回復（回復量 最大SPの50%）、BPを3回復（継続 1回）"
+        "味方前衛全体のHP回復（回復量 最大HPの100%） SP回復（回復量 最大SPの50%）、BPを3回復（継続 1回） さらに、HPバリア（効果量使用者の最大HPの20% 重複不可） SPストック（効果量 使用者の最大SPの20％ 重複不可） BPストックを1付与（最大3） BPストック：ブースト時、BPの代わりにBPストックを消費する ※BP現在値を参照する効果の対象外"
       ],
       "blocks": [
         {
@@ -74056,7 +75771,7 @@
           "scopes": [
             "ally_front_all"
           ],
-          "text": "味方前衛全体のHP回復（回復量 最大HPの100%） SP回復（回復量 最大SPの50%）、BPを3回復（継続 1回）"
+          "text": "味方前衛全体のHP回復（回復量 最大HPの100%） SP回復（回復量 最大SPの50%）、BPを3回復（継続 1回） さらに、HPバリア（効果量使用者の最大HPの20% 重複不可） SPストック（効果量 使用者の最大SPの20％ 重複不可） BPストックを1付与（最大3） BPストック：ブースト時、BPの代わりにBPストックを消費する ※BP現在値を参照する効果の対象外"
         }
       ]
     },
@@ -74167,20 +75882,27 @@
     {
       "character_id": "578178",
       "character_name": "グローリア",
-      "ability_name": "攻防一体(前全)",
+      "ability_name": "攻防一体(前全)Ⅲ",
       "source_type": "support",
       "cost": null,
       "raw_text": [
         "自身が攻撃時（反撃、必殺技など一部除く）",
+        "味方前衛全体に1度だけダメージ減少",
+        "50%",
+        "（一部除く）の効果を付与",
+        "（同系統の効果重複不可/重ねがけ時、回数増加無し）"
+      ],
+      "raw_text_pre_enhance": [
+        "『攻防一体(前全)』",
+        "自身が攻撃時（反撃、必殺技など一部除く）",
         "味方前衛全体に1度だけダメージ減少30%（一部除く）の効果を付与",
         "（同系統の効果重複不可/重ねがけ時、回数増加無し）"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [],
       "conditions": [],
       "unknown": [
         "自身が攻撃時（反撃、必殺技など一部除く）",
-        "味方前衛全体に1度だけダメージ減少30%（一部除く）の効果を付与 （同系統の効果重複不可/重ねがけ時、回数増加無し）"
+        "味方前衛全体に1度だけダメージ減少 50% （一部除く）の効果を付与 （同系統の効果重複不可/重ねがけ時、回数増加無し）"
       ],
       "blocks": [
         {
@@ -74191,7 +75913,7 @@
           "scopes": [
             "ally_front_all"
           ],
-          "text": "味方前衛全体に1度だけダメージ減少30%（一部除く）の効果を付与 （同系統の効果重複不可/重ねがけ時、回数増加無し）"
+          "text": "味方前衛全体に1度だけダメージ減少 50% （一部除く）の効果を付与 （同系統の効果重複不可/重ねがけ時、回数増加無し）"
         }
       ]
     },
@@ -127098,12 +128820,23 @@
       "source_type": "battle",
       "cost": "【消費SP 36】",
       "raw_text": [
+        "味方前衛全体に属防アップ",
+        "30%",
+        "の効果を付与（2ターン）",
+        "ブーストMAX時：",
+        "さらに",
+        "ダメージ上限アップ（効果量 50000）の効果を付与（6ターン）",
+        "加えて、属性攻撃（一部除く）を完全に防ぐ効果を付与（1回）",
+        "さらに防いだ時、光属性攻撃で反撃（威力",
+        "300",
+        "）"
+      ],
+      "raw_text_pre_enhance": [
         "味方前衛全体に属防アップ15%の効果を付与（2ターン）",
         "ブーストMAX時：",
         "同対象に属性攻撃（一部除く）を完全に防ぐ効果を付与（1回）",
         "さらに防いだ時、光属性攻撃で反撃（威力 200）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】ターン数3/4/5"
       ],
@@ -127113,8 +128846,19 @@
           "category": "stat",
           "unit": "%",
           "sub_category": "defence_elemental",
-          "value": 15,
+          "value": 30,
           "cap_group": "buff_stat_def_elem",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 50000,
+          "cap_group": "damage_cap",
           "scopes": [
             "ally_front_all"
           ]
@@ -127127,7 +128871,7 @@
           "scopes": [
             "ally_front_all"
           ],
-          "text": "味方前衛全体に属防アップ15%の効果を付与（2ターン） ブーストMAX時： 同対象に属性攻撃（一部除く）を完全に防ぐ効果を付与（1回） さらに防いだ時、光属性攻撃で反撃（威力 200）"
+          "text": "味方前衛全体に属防アップ 30% の効果を付与（2ターン） ブーストMAX時： さらに ダメージ上限アップ（効果量 50000）の効果を付与（6ターン） 加えて、属性攻撃（一部除く）を完全に防ぐ効果を付与（1回） さらに防いだ時、光属性攻撃で反撃（威力 300 ）"
         }
       ]
     },
@@ -127201,19 +128945,39 @@
     {
       "character_id": "384095",
       "character_name": "アニエス",
-      "ability_name": "余力",
+      "ability_name": "クリスタルの巫女",
       "source_type": "support",
       "cost": null,
       "raw_text": [
         "BP3消費してアビリティを使用時",
-        "自身にBP回復量1アップの効果を付与（2ターン）"
+        "自身にBP回復量",
+        "2",
+        "アップと",
+        "光属性ダメージアップ30%",
+        "の効果を付与（2ターン）"
       ],
-      "raw_text_pre_enhance": [],
-      "effects": [],
-      "conditions": [],
-      "unknown": [
+      "raw_text_pre_enhance": [
+        "『余力』",
         "BP3消費してアビリティを使用時",
         "自身にBP回復量1アップの効果を付与（2ターン）"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 30,
+          "tag": "light",
+          "cap_group": "buff_damage_elem_light",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "BP3消費してアビリティを使用時"
       ],
       "blocks": [
         {
@@ -127224,7 +128988,7 @@
           "scopes": [
             "self"
           ],
-          "text": "自身にBP回復量1アップの効果を付与（2ターン）"
+          "text": "自身にBP回復量 2 アップと 光属性ダメージアップ30% の効果を付与（2ターン）"
         }
       ]
     },
@@ -127650,13 +129414,31 @@
       "cost": "【消費SP 55】",
       "raw_text": [
         "敵単体に剣物理攻撃（威力 260）",
+        "さらに、自身に最大HPアップ30%の効果を付与（2ターン）",
+        "ブーストMAX時：さらに、自身に",
+        "HPバリアを付与（効果量 最大HPの50%/重複不可）し",
+        "ダメージ上限アップ（効果量 150000）の効果を付与（3ターン）"
+      ],
+      "raw_text_pre_enhance": [
+        "敵単体に剣物理攻撃（威力 260）",
         "さらに、自身に最大HPアップ30%の効果を付与（2ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力290/340/450"
       ],
-      "effects": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 150000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
       "conditions": [],
       "unknown": [
         "敵単体に剣物理攻撃（威力 260）",
@@ -127674,6 +129456,12 @@
             "self"
           ],
           "text": "さらに、自身に最大HPアップ30%の効果を付与（2ターン）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "ブーストMAX時：さらに、自身に HPバリアを付与（効果量 最大HPの50%/重複不可）し ダメージ上限アップ（効果量 150000）の効果を付与（3ターン）"
         }
       ]
     },
@@ -127738,23 +129526,31 @@
     {
       "character_id": "384094",
       "character_name": "イデア",
-      "ability_name": "魔力還元",
+      "ability_name": "公国元帥の一人娘",
       "source_type": "support",
       "cost": null,
       "raw_text": [
+        "受けたダメージの",
+        "20%",
+        "の",
+        "HP",
+        "・SP回復",
+        "（一部除く/同系統の効果重複不可）"
+      ],
+      "raw_text_pre_enhance": [
+        "『魔力還元』",
         "受けたダメージの3%のSP回復",
         "（一部除く/同系統の効果重複不可）"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [],
       "conditions": [],
       "unknown": [
-        "受けたダメージの3%のSP回復 （一部除く/同系統の効果重複不可）"
+        "受けたダメージの 20% の HP ・SP回復 （一部除く/同系統の効果重複不可）"
       ],
       "blocks": [
         {
           "scopes": [],
-          "text": "受けたダメージの3%のSP回復 （一部除く/同系統の効果重複不可）"
+          "text": "受けたダメージの 20% の HP ・SP回復 （一部除く/同系統の効果重複不可）"
         }
       ]
     },
@@ -128125,23 +129921,56 @@
       "source_type": "battle",
       "cost": "【消費SP 58】",
       "raw_text": [
+        "自身の物攻に速度の30%を加算する効果を付与（1ターン）",
+        "（装備ステータス含む",
+        "対象ステータス毎に最大値を適用）",
+        "その後、",
+        "敵単体に5回の短剣物理攻撃（威力 35）",
+        "ブーストMAX時：さらに",
+        "自身にカウントダウンの効果を付与（カウント1）",
+        "カウント終了時、敵単体に5回の短剣物理攻撃（威力80）",
+        "※カウント終了時の攻撃ではシールドは減少しない",
+        "※対象は選択しているターゲット"
+      ],
+      "raw_text_pre_enhance": [
         "敵単体に5回の短剣物理攻撃（威力 35）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力45/55/80"
       ],
       "effects": [],
-      "conditions": [],
+      "conditions": [
+        "敵単体に5回の短剣物理攻撃（威力 35） ブーストMAX時さらに"
+      ],
       "unknown": [
-        "敵単体に5回の短剣物理攻撃（威力 35）"
+        "自身の物攻に速度の30%を加算する効果を付与（1ターン） （装備ステータス含む 対象ステータス毎に最大値を適用） その後、",
+        "自身にカウントダウンの効果を付与（カウント1）",
+        "カウント終了時、敵単体に5回の短剣物理攻撃（威力80） ※カウント終了時の攻撃ではシールドは減少しない ※対象は選択しているターゲット"
       ],
       "blocks": [
         {
           "scopes": [
+            "self"
+          ],
+          "text": "自身の物攻に速度の30%を加算する効果を付与（1ターン） （装備ステータス含む 対象ステータス毎に最大値を適用） その後、"
+        },
+        {
+          "scopes": [
             "enemy_single"
           ],
-          "text": "敵単体に5回の短剣物理攻撃（威力 35）"
+          "text": "敵単体に5回の短剣物理攻撃（威力 35） ブーストMAX時：さらに"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身にカウントダウンの効果を付与（カウント1）"
+        },
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "カウント終了時、敵単体に5回の短剣物理攻撃（威力80） ※カウント終了時の攻撃ではシールドは減少しない ※対象は選択しているターゲット"
         }
       ]
     },
@@ -128229,29 +130058,45 @@
       "source_type": "support",
       "cost": null,
       "raw_text": [
+        "自身に攻撃（一部除く）を",
+        "50%",
+        "の確率で回避する効果を付与",
+        "このアビリティで回避成功時に",
+        "敵全体に「短剣物理」攻撃を受けた時",
+        "受けるダメージの上限アップ（効果量 50000）の効果を付与",
+        "（2ターン/ターンが長くなるよう上書）",
+        "さらに、敵全体に中確率で毒の状態異常を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [
         "自身に攻撃（一部除く）を30%の確率で回避する効果を付与",
         "このアビリティで回避成功時に",
         "敵全体に中確率で毒の状態異常を付与（2ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [],
       "conditions": [],
       "unknown": [
-        "自身に攻撃（一部除く）を30%の確率で回避する効果を付与 このアビリティで回避成功時に",
-        "敵全体に中確率で毒の状態異常を付与（2ターン）"
+        "自身に攻撃（一部除く）を 50% の確率で回避する効果を付与 このアビリティで回避成功時に",
+        "敵全体に「短剣物理」攻撃を受けた時 受けるダメージの上限アップ（効果量 50000）の効果を付与 （2ターン/ターンが長くなるよう上書）",
+        "さらに、敵全体に中確率で毒の状態異常を付与（2ターン）"
       ],
       "blocks": [
         {
           "scopes": [
             "self"
           ],
-          "text": "自身に攻撃（一部除く）を30%の確率で回避する効果を付与 このアビリティで回避成功時に"
+          "text": "自身に攻撃（一部除く）を 50% の確率で回避する効果を付与 このアビリティで回避成功時に"
         },
         {
           "scopes": [
             "enemy_all"
           ],
-          "text": "敵全体に中確率で毒の状態異常を付与（2ターン）"
+          "text": "敵全体に「短剣物理」攻撃を受けた時 受けるダメージの上限アップ（効果量 50000）の効果を付与 （2ターン/ターンが長くなるよう上書）"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "さらに、敵全体に中確率で毒の状態異常を付与（2ターン）"
         }
       ]
     },
@@ -128598,10 +130443,17 @@
       "cost": "【消費SP 56】",
       "raw_text": [
         "敵単体に雷属性攻撃（威力 230）し",
+        "属防ダウン15%と雷耐性ダウン15%の効果を付与（",
+        "4",
+        "ターン）",
+        "さらに、中確率で麻痺の状態異常を付与（2ターン）",
+        "ブーストMAX時：威力が1.5倍 ※威力値に反映"
+      ],
+      "raw_text_pre_enhance": [
+        "敵単体に雷属性攻撃（威力 230）し",
         "属防ダウン15%と雷耐性ダウン15%の効果を付与（2ターン）",
         "さらに、中確率で麻痺の状態異常を付与（2ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力260/300/400"
       ],
@@ -128637,7 +130489,7 @@
           "scopes": [
             "enemy_single"
           ],
-          "text": "敵単体に雷属性攻撃（威力 230）し 属防ダウン15%と雷耐性ダウン15%の効果を付与（2ターン） さらに、中確率で麻痺の状態異常を付与（2ターン）"
+          "text": "敵単体に雷属性攻撃（威力 230）し 属防ダウン15%と雷耐性ダウン15%の効果を付与（ 4 ターン） さらに、中確率で麻痺の状態異常を付与（2ターン） ブーストMAX時：威力が1.5倍 ※威力値に反映"
         }
       ]
     },
@@ -128702,21 +130554,54 @@
     {
       "character_id": "383171",
       "character_name": "エルヴィス",
-      "ability_name": "属攻強化Ⅲ",
+      "ability_name": "アスタリスクの探究者",
       "source_type": "support",
       "cost": null,
       "raw_text": [
+        "自身に属攻アップ",
+        "30%",
+        "の効果を付与",
+        "さらに、サポアビと装備性能による",
+        "属攻アップの上限が50%になる効果を付与",
+        "Eの手帳・Eの手帳I・Eの手帳IIのいずれかを装備中：自身に「雷属性」で攻撃時",
+        "ダメージ上限アップ（効果量 500000）と自身が使用する攻撃アビリティを2回発動する効果を付与",
+        "（追加発動分はSP消費無し）"
+      ],
+      "raw_text_pre_enhance": [
+        "『属攻強化Ⅲ』",
         "自身に属攻アップ20%の効果を付与"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "buff",
           "category": "stat",
           "unit": "%",
           "sub_category": "attack_elemental",
-          "value": 20,
+          "value": 30,
           "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "attack",
+          "target_source_type": "support",
+          "value": 50,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 500000,
+          "cap_group": "damage_cap",
           "scopes": [
             "self"
           ]
@@ -128729,7 +130614,13 @@
           "scopes": [
             "self"
           ],
-          "text": "自身に属攻アップ20%の効果を付与"
+          "text": "自身に属攻アップ 30% の効果を付与 さらに、サポアビと装備性能による 属攻アップの上限が50%になる効果を付与"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "Eの手帳・Eの手帳I・Eの手帳IIのいずれかを装備中：自身に「雷属性」で攻撃時 ダメージ上限アップ（効果量 500000）と自身が使用する攻撃アビリティを2回発動する効果を付与 （追加発動分はSP消費無し）"
         }
       ]
     },
@@ -158748,25 +160639,29 @@
       "source_type": "battle",
       "cost": "【消費SP 40】",
       "raw_text": [
+        "自身を除く味方",
+        "前衛全体",
+        "のSP回復（回復量 20）",
+        "行動完了後、後衛に移動する（交代として扱われない）"
+      ],
+      "raw_text_pre_enhance": [
         "自身を除く味方単体のSP回復（回復量 20）",
         "行動完了後、後衛に移動する（交代として扱われない）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】回復量40/60/80"
       ],
       "effects": [],
       "conditions": [],
       "unknown": [
-        "自身を除く味方単体のSP回復（回復量 20） 行動完了後、後衛に移動する（交代として扱われない）"
+        "自身を除く味方 前衛全体 のSP回復（回復量 20） 行動完了後、後衛に移動する（交代として扱われない）"
       ],
       "blocks": [
         {
           "scopes": [
-            "self_exclude",
-            "ally_single"
+            "self"
           ],
-          "text": "自身を除く味方単体のSP回復（回復量 20） 行動完了後、後衛に移動する（交代として扱われない）"
+          "text": "自身を除く味方 前衛全体 のSP回復（回復量 20） 行動完了後、後衛に移動する（交代として扱われない）"
         }
       ]
     },
@@ -158847,22 +160742,48 @@
     {
       "character_id": "356052",
       "character_name": "シェルビー",
-      "ability_name": "後衛時HP治癒(前単)",
+      "ability_name": "深雪の想い",
       "source_type": "support",
       "cost": null,
       "raw_text": [
+        "バディにHP自動回復の効果を付与（効力 100）",
+        "自身とバディに",
+        "「斧物理」で攻撃時",
+        "ダメージ上限アップ（効果量 25000）の効果を付与"
+      ],
+      "raw_text_pre_enhance": [
+        "『後衛時HP治癒(前単)』",
         "後衛時：前衛にHP自動回復の効果を付与（効力 100）"
       ],
-      "raw_text_pre_enhance": [],
-      "effects": [],
-      "conditions": [
-        "後衛時前衛にHP自動回復の効果を付与（効力 100）"
+      "effects": [
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 25000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "buddy",
+            "self"
+          ]
+        }
       ],
-      "unknown": [],
+      "conditions": [],
+      "unknown": [
+        "バディにHP自動回復の効果を付与（効力 100）"
+      ],
       "blocks": [
         {
           "scopes": [],
-          "text": "後衛時：前衛にHP自動回復の効果を付与（効力 100）"
+          "text": "バディにHP自動回復の効果を付与（効力 100）"
+        },
+        {
+          "scopes": [
+            "buddy",
+            "self"
+          ],
+          "text": "自身とバディに 「斧物理」で攻撃時 ダメージ上限アップ（効果量 25000）の効果を付与"
         }
       ]
     },
@@ -160511,18 +162432,35 @@
     {
       "character_id": "356084",
       "character_name": "メイベル",
-      "ability_name": "風神の神楽Ⅱ",
+      "ability_name": "雷獣と風神の神楽Ⅱ",
       "source_type": "battle",
       "cost": "【消費SP 39】",
       "raw_text": [
         "味方前後衛全体に属攻アップ15%と",
+        "雷属性ダメージアップ15%と",
         "風耐性アップ15%の効果を付与（2ターン）"
       ],
-      "raw_text_pre_enhance": [],
+      "raw_text_pre_enhance": [
+        "『風神の神楽Ⅱ』",
+        "味方前後衛全体に属攻アップ15%と",
+        "風耐性アップ15%の効果を付与（2ターン）"
+      ],
       "raw_text_boost": [
         "【ブースト時】ターン数3/4/5"
       ],
       "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 15,
+          "tag": "lightning",
+          "cap_group": "buff_damage_elem_lightning",
+          "scopes": [
+            "ally_all"
+          ]
+        },
         {
           "role": "buff",
           "category": "stat",
@@ -160542,7 +162480,7 @@
           "scopes": [
             "ally_all"
           ],
-          "text": "味方前後衛全体に属攻アップ15%と 風耐性アップ15%の効果を付与（2ターン）"
+          "text": "味方前後衛全体に属攻アップ15%と 雷属性ダメージアップ15%と 風耐性アップ15%の効果を付与（2ターン）"
         }
       ]
     },
@@ -160600,22 +162538,42 @@
     {
       "character_id": "356084",
       "character_name": "メイベル",
-      "ability_name": "開始時属攻強化(相互)Ⅱ",
+      "ability_name": "開始時属性強化（相互）Ⅲ",
       "source_type": "support",
       "cost": null,
       "raw_text": [
         "戦闘開始時：前衛と後衛に",
+        "属攻・",
+        "属防",
+        "アップ",
+        "20%",
+        "の効果を付与（6ターン）"
+      ],
+      "raw_text_pre_enhance": [
+        "『開始時属攻強化(相互)Ⅱ』",
+        "戦闘開始時：前衛と後衛に",
         "属攻アップ15%の効果を付与（3ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "buff",
           "category": "stat",
           "unit": "%",
           "sub_category": "attack_elemental",
-          "value": 15,
+          "value": 20,
           "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "buddy",
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 20,
+          "cap_group": "buff_stat_def_elem",
           "scopes": [
             "buddy",
             "self"
@@ -160630,7 +162588,7 @@
             "buddy",
             "self"
           ],
-          "text": "戦闘開始時：前衛と後衛に 属攻アップ15%の効果を付与（3ターン）"
+          "text": "戦闘開始時：前衛と後衛に 属攻・ 属防 アップ 20% の効果を付与（6ターン）"
         }
       ]
     },
