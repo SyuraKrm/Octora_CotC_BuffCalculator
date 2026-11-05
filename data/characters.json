@@ -1,5 +1,18 @@
 [
   {
+    "character_id": "840229",
+    "character_name": "緋き断罪者",
+    "job": "神官",
+    "rarity": "5",
+    "elements": [
+      "闇"
+    ],
+    "physicals": [
+      "本",
+      "杖"
+    ]
+  },
+  {
     "character_id": "833737",
     "character_name": "ソニアEx",
     "job": "薬師",

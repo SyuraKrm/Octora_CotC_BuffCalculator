@@ -1,6 +1,873 @@
 [
   [
     {
+      "character_id": "840229",
+      "character_name": "緋き断罪者",
+      "ability_name": "赤き三連打",
+      "source_type": "battle",
+      "cost": "【消費SP 29】",
+      "raw_text": [
+        "敵単体に3回の杖物理攻擊（威力 55）",
+        "自身にHPバリアがある時：",
+        "さらに、攻撃対象に杖耐性ダウン15%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力65/80/100"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 15,
+          "tag": "staff",
+          "cap_group": "debuff_resist_phys_staff",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "敵単体に3回の杖物理攻擊（威力 55）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に3回の杖物理攻擊（威力 55）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身にHPバリアがある時： さらに、攻撃対象に杖耐性ダウン15%の効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "840229",
+      "character_name": "緋き断罪者",
+      "ability_name": "紅の撃滅打",
+      "source_type": "battle",
+      "cost": "【消費SP 22】",
+      "raw_text": [
+        "敵全体に杖物理攻擊（威力 120）",
+        "自身にHPバリアがある時：攻撃回数が2回になる"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力145/185/220"
+      ],
+      "effects": [],
+      "conditions": [
+        "自身にHPバリアがある時攻撃回数が2回になる"
+      ],
+      "unknown": [
+        "敵全体に杖物理攻擊（威力 120）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に杖物理攻擊（威力 120）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身にHPバリアがある時：攻撃回数が2回になる"
+        }
+      ]
+    },
+    {
+      "character_id": "840229",
+      "character_name": "緋き断罪者",
+      "ability_name": "聖盾魔法（前全）Ⅱ",
+      "source_type": "battle",
+      "cost": "【消費SP 42】",
+      "raw_text": [
+        "味方前衛全体にHPバリアを付与",
+        "（効果量 使用者の最大HPの10%/重複不可）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】20/30/40%"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "味方前衛全体にHPバリアを付与 （効果量 使用者の最大HPの10%/重複不可）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体にHPバリアを付与 （効果量 使用者の最大HPの10%/重複不可）"
+        }
+      ]
+    },
+    {
+      "character_id": "840229",
+      "character_name": "緋き断罪者",
+      "ability_name": "真紅の誅打",
+      "source_type": "battle",
+      "cost": "【消費SP 46】",
+      "raw_text": [
+        "ランダムなターゲットに4回の杖物理攻撃（威力35）",
+        "攻撃毎に小確率で杖耐性ダウン15%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力45/55/75"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 15,
+          "tag": "staff",
+          "cap_group": "debuff_resist_phys_staff",
+          "scopes": [
+            "random"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "random"
+          ],
+          "text": "ランダムなターゲットに4回の杖物理攻撃（威力35） 攻撃毎に小確率で杖耐性ダウン15%の効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "840229",
+      "character_name": "緋き断罪者",
+      "ability_name": "赤き破防のオラクル（全体）",
+      "source_type": "battle",
+      "cost": "【消費SP 80】",
+      "raw_text": [
+        "敵全体に物防・属防ダウン30%の効果を付与（2ターン）",
+        "自身にHPバリアがある時：",
+        "さらに、効果対象に杖耐性ダウン30%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】3/4/5ターン"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 30,
+          "cap_group": "debuff_stat_def_phys",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 30,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 30,
+          "tag": "staff",
+          "cap_group": "debuff_resist_phys_staff",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に物防・属防ダウン30%の効果を付与（2ターン）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身にHPバリアがある時： さらに、効果対象に杖耐性ダウン30%の効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "840229",
+      "character_name": "緋き断罪者",
+      "ability_name": "赤心のヴェールV",
+      "source_type": "battle",
+      "cost": "【消費SP 76】",
+      "raw_text": [
+        "味方前衛全体に物攻・属攻アップ30%の効果を付与（2ターン）",
+        "さらに、効果対象が神官の時、同対象に",
+        "HPバリアを付与（効果量 使用者の最大HPの30%/重複不可）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】3/4/5ターン"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 30,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 30,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "ally_front_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体に物攻・属攻アップ30%の効果を付与（2ターン） さらに、効果対象が神官の時、同対象に HPバリアを付与（効果量 使用者の最大HPの30%/重複不可）"
+        }
+      ]
+    },
+    {
+      "character_id": "840229",
+      "character_name": "緋き断罪者",
+      "ability_name": "真赭なる誅伐の杖",
+      "source_type": "battle",
+      "cost": "【消費SP 43】",
+      "raw_text": [
+        "敵全体に3回の杖物理攻擊（威力 55）",
+        "自身にHPバリアがある時：攻撃回数が5回になる"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力65/75/100"
+      ],
+      "effects": [],
+      "conditions": [
+        "自身にHPバリアがある時攻撃回数が5回になる"
+      ],
+      "unknown": [
+        "敵全体に3回の杖物理攻擊（威力 55）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に3回の杖物理攻擊（威力 55）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身にHPバリアがある時：攻撃回数が5回になる"
+        }
+      ]
+    },
+    {
+      "character_id": "840229",
+      "character_name": "緋き断罪者",
+      "ability_name": "赤心のオーラ（全体）V",
+      "source_type": "battle",
+      "cost": "【消費SP 134】",
+      "raw_text": [
+        "ターン中、素早く行動し",
+        "味方前後衛全体に",
+        "物理・属性ダメージアップ30%と",
+        "ダメージ上限アップ（効果量 100000）の効果を付与（2ターン）",
+        "さらに、「たたかう」以外の物理・属性攻撃（一部除く）時",
+        "杖・本・闇弱点を突ける効果を付与",
+        "（2ターン/ダメージ計算は各攻撃に準ずる）",
+        "効果対象が神官か学者の時：",
+        "ダメージ上限アップの効果量が2倍になる"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】3/4/5ターン"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 30,
+          "cap_group": "buff_damage_phys_all",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 30,
+          "cap_group": "buff_damage_elem_all",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 100000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "ally_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "ターン中、素早く行動し"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "ターン中、素早く行動し"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "味方前後衛全体に 物理・属性ダメージアップ30%と ダメージ上限アップ（効果量 100000）の効果を付与（2ターン） さらに、「たたかう」以外の物理・属性攻撃（一部除く）時 杖・本・闇弱点を突ける効果を付与 （2ターン/ダメージ計算は各攻撃に準ずる） 効果対象が神官か学者の時： ダメージ上限アップの効果量が2倍になる"
+        }
+      ]
+    },
+    {
+      "character_id": "840229",
+      "character_name": "緋き断罪者",
+      "ability_name": "赫々たる処断の槌",
+      "source_type": "battle",
+      "cost": "【消費SP 85】",
+      "raw_text": [
+        "敵単体に3回の杖物理攻撃（威力110）",
+        "このアビリティのダメージ上限が100000アップ",
+        "さらに、自身にHPバリアを付与（効果量 使用者の最大HPの50%/重複不可）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力120/140/180 65/80/100%"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵単体に3回の杖物理攻撃（威力110） このアビリティのダメージ上限が100000アップ",
+        "さらに、自身にHPバリアを付与（効果量 使用者の最大HPの50%/重複不可）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に3回の杖物理攻撃（威力110） このアビリティのダメージ上限が100000アップ"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "さらに、自身にHPバリアを付与（効果量 使用者の最大HPの50%/重複不可）"
+        }
+      ]
+    },
+    {
+      "character_id": "840229",
+      "character_name": "緋き断罪者",
+      "ability_name": "深緋なる断罪の槌",
+      "source_type": "battle",
+      "cost": "【消費SP 300】",
+      "raw_text": [
+        "敵単体に2回の杖物理攻擊（威力265）",
+        "このアビリティのダメージ上限が100000アップ",
+        "自身のHPバリア値に応じて",
+        "このアビリティによるダメージ上アップ量と攻撃回数が変化",
+        "2000以上：ダメージ上限アップ量が2倍になる",
+        "3000以上：ダメージ上限アップ量が3倍、攻撃回数が3回になる",
+        "4000以上：ダメージ上限アップ量が4倍、攻撃回数が4回になる",
+        "5000以上：ダメージ上限アップ量が5倍、攻撃回数が5回になる",
+        "※倍率が高いほうのみ適用される"
+      ],
+      "raw_text_pre_enhance": [
+        "敵単体に2回の杖物理攻擊（威力265）",
+        "このアビリティのダメージ上限が100000アップ",
+        "自身のHPバリア値に応じて",
+        "このアビリティによるダメージ上アップ量と攻撃回数が変化",
+        "2000以上：ダメージ上限アップ量が2倍になる",
+        "3000以上：ダメージ上限アップ量が3倍、攻撃回数が3回になる※倍率が高いほうのみ適用される"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】威力280/350/450"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵単体に2回の杖物理攻擊（威力265） このアビリティのダメージ上限が100000アップ",
+        "自身のHPバリア値に応じて このアビリティによるダメージ上アップ量と攻撃回数が変化 2000以上：ダメージ上限アップ量が2倍になる 3000以上：ダメージ上限アップ量が3倍、攻撃回数が3回になる 4000以上：ダメージ上限アップ量が4倍、攻撃回数が4回になる 5000以上：ダメージ上限アップ量が5倍、攻撃回数が5回になる ※倍率が高いほうのみ適用される"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に2回の杖物理攻擊（威力265） このアビリティのダメージ上限が100000アップ"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身のHPバリア値に応じて このアビリティによるダメージ上アップ量と攻撃回数が変化 2000以上：ダメージ上限アップ量が2倍になる 3000以上：ダメージ上限アップ量が3倍、攻撃回数が3回になる 4000以上：ダメージ上限アップ量が4倍、攻撃回数が4回になる 5000以上：ダメージ上限アップ量が5倍、攻撃回数が5回になる ※倍率が高いほうのみ適用される"
+        }
+      ]
+    },
+    {
+      "character_id": "840229",
+      "character_name": "緋き断罪者",
+      "ability_name": "緋き神官",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "自身に「たたかう」を含む物理攻撃（一部除く）時",
+        "本・闇弱点を突ける効果を付与",
+        "（ダメージ計算は各攻撃に準ずる）"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "自身に「たたかう」を含む物理攻撃（一部除く）時 本・闇弱点を突ける効果を付与 （ダメージ計算は各攻撃に準ずる）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に「たたかう」を含む物理攻撃（一部除く）時 本・闇弱点を突ける効果を付与 （ダメージ計算は各攻撃に準ずる）"
+        }
+      ]
+    },
+    {
+      "character_id": "840229",
+      "character_name": "緋き断罪者",
+      "ability_name": "告解の務め",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "味方前後衛全体の神官・学者にサポアビと装備性能による物理・属性ダメージアップの上限が50%になる効果を付与",
+        "自身にHPバリアがある時：さらに",
+        "自身の物攻に物防の60%、属攻に属防の60%を加算する",
+        "（装備ステータス含む/対象ステータス毎に最大値を適用）"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "physical",
+          "target_source_type": "support",
+          "value": 50,
+          "cap_group": "buff_damage_phys_all",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "elemental",
+          "target_source_type": "support",
+          "value": 50,
+          "cap_group": "buff_damage_elem_all",
+          "scopes": [
+            "ally_all"
+          ]
+        }
+      ],
+      "conditions": [
+        "自身にHPバリアがある時さらに"
+      ],
+      "unknown": [
+        "自身の物攻に物防の60%、属攻に属防の60%を加算する （装備ステータス含む/対象ステータス毎に最大値を適用）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "味方前後衛全体の神官・学者にサポアビと装備性能による物理・属性ダメージアップの上限が50%になる効果を付与"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身にHPバリアがある時：さらに"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身の物攻に物防の60%、属攻に属防の60%を加算する （装備ステータス含む/対象ステータス毎に最大値を適用）"
+        }
+      ]
+    },
+    {
+      "character_id": "840229",
+      "character_name": "緋き断罪者",
+      "ability_name": "悔俊の務め",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "ブレイク中の敵がいる時：味方前後衛全体に物理・属性ダメージアップ15%の効果を付与",
+        "ブレイク中の敵がいる時かつ自身にHPバリアがある時：",
+        "さらに、ダメージ上限アップ（効果量 100000）の効果を付与",
+        "パーティ内の神官・学者がそれぞれ2人以上の時：",
+        "このアビリティで付与される物理・属性ダメージアップと",
+        "ダメージ上限アップの効果量が2倍になる"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 15,
+          "cap_group": "buff_damage_phys_all",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 15,
+          "cap_group": "buff_damage_elem_all",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 100000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "ブレイク中の敵がいる時：味方前後衛全体に物理・属性ダメージアップ15%の効果を付与"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "ブレイク中の敵がいる時かつ自身にHPバリアがある時： さらに、ダメージ上限アップ（効果量 100000）の効果を付与 パーティ内の神官・学者がそれぞれ2人以上の時： このアビリティで付与される物理・属性ダメージアップと ダメージ上限アップの効果量が2倍になる"
+        }
+      ]
+    },
+    {
+      "character_id": "840229",
+      "character_name": "緋き断罪者",
+      "ability_name": "懺戒の聖痕",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "味方前衛全体に",
+        "敵の弱点を突ける攻撃時、緋き断罪者が追撃する効果を付与（行動順での攻撃のみ/攻撃回数によらず1回のみ発動）",
+        "※“ブレイクさせた時”効果は起点の味方のみ発動",
+        "追撃：敵全体に",
+        "2回",
+        "の杖物理攻撃（威力 50）",
+        "その後、杖弱点付与（6回）",
+        "この攻撃の開始時点で",
+        "攻撃対象が杖弱点付与状態ではない時または",
+        "攻撃対象の杖弱点付与の残回数が6以上の時：威力が3倍",
+        "戦闘開始時：自身にHPバリアを付与",
+        "（効果量 使用者の最大HPの200%/重複不可）",
+        "さらに、味方前後衛全体の神官・学者の必殺技ゲージを100.0%増加",
+        "弱点付与：付与方法によらず弱点毎に回数は合算（最大9回）",
+        "元からその弱点があればその弱点ダメージ倍率をプラス20%"
+      ],
+      "raw_text_pre_enhance": [
+        "味方前衛全体に",
+        "敵の弱点を突ける攻撃時、緋き断罪者が追撃する効果を付与（行動順での攻撃のみ/攻撃回数によらず1回のみ発動）",
+        "※“ブレイクさせた時”効果は起点の味方のみ発動",
+        "追撃：敵全体に杖物理攻撃（威力 50）",
+        "その後、杖弱点付与（6回）",
+        "この攻撃の開始時点で",
+        "攻撃対象が杖弱点付与状態ではない時または",
+        "攻撃対象の杖弱点付与の残回数が6以上の時：威力が3倍",
+        "戦闘開始時：自身にHPバリアを付与",
+        "（効果量 使用者の最大HPの200%/重複不可）",
+        "弱点付与：付与方法によらず弱点毎に回数は合算（最大9回）",
+        "元からその弱点があればその弱点ダメージ倍率をプラス20%"
+      ],
+      "effects": [],
+      "conditions": [
+        "追撃敵全体に 2回 の杖物理攻撃（威力 50） その後、杖弱点付与（6回） この攻撃の開始時点で 攻撃対象が杖弱点付与状態ではない時または 攻撃対象の杖弱点付与の残回数が6以上の時威力が3倍",
+        "戦闘開始時自身にHPバリアを付与 （効果量 使用者の最大HPの200%/重複不可）"
+      ],
+      "unknown": [
+        "味方前衛全体に 敵の弱点を突ける攻撃時、緋き断罪者が追撃する効果を付与（行動順での攻撃のみ/攻撃回数によらず1回のみ発動） ※“ブレイクさせた時”効果は起点の味方のみ発動",
+        "さらに、味方前後衛全体の神官・学者の必殺技ゲージを100.0%増加 弱点付与：付与方法によらず弱点毎に回数は合算（最大9回） 元からその弱点があればその弱点ダメージ倍率をプラス20%"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "味方前衛全体に 敵の弱点を突ける攻撃時、緋き断罪者が追撃する効果を付与（行動順での攻撃のみ/攻撃回数によらず1回のみ発動） ※“ブレイクさせた時”効果は起点の味方のみ発動"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "追撃：敵全体に 2回 の杖物理攻撃（威力 50） その後、杖弱点付与（6回） この攻撃の開始時点で 攻撃対象が杖弱点付与状態ではない時または 攻撃対象の杖弱点付与の残回数が6以上の時：威力が3倍"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "戦闘開始時：自身にHPバリアを付与 （効果量 使用者の最大HPの200%/重複不可）"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "さらに、味方前後衛全体の神官・学者の必殺技ゲージを100.0%増加 弱点付与：付与方法によらず弱点毎に回数は合算（最大9回） 元からその弱点があればその弱点ダメージ倍率をプラス20%"
+        }
+      ]
+    },
+    {
+      "character_id": "840229",
+      "character_name": "緋き断罪者",
+      "ability_name": "正義を仰する浄罪の灯",
+      "source_type": "ultimate",
+      "cost": "後衛発動",
+      "raw_text": [
+        "【Lv.MAX】",
+        "自身に威力アップ200%の効果",
+        "（4ターン/ターン延長不可/同系統の効果重複不可）と最大HPアップ30%と物攻アップ30%と必ずクリティカルの効果を付与（4ターン）",
+        "さらに、味方前後衛全体にHPバリアを付与（効果量 使用者の最大HPの50%/重複不可）",
+        "加えて、自身を除く味方前後衛全体の神官・学者に",
+        "緋き断罪者の物防の60%を物攻に加算する効果と",
+        "緋き断罪者の属防の60%を属攻に加算する効果を付与（4ターン）",
+        "（装備ステータス含む/対象ステータス毎に最大値を適用）",
+        "200%発動時：さらに、HPバリアの効果量が2倍になり味方前後衛全体に物理・属性ダメージアップ30%と",
+        "ダメージ上限アップ（効果量 200000）の効果を付与（4ターン）",
+        "※属性攻撃でクリティカルが発生するには“属性攻撃でクリティカルが発生する効果”が必要"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 30,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "critical",
+          "unit": "",
+          "sub_category": "certain",
+          "target_source_type": "battle",
+          "value": 1,
+          "cap_group": "critical_certain",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "power",
+          "unit": "%",
+          "target_source_type": "battle",
+          "value": 200,
+          "cap_group": "power_up",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "physical",
+          "value": 30,
+          "cap_group": "buff_damage_phys_all",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 30,
+          "cap_group": "buff_damage_elem_all",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 200000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "ally_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "【Lv.MAX】",
+        "さらに、味方前後衛全体にHPバリアを付与（効果量 使用者の最大HPの50%/重複不可）",
+        "加えて、自身を除く味方前後衛全体の神官・学者に 緋き断罪者の物防の60%を物攻に加算する効果と 緋き断罪者の属防の60%を属攻に加算する効果を付与（4ターン） （装備ステータス含む/対象ステータス毎に最大値を適用）"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "【Lv.MAX】"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に威力アップ200%の効果 （4ターン/ターン延長不可/同系統の効果重複不可）と最大HPアップ30%と物攻アップ30%と必ずクリティカルの効果を付与（4ターン）"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "さらに、味方前後衛全体にHPバリアを付与（効果量 使用者の最大HPの50%/重複不可）"
+        },
+        {
+          "scopes": [
+            "self_exclude",
+            "ally_all"
+          ],
+          "text": "加えて、自身を除く味方前後衛全体の神官・学者に 緋き断罪者の物防の60%を物攻に加算する効果と 緋き断罪者の属防の60%を属攻に加算する効果を付与（4ターン） （装備ステータス含む/対象ステータス毎に最大値を適用）"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "200%発動時：さらに、HPバリアの効果量が2倍になり味方前後衛全体に物理・属性ダメージアップ30%と ダメージ上限アップ（効果量 200000）の効果を付与（4ターン） ※属性攻撃でクリティカルが発生するには“属性攻撃でクリティカルが発生する効果”が必要"
+        }
+      ]
+    },
+    {
+      "character_id": "840229",
+      "character_name": "緋き断罪者",
+      "ability_name": "真緋なる贖罪の杖",
+      "source_type": "ex",
+      "cost": "回数：2",
+      "raw_text": [
+        "敵全体に3回の杖物理攻擊（威力 110）",
+        "この攻撃は物防・属防アップとダメージ減少効果を無視する",
+        "このアビリティのダメージ上限が500000アップ",
+        "自身のHPバリア値に応じて攻撃回数が変化",
+        "4000以上：攻撃回数が4回になる",
+        "5000以上：攻撃回数が5回になる",
+        "6000以上：攻撃回数が6回になる"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_condition": [
+        "【使用条件】ブレイク中の敵がいる時"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】威力120/135/160"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵全体に3回の杖物理攻擊（威力 110） この攻撃は物防・属防アップとダメージ減少効果を無視する このアビリティのダメージ上限が500000アップ",
+        "自身のHPバリア値に応じて攻撃回数が変化 4000以上：攻撃回数が4回になる 5000以上：攻撃回数が5回になる 6000以上：攻撃回数が6回になる"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に3回の杖物理攻擊（威力 110） この攻撃は物防・属防アップとダメージ減少効果を無視する このアビリティのダメージ上限が500000アップ"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身のHPバリア値に応じて攻撃回数が変化 4000以上：攻撃回数が4回になる 5000以上：攻撃回数が5回になる 6000以上：攻撃回数が6回になる"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "character_id": "833737",
       "character_name": "ソニアEx",
       "ability_name": "枝刈",
@@ -72345,26 +73212,35 @@
       "cost": "【消費SP 40】",
       "raw_text": [
         "敵単体に斧物理攻撃（威力 260）",
+        "このアビリティのダメージ上限が500000アップ",
+        "対象の状態効果アイコンの数に応じて威力が変化",
+        "4",
+        "個以上：威力が1.5倍",
+        "10",
+        "個以上：威力が2.0倍",
+        "※威力倍率が高いほうのみ適用される"
+      ],
+      "raw_text_pre_enhance": [
+        "敵単体に斧物理攻撃（威力 260）",
         "対象の状態効果アイコンの数に応じて威力が変化",
         "6個以上：威力が1.5倍",
         "12個以上：威力が2.0倍",
         "※威力倍率が高いほうのみ適用される"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力290/340/450"
       ],
       "effects": [],
       "conditions": [],
       "unknown": [
-        "敵単体に斧物理攻撃（威力 260） 対象の状態効果アイコンの数に応じて威力が変化 6個以上：威力が1.5倍 12個以上：威力が2.0倍 ※威力倍率が高いほうのみ適用される"
+        "敵単体に斧物理攻撃（威力 260） このアビリティのダメージ上限が500000アップ 対象の状態効果アイコンの数に応じて威力が変化 4 個以上：威力が1.5倍 10 個以上：威力が2.0倍 ※威力倍率が高いほうのみ適用される"
       ],
       "blocks": [
         {
           "scopes": [
             "enemy_single"
           ],
-          "text": "敵単体に斧物理攻撃（威力 260） 対象の状態効果アイコンの数に応じて威力が変化 6個以上：威力が1.5倍 12個以上：威力が2.0倍 ※威力倍率が高いほうのみ適用される"
+          "text": "敵単体に斧物理攻撃（威力 260） このアビリティのダメージ上限が500000アップ 対象の状態効果アイコンの数に応じて威力が変化 4 個以上：威力が1.5倍 10 個以上：威力が2.0倍 ※威力倍率が高いほうのみ適用される"
         }
       ]
     },
@@ -72466,27 +73342,40 @@
       "source_type": "support",
       "cost": null,
       "raw_text": [
-        "（準備Turn：3/再使用Turn：6）",
+        "（準備Turn：",
+        "２",
+        "/再使用Turn：",
+        "3",
+        "）",
         "コマンド選択時、自身に特殊効果”節約調合”を付与（1ターン）"
       ],
-      "raw_text_pre_enhance": [],
-      "raw_text_override_battle": [
+      "raw_text_pre_enhance": [
+        "（準備Turn：3/再使用Turn：6）",
+        "コマンド選択時、自身に特殊効果”節約調合”を付与（1ターン）",
         "ベリーシャワー：味方前衛全体のHP/SP回復",
         "ザクロシャワー：味方前衛全体のBP回復、ただし、行動が遅くなる",
         "戦斧の補助剤(全体)Ⅱ：味方前衛全体に",
         "物攻・会心・斧攻撃ダメージアップの効果を付与",
         "非力の香：敵全体に物攻・物防・会心ダウンの効果を付与"
       ],
+      "raw_text_override_battle": [
+        "ベリーシャワー：味方前衛全体のHP/SP回復",
+        "ザクロシャワー：味方前衛全体のBP回復、ただし、行動が遅くなる",
+        "戦斧の補助剤(全体)Ⅱ：味方前衛全体に",
+        "物攻・会心・斧攻撃ダメージアップの効果を付与",
+        "非力の香：敵全体に物攻・物防・会心ダウンの効果を付与",
+        "後衛時：自身にSP自動回復の効果を付与（回復量 最大SPの20%）"
+      ],
       "effects": [],
       "conditions": [],
       "unknown": [
-        "（準備Turn：3/再使用Turn：6）",
+        "（準備Turn： ２ /再使用Turn： 3 ）",
         "コマンド選択時、自身に特殊効果”節約調合”を付与（1ターン）"
       ],
       "blocks": [
         {
           "scopes": [],
-          "text": "（準備Turn：3/再使用Turn：6）"
+          "text": "（準備Turn： ２ /再使用Turn： 3 ）"
         },
         {
           "scopes": [
@@ -82113,9 +83002,14 @@
       "source_type": "battle",
       "cost": "【消費SP 40】",
       "raw_text": [
+        "味方前衛全体に物攻・会心アップ",
+        "30",
+        "%の効果を付与（2ターン）",
+        "ブーストMAX時：前後衛全体化"
+      ],
+      "raw_text_pre_enhance": [
         "味方前衛全体に物攻・会心アップ15%の効果を付与（2ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】ターン数3/4/5"
       ],
@@ -82125,10 +83019,10 @@
           "category": "stat",
           "unit": "%",
           "sub_category": "attack_physical",
-          "value": 15,
+          "value": 30,
           "cap_group": "buff_stat_atk_phys",
           "scopes": [
-            "ally_front_all"
+            "ally_all"
           ]
         },
         {
@@ -82136,10 +83030,10 @@
           "category": "stat",
           "unit": "%",
           "sub_category": "attack_critical_rate",
-          "value": 15,
+          "value": 30,
           "cap_group": "buff_stat_atk_crit",
           "scopes": [
-            "ally_front_all"
+            "ally_all"
           ]
         }
       ],
@@ -82150,7 +83044,7 @@
           "scopes": [
             "ally_front_all"
           ],
-          "text": "味方前衛全体に物攻・会心アップ15%の効果を付与（2ターン）"
+          "text": "味方前衛全体に物攻・会心アップ 30 %の効果を付与（2ターン） ブーストMAX時：前後衛全体化"
         }
       ]
     },
@@ -82266,26 +83160,41 @@
       "source_type": "support",
       "cost": null,
       "raw_text": [
-        "（準備Turn：1/再使用Turn：4）",
+        "（準備Turn：1/再使用Turn：",
+        "3",
+        "）",
         "コマンド選択時、自身に特殊効果”獣の力”を付与（1ターン）"
       ],
-      "raw_text_pre_enhance": [],
-      "raw_text_override_battle": [
+      "raw_text_pre_enhance": [
+        "（準備Turn：1/再使用Turn：4）",
+        "コマンド選択時、自身に特殊効果”獣の力”を付与（1ターン）",
         "獣の爪：敵全体に弓物理攻撃",
         "獣の咆哮：敵全体に物防・属防ダウンの効果を付与",
         "さらに、弱点に関係なくシールドポイントを1削る",
         "獣の牙：敵単体に弓物理攻撃"
       ],
+      "raw_text_override_battle": [
+        "獣の爪：敵全体に",
+        "2回の",
+        "弓物理攻撃",
+        "獣の咆哮：敵全体に物防・属防ダウンの効果を付与",
+        "さらに、弱点に関係なくシールドポイントを1削る",
+        "獣の牙：敵単体に弓物理攻撃",
+        "ブレイク中の敵がいる時",
+        "自身にダメージ上限アップ（効果量 100000）と",
+        "クリティカル時のダメージ倍率が",
+        "1.5倍になる効果を付与（通常時は1.25倍）"
+      ],
       "effects": [],
       "conditions": [],
       "unknown": [
-        "（準備Turn：1/再使用Turn：4）",
+        "（準備Turn：1/再使用Turn： 3 ）",
         "コマンド選択時、自身に特殊効果”獣の力”を付与（1ターン）"
       ],
       "blocks": [
         {
           "scopes": [],
-          "text": "（準備Turn：1/再使用Turn：4）"
+          "text": "（準備Turn：1/再使用Turn： 3 ）"
         },
         {
           "scopes": [
@@ -106889,23 +107798,30 @@
       "raw_text": [
         "敵単体に剣物理攻撃（威力 140）",
         "光弱点を突ける（ダメージ計算は剣物理）",
+        "聖火の加護効果中：威力が2.5倍",
+        "聖火の加護効果中かつブレイク中の敵がいる時：",
+        "攻撃回数が3回になる",
+        "※このアビリティでブレイクした場合も含む"
+      ],
+      "raw_text_pre_enhance": [
+        "敵単体に剣物理攻撃（威力 140）",
+        "光弱点を突ける（ダメージ計算は剣物理）",
         "聖火の加護効果中：威力が2.5倍"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力170/210/300"
       ],
       "effects": [],
-      "conditions": [],
-      "unknown": [
-        "敵単体に剣物理攻撃（威力 140） 光弱点を突ける（ダメージ計算は剣物理） 聖火の加護効果中：威力が2.5倍"
+      "conditions": [
+        "敵単体に剣物理攻撃（威力 140） 光弱点を突ける（ダメージ計算は剣物理） 聖火の加護効果中威力が2.5倍 聖火の加護効果中かつブレイク中の敵がいる時 攻撃回数が3回になる ※このアビリティでブレイクした場合も含む"
       ],
+      "unknown": [],
       "blocks": [
         {
           "scopes": [
             "enemy_single"
           ],
-          "text": "敵単体に剣物理攻撃（威力 140） 光弱点を突ける（ダメージ計算は剣物理） 聖火の加護効果中：威力が2.5倍"
+          "text": "敵単体に剣物理攻撃（威力 140） 光弱点を突ける（ダメージ計算は剣物理） 聖火の加護効果中：威力が2.5倍 聖火の加護効果中かつブレイク中の敵がいる時： 攻撃回数が3回になる ※このアビリティでブレイクした場合も含む"
         }
       ]
     },
@@ -107011,12 +107927,30 @@
       "cost": null,
       "raw_text": [
         "自身が敵をブレイクさせた時",
+        "自身にダメージ上限アップ（効果量 200000）の効果と",
         "自身に特殊効果”聖火の加護”を付与（2ターン）",
         "聖火の加護：BP回復量3アップの効果",
         "※付与方法によらず”聖火の加護”はバトアビとして付与"
       ],
-      "raw_text_pre_enhance": [],
-      "effects": [],
+      "raw_text_pre_enhance": [
+        "自身が敵をブレイクさせた時",
+        "自身に特殊効果”聖火の加護”を付与（2ターン）",
+        "聖火の加護：BP回復量3アップの効果",
+        "※付与方法によらず”聖火の加護”はバトアビとして付与"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 200000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
       "conditions": [],
       "unknown": [
         "自身が敵をブレイクさせた時",
@@ -107027,6 +107961,12 @@
         {
           "scopes": [],
           "text": "自身が敵をブレイクさせた時"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身にダメージ上限アップ（効果量 200000）の効果と"
         },
         {
           "scopes": [
@@ -111013,14 +111953,20 @@
     {
       "character_id": "444212",
       "character_name": "アーフェン",
-      "ability_name": "勇斧の補助剤(全体)Ⅱ",
+      "ability_name": "勇斧の補助剤(全体)Ⅲ",
       "source_type": "battle",
       "cost": "【消費SP 40】",
       "raw_text": [
         "味方前衛全体に物攻アップ15%と",
+        "斧攻撃ダメージアップ15%の効果を付与（2ターン）し",
+        "さらに、特殊効果“畏怖”、“魅了”、“昏睡”。“静寂”を回復",
+        "ブーストMAX時：前後衛全体化"
+      ],
+      "raw_text_pre_enhance": [
+        "『勇斧の補助剤(全体)Ⅱ』",
+        "味方前衛全体に物攻アップ15%と",
         "斧攻撃ダメージアップ15%の効果を付与（2ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】ターン数3/4/5"
       ],
@@ -111034,7 +111980,7 @@
           "tag": "axe",
           "cap_group": "buff_damage_phys_axe",
           "scopes": [
-            "ally_front_all"
+            "ally_all"
           ]
         },
         {
@@ -111045,7 +111991,7 @@
           "value": 15,
           "cap_group": "buff_stat_atk_phys",
           "scopes": [
-            "ally_front_all"
+            "ally_all"
           ]
         }
       ],
@@ -111056,7 +112002,7 @@
           "scopes": [
             "ally_front_all"
           ],
-          "text": "味方前衛全体に物攻アップ15%と 斧攻撃ダメージアップ15%の効果を付与（2ターン）"
+          "text": "味方前衛全体に物攻アップ15%と 斧攻撃ダメージアップ15%の効果を付与（2ターン）し さらに、特殊効果“畏怖”、“魅了”、“昏睡”。“静寂”を回復 ブーストMAX時：前後衛全体化"
         }
       ]
     },
@@ -111112,20 +112058,55 @@
     {
       "character_id": "444212",
       "character_name": "アーフェン",
-      "ability_name": "斧攻撃強化Ⅲ",
+      "ability_name": "大志を抱く薬師",
       "source_type": "support",
       "cost": null,
       "raw_text": [
+        "自身に斧攻撃ダメージアップ",
+        "30%",
+        "と",
+        "ダメージ上アップ（効果量100000）の効果を付与",
+        "さらに、バトアビによる斧攻撃ダメージアップの上限と",
+        "サポアビと装備性能による",
+        "斧攻撃ダメージアップの上限が60%になる効果を付与"
+      ],
+      "raw_text_pre_enhance": [
+        "『斧攻撃強化Ⅲ』",
         "自身に斧攻撃ダメージアップ20%の効果を付与"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "buff",
           "category": "damage",
           "unit": "%",
           "sub_category": "physical",
-          "value": 20,
+          "value": 30,
+          "tag": "axe",
+          "cap_group": "buff_damage_phys_axe",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "physical",
+          "target_source_type": "battle",
+          "value": 60,
+          "tag": "axe",
+          "cap_group": "buff_damage_phys_axe",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "physical",
+          "target_source_type": "support",
+          "value": 60,
           "tag": "axe",
           "cap_group": "buff_damage_phys_axe",
           "scopes": [
@@ -111140,7 +112121,7 @@
           "scopes": [
             "self"
           ],
-          "text": "自身に斧攻撃ダメージアップ20%の効果を付与"
+          "text": "自身に斧攻撃ダメージアップ 30% と ダメージ上アップ（効果量100000）の効果を付与 さらに、バトアビによる斧攻撃ダメージアップの上限と サポアビと装備性能による 斧攻撃ダメージアップの上限が60%になる効果を付与"
         }
       ]
     },
@@ -115434,23 +116415,27 @@
       "source_type": "battle",
       "cost": "【消費SP 68】",
       "raw_text": [
+        "敵全体に3回の短剣物理攻撃（威力 80）",
+        "ブレイク中の敵がいる時：攻撃回数が5回になる",
+        "※このアビリティでブレイクした場合も含む"
+      ],
+      "raw_text_pre_enhance": [
         "敵全体に3回の短剣物理攻撃（威力 80）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力90/105/130"
       ],
       "effects": [],
-      "conditions": [],
-      "unknown": [
-        "敵全体に3回の短剣物理攻撃（威力 80）"
+      "conditions": [
+        "敵全体に3回の短剣物理攻撃（威力 80） ブレイク中の敵がいる時攻撃回数が5回になる ※このアビリティでブレイクした場合も含む"
       ],
+      "unknown": [],
       "blocks": [
         {
           "scopes": [
             "enemy_all"
           ],
-          "text": "敵全体に3回の短剣物理攻撃（威力 80）"
+          "text": "敵全体に3回の短剣物理攻撃（威力 80） ブレイク中の敵がいる時：攻撃回数が5回になる ※このアビリティでブレイクした場合も含む"
         }
       ]
     },
@@ -115541,24 +116526,28 @@
     {
       "character_id": "420866",
       "character_name": "テリオン",
-      "ability_name": "好機",
+      "ability_name": "好機(前衛)",
       "source_type": "support",
       "cost": null,
       "raw_text": [
+        "味方",
+        "が敵をブレイクさせた時、",
+        "味方前衛全体",
+        "のBPを1回復",
+        "※テリオンが行動不能時、このサポートアビリティは発動しない"
+      ],
+      "raw_text_pre_enhance": [
         "自身が敵をブレイクさせた時、自身のBPを1回復"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [],
       "conditions": [],
       "unknown": [
-        "自身が敵をブレイクさせた時、自身のBPを1回復"
+        "味方 が敵をブレイクさせた時、 味方前衛全体 のBPを1回復 ※テリオンが行動不能時、このサポートアビリティは発動しない"
       ],
       "blocks": [
         {
-          "scopes": [
-            "self"
-          ],
-          "text": "自身が敵をブレイクさせた時、自身のBPを1回復"
+          "scopes": [],
+          "text": "味方 が敵をブレイクさせた時、 味方前衛全体 のBPを1回復 ※テリオンが行動不能時、このサポートアビリティは発動しない"
         }
       ]
     },
@@ -155832,18 +156821,35 @@
     {
       "character_id": "355922",
       "character_name": "カミラ",
-      "ability_name": "ラックヒール",
+      "ability_name": "アグレッシブヒール",
       "source_type": "battle",
       "cost": "【消費SP 75】",
       "raw_text": [
         "味方前衛全体のHP回復（効力 205）",
+        "さらに、",
+        "物攻",
+        "・会心アップ20%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [
+        "『ラックヒール』",
+        "味方前衛全体のHP回復（効力 205）",
         "さらに、会心アップ20%の効果を付与（2ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】効力225/255/295"
       ],
       "effects": [
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 20,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
         {
           "role": "buff",
           "category": "stat",
@@ -155863,7 +156869,7 @@
           "scopes": [
             "ally_front_all"
           ],
-          "text": "味方前衛全体のHP回復（効力 205） さらに、会心アップ20%の効果を付与（2ターン）"
+          "text": "味方前衛全体のHP回復（効力 205） さらに、 物攻 ・会心アップ20%の効果を付与（2ターン）"
         }
       ]
     },
@@ -155935,22 +156941,43 @@
     {
       "character_id": "355922",
       "character_name": "カミラ",
-      "ability_name": "後衛時会心威力強化(前全)",
+      "ability_name": "子供達のために",
       "source_type": "support",
       "cost": null,
       "raw_text": [
+        "後衛時：味方前衛全体に",
+        "会心アップ20％と",
+        "クリティカル時のダメージアップ",
+        "20%",
+        "の効果を付与",
+        "さらに、効果対象が狩人の時",
+        "同対象にクリティカル時のダメージ倍率が",
+        "1.4倍になる効果を付与（通常時は1.25倍）"
+      ],
+      "raw_text_pre_enhance": [
+        "『後衛時会心威力強化(前全)』",
         "後衛時：味方前衛全体にクリティカル時の",
         "ダメージアップ10%の効果を付与"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "buff",
           "category": "damage",
           "unit": "%",
           "sub_category": "critical",
-          "value": 10,
+          "value": 20,
           "cap_group": "buff_damage_crit",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_critical_rate",
+          "value": 20,
+          "cap_group": "buff_stat_atk_crit",
           "scopes": [
             "ally_front_all"
           ]
@@ -155963,7 +156990,7 @@
           "scopes": [
             "ally_front_all"
           ],
-          "text": "後衛時：味方前衛全体にクリティカル時の ダメージアップ10%の効果を付与"
+          "text": "後衛時：味方前衛全体に 会心アップ20％と クリティカル時のダメージアップ 20% の効果を付与 さらに、効果対象が狩人の時 同対象にクリティカル時のダメージ倍率が 1.4倍になる効果を付与（通常時は1.25倍）"
         }
       ]
     },
@@ -157673,15 +158700,22 @@
       "cost": "【消費SP 50】",
       "raw_text": [
         "敵単体に槍物理攻撃（威力 260）",
+        "HP",
+        "60",
+        "%以下時：威力が",
+        "2",
+        "倍"
+      ],
+      "raw_text_pre_enhance": [
+        "敵単体に槍物理攻撃（威力 260）",
         "HP30%以下時：威力が1.2倍"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力290/340/450"
       ],
       "effects": [],
       "conditions": [
-        "敵単体に槍物理攻撃（威力 260） HP30%以下時威力が1.2倍"
+        "敵単体に槍物理攻撃（威力 260） HP 60 %以下時威力が 2 倍"
       ],
       "unknown": [],
       "blocks": [
@@ -157689,7 +158723,7 @@
           "scopes": [
             "enemy_single"
           ],
-          "text": "敵単体に槍物理攻撃（威力 260） HP30%以下時：威力が1.2倍"
+          "text": "敵単体に槍物理攻撃（威力 260） HP 60 %以下時：威力が 2 倍"
         }
       ]
     },
@@ -157770,14 +158804,21 @@
     {
       "character_id": "355952",
       "character_name": "バラッド",
-      "ability_name": "槍攻撃強化(相互)Ⅱ",
+      "ability_name": "見果てぬ夢を追って",
       "source_type": "support",
       "cost": null,
       "raw_text": [
         "前衛と後衛に",
+        "槍攻撃ダメージアップ15%と",
+        "「槍物理」で攻撃時",
+        "ダメージ上アップ（効果量25000）の効果を付与",
+        "効果を付与"
+      ],
+      "raw_text_pre_enhance": [
+        "『槍攻撃強化(相互)Ⅱ』",
+        "前衛と後衛に",
         "槍攻撃ダメージアップ15%の効果を付与"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "buff",
@@ -157801,7 +158842,7 @@
             "buddy",
             "self"
           ],
-          "text": "前衛と後衛に 槍攻撃ダメージアップ15%の効果を付与"
+          "text": "前衛と後衛に 槍攻撃ダメージアップ15%と 「槍物理」で攻撃時 ダメージ上アップ（効果量25000）の効果を付与 効果を付与"
         }
       ]
     },
@@ -158124,12 +159165,23 @@
       "source_type": "battle",
       "cost": "【消費SP 66】",
       "raw_text": [
+        "ランダムなターゲットに",
+        "4",
+        "回の風属性攻撃（威力 85）",
+        "攻撃毎に速度ダウン",
+        "15",
+        "%と",
+        "風耐性ダウン",
+        "15",
+        "%の効果を付与（2ターン）",
+        "※行動順影響は2ターン目"
+      ],
+      "raw_text_pre_enhance": [
         "ランダムなターゲットに3回の風属性攻撃（威力 85）",
         "攻撃毎に速度ダウン10%と",
         "風耐性ダウン10%の効果を付与（2ターン）",
         "※行動順影響は2ターン目"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力95/110/140"
       ],
@@ -158139,7 +159191,7 @@
           "category": "resistance",
           "unit": "%",
           "sub_category": "elemental",
-          "value": 10,
+          "value": 15,
           "tag": "wind",
           "cap_group": "debuff_resist_elem_wind",
           "scopes": [
@@ -158151,7 +159203,7 @@
           "category": "stat",
           "unit": "%",
           "sub_category": "speed",
-          "value": 10,
+          "value": 15,
           "cap_group": "debuff_stat_speed",
           "scopes": [
             "random"
@@ -158165,7 +159217,7 @@
           "scopes": [
             "random"
           ],
-          "text": "ランダムなターゲットに3回の風属性攻撃（威力 85） 攻撃毎に速度ダウン10%と 風耐性ダウン10%の効果を付与（2ターン） ※行動順影響は2ターン目"
+          "text": "ランダムなターゲットに 4 回の風属性攻撃（威力 85） 攻撃毎に速度ダウン 15 %と 風耐性ダウン 15 %の効果を付与（2ターン） ※行動順影響は2ターン目"
         }
       ]
     },
@@ -158230,13 +159282,20 @@
     {
       "character_id": "356020",
       "character_name": "メノ",
-      "ability_name": "風属性強化Ⅲ",
+      "ability_name": "海と風の知識",
       "source_type": "support",
       "cost": null,
       "raw_text": [
+        "自身に",
+        "属攻アップ20%",
+        "と",
+        "風属性ダメージアップ20%と",
+        "属性攻撃でクリティカルが発生する効果を付与"
+      ],
+      "raw_text_pre_enhance": [
+        "『風属性強化Ⅲ』",
         "自身に風属性ダメージアップ20%の効果を付与"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "buff",
@@ -158249,6 +159308,29 @@
           "scopes": [
             "self"
           ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 20,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "critical",
+          "unit": "",
+          "sub_category": "elemental",
+          "target_source_type": "battle",
+          "value": 1,
+          "cap_group": "critical_elem",
+          "scopes": [
+            "self"
+          ]
         }
       ],
       "conditions": [],
@@ -158258,7 +159340,7 @@
           "scopes": [
             "self"
           ],
-          "text": "自身に風属性ダメージアップ20%の効果を付与"
+          "text": "自身に 属攻アップ20% と 風属性ダメージアップ20%と 属性攻撃でクリティカルが発生する効果を付与"
         }
       ]
     },
