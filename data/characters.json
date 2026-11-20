@@ -1,5 +1,17 @@
 [
   {
+    "character_id": "843867",
+    "character_name": "アマランシア",
+    "job": "学者",
+    "rarity": "5",
+    "elements": [
+      "火",
+      "闇",
+      "雷"
+    ],
+    "physicals": []
+  },
+  {
     "character_id": "840229",
     "character_name": "緋き断罪者",
     "job": "神官",

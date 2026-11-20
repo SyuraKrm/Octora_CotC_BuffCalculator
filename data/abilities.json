@@ -1,6 +1,853 @@
 [
   [
     {
+      "character_id": "843867",
+      "character_name": "アマランシア",
+      "ability_name": "極大暗闇魔法（単体）Ⅲ",
+      "source_type": "battle",
+      "cost": "【消費SP 64】",
+      "raw_text": [
+        "敵単体に4回の闇属性攻擊（威力65）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力75/85/110"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵単体に4回の闇属性攻擊（威力65）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に4回の闇属性攻擊（威力65）"
+        }
+      ]
+    },
+    {
+      "character_id": "843867",
+      "character_name": "アマランシア",
+      "ability_name": "シー・オブスクリタス",
+      "source_type": "battle",
+      "cost": "【消費SP 62】",
+      "raw_text": [
+        "敵全体に2回の闇属性攻撃（威力 95）",
+        "畏孵表出効果中：さらに",
+        "火・雷・闇耐性ダウン15%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力110/130/150"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 15,
+          "tag": "fire",
+          "cap_group": "debuff_resist_elem_fire",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 15,
+          "tag": "lightning",
+          "cap_group": "debuff_resist_elem_lightning",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 15,
+          "tag": "dark",
+          "cap_group": "debuff_resist_elem_dark",
+          "scopes": [
+            "enemy_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に2回の闇属性攻撃（威力 95） 畏孵表出効果中：さらに 火・雷・闇耐性ダウン15%の効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "843867",
+      "character_name": "アマランシア",
+      "ability_name": "特大暗闇吸収魔法（単体）Ⅲ",
+      "source_type": "battle",
+      "cost": "【消費SP 64】",
+      "raw_text": [
+        "敵単体に3回の闇属性攻擊（威力85）",
+        "さらに、与えたダメージ量の2%のSP吸収"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力95/110/140"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "敵単体に3回の闇属性攻擊（威力85） さらに、与えたダメージ量の2%のSP吸収"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に3回の闇属性攻擊（威力85） さらに、与えたダメージ量の2%のSP吸収"
+        }
+      ]
+    },
+    {
+      "character_id": "843867",
+      "character_name": "アマランシア",
+      "ability_name": "シー・ウンブラ",
+      "source_type": "battle",
+      "cost": "【消費SP 50】",
+      "raw_text": [
+        "ランダムなターゲットに3回の闇属性攻撃（威力65）",
+        "長孵浸蝕効果中：威力が1.5倍"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力75/90/120"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "ランダムなターゲットに3回の闇属性攻撃（威力65） 長孵浸蝕効果中：威力が1.5倍"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "random"
+          ],
+          "text": "ランダムなターゲットに3回の闇属性攻撃（威力65） 長孵浸蝕効果中：威力が1.5倍"
+        }
+      ]
+    },
+    {
+      "character_id": "843867",
+      "character_name": "アマランシア",
+      "ability_name": "シー・サニタス",
+      "source_type": "battle",
+      "cost": "【消費SP 68】",
+      "raw_text": [
+        "自身とバディにHP自動回復（効力110）と",
+        "物防・属防アップ15%の効果を付与（2ターン）",
+        "畏孵表出効果中：効果対象が味方前衛全体とバディになる"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】3/4/5ターン"
+      ],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_physical",
+          "value": 15,
+          "cap_group": "buff_stat_def_phys",
+          "scopes": [
+            "buddy",
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 15,
+          "cap_group": "buff_stat_def_elem",
+          "scopes": [
+            "buddy",
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "buddy",
+            "self"
+          ],
+          "text": "自身とバディにHP自動回復（効力110）と 物防・属防アップ15%の効果を付与（2ターン） 畏孵表出効果中：効果対象が味方前衛全体とバディになる"
+        }
+      ]
+    },
+    {
+      "character_id": "843867",
+      "character_name": "アマランシア",
+      "ability_name": "シー・アニムス",
+      "source_type": "battle",
+      "cost": "【消費SP 58】",
+      "raw_text": [
+        "自身にBP回復量2アップの効果を付与（2ターン）",
+        "長孵表出効果中：",
+        "行動完了後、後衛に移動する（交代として扱われない）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】3/4/5ターン"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "自身にBP回復量2アップの効果を付与（2ターン） 長孵表出効果中： 行動完了後、後衛に移動する（交代として扱われない）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身にBP回復量2アップの効果を付与（2ターン） 長孵表出効果中： 行動完了後、後衛に移動する（交代として扱われない）"
+        }
+      ]
+    },
+    {
+      "character_id": "843867",
+      "character_name": "アマランシア",
+      "ability_name": "間隙看破魔法（全体）",
+      "source_type": "battle",
+      "cost": "【消費SP 77】",
+      "raw_text": [
+        "味方前後衛全体に「たたかう」以外の攻撃（一部除く）時",
+        "弱点以外でもシールドポイントを削る効果を付与",
+        "（2ターン/ターンが長くなるよう上書き）",
+        "行動完了後、後衛に移動する（交代として扱われない）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】3/4/5ターン"
+      ],
+      "effects": [],
+      "conditions": [],
+      "unknown": [
+        "味方前後衛全体に「たたかう」以外の攻撃（一部除く）時 弱点以外でもシールドポイントを削る効果を付与 （2ターン/ターンが長くなるよう上書き） 行動完了後、後衛に移動する（交代として扱われない）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "味方前後衛全体に「たたかう」以外の攻撃（一部除く）時 弱点以外でもシールドポイントを削る効果を付与 （2ターン/ターンが長くなるよう上書き） 行動完了後、後衛に移動する（交代として扱われない）"
+        }
+      ]
+    },
+    {
+      "character_id": "843867",
+      "character_name": "アマランシア",
+      "ability_name": "清ゆる昏き陽炎",
+      "source_type": "battle",
+      "cost": "【消費SP 98】",
+      "raw_text": [
+        "敵全体に4回の闇属性攻撃（威力 60）",
+        "長孵表出効果中：",
+        "攻撃効果の前に敵全体に属防ダウン15%と",
+        "闇耐性ダウン15%の効果を付与（2ターン）",
+        "長孵浸蝕効果中：",
+        "攻撃効果の前に味方前衛全体に属攻アップ15%と",
+        "闇属性ダメージアップ15%の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力65/75/90"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 15,
+          "tag": "dark",
+          "cap_group": "debuff_resist_elem_dark",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 15,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 15,
+          "tag": "dark",
+          "cap_group": "buff_damage_elem_dark",
+          "scopes": [
+            "ally_front_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 15,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "ally_front_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "敵全体に4回の闇属性攻撃（威力 60） 長孵表出効果中："
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に4回の闇属性攻撃（威力 60） 長孵表出効果中："
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "攻撃効果の前に敵全体に属防ダウン15%と 闇耐性ダウン15%の効果を付与（2ターン） 長孵浸蝕効果中："
+        },
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "攻撃効果の前に味方前衛全体に属攻アップ15%と 闇属性ダメージアップ15%の効果を付与（2ターン）"
+        }
+      ]
+    },
+    {
+      "character_id": "843867",
+      "character_name": "アマランシア",
+      "ability_name": "畏る冥罰の火群",
+      "source_type": "battle",
+      "cost": "【消費SP 240】",
+      "raw_text": [
+        "敵単体に5回の闇属性攻擊（威力125）",
+        "このアビリティのダメージ上限が300000アップ",
+        "浸蝕効果中：この攻撃はダメージ減少効果を無視する",
+        "ブーストMAX時：効果を再発動（SP消費無し）する"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_boost": [
+        "【ブースト時】威力130/160/200"
+      ],
+      "effects": [],
+      "conditions": [
+        "敵単体に5回の闇属性攻擊（威力125） このアビリティのダメージ上限が300000アップ 浸蝕効果中この攻撃はダメージ減少効果を無視する ブーストMAX時効果を再発動（SP消費無し）する"
+      ],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_single"
+          ],
+          "text": "敵単体に5回の闇属性攻擊（威力125） このアビリティのダメージ上限が300000アップ 浸蝕効果中：この攻撃はダメージ減少効果を無視する ブーストMAX時：効果を再発動（SP消費無し）する"
+        }
+      ]
+    },
+    {
+      "character_id": "843867",
+      "character_name": "アマランシア",
+      "ability_name": "拒絶の報還",
+      "source_type": "battle",
+      "cost": "【消費SP 150】",
+      "raw_text": [
+        "自身に特殊効果“拒絶の報還”を付与（",
+        "6回",
+        "）",
+        "畏孵表出効果中：",
+        "行動完了後、後衛に移動する（交代として扱われない）",
+        "※戦闘中2回のみ使用可能",
+        "拒絶の報還：味方が物理・属性攻撃を受けた時に反撃する効果",
+        "反撃：味方前衛全体のSP回復（回復量 対象の最大SPの20%）",
+        "さらに、毒・沈黙の状態異常を回復",
+        "回復対象にHPバリアがない時：加えて回復対象にHPバリアを付与",
+        "（効果量 使用者の最大HPの100%/重複不可）"
+      ],
+      "raw_text_pre_enhance": [
+        "自身に特殊効果“拒絶の報還”を付与（3回）",
+        "畏孵表出効果中：",
+        "行動完了後、後衛に移動する（交代として扱われない）",
+        "※戦闘中2回のみ使用可能",
+        "拒絶の報還：味方が物理・属性攻撃を受けた時に反撃する効果",
+        "反撃：味方前衛全体のSP回復（回復量 対象の最大SPの20%）",
+        "回復対象にHPバリアがない時：さらに",
+        "回復対象にHPバリアを付与",
+        "（効果量 使用者の最大HPの100%/重複不可）"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】7/8/9回"
+      ],
+      "effects": [],
+      "conditions": [
+        "反撃味方前衛全体のSP回復（回復量 対象の最大SPの20%） さらに、毒・沈黙の状態異常を回復 回復対象にHPバリアがない時加えて回復対象にHPバリアを付与 （効果量 使用者の最大HPの100%/重複不可）"
+      ],
+      "unknown": [
+        "自身に特殊効果“拒絶の報還”を付与（ 6回 ） 畏孵表出効果中： 行動完了後、後衛に移動する（交代として扱われない） ※戦闘中2回のみ使用可能 拒絶の報還：味方が物理・属性攻撃を受けた時に反撃する効果"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "自身に特殊効果“拒絶の報還”を付与（ 6回 ） 畏孵表出効果中： 行動完了後、後衛に移動する（交代として扱われない） ※戦闘中2回のみ使用可能 拒絶の報還：味方が物理・属性攻撃を受けた時に反撃する効果"
+        },
+        {
+          "scopes": [
+            "ally_front_all"
+          ],
+          "text": "反撃：味方前衛全体のSP回復（回復量 対象の最大SPの20%） さらに、毒・沈黙の状態異常を回復 回復対象にHPバリアがない時：加えて回復対象にHPバリアを付与 （効果量 使用者の最大HPの100%/重複不可）"
+        }
+      ]
+    },
+    {
+      "character_id": "843867",
+      "character_name": "アマランシア",
+      "ability_name": "畏孵の顕現",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "後衛時かつターン終了時：自身に",
+        "特殊効果“畏浸蝕”を付与",
+        "（4ターン/ターンが長くなるよう上書き）",
+        "長浸蝕：最終ダメージアップ100%と",
+        "ダメージ上限アップ（効果量 100000）の効果"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 100000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "後衛時かつターン終了時：自身に 特殊効果“畏浸蝕”を付与 （4ターン/ターンが長くなるよう上書き） 長浸蝕：最終ダメージアップ100%と ダメージ上限アップ（効果量 100000）の効果"
+        }
+      ]
+    },
+    {
+      "character_id": "843867",
+      "character_name": "アマランシア",
+      "ability_name": "畏孵の序開",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "前衛時かつターン終了時：自身に",
+        "特殊効果“畏孵表出”を付与（9ターン）",
+        "長表出：属性ダメージアップ15%の効果",
+        "ただし、攻撃アビリティ使用後",
+        "特殊効果“畏孵表出”を解除する"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "damage",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 15,
+          "cap_group": "buff_damage_elem_all",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "前衛時かつターン終了時：自身に 特殊効果“畏孵表出”を付与（9ターン） 長表出：属性ダメージアップ15%の効果 ただし、攻撃アビリティ使用後 特殊効果“畏孵表出”を解除する"
+        }
+      ]
+    },
+    {
+      "character_id": "843867",
+      "character_name": "アマランシア",
+      "ability_name": "世界を編纂する魔女",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "味方前後衛全体に",
+        "属性攻撃でクリティカルが発生する効果と",
+        "「たたかう」以外の属性攻撃（一部除く）時",
+        "火・雷弱点を突ける効果を付与",
+        "（ダメージ計算は各攻撃に準ずる）",
+        "さらに、属攻アップ15%の効果を付与",
+        "効果対象が神官か学者の時：",
+        "加えて、クリティカル時のダメージ倍率が",
+        "1.6倍になる効果を付与（通常時は1.25倍）し",
+        "このアビリティで付与される",
+        "属攻アップの効果量が2倍になる"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 15,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "ally_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "critical",
+          "unit": "",
+          "sub_category": "elemental",
+          "target_source_type": "battle",
+          "value": 1,
+          "cap_group": "critical_elem",
+          "scopes": [
+            "ally_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "味方前後衛全体に 属性攻撃でクリティカルが発生する効果と 「たたかう」以外の属性攻撃（一部除く）時 火・雷弱点を突ける効果を付与 （ダメージ計算は各攻撃に準ずる） さらに、属攻アップ15%の効果を付与 効果対象が神官か学者の時： 加えて、クリティカル時のダメージ倍率が 1.6倍になる効果を付与（通常時は1.25倍）し このアビリティで付与される 属攻アップの効果量が2倍になる"
+        }
+      ]
+    },
+    {
+      "character_id": "843867",
+      "character_name": "アマランシア",
+      "ability_name": "換骨奪胎の呪",
+      "source_type": "support",
+      "cost": null,
+      "raw_text": [
+        "HP満タン時：敵全体に属防ダウン",
+        "30%",
+        "と闇耐性ダウン",
+        "30%",
+        "と",
+        "サポアビと装備性能による属防ダウンと",
+        "闇耐性ダウンを受けた際の上限が",
+        "60%",
+        "になる効果を付与",
+        "拒絶の報還効果中：",
+        "敵全体に属性耐性ダウン15%の効果を付与",
+        "さらに、自身を除く味方前衛全体にダメージ上限アップ（効果量 200000）の効果を付与"
+      ],
+      "raw_text_pre_enhance": [
+        "HP満タン時：敵全体に属防ダウン20%と闇耐性ダウン20%と",
+        "サポアビと装備性能による属防ダウンと",
+        "闇耐性ダウンを受けた際の上限が50%になる効果を付与",
+        "拒絶の報還効果中：",
+        "敵全体に属性耐性ダウン15%の効果を付与"
+      ],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "defence",
+          "target_source_type": "support",
+          "value": 60,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "elemental",
+          "target_source_type": "support",
+          "value": 60,
+          "tag": "dark",
+          "cap_group": "debuff_resist_elem_dark",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 30,
+          "tag": "dark",
+          "cap_group": "debuff_resist_elem_dark",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 30,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 15,
+          "cap_group": "debuff_resist_elem_all",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 200000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "self_exclude",
+            "ally_front_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "HP満タン時：敵全体に属防ダウン 30% と闇耐性ダウン 30% と サポアビと装備性能による属防ダウンと 闇耐性ダウンを受けた際の上限が 60% になる効果を付与 拒絶の報還効果中："
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に属性耐性ダウン15%の効果を付与"
+        },
+        {
+          "scopes": [
+            "self_exclude",
+            "ally_front_all"
+          ],
+          "text": "さらに、自身を除く味方前衛全体にダメージ上限アップ（効果量 200000）の効果を付与"
+        }
+      ]
+    },
+    {
+      "character_id": "843867",
+      "character_name": "アマランシア",
+      "ability_name": "遥か夢より有らまほし世界",
+      "source_type": "ultimate",
+      "cost": "後衛発動",
+      "raw_text": [
+        "【Lv.MAX】",
+        "敵全体に属防ダウン15%と闇耐性ダウン15%と",
+        "属性耐性ダウン15%の効果を付与（4ターン）",
+        "200%発動時：さらに、味方前後衛全体に",
+        "SPストックを付与（効果量 使用者の最大SPの100%/重複不可）し",
+        "必ずクリティカルの効果を付与（4ターン）",
+        "加えて、使用したターンから1ターンに1回ターン終了時に継続効果を発揮（継続3回）",
+        "継続効果：味方前後衛全体の",
+        "HP回復（回復量 対象の最大HPの100%）し",
+        "SP回復（回復量 対象の最大SPの100%）",
+        "さらに、BPを5回復",
+        "※属性攻撃でクリティカルが発生するには“属性攻撃でクリティカルが発生する効果”が必要（この必殺技は使用可能回数の復活不可）"
+      ],
+      "raw_text_pre_enhance": [],
+      "effects": [
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 15,
+          "cap_group": "debuff_resist_elem_all",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 15,
+          "tag": "dark",
+          "cap_group": "debuff_resist_elem_dark",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "debuff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "defence_elemental",
+          "value": 15,
+          "cap_group": "debuff_stat_def_elem",
+          "scopes": [
+            "enemy_all"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "critical",
+          "unit": "",
+          "sub_category": "certain",
+          "target_source_type": "battle",
+          "value": 1,
+          "cap_group": "critical_certain",
+          "scopes": [
+            "ally_all"
+          ]
+        }
+      ],
+      "conditions": [],
+      "unknown": [
+        "【Lv.MAX】",
+        "継続効果：味方前後衛全体の HP回復（回復量 対象の最大HPの100%）し SP回復（回復量 対象の最大SPの100%） さらに、BPを5回復 ※属性攻撃でクリティカルが発生するには“属性攻撃でクリティカルが発生する効果”が必要（この必殺技は使用可能回数の復活不可）"
+      ],
+      "blocks": [
+        {
+          "scopes": [],
+          "text": "【Lv.MAX】"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に属防ダウン15%と闇耐性ダウン15%と 属性耐性ダウン15%の効果を付与（4ターン）"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "200%発動時：さらに、味方前後衛全体に SPストックを付与（効果量 使用者の最大SPの100%/重複不可）し 必ずクリティカルの効果を付与（4ターン） 加えて、使用したターンから1ターンに1回ターン終了時に継続効果を発揮（継続3回）"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "継続効果：味方前後衛全体の HP回復（回復量 対象の最大HPの100%）し SP回復（回復量 対象の最大SPの100%） さらに、BPを5回復 ※属性攻撃でクリティカルが発生するには“属性攻撃でクリティカルが発生する効果”が必要（この必殺技は使用可能回数の復活不可）"
+        }
+      ]
+    },
+    {
+      "character_id": "843867",
+      "character_name": "アマランシア",
+      "ability_name": "乞い貪り万象焦がす楽欲",
+      "source_type": "ex",
+      "cost": "回数：1",
+      "raw_text": [
+        "敵全体に闇属性攻擊（威力 315）",
+        "このアビリティのダメージ上限が500000アップさらに、自身にカウントダウンの効果を付与（カウント3）",
+        "行動完了後、後衛に移動する（交代として扱われない）",
+        "カウント終了時、自身のEXアビリティの使用可能回数を1復活",
+        "ブレイク中の敵がいる時：カウントダウンの付与カウント数が1になる",
+        "ブーストMAX時：威力が2.5倍",
+        "このアビリティによるダメージ上限アップ量が8倍",
+        "ブーストMAX時かつ拒絶の報還効果中：威力が3.5倍",
+        "このアビリティによるダメージ上限アップ量が10倍",
+        "※威力値に反映、倍率が高いほうのみ適用される"
+      ],
+      "raw_text_pre_enhance": [],
+      "raw_text_condition": [
+        "【使用条件】畏孵表出と畏孵浸蝕効果中かつ9ターン目以内"
+      ],
+      "raw_text_boost": [
+        "【ブースト時】威力330/400/1250"
+      ],
+      "effects": [],
+      "conditions": [
+        "カウント終了時、自身のEXアビリティの使用可能回数を1復活 ブレイク中の敵がいる時カウントダウンの付与カウント数が1になる ブーストMAX時威力が2.5倍 このアビリティによるダメージ上限アップ量が8倍 ブーストMAX時かつ拒絶の報還効果中威力が3.5倍 このアビリティによるダメージ上限アップ量が10倍 ※威力値に反映、倍率が高いほうのみ適用される"
+      ],
+      "unknown": [
+        "敵全体に闇属性攻擊（威力 315）",
+        "このアビリティのダメージ上限が500000アップさらに、自身にカウントダウンの効果を付与（カウント3） 行動完了後、後衛に移動する（交代として扱われない）"
+      ],
+      "blocks": [
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "敵全体に闇属性攻擊（威力 315）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "このアビリティのダメージ上限が500000アップさらに、自身にカウントダウンの効果を付与（カウント3） 行動完了後、後衛に移動する（交代として扱われない）"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "カウント終了時、自身のEXアビリティの使用可能回数を1復活 ブレイク中の敵がいる時：カウントダウンの付与カウント数が1になる ブーストMAX時：威力が2.5倍 このアビリティによるダメージ上限アップ量が8倍 ブーストMAX時かつ拒絶の報還効果中：威力が3.5倍 このアビリティによるダメージ上限アップ量が10倍 ※威力値に反映、倍率が高いほうのみ適用される"
+        }
+      ]
+    }
+  ],
+  [
+    {
       "character_id": "840229",
       "character_name": "緋き断罪者",
       "ability_name": "赤き三連打",
@@ -78007,17 +78854,34 @@
       "raw_text": [
         "敵全体に3回の風属性攻撃（威力 95）",
         "扇弱点を突ける（ダメージ計算は風属性）",
+        "BP1以上消費時:さらに、味方前衛全体に",
+        "「風属性」で攻撃時",
+        "ダメージ上限アップ（効果量 50000）の効果を付与（3ターン）し",
+        "次のターンに素早く行動できる効果を付与"
+      ],
+      "raw_text_pre_enhance": [
+        "敵全体に3回の風属性攻撃（威力 95）",
+        "扇弱点を突ける（ダメージ計算は風属性）",
         "BP1以上消費時：さらに味方前衛全体に",
         "次のターンに素早く行動できる効果を付与"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力105/120/145"
       ],
-      "effects": [],
-      "conditions": [
-        "BP1以上消費時さらに味方前衛全体に 次のターンに素早く行動できる効果を付与"
+      "effects": [
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 50000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "ally_front_all"
+          ]
+        }
       ],
+      "conditions": [],
       "unknown": [
         "敵全体に3回の風属性攻撃（威力 95） 扇弱点を突ける（ダメージ計算は風属性）"
       ],
@@ -78032,7 +78896,7 @@
           "scopes": [
             "ally_front_all"
           ],
-          "text": "BP1以上消費時：さらに味方前衛全体に 次のターンに素早く行動できる効果を付与"
+          "text": "BP1以上消費時:さらに、味方前衛全体に 「風属性」で攻撃時 ダメージ上限アップ（効果量 50000）の効果を付与（3ターン）し 次のターンに素早く行動できる効果を付与"
         }
       ]
     },
@@ -78185,6 +79049,22 @@
       "source_type": "support",
       "cost": null,
       "raw_text": [
+        "（準備Turn:",
+        "1",
+        "/再使用Turn:4）",
+        "コマンド選択時、自身に特殊効果“みんな一緒に”を付与（",
+        "2",
+        "ターン）",
+        "戦闘開始時:味方前後衛全体に",
+        "特殊効果“熱狂”を付与（3ターン/効力重複不可）",
+        "みんな一緒に:自身のアビリティの効果対象が変化",
+        "自身、味方単体→味方前衛全体",
+        "味方前衛全体→味方前後衛全体",
+        "敵単体→敵全体",
+        "熱狂:物攻・属攻・会心アップ5％の効果",
+        "熱狂状態の人数に応じてサポアビ“昂揚舞”の効果が追加される"
+      ],
+      "raw_text_pre_enhance": [
         "（準備Turn：2/再使用Turn：4）",
         "コマンド選択時、自身に特殊効果”みんな一緒に”を付与（1ターン）",
         "みんな一緒に：自身のアビリティの効果対象が変化",
@@ -78192,31 +79072,69 @@
         "味方前衛全体→味方前後衛全体",
         "敵単体→敵全体"
       ],
-      "raw_text_pre_enhance": [],
-      "effects": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_physical",
+          "value": 5,
+          "cap_group": "buff_stat_atk_phys",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_elemental",
+          "value": 5,
+          "cap_group": "buff_stat_atk_elem",
+          "scopes": [
+            "self"
+          ]
+        },
+        {
+          "role": "buff",
+          "category": "stat",
+          "unit": "%",
+          "sub_category": "attack_critical_rate",
+          "value": 5,
+          "cap_group": "buff_stat_atk_crit",
+          "scopes": [
+            "self"
+          ]
+        }
+      ],
       "conditions": [],
       "unknown": [
-        "（準備Turn：2/再使用Turn：4）",
-        "コマンド選択時、自身に特殊効果”みんな一緒に”を付与（1ターン）",
-        "自身のアビリティの効果対象が変化 自身、味方単体→味方前衛全体 味方前衛全体→味方前後衛全体 敵単体→敵全体"
+        "（準備Turn: 1 /再使用Turn:4）",
+        "コマンド選択時、自身に特殊効果“みんな一緒に”を付与（ 2 ターン）",
+        "戦闘開始時:味方前後衛全体に 特殊効果“熱狂”を付与（3ターン/効力重複不可）"
       ],
       "blocks": [
         {
           "scopes": [],
-          "text": "（準備Turn：2/再使用Turn：4）"
+          "text": "（準備Turn: 1 /再使用Turn:4）"
         },
         {
           "scopes": [
             "self"
           ],
-          "text": "コマンド選択時、自身に特殊効果”みんな一緒に”を付与（1ターン）"
+          "text": "コマンド選択時、自身に特殊効果“みんな一緒に”を付与（ 2 ターン）"
+        },
+        {
+          "scopes": [
+            "ally_all"
+          ],
+          "text": "戦闘開始時:味方前後衛全体に 特殊効果“熱狂”を付与（3ターン/効力重複不可）"
         },
         {
           "scopes": [
             "self"
           ],
-          "text": "自身のアビリティの効果対象が変化 自身、味方単体→味方前衛全体 味方前衛全体→味方前後衛全体 敵単体→敵全体",
-          "special_effect_id": "みんな一緒に"
+          "text": "みんな一緒に:自身のアビリティの効果対象が変化 自身、味方単体→味方前衛全体 味方前衛全体→味方前後衛全体 敵単体→敵全体 熱狂:物攻・属攻・会心アップ5％の効果 熱狂状態の人数に応じてサポアビ“昂揚舞”の効果が追加される"
         }
       ]
     },
@@ -79963,9 +80881,17 @@
       "cost": "【消費SP 73】",
       "raw_text": [
         "ランダムなターゲットに4回の槍物理攻撃（威力 65）",
+        "攻撃毎に",
+        "中",
+        "確率で槍耐性ダウン",
+        "20",
+        "％の効果を付与（2ターン）",
+        "ブーストMAX時:攻撃回数が6回になる"
+      ],
+      "raw_text_pre_enhance": [
+        "ランダムなターゲットに4回の槍物理攻撃（威力 65）",
         "攻撃毎に小確率で槍耐性ダウン15%の効果を付与（2ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力75/85/110"
       ],
@@ -79975,7 +80901,7 @@
           "category": "resistance",
           "unit": "%",
           "sub_category": "physical",
-          "value": 15,
+          "value": 20,
           "tag": "spear",
           "cap_group": "debuff_resist_phys_spear",
           "scopes": [
@@ -79990,7 +80916,7 @@
           "scopes": [
             "random"
           ],
-          "text": "ランダムなターゲットに4回の槍物理攻撃（威力 65） 攻撃毎に小確率で槍耐性ダウン15%の効果を付与（2ターン）"
+          "text": "ランダムなターゲットに4回の槍物理攻撃（威力 65） 攻撃毎に 中 確率で槍耐性ダウン 20 ％の効果を付与（2ターン） ブーストMAX時:攻撃回数が6回になる"
         }
       ]
     },
@@ -80109,6 +81035,21 @@
       "source_type": "support",
       "cost": null,
       "raw_text": [
+        "（準備Turn:",
+        "0",
+        "/再使用Turn:",
+        "3",
+        "）",
+        "コマンド選択時、味方前後衛全体の商人に",
+        "特殊効果“気合（底力）”を付与（1ターン）",
+        "気合（底力）効果中:味方前衛全体に",
+        "「槍・弓物理」のいずれかで攻撃時",
+        "ダメージ上限アップ（効果量 50000）の効果を付与",
+        "気合（底力）:BPが減少しない（消耗時も含む/一部除く）",
+        "※ただし、ブーストする分のBPは貯まっている必要がある",
+        "※BP消費、BP消耗を条件にする効果は発揮される"
+      ],
+      "raw_text_pre_enhance": [
         "（準備Turn：2/再使用Turn：6）",
         "コマンド選択時、味方前後衛全体の商人に",
         "特殊効果”気合”を付与（1ターン）",
@@ -80116,31 +81057,40 @@
         "※ただし、ブーストする分のBPは貯まっている必要がある",
         "※BP消費を条件にする効果は発揮される"
       ],
-      "raw_text_pre_enhance": [],
-      "effects": [],
+      "effects": [
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 50000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "ally_front_all"
+          ]
+        }
+      ],
       "conditions": [],
       "unknown": [
-        "（準備Turn：2/再使用Turn：6）",
-        "コマンド選択時、味方前後衛全体の商人に 特殊効果”気合”を付与（1ターン）",
-        "BPが減少しない（消費時も含む/一部除く） ※ただし、ブーストする分のBPは貯まっている必要がある ※BP消費を条件にする効果は発揮される"
+        "（準備Turn: 0 /再使用Turn: 3 ）",
+        "コマンド選択時、味方前後衛全体の商人に 特殊効果“気合（底力）”を付与（1ターン）"
       ],
       "blocks": [
         {
           "scopes": [],
-          "text": "（準備Turn：2/再使用Turn：6）"
+          "text": "（準備Turn: 0 /再使用Turn: 3 ）"
         },
         {
           "scopes": [
             "ally_all"
           ],
-          "text": "コマンド選択時、味方前後衛全体の商人に 特殊効果”気合”を付与（1ターン）"
+          "text": "コマンド選択時、味方前後衛全体の商人に 特殊効果“気合（底力）”を付与（1ターン）"
         },
         {
           "scopes": [
-            "ally_all"
+            "ally_front_all"
           ],
-          "text": "BPが減少しない（消費時も含む/一部除く） ※ただし、ブーストする分のBPは貯まっている必要がある ※BP消費を条件にする効果は発揮される",
-          "special_effect_id": "気合"
+          "text": "気合（底力）効果中:味方前衛全体に 「槍・弓物理」のいずれかで攻撃時 ダメージ上限アップ（効果量 50000）の効果を付与 気合（底力）:BPが減少しない（消耗時も含む/一部除く） ※ただし、ブーストする分のBPは貯まっている必要がある ※BP消費、BP消耗を条件にする効果は発揮される"
         }
       ]
     },
@@ -110932,19 +111882,41 @@
       "cost": "【消費SP 37】",
       "raw_text": [
         "ランダムなターゲットに2回の槍物理攻撃（威力 90）",
+        "攻撃毎に槍耐性ダウン",
+        "30",
+        "％",
+        "と",
+        "バトアビによる槍耐性ダウンを受けた際の上限が",
+        "50％になる",
+        "効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [
+        "ランダムなターゲットに2回の槍物理攻撃（威力 90）",
         "攻撃毎に槍耐性ダウン15%の効果を付与（2ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力105/125/180"
       ],
       "effects": [
         {
           "role": "debuff",
+          "category": "cap_increase",
+          "unit": "%",
+          "sub_category": "physical",
+          "target_source_type": "battle",
+          "value": 50,
+          "tag": "spear",
+          "cap_group": "debuff_resist_phys_spear",
+          "scopes": [
+            "random"
+          ]
+        },
+        {
+          "role": "debuff",
           "category": "resistance",
           "unit": "%",
           "sub_category": "physical",
-          "value": 15,
+          "value": 30,
           "tag": "spear",
           "cap_group": "debuff_resist_phys_spear",
           "scopes": [
@@ -110959,7 +111931,7 @@
           "scopes": [
             "random"
           ],
-          "text": "ランダムなターゲットに2回の槍物理攻撃（威力 90） 攻撃毎に槍耐性ダウン15%の効果を付与（2ターン）"
+          "text": "ランダムなターゲットに2回の槍物理攻撃（威力 90） 攻撃毎に槍耐性ダウン 30 ％ と バトアビによる槍耐性ダウンを受けた際の上限が 50％になる 効果を付与（2ターン）"
         }
       ]
     },
@@ -111041,9 +112013,14 @@
       "source_type": "support",
       "cost": null,
       "raw_text": [
+        "自身にダメージ上限アップ（効果量 100000）の効果を付与",
+        "攻撃回数増加効果中:自身に",
+        "使用する攻撃アビリティを2回発動する効果を付与",
+        "（追加発動分はSP消費無し）"
+      ],
+      "raw_text_pre_enhance": [
         "自身にダメージ上限アップ（効果量 100000）の効果を付与"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "buff",
@@ -111058,13 +112035,21 @@
         }
       ],
       "conditions": [],
-      "unknown": [],
+      "unknown": [
+        "攻撃回数増加効果中:自身に 使用する攻撃アビリティを2回発動する効果を付与 （追加発動分はSP消費無し）"
+      ],
       "blocks": [
         {
           "scopes": [
             "self"
           ],
           "text": "自身にダメージ上限アップ（効果量 100000）の効果を付与"
+        },
+        {
+          "scopes": [
+            "self"
+          ],
+          "text": "攻撃回数増加効果中:自身に 使用する攻撃アビリティを2回発動する効果を付与 （追加発動分はSP消費無し）"
         }
       ]
     },
@@ -157305,27 +158290,32 @@
     {
       "character_id": "355923",
       "character_name": "アズライト",
-      "ability_name": "四連氷瀑葬",
+      "ability_name": "五連氷瀑葬",
       "source_type": "battle",
       "cost": "【消費SP 67】",
       "raw_text": [
+        "敵全体に",
+        "5",
+        "回の氷属性攻撃（威力 25）"
+      ],
+      "raw_text_pre_enhance": [
+        "『四連氷瀑葬』",
         "敵全体に4回の氷属性攻撃（威力 25）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力35/45/60"
       ],
       "effects": [],
       "conditions": [],
       "unknown": [
-        "敵全体に4回の氷属性攻撃（威力 25）"
+        "敵全体に 5 回の氷属性攻撃（威力 25）"
       ],
       "blocks": [
         {
           "scopes": [
             "enemy_all"
           ],
-          "text": "敵全体に4回の氷属性攻撃（威力 25）"
+          "text": "敵全体に 5 回の氷属性攻撃（威力 25）"
         }
       ]
     },
@@ -157429,23 +158419,29 @@
     {
       "character_id": "355923",
       "character_name": "アズライト",
-      "ability_name": "弱体効果延長(与)",
+      "ability_name": "弱体効果延長(与)Ⅱ",
       "source_type": "support",
       "cost": null,
       "raw_text": [
         "自身が状態異常以外の弱体効果を",
+        "付与した際の効果を",
+        "2",
+        "ターン延長（重複不可）"
+      ],
+      "raw_text_pre_enhance": [
+        "『弱体効果延長(与)』",
+        "自身が状態異常以外の弱体効果を",
         "付与した際の効果を1ターン延長（重複不可）"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [],
       "conditions": [],
       "unknown": [
-        "自身が状態異常以外の弱体効果を 付与した際の効果を1ターン延長（重複不可）"
+        "自身が状態異常以外の弱体効果を 付与した際の効果を 2 ターン延長（重複不可）"
       ],
       "blocks": [
         {
           "scopes": [],
-          "text": "自身が状態異常以外の弱体効果を 付与した際の効果を1ターン延長（重複不可）"
+          "text": "自身が状態異常以外の弱体効果を 付与した際の効果を 2 ターン延長（重複不可）"
         }
       ]
     },
@@ -159695,23 +160691,30 @@
       "cost": "【消費SP 58】",
       "raw_text": [
         "ランダムなターゲットに3回の杖物理攻撃（威力 85）",
+        "攻撃毎に出血の状態異常を付与",
+        "（2ターン",
+        "/敵の状態異常耐性を無視する",
+        "）",
+        "ブーストMAX時:攻撃回数が6回になる"
+      ],
+      "raw_text_pre_enhance": [
+        "ランダムなターゲットに3回の杖物理攻撃（威力 85）",
         "攻撃毎に小確率で出血の状態異常を付与（2ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力95/110/140"
       ],
       "effects": [],
       "conditions": [],
       "unknown": [
-        "ランダムなターゲットに3回の杖物理攻撃（威力 85） 攻撃毎に小確率で出血の状態異常を付与（2ターン）"
+        "ランダムなターゲットに3回の杖物理攻撃（威力 85） 攻撃毎に出血の状態異常を付与 （2ターン /敵の状態異常耐性を無視する ） ブーストMAX時:攻撃回数が6回になる"
       ],
       "blocks": [
         {
           "scopes": [
             "random"
           ],
-          "text": "ランダムなターゲットに3回の杖物理攻撃（威力 85） 攻撃毎に小確率で出血の状態異常を付与（2ターン）"
+          "text": "ランダムなターゲットに3回の杖物理攻撃（威力 85） 攻撃毎に出血の状態異常を付与 （2ターン /敵の状態異常耐性を無視する ） ブーストMAX時:攻撃回数が6回になる"
         }
       ]
     },
@@ -159772,22 +160775,48 @@
     {
       "character_id": "356022",
       "character_name": "セドリック",
-      "ability_name": "後衛時HP治癒(前単)",
+      "ability_name": "放浪の司祭",
       "source_type": "support",
       "cost": null,
       "raw_text": [
+        "後衛時:前衛にHP自動回復の効果を付与（効力 100）",
+        "自身とバディに",
+        "「杖物理」で攻撃時",
+        "ダメージ上限アップ（効果量 25000）の効果を付与"
+      ],
+      "raw_text_pre_enhance": [
+        "『後衛時HP治癒(前単)』",
         "後衛時：前衛にHP自動回復の効果を付与（効力 100）"
       ],
-      "raw_text_pre_enhance": [],
-      "effects": [],
-      "conditions": [
-        "後衛時前衛にHP自動回復の効果を付与（効力 100）"
+      "effects": [
+        {
+          "role": "buff",
+          "category": "dmg_cap",
+          "unit": "",
+          "target_source_type": "battle",
+          "value": 25000,
+          "cap_group": "damage_cap",
+          "scopes": [
+            "buddy",
+            "self"
+          ]
+        }
       ],
-      "unknown": [],
+      "conditions": [],
+      "unknown": [
+        "後衛時:前衛にHP自動回復の効果を付与（効力 100）"
+      ],
       "blocks": [
         {
           "scopes": [],
-          "text": "後衛時：前衛にHP自動回復の効果を付与（効力 100）"
+          "text": "後衛時:前衛にHP自動回復の効果を付与（効力 100）"
+        },
+        {
+          "scopes": [
+            "buddy",
+            "self"
+          ],
+          "text": "自身とバディに 「杖物理」で攻撃時 ダメージ上限アップ（効果量 25000）の効果を付与"
         }
       ]
     },
@@ -160145,10 +161174,18 @@
       "source_type": "battle",
       "cost": "【消費SP 68】",
       "raw_text": [
+        "敵全体に",
+        "4",
+        "回の風属性攻撃（威力 65）",
+        "さらに、風耐性ダウン10％の効果を付与（2ターン）",
+        "し",
+        "腐蝕の状態異常を付与（2ターン）",
+        "腐蝕:ターン終了時に物攻ダメージ＆シールド-1（0にならない）"
+      ],
+      "raw_text_pre_enhance": [
         "敵全体に3回の風属性攻撃（威力 65）",
         "さらに、風耐性ダウン10%の効果を付与（2ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "raw_text_boost": [
         "【ブースト時】威力75/90/115"
       ],
@@ -160173,7 +161210,7 @@
           "scopes": [
             "enemy_all"
           ],
-          "text": "敵全体に3回の風属性攻撃（威力 65） さらに、風耐性ダウン10%の効果を付与（2ターン）"
+          "text": "敵全体に 4 回の風属性攻撃（威力 65） さらに、風耐性ダウン10％の効果を付与（2ターン） し 腐蝕の状態異常を付与（2ターン） 腐蝕:ターン終了時に物攻ダメージ＆シールド-1（0にならない）"
         }
       ]
     },
@@ -160245,10 +161282,13 @@
       "source_type": "support",
       "cost": null,
       "raw_text": [
+        "前衛に交代時:自身に属攻アップ30％の効果を付与（2ターン）",
+        "さらに、敵全体に風耐性ダウン10％の効果を付与（2ターン）"
+      ],
+      "raw_text_pre_enhance": [
         "前衛に交代時：",
         "自身に属攻アップ30%の効果を付与（2ターン）"
       ],
-      "raw_text_pre_enhance": [],
       "effects": [
         {
           "role": "buff",
@@ -160260,22 +161300,34 @@
           "scopes": [
             "self"
           ]
+        },
+        {
+          "role": "debuff",
+          "category": "resistance",
+          "unit": "%",
+          "sub_category": "elemental",
+          "value": 10,
+          "tag": "wind",
+          "cap_group": "debuff_resist_elem_wind",
+          "scopes": [
+            "enemy_all"
+          ]
         }
       ],
-      "conditions": [
-        "前衛に交代時"
-      ],
+      "conditions": [],
       "unknown": [],
       "blocks": [
-        {
-          "scopes": [],
-          "text": "前衛に交代時："
-        },
         {
           "scopes": [
             "self"
           ],
-          "text": "自身に属攻アップ30%の効果を付与（2ターン）"
+          "text": "前衛に交代時:自身に属攻アップ30％の効果を付与（2ターン）"
+        },
+        {
+          "scopes": [
+            "enemy_all"
+          ],
+          "text": "さらに、敵全体に風耐性ダウン10％の効果を付与（2ターン）"
         }
       ]
     },
